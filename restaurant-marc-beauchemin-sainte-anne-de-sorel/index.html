@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Restaurant Marc Beauchemin · Gibelotte et perchaude depuis 1940 · Sainte-Anne-de-Sorel</title>
+<meta name="description" content="Restaurant Marc Beauchemin, au pays du Survenant depuis 1940 : gibelotte et filets de perchaude rôtis sur le chenal, à l'île d'Embarras (Sainte-Anne-de-Sorel). Apportez votre vin. Réservation : 450 743-6023.">
+<meta property="og:title" content="Restaurant Marc Beauchemin — depuis 1940">
+<meta property="og:description" content="Gibelotte et filets de perchaude rôtis, au bord du chenal à l'île d'Embarras. Accès par terre ou par eau.">
+<meta name="theme-color" content="#0e3433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Restaurant Marc Beauchemin","foundingDate":"1940","telephone":"+1-450-743-6023","email":"nan040@hotmail.com","url":"http://www.marcbeauchemin.com/","servesCuisine":["Cuisine québécoise traditionnelle","Poissons"],"acceptsReservations":"True","address":{"@type":"PostalAddress","streetAddress":"124, chemin de l'Île-d'Embarras","addressLocality":"Sainte-Anne-de-Sorel","addressRegion":"QC","postalCode":"J3P 5N3","addressCountry":"CA"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"10","bestRating":"5"},"hasMenu":{"@type":"Menu","hasMenuSection":{"@type":"MenuSection","name":"Spécialités","hasMenuItem":[{"@type":"MenuItem","name":"Gibelotte","offers":{"@type":"Offer","price":"14.99","priceCurrency":"CAD","description":"À partir de"}},{"@type":"MenuItem","name":"Filets de perchaude rôtis"}]}}}
+</script>
+<style>
+:root{--river:#0e3433;--river2:#14504c;--marsh:#3f6b4a;--cream:#f6eedd;--paper:#fbf6ea;--ink:#1d2523;--rust:#b4532a;--gold:#e2a528;--muted:#5d6b66;--line:rgba(14,52,51,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:16px/1.6 "Work Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper);padding-top:var(--bh,32px)}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;overflow-wrap:break-word}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+/* NAV */
+.nav{position:fixed;top:var(--bh,32px);left:0;right:0;z-index:50;background:rgba(14,52,51,.96);color:var(--cream);border-bottom:1px solid rgba(246,238,221,.12)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Fraunces,serif;font-weight:700;font-size:18px;min-width:0}
+.brand svg{width:38px;height:38px;flex:none}
+.brand span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.links{display:flex;gap:26px;list-style:none}
+.links a{text-decoration:none;font-weight:500;font-size:15px;opacity:.88}
+.links a:hover{opacity:1;color:var(--gold)}
+.burger{display:none;background:none;border:0;color:var(--cream);width:44px;height:44px;cursor:pointer}
+.burger i{display:block;width:24px;height:2px;background:currentColor;margin:5px auto;border-radius:2px;transition:transform .3s,opacity .3s}
+.nav.open .burger i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav.open .burger i:nth-child(2){opacity:0}
+.nav.open .burger i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:860px){
+ .burger{display:block}
+ .links{position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;background:var(--river);padding:6px 20px 16px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s}
+ .nav.open .links{transform:none;opacity:1;pointer-events:auto}
+ .links a{display:block;padding:12px 0;font-size:17px;border-bottom:1px solid rgba(246,238,221,.1)}
+}
+/* HERO */
+.hero{position:relative;background:linear-gradient(180deg,#0b2b2a 0%,#0e3433 45%,#14504c 100%);color:var(--cream);padding:108px 0 0;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 80% 20%,rgba(226,165,40,.22),transparent 70%),radial-gradient(50% 40% at 10% 80%,rgba(63,107,74,.45),transparent 70%);z-index:-2}
+.float{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.fl{position:absolute;opacity:.55;will-change:transform}
+.fl svg{display:block;width:100%;height:auto}
+.fl.back{filter:blur(2px);opacity:.28}
+.fl .in{animation:bob var(--d,9s) ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r1,-6deg))}to{transform:translateY(12px) rotate(var(--r2,6deg))}}
+.par{transform:translate3d(0,calc(var(--p,0) * var(--k,0px)),0)}
+.hero-grid{display:grid;gap:30px;align-items:center;padding-bottom:40px}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.kicker::before{content:"";width:26px;height:2px;background:var(--gold)}
+.hero h1{font-size:clamp(40px,11vw,84px);font-weight:900;margin:12px 0 14px;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--gold);display:block;font-size:.5em;margin-bottom:4px}
+.lead{font-size:clamp(17px,4.4vw,21px);max-width:34em;color:#e7ddc6}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:0 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn svg{width:19px;height:19px}
+.btn-p{background:var(--gold);color:#2a1d05}
+.btn-g{border:1.5px solid rgba(246,238,221,.55);color:var(--cream)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-size:13.5px;padding:6px 12px;border-radius:999px;background:rgba(246,238,221,.1);border:1px solid rgba(246,238,221,.16)}
+.badge{position:relative;justify-self:center;width:min(78vw,400px)}
+.badge .disc{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 42%,#f8efd9 0 56%,#ead9b3 57% 60%,#f8efd9 61% 64%,#b4532a 65% 100%);display:grid;place-items:center;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.badge .disc svg{width:86%}
+.waves{display:block;width:100%;height:70px;margin-top:-1px}
+/* SECTIONS */
+section{padding:72px 0;scroll-margin-top:92px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);font-weight:600}
+.title{font-size:clamp(32px,8vw,52px);font-weight:900;color:var(--river);margin:8px 0 14px}
+.sub{color:var(--muted);max-width:40em}
+/* MENU */
+#menu{background:var(--paper);overflow-x:clip}
+.plates{display:grid;gap:22px;margin-top:34px}
+.plate{position:relative;background:#fff;border-radius:22px;padding:24px 22px 22px;border:1px solid var(--line);box-shadow:0 14px 30px -18px rgba(14,52,51,.35);min-width:0;opacity:0;transform:translateX(var(--fx,-60px)) rotate(var(--fr,-4deg))}
+.plate:nth-child(2){--fx:60px;--fr:4deg}
+.plates.go .plate{opacity:1;transform:none;transition:transform .9s cubic-bezier(.2,.9,.2,1.15),opacity .6s}
+.plates.go .plate:nth-child(2){transition-delay:.18s}
+.plate .art{width:120px;height:96px;margin-bottom:12px}
+.plate h3{font-size:26px;color:var(--river);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.dots{flex:1;min-width:30px;border-bottom:2px dotted rgba(14,52,51,.3);transform:translateY(-6px)}
+.price{font-family:Fraunces,serif;font-weight:700;color:var(--rust);font-size:22px;white-space:nowrap}
+.price small{font:500 13px "Work Sans",sans-serif;color:var(--muted);margin-right:4px}
+.plate p{color:var(--muted);margin-top:8px}
+.steam path{stroke-dasharray:4 6;animation:steam 2.4s linear infinite}
+@keyframes steam{to{stroke-dashoffset:-20}}
+.note{margin-top:26px;display:grid;gap:12px}
+.note div{display:flex;gap:12px;align-items:flex-start;background:var(--cream);border-radius:16px;padding:14px 16px;min-width:0}
+.note svg{width:26px;height:26px;flex:none;color:var(--rust)}
+/* AVIS */
+#avis{background:var(--river);color:var(--cream);position:relative;overflow:hidden}
+#avis .title{color:var(--cream)}
+#avis .sub{color:#cfc4ab}
+.score{display:inline-flex;align-items:center;gap:14px;margin-top:18px;padding:12px 18px;border-radius:16px;background:rgba(246,238,221,.08);border:1px solid rgba(246,238,221,.16)}
+.score b{font-family:Fraunces,serif;font-size:40px;color:var(--gold);line-height:1}
+.stars{color:var(--gold);letter-spacing:2px}
+.reviews{display:grid;gap:18px;margin-top:30px}
+.rev{background:var(--paper);color:var(--ink);border-radius:20px;padding:24px 22px;position:relative;min-width:0}
+.rev::before{content:"»";position:absolute;bottom:-18px;right:16px;font:900 80px/1 Fraunces,serif;color:rgba(180,83,42,.12)}
+.rev h3{font-size:19px;color:var(--river);margin-bottom:8px}
+.rev blockquote{font-size:17px;line-height:1.55;overflow-wrap:break-word}
+.rev footer{margin-top:14px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.rev footer b{color:var(--ink)}
+.press{margin-top:30px;border-left:3px solid var(--gold);padding:6px 0 6px 18px;color:#e7ddc6;max-width:52em}
+.press small{display:block;color:#b9ae95;margin-top:6px}
+/* HISTOIRE */
+.story{display:grid;gap:30px;align-items:center}
+.story-art{background:linear-gradient(180deg,#f6eedd,#e9dcbd);border-radius:26px;padding:20px;border:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.fact{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;min-width:0}
+.fact b{display:block;font-family:Fraunces,serif;font-size:26px;color:var(--rust);line-height:1.1}
+.fact span{font-size:14px;color:var(--muted)}
+blockquote.site{font-family:Fraunces,serif;font-style:italic;font-size:22px;color:var(--river);margin-top:20px;line-height:1.35}
+/* INFOS */
+#infos{background:var(--cream)}
+.cards{display:grid;gap:18px;margin-top:30px}
+.card{background:#fff;border-radius:20px;padding:24px 22px;border:1px solid var(--line);min-width:0}
+.card h3{font-size:22px;color:var(--river);margin-bottom:10px;display:flex;gap:10px;align-items:center}
+.card h3 svg{width:26px;height:26px;color:var(--rust);flex:none}
+.card p,.card li{color:#3a4643}
+.card ul{list-style:none;display:grid;gap:6px}
+.card a.lnk{color:var(--rust);font-weight:600;text-decoration-thickness:2px;text-underline-offset:3px;overflow-wrap:anywhere}
+.big{font-family:Fraunces,serif;font-size:28px;font-weight:700;color:var(--river);text-decoration:none;display:inline-block;margin:4px 0}
+footer.site{background:#0b2b2a;color:#cfc4ab;padding:36px 0 110px;font-size:14px}
+footer.site .wrap{display:grid;gap:8px}
+footer.site b{color:var(--cream);font-family:Fraunces,serif;font-size:18px}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:flex;align-items:center;justify-content:center;gap:10px;min-height:54px;border-radius:999px;background:var(--rust);color:#fff;font-weight:600;text-decoration:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.5)}
+.callbar svg{width:20px;height:20px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.on{opacity:1;transform:none}
+@media(min-width:700px){
+ .reviews{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .facts{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(min-width:1024px){
+ section{padding:100px 0}
+ .hero{padding-top:140px}
+ .hero-grid{grid-template-columns:1.15fr .85fr;gap:60px;padding-bottom:60px}
+ .plates{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+ .plate{padding:34px 34px 30px}
+ .note{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .reviews{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .story{grid-template-columns:.9fr 1.1fr;gap:60px}
+ .cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .callbar{display:none}
+ footer.site{padding-bottom:40px}
+}
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9000;background:#0b2b2a;display:grid;place-items:center;transition:opacity .45s}
+#intro.out{opacity:0}
+#intro svg{width:min(86vw,520px)}
+#intro .fish{animation:leap 1.3s cubic-bezier(.4,.1,.4,1) .15s both;transform-box:fill-box;transform-origin:center}
+@keyframes leap{0%{transform:translate(-170px,70px) rotate(-40deg);opacity:0}15%{opacity:1}50%{transform:translate(0,-40px) rotate(0)}100%{transform:translate(170px,70px) rotate(40deg);opacity:0}}
+#intro .rip{transform-box:fill-box;transform-origin:center;animation:rip 1s ease-out both;opacity:0}
+#intro .r1{animation-delay:.2s}#intro .r2{animation-delay:1.25s}
+@keyframes rip{0%{transform:scale(.2);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+#intro .nm{opacity:0;transform:translateY(16px);animation:up .7s ease-out 1s forwards}
+#intro .yr{opacity:0;animation:up .6s ease-out 1.35s forwards}
+@keyframes up{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .plate,.rv{opacity:1!important;transform:none!important}
+ #intro{display:none}
+ .par{transform:none}
+}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Restaurant Marc Beauchemin — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg">
+ <g fill="none" stroke="#e2a528" stroke-width="2">
+  <ellipse class="rip r1" cx="90" cy="170" rx="40" ry="8"/>
+  <ellipse class="rip r2" cx="430" cy="170" rx="40" ry="8"/>
+ </g>
+ <path d="M30 172 Q130 160 260 172 T490 172" stroke="#3f6b4a" stroke-width="3" fill="none"/>
+ <g class="fish" transform="translate(260 120)">
+  <g transform="translate(-55 -22)">
+   <path d="M8 22 C24 2 70 0 92 16 L110 4 L106 22 L110 40 L92 28 C70 44 24 42 8 22Z" fill="#e2a528"/>
+   <path d="M34 9v26M48 6v31M62 7v29M76 10v22" stroke="#6a4a10" stroke-width="4" opacity=".55"/>
+   <path d="M40 8 L52 0 L64 6Z" fill="#b4532a"/>
+   <circle cx="20" cy="18" r="3.4" fill="#0b2b2a"/>
+  </g>
+ </g>
+ <text class="nm" x="260" y="236" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="900" font-size="44" fill="#f6eedd">Marc Beauchemin</text>
+ <text class="yr" x="260" y="272" text-anchor="middle" font-family="Work Sans,sans-serif" font-weight="600" font-size="15" letter-spacing="5" fill="#e2a528">DEPUIS 1940 · ÎLE D'EMBARRAS</text>
+</svg>
+</div>
+
+<nav class="nav" id="nav">
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Restaurant Marc Beauchemin, accueil">
+   <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#f6eedd"/><circle cx="20" cy="20" r="19" fill="none" stroke="#b4532a" stroke-width="2"/><path d="M8 21c4-6 15-7 20-3l5-4-1 6 1 6-5-4c-5 4-16 3-20-1z" fill="#e2a528"/><path d="M15 16v9M19 15v11M23 16v8" stroke="#6a4a10" stroke-width="1.6" opacity=".6"/><circle cx="11" cy="20" r="1.2" fill="#0b2b2a"/></svg>
+   <span>Marc Beauchemin</span>
+  </a>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <ul class="links" id="links">
+   <li><a href="#menu">Spécialités</a></li>
+   <li><a href="#avis">Avis</a></li>
+   <li><a href="#histoire">Notre histoire</a></li>
+   <li><a href="#infos">Heures et accès</a></li>
+   <li><a href="tel:+14507436023">450 743-6023</a></li>
+  </ul>
+ </div>
+</nav>
+
+<header class="hero" id="top">
+ <div class="float" aria-hidden="true">
+  <!-- perchaudes, quenouilles, nénuphars, bulles -->
+  <div class="fl back par" style="--k:-40px;left:-4%;top:14%;width:150px"><div class="in" style="--d:11s"><svg viewBox="0 0 120 50"><path d="M8 25C24 5 70 3 92 19l18-12-4 18 4 18-18-12C70 47 24 45 8 25Z" fill="#e2a528"/><path d="M34 12v26M48 9v31M62 10v29M76 13v22" stroke="#6a4a10" stroke-width="4" opacity=".5"/></svg></div></div>
+  <div class="fl par" style="--k:60px;right:6%;top:58%;width:96px"><div class="in" style="--d:8s;--r1:4deg;--r2:-8deg"><svg viewBox="0 0 120 50"><path d="M112 25C96 5 50 3 28 19L10 7l4 18-4 18 18-12C50 47 96 45 112 25Z" fill="#f0b83a"/><path d="M86 12v26M72 9v31M58 10v29M44 13v22" stroke="#6a4a10" stroke-width="4" opacity=".5"/><circle cx="100" cy="21" r="3" fill="#0b2b2a"/><path d="M60 10l14-9 12 7z" fill="#b4532a"/></svg></div></div>
+  <div class="fl back par" style="--k:30px;left:44%;top:6%;width:70px"><div class="in" style="--d:10s"><svg viewBox="0 0 40 120"><path d="M20 120V30" stroke="#6b8f4e" stroke-width="3"/><rect x="13" y="6" width="14" height="40" rx="7" fill="#7a4a24"/><path d="M20 70c-10-8-14-20-12-34" stroke="#6b8f4e" stroke-width="3" fill="none"/></svg></div></div>
+  <div class="fl par" style="--k:-70px;left:3%;top:68%;width:58px"><div class="in" style="--d:9s"><svg viewBox="0 0 40 120"><path d="M20 120V30" stroke="#86a95f" stroke-width="3"/><rect x="13" y="6" width="14" height="40" rx="7" fill="#8a5428"/><path d="M20 80c10-8 15-22 12-38" stroke="#86a95f" stroke-width="3" fill="none"/></svg></div></div>
+  <div class="fl par" style="--k:45px;right:30%;top:84%;width:92px"><div class="in" style="--d:12s;--r1:-12deg;--r2:12deg"><svg viewBox="0 0 100 60"><ellipse cx="50" cy="32" rx="46" ry="24" fill="#3f6b4a"/><path d="M50 32L96 26 90 40Z" fill="#14504c"/><circle cx="38" cy="22" r="8" fill="#f6eedd"/><circle cx="38" cy="22" r="3" fill="#e2a528"/></svg></div></div>
+  <div class="fl back par" style="--k:-30px;right:-3%;top:10%;width:120px"><div class="in" style="--d:13s"><svg viewBox="0 0 100 60"><ellipse cx="50" cy="32" rx="46" ry="24" fill="#3f6b4a"/><path d="M50 32L96 26 90 40Z" fill="#0e3433"/></svg></div></div>
+  <div class="fl par" style="--k:-90px;right:4%;top:44%;width:26px;opacity:.3"><div class="in" style="--d:6s"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#f6eedd" stroke-width="2"/></svg></div></div>
+  <div class="fl par" style="--k:-60px;right:40%;top:90%;width:18px;opacity:.3"><div class="in" style="--d:7s"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#f6eedd" stroke-width="2"/></svg></div></div>
+  <div class="fl back par" style="--k:20px;left:60%;top:76%;width:44px"><div class="in" style="--d:9s"><svg viewBox="0 0 40 120"><path d="M20 120V30" stroke="#6b8f4e" stroke-width="3"/><rect x="13" y="6" width="14" height="40" rx="7" fill="#7a4a24"/></svg></div></div>
+ </div>
+ <div class="wrap hero-grid">
+  <div>
+   <span class="kicker">Au pays du Survenant · depuis 1940</span>
+   <h1><em>Restaurant</em>Marc Beauchemin</h1>
+   <p class="lead">La gibelotte et les filets de perchaude rôtis des îles de Sorel, servis au bord du chenal, à l'île d'Embarras. On y arrive par terre… ou par eau.</p>
+   <div class="btns">
+    <a class="btn btn-p" href="tel:+14507436023"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler · 450 743-6023</a>
+    <a class="btn btn-g" href="#menu">Voir le menu</a>
+   </div>
+   <div class="chips">
+    <span class="chip">Apportez votre vin et votre bière</span>
+    <span class="chip">Quai de 150 pieds</span>
+    <span class="chip">Salle à manger sur réservation</span>
+   </div>
+  </div>
+  <div class="badge" aria-hidden="true">
+   <div class="disc">
+    <svg viewBox="0 0 300 300">
+     <defs><path id="arc" d="M40 150a110 110 0 0 1 220 0"/><path id="arc2" d="M52 160a98 98 0 0 0 196 0"/></defs>
+     <text font-family="Work Sans,sans-serif" font-weight="600" font-size="15" letter-spacing="4" fill="#0e3433"><textPath href="#arc" startOffset="50%" text-anchor="middle">GIBELOTTE · PERCHAUDE</textPath></text>
+     <text font-family="Work Sans,sans-serif" font-weight="600" font-size="13" letter-spacing="4" fill="#b4532a"><textPath href="#arc2" startOffset="50%" text-anchor="middle">CHENAL DU MOINE</textPath></text>
+     <g transform="translate(150 150)">
+      <path d="M-74 0c22-34 92-38 120-14l26-17-6 31 6 31-26-17c-28 24-98 20-120-14z" fill="#e2a528"/>
+      <path d="M-34-20v40M-14-26v52M6-24v48M24-18v36" stroke="#6a4a10" stroke-width="7" opacity=".5"/>
+      <path d="M-30-24l22-16 26 12z" fill="#b4532a"/>
+      <circle cx="-58" cy="-6" r="5" fill="#0b2b2a"/>
+     </g>
+     <text x="150" y="222" text-anchor="middle" font-family="Fraunces,serif" font-weight="900" font-size="30" fill="#0e3433">1940</text>
+    </svg>
+   </div>
+  </div>
+ </div>
+ <svg class="waves" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30C180 60 360 0 540 26S900 62 1080 30 1320 6 1440 26V70H0Z" fill="#fbf6ea"/></svg>
+</header>
+
+<main>
+<section id="menu">
+ <div class="wrap">
+  <p class="eyebrow">Nos spécialités</p>
+  <h2 class="title">Ce qu'on vient manger ici</h2>
+  <p class="sub">Deux classiques des îles de Sorel, servis dans une atmosphère typique et chaleureuse.</p>
+  <div class="plates" id="plates">
+   <article class="plate">
+    <svg class="art" viewBox="0 0 120 96" aria-hidden="true"><g class="steam" fill="none" stroke="#b9ae95" stroke-width="3" stroke-linecap="round"><path d="M44 30c-6-8 6-12 0-22"/><path d="M60 28c-6-8 6-12 0-22"/><path d="M76 30c-6-8 6-12 0-22"/></g><path d="M14 46h92c0 26-20 42-46 42S14 72 14 46z" fill="#b4532a"/><ellipse cx="60" cy="46" rx="46" ry="10" fill="#7a3a1a"/><circle cx="46" cy="44" r="5" fill="#e2a528"/><circle cx="66" cy="46" r="4" fill="#f0c66a"/><circle cx="78" cy="43" r="3" fill="#e9dcbd"/></svg>
+    <h3>Gibelotte <span class="dots"></span><span class="price"><small>à partir de</small>14,99 $</span></h3>
+    <p>La spécialité de la maison : la gibelotte, plat emblématique des îles de Sorel.</p>
+   </article>
+   <article class="plate">
+    <svg class="art" viewBox="0 0 120 96" aria-hidden="true"><ellipse cx="60" cy="60" rx="54" ry="26" fill="#e9dcbd"/><ellipse cx="60" cy="58" rx="44" ry="19" fill="#fbf6ea"/><path d="M26 56c10-10 30-12 40-4l8-6-2 9 2 9-8-6c-10 8-30 6-40-2z" fill="#d38a2c"/><path d="M50 62c10-10 30-12 40-4l8-6-2 9 2 9-8-6c-10 8-30 6-40-2z" fill="#e2a528"/><path d="M60 58l3 8M70 56l3 9" stroke="#8a5420" stroke-width="2" opacity=".6"/><circle cx="34" cy="70" r="3" fill="#86a95f"/></svg>
+    <h3>Filets de perchaude rôtis <span class="dots"></span><span class="price" style="font-size:16px">Prix sur place</span></h3>
+    <p>Les filets de perchaude rôtis, l'autre grande spécialité de la maison.</p>
+   </article>
+  </div>
+  <div class="note">
+   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2h8l-1 7a3 3 0 0 1-6 0zM12 12v8M8 22h8"/></svg><p><b>Apportez votre vin et votre bière.</b></p></div>
+   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4zM4 9h16M9 4v16"/></svg><p><b>Menu complet sur place ou par téléphone</b> au 450 743-6023.</p></div>
+   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><p>Taxes en sus. Les prix peuvent changer sans préavis.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="wrap">
+  <p class="eyebrow" style="color:var(--gold)">Ce que nos clients disent</p>
+  <h2 class="title">Authentique, de l'avis de tous</h2>
+  <p class="sub">Quelques mots laissés par nos clients en ligne, tels quels.</p>
+  <div class="score rv"><b>4,7</b><div><div class="stars" aria-label="4,7 sur 5">★★★★★</div><small>sur 5 · 10 évaluations sur Restoenligne</small></div></div>
+  <div class="reviews">
+   <article class="rev rv">
+    <blockquote>« Nous avons énormément apprécié, c’est une cantine à la bonne franquette mais c’est authentique!!! »</blockquote>
+    <footer><b>Michel J.</b><span>Avis Google · septembre 2026</span></footer>
+   </article>
+   <article class="rev rv">
+    <h3>« La gibelotte et les filets de perchaude 100% authentique !! »</h3>
+    <blockquote>« ne vous laissez pas avoir par son allure extérieur ! »</blockquote>
+    <footer><b>JosBlos</b><span>TripAdvisor · août 2016</span></footer>
+   </article>
+   <article class="rev rv">
+    <blockquote>« Gibelotte authentique ET dans un cadre authentique. »</blockquote>
+    <footer><b>21jeanpierrev</b><span>TripAdvisor · juillet 2018</span></footer>
+   </article>
+  </div>
+  <p class="press rv">Le magazine BB Jetlag rappelle que la gibelotte des îles de Sorel est associée à Berthe Beauchemin, la grand-tante de Marc Beauchemin, et recommande nos filets de perchaude rôtis.<small>On parle de nous · BB Jetlag, « 10 bons plans pour s’évader en famille dans la région de Sorel-Tracy »</small></p>
+ </div>
+</section>
+
+<section id="histoire">
+ <div class="wrap story">
+  <div class="story-art rv" aria-hidden="true">
+   <svg viewBox="0 0 400 260">
+    <rect width="400" height="160" rx="18" fill="#cfe0d4"/>
+    <circle cx="320" cy="56" r="26" fill="#e2a528"/>
+    <path d="M0 120c60-20 120-24 180-10s140 10 220-8v60H0z" fill="#3f6b4a"/>
+    <rect x="70" y="72" width="130" height="60" fill="#f6eedd"/>
+    <path d="M60 76l75-38 75 38z" fill="#b4532a"/>
+    <rect x="96" y="96" width="22" height="36" fill="#0e3433"/>
+    <rect x="140" y="92" width="38" height="20" fill="#14504c"/>
+    <path d="M0 160h400v100H0z" fill="#14504c"/>
+    <path d="M210 150h170v10H210z" fill="#7a4a24"/>
+    <path d="M222 160v40M262 160v40M302 160v40M342 160v40" stroke="#5a3418" stroke-width="6"/>
+    <path d="M250 196h90l-12 18h-66z" fill="#f6eedd"/>
+    <path d="M30 200c30-6 60 6 90 0s60-6 90 0" stroke="#5f8a86" stroke-width="3" fill="none"/>
+    <path d="M200 236c30-6 60 6 90 0s60-6 90 0" stroke="#5f8a86" stroke-width="3" fill="none"/>
+    <g transform="translate(18 92)"><path d="M6 68V20" stroke="#6b8f4e" stroke-width="3"/><rect x="1" y="2" width="10" height="26" rx="5" fill="#7a4a24"/></g>
+    <g transform="translate(36 100)"><path d="M6 60V20" stroke="#6b8f4e" stroke-width="3"/><rect x="1" y="4" width="10" height="24" rx="5" fill="#8a5428"/></g>
+   </svg>
+  </div>
+  <div class="rv">
+   <p class="eyebrow">Notre histoire</p>
+   <h2 class="title">Une adresse du chenal depuis 1940</h2>
+   <p>Le Restaurant Marc Beauchemin est établi depuis 1940 sur le chemin de l'Île-d'Embarras, à Sainte-Anne-de-Sorel, en plein cœur des îles de Sorel, le pays du Survenant. On y vient pour la gibelotte et les filets de perchaude rôtis, en auto comme en bateau : le grand stationnement et nos 150 pieds de quai vous attendent.</p>
+   <blockquote class="site">« Venez découvrir en toute simplicité, dans une atmosphère typique et chaleureuse. »</blockquote>
+   <div class="facts">
+    <div class="fact"><b>1940</b><span>Établi depuis</span></div>
+    <div class="fact"><b>150 pi</b><span>de quai sur le chenal</span></div>
+    <div class="fact"><b>14,99 $</b><span>Gibelotte, à partir de</span></div>
+    <div class="fact"><b>40 +</b><span>Groupes : ouverture sur demande</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="infos">
+ <div class="wrap">
+  <p class="eyebrow">Heures et accès</p>
+  <h2 class="title">Venez nous voir</h2>
+  <div class="cards">
+   <div class="card rv">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Heures</h3>
+    <ul>
+     <li><b>Saison 2026 :</b> du 15 mai à la fin septembre</li>
+     <li><b>En saison :</b> à partir de midi</li>
+     <li>Salle à manger sur <b>réservation seulement</b></li>
+     <li>Groupes de plus de 40 personnes : ouverture possible sur demande</li>
+     <li>Appelez-nous pour confirmer l'horaire de la semaine.</li>
+    </ul>
+   </div>
+   <div class="card rv">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Adresse</h3>
+    <p>124, chemin de l'Île-d'Embarras<br>Sainte-Anne-de-Sorel (Québec) J3P 5N3</p>
+    <p style="margin-top:10px">Accès par terre ou par eau : grand stationnement et 150 pieds de quai.</p>
+    <p style="margin-top:12px"><a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=124+chemin+de+l%27%C3%8Ele-d%27Embarras+Sainte-Anne-de-Sorel+QC+J3P+5N3" target="_blank" rel="noopener">Ouvrir dans Google Maps →</a></p>
+   </div>
+   <div class="card rv">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Réservations</h3>
+    <p>Réservez en tout temps :</p>
+    <a class="big" href="tel:+14507436023">450 743-6023</a>
+    <p>Courriel : <a class="lnk" href="mailto:nan040@hotmail.com">nan040@hotmail.com</a> (Nancy)</p>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="site">
+ <div class="wrap">
+  <b>Restaurant Marc Beauchemin</b>
+  <span>Gibelotte et filets de perchaude rôtis · depuis 1940</span>
+  <span>124, chemin de l'Île-d'Embarras, Sainte-Anne-de-Sorel (Québec) J3P 5N3 · <a href="tel:+14507436023">450 743-6023</a></span>
+ </div>
+</footer>
+
+<a class="callbar" href="tel:+14507436023"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Réserver · 450 743-6023</a>
+
+<script>
+(function(){
+ var bn=document.body.firstElementChild;function bh(){document.documentElement.style.setProperty('--bh',bn.offsetHeight+'px')}bh();window.addEventListener('resize',bh,{passive:true});
+ var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var intro=document.getElementById('intro');
+ var seen=false;try{seen=sessionStorage.getItem('mb-intro')==='1'}catch(e){}
+ function endIntro(){if(!intro)return;var el=intro;intro=null;el.classList.add('out');setTimeout(function(){el.remove()},460);try{sessionStorage.setItem('mb-intro','1')}catch(e){}}
+ if(reduce||seen){intro.remove();intro=null}else{intro.addEventListener('click',endIntro);setTimeout(endIntro,2200)}
+ var nav=document.getElementById('nav'),b=document.getElementById('burger');
+ b.addEventListener('click',function(){var o=nav.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ document.querySelectorAll('#links a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');b.setAttribute('aria-expanded','false')})});
+ var plates=document.getElementById('plates');
+ if('IntersectionObserver' in window&&!reduce){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(e.target===plates?'go':'on');io.unobserve(e.target)}})},{threshold:.18});
+  io.observe(plates);document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+ }else{plates.classList.add('go');document.querySelectorAll('.rv').forEach(function(el){el.classList.add('on')})}
+ if(!reduce){
+  var hero=document.querySelector('.hero'),tick=false;
+  function upd(){tick=false;var h=hero.offsetHeight;var y=Math.min(window.scrollY,h);hero.style.setProperty('--p',(y/h).toFixed(3))}
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});
+ }
+})();
+</script>
+<script data-goatcounter="https://brixel.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
