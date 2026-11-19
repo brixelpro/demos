@@ -305,7 +305,8 @@
  var nm=intro.querySelector('.nm'),txt=nm.getAttribute('data-txt');
  for(var i=0;i<txt.length;i++){var s=d.createElement('span');s.textContent=txt[i]===' '?'\u00a0':txt[i];s.style.animationDelay=(0.7+i*0.045)+'s';nm.appendChild(s)}
  intro.addEventListener('click',end);
- requestAnimationFrame(function(){requestAnimationFrame(function(){intro.classList.add('go')})});
+ function go(){intro&&intro.classList.add('go')}
+ requestAnimationFrame(function(){requestAnimationFrame(go)});setTimeout(go,60);
  setTimeout(end,2100);
 })();
 </script>
