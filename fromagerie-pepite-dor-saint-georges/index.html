@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Fromagerie la Pépite d'or · Saint-Georges de Beauce · Fromage en grains, Poutine d'Or et bar laitier</title>
+<meta name="description" content="Fromagerie la Pépite d'or, Saint-Georges (Beauce) : fromage en grains en 18 saveurs, Plateau Mine d'Or, Poutine d'Or à composer, bar laitier et produits du terroir. Ouvert tous les jours de 8 h à 20 h. 418-228-2184.">
+<meta property="og:title" content="Fromagerie la Pépite d'or · Une richesse à découvrir!">
+<meta property="og:description" content="Fromage en grains, Poutine d'Or, bar laitier et produits du terroir à Saint-Georges de Beauce.">
+<meta name="theme-color" content="#1f1a14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["FoodEstablishment","Store"],"name":"Fromagerie la Pépite d'or","slogan":"Une richesse à découvrir!","url":"https://www.fromageriepepitedor.com/","telephone":"+1-418-228-2184","faxNumber":"+1-418-228-2186","email":"fromage@fromageriepepitedor.com","foundingDate":"1995","address":{"@type":"PostalAddress","streetAddress":"17520, boulevard Lacroix","addressLocality":"Saint-Georges","addressRegion":"QC","postalCode":"G5Y 5B8","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"20:00"}],"sameAs":["https://www.facebook.com/LaFromagerieLaPepiteDOr"],"hasMenu":{"@type":"Menu","hasMenuSection":[{"@type":"MenuSection","name":"Plateau Mine d'Or","hasMenuItem":[{"@type":"MenuItem","name":"Plateau Mine d'Or 8 à 10 personnes (5 saveurs, 100 g chacune)","offers":{"@type":"Offer","price":"20.60","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Plateau Mine d'Or 12 à 20 personnes (7 saveurs, 150 g chacune)","offers":{"@type":"Offer","price":"32.98","priceCurrency":"CAD"}}]},{"@type":"MenuSection","name":"La Poutine d'Or","hasMenuItem":[{"@type":"MenuItem","name":"Poutine à composer (bébé, petit, grand)"}]}]}}
+</script>
+<style>
+:root{--or:#e7b53c;--or2:#f6d77a;--ocre:#b9801c;--nuit:#1f1a14;--nuit2:#2c241a;--creme:#fbf5e6;--lait:#fffdf7;--texte:#2a2218;--doux:#6f604b;--ligne:#ecdfc2;--rouge:#a8321f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--creme);color:var(--texte);font:400 17px/1.6 Outfit,system-ui,sans-serif;padding-top:32px}
+img,svg{max-width:100%;display:block}
+h1,h2,h3{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;line-height:1.08;overflow-wrap:anywhere}
+p,li{overflow-wrap:anywhere}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{background:var(--nuit);color:#fff;position:relative;z-index:50}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:42px;height:46px;flex:none}
+.brand b{font:400 18px/1 "Alfa Slab One",serif;color:var(--or);white-space:nowrap}
+.brand small{display:block;font:600 11px/1.3 Outfit;letter-spacing:.14em;text-transform:uppercase;color:#cbbd9f}
+.links{display:none;gap:24px;align-items:center}
+.links a{text-decoration:none;font-weight:600;font-size:15px}
+.links a:hover{color:var(--or)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:14px;font-weight:800;text-decoration:none;font-size:16px;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-or{background:linear-gradient(180deg,var(--or2),var(--or));color:var(--nuit);box-shadow:0 4px 0 var(--ocre)}
+.btn-ghost{border:2px solid var(--or);color:var(--or)}
+.burger{width:46px;height:46px;border:0;background:none;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--or);position:relative}
+.burger span:before,.burger span:after{content:"";position:absolute;left:0;width:24px;height:2px;background:var(--or)}
+.burger span:before{top:-7px}.burger span:after{top:7px}
+.drawer{display:none;background:var(--nuit2)}
+.drawer.on{display:block}
+.drawer a{display:block;padding:14px 20px;border-top:1px solid #3d3324;text-decoration:none;font-weight:600;color:#fff}
+/* HERO */
+.hero{position:relative;overflow:hidden;background:radial-gradient(90% 70% at 75% 25%,#4a3a20 0,#2c241a 45%,#1f1a14 100%);color:#fff}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.7;will-change:transform}
+.f svg{width:100%;height:100%}
+.f.back{opacity:.35;filter:blur(2px)}
+.fi{width:100%;height:100%;animation:bob var(--d,9s) ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(-12px) rotate(var(--r0,-10deg))}to{transform:translateY(12px) rotate(var(--r1,10deg))}}
+.par{transform:translate3d(0,calc(var(--sy,0) * var(--k,0.1) * 1px),0)}
+@media (max-width:1023px){.f{opacity:.4}.f.back{opacity:.22}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:30px;padding-top:48px;padding-bottom:70px}
+.hero-txt{min-width:0}
+.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(231,181,60,.5);color:var(--or2);font:600 12px/1 Outfit;letter-spacing:.16em;text-transform:uppercase;padding:9px 14px;border-radius:999px}
+.hero h1{font-size:clamp(40px,11vw,80px);margin:18px 0 14px;color:#fff}
+.hero h1 span{display:block;background:linear-gradient(180deg,#fff2c0 0,#f6d77a 40%,#c98e22 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:19px;color:#e2d6bc;max-width:36ch}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chips span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:7px 12px;border-radius:999px;font-size:14px;font-weight:600}
+.crest{justify-self:center;width:min(100%,400px)}
+.crest svg{width:100%;height:auto}
+.shine{animation:shine 3.2s ease-in-out infinite}
+@keyframes shine{0%,60%{transform:translateX(-260px)}100%{transform:translateX(260px)}}
+section{padding:70px 0}
+.eyebrow{font:800 12px/1 Outfit;letter-spacing:.2em;text-transform:uppercase;color:var(--ocre)}
+.h2{font-size:clamp(32px,7.5vw,54px);margin:10px 0 14px;color:var(--nuit)}
+.sub{color:var(--doux);max-width:60ch}
+.note{margin-top:14px;font-size:15px;background:var(--lait);border:1px dashed var(--ocre);border-radius:12px;padding:12px 14px;color:var(--doux)}
+/* POUTINE (wow) */
+.pout{background:var(--lait)}
+.pgrid{display:grid;gap:34px;margin-top:30px}
+.bowl{position:relative;width:min(100%,360px);justify-self:center;aspect-ratio:1/1}
+.bowl svg{position:absolute;inset:0;width:100%;height:100%}
+.layer{opacity:0;transform:translateY(-140px);transition:opacity .35s,transform .7s cubic-bezier(.3,1.5,.5,1)}
+.pgrid.go .layer{opacity:1;transform:none}
+.pgrid.go .l2{transition-delay:.45s}.pgrid.go .l3{transition-delay:.9s}.pgrid.go .l4{transition-delay:1.35s}
+.steps{display:grid;gap:14px;min-width:0}
+.st{background:#fff;border:1px solid var(--ligne);border-radius:18px;padding:18px 20px;min-width:0;opacity:0;transform:translateY(24px);transition:opacity .5s,transform .6s}
+.pgrid.go .st{opacity:1;transform:none}
+.pgrid.go .st:nth-child(2){transition-delay:.45s}.pgrid.go .st:nth-child(3){transition-delay:.9s}.pgrid.go .st:nth-child(4){transition-delay:1.35s}.pgrid.go .st:nth-child(5){transition-delay:1.8s}
+.st h3{font-size:20px;color:var(--nuit);display:flex;gap:10px;align-items:baseline}
+.st h3 i{font-style:normal;background:var(--or);color:var(--nuit);font:800 13px/1 Outfit;padding:5px 8px;border-radius:8px}
+.st p{margin-top:6px;color:var(--doux);font-size:16px}
+.gf{background:var(--nuit);color:#f2e7cc;border-radius:18px;padding:18px 20px}
+.gf b{color:var(--or)}
+/* MENU */
+.menu{background:linear-gradient(#f7ecd2,#f3e3c0)}
+.cats{display:grid;gap:20px;margin-top:30px}
+.cat{background:var(--lait);border-radius:22px;padding:24px 22px;border:1px solid var(--ligne);min-width:0;box-shadow:0 10px 30px -18px rgba(31,26,20,.4)}
+.cat h3{font-size:24px;color:var(--nuit);margin-bottom:10px}
+.cat ul{list-style:none}
+.cat li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dotted #d8c39a}
+.cat li:last-child{border-bottom:0}
+.cat li div{min-width:0}
+.cat li span{color:var(--doux);font-size:15px}
+.price{font-weight:800;color:var(--rouge);white-space:nowrap}
+.saveurs{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.saveurs em{font-style:normal;font-size:14px;background:#fff4d4;border:1px solid #efd99b;border-radius:999px;padding:3px 10px}
+.cat.gold{background:var(--nuit);color:#f2e7cc;border-color:#3d3324}
+.cat.gold h3{color:var(--or)}
+.cat.gold li{border-color:#4a3e2c}
+.cat.gold li span{color:#cbbd9f}
+.cat.gold .price{color:var(--or2)}
+/* HISTOIRE */
+.hist{background:var(--lait)}
+.tl{display:grid;gap:14px;margin-top:30px}
+.ev{display:grid;grid-template-columns:76px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--ligne);border-radius:16px;padding:16px;min-width:0}
+.ev b{font:400 24px/1 "Alfa Slab One",serif;color:var(--ocre)}
+.ev p{min-width:0}
+/* AVIS */
+.avis{background:var(--nuit);color:#f2e7cc}
+.avis .h2{color:#fff}
+.avis .sub{color:#cbbd9f}
+.scores{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.score{background:rgba(255,255,255,.06);border:1px solid rgba(231,181,60,.35);border-radius:18px;padding:16px 20px;min-width:0}
+.score b{font:400 36px/1 "Alfa Slab One",serif;color:var(--or)}
+.score small{display:block;font-size:13px;color:#cbbd9f;margin-top:6px}
+.grid-avis{display:grid;gap:16px;margin-top:30px}
+.rev{background:var(--lait);color:var(--texte);border-radius:20px;padding:22px;min-width:0;opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
+.rev.vu{opacity:1;transform:none}
+.stars{color:#d9a21b;letter-spacing:2px}
+.rev q{display:block;font:600 20px/1.4 Outfit;margin:8px 0 12px;quotes:"« " " »"}
+.rev cite{font-style:normal;font-weight:800;font-size:14px}
+.rev cite span{font-weight:400;color:var(--doux)}
+/* INFOS */
+.infos{display:grid;gap:18px;margin-top:30px}
+.card{background:#fff;border:1px solid var(--ligne);border-radius:20px;padding:22px;min-width:0}
+.card h3{font-size:22px;color:var(--nuit);margin-bottom:10px}
+.big{font:400 28px/1.1 "Alfa Slab One",serif;color:var(--rouge);text-decoration:none;display:inline-block;margin:4px 0}
+footer{background:#14110d;color:#b9ab8d;padding:34px 0 110px;font-size:14px}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:10px}
+.callbar a{flex:1;box-shadow:0 10px 24px -8px rgba(0,0,0,.5)}
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9000;background:#1f1a14;display:grid;place-items:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro svg{width:min(80vw,380px);height:auto}
+.nug{animation:drop .8s cubic-bezier(.5,0,.7,1.4) forwards;transform:translateY(-220px)}
+@keyframes drop{to{transform:translateY(0)}}
+.spark line{stroke:#f6d77a;stroke-width:4;stroke-linecap:round;opacity:0;animation:sp .6s ease-out forwards .8s}
+@keyframes sp{0%{opacity:1;transform:scale(.3)}100%{opacity:0;transform:scale(1.4)}}
+.spark{transform-origin:190px 120px}
+.spark line{transform-origin:190px 120px}
+.rise{opacity:0;transform:translateY(16px);animation:rise .5s ease forwards 1s}
+.rise2{animation-delay:1.2s}
+@keyframes rise{to{opacity:1;transform:none}}
+.skip{position:absolute;bottom:28px;left:0;right:0;text-align:center;font-size:13px;color:#8f826a}
+@media (min-width:760px){.cats{grid-template-columns:1fr 1fr}.grid-avis{grid-template-columns:1fr 1fr}.infos{grid-template-columns:1fr 1fr}.tl{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){
+ body{font-size:18px}
+ .links{display:flex}.burger,.drawer{display:none!important}
+ .hero .wrap{grid-template-columns:1.2fr .8fr;align-items:center;padding-top:84px;padding-bottom:110px}
+ .pgrid{grid-template-columns:.9fr 1.1fr;align-items:center}.bowl{width:min(100%,460px)}
+ .cats{grid-template-columns:repeat(3,1fr)}
+ .infos{grid-template-columns:repeat(3,1fr)}
+ .tl{grid-template-columns:repeat(3,1fr)}
+ .callbar{display:none}
+ footer{padding-bottom:34px}
+ section{padding:96px 0}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important}
+ .layer,.st,.rev{opacity:1!important;transform:none!important}.par{transform:none!important}
+}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Fromagerie la Pépite d'or — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 380 260">
+  <ellipse cx="190" cy="140" rx="120" ry="34" fill="#3a2f20"/>
+  <ellipse cx="190" cy="134" rx="104" ry="24" fill="#5a4a30"/>
+  <g class="nug"><path d="M172 118l14-14 22 4 8 16-12 12-24 0z" fill="#e7b53c"/><path d="M186 106l20 3-6 8z" fill="#fff2c0"/></g>
+  <g class="spark"><line x1="190" y1="90" x2="190" y2="70"/><line x1="230" y1="104" x2="248" y2="92"/><line x1="150" y1="104" x2="132" y2="92"/><line x1="240" y1="130" x2="262" y2="130"/><line x1="140" y1="130" x2="118" y2="130"/></g>
+  <text class="rise" x="190" y="208" text-anchor="middle" font-family="Alfa Slab One,Georgia,serif" font-size="34" fill="#e7b53c">La Pépite d'or</text>
+  <text class="rise rise2" x="190" y="236" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="600" font-size="13" letter-spacing="4" fill="#cbbd9f">UNE RICHESSE À DÉCOUVRIR!</text>
+ </svg>
+ <div class="skip">Touchez pour entrer</div>
+</div>
+
+<header class="nav">
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Fromagerie la Pépite d'or, accueil">
+   <svg viewBox="0 0 42 46" aria-hidden="true"><path d="M21 2l18 6v14c0 12-8 19-18 22C11 41 3 34 3 22V8z" fill="#e7b53c"/><path d="M21 6l14 5v11c0 10-6 15-14 18-8-3-14-8-14-18V11z" fill="#1f1a14"/><path d="M14 26l5-6 8 1 3 6-5 5h-8z" fill="#e7b53c"/></svg>
+   <span><b>La Pépite d'or</b><small>Fromagerie · Saint-Georges</small></span>
+  </a>
+  <nav class="links" aria-label="Navigation principale">
+   <a href="#poutine">Poutine d'Or</a><a href="#menu">Fromages et menu</a><a href="#histoire">Histoire</a><a href="#avis">Avis</a><a href="#infos">Nous trouver</a>
+   <a class="btn btn-or" href="tel:+14182282184">Appeler</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+ </div>
+ <div class="drawer" id="drawer"><a href="#poutine">Poutine d'Or</a><a href="#menu">Fromages et menu</a><a href="#histoire">Histoire</a><a href="#avis">Avis</a><a href="#infos">Nous trouver</a></div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <div class="float" aria-hidden="true">
+  <div class="f par" style="--k:-.16;left:4%;top:7%;width:58px;height:50px"><div class="fi" style="--d:8s"><svg viewBox="0 0 58 50"><path d="M6 30l12-20 24 2 12 18-14 16H16z" fill="#e7b53c"/><path d="M18 12l20 2-8 10z" fill="#fff2c0"/></svg></div></div>
+  <div class="f back par" style="--k:-.05;right:28%;top:4%;width:80px;height:70px"><div class="fi" style="--d:11s"><svg viewBox="0 0 58 50"><path d="M6 30l12-20 24 2 12 18-14 16H16z" fill="#c98e22"/></svg></div></div>
+  <div class="f par" style="--k:-.12;right:5%;top:10%;width:64px;height:64px"><div class="fi" style="--d:9s;--r0:20deg;--r1:-10deg"><svg viewBox="0 0 64 64"><path d="M10 22c4-10 14-12 22-10 10 2 20 6 22 16 2 12-8 22-20 24-14 2-26-6-26-16 0-6 1-10 2-14z" fill="#fff6dc"/><circle cx="24" cy="28" r="3" fill="#f1dda5"/><circle cx="40" cy="36" r="2.5" fill="#f1dda5"/></svg></div></div>
+  <div class="f par" style="--k:-.2;left:6%;bottom:12%;width:70px;height:96px"><div class="fi" style="--d:10s;--r0:-14deg;--r1:-4deg"><svg viewBox="0 0 70 96"><path d="M14 38h42L46 92H24z" fill="#c62e24"/><path d="M14 38h42" stroke="#fff" stroke-width="4"/><g fill="#f4c242"><rect x="18" y="6" width="7" height="36" rx="3" transform="rotate(-10 21 24)"/><rect x="28" y="2" width="7" height="40" rx="3"/><rect x="38" y="4" width="7" height="38" rx="3" transform="rotate(8 41 22)"/><rect x="46" y="10" width="7" height="32" rx="3" transform="rotate(16 49 26)"/></g></svg></div></div>
+  <div class="f back par" style="--k:-.06;left:34%;bottom:4%;width:90px;height:90px"><div class="fi" style="--d:12s"><svg viewBox="0 0 64 64"><path d="M10 22c4-10 14-12 22-10 10 2 20 6 22 16 2 12-8 22-20 24-14 2-26-6-26-16 0-6 1-10 2-14z" fill="#fff6dc"/></svg></div></div>
+  <div class="f par" style="--k:-.14;right:4%;bottom:8%;width:60px;height:100px"><div class="fi" style="--d:9s;--r0:6deg;--r1:-8deg"><svg viewBox="0 0 60 100"><circle cx="30" cy="28" r="20" fill="#fbe9ef"/><path d="M14 22q16-14 32 0" stroke="#e86a8a" stroke-width="6" fill="none"/><path d="M12 40h36L30 98z" fill="#d79a4b"/><path d="M18 50l20 18M42 52l-18 22" stroke="#b07330" stroke-width="2"/></svg></div></div>
+  <div class="f par" style="--k:-.1;right:38%;bottom:14%;width:46px;height:46px"><div class="fi" style="--d:13s;--r0:-30deg;--r1:24deg"><svg viewBox="0 0 50 50"><path d="M25 2l5 10 8-4-2 11 10-1-6 9 6 4-14 3 1 9-8-6-8 6 1-9-14-3 6-4-6-9 10 1-2-11 8 4z" fill="#c4581f"/></svg></div></div>
+  <div class="f back" style="left:46%;top:30%;width:160px;height:120px;opacity:.5"><svg viewBox="0 0 160 120"><g fill="#f6d77a"><circle cx="20" cy="30" r="2"/><circle cx="90" cy="12" r="3"/><circle cx="140" cy="60" r="2"/><circle cx="60" cy="100" r="2.5"/><circle cx="120" cy="104" r="2"/></g></svg></div>
+ </div>
+ <div class="wrap">
+  <div class="hero-txt">
+   <span class="tag">Saint-Georges de Beauce · depuis 1995</span>
+   <h1>Fromagerie<span>la Pépite d'or</span></h1>
+   <p class="lead">Une richesse à découvrir! Du fromage en grains frais en 18 saveurs, la Poutine d'Or à composer, un bar laitier et plus de 50 producteurs d'ici sous le même toit.</p>
+   <div class="cta"><a class="btn btn-or" href="tel:+14182282184">📞 Appeler · 418-228-2184</a><a class="btn btn-ghost" href="#menu">Voir le menu</a></div>
+   <div class="chips"><span>Ouvert 7 jours · 8 h à 20 h</span><span>Options sans gluten</span><span>Options sans lactose</span></div>
+  </div>
+  <div class="crest" aria-hidden="true">
+   <svg viewBox="0 0 400 440">
+    <defs><linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff2c0"/><stop offset=".45" stop-color="#e7b53c"/><stop offset="1" stop-color="#9a6a14"/></linearGradient><clipPath id="cp"><path d="M200 20l160 50v130c0 110-70 180-160 220C110 380 40 310 40 200V70z"/></clipPath></defs>
+    <path d="M200 20l160 50v130c0 110-70 180-160 220C110 380 40 310 40 200V70z" fill="url(#gd)"/>
+    <path d="M200 44l136 42v114c0 96-60 156-136 192C124 356 64 296 64 200V86z" fill="#1f1a14"/>
+    <text x="200" y="128" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="800" font-size="16" letter-spacing="6" fill="#cbbd9f">FROMAGERIE</text>
+    <path d="M150 230l34-44 56 6 22 40-30 34h-58z" fill="url(#gd)"/>
+    <path d="M186 192l50 6-20 24z" fill="#fff8dc"/>
+    <text x="200" y="320" text-anchor="middle" font-family="Alfa Slab One,Georgia,serif" font-size="34" fill="#e7b53c">Pépite d'or</text>
+    <text x="200" y="346" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="600" font-size="11" letter-spacing="1" textLength="140" lengthAdjust="spacingAndGlyphs" fill="#cbbd9f">SAINT-GEORGES · BEAUCE</text>
+    <g clip-path="url(#cp)"><rect class="shine" x="100" y="0" width="60" height="440" fill="#fff" opacity=".18" transform="skewX(-20)"/></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="pout" id="poutine">
+ <div class="wrap">
+  <p class="eyebrow">La Poutine d'Or · Créez la vôtre</p>
+  <h2 class="h2">Votre poutine, étage par étage</h2>
+  <p class="sub">Du fromage frais de la fromagerie, la sauce de votre choix et vos garnitures préférées. Selon la fromagerie, elle a été nommée « meilleure poutine en Beauce » par le Wall Street Journal.</p>
+  <div class="pgrid" id="pgrid">
+   <div class="bowl" aria-hidden="true">
+    <svg viewBox="0 0 360 360">
+     <ellipse cx="180" cy="320" rx="120" ry="14" fill="#000" opacity=".08"/>
+     <g class="layer l1"><g fill="#f4c242" stroke="#d99a1f" stroke-width="2"><rect x="110" y="150" width="18" height="90" rx="5" transform="rotate(-20 119 195)"/><rect x="140" y="140" width="18" height="100" rx="5" transform="rotate(-6 149 190)"/><rect x="172" y="136" width="18" height="104" rx="5"/><rect x="204" y="140" width="18" height="100" rx="5" transform="rotate(8 213 190)"/><rect x="232" y="150" width="18" height="90" rx="5" transform="rotate(20 241 195)"/></g></g>
+     <g class="layer l2"><g fill="#fff6dc" stroke="#e8d7a8" stroke-width="2"><path d="M120 196c4-10 18-12 26-6 6 6 2 18-8 20s-20-4-18-14z"/><path d="M158 186c4-10 18-12 26-6 6 6 2 18-8 20s-20-4-18-14z"/><path d="M200 190c4-10 18-12 26-6 6 6 2 18-8 20s-20-4-18-14z"/><path d="M226 204c4-10 18-12 26-6 6 6 2 18-8 20s-20-4-18-14z"/><path d="M140 210c4-10 18-12 26-6 6 6 2 18-8 20s-20-4-18-14z"/><path d="M180 206c4-10 18-12 26-6 6 6 2 18-8 20s-20-4-18-14z"/></g></g>
+     <g class="layer l3"><path d="M108 214c20-20 40 4 60-8s40 10 62-4 30 8 24 22c-40 10-110 10-146-10z" fill="#7a3d16" opacity=".92"/><path d="M150 210c10-6 20 2 30-2" stroke="#a65a26" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+     <g class="layer l4"><rect x="142" y="196" width="26" height="10" rx="4" fill="#c2412a"/><rect x="198" y="202" width="26" height="10" rx="4" fill="#c2412a" transform="rotate(18 211 207)"/><circle cx="182" cy="196" r="6" fill="#6b8e3a"/><circle cx="232" cy="212" r="5" fill="#6b8e3a"/><circle cx="130" cy="214" r="5" fill="#d9c08a"/></g>
+     <path d="M86 224h188c-6 60-44 92-94 92s-88-32-94-92z" fill="#c62e24"/>
+     <path d="M86 224h188" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+     <text x="180" y="276" text-anchor="middle" font-family="Alfa Slab One,Georgia,serif" font-size="22" fill="#fff">Poutine d'Or</text>
+    </svg>
+   </div>
+   <div class="steps">
+    <div class="st"><h3><i>1</i>Le format</h3><p>Bébé · Petit · Grand</p></div>
+    <div class="st"><h3><i>2</i>Le fromage (14 saveurs)</h3><p>Nature · B.B.Q. · Fines herbes · Souvlaki · 3 poivres · 5 poivres · Oignon · Légumes · Pesto · Twist nature · Twist B.B.Q. · Érable · Cheddar râpé · Sans lactose</p></div>
+    <div class="st"><h3><i>3</i>La sauce (7 choix)</h3><p>Brune · B.B.Q. · Spaghetti · Pépite d'Or (poivrée-épicée) · La P'tite Douceur (poivrée à l'érable) · Italienne sucrée · La sans gluten</p></div>
+    <div class="st"><h3><i>4</i>Les viandes (8 choix)</h3><p>Bœuf haché · Poulet popcorn · Bacon · Smoked meat · Saucisses bacon · Saucisses maison · Saucisses italiennes · Porc effiloché</p></div>
+    <div class="st"><h3><i>5</i>Les légumes (6 choix)</h3><p>Oignons · Champignons · Poivron · Piments forts · Pois verts · Échalottes</p></div>
+    <div class="gf"><b>Sans gluten et sans lactose :</b> la poutine peut être préparée sans gluten et sans lactose. Les frites sont cuites dans une friteuse réservée et les sauces sans gluten sont servies à part.</div>
+   </div>
+  </div>
+  <p class="note">Les prix de la Poutine d'Or sont affichés sur place : appelez au <a href="tel:+14182282184"><b>418-228-2184</b></a> pour les connaître. Aussi au 960, boulevard Dionne (Saint-Georges) et au 887, route Saint-Martin (Sainte-Marie).</p>
+ </div>
+</section>
+
+<section class="menu" id="menu">
+ <div class="wrap">
+  <p class="eyebrow">Fromages, bar laitier et boutique</p>
+  <h2 class="h2">Tout ce qui brille ici</h2>
+  <div class="cats">
+   <div class="cat gold"><h3>Plateau Mine d'Or</h3><p style="color:#cbbd9f;font-size:15px">Un plateau de pépites au choix parmi 18 saveurs, pour partager.</p><ul style="margin-top:8px">
+    <li><div><b>8 à 10 personnes</b><br><span>5 saveurs au choix, 100 g chacune</span></div><span class="price">20,60 $</span></li>
+    <li><div><b>12 à 20 personnes</b><br><span>7 saveurs au choix, 150 g chacune</span></div><span class="price">32,98 $</span></li>
+   </ul><p style="font-size:14px;margin-top:10px;color:#cbbd9f">Cueillette à la fromagerie. Pour un plateau le jour même, appelez au 418-228-2184, poste 1, pendant les heures d'ouverture.</p></div>
+   <div class="cat"><h3>Les pépites</h3><p style="color:var(--doux);font-size:15px">Fromage frais en grains, en petites bouchées.</p>
+    <div class="saveurs"><em>Régulier</em><em>Érable</em><em>B.B.Q.</em><em>Légumes</em><em>Souvlaki</em><em>3 poivres</em><em>5 poivres</em><em>Pesto</em><em>Fleur d'ail</em><em>Oignon</em><em>Ail</em><em>Épices à steak argousier</em><em>Fines herbes</em><em>Piquanté</em><em>Twist nature</em><em>Twist B.B.Q.</em><em>Twist 5 poivres</em><em>Twist légumes</em></div></div>
+   <div class="cat"><h3>Nos autres fromages</h3><ul>
+    <li><div><b>Le twist</b><br><span>Pâte filamentée : filaments fins, bâtonnets et tresses arméniennes</span></div></li>
+    <li><div><b>Les lingots</b><br><span>5 formats, de la brique traditionnelle de 275 g jusqu'à 2,5 kg</span></div></li>
+    <li><div><b>Le râpé</b><br><span>Cheddar et mozzarella râpés pour gratiner, plusieurs formats</span></div></li>
+    <li><div><b>En saumure</b><br><span>En pot carré ou en boule twist; se conserve plus d'un an</span></div></li>
+    <li><div><b>Le Grand Cahill</b><br><span>Pâte ferme au lait cru, affiné 180 jours (produit depuis 2000)</span></div></li>
+   </ul></div>
+   <div class="cat"><h3>Bar laitier</h3><ul>
+    <li><div><b>Cornets</b><br><span>Vanille · Sorbet framboise sans lactose · Marbré vanille-framboise</span></div></li>
+    <li><div><b>Trempage</b><br><span>Chocolat belge au lait ou noir</span></div></li>
+    <li><div><b>Sundae</b><br><span>Érable · Fraises · Caramel chaud · Chocolat chaud · Caramel à la fleur de sel · Cerise</span></div></li>
+    <li><div><b>Parfait · Souris · Potion magique</b></div></li>
+    <li><div><b>Slush Puppie</b><br><span>Une douzaine de saveurs, de la lime au melon d'eau en passant par la barbe à papa et la crème soda</span></div></li>
+    <li><div><b>Slush limonade Thelma</b></div></li>
+   </ul></div>
+   <div class="cat"><h3>Produits du terroir</h3><p style="color:var(--doux);font-size:15px">Plus de 50 producteurs, artisans et transformateurs de la région.</p>
+    <div class="saveurs" style="margin-top:10px"><em>Fromages</em><em>Produits de l'érable</em><em>Vins</em><em>Cidres</em><em>Pains artisanaux</em><em>Terrines</em><em>Tartinades</em><em>Épices</em><em>Pâtés</em><em>Créations artisanales</em></div></div>
+   <div class="cat"><h3>Paquets cadeaux</h3><p>Des paquets cadeaux composés de nos fromages et des produits d'ici, parfaits pour faire découvrir la Beauce.</p><p class="note">Informez-vous en boutique ou au 418-228-2184.</p></div>
+  </div>
+  <p class="note" style="margin-top:22px">Source : fromageriepepitedor.com (Poutine d'Or, Bar laitier, Fromages, Plateau Mine d'Or, Terroir). Prix sujets à changement : seuls les prix du Plateau Mine d'Or sont affichés en ligne.</p>
+ </div>
+</section>
+
+<section class="hist" id="histoire">
+ <div class="wrap">
+  <p class="eyebrow">Notre histoire</p>
+  <h2 class="h2">Une pépite trouvée en 1914</h2>
+  <p class="sub">Notre nom rend hommage à Eugène Caron, un garçon de 12 ans qui a trouvé une pépite d'or sur le site même de la fromagerie, en 1914.</p>
+  <div class="tl">
+   <div class="ev"><b>1995</b><p>Ouverture de la fromagerie à Saint-Georges de Beauce, avec le président Lionel Bisson et 8 autres actionnaires.</p></div>
+   <div class="ev"><b>2000</b><p>Première production du Grand Cahill, nommé en l'honneur de Michaël Cahill, bâtisseur de Saint-Georges.</p></div>
+   <div class="ev"><b>2007</b><p>Mention honorable de l'Assemblée nationale pour le prix Jarret implication sociale, au 19e Gala de l'entreprise beauceronne.</p></div>
+   <div class="ev"><b>2011</b><p>Agrandissement et rénovation de la boutique, dans un style plus rustique et accueillant.</p></div>
+   <div class="ev"><b>2013</b><p>Lancement de « La boîte à poutine ».</p></div>
+   <div class="ev"><b>2014</b><p>Nouvelle image de marque, prix du public Jarret Marché d'alimentation et restaurant agrandi.</p></div>
+   <div class="ev"><b>2016</b><p>La boîte à poutine devient La Poutine d'or, « Créez la vôtre », et une succursale ouvre à Saint-Georges-Ouest.</p></div>
+   <div class="ev"><b>2017</b><p>Ouverture d'un bar laitier dans l'ouest de la ville.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="avis" id="avis">
+ <div class="wrap">
+  <p class="eyebrow" style="color:var(--or)">Ce que nos clients disent</p>
+  <h2 class="h2">Des centaines de clients conquis</h2>
+  <p class="sub">Des notes publiques et de vrais commentaires laissés en ligne.</p>
+  <div class="scores">
+   <div class="score"><b>4,7 ★</b><small>Google · 861 avis (selon Wanderlog)</small></div>
+   <div class="score"><b>9,1/10</b><small>Tourisme Chaudière-Appalaches · « Excellent »</small></div>
+   <div class="score"><b>4,2 ★</b><small>Tripadvisor · 26 avis (selon Wanderlog)</small></div>
+  </div>
+  <div class="grid-avis">
+   <figure class="rev"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><q>Excellente poutines, choix de fromages et de sauces, wow!</q><cite>Véronique <span>· Avis restoenligne.com (La Poutine d'Or Saint-Georges)</span></cite></figure>
+   <figure class="rev"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><q>Fromagerie qui vaut le détour à St-Georges. Tellement de choix impossible de ne pas vo avoir une poutine à son goût!</q><cite>Audrey Rodrigue <span>· Avis restoenligne.com (La Poutine d'Or Saint-Georges)</span></cite></figure>
+   <figure class="rev"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><q>Choix varié 5/5 Fromage super et très a abondant . Quantité de sauce parfaite.</q><cite>Cédric Giguère <span>· Avis restoenligne.com (La Poutine d'Or Saint-Georges)</span></cite></figure>
+   <figure class="rev"><div class="stars" aria-label="4,7 sur 5">★★★★★ <small style="font-size:.7em;opacity:.8">4,7/5</small></div><q>Dans le cadre de la Semaine de l'Érable en Beauce, je suis venu essayer leur poutine spéciale avec sauce petite douceur […] Absolument parfaite 👌😄</q><cite>Jonathan V. Bolduc <span>· Avis restoenligne.com (La Poutine d'Or Saint-Georges)</span></cite></figure>
+  </div>
+ </div>
+</section>
+
+<section id="infos">
+ <div class="wrap">
+  <p class="eyebrow">Nous trouver</p>
+  <h2 class="h2">Venez chercher votre pépite</h2>
+  <div class="infos">
+   <div class="card"><h3>Heures</h3><p><b>Tous les jours</b><br>de 8 h à 20 h</p><p class="note">Pour un plateau le jour même, appelez au poste 1 pendant les heures d'ouverture.</p></div>
+   <div class="card"><h3>Adresse</h3><p>Fromagerie la Pépite d'or<br>17520, boulevard Lacroix<br>Saint-Georges (QC) G5Y 5B8</p><p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&amp;query=Fromagerie+la+P%C3%A9pite+d%27or+17520+boulevard+Lacroix+Saint-Georges" target="_blank" rel="noopener"><b>Ouvrir dans Google Maps →</b></a></p></div>
+   <div class="card"><h3>Contact</h3><a class="big" href="tel:+14182282184">418-228-2184</a><p>Télécopieur : 418-228-2186</p><p><a href="mailto:fromage@fromageriepepitedor.com">fromage@fromageriepepitedor.com</a></p><p style="margin-top:6px"><a href="https://www.facebook.com/LaFromagerieLaPepiteDOr" target="_blank" rel="noopener">Suivez-nous sur Facebook</a></p></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap"><p><b style="color:#e7b53c">Fromagerie la Pépite d'or</b> · 17520, boulevard Lacroix, Saint-Georges (QC) G5Y 5B8 · 418-228-2184</p><p style="margin-top:6px">Une richesse à découvrir!</p></div></footer>
+
+<div class="callbar"><a class="btn btn-or" href="tel:+14182282184">📞 Appeler</a><a class="btn" style="background:#1f1a14;color:#e7b53c" href="#poutine">Poutine d'Or</a></div>
+
+<script>
+(function(){
+ var intro=document.getElementById('intro');
+ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var seen=false;try{seen=sessionStorage.getItem('pepiteIntro')==='1'}catch(e){}
+ function end(){if(!intro||!intro.parentNode)return;intro.classList.add('out');setTimeout(function(){intro&&intro.parentNode&&intro.parentNode.removeChild(intro)},500);try{sessionStorage.setItem('pepiteIntro','1')}catch(e){}}
+ if(reduce||seen){intro.parentNode.removeChild(intro)}else{intro.addEventListener('click',end);setTimeout(end,2000)}
+ var b=document.getElementById('burger'),d=document.getElementById('drawer');
+ b.addEventListener('click',function(){var on=d.classList.toggle('on');b.setAttribute('aria-expanded',on)});
+ d.addEventListener('click',function(e){if(e.target.tagName==='A'){d.classList.remove('on');b.setAttribute('aria-expanded','false')}});
+ if(!reduce){var root=document.documentElement,tick=false;
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(function(){var y=window.scrollY;if(y<1200)root.style.setProperty('--sy',y);tick=false})}},{passive:true});}
+ var pg=document.getElementById('pgrid');
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(e.target===pg?'go':'vu');io.unobserve(e.target)}})},{threshold:.2});
+  io.observe(pg);document.querySelectorAll('.rev').forEach(function(r,i){r.style.transitionDelay=(i%2)*100+'ms';io.observe(r)});
+ }else{pg.classList.add('go');document.querySelectorAll('.rev').forEach(function(r){r.classList.add('vu')})}
+})();
+</script>
+</body>
+</html>
