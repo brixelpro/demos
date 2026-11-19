@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Service d'arbres 4 saisons — Émondage, abattage et élagage | Drummondville, St-Hyacinthe, Montréal</title>
+<meta name="description" content="Service d'arbres 4 saisons : émondage, abattage, élagage, haubanage, essouchage et déchiquetage. Résidentiel, commercial et institutionnel à Drummondville, St-Hyacinthe, Montréal et Rive-Sud. 819-397-2224.">
+<meta property="og:title" content="Service d'arbres 4 saisons">
+<meta property="og:description" content="Nous ne COUPONS pas dans le service, nous COUPONS vos arbres. Émondage, abattage et élagage — Drummondville, St-Hyacinthe, Montréal et Rive-Sud.">
+<meta name="theme-color" content="#16351f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"LocalBusiness",
+ "additionalType":"https://schema.org/HomeAndConstructionBusiness",
+ "name":"Service d'arbres 4 saisons",
+ "description":"Émondage, abattage et élagage d'arbres pour clients résidentiels, commerciaux et institutionnels.",
+ "telephone":"+1-819-397-2224",
+ "email":"arbre4saisons-mtl@hotmail.com",
+ "address":{"@type":"PostalAddress","streetAddress":"4903Z, boul. Allard, local A","addressLocality":"Drummondville","addressRegion":"QC","postalCode":"J2A 2S2","addressCountry":"CA"},
+ "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}],
+ "areaServed":["Drummondville","Saint-Hyacinthe","Longueuil","Montréal","Rive-Sud","Nicolet"],
+ "contactPoint":[
+  {"@type":"ContactPoint","telephone":"+1-819-397-2224","areaServed":"Drummondville","contactType":"customer service","name":"Charles Blanchet"},
+  {"@type":"ContactPoint","telephone":"+1-866-397-2224","contactType":"customer service","contactOption":"TollFree"},
+  {"@type":"ContactPoint","telephone":"+1-514-445-6787","areaServed":"Montréal et Rive-Sud","contactType":"customer service","name":"David Blanchet","email":"arbre4saisons-mtl@hotmail.com"},
+  {"@type":"ContactPoint","telephone":"+1-450-888-8690","areaServed":"Saint-Hyacinthe","contactType":"customer service"}
+ ],
+ "knowsLanguage":["fr","en"],
+ "slogan":"Nous ne COUPONS pas dans le service, nous COUPONS vos arbres"
+}
+</script>
+<style>
+:root{
+ --forest:#16351f;--forest2:#1f4a2b;--moss:#3c7a3a;--leaf:#7fb44a;--bark:#6b4428;--bark2:#3e2716;
+ --cream:#f7f2e7;--paper:#fffdf8;--ink:#1c2419;--muted:#5a6555;--autumn:#e07a2a;--gold:#f2b544;--snow:#dfeef6;--bloom:#f2a7b8;
+ --r:18px;--maxw:1200px;
+}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;padding-top:32px;background:var(--cream);color:var(--ink);font:400 16px/1.6 Inter,system-ui,sans-serif;overflow-wrap:break-word}
+h1,h2,h3{font-family:"Bricolage Grotesque",Inter,sans-serif;line-height:1.08;margin:0;letter-spacing:-.01em}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:52px;padding:0 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;transition:transform .2s ease}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-main{background:var(--gold);color:var(--bark2)}
+.btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+.eyebrow{display:inline-block;font:600 .78rem/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--moss)}
+
+/* ===== Nav ===== */
+.nav{position:absolute;top:32px;left:0;right:0;z-index:40}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand svg{width:42px;height:42px;flex:none}
+.brand b{font:800 1.08rem/1 "Bricolage Grotesque",sans-serif;display:block}
+.brand small{font-size:.72rem;opacity:.8;letter-spacing:.06em}
+.links{display:none;gap:26px;align-items:center}
+.links a{color:#fff;text-decoration:none;font-weight:500;font-size:.95rem;opacity:.9}
+.links a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.links .btn{min-height:44px;padding:0 18px}
+.burger{width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.18);color:#fff;display:grid;place-items:center;cursor:pointer}
+.burger svg{width:24px;height:24px}
+.panel{position:fixed;top:32px;left:0;right:0;z-index:60;background:var(--forest);padding:84px 24px 28px;transform:translateY(-110%);transition:transform .35s ease;visibility:hidden}
+.panel.open{transform:none;visibility:visible}
+.panel a{display:block;color:#fff;text-decoration:none;font:700 1.5rem/1 "Bricolage Grotesque",sans-serif;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.panel .close{position:absolute;top:18px;right:20px}
+
+/* ===== Héros ===== */
+.hero{position:relative;background:radial-gradient(120% 80% at 80% 10%,#2c6236 0%,var(--forest) 55%,#0f2616 100%);color:#fff;padding:118px 0 70px;overflow:hidden;isolation:isolate}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--cream);clip-path:polygon(0 60%,8% 40%,18% 62%,30% 30%,42% 58%,55% 34%,68% 60%,80% 28%,90% 54%,100% 36%,100% 100%,0 100%);z-index:2}
+.hero .wrap{position:relative;z-index:3;display:grid;gap:34px}
+.hero h1{font-size:clamp(2.35rem,10.5vw,4.6rem);font-weight:800}
+.hero h1 .s{display:block;color:var(--gold)}
+.hero .lead{font-size:1.08rem;max-width:34ch;opacity:.92;margin:16px 0 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.tags li{font-size:.8rem;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero-art{display:none}
+.seasons-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:22px}
+.seasons-card p{margin:0;font-size:.95rem;opacity:.9}
+
+/* feuilles flottantes */
+.floaters{position:absolute;inset:0;z-index:1;pointer-events:none}
+.fl{position:absolute;will-change:transform;transform:translate3d(0,calc(var(--py,0px)*var(--k,.2)),0)}
+.fl>svg{display:block;width:var(--s,40px);height:var(--s,40px);animation:drift var(--d,14s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+.fl.far{opacity:.35;filter:blur(2px)}
+.fl.mid{opacity:.6}
+.fl.near{opacity:.85}
+@keyframes drift{0%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(14px,22px) rotate(var(--rot,40deg))}100%{transform:translate(-10px,40px) rotate(calc(var(--rot,40deg)*-0.6))}}
+
+/* ===== Sections ===== */
+section{padding:72px 0}
+.sec-head{max-width:640px;margin-bottom:34px}
+.sec-head h2{font-size:clamp(1.9rem,7vw,3rem);font-weight:800;margin-top:10px;color:var(--forest)}
+.sec-head p{color:var(--muted);margin:12px 0 0}
+
+/* services */
+.svc-grid{display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}
+.svc{background:var(--paper);border-radius:var(--r);padding:20px;display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;align-items:start;border:1px solid #e8e0cd;opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.svc.in{opacity:1;transform:none}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:#e9f1df;display:grid;place-items:center}
+.svc .ic svg{width:30px;height:30px}
+.svc h3{font-size:1.18rem;color:var(--forest)}
+.svc p{margin:4px 0 0;color:var(--muted);font-size:.94rem}
+.also{margin-top:26px;background:var(--forest);color:#fff;border-radius:var(--r);padding:22px}
+.also h3{font-size:1.1rem;margin-bottom:10px;color:var(--gold)}
+.also ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.also li{font-size:.86rem;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1)}
+.clients{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+.clients span{display:inline-flex;align-items:center;gap:8px;font-weight:600;background:#fff;border:1px solid #e3dac4;border-radius:999px;padding:8px 16px;color:var(--bark)}
+.clients svg{width:18px;height:18px}
+
+/* moment wow : la coupe */
+.cut{background:var(--bark2);color:#f8eedd;text-align:center;overflow:hidden;position:relative}
+.cut .rings{position:absolute;width:520px;height:520px;left:50%;top:50%;margin:-260px 0 0 -260px;opacity:.13;transform:rotate(calc(var(--sy,0)*.06deg))}
+.cut .wrap{position:relative}
+.cut .q1{font:600 clamp(1.25rem,5vw,1.9rem)/1.25 "Bricolage Grotesque",sans-serif;opacity:.85}
+.cut .q2{font:800 clamp(2.1rem,10vw,5rem)/1.05 "Bricolage Grotesque",sans-serif;margin-top:10px}
+.word{position:relative;display:inline-block;color:var(--gold)}
+.word .ghost{visibility:hidden}
+.word .h{position:absolute;inset:0;transition:transform 1s cubic-bezier(.2,.8,.2,1) .55s}
+.word .top{clip-path:polygon(0 0,100% 0,100% 44%,0 62%)}
+.word .bot{clip-path:polygon(0 62%,100% 44%,100% 100%,0 100%)}
+.word .saw{position:absolute;left:-6%;right:-6%;top:53%;height:4px;margin-top:-2px;background:linear-gradient(90deg,transparent,#fff 15%,#fff 85%,transparent);transform:rotate(-7deg) scaleX(0);transform-origin:left center;transition:transform .55s ease-in,opacity .5s ease 1.2s;border-radius:4px}
+.cut.go .word .saw{transform:rotate(-7deg) scaleX(1);opacity:0}
+.cut.go .word .top{transform:translate(2.5%,-5%) rotate(-1.5deg)}
+.cut.go .word .bot{transform:translate(-.5%,2%)}
+.chips{position:absolute;inset:0;pointer-events:none}
+.chips i{position:absolute;left:50%;top:60%;width:8px;height:5px;background:#d9a86c;border-radius:2px;opacity:0;transform:translate(0,0)}
+.cut.go .chips i{animation:chip 1.2s ease-out .8s forwards}
+@keyframes chip{0%{opacity:1;transform:translate(0,0) rotate(0)}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(320deg)}}
+.cut .sub{margin:22px auto 0;max-width:46ch;opacity:.8}
+
+/* succursales */
+.branches{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.br{background:var(--paper);border:1px solid #e8e0cd;border-radius:var(--r);padding:24px;position:relative;overflow:hidden}
+.br::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--c,var(--moss))}
+.br h3{font-size:1.35rem;color:var(--forest)}
+.br .who{color:var(--muted);font-size:.92rem;margin:4px 0 14px}
+.br a.tel{display:inline-flex;align-items:center;gap:8px;font:800 1.35rem/1 "Bricolage Grotesque",sans-serif;color:var(--bark);text-decoration:none;padding:8px 0}
+.br a.tel svg{width:22px;height:22px}
+.br ul{list-style:none;padding:0;margin:10px 0 0;font-size:.92rem;color:var(--muted)}
+.br li{padding:3px 0}
+.br li a{color:var(--forest);font-weight:600}
+.towns{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px}
+.towns span{font-size:.85rem;padding:6px 12px;border-radius:999px;background:#ece5d3;color:var(--bark2)}
+
+/* à propos */
+.about{background:var(--paper)}
+.about .grid{display:grid;gap:28px;grid-template-columns:minmax(0,1fr);align-items:center}
+.about p{color:#33402f;margin:0 0 14px}
+.about .roles{display:grid;gap:10px}
+.role{display:flex;gap:12px;align-items:flex-start;background:var(--cream);border-radius:14px;padding:14px 16px}
+.role b{color:var(--forest);display:block}
+.role span{color:var(--muted);font-size:.9rem}
+.role svg{width:28px;height:28px;flex:none;margin-top:2px}
+
+/* infos */
+.info .grid{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.card{background:var(--paper);border:1px solid #e8e0cd;border-radius:var(--r);padding:24px}
+.card h3{font-size:1.25rem;color:var(--forest);margin-bottom:12px}
+.hours{width:100%;border-collapse:collapse;font-size:.96rem}
+.hours td{padding:8px 0;border-bottom:1px dashed #ddd3bd}
+.hours td:last-child{text-align:right;font-weight:600}
+.card .note{font-size:.84rem;color:var(--muted);margin:12px 0 0}
+.card a.lnk{color:var(--forest);font-weight:600}
+
+/* contact */
+.contact{background:var(--forest);color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact h2{font-size:clamp(2rem,8vw,3.4rem);font-weight:800}
+.contact p{opacity:.85;max-width:44ch;margin:14px auto 26px}
+.contact .cta{justify-content:center}
+footer{background:#0e2214;color:rgba(255,255,255,.7);font-size:.85rem;padding:30px 0 100px;text-align:center}
+footer a{color:#fff}
+
+/* barre d'appel cellulaire */
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:flex;gap:8px}
+.callbar a{flex:1;min-height:54px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.callbar .c1{background:var(--gold);color:var(--bark2)}
+.callbar .c2{background:var(--forest);color:#fff;flex:0 0 auto;padding:0 18px}
+.callbar svg{width:20px;height:20px}
+
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:radial-gradient(circle at 50% 45%,#24502e,#0e2214 70%);display:grid;place-items:center;cursor:pointer;transition:opacity .5s ease}
+#intro.out{opacity:0}
+#intro .stage{width:min(300px,70vw);text-align:center;color:#fff}
+#intro svg{width:100%;height:auto;overflow:visible}
+#intro .trunk{stroke-dasharray:260;stroke-dashoffset:260;animation:draw .7s ease-out forwards}
+#intro .crown{transform-origin:100px 92px;transform:scale(0);opacity:0}
+#intro .c1{animation:pop .45s cubic-bezier(.3,1.5,.5,1) .55s forwards,fade .3s ease 1.05s forwards}
+#intro .c2{animation:pop .01s 1s forwards,fadein .3s ease 1s both,fade .3s ease 1.35s forwards}
+#intro .c3{animation:pop .01s 1.3s forwards,fadein .3s ease 1.3s both,fade .3s ease 1.65s forwards}
+#intro .c4{animation:pop .01s 1.6s forwards,fadein .3s ease 1.6s both}
+#intro .lbl{font:800 1.9rem/1 "Bricolage Grotesque",sans-serif;margin-top:14px;opacity:0;transform:translateY(12px);animation:up .5s ease 1.2s forwards}
+#intro .lbl small{display:block;font:600 .72rem/1.4 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:8px}
+#intro .seas{display:flex;justify-content:center;gap:14px;margin-top:12px;font:600 .7rem/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+#intro .seas span{opacity:0;animation:up .3s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{transform:scale(1);opacity:1}}
+@keyframes fade{to{opacity:0}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* ===== Ordinateur ===== */
+@media (max-width:600px){.nav{top:44px}.hero{padding-top:132px}.panel{top:44px}}
+@media (min-width:760px){
+ .svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .branches{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .info .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (min-width:1024px){
+ .links{display:flex}
+ .burger,.callbar{display:none}
+ footer{padding-bottom:30px}
+ .hero{padding:150px 0 120px}
+ .hero .wrap{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:60px}
+ .hero .lead{font-size:1.2rem}
+ .hero-art{display:block}
+ .svc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ section{padding:104px 0}
+ .about .grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px}
+ .cut{padding:130px 0}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .svc{opacity:1;transform:none}
+ .fl{transform:none!important}
+ .cut .rings{transform:none}
+ #intro{display:none}
+}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Service d'arbres 4 saisons — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="erable" viewBox="0 0 100 100"><path d="M50 4l7 17 11-6-3 20 15-8-3 12 16 3-12 12 5 6-22 2 2 14-14-9-2 27h-2l-2-27-14 9 2-14-22-2 5-6L5 42l16-3-3-12 15 8-3-20 11 6z" fill="currentColor"/><path d="M50 30v66" stroke="rgba(0,0,0,.18)" stroke-width="2" fill="none"/></symbol>
+  <symbol id="chene" viewBox="0 0 100 100"><path d="M50 96V78c-8 4-14 0-12-6-8 2-12-5-7-10-8-2-8-10-1-12-6-5-3-12 4-11-4-7 2-13 8-10 0-8 5-12 8-14 3 2 8 6 8 14 6-3 12 3 8 10 7-1 10 6 4 11 7 2 7 10-1 12 5 5 1 12-7 10 2 6-4 10-12 6v18z" fill="currentColor"/><path d="M50 26v68" stroke="rgba(0,0,0,.18)" stroke-width="2" fill="none"/></symbol>
+  <symbol id="flocon" viewBox="0 0 100 100"><g stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"><path d="M50 8v84M14 29l72 42M14 71l72-42"/><path d="M50 22l-8-8M50 22l8-8M50 78l-8 8M50 78l8 8M26 36l-11 3M26 36l-3-11M74 64l11-3M74 64l3 11M26 64l-3 11M26 64l-11-3M74 36l3-11M74 36l11 3"/></g></symbol>
+  <symbol id="fleur" viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="25" rx="15" ry="21"/><ellipse cx="50" cy="25" rx="15" ry="21" transform="rotate(72 50 50)"/><ellipse cx="50" cy="25" rx="15" ry="21" transform="rotate(144 50 50)"/><ellipse cx="50" cy="25" rx="15" ry="21" transform="rotate(216 50 50)"/><ellipse cx="50" cy="25" rx="15" ry="21" transform="rotate(288 50 50)"/></g><circle cx="50" cy="50" r="9" fill="#f6d36b"/></symbol>
+  <symbol id="copeau" viewBox="0 0 100 100"><path d="M18 60c10-30 46-44 70-34-14 4-22 14-26 26-14-2-30 2-44 8z" fill="currentColor"/><path d="M30 54c14-10 30-16 48-18" stroke="rgba(0,0,0,.2)" stroke-width="3" fill="none"/></symbol>
+  <symbol id="tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></symbol>
+  <symbol id="logo" viewBox="0 0 64 64"><circle cx="32" cy="32" r="31" fill="#f2b544"/><path d="M32 52V34" stroke="#3e2716" stroke-width="5" stroke-linecap="round"/><path d="M32 40l-7-6M32 37l6-5" stroke="#3e2716" stroke-width="3" stroke-linecap="round"/><path d="M32 8c-4 0-7 3-8 6-5 0-9 4-8 9-4 2-5 8-1 11 2 3 6 4 9 3h16c3 1 7 0 9-3 4-3 3-9-1-11 1-5-3-9-8-9-1-3-4-6-8-6z" fill="#1f4a2b"/><text x="32" y="30" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="800" font-size="17" fill="#f2b544">4</text></symbol>
+ </defs>
+</svg>
+
+<div id="intro" aria-hidden="true">
+ <div class="stage">
+  <svg viewBox="0 0 200 190">
+   <path class="trunk" d="M100 186V112M100 140l-22-20M100 128l18-16" stroke="#8a5a34" stroke-width="10" stroke-linecap="round" fill="none"/>
+   <g class="crown c1"><path d="M100 22c-14 0-24 9-26 19-17 0-28 13-24 28-12 6-14 24-2 33 7 9 18 11 28 8h48c10 3 21 1 28-8 12-9 10-27-2-33 4-15-7-28-24-28-2-10-12-19-26-19z" fill="#4f9a3f"/></g>
+   <g class="crown c2"><path d="M100 22c-14 0-24 9-26 19-17 0-28 13-24 28-12 6-14 24-2 33 7 9 18 11 28 8h48c10 3 21 1 28-8 12-9 10-27-2-33 4-15-7-28-24-28-2-10-12-19-26-19z" fill="#e07a2a"/></g>
+   <g class="crown c3"><path d="M100 22c-14 0-24 9-26 19-17 0-28 13-24 28-12 6-14 24-2 33 7 9 18 11 28 8h48c10 3 21 1 28-8 12-9 10-27-2-33 4-15-7-28-24-28-2-10-12-19-26-19z" fill="#e8f2f7"/></g>
+   <g class="crown c4"><path d="M100 22c-14 0-24 9-26 19-17 0-28 13-24 28-12 6-14 24-2 33 7 9 18 11 28 8h48c10 3 21 1 28-8 12-9 10-27-2-33 4-15-7-28-24-28-2-10-12-19-26-19z" fill="#2e6b35"/><text x="100" y="86" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="800" font-size="58" fill="#f2b544">4</text></g>
+  </svg>
+  <div class="seas"><span style="animation-delay:.6s">Été</span><span style="animation-delay:1s">Automne</span><span style="animation-delay:1.3s">Hiver</span><span style="animation-delay:1.6s">Printemps</span></div>
+  <div class="lbl">Service d'arbres<small>4 saisons</small></div>
+ </div>
+</div>
+
+<header class="nav">
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Service d'arbres 4 saisons, accueil"><svg aria-hidden="true"><use href="#logo"/></svg><span><b>Arbres 4 saisons</b><small>Émondage · Abattage · Élagage</small></span></a>
+  <nav class="links" aria-label="Navigation principale">
+   <a href="#services">Services</a><a href="#succursales">Succursales</a><a href="#apropos">À propos</a><a href="#infos">Heures</a>
+   <a class="btn btn-main" href="tel:+18193972224"><svg><use href="#tel"/></svg>819-397-2224</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+ </div>
+</header>
+<div class="panel" id="panel">
+ <button class="burger close" id="closeP" aria-label="Fermer le menu"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+ <a href="#services">Services</a><a href="#succursales">Succursales</a><a href="#apropos">À propos</a><a href="#infos">Heures et adresse</a><a href="tel:+18193972224">Appeler 819-397-2224</a>
+</div>
+
+<main id="top">
+<section class="hero">
+ <div class="floaters" id="floaters" aria-hidden="true">
+  <div class="fl far"  style="left:6%;top:14%;--k:.10"><svg style="--s:34px;--d:16s;color:#7fb44a;--rot:60deg"><use href="#erable"/></svg></div>
+  <div class="fl near" style="left:78%;top:12%;--k:.35"><svg style="--s:56px;--d:12s;color:#e07a2a;--rot:-50deg"><use href="#erable"/></svg></div>
+  <div class="fl mid"  style="left:62%;top:46%;--k:.22"><svg style="--s:30px;--d:18s;color:#e8f2f7;--rot:90deg"><use href="#flocon"/></svg></div>
+  <div class="fl far"  style="left:40%;top:6%;--k:.08"><svg style="--s:26px;--d:20s;color:#f2a7b8;--rot:70deg;--dl:-4s"><use href="#fleur"/></svg></div>
+  <div class="fl mid"  style="left:86%;top:62%;--k:.28"><svg style="--s:42px;--d:15s;color:#c9902f;--rot:45deg;--dl:-6s"><use href="#chene"/></svg></div>
+  <div class="fl near" style="left:4%;top:70%;--k:.4"><svg style="--s:40px;--d:13s;color:#d9a86c;--rot:-80deg;--dl:-2s"><use href="#copeau"/></svg></div>
+  <div class="fl far"  style="left:24%;top:88%;--k:.12"><svg style="--s:24px;--d:17s;color:#e8f2f7;--rot:120deg;--dl:-8s"><use href="#flocon"/></svg></div>
+  <div class="fl mid"  style="left:50%;top:80%;--k:.25"><svg style="--s:32px;--d:14s;color:#f2a7b8;--rot:-60deg;--dl:-3s"><use href="#fleur"/></svg></div>
+  <div class="fl near dk" style="left:30%;top:30%;--k:.32"><svg style="--s:46px;--d:19s;color:#4f9a3f;--rot:50deg;--dl:-5s"><use href="#chene"/></svg></div>
+  <div class="fl far dk" style="left:94%;top:34%;--k:.14"><svg style="--s:28px;--d:16s;color:#f2b544;--rot:-70deg;--dl:-7s"><use href="#erable"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="eyebrow" style="color:var(--gold)">Drummondville · St-Hyacinthe · Montréal et Rive-Sud</span>
+   <h1 style="margin-top:14px">Service d'arbres <span class="s">4 saisons</span></h1>
+   <p class="lead">Une solution simple à vos problèmes d'émondage et d'abattage. Résidentiel, commercial et institutionnel.</p>
+   <ul class="tags"><li>Émondage</li><li>Abattage</li><li>Élagage</li><li>Haubanage</li><li>Essouchage</li><li>Service d'urgence</li></ul>
+   <div class="cta">
+    <a class="btn btn-main" href="tel:+18193972224"><svg><use href="#tel"/></svg>Appeler 819-397-2224</a>
+    <a class="btn btn-ghost" href="#services">Nos services</a>
+   </div>
+  </div>
+  <div class="hero-art">
+   <svg viewBox="0 0 400 400" aria-hidden="true" style="width:100%;height:auto">
+    <circle cx="200" cy="160" r="150" fill="rgba(255,255,255,.04)"/>
+    <path d="M200 392V250M200 312l-40-34M200 290l34-28" stroke="#7a4e2c" stroke-width="20" stroke-linecap="round" fill="none"/>
+    <g transform="translate(200 160)">
+     <path d="M0 0V-124A124 124 0 0 0 -124 0Z" fill="#f2a7b8"/>
+     <path d="M0 0V-124A124 124 0 0 1 124 0Z" fill="#4f9a3f"/>
+     <path d="M0 0H124A124 124 0 0 1 0 124Z" fill="#e07a2a"/>
+     <path d="M0 0H-124A124 124 0 0 0 0 124Z" fill="#e8f2f7"/>
+     <g opacity=".22" fill="#16351f"><use href="#erable" x="-96" y="-92" width="34" height="34"/><use href="#chene" x="56" y="-96" width="34" height="34"/><use href="#erable" x="60" y="52" width="34" height="34"/><use href="#flocon" x="-94" y="52" width="34" height="34"/></g>
+     <circle r="52" fill="#16351f" stroke="#f7f2e7" stroke-width="5"/>
+     <text y="24" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="800" font-size="68" fill="#f2b544">4</text>
+    </g>
+    <g font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#fff" letter-spacing="2" opacity=".85"><text x="58" y="34">PRINTEMPS</text><text x="300" y="34">ÉTÉ</text><text x="38" y="304">HIVER</text><text x="290" y="304">AUTOMNE</text></g>
+   </svg>
+   <div class="seasons-card"><p>Trois succursales, une seule entreprise pour vos travaux d'émondage, d'abattage et d'élagage d'arbres.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Nos services</span><h2>Tout pour vos arbres, de la racine à la cime</h2><p>Arboriculture, élagage, abattage, chirurgie, haubanage et déchiquetage. Travaux au sol ou en camion nacelle.</p></div>
+  <div class="clients">
+   <span><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z" fill="none" stroke="currentColor" stroke-width="2"/></svg>Résidentiel</span>
+   <span><svg viewBox="0 0 24 24"><path d="M4 20V6h10v14M14 10h6v10M7 9h4M7 13h4M7 17h4" fill="none" stroke="currentColor" stroke-width="2"/></svg>Commercial</span>
+   <span><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5M5 9v9M10 9v9M14 9v9M19 9v9M3 20h18" fill="none" stroke="currentColor" stroke-width="2"/></svg>Institutionnel</span>
+  </div>
+  <div class="svc-grid">
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><path d="M16 29V14M16 20l-6-5M16 17l5-4" stroke="#6b4428" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="16" cy="10" r="7" fill="#3c7a3a"/><path d="M24 6l4-3" stroke="#e07a2a" stroke-width="2.5" stroke-linecap="round"/></svg></div><div><h3>Émondage</h3><p>Taille d'arbres et d'arbustes, coupe de branches et de branchages, retrait du bois mort.</p></div></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><path d="M8 28h16" stroke="#6b4428" stroke-width="2.5" stroke-linecap="round"/><path d="M13 28V12h6v16" fill="#8a5a34"/><path d="M10 10l12 6" stroke="#e07a2a" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="7" r="5" fill="#3c7a3a" opacity=".5"/></svg></div><div><h3>Abattage</h3><p>Abattage d'arbres, y compris l'abattage à la grue.</p></div></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><path d="M6 24c6-2 10-8 12-16M18 8l6-3M14 16l-5-4" stroke="#6b4428" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="25" cy="5" r="3" fill="#3c7a3a"/><circle cx="8" cy="11" r="3" fill="#3c7a3a"/></svg></div><div><h3>Élagage</h3><p>Élagage et taille de branches pour garder vos arbres sains et dégagés.</p></div></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><path d="M10 29V6M22 29V6" stroke="#6b4428" stroke-width="3" stroke-linecap="round"/><path d="M10 12l12 4M10 18l12-4" stroke="#e07a2a" stroke-width="2" stroke-dasharray="3 2"/></svg></div><div><h3>Haubanage et câblage</h3><p>Haubanage et câblage d'arbres.</p></div></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><path d="M16 4l11 22H5z" fill="none" stroke="#e07a2a" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 12v7M16 22v1" stroke="#6b4428" stroke-width="2.5" stroke-linecap="round"/></svg></div><div><h3>Inspection des arbres à risques</h3><p>Inspection d'arbres à risques et chirurgie d'arbres.</p></div></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><ellipse cx="16" cy="20" rx="11" ry="6" fill="#c9902f"/><ellipse cx="16" cy="18" rx="11" ry="6" fill="#e8c38b"/><ellipse cx="16" cy="18" rx="6" ry="3" fill="none" stroke="#c9902f" stroke-width="1.5"/><path d="M10 28l2-4M22 28l-2-4" stroke="#6b4428" stroke-width="2.5" stroke-linecap="round"/></svg></div><div><h3>Essouchage</h3><p>Essouchage et enlèvement de racines d'arbre.</p></div></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><rect x="4" y="14" width="16" height="10" rx="2" fill="#3c7a3a"/><path d="M20 18h6l2 6h-8z" fill="#6b4428"/><circle cx="9" cy="26" r="3" fill="#1c2419"/><circle cx="23" cy="26" r="3" fill="#1c2419"/><path d="M6 14l4-8h5" stroke="#e07a2a" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg></div><div><h3>Déchiquetage</h3><p>Déchiquetage des branches sur place avec déchiqueteuse.</p></div></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><rect x="3" y="22" width="18" height="6" rx="2" fill="#3c7a3a"/><path d="M12 22L22 8" stroke="#6b4428" stroke-width="3" stroke-linecap="round"/><rect x="20" y="4" width="9" height="6" rx="1.5" fill="#e07a2a"/></svg></div><div><h3>Travaux en nacelle</h3><p>Camion nacelle pour atteindre les cimes en toute sécurité.</p></div></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 32 32"><path d="M18 3L8 18h7l-2 11 11-16h-7z" fill="#e07a2a"/></svg></div><div><h3>Service d'urgence</h3><p>Un arbre tombé ou dangereux? Appelez-nous.</p></div></article>
+  </div>
+  <div class="also"><h3>Aussi</h3><ul><li>Débroussaillage</li><li>Arboriculture</li><li>Émondage d'arbustes</li><li>Coupe de bois mort</li><li>Conseils de plantation après un abattage</li><li>Service en français et en anglais</li></ul></div>
+ </div>
+</section>
+
+<section class="cut" id="coupe">
+ <svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#f2b544" stroke-width="2"><circle cx="100" cy="100" r="95"/><circle cx="102" cy="98" r="82"/><circle cx="99" cy="101" r="70"/><circle cx="101" cy="99" r="57"/><circle cx="100" cy="102" r="45"/><circle cx="98" cy="100" r="33"/><circle cx="100" cy="99" r="21"/><circle cx="100" cy="100" r="9"/><path d="M100 100L170 40"/></g></svg>
+ <div class="chips" aria-hidden="true"><i style="--x:-140px;--y:-90px"></i><i style="--x:120px;--y:-120px"></i><i style="--x:-90px;--y:110px"></i><i style="--x:160px;--y:70px"></i><i style="--x:-180px;--y:20px"></i><i style="--x:60px;--y:-160px"></i><i style="--x:30px;--y:140px"></i><i style="--x:-40px;--y:-150px"></i></div>
+ <div class="wrap">
+  <p class="q1">Nous ne COUPONS pas dans le service,</p>
+  <p class="q2">nous <span class="word" aria-label="COUPONS"><span class="ghost">COUPONS</span><span class="h top" aria-hidden="true">COUPONS</span><span class="h bot" aria-hidden="true">COUPONS</span><span class="saw" aria-hidden="true"></span></span> vos arbres.</p>
+  <p class="sub">Émondage, abattage et élagage à Drummondville, St-Hyacinthe, Longueuil, Montréal et sur la Rive-Sud.</p>
+ </div>
+</section>
+
+<section id="succursales">
+ <div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Trois succursales</span><h2>Un numéro près de chez vous</h2><p>Trois succursales, une seule entreprise pour vos travaux d'émondage, d'abattage et d'élagage d'arbres.</p></div>
+  <div class="branches">
+   <div class="br" style="--c:var(--moss)">
+    <h3>Drummondville</h3><p class="who">Charles Blanchet</p>
+    <a class="tel" href="tel:+18193972224"><svg><use href="#tel"/></svg>819-397-2224</a>
+    <ul><li>Sans frais : <a href="tel:+18663972224">1-866-397-2224</a></li><li>Télécopieur : 819-397-2139</li></ul>
+   </div>
+   <div class="br" style="--c:var(--autumn)">
+    <h3>Montréal et Rive-Sud</h3><p class="who">David Blanchet</p>
+    <a class="tel" href="tel:+15144456787"><svg><use href="#tel"/></svg>514-445-6787</a>
+    <ul><li>Courriel : <a href="mailto:arbre4saisons-mtl@hotmail.com">arbre4saisons-mtl@hotmail.com</a></li></ul>
+   </div>
+   <div class="br" style="--c:var(--bloom)">
+    <h3>St-Hyacinthe</h3><p class="who">Succursale de St-Hyacinthe</p>
+    <a class="tel" href="tel:+14508888690"><svg><use href="#tel"/></svg>450-888-8690</a>
+    <ul><li>Sans frais : <a href="tel:+18663972224">1-866-397-2224</a></li></ul>
+   </div>
+  </div>
+  <div class="towns" aria-label="Secteurs desservis"><span>Drummondville</span><span>Saint-Cyrille-de-Wendover</span><span>Nicolet</span><span>Sainte-Hélène</span><span>Saint-Léonard-d'Aston</span><span>St-Hyacinthe</span><span>Beloeil</span><span>Sainte-Julie</span><span>Boucherville</span><span>Saint-Bruno</span><span>Longueuil</span><span>Saint-Hubert</span><span>Brossard</span><span>La Prairie</span><span>Montréal</span><span>Verdun</span><span>LaSalle</span><span>Saint-Léonard</span></div>
+ </div>
+</section>
+
+<section class="about" id="apropos">
+ <div class="wrap grid">
+  <div>
+   <span class="eyebrow">À propos</span>
+   <h2 style="font-size:clamp(1.9rem,7vw,3rem);font-weight:800;color:var(--forest);margin:10px 0 18px">Paysagiste, horticulteur ou arboriculteur?</h2>
+   <p>Ce sont trois métiers différents. Le paysagiste aménage votre terrain, l'horticulteur s'occupe des plantes et des fleurs. Nous, on est des arboriculteurs-élagueurs : notre spécialité, ce sont les arbres.</p>
+   <p>Émondage, abattage, élagage, haubanage ou inspection d'un arbre qui vous inquiète : on s'en occupe, pour les particuliers comme pour les commerces et les institutions. Et après un abattage, on peut vous conseiller sur ce que vous pourriez planter à la place.</p>
+   <a class="btn btn-main" href="tel:+18193972224" style="margin-top:8px"><svg><use href="#tel"/></svg>Parlez-nous de vos arbres</a>
+  </div>
+  <div class="roles">
+   <div class="role"><svg viewBox="0 0 32 32"><path d="M6 26c4-10 12-16 20-18-2 8-8 16-18 20" fill="#7fb44a"/></svg><div><b>Paysagiste</b><span>Aménagement du terrain</span></div></div>
+   <div class="role"><svg viewBox="0 0 32 32"><use href="#fleur" color="#f2a7b8"/></svg><div><b>Horticulteur</b><span>Plantes, fleurs et jardins</span></div></div>
+   <div class="role" style="background:var(--forest);color:#fff"><svg viewBox="0 0 64 64"><use href="#logo"/></svg><div><b style="color:var(--gold)">Arboriculteur-élagueur</b><span style="color:rgba(255,255,255,.8)">Les arbres : c'est notre métier</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="info" id="infos">
+ <div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Infos pratiques</span><h2>Heures et adresse</h2></div>
+  <div class="grid">
+   <div class="card"><h3>Heures</h3>
+    <table class="hours"><tr><td>Lundi au vendredi</td><td>8 h à 18 h</td></tr><tr><td>Samedi et dimanche</td><td>Appelez-nous</td></tr></table>
+    <p class="note">Horaire des Fêtes : appelez-nous pour confirmer.</p>
+   </div>
+   <div class="card"><h3>Adresse</h3>
+    <p style="margin:0">4903Z, boul. Allard, local A<br>Drummondville (Québec) J2A 2S2</p>
+    <p style="margin:14px 0 0"><a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=4903+boulevard+Allard+Drummondville+QC+J2A+2S2" target="_blank" rel="noopener">Voir sur Google Maps →</a></p>
+   </div>
+   <div class="card"><h3>Nous joindre</h3>
+    <p style="margin:0 0 6px"><a class="lnk" href="tel:+18193972224">819-397-2224</a> · Drummondville</p>
+    <p style="margin:0 0 6px"><a class="lnk" href="tel:+15144456787">514-445-6787</a> · Montréal et Rive-Sud</p>
+    <p style="margin:0 0 6px"><a class="lnk" href="tel:+14508888690">450-888-8690</a> · St-Hyacinthe</p>
+    <p style="margin:0 0 6px">Sans frais : <a class="lnk" href="tel:+18663972224">1-866-397-2224</a></p>
+    <p style="margin:0"><a class="lnk" href="mailto:arbre4saisons-mtl@hotmail.com">arbre4saisons-mtl@hotmail.com</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="contact">
+ <div class="wrap">
+  <h2>Un arbre vous inquiète?</h2>
+  <p>Émondage, abattage, élagage ou urgence : appelez la succursale la plus proche, on s'en occupe.</p>
+  <div class="cta">
+   <a class="btn btn-main" href="tel:+18193972224"><svg><use href="#tel"/></svg>819-397-2224</a>
+   <a class="btn btn-ghost" href="tel:+15144456787">514-445-6787</a>
+   <a class="btn btn-ghost" href="tel:+14508888690">450-888-8690</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <p style="margin:0 0 6px"><strong style="color:#fff">Service d'arbres 4 saisons</strong> — Émondage, abattage et élagage</p>
+  <p style="margin:0">Drummondville · St-Hyacinthe · Montréal et Rive-Sud · <a href="https://www.facebook.com/Arbre4saisons" target="_blank" rel="noopener">Facebook</a></p>
+ </div>
+</footer>
+
+<div class="callbar">
+ <a class="c1" href="tel:+18193972224"><svg><use href="#tel"/></svg>Appeler</a>
+ <a class="c2" href="#succursales">Succursales</a>
+</div>
+
+<script>
+(function(){
+ var intro=document.getElementById('intro');
+ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var seen=false;try{seen=sessionStorage.getItem('a4s_intro')==='1'}catch(e){}
+ function endIntro(){if(!intro||intro.dataset.done)return;intro.dataset.done='1';intro.classList.add('out');setTimeout(function(){if(intro&&intro.parentNode)intro.parentNode.removeChild(intro);intro=null},500);try{sessionStorage.setItem('a4s_intro','1')}catch(e){}}
+ if(reduce||seen){if(intro)intro.parentNode.removeChild(intro);intro=null}
+ else{intro.addEventListener('click',endIntro);intro.addEventListener('touchstart',endIntro,{passive:true});setTimeout(endIntro,2200)}
+
+ var b=document.getElementById('burger'),p=document.getElementById('panel'),c=document.getElementById('closeP');
+ function tog(o){p.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false')}
+ b.addEventListener('click',function(){tog(true)});c.addEventListener('click',function(){tog(false)});
+ p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){tog(false)})});
+
+ if(!reduce){
+  var root=document.documentElement,ticking=false;
+  function upd(){ticking=false;var y=window.scrollY||0;if(y<1400)root.style.setProperty('--py',(-y)+'px');root.style.setProperty('--sy',Math.round(y));}
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd)}},{passive:true});
+ }
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(e.target.classList.contains('cut')?'go':'in');io.unobserve(e.target)}})},{threshold:.2});
+  document.querySelectorAll('.svc,.cut').forEach(function(el,i){if(el.classList.contains('svc'))el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+ }else{document.querySelectorAll('.svc').forEach(function(el){el.classList.add('in')});document.querySelector('.cut').classList.add('go')}
+})();
+</script>
+<script data-goatcounter="https://brixel.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
