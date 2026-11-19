@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vert Vert Café Bistro — Saint-Jérôme & Saint-Sauveur</title>
+<meta name="description" content="Café bistro santé à Saint-Jérôme et Saint-Sauveur : déjeuners, sandwichs, nachos, pizzas, salades, smoothies, bières et vins.">
+<style>
+  :root{
+    --vert:#2f7d3b; --vert-fonce:#1d4f26; --lime:#8cc63f; --creme:#f7f5ef; --encre:#1b1f1c; --gris:#5c645e;
+    --rayon:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--encre);background:var(--creme);line-height:1.55}
+  a{color:inherit}
+  .bandeau-demo{background:var(--encre);color:#fff;font-size:13px;text-align:center;padding:8px 14px}
+  .bandeau-demo a{color:var(--lime);font-weight:600}
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(247,245,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e4e1d8}
+  .nav-in{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+  .logo{font-weight:800;font-size:22px;letter-spacing:-.5px;color:var(--vert);text-decoration:none}
+  .logo span{color:var(--lime)}
+  .logo small{display:block;font-size:10px;letter-spacing:3px;color:var(--encre);font-weight:700;margin-top:-4px}
+  .nav-liens{display:flex;gap:22px;font-size:15px;font-weight:600}
+  .nav-liens a{text-decoration:none;opacity:.8}
+  .nav-liens a:hover{opacity:1;color:var(--vert)}
+  .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-plein{background:var(--vert);color:#fff}
+  .btn-contour{border-color:#fff;color:#fff}
+  .btn-contour-vert{border-color:var(--vert);color:var(--vert)}
+  .hero{position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 85% -10%,var(--lime) 0%,transparent 55%),linear-gradient(135deg,var(--vert-fonce),var(--vert));color:#fff}
+  .hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.07)}
+  .hero-in{max-width:1100px;margin:auto;padding:90px 20px 100px;position:relative;z-index:1}
+  .etiquette{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:22px}
+  .hero h1{font-size:clamp(38px,6vw,68px);line-height:1.04;letter-spacing:-1.5px;max-width:720px}
+  .hero p{font-size:clamp(17px,2vw,20px);opacity:.92;max-width:560px;margin:20px 0 32px}
+  .hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+  .points{max-width:1100px;margin:-46px auto 0;padding:0 20px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .point{background:#fff;border-radius:var(--rayon);padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+  .point b{display:block;font-size:17px;margin-bottom:4px}
+  .point span{color:var(--gris);font-size:14px}
+  section{max-width:1100px;margin:auto;padding:80px 20px 0}
+  h2{font-size:clamp(30px,4vw,42px);letter-spacing:-1px;margin-bottom:10px}
+  .sous{color:var(--gris);margin-bottom:30px;max-width:620px}
+  .onglets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+  .onglet{border:none;background:#fff;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;color:var(--encre);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .onglet.actif{background:var(--vert);color:#fff}
+  .menu-grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+  .plat{background:#fff;border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;gap:16px}
+  .plat h3{font-size:16px}
+  .plat p{font-size:13.5px;color:var(--gris);margin-top:3px}
+  .prix{font-weight:800;color:var(--vert);white-space:nowrap}
+  .cache{display:none}
+  .note-menu{font-size:13px;color:var(--gris);margin-top:16px}
+  .vedette{margin-top:80px;background:var(--encre);color:#fff;border-radius:28px;padding:50px 36px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+  .vedette h2{color:#fff}
+  .vedette p{opacity:.85}
+  .vedette .gros{font-size:64px;font-weight:800;color:var(--lime);line-height:1}
+  .adresses{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .adresse{background:#fff;border-radius:var(--rayon);padding:28px}
+  .adresse h3{font-size:22px;margin-bottom:6px}
+  .adresse p{color:var(--gris);margin-bottom:18px}
+  .adresse .actions{display:flex;gap:10px;flex-wrap:wrap}
+  .valeurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+  .valeur{border-left:4px solid var(--lime);padding:6px 0 6px 16px}
+  .valeur b{display:block;margin-bottom:2px}
+  .valeur span{color:var(--gris);font-size:14.5px}
+  .infolettre{margin:80px auto 0;max-width:1100px;padding:0 20px}
+  .infolettre-in{background:var(--lime);border-radius:28px;padding:40px 32px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+  .infolettre h2{font-size:28px;margin:0}
+  .infolettre form{display:flex;gap:8px;flex-wrap:wrap}
+  .infolettre input{border:none;border-radius:999px;padding:13px 18px;font-size:15px;min-width:240px}
+  footer{margin-top:80px;background:var(--vert-fonce);color:#cfe3d2;padding:40px 20px;font-size:14px}
+  .foot-in{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+  .barre-mobile{display:none}
+  @media (max-width:760px){
+    .nav-liens{display:none}
+    .vedette{grid-template-columns:1fr;padding:36px 24px}
+    .barre-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid #e4e1d8;padding:10px;gap:10px}
+    .barre-mobile a{flex:1;justify-content:center}
+    footer{padding-bottom:90px}
+  }
+</style>
+</head>
+<body>
+
+<div class="bandeau-demo">Maquette proposée par <a href="https://brixelpro.com">Brixel Pro</a> — aperçu du nouveau site de Vert Vert Café Bistro</div>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="#" class="logo">vert <span>vert</span><small>CAFÉ BISTRO</small></a>
+    <nav class="nav-liens">
+      <a href="#menu">Menu</a>
+      <a href="#vendredi">Événements</a>
+      <a href="#adresses">Nos adresses</a>
+      <a href="#mission">Notre mission</a>
+    </nav>
+    <a href="#adresses" class="btn btn-plein">Nous trouver</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-in">
+    <span class="etiquette">Saint-Jérôme · Saint-Sauveur</span>
+    <h1>Frais, santé et fait avec soin.</h1>
+    <p>Déjeuners, dîners express, smoothies, bières et vins. À déguster sur place, sur la terrasse ou pour emporter.</p>
+    <div class="actions">
+      <a href="#menu" class="btn btn-plein" style="background:#fff;color:var(--vert)">Voir le menu</a>
+      <a href="tel:4505652339" class="btn btn-contour">Appeler St-Jérôme</a>
+    </div>
+  </div>
+</div>
+
+<div class="points">
+  <div class="point"><b>Sur place ou pour emporter</b><span>Service chaleureux et rapide</span></div>
+  <div class="point"><b>Terrasse extérieure</b><span>Musique live les vendredis</span></div>
+  <div class="point"><b>Produits locaux</b><span>On encourage les commerçants d'ici</span></div>
+</div>
+
+<section id="menu">
+  <h2>Notre menu</h2>
+  <p class="sous">Lisible sur cellulaire, sans zoomer. Choisis une catégorie.</p>
+  <div class="onglets" role="tablist">
+    <button class="onglet actif" data-cat="sandwichs">Sandwichs</button>
+    <button class="onglet" data-cat="nachos">Nachos</button>
+    <button class="onglet" data-cat="pizzas">Pizzas</button>
+    <button class="onglet" data-cat="salades">Salades</button>
+    <button class="onglet" data-cat="entrees">Entrées</button>
+  </div>
+
+  <div class="menu-grille" data-cat="sandwichs">
+    <div class="plat"><div><h3>Jambon</h3><p>Jambon, tomate, fromage suisse, laitue, mayonnaise</p></div><span class="prix">15,50 $</span></div>
+    <div class="plat"><div><h3>Dinde</h3><p>Dinde, poivrons rouges, fromage suisse, laitue, mayonnaise</p></div><span class="prix">15,50 $</span></div>
+    <div class="plat"><div><h3>Merguez</h3><p>Saucisse merguez, fromage suisse, laitue, dijonnaise</p></div><span class="prix">16,50 $</span></div>
+    <div class="plat"><div><h3>Chèvre</h3><p>Fromage de chèvre, cœurs d'artichaut, tomates séchées, laitue</p></div><span class="prix">16,50 $</span></div>
+    <div class="plat"><div><h3>Thon et tomates séchées</h3><p>Thon, tomates séchées, fromage suisse, laitue, mayonnaise</p></div><span class="prix">17,50 $</span></div>
+    <div class="plat"><div><h3>Philly steak</h3><p>Steak, oignons, laitue, fromage suisse, sauce cajun</p></div><span class="prix">17,50 $</span></div>
+  </div>
+
+  <div class="menu-grille cache" data-cat="nachos">
+    <div class="plat"><div><h3>Nachos Vert Vert</h3><p>Mozzarella, cheddar, poivrons rouges, poivrons verts, olives noires, salsa et crème sure</p></div><span class="prix">18,95 $</span></div>
+    <div class="plat"><div><h3>Nachos festival</h3><p>Mozzarella, cheddar, champignons, olives, poivrons, cœurs d'artichaut, tomates séchées</p></div><span class="prix">19,95 $</span></div>
+    <div class="plat"><div><h3>Nachos faim de loup</h3><p>Mozzarella, cheddar, saucisse merguez, poivrons rouges, oignons rouges, basilic</p></div><span class="prix">21,50 $</span></div>
+    <div class="plat"><div><h3>Nachos au poulet Tex Mex</h3><p>Mozzarella, cheddar, poivrons rouges, piments forts, oignons rouges, poulet grillé</p></div><span class="prix">21,50 $</span></div>
+  </div>
+
+  <div class="menu-grille cache" data-cat="pizzas">
+    <div class="plat"><div><h3>Marguerite</h3><p>Sauce tomate, mozzarella, basilic</p></div><span class="prix">16,50 $</span></div>
+    <div class="plat"><div><h3>Trois fromages</h3><p>Sauce tomate, mozzarella, suisse, parmesan</p></div><span class="prix">16,95 $</span></div>
+    <div class="plat"><div><h3>Végétarienne</h3><p>Sauce tomate, mozzarella, champignons, poivrons verts, olives noires</p></div><span class="prix">16,95 $</span></div>
+    <div class="plat"><div><h3>Pesto</h3><p>Pesto, mozzarella, tomates, parmesan</p></div><span class="prix">16,50 $</span></div>
+    <div class="plat"><div><h3>Faim de loup</h3><p>Sauce tomate, mozzarella, poivrons rouges, oignons rouges, saucisse merguez, basilic</p></div><span class="prix">18,50 $</span></div>
+  </div>
+
+  <div class="menu-grille cache" data-cat="salades">
+    <div class="plat"><div><h3>Vert vert</h3><p>Concombres, oignons rouges, olives noires, tomates, vinaigrette maison, croûtons</p></div><span class="prix">15,95 $</span></div>
+    <div class="plat"><div><h3>Chèvre et légumes grillés</h3><p>Fromage de chèvre, champignons, poivrons rouges, oignons rouges, croûtons</p></div><span class="prix">18,95 $</span></div>
+    <div class="plat"><div><h3>Poulet grillé</h3><p>Oignons rouges, olives noires, poivrons rouges, tomates, poulet</p></div><span class="prix">18,95 $</span></div>
+    <div class="plat"><div><h3>César au poulet grillé</h3><p>Laitue romaine, croûtons, parmesan, poulet grillé</p></div><span class="prix">19,95 $</span></div>
+    <div class="plat"><div><h3>Saumon fumé</h3><p>Oignons rouges, saumon fumé, câpres, citron, vinaigrette maison</p></div><span class="prix">20,95 $</span></div>
+  </div>
+
+  <div class="menu-grille cache" data-cat="entrees">
+    <div class="plat"><div><h3>Potage</h3><p>Potage du jour</p></div><span class="prix">7,00 $</span></div>
+    <div class="plat"><div><h3>Bruschettas classique</h3><p>Sur pain ciabatta</p></div><span class="prix">16,50 $</span></div>
+    <div class="plat"><div><h3>Chèvre chaud</h3><p>Fromage de chèvre, cœurs d'artichaut, tomates séchées sur pain ciabatta</p></div><span class="prix">17,50 $</span></div>
+    <div class="plat"><div><h3>Pesto et brie</h3><p>Pesto, champignons, olives noires, tomates séchées et fromage brie</p></div><span class="prix">17,50 $</span></div>
+    <div class="plat"><div><h3>Assiette saumon fumé</h3><p>Saumon fumé, oignons rouges, câpres, citron et pain</p></div><span class="prix">19,50 $</span></div>
+  </div>
+  <p class="note-menu">Aperçu d'une partie du menu. Le menu complet serait intégré au site final.</p>
+</section>
+
+<section id="vendredi">
+  <div class="vedette">
+    <div>
+      <h2>Les vendredis, c'est musique live.</h2>
+      <p>Sur notre terrasse extérieure de Saint-Jérôme, dès 18 h 30. Un verre, une bouchée, de la bonne musique.</p>
+    </div>
+    <div><div class="gros">18 h 30</div><p>Tous les vendredis · VV St-Jérôme</p></div>
+  </div>
+</section>
+
+<section id="adresses">
+  <h2>Nos 2 adresses</h2>
+  <p class="sous">Tout près de la piste du P'tit Train du Nord.</p>
+  <div class="adresses">
+    <div class="adresse">
+      <h3>Saint-Jérôme</h3>
+      <p>800, place de la Gare<br>Saint-Jérôme (Québec) J7Z 7H9</p>
+      <div class="actions">
+        <a class="btn btn-plein" href="tel:4505652339">450 565-2339</a>
+        <a class="btn btn-contour-vert" href="https://maps.google.com/?q=800+Place+de+la+Gare+Saint-J%C3%A9r%C3%B4me">Itinéraire</a>
+      </div>
+    </div>
+    <div class="adresse">
+      <h3>Saint-Sauveur</h3>
+      <p>700, chemin Jean-Adam<br>Saint-Sauveur (Québec) J0R 1R3</p>
+      <div class="actions">
+        <a class="btn btn-plein" href="tel:4502278000">450 227-8000</a>
+        <a class="btn btn-contour-vert" href="https://maps.google.com/?q=700+chemin+Jean-Adam+Saint-Sauveur">Itinéraire</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mission">
+  <h2>On s'engage</h2>
+  <p class="sous">Des aliments de qualité, frais et santé, servis avec le sourire.</p>
+  <div class="valeurs">
+    <div class="valeur"><b>Frais et santé</b><span>Des aliments de qualité, préparés sur place.</span></div>
+    <div class="valeur"><b>Service chaleureux</b><span>Rapide, sans perdre le sourire.</span></div>
+    <div class="valeur"><b>Achat local</b><span>On encourage les commerçants d'ici.</span></div>
+    <div class="valeur"><b>Environnement</b><span>On fait attention à notre impact.</span></div>
+  </div>
+</section>
+
+<div class="infolettre">
+  <div class="infolettre-in">
+    <h2>Les promos avant tout le monde</h2>
+    <form onsubmit="event.preventDefault();this.innerHTML='<b>Merci ! (démo)</b>'">
+      <input type="email" placeholder="Ton courriel" required>
+      <button class="btn btn-plein" type="submit">S'abonner</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div><b style="color:#fff">Vert Vert Café Bistro</b><br>Saint-Jérôme · Saint-Sauveur</div>
+    <div>Maquette réalisée par <a href="https://brixelpro.com" style="color:var(--lime)">Brixel Pro</a></div>
+  </div>
+</footer>
+
+<div class="barre-mobile">
+  <a class="btn btn-plein" href="tel:4505652339">Appeler</a>
+  <a class="btn btn-contour-vert" href="#menu">Menu</a>
+</div>
+
+<script>
+  document.querySelectorAll('.onglet').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.onglet').forEach(function(x){x.classList.remove('actif')});
+      b.classList.add('actif');
+      document.querySelectorAll('.menu-grille').forEach(function(g){
+        g.classList.toggle('cache', g.dataset.cat !== b.dataset.cat);
+      });
+    });
+  });
+</script>
+</body>
+</html>
