@@ -82,8 +82,53 @@
     footer{padding-bottom:90px}
   }
 </style>
+
+<style id="intro-css">
+#intro{position:fixed;inset:0;z-index:9000;background:radial-gradient(circle at 50% 45%,#3f9a4c 0,#2f7d3b 50%,#163c1d 100%);display:grid;place-items:center;cursor:pointer;transition:opacity .5s,visibility .5s}
+#intro.done{opacity:0;visibility:hidden}
+#intro .ib{width:min(340px,80vw);text-align:center;color:#fff}
+#intro svg{width:150px;height:auto;overflow:visible}
+#intro .nm{font:700 clamp(34px,10vw,54px)/1.05 "Segoe UI",system-ui,sans-serif;margin-top:14px;display:flex;justify-content:center;flex-wrap:wrap}
+#intro .nm span{display:inline-block;opacity:0;transform:translateY(30px) scale(.6)}
+#intro.go .nm span{animation:ipop .5s cubic-bezier(.3,1.8,.5,1) forwards}
+#intro .sub{font:600 12px/1.4 system-ui,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:#c8f08a;opacity:0;margin-top:14px}
+#intro.go .sub{animation:ipop .5s ease 1.35s forwards}
+#intro .skip{position:absolute;bottom:24px;left:0;right:0;text-align:center;font:12px system-ui,sans-serif;opacity:.6;color:#fff}
+@keyframes ipop{to{opacity:1;transform:none}}
+@keyframes idraw{to{stroke-dashoffset:0}}
+@keyframes igrow{0%{transform:scale(0)}to{transform:scale(1)}}
+@keyframes isteam{40%{opacity:.9}to{stroke-dashoffset:0;opacity:0;transform:translateY(-14px)}}
+@keyframes ifill{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes islide{from{transform:translateX(-60px);opacity:0}to{transform:none;opacity:1}}
+#intro .d{stroke-dasharray:400;stroke-dashoffset:400}
+#intro.go .d{animation:idraw .9s ease-out forwards}
+#intro .g{transform-box:fill-box;transform-origin:center;transform:scale(0)}
+#intro.go .g{animation:igrow .55s cubic-bezier(.3,1.8,.5,1) forwards}
+#intro .gb{transform-box:fill-box;transform-origin:center bottom;transform:scale(0)}
+#intro.go .gb{animation:igrow .55s cubic-bezier(.3,1.8,.5,1) forwards}
+#intro .f{transform-box:fill-box;transform-origin:center bottom;transform:scaleY(0)}
+#intro.go .f{animation:ifill .8s ease-out forwards}
+#intro .s{opacity:0;transform-box:fill-box;transform-origin:center}
+#intro.go .s{animation:islide .5s ease-out forwards}
+#intro .stm{stroke-dasharray:60;stroke-dashoffset:60;opacity:0}
+#intro.go .stm{animation:isteam 1.3s ease-out forwards}
+@media (prefers-reduced-motion:reduce){#intro{display:none}}
+</style>
 </head>
 <body>
+<div id="intro" aria-hidden="true">
+ <div class="ib">
+  <svg viewBox="0 0 160 160">
+  <path class="d" d="M80 150 C80 115 80 95 80 60" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="gb" style="animation-delay:.45s" d="M80 92 C55 92 38 76 36 52 C60 52 78 66 80 92Z" fill="#8cc63f"/>
+  <path class="gb" style="animation-delay:.6s" d="M80 76 C104 76 122 58 124 32 C98 32 82 50 80 76Z" fill="#c8f08a"/>
+ </svg>
+  <div class="nm" data-txt="vert vert"></div>
+  <div class="sub">Café bistro · St-Jérôme</div>
+ </div>
+ <div class="skip">Touchez pour entrer</div>
+</div>
+
 
 <div class="bandeau-demo">Maquette proposée par <a href="https://brixelpro.com">Brixel Pro</a> — aperçu du nouveau site de Vert Vert Café Bistro</div>
 
@@ -247,6 +292,22 @@
       });
     });
   });
+</script>
+
+<script id="intro-js">
+(function(){
+ var d=document,intro=d.getElementById('intro'),key='intro-vert-vert-cafe-bistro-saint-jerome',seen=false;
+ if(!intro)return;
+ try{seen=sessionStorage.getItem(key)==='1'}catch(e){}
+ var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function end(){if(!intro||intro.classList.contains('done'))return;intro.classList.add('done');try{sessionStorage.setItem(key,'1')}catch(e){}setTimeout(function(){intro&&intro.parentNode&&intro.parentNode.removeChild(intro);intro=null},520)}
+ if(reduce||seen){intro.parentNode.removeChild(intro);return}
+ var nm=intro.querySelector('.nm'),txt=nm.getAttribute('data-txt');
+ for(var i=0;i<txt.length;i++){var s=d.createElement('span');s.textContent=txt[i]===' '?'\u00a0':txt[i];s.style.animationDelay=(0.7+i*0.045)+'s';nm.appendChild(s)}
+ intro.addEventListener('click',end);
+ requestAnimationFrame(function(){requestAnimationFrame(function(){intro.classList.add('go')})});
+ setTimeout(end,2100);
+})();
 </script>
 </body>
 </html>
