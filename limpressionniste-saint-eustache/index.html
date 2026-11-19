@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L&#x27;Impressionniste — Saint-Eustache</title>
+<meta name="description" content="Restaurant de cuisine française à Saint-Eustache depuis 1988 : midis pressés, tartare à volonté le mercredi, menu dégustation foie gras, salles de réception et terrasse fleurie.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--c1:#2c4a6b;--c2:#152536;--acc:#d9a6a0;--fond:#f6f4f1;--encre:#1b1c1e;--gris:#5d6066;--rayon:18px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--encre);background:var(--fond);line-height:1.55}
+a{color:inherit}
+.bandeau-demo{background:var(--encre);color:#fff;font-size:13px;text-align:center;padding:8px 14px}
+.bandeau-demo a{color:var(--acc);font-weight:600}
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fond) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nav-in{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px}
+.logo{font-weight:800;font-size:21px;letter-spacing:-.4px;color:var(--c1);text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif}
+.nav-liens{display:flex;gap:22px;font-size:15px;font-weight:600}
+.nav-liens a{text-decoration:none;opacity:.8}.nav-liens a:hover{opacity:1;color:var(--c1)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-plein{background:var(--c1);color:#fff}.btn-blanc{background:#fff;color:var(--c1)}
+.btn-contour{border-color:#fff;color:#fff}.btn-contour-c{border-color:var(--c1);color:var(--c1)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 500px at 85% -10%,var(--acc) 0%,transparent 55%),linear-gradient(135deg,var(--c2),var(--c1));color:#fff}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.07)}
+.hero-in{max-width:1100px;margin:auto;padding:90px 20px 100px;position:relative;z-index:1}
+.etiquette{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:22px}
+.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(38px,6vw,66px);line-height:1.05;letter-spacing:-1.2px;max-width:760px}
+.hero p{font-size:clamp(17px,2vw,20px);opacity:.92;max-width:580px;margin:20px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.points{max-width:1100px;margin:-46px auto 0;padding:0 20px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.point{background:#fff;border-radius:var(--rayon);padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.point b{display:block;font-size:17px;margin-bottom:4px}.point span{color:var(--gris);font-size:14px}
+section{max-width:1100px;margin:auto;padding:80px 20px 0}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(30px,4vw,42px);letter-spacing:-.8px;margin-bottom:10px}
+.sous{color:var(--gris);margin-bottom:30px;max-width:640px}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.plat{background:#fff;border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;gap:16px}
+.plat h3{font-size:16px}.plat p{font-size:13.5px;color:var(--gris);margin-top:3px}
+.prix{font-weight:800;color:var(--c1);white-space:nowrap}
+.note{font-size:13px;color:var(--gris);margin-top:16px}
+.vedette{background:var(--encre);color:#fff;border-radius:28px;padding:50px 36px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+.vedette h2{color:#fff}.vedette p{opacity:.85}
+.vedette .gros{font-family:"Cormorant Garamond",Georgia,serif;font-size:56px;font-weight:800;color:var(--acc);line-height:1.05}
+.carte{background:#fff;border-radius:var(--rayon);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.carte h3{font-size:22px;margin-bottom:6px}.carte p{color:var(--gris);margin-bottom:18px}
+.heures{width:100%;border-collapse:collapse;font-size:15px}.heures td{padding:7px 0;border-bottom:1px solid #eee}.heures td:last-child{text-align:right;font-weight:600}
+.valeurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.valeur{border-left:4px solid var(--acc);padding:6px 0 6px 16px}.valeur b{display:block;margin-bottom:2px}.valeur span{color:var(--gris);font-size:14.5px}
+footer{margin-top:80px;background:var(--c2);color:rgba(255,255,255,.8);padding:40px 20px;font-size:14px}
+.foot-in{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.barre-mobile{display:none}
+@media (max-width:760px){.nav-liens{display:none}.vedette,.carte{grid-template-columns:1fr}.vedette{padding:36px 24px}
+.barre-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid #e4e1d8;padding:10px;gap:10px}
+.barre-mobile a{flex:1;justify-content:center}footer{padding-bottom:90px}}
+</style></head><body>
+<div class="bandeau-demo">Maquette proposée par <a href="https://brixelpro.com">Brixel Pro</a> — aperçu d'un nouveau site pour L&#x27;Impressionniste</div>
+<header class="nav"><div class="nav-in">
+<a href="#" class="logo">L&#x27;Impressionniste</a>
+<nav class="nav-liens"><a href="#menu">Menu</a><a href="#vedette">Réceptions</a><a href="#nous-trouver">Nous trouver</a></nav>
+<a href="tel:4504913277" class="btn btn-plein">450 491-3277</a>
+</div></header>
+<div class="hero"><div class="hero-in">
+<span class="etiquette">Saint-Eustache · Cuisine française depuis 1988</span>
+<h1>La table française de Saint-Eustache.</h1><p>Depuis 1988, une cuisine française authentique où les produits locaux sont mis à l&#x27;honneur par la cheffe Mélissa Brousseau.</p>
+<div class="actions"><a href="#menu" class="btn btn-blanc">Découvrir le menu</a><a href="tel:4504913277" class="btn btn-contour">Réserver</a></div>
+</div></div>
+<div class="points"><div class="point"><b>Midis pressés</b><span>Un plat et un verre de vin</span></div><div class="point"><b>Mercredi soir</b><span>Tartare à volonté</span></div><div class="point"><b>Terrasse fleurie</b><span>Un havre de paix en été</span></div></div>
+<section id="menu"><h2>Menu</h2><p class="sous">Les classiques qui font la réputation de la maison.</p>
+<div class="grille"><div class="plat"><div><h3>Foie gras</h3><p>En menu dégustation</p></div></div><div class="plat"><div><h3>Tartares</h3><p>La spécialité de la maison, à volonté le mercredi</p></div></div><div class="plat"><div><h3>Ris de veau</h3><p>Un grand classique français</p></div></div><div class="plat"><div><h3>Gravlax de saumon</h3><p>Préparé maison</p></div></div><div class="plat"><div><h3>Accras de morue</h3><p>Pour bien commencer</p></div></div><div class="plat"><div><h3>Tarte Tatin</h3><p>À ne surtout pas manquer</p></div></div></div><p class="note">Aperçu. Le menu complet et les prix seraient intégrés au site final.</p></section>
+<section id="vedette"><div class="vedette"><div><h2>Deux salles de réception pour vos événements.</h2><p>Anniversaires, réunions d&#x27;affaires, réceptions de groupe : une cuisine raffinée et un service attentionné, dans un cadre chaleureux.</p></div>
+<div><div class="gros">2 salles</div><p>Réceptions et événements</p></div></div></section>
+<section id="nous-trouver"><h2>Nous trouver</h2><p class="sous">Sur le chemin de la Grande-Côte, stationnement sur place.</p>
+<div class="carte"><div><h3>Saint-Eustache</h3><p>245, chemin de la Grande-Côte<br>Saint-Eustache (Québec) J7P 1B3</p>
+<div class="actions"><a class="btn btn-plein" href="tel:4504913277">Appeler</a><a class="btn btn-contour-c" href="https://maps.google.com/?q=245+chemin+de+la+Grande-C%C3%B4te+Saint-Eustache">Itinéraire</a></div></div>
+<div><h3>Heures</h3><table class="heures"><tr><td>Lundi</td><td>Fermé</td></tr><tr><td>Mardi – jeudi</td><td>11 h 30 – 14 h · 17 h 30 – 20 h</td></tr><tr><td>Vendredi</td><td>11 h 30 – 14 h · 17 h – 21 h</td></tr><tr><td>Samedi</td><td>17 h – 21 h</td></tr><tr><td>Dimanche</td><td>17 h 30 – 19 h 30</td></tr></table><p class="note">Heures à confirmer avec le commerce.</p></div></div></section>
+<section><h2>L&#x27;expérience Impressionniste</h2><p class="sous">Plus de 35 ans à recevoir les gens de la région.</p><div class="valeurs"><div class="valeur"><b>Produits d&#x27;ici</b><span>Le terroir au cœur de la cuisine française.</span></div><div class="valeur"><b>Service personnalisé</b><span>Une équipe passionnée et attentionnée.</span></div><div class="valeur"><b>Pour célébrer</b><span>Anniversaires, Saint-Valentin, Fêtes.</span></div><div class="valeur"><b>Cadre chaleureux</b><span>Une atmosphère douce et confortable.</span></div></div></section>
+<footer><div class="foot-in"><div><b style="color:#fff">L&#x27;Impressionniste</b><br>245, chemin de la Grande-Côte, Saint-Eustache · 450 491-3277</div>
+<div>Maquette réalisée par <a href="https://brixelpro.com" style="color:var(--acc)">Brixel Pro</a></div></div></footer>
+<div class="barre-mobile"><a class="btn btn-plein" href="tel:4504913277">Appeler</a><a class="btn btn-contour-c" href="#menu">Menu</a></div>
+</body></html>

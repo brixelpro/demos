@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurant Le Saint-Laurent — Saint-Eustache</title>
+<meta name="description" content="Restaurant déjeuner à Saint-Eustache depuis 30 ans : déjeuners dès 6 h 30, brunch, dîners et menus du jour abordables.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{--c1:#c2562b;--c2:#7a2e14;--acc:#f6b84b;--fond:#fbf6ef;--encre:#1b1c1e;--gris:#5d6066;--rayon:18px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--encre);background:var(--fond);line-height:1.55}
+a{color:inherit}
+.bandeau-demo{background:var(--encre);color:#fff;font-size:13px;text-align:center;padding:8px 14px}
+.bandeau-demo a{color:var(--acc);font-weight:600}
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fond) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nav-in{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px}
+.logo{font-weight:800;font-size:21px;letter-spacing:-.4px;color:var(--c1);text-decoration:none;font-family:"Fraunces",Georgia,serif}
+.nav-liens{display:flex;gap:22px;font-size:15px;font-weight:600}
+.nav-liens a{text-decoration:none;opacity:.8}.nav-liens a:hover{opacity:1;color:var(--c1)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-plein{background:var(--c1);color:#fff}.btn-blanc{background:#fff;color:var(--c1)}
+.btn-contour{border-color:#fff;color:#fff}.btn-contour-c{border-color:var(--c1);color:var(--c1)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 500px at 85% -10%,var(--acc) 0%,transparent 55%),linear-gradient(135deg,var(--c2),var(--c1));color:#fff}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.07)}
+.hero-in{max-width:1100px;margin:auto;padding:90px 20px 100px;position:relative;z-index:1}
+.etiquette{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:22px}
+.hero h1{font-family:"Fraunces",Georgia,serif;font-size:clamp(38px,6vw,66px);line-height:1.05;letter-spacing:-1.2px;max-width:760px}
+.hero p{font-size:clamp(17px,2vw,20px);opacity:.92;max-width:580px;margin:20px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.points{max-width:1100px;margin:-46px auto 0;padding:0 20px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.point{background:#fff;border-radius:var(--rayon);padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.point b{display:block;font-size:17px;margin-bottom:4px}.point span{color:var(--gris);font-size:14px}
+section{max-width:1100px;margin:auto;padding:80px 20px 0}
+h2{font-family:"Fraunces",Georgia,serif;font-size:clamp(30px,4vw,42px);letter-spacing:-.8px;margin-bottom:10px}
+.sous{color:var(--gris);margin-bottom:30px;max-width:640px}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.plat{background:#fff;border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;gap:16px}
+.plat h3{font-size:16px}.plat p{font-size:13.5px;color:var(--gris);margin-top:3px}
+.prix{font-weight:800;color:var(--c1);white-space:nowrap}
+.note{font-size:13px;color:var(--gris);margin-top:16px}
+.vedette{background:var(--encre);color:#fff;border-radius:28px;padding:50px 36px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+.vedette h2{color:#fff}.vedette p{opacity:.85}
+.vedette .gros{font-family:"Fraunces",Georgia,serif;font-size:56px;font-weight:800;color:var(--acc);line-height:1.05}
+.carte{background:#fff;border-radius:var(--rayon);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.carte h3{font-size:22px;margin-bottom:6px}.carte p{color:var(--gris);margin-bottom:18px}
+.heures{width:100%;border-collapse:collapse;font-size:15px}.heures td{padding:7px 0;border-bottom:1px solid #eee}.heures td:last-child{text-align:right;font-weight:600}
+.valeurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.valeur{border-left:4px solid var(--acc);padding:6px 0 6px 16px}.valeur b{display:block;margin-bottom:2px}.valeur span{color:var(--gris);font-size:14.5px}
+footer{margin-top:80px;background:var(--c2);color:rgba(255,255,255,.8);padding:40px 20px;font-size:14px}
+.foot-in{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.barre-mobile{display:none}
+@media (max-width:760px){.nav-liens{display:none}.vedette,.carte{grid-template-columns:1fr}.vedette{padding:36px 24px}
+.barre-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid #e4e1d8;padding:10px;gap:10px}
+.barre-mobile a{flex:1;justify-content:center}footer{padding-bottom:90px}}
+</style></head><body>
+<div class="bandeau-demo">Maquette proposée par <a href="https://brixelpro.com">Brixel Pro</a> — aperçu d'un nouveau site pour Restaurant Le Saint-Laurent</div>
+<header class="nav"><div class="nav-in">
+<a href="#" class="logo">Restaurant Le Saint-Laurent</a>
+<nav class="nav-liens"><a href="#menu">Menu</a><a href="#vedette">Menus du jour</a><a href="#nous-trouver">Nous trouver</a></nav>
+<a href="tel:4504134419" class="btn btn-plein">450 413-4419</a>
+</div></header>
+<div class="hero"><div class="hero-in">
+<span class="etiquette">Saint-Eustache · depuis 30 ans</span>
+<h1>Le bon déjeuner du quartier, depuis 30 ans.</h1><p>Déjeuners dès 6 h 30, brunch, dîners et menus du jour à prix abordables. Des aliments frais, choisis avec soin.</p>
+<div class="actions"><a href="#menu" class="btn btn-blanc">Voir le menu</a><a href="tel:4504134419" class="btn btn-contour">Appeler pour réserver</a></div>
+</div></div>
+<div class="points"><div class="point"><b>Ouvert tôt</b><span>Dès 6 h 30 en semaine</span></div><div class="point"><b>Menus du jour</b><span>Soupe, plat et dessert</span></div><div class="point"><b>Sans gluten</b><span>Options sans allergènes, demandez-nous</span></div></div>
+<section id="menu"><h2>Menu</h2><p class="sous">Un aperçu de nos classiques. Lisible sur cellulaire, sans PDF à télécharger.</p>
+<div class="grille"><div class="plat"><div><h3>Le Plaisant</h3><p>Smoothie fraises, banane, lait 2 % et yogourt vanille</p></div><span class="prix">6,95 $</span></div><div class="plat"><div><h3>Le P&#x27;tit Bleu</h3><p>Smoothie bleuets, yogourt grec nature et sirop d&#x27;érable</p></div><span class="prix">6,95 $</span></div><div class="plat"><div><h3>Le Vacancier</h3><p>Bol smoothie mangue, ananas, jus d&#x27;orange, yogourt vanille, granola et noix de coco</p></div><span class="prix">14,95 $</span></div><div class="plat"><div><h3>Le Santa Banana</h3><p>Bol smoothie fraises, banane, yogourt vanille, fruits frais et granola</p></div><span class="prix">14,95 $</span></div><div class="plat"><div><h3>Déjeuners classiques</h3><p>Œufs, bacon, jambon, saucisses, rôties et patates maison</p></div></div><div class="plat"><div><h3>Crêpes et brunch</h3><p>Crêpes, fruits frais et grands classiques du brunch</p></div></div></div><p class="note">Aperçu d&#x27;une partie du menu. Le menu complet serait intégré au site final.</p></section>
+<section id="vedette"><div class="vedette"><div><h2>Le soir aussi, c&#x27;est bon et pas cher.</h2><p>Nos menus du jour : soupe, plat principal et dessert, à prix abordable. Une cuisine variée qui se réinvente.</p></div>
+<div><div class="gros">Soupe · Plat · Dessert</div><p>Menus du jour</p></div></div></section>
+<section id="nous-trouver"><h2>Nous trouver</h2><p class="sous">Sur la rue Saint-Laurent, au cœur de Saint-Eustache.</p>
+<div class="carte"><div><h3>Saint-Eustache</h3><p>145, rue Saint-Laurent<br>Saint-Eustache (Québec) J7P 5H6</p>
+<div class="actions"><a class="btn btn-plein" href="tel:4504134419">Appeler</a><a class="btn btn-contour-c" href="https://maps.google.com/?q=145+rue+Saint-Laurent+Saint-Eustache">Itinéraire</a></div></div>
+<div><h3>Heures</h3><table class="heures"><tr><td>Lundi au samedi</td><td>dès 6 h 30</td></tr><tr><td>Dimanche</td><td>dès 7 h</td></tr></table><p class="note">Heures à confirmer avec le commerce.</p></div></div></section>
+<section><h2>Pourquoi on revient au Saint-Laurent</h2><p class="sous">Une équipe à l&#x27;écoute et une clientèle fidèle depuis trois décennies.</p><div class="valeurs"><div class="valeur"><b>Fait frais</b><span>Des aliments frais, choisis avec soin.</span></div><div class="valeur"><b>À l&#x27;écoute</b><span>Une équipe attentive aux besoins de chacun.</span></div><div class="valeur"><b>Pour tout le monde</b><span>Options sans gluten et sans allergènes.</span></div><div class="valeur"><b>Prix abordables</b><span>Le bon déjeuner sans se ruiner.</span></div></div></section>
+<footer><div class="foot-in"><div><b style="color:#fff">Restaurant Le Saint-Laurent</b><br>145, rue Saint-Laurent, Saint-Eustache · 450 413-4419</div>
+<div>Maquette réalisée par <a href="https://brixelpro.com" style="color:var(--acc)">Brixel Pro</a></div></div></footer>
+<div class="barre-mobile"><a class="btn btn-plein" href="tel:4504134419">Appeler</a><a class="btn btn-contour-c" href="#menu">Menu</a></div>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café La Petite Voisine — Saint-Jérôme</title>
+<meta name="description" content="Café de quartier au centre-ville de Saint-Jérôme depuis 2019 : cafés de spécialité, sandwichs, quiches, soupes, salades et biscuits décorés.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--c1:#d4683f;--c2:#5b3426;--acc:#f3c6a5;--fond:#fdf7f2;--encre:#1b1c1e;--gris:#5d6066;--rayon:18px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--encre);background:var(--fond);line-height:1.55}
+a{color:inherit}
+.bandeau-demo{background:var(--encre);color:#fff;font-size:13px;text-align:center;padding:8px 14px}
+.bandeau-demo a{color:var(--acc);font-weight:600}
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fond) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nav-in{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px}
+.logo{font-weight:800;font-size:21px;letter-spacing:-.4px;color:var(--c1);text-decoration:none;font-family:"DM Serif Display",Georgia,serif}
+.nav-liens{display:flex;gap:22px;font-size:15px;font-weight:600}
+.nav-liens a{text-decoration:none;opacity:.8}.nav-liens a:hover{opacity:1;color:var(--c1)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-plein{background:var(--c1);color:#fff}.btn-blanc{background:#fff;color:var(--c1)}
+.btn-contour{border-color:#fff;color:#fff}.btn-contour-c{border-color:var(--c1);color:var(--c1)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 500px at 85% -10%,var(--acc) 0%,transparent 55%),linear-gradient(135deg,var(--c2),var(--c1));color:#fff}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.07)}
+.hero-in{max-width:1100px;margin:auto;padding:90px 20px 100px;position:relative;z-index:1}
+.etiquette{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:22px}
+.hero h1{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(38px,6vw,66px);line-height:1.05;letter-spacing:-1.2px;max-width:760px}
+.hero p{font-size:clamp(17px,2vw,20px);opacity:.92;max-width:580px;margin:20px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.points{max-width:1100px;margin:-46px auto 0;padding:0 20px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.point{background:#fff;border-radius:var(--rayon);padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.point b{display:block;font-size:17px;margin-bottom:4px}.point span{color:var(--gris);font-size:14px}
+section{max-width:1100px;margin:auto;padding:80px 20px 0}
+h2{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(30px,4vw,42px);letter-spacing:-.8px;margin-bottom:10px}
+.sous{color:var(--gris);margin-bottom:30px;max-width:640px}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.plat{background:#fff;border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;gap:16px}
+.plat h3{font-size:16px}.plat p{font-size:13.5px;color:var(--gris);margin-top:3px}
+.prix{font-weight:800;color:var(--c1);white-space:nowrap}
+.note{font-size:13px;color:var(--gris);margin-top:16px}
+.vedette{background:var(--encre);color:#fff;border-radius:28px;padding:50px 36px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+.vedette h2{color:#fff}.vedette p{opacity:.85}
+.vedette .gros{font-family:"DM Serif Display",Georgia,serif;font-size:56px;font-weight:800;color:var(--acc);line-height:1.05}
+.carte{background:#fff;border-radius:var(--rayon);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.carte h3{font-size:22px;margin-bottom:6px}.carte p{color:var(--gris);margin-bottom:18px}
+.heures{width:100%;border-collapse:collapse;font-size:15px}.heures td{padding:7px 0;border-bottom:1px solid #eee}.heures td:last-child{text-align:right;font-weight:600}
+.valeurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.valeur{border-left:4px solid var(--acc);padding:6px 0 6px 16px}.valeur b{display:block;margin-bottom:2px}.valeur span{color:var(--gris);font-size:14.5px}
+footer{margin-top:80px;background:var(--c2);color:rgba(255,255,255,.8);padding:40px 20px;font-size:14px}
+.foot-in{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.barre-mobile{display:none}
+@media (max-width:760px){.nav-liens{display:none}.vedette,.carte{grid-template-columns:1fr}.vedette{padding:36px 24px}
+.barre-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid #e4e1d8;padding:10px;gap:10px}
+.barre-mobile a{flex:1;justify-content:center}footer{padding-bottom:90px}}
+</style></head><body>
+<div class="bandeau-demo">Maquette proposée par <a href="https://brixelpro.com">Brixel Pro</a> — aperçu d'un nouveau site pour Café La Petite Voisine</div>
+<header class="nav"><div class="nav-in">
+<a href="#" class="logo">Café La Petite Voisine</a>
+<nav class="nav-liens"><a href="#menu">Menu</a><a href="#vedette">Biscuits</a><a href="#nous-trouver">Nous trouver</a></nav>
+<a href="tel:4503041939" class="btn btn-plein">450 304-1939</a>
+</div></header>
+<div class="hero"><div class="hero-in">
+<span class="etiquette">Centre-ville de Saint-Jérôme · depuis 2019</span>
+<h1>Ton café de quartier, en plein cœur de St-Jérôme.</h1><p>Des beaux et bons cafés de spécialité, des plats maison et une équipe qui connaît ta commande par cœur.</p>
+<div class="actions"><a href="#menu" class="btn btn-blanc">Voir le menu</a><a href="tel:4503041939" class="btn btn-contour">Commander des biscuits</a></div>
+</div></div>
+<div class="points"><div class="point"><b>Cafés de spécialité</b><span>Préparés comme il faut</span></div><div class="point"><b>Fait maison</b><span>Sandwichs, quiches, soupes</span></div><div class="point"><b>Décor instagrammable</b><span>Pour tes événements</span></div></div>
+<section id="menu"><h2>Menu</h2><p class="sous">Un aperçu de ce qui t&#x27;attend au comptoir.</p>
+<div class="grille"><div class="plat"><div><h3>Cafés de spécialité</h3><p>Espresso, latté, cappuccino et plus</p></div></div><div class="plat"><div><h3>Sandwich viande fumée</h3><p>Un favori des habitués</p></div></div><div class="plat"><div><h3>Grilled cheese et soupe</h3><p>Le duo réconfort</p></div></div><div class="plat"><div><h3>Quiches maison</h3><p>Selon l&#x27;inspiration du jour</p></div></div><div class="plat"><div><h3>Chocolatine</h3><p>Pour accompagner ton café</p></div></div><div class="plat"><div><h3>Boîte de 6 biscuits décorés</h3><p>Décorés avec amour par l&#x27;équipe</p></div><span class="prix">21 $</span></div></div><p class="note">Aperçu. Le menu complet serait intégré au site final.</p></section>
+<section id="vedette"><div class="vedette"><div><h2>Des biscuits décorés pour toutes les occasions.</h2><p>Nos magiciennes décorent chaque biscuit à la main. Parfait pour un cadeau, une fête ou juste pour te gâter.</p></div>
+<div><div class="gros">6 biscuits · 21 $</div><p>Boîte cadeau</p></div></div></section>
+<section id="nous-trouver"><h2>Nous trouver</h2><p class="sous">À deux pas de la gare, au centre-ville.</p>
+<div class="carte"><div><h3>Saint-Jérôme</h3><p>7, rue de la Gare<br>Saint-Jérôme (Québec) J7Z 2B5</p>
+<div class="actions"><a class="btn btn-plein" href="tel:4503041939">Appeler</a><a class="btn btn-contour-c" href="https://maps.google.com/?q=7+rue+de+la+Gare+Saint-J%C3%A9r%C3%B4me">Itinéraire</a></div></div>
+<div><h3>Heures</h3><table class="heures"><tr><td>Lundi au vendredi</td><td>7 h – 16 h</td></tr><tr><td>Fin de semaine</td><td>À confirmer</td></tr></table><p class="note">Heures à confirmer avec le commerce.</p></div></div></section>
+<section><h2>La Petite Voisine, c&#x27;est…</h2><p class="sous">Un endroit sain et authentique, qui participe à la revitalisation du centre-ville.</p><div class="valeurs"><div class="valeur"><b>Un milieu sain</b><span>Un environnement de travail authentique.</span></div><div class="valeur"><b>Du bon café</b><span>Des cafés de spécialité bien faits.</span></div><div class="valeur"><b>Le centre-ville</b><span>On participe à sa revitalisation.</span></div><div class="valeur"><b>Pour vos événements</b><span>Un décor parfait pour se rassembler.</span></div></div></section>
+<footer><div class="foot-in"><div><b style="color:#fff">Café La Petite Voisine</b><br>7, rue de la Gare, Saint-Jérôme · 450 304-1939</div>
+<div>Maquette réalisée par <a href="https://brixelpro.com" style="color:var(--acc)">Brixel Pro</a></div></div></footer>
+<div class="barre-mobile"><a class="btn btn-plein" href="tel:4503041939">Appeler</a><a class="btn btn-contour-c" href="#menu">Menu</a></div>
+</body></html>

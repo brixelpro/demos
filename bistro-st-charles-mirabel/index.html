@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bistro St-Charles — Mirabel</title>
+<meta name="description" content="Bistro de quartier à Mirabel : cuisine locale réinventée, ardoise qui change, tables d&#x27;hôte midi et soir, vins d&#x27;importation privée et terrasse.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--c1:#8a2f3c;--c2:#2a1418;--acc:#e3b778;--fond:#f7f3ee;--encre:#1b1c1e;--gris:#5d6066;--rayon:18px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--encre);background:var(--fond);line-height:1.55}
+a{color:inherit}
+.bandeau-demo{background:var(--encre);color:#fff;font-size:13px;text-align:center;padding:8px 14px}
+.bandeau-demo a{color:var(--acc);font-weight:600}
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fond) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nav-in{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px}
+.logo{font-weight:800;font-size:21px;letter-spacing:-.4px;color:var(--c1);text-decoration:none;font-family:"Playfair Display",Georgia,serif}
+.nav-liens{display:flex;gap:22px;font-size:15px;font-weight:600}
+.nav-liens a{text-decoration:none;opacity:.8}.nav-liens a:hover{opacity:1;color:var(--c1)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-plein{background:var(--c1);color:#fff}.btn-blanc{background:#fff;color:var(--c1)}
+.btn-contour{border-color:#fff;color:#fff}.btn-contour-c{border-color:var(--c1);color:var(--c1)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 500px at 85% -10%,var(--acc) 0%,transparent 55%),linear-gradient(135deg,var(--c2),var(--c1));color:#fff}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.07)}
+.hero-in{max-width:1100px;margin:auto;padding:90px 20px 100px;position:relative;z-index:1}
+.etiquette{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:22px}
+.hero h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,6vw,66px);line-height:1.05;letter-spacing:-1.2px;max-width:760px}
+.hero p{font-size:clamp(17px,2vw,20px);opacity:.92;max-width:580px;margin:20px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.points{max-width:1100px;margin:-46px auto 0;padding:0 20px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.point{background:#fff;border-radius:var(--rayon);padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.point b{display:block;font-size:17px;margin-bottom:4px}.point span{color:var(--gris);font-size:14px}
+section{max-width:1100px;margin:auto;padding:80px 20px 0}
+h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(30px,4vw,42px);letter-spacing:-.8px;margin-bottom:10px}
+.sous{color:var(--gris);margin-bottom:30px;max-width:640px}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.plat{background:#fff;border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;gap:16px}
+.plat h3{font-size:16px}.plat p{font-size:13.5px;color:var(--gris);margin-top:3px}
+.prix{font-weight:800;color:var(--c1);white-space:nowrap}
+.note{font-size:13px;color:var(--gris);margin-top:16px}
+.vedette{background:var(--encre);color:#fff;border-radius:28px;padding:50px 36px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+.vedette h2{color:#fff}.vedette p{opacity:.85}
+.vedette .gros{font-family:"Playfair Display",Georgia,serif;font-size:56px;font-weight:800;color:var(--acc);line-height:1.05}
+.carte{background:#fff;border-radius:var(--rayon);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.carte h3{font-size:22px;margin-bottom:6px}.carte p{color:var(--gris);margin-bottom:18px}
+.heures{width:100%;border-collapse:collapse;font-size:15px}.heures td{padding:7px 0;border-bottom:1px solid #eee}.heures td:last-child{text-align:right;font-weight:600}
+.valeurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.valeur{border-left:4px solid var(--acc);padding:6px 0 6px 16px}.valeur b{display:block;margin-bottom:2px}.valeur span{color:var(--gris);font-size:14.5px}
+footer{margin-top:80px;background:var(--c2);color:rgba(255,255,255,.8);padding:40px 20px;font-size:14px}
+.foot-in{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.barre-mobile{display:none}
+@media (max-width:760px){.nav-liens{display:none}.vedette,.carte{grid-template-columns:1fr}.vedette{padding:36px 24px}
+.barre-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid #e4e1d8;padding:10px;gap:10px}
+.barre-mobile a{flex:1;justify-content:center}footer{padding-bottom:90px}}
+</style></head><body>
+<div class="bandeau-demo">Maquette proposée par <a href="https://brixelpro.com">Brixel Pro</a> — aperçu d'un nouveau site pour Bistro St-Charles</div>
+<header class="nav"><div class="nav-in">
+<a href="#" class="logo">Bistro St-Charles</a>
+<nav class="nav-liens"><a href="#menu">L&#x27;ardoise</a><a href="#vedette">Table d&#x27;hôte</a><a href="#nous-trouver">Nous trouver</a></nav>
+<a href="tel:4508188668" class="btn btn-plein">450 818-8668</a>
+</div></header>
+<div class="hero"><div class="hero-in">
+<span class="etiquette">Mirabel · Bistro de quartier</span>
+<h1>La cuisine locale, réinventée chaque semaine.</h1><p>Le chef Karl Schumann et son équipe vous préparent des plats créatifs et des classiques intemporels qui suivent les saisons.</p>
+<div class="actions"><a href="#menu" class="btn btn-blanc">Voir l&#x27;ardoise</a><a href="tel:4508188668" class="btn btn-contour">Réserver une table</a></div>
+</div></div>
+<div class="points"><div class="point"><b>Table d&#x27;hôte</b><span>Chaque semaine, midi et soir</span></div><div class="point"><b>Vins d&#x27;importation privée</b><span>Au verre ou à la bouteille</span></div><div class="point"><b>Terrasse</b><span>Aux beaux jours</span></div></div>
+<section id="menu"><h2>L&#x27;ardoise</h2><p class="sous">Quelques incontournables de la maison. L&#x27;ardoise change souvent : le site final pourrait la mettre à jour chaque semaine.</p>
+<div class="grille"><div class="plat"><div><h3>Tartare de bœuf</h3><p>Le classique du bistro, frites maison</p></div></div><div class="plat"><div><h3>Calmars croustillants</h3><p>À partager… ou pas</p></div></div><div class="plat"><div><h3>Boudin noir</h3><p>Un incontournable de la maison</p></div></div><div class="plat"><div><h3>Ravioli aux champignons</h3><p>Sauce crémeuse, champignons poêlés</p></div></div><div class="plat"><div><h3>Joue de bœuf braisée</h3><p>Fondante, sauce riche</p></div></div><div class="plat"><div><h3>Poulet de Cornouailles</h3><p>Rôti, accompagnements de saison</p></div></div></div><p class="note">Plats tirés des commentaires de clients. Le menu exact et les prix seraient ajoutés au site final.</p></section>
+<section id="vedette"><div class="vedette"><div><h2>Une nouvelle table d&#x27;hôte chaque semaine.</h2><p>Le midi comme le soir : tartare de saumon, bavette, poisson du jour et plus, selon l&#x27;arrivage.</p></div>
+<div><div class="gros">Midi &amp; soir</div><p>Table d&#x27;hôte de la semaine</p></div></div></section>
+<section id="nous-trouver"><h2>Nous trouver</h2><p class="sous">Facile à trouver, beaucoup de stationnement gratuit.</p>
+<div class="carte"><div><h3>Mirabel</h3><p>17680, rue Charles, local 100<br>Mirabel (Québec) J7J 0T6</p>
+<div class="actions"><a class="btn btn-plein" href="tel:4508188668">Appeler</a><a class="btn btn-contour-c" href="https://maps.google.com/?q=17680+rue+Charles+Mirabel">Itinéraire</a></div></div>
+<div><h3>Heures</h3><table class="heures"><tr><td>Lundi au samedi</td><td>11 h 30 – 22 h</td></tr><tr><td>Dimanche</td><td>Fermé</td></tr></table><p class="note">Heures à confirmer avec le commerce.</p></div></div></section>
+<section><h2>L&#x27;esprit St-Charles</h2><p class="sous">Votre restaurant de quartier, où l&#x27;on met la table pour une cuisine locale.</p><div class="valeurs"><div class="valeur"><b>Cuisine de saison</b><span>Des plats qui changent avec les arrivages.</span></div><div class="valeur"><b>Service chaleureux</b><span>On se sent accueillis, chaque fois.</span></div><div class="valeur"><b>Pour les groupes</b><span>Tables, banquettes et place pour la famille.</span></div><div class="valeur"><b>Accords</b><span>Une carte de vins d&#x27;importation privée.</span></div></div></section>
+<footer><div class="foot-in"><div><b style="color:#fff">Bistro St-Charles</b><br>17680, rue Charles, local 100, Mirabel · 450 818-8668</div>
+<div>Maquette réalisée par <a href="https://brixelpro.com" style="color:var(--acc)">Brixel Pro</a></div></div></footer>
+<div class="barre-mobile"><a class="btn btn-plein" href="tel:4508188668">Appeler</a><a class="btn btn-contour-c" href="#menu">L&#x27;ardoise</a></div>
+</body></html>
