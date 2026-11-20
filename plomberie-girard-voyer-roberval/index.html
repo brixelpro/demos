@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Plomberie Girard &amp; Voyer — Plombier et boutique O Bains Décor à Roberval</title>
+<meta name="description" content="Plomberie Girard &amp; Voyer, Roberval : plomberie résidentielle, commerciale et industrielle au Lac-Saint-Jean, service d'urgence 24 heures sur 24 et boutique O Bains Décor (robinets, chauffe-eau, bains, éviers, pompes). 418 275-3551.">
+<meta property="og:title" content="Plomberie Girard &amp; Voyer — Roberval">
+<meta property="og:description" content="Le travail bien fait est notre meilleure publicité ! Urgence 24 h sur 24 : 418 275-3551.">
+<meta name="theme-color" content="#0b3352">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Plumber","name":"Plomberie Girard & Voyer","slogan":"Le travail bien fait est notre meilleure publicité !","description":"Plomberie résidentielle, commerciale et industrielle au Lac-Saint-Jean, service d'urgence 24 heures sur 24, et boutique O Bains Décor.","telephone":"+1-418-275-3551","faxNumber":"+1-418-275-6041","email":"plomberiegirardvoyer@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"190, boulevard Marcotte","addressLocality":"Roberval","addressRegion":"QC","postalCode":"G8H 1Z2","addressCountry":"CA"},"areaServed":"Lac-Saint-Jean","paymentAccepted":"Interac, comptant, Visa, MasterCard","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"08:00","closes":"12:00"}],"url":"https://plomberiegirardvoyer.ca/"}
+</script>
+<style>
+:root{--deep:#0b3352;--deep2:#124a73;--aqua:#2bb3d9;--aqua2:#8fdcf0;--copper:#cf7a3a;--copper2:#f0a56b;--foam:#f3f9fc;--ink:#10263a;--muted:#536779;--line:#d5e5ee;--card:#fff}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;padding-top:32px;background:var(--foam);color:var(--ink);font:400 17px/1.6 "Manrope",system-ui,sans-serif}
+h1,h2,h3{font-family:"Sora",system-ui,sans-serif;font-weight:800;line-height:1.08;margin:0 0 .5em;letter-spacing:-.02em}
+a{color:inherit}
+img,svg{max-width:100%}
+p,li,h1,h2,h3{overflow-wrap:break-word}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.9em 1.4em;border-radius:999px;font-weight:800;text-decoration:none;transition:transform .2s ease;font-size:1rem;min-height:48px}
+.btn:active{transform:scale(.97)}
+.btn-cu{background:var(--copper);color:#fff}
+.btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Intro : la goutte */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--deep);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;transition:opacity .45s ease;cursor:pointer}
+#intro.out{opacity:0}
+#intro svg{width:200px;height:150px}
+#intro .pipe{transform-origin:left;transform:scaleX(0);animation:grow .6s .1s cubic-bezier(.4,0,.2,1) forwards}
+#intro .drop{transform-box:fill-box;transform-origin:center top;opacity:0;animation:drip 1s .65s cubic-bezier(.5,0,.6,1) forwards}
+#intro .ring{transform-box:fill-box;transform-origin:center;opacity:0;animation:ring .7s 1.45s ease-out forwards}
+#intro .iname{font:800 26px/1.1 "Sora",sans-serif;color:#fff;text-align:center;opacity:0;animation:fadeUp .45s 1.3s ease forwards}
+#intro .itag{font:700 14px/1.2 "Manrope",sans-serif;color:var(--aqua2);opacity:0;animation:fadeUp .45s 1.5s ease forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+@keyframes drip{0%{opacity:0;transform:translateY(0) scale(.3)}20%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:1;transform:translateY(62px) scale(1)}}
+@keyframes ring{from{opacity:1;transform:scale(.2)}to{opacity:0;transform:scale(1.6)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* Header */
+header{position:fixed;top:32px;left:0;right:0;z-index:50;background:var(--deep);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:42px;height:42px;flex:none}
+.brand b{font:800 18px/1.05 "Sora",sans-serif;display:block;white-space:nowrap}
+.brand small{display:block;font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--aqua2);text-transform:uppercase}
+nav ul{list-style:none;margin:0;padding:0;display:none;gap:24px}
+nav a{text-decoration:none;font-weight:700;opacity:.92}
+nav a:hover{opacity:1;color:var(--aqua2)}
+.navcall{display:none}
+.burger{background:none;border:0;color:#fff;width:46px;height:46px;display:grid;place-items:center;cursor:pointer;flex:none}
+.burger svg{width:26px;height:26px}
+.menu{position:absolute;top:64px;left:0;right:0;background:var(--deep2);padding:8px 20px 18px;display:none}
+.menu.open{display:block}
+.menu a{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1);text-decoration:none;font-weight:700}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 85% 0%,#1d6797 0%,var(--deep) 55%,#071f33 100%);color:#fff;padding:122px 0 84px;isolation:isolate}
+.float{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.f{position:absolute;transform:translate3d(0,calc(var(--p,0) * var(--d) * 1px),0)}
+.f svg{display:block;width:100%;height:100%;animation:drift var(--t,9s) ease-in-out infinite alternate}
+.f.back svg{filter:blur(2px);opacity:.4}
+@keyframes drift{from{transform:translateY(-12px) rotate(calc(var(--r,0deg) - 10deg))}to{transform:translateY(14px) rotate(calc(var(--r,0deg) + 10deg))}}
+.hero .wrap{position:relative;display:grid;gap:34px}
+.urg{display:inline-flex;align-items:center;gap:8px;background:rgba(207,122,58,.18);border:1px solid rgba(240,165,107,.55);padding:6px 14px;border-radius:999px;font-weight:800;font-size:14px;color:var(--copper2)}
+.urg i{width:9px;height:9px;border-radius:50%;background:var(--copper2);display:block;animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+.hero h1{font-size:clamp(2.2rem,8.8vw,4.3rem);margin:16px 0 10px}
+.hero h1 span{color:var(--aqua2)}
+.hero .slog{font:600 clamp(1.1rem,4.4vw,1.5rem)/1.3 "Sora",sans-serif;color:var(--copper2);margin:0 0 14px}
+.hero p.lead{font-size:1.1rem;max-width:34em;color:#d5e6f1;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
+.chips li{font-size:14px;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1)}
+.hcard{display:none;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:24px}
+.hcard h2{font-size:1.2rem;color:#fff}
+.hours{list-style:none;margin:0;padding:0}
+.hours li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.12);font-weight:600}
+.hours li span:last-child{font-weight:800}
+.hours .off{opacity:.6}
+
+section{padding:72px 0}
+.eyebrow{font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--copper)}
+h2.t{font-size:clamp(1.8rem,6vw,2.9rem);color:var(--deep)}
+.sub{color:var(--muted);max-width:42em;margin:0 0 30px}
+
+/* Services + tuyau (wow) */
+.pipeline{position:relative}
+.flow{display:none}
+.svc{display:grid;gap:16px;grid-template-columns:1fr;position:relative}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px 22px;min-width:0;position:relative;opacity:0;transform:translate3d(0,36px,0);transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .6s ease}
+.card.in{opacity:1;transform:none}
+.card:nth-child(3){transition-delay:.15s}.card:nth-child(4){transition-delay:.3s}
+.card h3{font-size:1.35rem;color:var(--deep)}
+.card p{color:var(--muted);margin:0}
+.card .ic{width:54px;height:54px;margin-bottom:12px}
+.also{background:var(--deep);color:#fff;border-radius:22px;padding:22px;margin-top:16px;display:grid;gap:10px}
+.also b{font-family:"Sora",sans-serif}
+.also p{margin:0;color:#d5e6f1}
+
+/* Urgence */
+#urgence{background:linear-gradient(135deg,var(--copper),#a9561f);color:#fff}
+#urgence h2.t{color:#fff}
+.ugrid{display:grid;gap:22px;align-items:center}
+.ugrid .q{font:800 clamp(1.5rem,5.6vw,2.4rem)/1.15 "Sora",sans-serif;margin:0 0 14px}
+.ugrid p{margin:0 0 16px;color:#fff3ea}
+.ugrid ul{margin:0 0 20px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.ugrid li{background:rgba(255,255,255,.16);border-radius:999px;padding:6px 14px;font-weight:700}
+.btn-w{background:#fff;color:#7a3a0f}
+.clock{width:180px;justify-self:center}
+.clock .hand{transform-origin:60px 60px;animation:tick 6s linear infinite}
+@keyframes tick{to{transform:rotate(360deg)}}
+
+/* Boutique */
+.shop{display:grid;gap:14px;grid-template-columns:1fr}
+.it{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;min-width:0}
+.it h3{font-size:1.1rem;color:var(--deep);display:flex;align-items:center;gap:10px}
+.it h3 svg{width:34px;height:34px;flex:none}
+.it p{margin:0 0 10px;color:var(--muted);font-size:16px}
+.brands{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.brands li{background:#e6f4fa;color:var(--deep);border-radius:8px;padding:4px 10px;font-weight:800;font-size:14px}
+.shophead{display:grid;gap:12px;margin-bottom:24px}
+.shophead .logo2{font:800 clamp(1.8rem,6vw,2.6rem)/1 "Sora",sans-serif;color:var(--deep)}
+.shophead .logo2 span{color:var(--aqua)}
+
+/* Contact */
+#contact{background:#e3f1f8}
+.contact{display:grid;gap:18px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;min-width:0}
+.box h3{font-size:1.15rem;color:var(--deep)}
+.box p{margin:.3em 0}
+.box a{font-weight:800;color:var(--deep2)}
+.box .hours li{border-color:var(--line)}
+.big{font:800 clamp(1.6rem,6vw,2.3rem)/1.1 "Sora",sans-serif;text-decoration:none;display:inline-block;margin:.2em 0;color:var(--copper)!important}
+footer{background:#071f33;color:#a9c1d3;padding:34px 0 100px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+footer a{color:#fff}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:10px;background:var(--copper);color:#fff;font-weight:800;text-decoration:none;border-radius:999px;padding:14px;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:1.05rem}
+.callbar svg{width:22px;height:22px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (min-width:700px){
+ .shop{grid-template-columns:1fr 1fr}
+ .contact{grid-template-columns:1fr 1fr}
+}
+@media (min-width:1024px){
+ nav ul{display:flex}.burger{display:none}
+ .navcall{display:inline-flex;padding:.6em 1.1em;min-height:0}
+ .hero{padding:150px 0 110px}
+ .hero .wrap{grid-template-columns:1.2fr .8fr;align-items:center;gap:56px}
+ .hcard{display:block}
+ .svc{grid-template-columns:repeat(3,1fr);padding-top:30px}
+ .flow{display:block;position:absolute;left:8%;right:8%;top:0;height:14px;border-radius:14px;background:#d5e5ee;overflow:hidden}
+ .flow:after{content:"";position:absolute;inset:3px;border-radius:10px;background:linear-gradient(90deg,var(--aqua),var(--aqua2),var(--aqua));transform:scaleX(0);transform-origin:left;transition:transform 1.8s cubic-bezier(.4,0,.2,1)}
+ .pipeline.in .flow:after{transform:scaleX(1)}
+ .also{grid-template-columns:auto 1fr;align-items:center;gap:24px;padding:24px 30px}
+ .ugrid{grid-template-columns:1.3fr .7fr}
+ .clock{width:240px}
+ .shop{grid-template-columns:repeat(3,1fr)}
+ .shophead{grid-template-columns:1fr 1fr;align-items:end}
+ .contact{grid-template-columns:1.1fr 1fr 1fr}
+ .callbar{display:none}
+ footer{padding-bottom:34px}
+ .f.mob-only{display:none}
+}
+@media (max-width:1023px){.f.desk-only{display:none}}
+@media (max-width:600px){body{padding-top:48px}header{top:48px}.hero{padding-top:132px}.f{opacity:.65}.brand b{font-size:16px}}
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important}
+ .reveal,.card{opacity:1;transform:none}
+ .flow:after{transform:none!important}
+ html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Plomberie Girard &amp; Voyer — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 200 150">
+  <g class="pipe"><rect x="10" y="22" width="120" height="22" rx="4" fill="#cf7a3a"/><rect x="118" y="16" width="16" height="34" rx="3" fill="#a9561f"/><path d="M134 26h26a14 14 0 0 1 14 14v8h-14v-8h-26z" fill="#cf7a3a"/><rect x="156" y="46" width="22" height="8" rx="2" fill="#a9561f"/></g>
+  <path class="drop" d="M167 58c6 9 10 14 10 19a10 10 0 0 1-20 0c0-5 4-10 10-19z" fill="#2bb3d9"/>
+  <ellipse class="ring" cx="167" cy="140" rx="26" ry="6" fill="none" stroke="#8fdcf0" stroke-width="3"/>
+ </svg>
+ <div class="iname">Plomberie Girard &amp; Voyer</div>
+ <div class="itag">Roberval · Lac-Saint-Jean</div>
+</div>
+<script>
+(function(){var i=document.getElementById('intro');if(!i)return;var seen=false;try{seen=sessionStorage.getItem('gv-intro')==='1'}catch(e){}
+if(seen||window.matchMedia('(prefers-reduced-motion: reduce)').matches){i.parentNode.removeChild(i);return}
+try{sessionStorage.setItem('gv-intro','1')}catch(e){}
+var done=false;function end(){if(done)return;done=true;i.classList.add('out');setTimeout(function(){if(i.parentNode)i.parentNode.removeChild(i)},480)}
+var t=setTimeout(end,2300);i.addEventListener('click',function(){clearTimeout(t);end()});i.addEventListener('touchstart',function(){clearTimeout(t);end()},{passive:true})})();
+</script>
+
+<header>
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Plomberie Girard &amp; Voyer, accueil">
+   <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21" fill="#124a73"/><path d="M22 8c6 9 10 14 10 19a10 10 0 0 1-20 0c0-5 4-10 10-19z" fill="#2bb3d9"/><text x="22" y="32" text-anchor="middle" font-family="Sora,sans-serif" font-weight="800" font-size="10.5" fill="#fff">G&amp;V</text></svg>
+   <span><small>Plomberie</small><b>Girard &amp; Voyer</b></span>
+  </a>
+  <nav aria-label="Navigation principale">
+   <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#urgence">Urgence 24 h</a></li>
+    <li><a href="#boutique">Boutique</a></li>
+    <li><a href="#contact">Nous joindre</a></li>
+   </ul>
+  </nav>
+  <a class="btn btn-cu navcall" href="tel:+14182753551">418 275-3551</a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="m"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+ </div>
+ <div class="menu" id="m">
+  <a href="#services">Services</a><a href="#urgence">Urgence 24 h sur 24</a><a href="#boutique">Boutique O Bains Décor</a><a href="#contact">Nous joindre</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+ <div class="float" aria-hidden="true">
+  <div class="f" style="left:4%;top:5%;width:34px;height:44px;--d:-.22"><svg viewBox="0 0 34 44" style="--t:7s"><path d="M17 2c9 13 15 21 15 28a15 15 0 0 1-30 0C2 23 8 15 17 2z" fill="#2bb3d9"/><path d="M10 30a7 7 0 0 0 5 7" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".7"/></svg></div>
+  <div class="f" style="right:6%;top:58%;width:64px;height:64px;--d:-.3;--r:30deg"><svg viewBox="0 0 64 64" style="--t:10s"><path d="M46 6a12 12 0 0 0-11 16L8 49a5 5 0 0 0 7 7l27-27A12 12 0 0 0 58 18l-7 4-6-4-1-7z" fill="#c7d6e2"/></svg></div>
+  <div class="f" style="left:46%;top:6%;width:22px;height:30px;--d:-.14"><svg viewBox="0 0 34 44" style="--t:6s"><path d="M17 2c9 13 15 21 15 28a15 15 0 0 1-30 0C2 23 8 15 17 2z" fill="#8fdcf0"/></svg></div>
+  <div class="f back desk-only" style="right:36%;top:8%;width:90px;height:60px;--d:-.08"><svg viewBox="0 0 90 60" style="--t:13s"><path d="M4 20h40a16 16 0 0 1 16 16v20" stroke="#cf7a3a" stroke-width="12" fill="none"/></svg></div>
+  <div class="f back" style="left:70%;bottom:10%;width:50px;height:64px;--d:-.1"><svg viewBox="0 0 34 44" style="--t:11s"><path d="M17 2c9 13 15 21 15 28a15 15 0 0 1-30 0C2 23 8 15 17 2z" fill="#2bb3d9"/></svg></div>
+  <div class="f" style="left:10%;bottom:8%;width:56px;height:36px;--d:-.12;--r:-15deg"><svg viewBox="0 0 56 36" style="--t:9s"><rect x="2" y="12" width="52" height="12" rx="3" fill="#cf7a3a"/><rect x="10" y="8" width="8" height="20" rx="2" fill="#a9561f"/><rect x="38" y="8" width="8" height="20" rx="2" fill="#a9561f"/></svg></div>
+  <div class="f desk-only" style="left:38%;bottom:6%;width:50px;height:50px;--d:-.18"><svg viewBox="0 0 50 50" style="--t:8s"><circle cx="25" cy="25" r="20" fill="none" stroke="#8fdcf0" stroke-width="3"/><circle cx="25" cy="25" r="11" fill="none" stroke="#8fdcf0" stroke-width="2" opacity=".6"/></svg></div>
+  <div class="f mob-only" style="left:78%;top:12%;width:24px;height:32px;--d:-.2"><svg viewBox="0 0 34 44" style="--t:8s"><path d="M17 2c9 13 15 21 15 28a15 15 0 0 1-30 0C2 23 8 15 17 2z" fill="#2bb3d9"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="urg"><i></i>Service d'urgence 24 heures sur 24</span>
+   <h1>Plomberie <span>Girard &amp; Voyer</span></h1>
+   <p class="slog">Le travail bien fait est notre meilleure publicité !</p>
+   <p class="lead">Service de plomberie et boutique au Lac-Saint-Jean. Résidentiel, commercial ou industriel, construction neuve, rénovation, réparation ou entrée d'eau : nos plombiers expérimentés se déplacent directement chez vous.</p>
+   <div class="cta">
+    <a class="btn btn-cu" href="tel:+14182753551"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler 418 275-3551</a>
+    <a class="btn btn-ghost" href="#services">Nos services</a>
+   </div>
+   <ul class="chips"><li>Résidentiel</li><li>Commercial</li><li>Industriel</li><li>Boutique O Bains Décor</li></ul>
+  </div>
+  <aside class="hcard" aria-label="Heures d'ouverture">
+   <h2>Heures d'ouverture</h2>
+   <ul class="hours">
+    <li><span>Lundi au jeudi</span><span>8 h à 17 h</span></li>
+    <li><span>Vendredi</span><span>8 h à 12 h</span></li>
+    <li class="off"><span>Samedi et dimanche</span><span>Fermé</span></li>
+    <li><span>Urgences</span><span>24 h sur 24</span></li>
+   </ul>
+   <p style="margin:14px 0 0;color:#d5e6f1;font-size:15px">190, boulevard Marcotte, Roberval</p>
+  </aside>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="eyebrow">Nos services de plomberie</div>
+  <h2 class="t">Nos plombiers expérimentés sauront relever le défi!</h2>
+  <p class="sub">Le personnel qualifié de Plomberie Girard Voyer se déplace directement chez vous afin de vous offrir le meilleur service qui soit.</p>
+  <div class="pipeline" id="pipeline">
+   <div class="svc">
+    <div class="flow" aria-hidden="true"></div>
+    <article class="card">
+     <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="14" fill="#e6f4fa"/><path d="M12 27L27 14l15 13v15H12z" fill="#0b3352"/><path d="M27 26c4 6 6 9 6 12a6 6 0 0 1-12 0c0-3 2-6 6-12z" fill="#2bb3d9"/></svg>
+     <h3>Résidentiel</h3>
+     <p>Construction neuve, rénovation ou agrandissement, nous sommes en mesure de faire les travaux de plomberie pour vous.</p>
+    </article>
+    <article class="card">
+     <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="14" fill="#fbeadd"/><rect x="12" y="20" width="30" height="22" fill="#cf7a3a"/><path d="M10 20l4-8h26l4 8z" fill="#0b3352"/><rect x="23" y="30" width="8" height="12" fill="#fff"/></svg>
+     <h3>Commercial</h3>
+     <p>Nous sommes en mesure d'effectuer la plomberie dans les secteurs de la restauration, de l'hôtellerie ainsi que tout autre type de commerce.</p>
+    </article>
+    <article class="card">
+     <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="14" fill="#e6f4fa"/><path d="M10 42V24l10 6v-6l10 6v-6l12 7v11z" fill="#0b3352"/><rect x="34" y="12" width="6" height="14" fill="#cf7a3a"/></svg>
+     <h3>Industriel</h3>
+     <p>Nous réparons, restaurons et fixons tous types d'installation de plomberie dans les usines.</p>
+    </article>
+   </div>
+  </div>
+  <div class="also reveal">
+   <svg viewBox="0 0 60 60" width="60" height="60" aria-hidden="true"><rect x="6" y="24" width="48" height="12" rx="3" fill="#cf7a3a"/><rect x="24" y="6" width="12" height="48" rx="3" fill="#cf7a3a"/><circle cx="30" cy="30" r="9" fill="#2bb3d9"/></svg>
+   <div><b>Entrées d'eau, construction neuve, rénovations, réparations</b><p>Les membres de notre équipe iront également prendre les mesures afin de commander les bons équipements.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="urgence">
+ <div class="wrap">
+  <div class="ugrid">
+   <div>
+    <div class="eyebrow" style="color:#fff3ea">Service d'urgence disponible 24 heures sur 24</div>
+    <p class="q">Votre entrée d'eau fait des siennes à 4 h du matin ?</p>
+    <ul><li>Entrée d'eau</li><li>Évier</li><li>Tuyaux obstrués</li><li>Pompe</li><li>Fuite d'eau</li><li>Refoulement</li></ul>
+    <p>Restez calme, l'équipe de Plomberie Girard Voyer est disponible en tout temps pour répondre à vos besoins urgents.</p>
+    <a class="btn btn-w" href="tel:+14182753551"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Urgence : 418 275-3551</a>
+   </div>
+   <svg class="clock" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" fill="#fff"/><circle cx="60" cy="60" r="54" fill="none" stroke="#7a3a0f" stroke-width="6"/><g stroke="#7a3a0f" stroke-width="4" stroke-linecap="round"><path d="M60 14v8M60 98v8M14 60h8M98 60h8"/></g><path d="M60 60L48 40" stroke="#0b3352" stroke-width="6" stroke-linecap="round"/><path class="hand" d="M60 60V22" stroke="#cf7a3a" stroke-width="4" stroke-linecap="round"/><circle cx="60" cy="60" r="5" fill="#0b3352"/><text x="60" y="88" text-anchor="middle" font-family="Sora,sans-serif" font-weight="800" font-size="13" fill="#0b3352">24 h</text></svg>
+  </div>
+ </div>
+</section>
+
+<section id="boutique">
+ <div class="wrap">
+  <div class="shophead">
+   <div>
+    <div class="eyebrow">Vous cherchez une pièce pour vos travaux?</div>
+    <div class="logo2">O Bains <span>Décor</span></div>
+   </div>
+   <p class="sub" style="margin:0">La boutique située au 190, boulevard Marcotte vous offre une vaste gamme de produits correspondant à tous les budgets : un large inventaire en magasin, des articles tendances de qualité, plusieurs produits québécois et différentes marques réputées.</p>
+  </div>
+  <div class="shop reveal">
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#fbeadd"/><path d="M8 14h12a6 6 0 0 1 6 6v6h-5v-6a1 1 0 0 0-1-1H8z" fill="#cf7a3a"/></svg>Pièces de plomberie</h3><p>Tout ce qu'il vous faut pour vos travaux de plomberie. Nos conseillers sauront répondre à vos questions et vous aider avec vos projets.</p></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#e6f4fa"/><path d="M8 12h14v5H13v4H8z" fill="#0b3352"/><rect x="14" y="7" width="8" height="4" rx="2" fill="#0b3352"/><path d="M10 23c2 3 3 4 3 5a3 3 0 0 1-6 0c0-1 1-2 3-5z" fill="#2bb3d9"/></svg>Robinets</h3><ul class="brands"><li>Delta</li><li>Waltec</li><li>Riobel</li><li>American Standard</li><li>Jalo</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#fbeadd"/><rect x="11" y="6" width="12" height="22" rx="5" fill="#cf7a3a"/><path d="M15 12h4" stroke="#fff" stroke-width="2"/></svg>Chauffe-eau</h3><p>Ceux de la compagnie Giant, une marque québécoise durable, en modèles résidentiels et commerciaux.</p><ul class="brands"><li>Giant</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#e6f4fa"/><path d="M6 16h22v4a6 6 0 0 1-6 6H12a6 6 0 0 1-6-6z" fill="#0b3352"/><path d="M9 16V9a3 3 0 0 1 6 0" stroke="#2bb3d9" stroke-width="2" fill="none"/></svg>Bains et douches</h3><p>Dont des douches en verre et en composite de confection québécoise.</p><ul class="brands"><li>Océania</li><li>Zitta</li><li>Maax</li><li>Fleurco</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#fbeadd"/><path d="M6 14h22l-3 10H9z" fill="#cf7a3a"/><path d="M16 14V8h6" stroke="#0b3352" stroke-width="2.5" fill="none"/></svg>Éviers</h3><p>En stainless, granit et céramique.</p><ul class="brands"><li>Blanco</li><li>Kindred</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#e6f4fa"/><circle cx="15" cy="19" r="8" fill="#0b3352"/><circle cx="15" cy="19" r="3" fill="#2bb3d9"/><rect x="21" y="8" width="5" height="12" rx="2" fill="#cf7a3a"/></svg>Pompes</h3><p>Plusieurs choix de pompes et réservoirs d'expansion pour tous types d'installation.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="eyebrow">Nous joindre</div>
+  <h2 class="t">Parlez à un plombier</h2>
+  <p class="sub">Vous n'êtes pas disponible pendant nos heures d'ouverture? Prenez rendez-vous : il nous fera plaisir de vous rencontrer.</p>
+  <div class="contact reveal">
+   <div class="box">
+    <h3>Téléphone</h3>
+    <a class="big" href="tel:+14182753551">418 275-3551</a>
+    <p>Courriel : <a href="mailto:plomberiegirardvoyer@hotmail.com" style="overflow-wrap:anywhere">plomberiegirardvoyer@hotmail.com</a></p>
+    <p>Télécopieur : 418 275-6041</p>
+   </div>
+   <div class="box">
+    <h3>Heures d'ouverture</h3>
+    <ul class="hours" style="color:var(--ink)">
+     <li><span>Lundi au jeudi</span><span>8 h à 17 h</span></li>
+     <li><span>Vendredi</span><span>8 h à 12 h</span></li>
+     <li class="off"><span>Samedi et dimanche</span><span>Fermé</span></li>
+    </ul>
+    <p style="color:var(--muted);font-size:15px;margin-top:10px">Service d'urgence 24 heures sur 24. Paiement : Interac, comptant, Visa, MasterCard.</p>
+   </div>
+   <div class="box">
+    <h3>Boutique et bureau</h3>
+    <p>190, boulevard Marcotte<br>Roberval (Québec) G8H 1Z2</p>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=190+boulevard+Marcotte+Roberval+QC+G8H+1Z2" target="_blank" rel="noopener">Voir sur Google Maps</a></p>
+    <p><a href="https://www.facebook.com/p/Plomberie-Girard-Voyer-Inc-100063724506002/" target="_blank" rel="noopener">Suivez-nous sur Facebook</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span>© Plomberie Girard &amp; Voyer — Tous droits réservés</span>
+  <span>Service de plomberie et boutique au Lac-Saint-Jean</span>
+ </div>
+</footer>
+<a class="callbar" href="tel:+14182753551"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler un plombier</a>
+
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('m');
+ b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+ var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var els=document.querySelectorAll('.reveal,.card,.pipeline');
+ if(rm||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')})}
+ else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(e){io.observe(e)})}
+ if(!rm){var h=document.getElementById('hero'),tick=false;
+  window.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=window.scrollY;if(y<1200)h.style.setProperty('--p',y.toFixed(0));tick=false})},{passive:true});}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Paysagiste Landteck — Pavé-uni, murs de pierre et aménagement à Gatineau et Ottawa</title>
+<meta name="description" content="Paysagiste Landteck : paysagiste attesté en Outaouais depuis 38 ans. Murs, piliers, marches, contour de piscine, pavé-uni, dalles, flagstone, pelouse et plantation à Gatineau, Ottawa, Hull et Aylmer. Ouvert 7/7, estimation gratuite : 819-661-5252.">
+<meta property="og:title" content="Paysagiste Landteck">
+<meta property="og:description" content="Dans le domaine depuis 38 ans. Ouvert 7/7. Estimation gratuite : 819-661-5252.">
+<meta name="theme-color" content="#1f2224">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Paysagiste Landteck","description":"Paysagiste attesté en Outaouais : murs, piliers, marches, couronnements et contour de piscine, pavé-uni, dalles, pierre naturelle (flagstone), pelouse et plantation.","telephone":"+1-819-661-5252","email":"landteck@bell.net","address":{"@type":"PostalAddress","streetAddress":"146, route Principale Ouest","addressLocality":"Sainte-Cécile-de-Masham","addressRegion":"QC","postalCode":"J0X 2W0","addressCountry":"CA"},"areaServed":["Gatineau","Ottawa","Hull","Aylmer"],"knowsLanguage":["fr","en"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"21:00"},"url":"https://www.landteckpaysagement.ca/"}
+</script>
+<style>
+:root{--coal:#1f2224;--coal2:#2b2f31;--stone:#a9a296;--sand:#efe9df;--sand2:#e3dccf;--moss:#6e8f3a;--moss2:#55722b;--ink:#1d1f20;--muted:#5b5a55;--line:#d8d0c2}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;padding-top:32px;background:var(--sand);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Oswald",Impact,sans-serif;font-weight:700;line-height:1.05;margin:0 0 .45em;text-transform:uppercase;letter-spacing:.01em}
+a{color:inherit}
+svg{max-width:100%}
+p,li,h1,h2,h3{overflow-wrap:break-word;hyphens:manual}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:.55em;padding:.85em 1.4em;border-radius:6px;font-weight:700;text-decoration:none;font-size:1.02rem;min-height:48px;transition:transform .2s ease}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-moss{background:var(--moss);color:#fff}
+.btn-line{border:2px solid rgba(255,255,255,.5);color:#fff}
+
+/* Intro : les pavés se posent */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--coal);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .45s ease}
+#intro.out{opacity:0}
+#intro svg{width:min(300px,80vw);height:auto}
+#intro .b{opacity:0;transform:translateY(-60px);animation:lay .42s cubic-bezier(.3,1.4,.5,1) forwards}
+#intro .cap{opacity:0;transform:translateY(-60px);animation:lay .5s 1s cubic-bezier(.3,1.4,.5,1) forwards}
+#intro .word{opacity:0;animation:fade .4s 1.35s ease forwards}
+@keyframes lay{to{opacity:1;transform:none}}
+@keyframes fade{to{opacity:1}}
+
+/* Header */
+header{position:fixed;top:32px;left:0;right:0;z-index:50;background:var(--coal);color:#fff;border-bottom:3px solid var(--moss)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:40px;height:34px;flex:none}
+.brand b{font:700 21px/1 "Oswald",sans-serif;letter-spacing:.06em;display:block}
+.brand small{font-size:12px;color:#c9c2b6;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+nav ul{list-style:none;margin:0;padding:0;display:none;gap:26px}
+nav a{text-decoration:none;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:15px}
+nav a:hover{color:#b7d27f}
+.navcall{display:none}
+.burger{background:none;border:0;color:#fff;width:46px;height:46px;display:grid;place-items:center;cursor:pointer}
+.burger svg{width:26px;height:26px}
+.menu{position:absolute;top:62px;left:0;right:0;background:var(--coal2);padding:6px 20px 16px;display:none}
+.menu.open{display:block}
+.menu a{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1);text-decoration:none;font-weight:700}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;isolation:isolate;color:#fff;padding:116px 0 70px;background:
+ linear-gradient(180deg,rgba(31,34,36,.2),rgba(31,34,36,.92) 92%),
+ repeating-linear-gradient(0deg,transparent 0 46px,rgba(0,0,0,.25) 46px 49px),
+ linear-gradient(135deg,#4a4d4b,#2a2d2e 60%,#1f2224)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;opacity:.18;background:
+ repeating-linear-gradient(90deg,transparent 0 94px,rgba(0,0,0,.6) 94px 97px)}
+.float{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.f{position:absolute;transform:translate3d(0,calc(var(--p,0) * var(--d) * 1px),0)}
+.f svg{display:block;width:100%;height:100%;animation:drift var(--t,10s) ease-in-out infinite alternate}
+.f.back svg{filter:blur(2px);opacity:.5}
+@keyframes drift{from{transform:translateY(-10px) rotate(calc(var(--r,0deg) - 10deg))}to{transform:translateY(12px) rotate(calc(var(--r,0deg) + 10deg))}}
+.hero .wrap{position:relative;display:grid;gap:30px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--moss);color:#fff;font-weight:700;padding:5px 12px;border-radius:4px;font-size:14px;letter-spacing:.05em;text-transform:uppercase}
+.badge i{width:8px;height:8px;border-radius:50%;background:#d6f29b;display:inline-block}
+.hero h1{font-size:clamp(2.3rem,10vw,4.6rem);margin:16px 0 12px}
+.hero h1 span{color:#b7d27f}
+.lead{font-size:1.12rem;color:#e2ddd3;max-width:34em;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0;padding:0;list-style:none}
+.facts li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:14px;min-width:0}
+.facts b{display:block;font:700 2rem/1 "Oswald",sans-serif;color:#fff}
+.facts span{font-size:14px;color:#d4cec3}
+
+/* Sections */
+section{padding:72px 0}
+.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--moss2)}
+h2.t{font-size:clamp(2rem,7vw,3.2rem)}
+.sub{color:var(--muted);max-width:42em;margin:0 0 30px}
+
+/* Services : le mur qui se monte */
+.wall{display:grid;grid-template-columns:1fr;gap:12px}
+.blk{background:#fff;border:1px solid var(--line);border-bottom:5px solid var(--stone);border-radius:6px;padding:20px 18px 18px;min-width:0;opacity:0;transform:translate3d(0,70px,0) scale(.96);transition:transform .7s cubic-bezier(.25,1.3,.5,1),opacity .45s ease}
+.blk.in{opacity:1;transform:none}
+.blk h3{font-size:1.3rem;display:flex;align-items:center;gap:12px}
+@media (min-width:1024px){.blk h3{display:block;font-size:1.2rem}.blk h3 svg{display:block;margin-bottom:10px}}
+.blk h3 svg{width:42px;height:42px;flex:none}
+.blk p{margin:0;color:var(--muted)}
+.wall .blk:nth-child(2){transition-delay:.08s}.wall .blk:nth-child(3){transition-delay:.16s}.wall .blk:nth-child(4){transition-delay:.24s}.wall .blk:nth-child(5){transition-delay:.32s}.wall .blk:nth-child(6){transition-delay:.4s}.wall .blk:nth-child(7){transition-delay:.48s}.wall .blk:nth-child(8){transition-delay:.56s}
+
+/* Bande pavé */
+.band{background:var(--coal);color:#fff;position:relative;overflow:hidden}
+.band:before{content:"";position:absolute;inset:0;opacity:.12;background:
+ repeating-linear-gradient(0deg,transparent 0 38px,#000 38px 41px),repeating-linear-gradient(90deg,transparent 0 78px,#000 78px 81px)}
+.band .wrap{position:relative;display:grid;gap:26px}
+.band h2{font-size:clamp(1.8rem,6vw,2.8rem)}
+.band p{color:#d9d3c8}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.list li{padding:12px 14px 12px 44px;background:rgba(255,255,255,.06);border-radius:6px;position:relative;font-weight:600}
+.list li:before{content:"";position:absolute;left:14px;top:50%;width:16px;height:10px;margin-top:-5px;background:#b7d27f;border-radius:2px;box-shadow:0 0 0 2px rgba(183,210,127,.25)}
+
+/* Affiliations */
+.aff{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.aff a{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px 18px;font:700 1.1rem "Oswald",sans-serif;letter-spacing:.04em;text-decoration:none;text-transform:uppercase}
+.aff a svg{width:22px;height:22px}
+
+/* Contact */
+.contact{display:grid;gap:16px}
+.box{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;min-width:0}
+.box h3{font-size:1.3rem}
+.box p{margin:.3em 0}
+.box a{font-weight:700;color:var(--moss2)}
+.big{font:700 clamp(1.8rem,7vw,2.5rem)/1.1 "Oswald",sans-serif;text-decoration:none;display:inline-block;color:var(--ink)!important}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:6px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:700}
+.zone{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:10px 0 0}
+.zone li{background:var(--sand2);border-radius:4px;padding:5px 12px;font-weight:700;font-size:14px}
+footer{background:#161819;color:#b3ada3;padding:34px 0 100px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:10px;background:var(--moss);color:#fff;font-weight:700;text-decoration:none;border-radius:8px;padding:14px;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:1.05rem}
+.callbar svg{width:22px;height:22px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:600px){body{padding-top:44px}header{top:44px}.hero{padding-top:126px}.f{opacity:.6}}
+@media (min-width:700px){.wall{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr 1fr}.facts{grid-template-columns:repeat(4,1fr)}}
+@media (min-width:1024px){
+ nav ul{display:flex}.burger{display:none}.navcall{display:inline-flex;min-height:0;padding:.55em 1.1em}
+ .hero{padding:156px 0 100px}
+ .hero .wrap{grid-template-columns:1.2fr .8fr;align-items:end;gap:56px}
+ .facts{grid-template-columns:1fr 1fr}
+ .wall{grid-template-columns:repeat(4,1fr)}
+ .wall .blk:nth-child(n+5){transform:translate3d(0,70px,0) scale(.96)}
+ .wall .blk.in{transform:none}
+ .band .wrap{grid-template-columns:1fr 1fr;align-items:center;gap:60px}
+ .contact{grid-template-columns:1fr 1fr 1fr}
+ .callbar{display:none}footer{padding-bottom:34px}
+ .f.mob-only{display:none}
+}
+@media (max-width:1023px){.f.desk-only{display:none}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.blk,.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+.avbox{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 14px;margin:18px auto 0;padding:12px 20px;border-radius:999px;background:#fff;border:1px solid var(--line);max-width:100%;width:fit-content;text-align:center}
+.avbox b{font-size:1.5rem;line-height:1}.avbox .avst{color:#e0a316;letter-spacing:2px;font-size:1.15rem}.avbox span{color:var(--muted);font-size:15px}
+.avgrid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:26px}.avgrid>*{min-width:0}
+.avc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 20px 16px;box-shadow:0 6px 20px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:10px}
+.avc .avs{color:#e0a316;letter-spacing:2px}.avc q{quotes:"« " " »";font-size:1.05rem;line-height:1.55;overflow-wrap:anywhere}
+.avc .avw{font-size:14px;color:var(--muted)}.avc .avw strong{color:var(--ink)}
+.avgrid.one{max-width:560px;margin-left:auto;margin-right:auto;grid-template-columns:1fr!important}
+#avis-page .avgrid.one{margin-left:0}
+.avmore{text-align:center;margin-top:26px}
+.avbtn{display:inline-flex;align-items:center;gap:.5em;min-height:48px;padding:.8em 1.4em;border-radius:8px;border:0;cursor:pointer;font-family:inherit;font-weight:700;font-size:1rem;line-height:1.2;text-decoration:none;background:var(--moss2);color:#fff}
+.avbtn.ghost{background:transparent;color:var(--coal);border:2px solid var(--coal)}
+#avis-page{display:none;padding:130px 0 100px;min-height:100vh;background:var(--sand)}
+#avis-page h1{font-size:clamp(2rem,7vw,3rem);margin:18px 0 0;line-height:1.1}
+#avis-page .avtop{display:flex;flex-wrap:wrap;gap:10px}
+#avis-page .avbox{margin-left:0}
+#avis-page .avnote{color:var(--muted);font-size:15px;margin:14px 0 0}
+body.av-open main,body.av-open footer{display:none}
+body.av-open #avis-page{display:block}
+@media (max-width:600px){#avis-page{padding-top:140px}}
+@media (min-width:760px){.avgrid{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.avgrid.three{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Paysagiste Landteck — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 300 200">
+  <g fill="#8d877c" stroke="#1f2224" stroke-width="3">
+   <rect class="b" style="animation-delay:.05s" x="20" y="150" width="86" height="34" rx="3"/>
+   <rect class="b" style="animation-delay:.15s" x="107" y="150" width="86" height="34" rx="3"/>
+   <rect class="b" style="animation-delay:.25s" x="194" y="150" width="86" height="34" rx="3"/>
+   <rect class="b" style="animation-delay:.38s" x="20" y="115" width="43" height="34" rx="3" fill="#a9a296"/>
+   <rect class="b" style="animation-delay:.46s" x="64" y="115" width="86" height="34" rx="3" fill="#a9a296"/>
+   <rect class="b" style="animation-delay:.54s" x="151" y="115" width="86" height="34" rx="3" fill="#a9a296"/>
+   <rect class="b" style="animation-delay:.62s" x="238" y="115" width="42" height="34" rx="3" fill="#a9a296"/>
+  </g>
+  <rect class="cap" x="10" y="72" width="280" height="42" rx="4" fill="#6e8f3a" stroke="#1f2224" stroke-width="3"/>
+  <text class="word" x="150" y="104" text-anchor="middle" font-family="Oswald,Impact,sans-serif" font-weight="700" font-size="30" letter-spacing="5" fill="#fff">LANDTECK</text>
+  <text class="word" x="150" y="52" text-anchor="middle" font-family="Oswald,Impact,sans-serif" font-weight="500" font-size="15" letter-spacing="6" fill="#c9c2b6">PAYSAGISTE</text>
+ </svg>
+</div>
+<script>
+(function(){var i=document.getElementById('intro');if(!i)return;var seen=false;try{seen=sessionStorage.getItem('landteck-intro')==='1'}catch(e){}
+if(seen||window.matchMedia('(prefers-reduced-motion: reduce)').matches){i.parentNode.removeChild(i);return}
+try{sessionStorage.setItem('landteck-intro','1')}catch(e){}
+var done=false;function end(){if(done)return;done=true;i.classList.add('out');setTimeout(function(){if(i.parentNode)i.parentNode.removeChild(i)},480)}
+var t=setTimeout(end,2100);i.addEventListener('click',function(){clearTimeout(t);end()});i.addEventListener('touchstart',function(){clearTimeout(t);end()},{passive:true})})();
+</script>
+
+<header>
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Paysagiste Landteck, accueil">
+   <svg viewBox="0 0 40 34" aria-hidden="true"><rect x="1" y="22" width="18" height="10" rx="1.5" fill="#a9a296"/><rect x="21" y="22" width="18" height="10" rx="1.5" fill="#a9a296"/><rect x="11" y="11" width="18" height="10" rx="1.5" fill="#8d877c"/><path d="M20 10C14 10 12 5 12 1c5 0 8 3 8 9zM20 10c0-6 3-9 8-9 0 4-2 9-8 9z" fill="#b7d27f"/></svg>
+   <span><b>LANDTECK</b><small>Paysagiste</small></span>
+  </a>
+  <nav aria-label="Navigation principale"><ul>
+   <li><a href="#services">Services</a></li><li><a href="#pourquoi">Pourquoi nous</a></li><li><a href="#tous-les-avis" data-avis-open>Avis</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+  <a class="btn btn-moss navcall" href="tel:+18196615252">819-661-5252</a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="m"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+ </div>
+ <div class="menu" id="m"><a href="#services">Services</a><a href="#pourquoi">Pourquoi nous</a><a href="#tous-les-avis" data-avis-open>Avis</a><a href="#contact">Heures et contact</a></div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+ <div class="float" aria-hidden="true">
+  <!-- pavé -->
+  <div class="f" style="left:5%;top:14%;width:60px;height:34px;--d:-.2;--r:-12deg"><svg viewBox="0 0 60 34" style="--t:9s"><rect x="2" y="2" width="56" height="30" rx="3" fill="#a9a296" stroke="#5c574f" stroke-width="2"/><path d="M8 10h20" stroke="#c8c1b4" stroke-width="2"/></svg></div>
+  <!-- flagstone -->
+  <div class="f" style="right:7%;top:18%;width:78px;height:62px;--d:-.3;--r:18deg"><svg viewBox="0 0 78 62" style="--t:11s"><path d="M8 18L30 4l30 6 14 22-12 24-34 2L4 40z" fill="#8f8577" stroke="#4c463e" stroke-width="2"/><path d="M24 22l14 8 18-6" stroke="#a89e8f" stroke-width="2" fill="none"/></svg></div>
+  <!-- feuille -->
+  <div class="f" style="left:48%;top:8%;width:40px;height:40px;--d:-.15;--r:30deg"><svg viewBox="0 0 40 40" style="--t:8s"><path d="M6 34C6 16 18 6 34 6c0 16-10 28-28 28z" fill="#8fb050"/><path d="M8 32L30 10" stroke="#4f6a24" stroke-width="2"/></svg></div>
+  <!-- galet -->
+  <div class="f back" style="left:76%;bottom:16%;width:70px;height:46px;--d:-.08"><svg viewBox="0 0 70 46" style="--t:13s"><ellipse cx="35" cy="23" rx="32" ry="20" fill="#7d776d"/></svg></div>
+  <!-- truelle -->
+  <div class="f" style="left:82%;top:56%;width:56px;height:56px;--d:-.25;--r:-35deg"><svg viewBox="0 0 56 56" style="--t:10s"><path d="M10 30L34 6l12 12-24 24z" fill="#cfd3d6" stroke="#6c7175" stroke-width="2"/><path d="M28 36l10 10" stroke="#6b4a2b" stroke-width="5" stroke-linecap="round"/></svg></div>
+  <!-- pavé fond -->
+  <div class="f back" style="left:12%;bottom:10%;width:80px;height:44px;--d:-.06;--r:8deg"><svg viewBox="0 0 60 34" style="--t:12s"><rect x="2" y="2" width="56" height="30" rx="3" fill="#8d877c"/></svg></div>
+  <!-- brin -->
+  <div class="f desk-only" style="left:38%;bottom:8%;width:50px;height:50px;--d:-.18"><svg viewBox="0 0 40 40" style="--t:7s"><path d="M20 38V18" stroke="#6e8f3a" stroke-width="3" stroke-linecap="round"/><path d="M20 22c-10 0-14-8-14-14 8 0 14 4 14 14zM20 18c0-8 6-14 14-14 0 8-4 14-14 14z" fill="#8fb050"/></svg></div>
+  <!-- petit caillou -->
+  <div class="f mob-only" style="left:60%;top:66%;width:34px;height:24px;--d:-.22"><svg viewBox="0 0 70 46" style="--t:9s"><ellipse cx="35" cy="23" rx="32" ry="20" fill="#9a9387"/></svg></div>
+  <div class="f back desk-only" style="right:32%;top:10%;width:90px;height:72px;--d:-.05;--r:-20deg"><svg viewBox="0 0 78 62" style="--t:14s"><path d="M8 18L30 4l30 6 14 22-12 24-34 2L4 40z" fill="#6f675c"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="badge"><i></i>Ouvert 7/7</span>
+   <h1>Paysagiste professionnel à <span>Gatineau</span> et <span>Ottawa</span></h1>
+   <p class="lead">Murs de pierre, piliers, marches, contours de piscine, pavé-uni et dalles : des paysagements à la fois esthétiques et fonctionnels. Paysagiste attesté en Outaouais, service bilingue.</p>
+   <div class="cta">
+    <a class="btn btn-moss" href="tel:+18196615252"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler 819-661-5252</a>
+    <a class="btn btn-line" href="#services">Nos services</a>
+   </div>
+  </div>
+  <ul class="facts">
+   <li><b>38 ans</b><span>dans le domaine</span></li>
+   <li><b>7/7</b><span>de 7 h à 21 h</span></li>
+   <li><b>Gratuite</b><span>estimation pour tous vos projets</span></li>
+   <li><b>FR / EN</b><span>service bilingue</span></li>
+  </ul>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="eyebrow">Nos services</div>
+  <h2 class="t">Des jardins luxueux aux contours de piscine, on a tout fait</h2>
+  <p class="sub">Aménagement paysager professionnel pour propriétés résidentielles à Ottawa et Gatineau, avec des équipements et des matériaux de haute technologie.</p>
+  <div class="wall" id="wall">
+   <article class="blk"><h3><svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#efe9df"/><g fill="#8d877c"><rect x="5" y="25" width="15" height="9" rx="1"/><rect x="22" y="25" width="15" height="9" rx="1"/><rect x="13" y="15" width="15" height="9" rx="1"/><rect x="5" y="15" width="7" height="9" rx="1"/><rect x="29" y="15" width="8" height="9" rx="1"/></g></svg>Murs</h3><p>Création et réparation de murs et de murs de soutènement en béton, en pierre naturelle ou en blocs.</p></article>
+   <article class="blk"><h3><svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#efe9df"/><rect x="15" y="12" width="12" height="24" fill="#8d877c"/><rect x="12" y="7" width="18" height="6" rx="1" fill="#6e8f3a"/></svg>Piliers</h3><p>Construction de piliers dans une variété de modèles et de matériaux, conçus pour résister aux intempéries.</p></article>
+   <article class="blk"><h3><svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#efe9df"/><rect x="6" y="11" width="30" height="20" rx="4" fill="#a9a296"/><rect x="10" y="15" width="22" height="12" rx="2" fill="#5aa2c4"/></svg>Couronnements et contour de piscine</h3><p>Un vaste choix de couleurs et de matériaux pour encadrer votre piscine.</p></article>
+   <article class="blk"><h3><svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#efe9df"/><path d="M6 34h30v-6H26v-7H16v-7H6z" fill="#8d877c"/></svg>Marches et couronnements</h3><p>Construction et réparation de marches en béton, en pierre naturelle, en asphalte et plus, sur mesure.</p></article>
+   <article class="blk"><h3><svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#efe9df"/><path d="M6 33c2-8 3-12 4-16 1 4 1 8 2 16M14 33c1-9 3-14 4-18 1 5 1 10 2 18M22 33c1-7 3-12 5-16 0 5 0 10 1 16M30 33c1-6 2-10 4-13 0 4 0 8 1 13" stroke="#6e8f3a" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>Pelouse</h3><p>Service régulier de jardinage et d'amélioration de pelouse pour la garder en santé, avec des produits écologiques.</p></article>
+   <article class="blk"><h3><svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#efe9df"/><path d="M21 34V20" stroke="#55722b" stroke-width="3"/><circle cx="21" cy="15" r="9" fill="#8fb050"/><path d="M12 34h18" stroke="#7d776d" stroke-width="3"/></svg>Plantation</h3><p>Plantation d'arbres, d'arbustes et de fleurs pour vos jardins et votre terrain.</p></article>
+   <article class="blk"><h3><svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#efe9df"/><g fill="#a9a296" stroke="#efe9df" stroke-width="1.5"><rect x="5" y="8" width="16" height="8"/><rect x="21" y="8" width="16" height="8"/><rect x="5" y="16" width="8" height="8"/><rect x="13" y="16" width="16" height="8"/><rect x="29" y="16" width="8" height="8"/><rect x="5" y="24" width="16" height="8"/><rect x="21" y="24" width="16" height="8"/></g></svg>Surfaces en dalles et pavé-uni</h3><p>Entrées, terrasses et autres surfaces en pavé-uni et en dalles.</p></article>
+   <article class="blk"><h3><svg viewBox="0 0 42 42" aria-hidden="true"><rect width="42" height="42" rx="6" fill="#efe9df"/><path d="M6 14l10-6 10 3 2 9-8 6-12-2z" fill="#8f8577"/><path d="M24 26l8-4 5 6-4 7-9 0z" fill="#a89e8f"/></svg>Pierre naturelle (flagstone)</h3><p>Un travail de pierre naturelle qui demande une main d'expérience.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="pourquoi">
+ <div class="wrap">
+  <div class="reveal">
+   <div class="eyebrow" style="color:#b7d27f">Pourquoi Landteck</div>
+   <h2>Dans le domaine depuis 38 ans</h2>
+   <p>Des services sécuritaires et fiables toute l'année, 7 jours sur 7, et des services professionnels à des prix avantageux. Un investissement durable dans vos espaces extérieurs.</p>
+   <p style="margin-top:20px"><a class="btn btn-moss" href="tel:+18196615252">Demandez une soumission</a></p>
+  </div>
+  <ul class="list reveal">
+   <li>Paysagiste attesté en Outaouais</li>
+   <li>Estimations gratuites pour tous vos projets</li>
+   <li>Service bilingue, en français et en anglais</li>
+   <li>Produits écologiques pour l'entretien</li>
+   <li>Nettoyage après les travaux</li>
+   <li>Ouvert 7 jours sur 7, de 7 h à 21 h</li>
+  </ul>
+ </div>
+</section>
+
+<section id="affiliations" style="padding-bottom:20px">
+ <div class="wrap reveal">
+  <div class="eyebrow">Affiliations professionnelles</div>
+  <h2 class="t" style="font-size:clamp(1.6rem,5vw,2.2rem)">On travaille avec des produits reconnus</h2>
+  <div class="aff">
+   <a href="https://www.techo-bloc.com/" target="_blank" rel="noopener"><svg viewBox="0 0 22 22" aria-hidden="true"><rect x="1" y="12" width="9" height="8" fill="#8d877c"/><rect x="12" y="12" width="9" height="8" fill="#8d877c"/><rect x="6" y="2" width="10" height="9" fill="#6e8f3a"/></svg>Techo-Bloc</a>
+   <a href="https://permacon.ca/fr" target="_blank" rel="noopener"><svg viewBox="0 0 22 22" aria-hidden="true"><rect x="1" y="12" width="9" height="8" fill="#8d877c"/><rect x="12" y="12" width="9" height="8" fill="#8d877c"/><rect x="6" y="2" width="10" height="9" fill="#6e8f3a"/></svg>Permacon</a>
+  </div>
+ </div>
+</section>
+
+<section id="avis" style="padding-top:40px"><div class="wrap"><div class="eyebrow" style="text-align:center">Ce que nos clients disent</div><h2 class="t" style="text-align:center">Ce que nos clients disent</h2><div class="avbox"><b>5,0</b><span class="avst" aria-hidden="true">★★★★★</span><span>sur Google · 1 avis</span></div><div class="avgrid one"><article class="avc"><div class="avs" aria-label="5 étoiles sur 5">★★★★★</div><q>the Best. N'importe quoi vous commander is the best</q><div class="avw"><strong>Benoit Cote</strong> · Avis Google</div></article></div><div class="avmore"><a class="avbtn" href="#tous-les-avis" data-avis-open>Voir tous les avis (1)</a></div></div></section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="eyebrow">Contact</div>
+  <h2 class="t">Parlons paysagement</h2>
+  <div class="contact reveal">
+   <div class="box">
+    <h3>Appelez-nous</h3>
+    <a class="big" href="tel:+18196615252">819-661-5252</a>
+    <p>Autre numéro : <a href="tel:+18194562526">819-456-2526</a></p>
+    <p>Courriel : <a href="mailto:landteck@bell.net">landteck@bell.net</a></p>
+   </div>
+   <div class="box">
+    <h3>Heures</h3>
+    <table class="hours"><tr><td>Lundi au dimanche</td><td>7 h à 21 h</td></tr></table>
+    <p style="margin-top:10px;color:var(--muted);font-size:15px">Service en français et en anglais.</p>
+   </div>
+   <div class="box">
+    <h3>Adresse et secteurs</h3>
+    <p>146, route Principale Ouest<br>Sainte-Cécile-de-Masham (Québec) J0X 2W0</p>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=146+route+Principale+Ouest+Sainte-C%C3%A9cile-de-Masham+QC+J0X+2W0" target="_blank" rel="noopener">Voir sur Google Maps</a></p>
+    <ul class="zone"><li>Gatineau</li><li>Ottawa</li><li>Hull</li><li>Aylmer</li><li>et les environs</li></ul>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<div id="avis-page" aria-label="Tous les avis"><div class="wrap"><div class="avtop"><button type="button" class="avbtn" data-avis-close>← Retour au site</button><a class="avbtn ghost" href="https://www.google.com/maps?q=place_id:ChIJc478L_rr0UwRGMsvHZnN6Jo" target="_blank" rel="noopener">Voir sur Google →</a></div><h1>Tous les avis</h1><div class="avbox"><b>5,0</b><span class="avst" aria-hidden="true">★★★★★</span><span>sur Google · 1 avis</span></div><p class="avnote">Note de 5,0 sur 5 sur Google (1 avis). Commentaire reproduit mot pour mot.</p><div class="avgrid three one"><article class="avc"><div class="avs" aria-label="5 étoiles sur 5">★★★★★</div><q>the Best. N'importe quoi vous commander is the best</q><div class="avw"><strong>Benoit Cote</strong> · Avis Google</div></article></div><div class="avmore" style="text-align:left"><button type="button" class="avbtn" data-avis-close>← Retour au site</button></div></div></div>
+<footer><div class="wrap"><span>© Paysagiste Landteck — Tous droits réservés</span><span>Gatineau · Ottawa · Hull · Aylmer</span></div></footer>
+<a class="callbar" href="tel:+18196615252"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler pour une estimation</a>
+
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('m');
+ b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+ var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var els=document.querySelectorAll('.blk,.reveal');
+ if(rm||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')})}
+ else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(e){io.observe(e)})}
+ if(!rm){var h=document.getElementById('hero'),tick=false;
+  window.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=window.scrollY;if(y<1200)h.style.setProperty('--p',y.toFixed(0));tick=false})},{passive:true});}
+})();
+</script>
+<script>
+(function(){var y=0,b=document.body;
+function op(e){if(e)e.preventDefault();if(!b.classList.contains('av-open'))y=window.scrollY;b.classList.add('av-open');var m=document.getElementById('m');if(m)m.classList.remove('open');window.scrollTo(0,0)}
+function cl(e){if(e)e.preventDefault();b.classList.remove('av-open');window.scrollTo(0,y)}
+document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('a,button');if(!t)return;
+if(t.hasAttribute('data-avis-open'))return op(e);if(t.hasAttribute('data-avis-close'))return cl(e);
+if(b.classList.contains('av-open')&&t.getAttribute('href')&&t.getAttribute('href').charAt(0)==='#'){b.classList.remove('av-open')}},true);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.classList.contains('av-open'))cl()});})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

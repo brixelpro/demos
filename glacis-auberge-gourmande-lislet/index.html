@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Glacis Auberge gourmande — Une aventure gastronomique au moulin, L'Islet</title>
+<meta name="description" content="Auberge gourmande dans un moulin de 1841 à L'Islet (secteur Saint-Eugène), à une heure de Québec. Formule du soir 4 services, 16 chambres, chalets, forfaits, sentiers et massothérapie. Ouvert à l'année.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["LodgingBusiness","Restaurant"],"name":"Glacis Auberge gourmande","alternateName":"Auberge des Glacis","url":"https://aubergedesglacis.com/","telephone":"+1-418-247-7486","email":"info@aubergedesglacis.com","servesCuisine":"Cuisine du terroir québécois","priceRange":"$$$",
+"address":{"@type":"PostalAddress","streetAddress":"46, route de la Tortue","addressLocality":"L'Islet","addressRegion":"QC","postalCode":"G0R 1X0","addressCountry":"CA"},
+"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"408","bestRating":"5"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday","Friday","Saturday"],"opens":"17:30","closes":"20:00","description":"Arrivées au restaurant (formule du soir)"}],
+"hasMenu":{"@type":"Menu","name":"Formule du soir — 4 services","offers":{"@type":"Offer","price":"89","priceCurrency":"CAD"},"hasMenuSection":[
+{"@type":"MenuSection","name":"Entrées","hasMenuItem":[{"@type":"MenuItem","name":"Rillettes de la mer aux herbes"},{"@type":"MenuItem","name":"Tarte à l'oignon"},{"@type":"MenuItem","name":"Polpettes de chevreau Belles-Amours"},{"@type":"MenuItem","name":"Tartare de canard Goulu"},{"@type":"MenuItem","name":"Escalope de foie gras de canard Goulu"}]},
+{"@type":"MenuSection","name":"Plats principaux","hasMenuItem":[{"@type":"MenuItem","name":"Omble chevalier du Québec"},{"@type":"MenuItem","name":"Pintade du Cap St-Ignace"},{"@type":"MenuItem","name":"Magret de canard Goulu"},{"@type":"MenuItem","name":"Pressé d'épaule d'agneau de la Bergerie des Petites Laineuses"},{"@type":"MenuItem","name":"Cavatelli maison"},{"@type":"MenuItem","name":"Pièce de boeuf charolais de la Ferme de Ladurantaye"}]},
+{"@type":"MenuSection","name":"Desserts","hasMenuItem":[{"@type":"MenuItem","name":"Secret des Glacis"},{"@type":"MenuItem","name":"Le dessert de Madame Lucille"},{"@type":"MenuItem","name":"Crème brûlée au brandy de pommes Jodoin"}]}]}}
+</script>
+<style>
+:root{--vert:#1d3a2f;--vert2:#2c5444;--creme:#f6f0e3;--papier:#fbf8f1;--ble:#c9a24f;--ble2:#e5c77f;--vin:#6e2433;--encre:#2a2620;--doux:#6b6457;--bandeau:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bandeau) + 70px)}
+body{font-family:Mulish,system-ui,sans-serif;color:var(--encre);background:var(--papier);line-height:1.6;padding-top:var(--bandeau)}
+img,svg{max-width:100%}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.1;color:var(--vert)}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+@media(max-width:519px){:root{--bandeau:48px}}
+/* nav */
+.nav{position:fixed;top:var(--bandeau);left:0;right:0;z-index:50;background:rgba(29,58,47,.97);color:var(--creme);border-bottom:1px solid rgba(201,162,79,.35)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:44px;height:44px;flex:none}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:1.45rem;letter-spacing:.04em;white-space:nowrap}
+.brand small{display:block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ble2);margin-top:-3px}
+.links{display:flex;gap:22px;align-items:center;font-size:.9rem;font-weight:600}
+.links a{text-decoration:none;opacity:.9}
+.links a:hover{opacity:1;color:var(--ble2)}
+.links .tel{background:var(--ble);color:var(--vert);padding:9px 16px;border-radius:30px;opacity:1;font-weight:800}
+.burger{display:none;background:none;border:0;color:var(--creme);width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:currentColor;margin:5px auto;transition:transform .3s,opacity .3s}
+@media(max-width:899px){
+ .burger{display:block}
+ .links{position:fixed;top:calc(var(--bandeau) + 64px);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--vert);padding:8px 20px 20px;transform:translateY(-130%);opacity:0;transition:transform .35s,opacity .35s;z-index:-1}
+ .links a{padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.08)}
+ .links .tel{text-align:center;margin-top:12px;border:0}
+ .nav.open .links{transform:none;opacity:1}
+ .nav.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+ .nav.open .burger span:nth-child(2){opacity:0}
+ .nav.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 80% at 80% 10%,#2f5a48 0%,var(--vert) 55%,#13271f 100%);color:var(--creme);padding:110px 0 70px}
+.hero .wrap{position:relative;z-index:2;display:grid;gap:36px;align-items:center}
+.kicker{display:inline-block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ble2);border:1px solid rgba(229,199,127,.5);padding:6px 12px;border-radius:30px}
+.hero h1{color:var(--creme);font-size:clamp(2.5rem,9vw,4.6rem);margin:16px 0 14px}
+.hero h1 em{color:var(--ble2);font-style:italic;font-weight:500}
+.hero p.lead{font-size:1.08rem;max-width:34em;opacity:.92}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:40px;font-weight:800;text-decoration:none;font-size:.98rem;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn.or{background:var(--ble);color:var(--vert)}
+.btn.or:hover{background:var(--ble2)}
+.btn.ghost{border-color:rgba(246,240,227,.6);color:var(--creme);background:transparent}
+.btn.vert{background:var(--vert);color:var(--creme)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:.88rem;opacity:.9}
+.facts span{display:flex;align-items:center;gap:7px}
+.facts span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ble)}
+.rate{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:rgba(0,0,0,.22);padding:10px 16px;border-radius:14px;font-size:.92rem}
+.rate b{font-size:1.35rem;color:var(--ble2);font-family:"Cormorant Garamond",serif}
+.mill{position:relative;max-width:440px;margin:0 auto;width:100%}
+.mill svg{width:100%;height:auto;display:block}
+.wheel{transform-origin:118px 236px;animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.float{position:absolute;inset:0;z-index:1;pointer-events:none}
+.fl{position:absolute;opacity:.38;will-change:transform}
+.fl svg{display:block;width:100%;height:100%}
+.fl.back{opacity:.22;filter:blur(1.5px)}
+.drift{animation:drift var(--d,16s) ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(0,0,0) rotate(0)}to{transform:translate3d(var(--x,20px),var(--y,-30px),0) rotate(var(--r,40deg))}}
+.par{transform:translate3d(0,calc(var(--sc,0) * var(--k,0.1) * 1px),0)}
+@media(min-width:900px){.hero{padding:140px 0 100px}.hero .wrap{grid-template-columns:1.15fr .85fr}}
+/* sections */
+section{padding:76px 0}
+.sec-h{max-width:720px;margin-bottom:38px}
+.sec-h .k{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--vin);font-weight:800}
+.sec-h h2{font-size:clamp(2rem,6vw,3rem);margin:8px 0 10px}
+.sec-h p{color:var(--doux)}
+/* menu */
+#menu{background:var(--creme);position:relative}
+.formule{display:grid;gap:26px}
+.price-card{background:var(--vert);color:var(--creme);border-radius:22px;padding:28px;position:relative;overflow:hidden}
+.price-card .big{font-family:"Cormorant Garamond",serif;font-size:4rem;color:var(--ble2);line-height:1}
+.price-card .big small{font-size:1.1rem;color:var(--creme);font-family:Mulish,sans-serif}
+.price-card h3{color:var(--creme);font-size:1.7rem;margin-bottom:6px}
+.price-card ul{list-style:none;margin:18px 0}
+.price-card li{padding:8px 0;border-bottom:1px dashed rgba(246,240,227,.25);display:flex;gap:10px;align-items:baseline}
+.price-card li i{font-style:normal;color:var(--ble2);font-weight:800;min-width:22px}
+.price-card p{font-size:.88rem;opacity:.85}
+.services{display:grid;gap:18px;min-width:0}
+.svc{background:#fff;border-radius:18px;padding:22px 22px 14px;border:1px solid #e6dcc6;opacity:0;transform:translateY(40px) scale(.97);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.svc.in{opacity:1;transform:none}
+.svc h3{font-size:1.5rem;display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.svc h3 .n{width:34px;height:34px;border-radius:50%;background:var(--ble);color:var(--vert);font-family:Mulish,sans-serif;font-size:.95rem;display:grid;place-items:center;font-weight:800;flex:none}
+.item{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #f0e8d6;min-width:0}
+.item:last-child{border-bottom:0}
+.item span{overflow-wrap:anywhere}
+.item b{white-space:nowrap;color:var(--vin);font-size:.95rem}
+.note{font-size:.86rem;color:var(--doux);margin-top:6px}
+@media(min-width:900px){.formule{grid-template-columns:340px 1fr;align-items:start}.services{grid-template-columns:1fr 1fr}}
+/* séjour */
+.cards{display:grid;gap:18px}
+.card{background:#fff;border:1px solid #e6dcc6;border-radius:18px;padding:24px;min-width:0}
+.card h3{font-size:1.45rem;margin-bottom:8px}
+.card p,.card li{color:#4d473d;font-size:.95rem}
+.card ul{padding-left:18px;margin-top:6px}
+.card .px{display:block;margin-top:10px;font-weight:800;color:var(--vin)}
+.ico{width:46px;height:46px;border-radius:12px;background:var(--creme);display:grid;place-items:center;margin-bottom:12px}
+.ico svg{width:28px;height:28px}
+@media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.cards.c3{grid-template-columns:repeat(3,1fr)}}
+#forfaits{background:linear-gradient(180deg,var(--papier),var(--creme))}
+.gift{margin-top:24px;background:var(--vin);color:#fbeee0;border-radius:18px;padding:24px}
+.gift h3{color:#fff;font-size:1.5rem}
+.gift .item{border-color:rgba(255,255,255,.15)}
+.gift .item b{color:var(--ble2)}
+/* avis */
+#avis{background:var(--vert);color:var(--creme);position:relative;overflow:hidden}
+#avis .sec-h h2{color:var(--creme)}
+#avis .sec-h .k{color:var(--ble2)}
+.scores{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px}
+.score{background:rgba(255,255,255,.07);border:1px solid rgba(229,199,127,.35);border-radius:16px;padding:14px 20px}
+.score b{font-family:"Cormorant Garamond",serif;font-size:2.4rem;color:var(--ble2);line-height:1}
+.score span{display:block;font-size:.85rem;opacity:.85}
+.stars{color:var(--ble2);letter-spacing:2px}
+.grid-avis{display:grid;gap:16px}
+.avis{background:var(--papier);color:var(--encre);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.avis q{font-family:"Cormorant Garamond",serif;font-size:1.28rem;line-height:1.3;color:var(--vert);quotes:"« " " »"}
+.avis .t{font-weight:800;font-size:.9rem;color:var(--vin)}
+.avis .who{font-size:.82rem;color:var(--doux);margin-top:auto}
+@media(min-width:700px){.grid-avis{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.grid-avis{grid-template-columns:repeat(3,1fr)}}
+.center{text-align:center;margin-top:30px}
+/* histoire */
+.hist{display:grid;gap:30px}
+.timeline{list-style:none;border-left:2px solid var(--ble);padding-left:22px}
+.timeline li{position:relative;padding-bottom:18px}
+.timeline li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--ble);border:3px solid var(--papier)}
+.timeline b{font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--vin);display:block}
+.prix{display:grid;gap:10px;margin-top:20px}
+.prix div{background:var(--creme);border-radius:12px;padding:12px 16px;font-size:.92rem}
+.prix b{color:var(--vin)}
+@media(min-width:900px){.hist{grid-template-columns:1fr 1fr;gap:60px}}
+/* infos */
+#infos{background:var(--creme)}
+.infos{display:grid;gap:18px}
+.infos .card a{font-weight:700;color:var(--vert)}
+@media(min-width:900px){.infos{grid-template-columns:repeat(3,1fr)}}
+footer{background:#13271f;color:rgba(246,240,227,.8);padding:40px 0 110px;font-size:.88rem;text-align:center}
+footer b{color:var(--ble2)}
+@media(min-width:900px){footer{padding-bottom:40px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:10px}
+.callbar a{flex:1;text-align:center;padding:14px;border-radius:40px;font-weight:800;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.callbar .c1{background:var(--ble);color:var(--vert)}
+.callbar .c2{background:var(--vert);color:var(--creme)}
+@media(min-width:900px){.callbar{display:none}}
+/* page avis */
+#pageAvis{display:none;min-height:100vh;background:var(--papier)}
+body.vue-avis #site{display:none}
+body.vue-avis #pageAvis{display:block}
+body.vue-avis .callbar{display:none}
+.pa-top{position:sticky;top:var(--bandeau);z-index:40;background:var(--vert);color:var(--creme)}
+.pa-top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;height:64px}
+.pa-top .btn{padding:10px 16px}
+.pa-head{padding:40px 0 20px}
+.pa-head h1{font-size:clamp(2rem,7vw,3.2rem)}
+.pa-list{display:grid;gap:16px;padding-bottom:60px}
+.pa-list .avis{border:1px solid #e6dcc6}
+.pa-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+@media(min-width:800px){.pa-list{grid-template-columns:1fr 1fr}}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--vert);display:grid;place-items:center;transition:opacity .6s ease;cursor:pointer}
+#intro.out{opacity:0}
+#intro .box{text-align:center;color:var(--creme)}
+#intro svg{width:150px;height:150px}
+#intro .roue{transform-origin:75px 75px;animation:spin 2.2s cubic-bezier(.3,.1,.2,1) forwards}
+#intro .trace{stroke-dasharray:420;stroke-dashoffset:420;animation:trace 1.2s .1s ease forwards}
+@keyframes trace{to{stroke-dashoffset:0}}
+#intro h2{color:var(--creme);font-size:2.4rem;letter-spacing:.12em;margin-top:10px}
+#intro h2 span{display:inline-block;opacity:0;transform:translateY(-30px);animation:tombe .5s cubic-bezier(.3,1.6,.5,1) forwards}
+@keyframes tombe{to{opacity:1;transform:none}}
+#intro p{color:var(--ble2);letter-spacing:.25em;font-size:.72rem;text-transform:uppercase;opacity:0;animation:tombe .6s 1.3s forwards}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.svc{opacity:1;transform:none}#intro{display:none}.par{transform:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Glacis Auberge gourmande — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <div class="box">
+  <svg viewBox="0 0 150 150" fill="none">
+   <g class="roue" stroke="#e5c77f" stroke-width="4" stroke-linecap="round">
+    <circle class="trace" cx="75" cy="75" r="62"/>
+    <circle cx="75" cy="75" r="14"/>
+    <path d="M75 13v124M13 75h124M31 31l88 88M119 31l-88 88"/>
+   </g>
+  </svg>
+  <h2><span style="animation-delay:.35s">G</span><span style="animation-delay:.45s">L</span><span style="animation-delay:.55s">A</span><span style="animation-delay:.65s">C</span><span style="animation-delay:.75s">I</span><span style="animation-delay:.85s">S</span></h2>
+  <p>Auberge gourmande · depuis le moulin de 1841</p>
+ </div>
+</div>
+
+<div id="site">
+<nav class="nav" id="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" aria-label="Glacis Auberge gourmande, accueil">
+   <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#c9a24f"/><g stroke="#1d3a2f" stroke-width="2.4" stroke-linecap="round" fill="none"><circle cx="24" cy="24" r="13"/><circle cx="24" cy="24" r="3.5"/><path d="M24 11v26M11 24h26M14.8 14.8l18.4 18.4M33.2 14.8L14.8 33.2"/></g></svg>
+   <span><b>Glacis</b><small>Auberge gourmande</small></span>
+  </a>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="links" id="links">
+   <a href="#menu">Formule du soir</a>
+   <a href="#sejour">Séjourner</a>
+   <a href="#forfaits">Forfaits</a>
+   <a href="#avis" data-avis>Avis</a>
+   <a href="#histoire">Le moulin</a>
+   <a href="#infos">Nous joindre</a>
+   <a class="tel" href="tel:+14182477486">Appeler</a>
+  </div>
+ </div>
+</nav>
+
+<header class="hero" id="accueil">
+ <div class="float" id="float" aria-hidden="true"></div>
+ <div class="wrap">
+  <div>
+   <span class="kicker">L'Islet · secteur Saint-Eugène · ouvert à l'année</span>
+   <h1>Une aventure <em>gastronomique</em> au moulin</h1>
+   <p class="lead">Glacis Auberge gourmande, c'est un ancien moulin à farine au bord de la rivière Tortue, à une heure de Québec : une table du terroir en 4 services, 16 chambres avec salle de bain privée, des chalets et 5 hectares de nature.</p>
+   <div class="cta">
+    <a class="btn or" href="tel:+14182477486">Appeler l'auberge</a>
+    <a class="btn ghost" href="#menu">Voir la formule du soir</a>
+   </div>
+   <div class="rate"><b>4,9 ★</b> sur Google · 408 avis</div>
+   <div class="facts"><span>Plus de 70 produits locaux</span><span>Bureau d'accueil 24 h/24</span><span>Chambres adaptées Kéroul</span></div>
+  </div>
+  <div class="mill" aria-hidden="true">
+   <svg viewBox="0 0 400 340">
+    <defs><linearGradient id="pierre" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#e9dcc0"/><stop offset="1" stop-color="#cdb98f"/></linearGradient></defs>
+    <path d="M0 300 Q100 285 200 300 T400 296 V340 H0Z" fill="#2c5444"/>
+    <path d="M0 312 Q60 304 120 314 T240 312 T400 314" stroke="#7fb3a0" stroke-width="3" fill="none" opacity=".6"/>
+    <rect x="150" y="120" width="210" height="180" fill="url(#pierre)" rx="4"/>
+    <path d="M140 124 L255 52 L370 124Z" fill="#6e2433"/>
+    <path d="M140 124 L255 52 L370 124" stroke="#4d1823" stroke-width="5" fill="none"/>
+    <g fill="#1d3a2f"><rect x="180" y="150" width="34" height="40" rx="3"/><rect x="238" y="150" width="34" height="40" rx="3"/><rect x="296" y="150" width="34" height="40" rx="3"/><rect x="238" y="226" width="40" height="74" rx="3"/><rect x="296" y="220" width="34" height="38" rx="3"/></g>
+    <g fill="#e5c77f" opacity=".85"><rect x="184" y="154" width="12" height="14"/><rect x="242" y="154" width="12" height="14"/><rect x="300" y="154" width="12" height="14"/><rect x="300" y="224" width="12" height="13"/></g>
+    <g stroke="#b9a479" stroke-width="2" opacity=".6"><path d="M150 200h210M150 260h210M200 120v60M300 260v40"/></g>
+    <rect x="236" y="88" width="38" height="24" rx="3" fill="#f6f0e3"/><circle cx="255" cy="100" r="6" fill="#c9a24f"/>
+    <g class="wheel">
+     <circle cx="118" cy="236" r="76" fill="none" stroke="#5a3b22" stroke-width="9"/>
+     <circle cx="118" cy="236" r="56" fill="none" stroke="#7a5532" stroke-width="4"/>
+     <circle cx="118" cy="236" r="14" fill="#5a3b22"/>
+     <g stroke="#7a5532" stroke-width="6" stroke-linecap="round"><path d="M118 160v152M42 236h152M64 182l108 108M172 182L64 290"/></g>
+     <g fill="#5a3b22"><rect x="111" y="152" width="14" height="20" rx="2"/><rect x="111" y="300" width="14" height="20" rx="2"/><rect x="34" y="229" width="20" height="14" rx="2"/><rect x="182" y="229" width="20" height="14" rx="2"/></g>
+    </g>
+   </svg>
+  </div>
+ </div>
+</header>
+
+<section id="menu">
+ <div class="wrap">
+  <div class="sec-h"><span class="k">Le restaurant</span><h2>La formule du soir</h2><p>Le menu change selon les produits disponibles chez les producteurs de la région. Ouvert à tous, du mercredi au samedi, arrivées entre 17 h 30 et 20 h (aux 30 minutes). Réservation par téléphone ou par courriel.</p></div>
+  <div class="formule">
+   <div class="price-card">
+    <h3>4 services</h3>
+    <div class="big">89 $ <small>par personne</small></div>
+    <ul>
+     <li><i>1</i>Potage et pain de la boulangerie</li>
+     <li><i>2</i>Entrée</li>
+     <li><i>3</i>Plat principal</li>
+     <li><i>4</i>Dessert</li>
+    </ul>
+    <p>Allergies, intolérances, menus végétaliens ou végétariens : c'est possible, mentionnez-le à la réservation.</p>
+    <div class="cta"><a class="btn or" href="tel:+14182477486">Réserver une table</a></div>
+   </div>
+   <div class="services">
+    <div class="svc"><h3><span class="n">1</span>Potage</h3><div class="item"><span>Potage, varie selon les saisons</span><b>inclus</b></div><div class="item"><span>Pain de la boulangerie</span><b>inclus</b></div></div>
+    <div class="svc"><h3><span class="n">2</span>Entrées</h3>
+     <div class="item"><span>Rillettes de la mer aux herbes</span><b>inclus</b></div>
+     <div class="item"><span>Tarte à l'oignon</span><b>inclus</b></div>
+     <div class="item"><span>Polpettes de chevreau Belles-Amours</span><b>inclus</b></div>
+     <div class="item"><span>Tartare de canard Goulu</span><b>+6 $</b></div>
+     <div class="item"><span>Escalope de foie gras de canard Goulu</span><b>+18 $</b></div>
+    </div>
+    <div class="svc"><h3><span class="n">3</span>Plats principaux</h3>
+     <div class="item"><span>Omble chevalier du Québec</span><b>inclus</b></div>
+     <div class="item"><span>Pintade du Cap St-Ignace</span><b>inclus</b></div>
+     <div class="item"><span>Magret de canard Goulu</span><b>inclus</b></div>
+     <div class="item"><span>Pressé d'épaule d'agneau de la Bergerie des Petites Laineuses</span><b>inclus</b></div>
+     <div class="item"><span>Cavatelli maison</span><b>inclus</b></div>
+     <div class="item"><span>Pièce de boeuf charolais de la Ferme de Ladurantaye</span><b>+12 $</b></div>
+     <div class="item"><span>Pièce de boeuf charolais, version Rossini</span><b>+28 $</b></div>
+    </div>
+    <div class="svc"><h3><span class="n">4</span>Desserts</h3>
+     <div class="item"><span>Secret des Glacis</span><b>inclus</b></div>
+     <div class="item"><span>Le dessert de Madame Lucille (varie selon la saison)</span><b>inclus</b></div>
+     <div class="item"><span>Crème brûlée au brandy de pommes Jodoin</span><b>inclus</b></div>
+    </div>
+    <div class="svc"><h3><span class="n">+</span>Un service de plus?</h3>
+     <p class="note" style="margin:0 0 6px">Spécialités en dégustation, en supplément.</p>
+     <div class="item"><span>Boudin noir</span><b>+12 $</b></div>
+     <div class="item"><span>Quenelle de volaille, sauce financière</span><b>+12 $</b></div>
+     <div class="item"><span>Quenelle de veau, sauce provençale</span><b>+12 $</b></div>
+     <div class="item"><span>Quenelle de brochet, bisque de homard</span><b>+15 $</b></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="sejour">
+ <div class="wrap">
+  <div class="sec-h"><span class="k">Séjourner au moulin</span><h2>Chambres, suites et chalets</h2><p>16 chambres, toutes avec salle de bain privée et petit réfrigérateur, réparties entre la section Moulin et la section Montagne, en plus de deux chalets. Réservation en ligne ou par téléphone.</p></div>
+  <div class="cards c3">
+   <div class="card"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#6e2433" stroke-width="2"><path d="M4 14L16 5l12 9v13H4z"/><path d="M13 27v-7h6v7"/></svg></div><h3>Section Moulin</h3><p>Dans les murs de pierre et les poutres du vieux moulin : Belvédère et Montagnaise (suites sur deux niveaux), Côté Jardin, Rivière, Jardinier, Chasseur, Clair de lune, Nid, Amourette et Chevaline.</p></div>
+   <div class="card"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#6e2433" stroke-width="2"><path d="M3 26l9-14 6 8 4-5 7 11z"/></svg></div><h3>Section Montagne</h3><p>Meunier, Lucarnes, William, Boulangère, et deux chambres adaptées Kéroul : Jeanne d'Arc (en l'honneur de la grand-mère de la propriétaire) et Demoiselle, au rez-de-chaussée.</p></div>
+   <div class="card"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#6e2433" stroke-width="2"><path d="M5 15l11-8 11 8"/><path d="M8 13v13h16V13"/><path d="M14 26v-6h4v6"/></svg></div><h3>Chalets</h3><p>Le Chalet Haricot, près du petit lac Haricot, et le Pavillon Le Poulailler, l'ancien poulailler du moulin, pour les groupes et les familles.</p></div>
+  </div>
+  <div class="cards" style="margin-top:18px">
+   <div class="card"><h3>Sur le domaine, à l'année</h3><ul><li>5 hectares bordés par la rivière Tortue et 2 km de sentiers pédestres</li><li>Belvédère avec vue sur le fleuve Saint-Laurent</li><li>Verrière quatre-saisons, bornes historiques, sculptures et œuvres d'art</li><li>Massothérapie sur place (sur réservation)</li><li>Borne de recharge électrique</li></ul></div>
+   <div class="card"><h3>Selon la saison</h3><ul><li>Printemps, été, automne : petit lac de baignade, vélos, circuit d'interprétation de la flore (200 panneaux)</li><li>Hiver : sentiers et raquette sur place, et accès au Club sportif Les Appalaches (ski de fond 50 km, raquette 13 km, payant)</li></ul><span class="px">Spectacles du Pollux Band les vendredis 27 novembre, 4 décembre et 11 décembre.</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="forfaits">
+ <div class="wrap">
+  <div class="sec-h"><span class="k">Forfaits et cadeaux</span><h2>Une nuit, un souper, une fugue</h2><p>Les forfaits incluent le souper 4 services (du mercredi au samedi), la nuit au moulin et le déjeuner. Certains incluent un massage.</p></div>
+  <div class="cards c3">
+   <div class="card"><h3>Aventure gourmande au moulin</h3><p>Souper 4 services, nuit en chambre romantique et déjeuner-buffet. À l'année.</p><span class="px">À partir de 214,50 $ par personne</span></div>
+   <div class="card"><h3>Nuit romantique au moulin</h3><p>Une nuit au moulin, à l'année.</p><span class="px">À partir de 129,50 $ par personne, en occupation double (taxes et pourboire en sus)</span></div>
+   <div class="card"><h3>Petite fugue au moulin</h3><p>Le forfait pensé pour une personne. Aussi offert : Petite fugue 2 nuits, La vie de seigneur (avec un soin de massothérapie), Séjour romantique (avec un massage par personne) et Répit aux Glacis.</p><span class="px">À partir de 264 $</span></div>
+  </div>
+  <div class="gift">
+   <h3>Forfaits-cadeaux (taxes et pourboire inclus)</h3>
+   <div class="item"><span>Souper gourmand au moulin pour 2 personnes</span><b>231,36 $</b></div>
+   <div class="item"><span>Nuit romantique au moulin pour 2 personnes, lit double</span><b>305,29 $</b></div>
+   <div class="item"><span>Petite fugue au moulin pour 1 personne, lit double</span><b>329,83 $</b></div>
+   <div class="item"><span>Petite fugue au moulin pour 1 personne, lit queen</span><b>347,08 $</b></div>
+   <p class="note" style="color:#f3dccb">Certificats-cadeaux aussi offerts, applicables à tous les services de l'auberge. Plats à emporter et cartes-cadeaux à la boutique en ligne de l'auberge.</p>
+  </div>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="float" id="float2" aria-hidden="true"></div>
+ <div class="wrap" style="position:relative;z-index:2">
+  <div class="sec-h"><span class="k">Ce que nos clients disent</span><h2>Ils sont repartis conquis</h2></div>
+  <div class="scores">
+   <div class="score"><b>4,9 ★</b><span>sur Google · 408 avis</span></div>
+   <div class="score"><b>4,7 ★</b><span>sur Tripadvisor · 66 avis</span></div>
+  </div>
+  <div class="grid-avis" id="gridAvis"></div>
+  <div class="center"><button class="btn or" id="voirAvis">Voir tous les avis (11)</button></div>
+ </div>
+</section>
+
+<section id="histoire">
+ <div class="wrap hist">
+  <div>
+   <div class="sec-h"><span class="k">Depuis 1841</span><h2>L'histoire du moulin</h2><p>Bien avant le village de Saint-Eugène, un moulin à farine tournait déjà au bord de la rivière Tortue. Décor ancestral, murs de pierre et poutres de bois : c'est lui qui accueille aujourd'hui l'auberge.</p></div>
+   <ol class="timeline">
+    <li><b>1841</b>Jean-Baptiste Couillard-Després acquiert la seigneurie; le moulin est construit à l'automne par le menuisier Joseph Aubut.</li>
+    <li><b>1882</b>Incendié le 20 novembre, le moulin est reconstruit.</li>
+    <li><b>1930 à 1985</b>La famille Saint-Pierre en est propriétaire.</li>
+    <li><b>1989</b>Ouverture en mars sous le nom « Clos des Glacis ».</li>
+    <li><b>1990</b>Jean-Marie et Jeanine Gagnon le renomment « Auberge des Glacis ».</li>
+    <li><b>2006</b>Nancy Lemieux achète l'auberge en août; elle en est toujours l'aubergiste.</li>
+   </ol>
+  </div>
+  <div>
+   <div class="sec-h"><span class="k">Une table reconnue</span><h2>Distinctions</h2><p>Plus de 70 produits locaux composent le menu.</p></div>
+   <div class="prix">
+    <div><b>2024</b> · Finaliste, Restaurant de l'année, Aliments Québec</div>
+    <div><b>2018</b> · Prix Renaud-Cyr</div>
+    <div><b>2017</b> · Hôtelière de l'année, AHQ (Nancy Lemieux)</div>
+    <div><b>2014</b> · Chapeau restaurateur de l'année, ARQ (Nancy Lemieux)</div>
+    <div><b>2011</b> · Meilleure table à saveur du terroir du Québec</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="infos">
+ <div class="wrap">
+  <div class="sec-h"><span class="k">Nous joindre</span><h2>Venir aux Glacis</h2></div>
+  <div class="infos">
+   <div class="card"><h3>Adresse</h3><p>46, route de la Tortue<br>L'Islet (secteur Saint-Eugène), Québec G0R 1X0</p><p style="margin-top:8px"><a href="https://www.google.com/maps/search/?api=1&amp;query=Auberge+des+Glacis+46+route+de+la+Tortue+L%27Islet" target="_blank" rel="noopener">Ouvrir dans Google Maps</a></p><p class="note">Autoroute 20, sortie 400, puis route 285 Sud, chemin Lamartine Est (3,5 km) et route Tortue (0,5 km). Suivez les panneaux bleus plutôt que le GPS, surtout l'hiver.</p></div>
+   <div class="card"><h3>Téléphone et courriel</h3><p><a href="tel:+14182477486">418 247-7486</a><br>Sans frais : <a href="tel:+18772452247">1 877 245-2247</a><br><a href="mailto:info@aubergedesglacis.com">info@aubergedesglacis.com</a></p></div>
+   <div class="card"><h3>Heures</h3><p>Auberge ouverte à l'année, bureau d'accueil 24 h/24.</p><p style="margin-top:8px">Restaurant (formule du soir) : du mercredi au samedi, arrivées entre 17 h 30 et 20 h, sur réservation.</p></div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <p><b>Glacis Auberge gourmande</b> · 46, route de la Tortue, L'Islet · 418 247-7486</p>
+ <p style="margin-top:6px">© 2026 Glacis Auberge gourmande</p>
+</footer>
+</div>
+
+<div id="pageAvis" aria-label="Tous les avis">
+ <div class="pa-top"><div class="wrap"><button class="btn or" id="retour">← Retour au site</button><a class="btn ghost" href="tel:+14182477486">Appeler</a></div></div>
+ <div class="wrap">
+  <div class="pa-head">
+   <span class="kicker" style="color:var(--vin);border-color:var(--ble)">Avis de nos clients</span>
+   <h1 style="margin:14px 0 10px">Tous les avis</h1>
+   <div class="scores"><div class="score" style="background:var(--vert);color:var(--creme)"><b>4,9 ★</b><span>sur Google · 408 avis</span></div><div class="score" style="background:var(--vert);color:var(--creme)"><b>4,7 ★</b><span>sur Tripadvisor · 66 avis</span></div></div>
+   <p class="note">Extraits tels qu'écrits par les clients sur Tripadvisor.</p>
+   <div class="pa-links"><a class="btn vert" href="https://www.google.com/maps/search/?api=1&amp;query=Auberge+des+Glacis+L%27Islet" target="_blank" rel="noopener">Voir sur Google</a><a class="btn vert" href="https://www.tripadvisor.fr/Restaurant_Review-g1086608-d6989489-Reviews-Auberge_des_Glacis-L_Islet_Chaudiere_Appalaches_Quebec.html" target="_blank" rel="noopener">Voir sur Tripadvisor</a></div>
+  </div>
+  <div class="pa-list" id="paList"></div>
+ </div>
+</div>
+
+<div class="callbar" id="callbar"><a class="c1" href="tel:+14182477486">Appeler</a><a class="c2" href="#menu">Formule du soir</a></div>
+
+<script>
+(function(){
+var AVIS=[
+["Suzanne A","août 2026","Parfaite","L'auberge des glacis est une excellente auberge."],
+["robroy07","août 2026","Excellent repas à prix très correct","Tous les plats que nous avons goûtés étaient délicieux."],
+["Sylvie D","févr. 2025","Nous nous sommes régalés 😋","Repas succulents cuisinés par le chef Louis."],
+["Marie M","juil. 2024","Charme champêtre à son meilleur!","Nous avons adoré notre nuitée, souper et déjeuner à l'auberge!"],
+["clahaye","févr. 2019","Voyage de skidoo","Tres belle auberge, tres bonne bouffe, tres belle chambre et une belle ambiance familiale."],
+["christophe R","juil. 2020","Quelle découverte!","Une auberge pleine de charme dans un lieu enchanteur."],
+["christophe R","févr. 2021","Toujours un plaisir!","Et toujours un réel plaisir de rencontrer une aubergiste passionnée"],
+["Vicky F","août 2020","Anniversaire inoubliable","Endroit enchanteur reculé en campagne."],
+["Marie B","juin 2024","Beau week-end","Très beau week-end et belle température."],
+["Ben L","mai 2021","Un endroit formidable!","J’adore cet auberge!"],
+["Michel Cassista","août 2020","Troisième visites de 2020","Très bel endroit qui lutte contre la fin du confinement."]
+];
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function carte(a){return '<article class="avis"><span class="stars" aria-label="5 étoiles sur 5">★★★★★</span><span class="t">'+esc(a[2])+'</span><q>'+esc(a[3])+'</q><span class="who">'+esc(a[0])+' · Tripadvisor · '+esc(a[1])+'</span></article>'}
+document.getElementById("gridAvis").innerHTML=AVIS.map(carte).join("");
+document.getElementById("paList").innerHTML=AVIS.map(carte).join("");
+
+var body=document.body,lastY=0;
+function ouvrirAvis(e){if(e)e.preventDefault();lastY=window.scrollY;body.classList.add("vue-avis");nav.classList.remove("open");window.scrollTo(0,0)}
+function fermerAvis(){body.classList.remove("vue-avis");window.scrollTo(0,lastY)}
+var nav=document.getElementById("nav"),burger=document.getElementById("burger");
+burger.addEventListener("click",function(){var o=nav.classList.toggle("open");burger.setAttribute("aria-expanded",o)});
+document.querySelectorAll(".links a").forEach(function(a){a.addEventListener("click",function(){nav.classList.remove("open")})});
+document.querySelector("[data-avis]").addEventListener("click",ouvrirAvis);
+document.getElementById("voirAvis").addEventListener("click",ouvrirAvis);
+document.getElementById("retour").addEventListener("click",fermerAvis);
+
+/* éléments flottants : épis de blé, feuilles, roues, gouttes */
+var S={
+ble:'<svg viewBox="0 0 40 80"><path d="M20 78V20" stroke="#e5c77f" stroke-width="2.5"/><g fill="#e5c77f"><ellipse cx="14" cy="26" rx="5" ry="9" transform="rotate(-25 14 26)"/><ellipse cx="26" cy="26" rx="5" ry="9" transform="rotate(25 26 26)"/><ellipse cx="14" cy="40" rx="5" ry="9" transform="rotate(-25 14 40)"/><ellipse cx="26" cy="40" rx="5" ry="9" transform="rotate(25 26 40)"/><ellipse cx="20" cy="12" rx="5" ry="10"/></g></svg>',
+feuille:'<svg viewBox="0 0 60 60"><path d="M30 4l6 14 10-6-3 14 13 2-11 9 6 5-15 2 1 12-7-8-7 8 1-12-15-2 6-5-11-9 13-2-3-14 10 6z" fill="#c45a3c"/><path d="M30 58V24" stroke="#7a2e1e" stroke-width="2"/></svg>',
+roue:'<svg viewBox="0 0 60 60" fill="none" stroke="#e5c77f" stroke-width="3"><circle cx="30" cy="30" r="25"/><circle cx="30" cy="30" r="6"/><path d="M30 5v50M5 30h50M12 12l36 36M48 12L12 48"/></svg>',
+goutte:'<svg viewBox="0 0 30 40"><path d="M15 2C8 14 4 21 4 27a11 11 0 0022 0c0-6-4-13-11-25z" fill="#7fb3a0"/></svg>',
+sac:'<svg viewBox="0 0 50 60"><path d="M12 12h26l6 44H6z" fill="#f6f0e3"/><path d="M12 12q13-10 26 0" stroke="#c9a24f" stroke-width="3" fill="none"/><text x="25" y="42" text-anchor="middle" font-size="11" font-family="Georgia" fill="#6e2433">FARINE</text></svg>'
+};
+var mob=window.innerWidth<700;
+var items=[["ble",2,16,42,1,.15],["feuille",90,9,40,1,.25],["roue",92,72,50,0,.08],["ble",46,86,36,0,.12],["goutte",1,56,24,1,.3],["feuille",58,4,32,0,.18],["sac",93,38,42,1,.2],["goutte",76,93,20,0,.1],["roue",30,2,30,0,.06],["feuille",54,95,28,1,.22]];
+if(mob)items=items.slice(0,8);
+function peupler(el,list){list.forEach(function(it,i){var d=document.createElement("div");d.className="fl par"+(it[4]?"":" back");d.style.cssText="left:"+it[1]+"%;top:"+it[2]+"%;width:"+it[3]+"px;height:"+it[3]*(it[0]=="ble"?2:1.1)+"px;--k:"+it[5];var s=document.createElement("div");s.className="drift";s.style.cssText="width:100%;height:100%;--d:"+(12+i*2)+"s;--x:"+((i%2?1:-1)*(14+i*3))+"px;--y:"+(-18-i*3)+"px;--r:"+((i%2?1:-1)*(30+i*12))+"deg";s.innerHTML=S[it[0]];d.appendChild(s);el.appendChild(d)})}
+peupler(document.getElementById("float"),items);
+peupler(document.getElementById("float2"),[["feuille",4,10,34,0,0],["ble",92,20,36,0,0],["feuille",88,80,30,0,0],["roue",6,80,40,0,0]]);
+var tick=false,root=document.documentElement;
+window.addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(function(){root.style.setProperty("--sc",Math.min(window.scrollY,900));tick=false})}},{passive:true});
+
+/* les services se servent comme des assiettes */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".svc").forEach(function(s,i){s.style.transitionDelay=(i%2)*0.12+"s";io.observe(s)});
+
+/* intro */
+var intro=document.getElementById("intro");
+function fin(){if(!intro)return;intro.classList.add("out");var x=intro;intro=null;setTimeout(function(){x.remove()},600)}
+var vu=false;try{vu=sessionStorage.getItem("glacisIntro")==="1";sessionStorage.setItem("glacisIntro","1")}catch(e){}
+if(vu||window.matchMedia("(prefers-reduced-motion: reduce)").matches){intro.remove();intro=null}else{intro.addEventListener("click",fin);setTimeout(fin,2100)}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

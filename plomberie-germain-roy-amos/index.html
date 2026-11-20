@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Plomberie Germain Roy — Plomberie, chauffage, thermopompes et traitement d'eau à Amos</title>
+<meta name="description" content="Plomberie Germain Roy, Amos : plomberie résidentielle et commerciale, chauffage à eau, vente et installation de thermopompes, analyse et traitement d'eau. Commandes et soumission en ligne. 819 732-6888.">
+<meta property="og:title" content="Plomberie Germain Roy — Amos">
+<meta property="og:description" content="Plomberie, chauffage, thermopompes et traitement d'eau à Amos. 819 732-6888.">
+<meta name="theme-color" content="#14324a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Plumber","name":"Plomberie Germain Roy","description":"Plomberie résidentielle et commerciale, chauffage à eau, vente et installation de thermopompes, analyse et traitement d'eau à Amos.","telephone":"+1-819-732-6888","faxNumber":"+1-819-732-4978","email":"pgr@plomberiegermainroy.com","address":{"@type":"PostalAddress","streetAddress":"531, rue Principale Sud","addressLocality":"Amos","addressRegion":"QC","postalCode":"J9T 2J8","addressCountry":"CA"},"knowsLanguage":["fr","en"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"13:00","closes":"17:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"15:00"}],"url":"https://plomberiegermainroy.com/","sameAs":["https://www.facebook.com/PlomberieGR/"]}
+</script>
+<style>
+:root{--deep:#14324a;--deep2:#1d4a66;--aqua:#1fa0b8;--aqua2:#86d6e3;--copper:#d0452f;--copper2:#f28a6f;--foam:#f3f9fc;--ink:#10263a;--muted:#536779;--line:#d5e5ee;--card:#fff}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;padding-top:32px;background:var(--foam);color:var(--ink);font:400 17px/1.6 "Manrope",system-ui,sans-serif}
+h1,h2,h3{font-family:"Sora",system-ui,sans-serif;font-weight:800;line-height:1.08;margin:0 0 .5em;letter-spacing:-.02em}
+a{color:inherit}
+img,svg{max-width:100%}
+p,li,h1,h2,h3{overflow-wrap:break-word}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.9em 1.4em;border-radius:999px;font-weight:800;text-decoration:none;transition:transform .2s ease;font-size:1rem;min-height:48px}
+.btn:active{transform:scale(.97)}
+.btn-cu{background:var(--copper);color:#fff}
+.btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Intro : la goutte */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--deep);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;transition:opacity .45s ease;cursor:pointer}
+#intro.out{opacity:0}
+#intro svg{width:200px;height:150px}
+#intro .pipe{transform-origin:left;transform:scaleX(0);animation:grow .6s .1s cubic-bezier(.4,0,.2,1) forwards}
+#intro .drop{transform-box:fill-box;transform-origin:center top;opacity:0;animation:drip 1s .65s cubic-bezier(.5,0,.6,1) forwards}
+#intro .ring{transform-box:fill-box;transform-origin:center;opacity:0;animation:ring .7s 1.45s ease-out forwards}
+#intro .iname{font:800 26px/1.1 "Sora",sans-serif;color:#fff;text-align:center;opacity:0;animation:fadeUp .45s 1.3s ease forwards}
+#intro .itag{font:700 14px/1.2 "Manrope",sans-serif;color:var(--aqua2);opacity:0;animation:fadeUp .45s 1.5s ease forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+@keyframes drip{0%{opacity:0;transform:translateY(0) scale(.3)}20%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:1;transform:translateY(62px) scale(1)}}
+@keyframes ring{from{opacity:1;transform:scale(.2)}to{opacity:0;transform:scale(1.6)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* Header */
+header{position:fixed;top:32px;left:0;right:0;z-index:50;background:var(--deep);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:42px;height:42px;flex:none}
+.brand b{font:800 18px/1.05 "Sora",sans-serif;display:block;white-space:nowrap}
+.brand small{display:block;font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--aqua2);text-transform:uppercase}
+nav ul{list-style:none;margin:0;padding:0;display:none;gap:24px}
+nav a{text-decoration:none;font-weight:700;opacity:.92}
+nav a:hover{opacity:1;color:var(--aqua2)}
+.navcall{display:none}
+.burger{background:none;border:0;color:#fff;width:46px;height:46px;display:grid;place-items:center;cursor:pointer;flex:none}
+.burger svg{width:26px;height:26px}
+.menu{position:absolute;top:64px;left:0;right:0;background:var(--deep2);padding:8px 20px 18px;display:none}
+.menu.open{display:block}
+.menu a{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1);text-decoration:none;font-weight:700}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 85% 0%,#1d6797 0%,var(--deep) 55%,#071f33 100%);color:#fff;padding:122px 0 84px;isolation:isolate}
+.float{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.f{position:absolute;transform:translate3d(0,calc(var(--p,0) * var(--d) * 1px),0)}
+.f svg{display:block;width:100%;height:100%;animation:drift var(--t,9s) ease-in-out infinite alternate}
+.f.back svg{filter:blur(2px);opacity:.4}
+@keyframes drift{from{transform:translateY(-12px) rotate(calc(var(--r,0deg) - 10deg))}to{transform:translateY(14px) rotate(calc(var(--r,0deg) + 10deg))}}
+.hero .wrap{position:relative;display:grid;gap:34px}
+.urg{display:inline-flex;align-items:center;gap:8px;background:rgba(207,122,58,.18);border:1px solid rgba(240,165,107,.55);padding:6px 14px;border-radius:999px;font-weight:800;font-size:14px;color:var(--copper2)}
+.urg i{width:9px;height:9px;border-radius:50%;background:var(--copper2);display:block;animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+.hero h1{font-size:clamp(2.2rem,8.8vw,4.3rem);margin:16px 0 10px}
+.hero h1 span{color:var(--aqua2)}
+.hero .slog{font:600 clamp(1.1rem,4.4vw,1.5rem)/1.3 "Sora",sans-serif;color:var(--copper2);margin:0 0 14px}
+.hero p.lead{font-size:1.1rem;max-width:34em;color:#d5e6f1;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
+.chips li{font-size:14px;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1)}
+.hcard{display:none;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:24px}
+.hcard h2{font-size:1.2rem;color:#fff}
+.hours{list-style:none;margin:0;padding:0}
+.hours li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.12);font-weight:600}
+.hours li span:last-child{font-weight:800}
+.hours .off{opacity:.6}
+
+section{padding:72px 0}
+.eyebrow{font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--copper)}
+h2.t{font-size:clamp(1.8rem,6vw,2.9rem);color:var(--deep)}
+.sub{color:var(--muted);max-width:42em;margin:0 0 30px}
+
+/* Services + tuyau (wow) */
+.pipeline{position:relative}
+.flow{display:none}
+.svc{display:grid;gap:16px;grid-template-columns:1fr;position:relative}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px 22px;min-width:0;position:relative;opacity:0;transform:translate3d(0,36px,0);transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .6s ease}
+.card.in{opacity:1;transform:none}
+.card:nth-child(3){transition-delay:.15s}.card:nth-child(4){transition-delay:.3s}
+.card h3{font-size:1.35rem;color:var(--deep)}
+.card p{color:var(--muted);margin:0}
+.card .ic{width:54px;height:54px;margin-bottom:12px}
+.also{background:var(--deep);color:#fff;border-radius:22px;padding:22px;margin-top:16px;display:grid;gap:10px}
+.also b{font-family:"Sora",sans-serif}
+.also p{margin:0;color:#d5e6f1}
+
+/* Urgence */
+#urgence{background:linear-gradient(135deg,var(--copper),#a9561f);color:#fff}
+#urgence h2.t{color:#fff}
+.ugrid{display:grid;gap:22px;align-items:center}
+.ugrid .q{font:800 clamp(1.5rem,5.6vw,2.4rem)/1.15 "Sora",sans-serif;margin:0 0 14px}
+.ugrid p{margin:0 0 16px;color:#fff3ea}
+.ugrid ul{margin:0 0 20px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.ugrid li{background:rgba(255,255,255,.16);border-radius:999px;padding:6px 14px;font-weight:700}
+.btn-w{background:#fff;color:#7a3a0f}
+.clock{width:180px;justify-self:center}
+.clock .hand{transform-origin:60px 60px;animation:tick 6s linear infinite}
+@keyframes tick{to{transform:rotate(360deg)}}
+
+/* Boutique */
+.shop{display:grid;gap:14px;grid-template-columns:1fr}
+.it{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;min-width:0}
+.it h3{font-size:1.1rem;color:var(--deep);display:flex;align-items:center;gap:10px}
+.it h3 svg{width:34px;height:34px;flex:none}
+.it p{margin:0 0 10px;color:var(--muted);font-size:16px}
+.brands{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.brands li{background:#e6f4fa;color:var(--deep);border-radius:8px;padding:4px 10px;font-weight:800;font-size:14px}
+.shophead{display:grid;gap:12px;margin-bottom:24px}
+.shophead .logo2{font:800 clamp(1.8rem,6vw,2.6rem)/1 "Sora",sans-serif;color:var(--deep)}
+.shophead .logo2 span{color:var(--aqua)}
+
+/* Contact */
+#contact{background:#e3f1f8}
+.contact{display:grid;gap:18px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;min-width:0}
+.box h3{font-size:1.15rem;color:var(--deep)}
+.box p{margin:.3em 0}
+.box a{font-weight:800;color:var(--deep2)}
+.box .hours li{border-color:var(--line)}
+.big{font:800 clamp(1.6rem,6vw,2.3rem)/1.1 "Sora",sans-serif;text-decoration:none;display:inline-block;margin:.2em 0;color:var(--copper)!important}
+footer{background:#071f33;color:#a9c1d3;padding:34px 0 100px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+footer a{color:#fff}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:10px;background:var(--copper);color:#fff;font-weight:800;text-decoration:none;border-radius:999px;padding:14px;box-shadow:0 8px 24px rgba(0,0,0,.3);font-size:1.05rem}
+.callbar svg{width:22px;height:22px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (min-width:700px){
+ .shop{grid-template-columns:1fr 1fr}
+ .contact{grid-template-columns:1fr 1fr}
+}
+@media (min-width:1024px){
+ nav ul{display:flex}.burger{display:none}
+ .navcall{display:inline-flex;padding:.6em 1.1em;min-height:0}
+ .hero{padding:150px 0 110px}
+ .hero .wrap{grid-template-columns:1.2fr .8fr;align-items:center;gap:56px}
+ .hcard{display:block}
+ .svc{grid-template-columns:repeat(3,1fr);padding-top:30px}
+ .flow{display:block;position:absolute;left:8%;right:8%;top:0;height:14px;border-radius:14px;background:#d5e5ee;overflow:hidden}
+ .flow:after{content:"";position:absolute;inset:3px;border-radius:10px;background:linear-gradient(90deg,var(--aqua),var(--aqua2),var(--aqua));transform:scaleX(0);transform-origin:left;transition:transform 1.8s cubic-bezier(.4,0,.2,1)}
+ .pipeline.in .flow:after{transform:scaleX(1)}
+ .also{grid-template-columns:auto 1fr;align-items:center;gap:24px;padding:24px 30px}
+ .ugrid{grid-template-columns:1.3fr .7fr}
+ .clock{width:240px}
+ .shop{grid-template-columns:repeat(3,1fr)}
+ .shophead{grid-template-columns:1fr 1fr;align-items:end}
+ .contact{grid-template-columns:1.1fr 1fr 1fr}
+ .callbar{display:none}
+ footer{padding-bottom:34px}
+ .f.mob-only{display:none}
+}
+@media (max-width:1023px){.f.desk-only{display:none}}
+@media (max-width:600px){body{padding-top:48px}header{top:48px}.hero{padding-top:132px}.f{opacity:.65}.brand b{font-size:16px}}
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important}
+ .reveal,.card{opacity:1;transform:none}
+ .flow:after{transform:none!important}
+ html{scroll-behavior:auto}
+}
+.jobs{display:grid;gap:10px;grid-template-columns:1fr 1fr;list-style:none;padding:0;margin:0}
+.jobs li{background:rgba(255,255,255,.16);border-radius:14px;padding:12px 14px;font-weight:800;min-width:0}
+.jobs li span{display:block;font-weight:600;font-size:14px;opacity:.85}
+.svc4{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:700px){.svc4{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){.svc4{grid-template-columns:repeat(4,1fr);padding-top:30px}.jobs{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Plomberie Germain Roy — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 200 150">
+  <g class="pipe"><rect x="10" y="22" width="120" height="22" rx="4" fill="#d0452f"/><rect x="118" y="16" width="16" height="34" rx="3" fill="#9e2f1f"/><path d="M134 26h26a14 14 0 0 1 14 14v8h-14v-8h-26z" fill="#d0452f"/><rect x="156" y="46" width="22" height="8" rx="2" fill="#9e2f1f"/></g>
+  <path class="drop" d="M167 58c6 9 10 14 10 19a10 10 0 0 1-20 0c0-5 4-10 10-19z" fill="#1fa0b8"/>
+  <ellipse class="ring" cx="167" cy="140" rx="26" ry="6" fill="none" stroke="#86d6e3" stroke-width="3"/>
+ </svg>
+ <div class="iname">Plomberie Germain Roy</div>
+ <div class="itag">Amos · Abitibi</div>
+</div>
+<script>
+(function(){var i=document.getElementById('intro');if(!i)return;var seen=false;try{seen=sessionStorage.getItem('pgr-intro')==='1'}catch(e){}
+if(seen||window.matchMedia('(prefers-reduced-motion: reduce)').matches){i.parentNode.removeChild(i);return}
+try{sessionStorage.setItem('pgr-intro','1')}catch(e){}
+var done=false;function end(){if(done)return;done=true;i.classList.add('out');setTimeout(function(){if(i.parentNode)i.parentNode.removeChild(i)},480)}
+var t=setTimeout(end,2300);i.addEventListener('click',function(){clearTimeout(t);end()});i.addEventListener('touchstart',function(){clearTimeout(t);end()},{passive:true})})();
+</script>
+
+<header>
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Plomberie Germain Roy, accueil">
+   <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21" fill="#d0452f"/><path d="M22 7c6 9 10 14 10 19a10 10 0 0 1-20 0c0-5 4-10 10-19z" fill="#fff"/><text x="22" y="31" text-anchor="middle" font-family="Sora,sans-serif" font-weight="800" font-size="11" fill="#14324a">GR</text></svg>
+   <span><small>Plomberie</small><b>Germain Roy</b></span>
+  </a>
+  <nav aria-label="Navigation principale">
+   <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#produits">Produits</a></li>
+    <li><a href="#emplois">Emplois</a></li>
+    <li><a href="#contact">Nous joindre</a></li>
+   </ul>
+  </nav>
+  <a class="btn btn-cu navcall" href="tel:+18197326888">819 732-6888</a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="m"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+ </div>
+ <div class="menu" id="m">
+  <a href="#services">Services</a><a href="#produits">Produits et fournisseurs</a><a href="#emplois">Offres d'emploi</a><a href="#contact">Nous joindre</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+ <div class="float" aria-hidden="true">
+  <div class="f" style="left:4%;top:5%;width:34px;height:44px;--d:-.22"><svg viewBox="0 0 34 44" style="--t:7s"><path d="M17 2c9 13 15 21 15 28a15 15 0 0 1-30 0C2 23 8 15 17 2z" fill="#1fa0b8"/><path d="M10 30a7 7 0 0 0 5 7" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".7"/></svg></div>
+  <div class="f" style="right:6%;top:60%;width:60px;height:60px;--d:-.3;--r:30deg"><svg viewBox="0 0 64 64" style="--t:10s"><path d="M46 6a12 12 0 0 0-11 16L8 49a5 5 0 0 0 7 7l27-27A12 12 0 0 0 58 18l-7 4-6-4-1-7z" fill="#c7d6e2"/></svg></div>
+  <div class="f" style="left:46%;top:6%;width:22px;height:30px;--d:-.14"><svg viewBox="0 0 34 44" style="--t:6s"><path d="M17 2c9 13 15 21 15 28a15 15 0 0 1-30 0C2 23 8 15 17 2z" fill="#86d6e3"/></svg></div>
+  <!-- flamme (chauffage) -->
+  <div class="f desk-only" style="right:36%;top:8%;width:46px;height:60px;--d:-.1"><svg viewBox="0 0 40 52" style="--t:8s"><path d="M20 2c4 10 16 16 16 30a16 16 0 0 1-32 0c0-8 5-12 8-18 1 6 4 8 6 8 0-8-2-14 2-20z" fill="#f28a6f"/><path d="M20 24c2 5 8 8 8 15a8 8 0 0 1-16 0c0-5 4-8 8-15z" fill="#ffd27a"/></svg></div>
+  <div class="f back" style="left:70%;bottom:10%;width:50px;height:64px;--d:-.1"><svg viewBox="0 0 34 44" style="--t:11s"><path d="M17 2c9 13 15 21 15 28a15 15 0 0 1-30 0C2 23 8 15 17 2z" fill="#1fa0b8"/></svg></div>
+  <div class="f" style="left:10%;bottom:8%;width:56px;height:36px;--d:-.12;--r:-15deg"><svg viewBox="0 0 56 36" style="--t:9s"><rect x="2" y="12" width="52" height="12" rx="3" fill="#d0452f"/><rect x="10" y="8" width="8" height="20" rx="2" fill="#9e2f1f"/><rect x="38" y="8" width="8" height="20" rx="2" fill="#9e2f1f"/></svg></div>
+  <!-- thermopompe -->
+  <div class="f desk-only" style="left:38%;bottom:6%;width:62px;height:50px;--d:-.18"><svg viewBox="0 0 62 50" style="--t:9s"><rect x="2" y="4" width="58" height="42" rx="6" fill="#dbe7ef"/><circle cx="24" cy="25" r="14" fill="#14324a"/><path d="M24 13v24M12 25h24M16 17l16 16M32 17L16 33" stroke="#86d6e3" stroke-width="2"/><rect x="44" y="12" width="10" height="4" rx="2" fill="#1fa0b8"/></svg></div>
+  <div class="f mob-only" style="left:80%;top:12%;width:24px;height:32px;--d:-.2"><svg viewBox="0 0 34 44" style="--t:8s"><path d="M17 2c9 13 15 21 15 28a15 15 0 0 1-30 0C2 23 8 15 17 2z" fill="#1fa0b8"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="urg"><i></i>Amos · Abitibi</span>
+   <h1>Plomberie <span>Germain Roy</span></h1>
+   <p class="slog">Plomberie, chauffage, thermopompes et traitement d'eau</p>
+   <p class="lead">Plomberie résidentielle et commerciale, chauffage à eau, vente et installation de thermopompes, analyse et traitement d'eau. Passez au 531, rue Principale Sud ou commandez en ligne.</p>
+   <div class="cta">
+    <a class="btn btn-cu" href="tel:+18197326888"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler 819 732-6888</a>
+    <a class="btn btn-ghost" href="#services">Nos services</a>
+   </div>
+   <ul class="chips"><li>Soumission en ligne</li><li>Commandes en ligne</li><li>Sans frais : 1 866 732-0144</li></ul>
+  </div>
+  <aside class="hcard" aria-label="Heures d'ouverture">
+   <h2>Heures d'ouverture</h2>
+   <ul class="hours">
+    <li><span>Lundi au vendredi</span><span>9 h à 12 h · 13 h à 17 h 30</span></li>
+    <li><span>Samedi</span><span>9 h à 15 h</span></li>
+    <li class="off"><span>Dimanche</span><span>Fermé</span></li>
+   </ul>
+   <p style="margin:14px 0 0;color:#d5e6f1;font-size:15px">531, rue Principale Sud, Amos</p>
+  </aside>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="eyebrow">Nos services</div>
+  <h2 class="t">De l'eau du puits jusqu'au chauffage de la maison</h2>
+  <p class="sub">Quatre services, une seule équipe à Amos. Demandez votre soumission en ligne ou appelez-nous.</p>
+  <div class="pipeline" id="pipeline">
+   <div class="svc4" style="position:relative">
+    <div class="flow" aria-hidden="true"></div>
+    <article class="card">
+     <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="14" fill="#e3f4f7"/><path d="M27 10c7 10 11 16 11 21a11 11 0 0 1-22 0c0-5 4-11 11-21z" fill="#1fa0b8"/><path d="M21 32l4 4 8-8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+     <h3>Analyse et traitement d'eau</h3>
+     <p>Inspection de puits, analyse et traitement de l'eau pour une eau de qualité à la maison.</p>
+    </article>
+    <article class="card">
+     <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="14" fill="#fde5df"/><path d="M27 10c3 8 12 12 12 22a12 12 0 0 1-24 0c0-6 4-9 6-13 1 4 3 6 4 6 0-6-1-10 2-15z" fill="#d0452f"/></svg>
+     <h3>Chauffage</h3>
+     <p>Chauffage à eau : installation et produits pour garder la maison au chaud tout l'hiver.</p>
+    </article>
+    <article class="card">
+     <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="14" fill="#e3f4f7"/><rect x="10" y="14" width="34" height="26" rx="4" fill="#14324a"/><circle cx="23" cy="27" r="8" fill="none" stroke="#86d6e3" stroke-width="2.5"/><path d="M23 19v16M15 27h16" stroke="#86d6e3" stroke-width="2"/></svg>
+     <h3>Thermopompes</h3>
+     <p>Vente et installation de thermopompes. Demandez votre soumission en ligne.</p>
+    </article>
+    <article class="card">
+     <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><rect width="54" height="54" rx="14" fill="#fde5df"/><rect x="8" y="24" width="38" height="8" rx="2" fill="#d0452f"/><rect x="23" y="12" width="8" height="30" rx="2" fill="#d0452f"/><circle cx="27" cy="28" r="5" fill="#14324a"/></svg>
+     <h3>Plomberie résidentielle et commerciale</h3>
+     <p>Pour la maison comme pour le commerce, nos plombiers s'occupent de vos installations.</p>
+    </article>
+   </div>
+  </div>
+  <div class="also reveal">
+   <svg viewBox="0 0 60 60" width="60" height="60" aria-hidden="true"><rect x="10" y="8" width="40" height="44" rx="5" fill="#fff"/><path d="M18 20h24M18 28h24M18 36h14" stroke="#14324a" stroke-width="3" stroke-linecap="round"/><circle cx="44" cy="44" r="10" fill="#d0452f"/><path d="M40 44l3 3 6-6" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+   <div><b>Soumission et commandes en ligne</b><p>Remplissez notre formulaire de soumission ou passez votre commande en ligne.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="produits">
+ <div class="wrap">
+  <div class="shophead">
+   <div>
+    <div class="eyebrow">Produits</div>
+    <div class="logo2">Nos <span>fournisseurs</span></div>
+   </div>
+   <p class="sub" style="margin:0">Robinetterie, bains et douches, chauffe-eau, chauffage, ventilation et pompes : nous travaillons avec des marques reconnues. Surveillez aussi nos promotions et liquidations.</p>
+  </div>
+  <div class="shop reveal">
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#e3f4f7"/><path d="M8 12h14v5H13v4H8z" fill="#14324a"/><rect x="14" y="7" width="8" height="4" rx="2" fill="#14324a"/><path d="M10 23c2 3 3 4 3 5a3 3 0 0 1-6 0c0-1 1-2 3-5z" fill="#1fa0b8"/></svg>Robinetterie</h3><ul class="brands"><li>Delta</li><li>Moen</li><li>Riobel</li><li>Brizo</li><li>Waltec</li><li>American Standard</li><li>Rubinet</li><li>Aquabrass</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#fde5df"/><path d="M6 16h22v4a6 6 0 0 1-6 6H12a6 6 0 0 1-6-6z" fill="#14324a"/><path d="M9 16V9a3 3 0 0 1 6 0" stroke="#d0452f" stroke-width="2" fill="none"/></svg>Bains, douches et éviers</h3><ul class="brands"><li>Maax</li><li>Fleurco</li><li>Océania</li><li>Zitta</li><li>Neptune</li><li>Kohler</li><li>Blanco</li><li>Kindred</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#e3f4f7"/><rect x="11" y="6" width="12" height="22" rx="5" fill="#d0452f"/><path d="M15 12h4" stroke="#fff" stroke-width="2"/></svg>Chauffe-eau et chauffage</h3><ul class="brands"><li>Giant</li><li>Thermo 2000</li><li>Lochinvar</li><li>Dettson</li><li>Stelpro</li><li>Gree</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#fde5df"/><circle cx="15" cy="19" r="8" fill="#14324a"/><circle cx="15" cy="19" r="3" fill="#1fa0b8"/><rect x="21" y="8" width="5" height="12" rx="2" fill="#d0452f"/></svg>Pompes</h3><ul class="brands"><li>Pentair</li><li>Myers</li><li>Burcam</li><li>Saniflo</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#e3f4f7"/><circle cx="17" cy="17" r="9" fill="none" stroke="#14324a" stroke-width="3"/><path d="M17 8v18M8 17h18" stroke="#1fa0b8" stroke-width="2"/></svg>Ventilation</h3><ul class="brands"><li>Aldes</li></ul></div>
+   <div class="it"><h3><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#fde5df"/><path d="M9 10h16l-2 16H11z" fill="#d0452f"/><path d="M13 14h8" stroke="#fff" stroke-width="2"/></svg>Promotions et liquidations</h3><p>Des aubaines sur des produits en magasin. Informez-vous au comptoir ou par téléphone.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="emplois" style="background:linear-gradient(135deg,#d0452f,#9e2f1f);color:#fff">
+ <div class="wrap">
+  <div class="ugrid">
+   <div>
+    <div class="eyebrow" style="color:#ffe3dc">Offres d'emploi</div>
+    <p class="q">Joignez-vous à notre équipe!</p>
+    <ul class="jobs"><li>Plombier/ère<span>Temps plein</span></li><li>Technicien/Technicienne en gaz naturel<span>Temps plein</span></li><li>Frigoriste<span>Temps plein</span></li><li>Ferblantier<span>Temps plein</span></li></ul>
+    <p style="margin:18px 0 16px;color:#fff3ef">Envoyez votre candidature par courriel ou passez nous voir.</p>
+    <a class="btn btn-w" href="mailto:pgr@plomberiegermainroy.com?subject=Candidature" style="color:#9e2f1f">Postuler par courriel</a>
+   </div>
+   <svg class="clock" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" fill="#fff"/><path d="M60 60L40 34" stroke="#9e2f1f" stroke-width="0"/><path d="M74 24a11 11 0 0 0-10 15L38 65a4.5 4.5 0 0 0 6 6l26-26A11 11 0 0 0 85 34l-6 4-5-4-1-6z" fill="#14324a"/><path class="hand" d="M60 60V26" stroke="#d0452f" stroke-width="0"/><text x="60" y="96" text-anchor="middle" font-family="Sora,sans-serif" font-weight="800" font-size="10" fill="#d0452f">On embauche</text></svg>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="eyebrow">Nous joindre</div>
+  <h2 class="t">Passez nous voir à Amos</h2>
+  <div class="contact reveal">
+   <div class="box">
+    <h3>Téléphone</h3>
+    <a class="big" href="tel:+18197326888">819 732-6888</a>
+    <p>Sans frais : <a href="tel:+18667320144">1 866 732-0144</a></p>
+    <p>Télécopieur : 819 732-4978</p>
+    <p>Courriel : <a href="mailto:pgr@plomberiegermainroy.com" style="overflow-wrap:anywhere">pgr@plomberiegermainroy.com</a></p>
+   </div>
+   <div class="box">
+    <h3>Heures d'ouverture</h3>
+    <ul class="hours" style="color:var(--ink)">
+     <li><span>Lundi au vendredi</span><span>9 h à 12 h</span></li>
+     <li><span></span><span>13 h à 17 h 30</span></li>
+     <li><span>Samedi</span><span>9 h à 15 h</span></li>
+     <li class="off"><span>Dimanche</span><span>Fermé</span></li>
+    </ul>
+    <p style="color:var(--muted);font-size:15px;margin-top:10px">Jours fériés : appelez-nous pour confirmer. Service en français et en anglais.</p>
+   </div>
+   <div class="box">
+    <h3>Adresse</h3>
+    <p>531, rue Principale Sud<br>Amos (Québec) J9T 2J8</p>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=531+rue+Principale+Sud+Amos+QC+J9T+2J8" target="_blank" rel="noopener">Voir sur Google Maps</a></p>
+    <p><a href="https://www.facebook.com/PlomberieGR/" target="_blank" rel="noopener">Suivez-nous sur Facebook</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span>© Plomberie Germain Roy — Tous droits réservés</span>
+  <span>Membre des réseaux Zone Amos et Zone Abitibi</span>
+ </div>
+</footer>
+<a class="callbar" href="tel:+18197326888"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler Plomberie Germain Roy</a>
+
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('m');
+ b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+ var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var els=document.querySelectorAll('.reveal,.card,.pipeline');
+ if(rm||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')})}
+ else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(e){io.observe(e)})}
+ if(!rm){var h=document.getElementById('hero'),tick=false;
+  window.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=window.scrollY;if(y<1200)h.style.setProperty('--p',y.toFixed(0));tick=false})},{passive:true});}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

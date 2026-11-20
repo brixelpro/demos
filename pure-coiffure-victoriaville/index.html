@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pure Coiffure — Salon de coiffure à Victoriaville</title>
+<meta name="description" content="Pure Coiffure, salon de coiffure à Victoriaville depuis 2012 : coupe, coiffure et coloration. Détaillant Kérastase, Shu Uemura et L'Oréal Professionnel. Prenez rendez-vous en ligne ou au 819-604-6764.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Pure Coiffure","telephone":"+1-819-604-6764","email":"info@purecoiffure.com","foundingDate":"2012","address":{"@type":"PostalAddress","streetAddress":"432, rue De Bigarré","addressLocality":"Victoriaville","addressRegion":"QC","postalCode":"G6T 1L8","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"09:00","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday"],"opens":"09:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"12:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"94"}}
+</script>
+<style>
+:root{--ink:#1c1717;--rose:#c98b7b;--rose2:#e8c3b6;--gold:#b08a4a;--cream:#f8f1ea;--paper:#fffaf6;--muted:#6f625e;--line:#ecdcd2;--bar:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 70px)}
+body{font-family:Jost,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;padding-top:var(--bar)}
+svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.05}
+p,li,blockquote{overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{position:fixed;top:var(--bar);left:0;right:0;z-index:50;background:rgba(255,250,246,.98);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:44px;height:44px;flex:none}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:26px;white-space:nowrap}
+.links{display:none;gap:24px;align-items:center}
+.links a,.links button{text-decoration:none;font-weight:500;font-size:15px;letter-spacing:.04em;background:none;border:0;cursor:pointer;font-family:inherit;color:var(--ink)}
+.links a:hover,.links button:hover{color:var(--rose)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-family:inherit;font-size:16px;letter-spacing:.02em;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-rose{background:var(--rose);color:#fff}
+.btn-line{background:transparent;border:1.5px solid var(--ink);color:var(--ink)}
+.links a.btn-ink{background:var(--ink);color:#fff;padding:10px 18px}
+.burger{background:none;border:0;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.drawer{display:none;border-top:1px solid var(--line);background:var(--paper)}
+.menu-open .drawer{display:block}
+.drawer a,.drawer button{display:block;width:100%;text-align:left;padding:14px 20px;text-decoration:none;font-weight:500;border:0;border-bottom:1px solid var(--line);background:none;font-family:inherit;font-size:17px;color:var(--ink);cursor:pointer}
+@media(min-width:900px){.links{display:flex}.burger,.drawer{display:none!important}}
+/* HERO */
+.hero{position:relative;padding:110px 0 70px;background:linear-gradient(160deg,var(--cream) 0%,#f3e1d8 60%,#ead0c4 100%);isolation:isolate}
+.floaters{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.fl{position:absolute;opacity:.45}
+.fl.back{opacity:.22;filter:blur(1.5px)}
+.fl svg{display:block;animation:bob var(--s,8s) ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-16px) rotate(12deg)}}
+.hero-grid{display:grid;gap:36px;align-items:center}
+.kicker{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.hero h1{font-size:clamp(58px,13vw,118px);margin:10px 0 8px;letter-spacing:-.01em}
+.hero h1 i{font-style:italic;font-weight:500;color:var(--rose)}
+.lead{font-size:clamp(18px,2.3vw,22px);color:var(--muted);max-width:520px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.brands{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--ink)}
+.brands span{opacity:.75}
+.portrait{position:relative;max-width:420px;margin:0 auto;width:100%}
+.arch{aspect-ratio:3/4;border-radius:999px 999px 24px 24px;background:radial-gradient(80% 60% at 50% 30%,#fff 0%,#f3dcd1 60%,#e2b9a9 100%);border:1px solid #fff;box-shadow:0 30px 60px -30px rgba(80,40,30,.45);overflow:hidden;position:relative}
+.arch svg{position:absolute;inset:0;width:100%;height:100%}
+.badge{position:absolute;left:-6px;bottom:28px;background:var(--ink);color:#fff;border-radius:16px;padding:12px 16px;font-size:14px}
+.badge b{display:block;font-family:"Cormorant Garamond",serif;font-size:26px;line-height:1}
+@media(min-width:900px){.hero{padding:140px 0 100px}.hero-grid{grid-template-columns:1.15fr .85fr;gap:60px}}
+section{padding:76px 0}
+.eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.h2{font-size:clamp(38px,7vw,60px);margin:8px 0 14px}
+.sub{color:var(--muted);max-width:660px}
+/* SERVICES */
+.svc-grid{display:grid;gap:18px;margin-top:34px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;min-width:0}
+.svc svg{width:52px;height:52px;margin-bottom:12px}
+.svc h3{font-size:32px;margin-bottom:6px}
+.svc p{color:var(--muted)}
+.svc.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+.svc.dark p{color:#d9cbc5}
+@media(min-width:800px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.color-note{margin-top:22px;background:var(--cream);border-radius:20px;padding:22px 24px;border-left:4px solid var(--rose)}
+/* TEAM */
+.team{background:var(--cream)}
+.team-grid{display:grid;gap:16px;margin-top:34px;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr))}
+.member{background:#fff;border-radius:22px;padding:24px;border:1px solid var(--line);min-width:0;opacity:0;transform:translateY(34px) scale(.97);transition:opacity .6s,transform .7s cubic-bezier(.2,1.1,.3,1)}
+.member.in{opacity:1;transform:none}
+.mono{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:700;margin-bottom:14px}
+.member h3{font-size:26px}
+.member .role{color:var(--rose);font-weight:600;font-size:15px}
+.member .yr{margin-top:12px;font-size:14px;color:var(--muted)}
+.member .yr b{font-family:"Cormorant Garamond",serif;font-size:30px;color:var(--ink);display:block;line-height:1}
+/* ABOUT */
+.about-grid{display:grid;gap:30px;align-items:center}
+.big-quote{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(30px,5vw,46px);line-height:1.15}
+.big-quote span{color:var(--rose)}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr;gap:70px}}
+/* REVIEWS */
+.rev{background:var(--ink);color:#fff}
+.rev .eyebrow{color:var(--rose2)}
+.score{display:inline-flex;align-items:center;gap:14px;background:#fff;color:var(--ink);padding:14px 22px;border-radius:999px;margin-top:16px;flex-wrap:wrap}
+.score b{font-family:"Cormorant Garamond",serif;font-size:36px;line-height:1}
+.stars{color:var(--gold);letter-spacing:2px}
+.rev-grid{display:grid;gap:16px;margin-top:30px}
+.rcard{background:#2a2323;border-radius:20px;padding:24px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.rcard blockquote{font-family:"Cormorant Garamond",serif;font-size:23px;line-height:1.25}
+.rcard footer{color:#bfaea8;font-size:14px;margin-top:auto}
+.rcard footer b{color:#fff}
+@media(min-width:700px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev .btn-line{border-color:#fff;color:#fff}
+/* INFO */
+.info-grid{display:grid;gap:18px;margin-top:30px}
+.icard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;min-width:0}
+.icard h3{font-size:30px;margin-bottom:12px}
+.icard a{color:var(--rose);font-weight:600}
+.hours div{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line)}
+.hours div:last-of-type{border:0}
+.small{font-size:14px;color:var(--muted);margin-top:10px}
+@media(min-width:900px){.info-grid{grid-template-columns:repeat(3,1fr)}}
+footer.site{background:var(--ink);color:#bfaea8;padding:34px 0 110px;font-size:14px}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+@media(min-width:900px){footer.site{padding-bottom:34px}}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:8px}
+.sticky a{flex:1;justify-content:center;box-shadow:0 10px 24px rgba(28,23,23,.35);padding:13px 10px}
+@media(min-width:900px){.sticky{display:none}}
+/* AVIS PAGE */
+#avisPage{display:none;min-height:100vh;background:var(--paper)}
+body.show-avis #avisPage{display:block}
+body.show-avis #site{display:none}
+.ap-top{position:sticky;top:var(--bar);z-index:40;background:var(--ink);color:#fff}
+.ap-top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.back{background:none;border:1.5px solid rgba(255,255,255,.6);color:#fff;border-radius:99px;padding:9px 16px;font-weight:600;cursor:pointer;font-family:inherit;font-size:15px}
+.ap-body{padding-top:40px;padding-bottom:80px}
+.ap-list{display:grid;gap:14px;margin-top:24px}
+.ap-list .rcard{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.ap-list .rcard footer{color:var(--muted)}
+.ap-list .rcard footer b{color:var(--ink)}
+@media(min-width:760px){.ap-list{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.ap-list{grid-template-columns:repeat(3,1fr)}}
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--paper);display:grid;place-items:center;cursor:pointer}
+#intro svg{width:170px;height:170px}
+#intro .draw{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.3s .1s ease-out forwards}
+#intro .word{opacity:0;animation:fade .6s 1s forwards;font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:700;text-align:center;margin-top:8px}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+#intro.out{opacity:0;transition:opacity .35s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.member{opacity:1!important;transform:none!important}#intro{display:none}}
+@media(max-width:519px){:root{--bar:48px}.fl{opacity:.25}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Pure Coiffure — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="logo" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="#1c1717" stroke-width="3"/><text x="50" y="63" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="40" font-weight="700" fill="#1c1717">PC</text><path d="M30 72c12 6 28 6 40 0" stroke="#c98b7b" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="scissors" viewBox="0 0 100 100"><circle cx="24" cy="76" r="13" fill="none" stroke="#1c1717" stroke-width="5"/><circle cx="76" cy="76" r="13" fill="none" stroke="#1c1717" stroke-width="5"/><path d="M33 66 70 8M67 66 30 8" stroke="#1c1717" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="38" r="3" fill="#b08a4a"/></symbol>
+  <symbol id="comb" viewBox="0 0 120 40"><rect x="4" y="4" width="112" height="12" rx="5" fill="#c98b7b"/><path d="M12 16v18M22 16v18M32 16v18M42 16v18M52 16v18M62 16v18M72 16v18M82 16v18M92 16v18M102 16v18" stroke="#c98b7b" stroke-width="4" stroke-linecap="round"/></symbol>
+  <symbol id="strand" viewBox="0 0 60 140"><path d="M30 4c-22 30 22 50 0 80s22 40 4 52" stroke="#b08a4a" stroke-width="4" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="drop" viewBox="0 0 60 80"><path d="M30 4C22 22 8 36 8 52a22 22 0 0 0 44 0C52 36 38 22 30 4z" fill="#e8c3b6"/></symbol>
+</defs></svg>
+
+<div id="intro" aria-hidden="true"><div>
+  <svg viewBox="0 0 100 100"><circle class="draw" cx="50" cy="50" r="46" fill="none" stroke="#1c1717" stroke-width="2.5"/><path class="draw" d="M30 72c12 6 28 6 40 0" stroke="#c98b7b" stroke-width="3" fill="none" stroke-linecap="round"/><text x="50" y="63" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="40" font-weight="700" fill="#1c1717" style="opacity:0;animation:fade .5s .7s forwards">PC</text></svg>
+  <div class="word">Pure Coiffure</div>
+</div></div>
+
+<div id="site">
+<header class="nav" id="nav"><div class="wrap">
+  <a class="brand" href="#top"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg><b>Pure Coiffure</b></a>
+  <nav class="links" aria-label="Navigation principale">
+    <a href="#services">Services</a><a href="#equipe">L'équipe</a><a href="#salon">Le salon</a><button type="button" data-avis>Avis</button><a href="#infos">Nous joindre</a>
+    <a class="btn btn-ink" href="https://www.reserv.online/purecoiffure/fr" target="_blank" rel="noopener">Prendre rendez-vous</a>
+  </nav>
+  <button class="burger" type="button" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><div><span></span><span></span><span></span></div></button>
+</div>
+<div class="drawer" id="drawer"><a href="#services">Services</a><a href="#equipe">L'équipe</a><a href="#salon">Le salon</a><button type="button" data-avis>Avis</button><a href="#infos">Nous joindre</a><a href="https://www.reserv.online/purecoiffure/fr" target="_blank" rel="noopener">Prendre rendez-vous en ligne</a></div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="floaters" aria-hidden="true">
+    <div class="fl" style="right:6%;top:62%"><svg width="70" height="70" style="--s:8s"><use href="#scissors"/></svg></div>
+    <div class="fl back" style="right:4%;top:8%"><svg width="130" height="44" style="--s:10s"><use href="#comb"/></svg></div>
+    <div class="fl" style="left:44%;top:6%"><svg width="34" height="80" style="--s:7s"><use href="#strand"/></svg></div>
+    <div class="fl back" style="left:-10px;bottom:10%"><svg width="60" height="140" style="--s:9s"><use href="#strand"/></svg></div>
+    <div class="fl" style="right:40%;bottom:4%"><svg width="30" height="40" style="--s:6.5s"><use href="#drop"/></svg></div>
+    <div class="fl back" style="right:12%;bottom:30%"><svg width="90" height="90" style="--s:11s"><use href="#scissors"/></svg></div>
+    <div class="fl" style="left:28%;bottom:8%"><svg width="80" height="28" style="--s:7.5s"><use href="#comb"/></svg></div>
+    <div class="fl" style="right:2%;top:46%"><svg width="24" height="32" style="--s:6s"><use href="#drop"/></svg></div>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Salon de coiffure · Victoriaville</span>
+      <h1>Pure <i>Coiffure</i></h1>
+      <p class="lead">Le salon Pure Coiffure évolue au fil des tendances et s'adapte aux goûts de sa clientèle. Coupe, coiffure ou coloration : on vous donne le look qui vous convient.</p>
+      <div class="ctas">
+        <a class="btn btn-ink" href="https://www.reserv.online/purecoiffure/fr" target="_blank" rel="noopener">Prendre rendez-vous</a>
+        <a class="btn btn-line" href="tel:+18196046764">Appeler · 819-604-6764</a>
+      </div>
+      <div class="brands" aria-label="Marques offertes"><span>Kérastase</span><span>L'Oréal Professionnel</span><span>Shu Uemura</span><span>Pureology</span></div>
+    </div>
+    <div class="portrait" aria-hidden="true">
+      <div class="arch">
+        <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+          <path d="M150 70c-60 0-92 46-92 104 0 40 14 78 10 120-4 40-20 70-20 106h204c0-36-16-66-20-106-4-42 10-80 10-120 0-58-32-104-92-104z" fill="#3a2a26"/>
+          <ellipse cx="150" cy="180" rx="52" ry="64" fill="#efcdbd"/>
+          <path d="M98 170c4-58 34-82 70-78 30 4 46 30 44 62-22-30-62-40-114 16z" fill="#3a2a26"/>
+          <path d="M96 400c6-60 30-90 54-90s48 30 54 90z" fill="#c98b7b"/>
+          <path d="M70 140c-20 60 10 110-6 170M232 140c20 60-10 110 6 170" stroke="#b08a4a" stroke-width="3" fill="none" opacity=".6"/>
+          <circle cx="132" cy="186" r="4" fill="#3a2a26"/><circle cx="168" cy="186" r="4" fill="#3a2a26"/><path d="M138 214c8 6 16 6 24 0" stroke="#a5604e" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="badge"><b>Depuis 2012</b>à Victoriaville</div>
+    </div>
+  </div>
+</section>
+
+<section id="services"><div class="wrap">
+  <span class="eyebrow">Nos services</span>
+  <h2 class="h2">Coupe, coiffure et coloration</h2>
+  <p class="sub">Notre équipe de coiffeurs est entièrement à votre disposition. Que ce soit pour une coiffure, une coloration ou une coupe, nous saurons répondre à vos besoins et vous donner le look qui vous convient.</p>
+  <div class="svc-grid">
+    <article class="svc"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#scissors"/></svg><h3>Coupe</h3><p>Femmes et hommes, selon les tendances et votre style.</p></article>
+    <article class="svc dark"><svg viewBox="0 0 60 80" aria-hidden="true"><use href="#drop"/></svg><h3>Coloration</h3><p>Produits de coloration L'Oréal Professionnel pour la brillance, la tenue et les reflets.</p></article>
+    <article class="svc"><svg viewBox="0 0 60 140" aria-hidden="true"><use href="#strand"/></svg><h3>Coiffure</h3><p>Pure Coiffure reste à l'affût des nouvelles tendances pour le plus grand plaisir de notre clientèle!</p></article>
+  </div>
+  <div class="color-note"><p>« De plus, nous vous offrons une coloration semi-permanente ou permanente sans ammoniaque, sans odeur et ce, avec une couverture des cheveux gris à 100%! »</p></div>
+  <p class="sub" style="margin-top:18px">Fier détaillant de la gamme Kérastase ainsi que de la famille l'Oréal Professionnel, vous pouvez vous procurer ces produits haut de gamme directement à notre salon de coiffure. Pour les prix, appelez-nous ou réservez en ligne.</p>
+</div></section>
+
+<section class="team" id="equipe"><div class="wrap">
+  <span class="eyebrow">L'équipe</span>
+  <h2 class="h2">Nos artistes coiffeuses</h2>
+  <p class="sub">Sept coiffeuses d'expérience, dont trois propriétaires.</p>
+  <div class="team-grid" id="team">
+    <article class="member"><div class="mono">VF</div><h3>Vicky Fréchette</h3><p class="role">Propriétaire / Artiste coiffeuse</p><p class="yr"><b>2000</b>En coiffure depuis</p></article>
+    <article class="member"><div class="mono">MF</div><h3>Marilou Faucher</h3><p class="role">Propriétaire / Artiste coiffeuse</p><p class="yr"><b>2004</b>En coiffure depuis</p></article>
+    <article class="member"><div class="mono">MP</div><h3>Magalie Perreault</h3><p class="role">Propriétaire / Artiste coiffeuse</p><p class="yr"><b>2009</b>En coiffure depuis</p></article>
+    <article class="member"><div class="mono">JC</div><h3>Jany Côté</h3><p class="role">Artiste coiffeuse</p><p class="yr"><b>2002</b>En coiffure depuis</p></article>
+    <article class="member"><div class="mono">AG</div><h3>Allison Goyette</h3><p class="role">Artiste coiffeuse</p><p class="yr"><b>2023</b>En coiffure depuis</p></article>
+    <article class="member"><div class="mono">SH</div><h3>Shelly Huot</h3><p class="role">Artiste coiffeuse</p><p class="yr"><b>2024</b>En coiffure depuis</p></article>
+    <article class="member"><div class="mono">PL</div><h3>Pénélope Lapointe</h3><p class="role">Artiste coiffeuse</p><p class="yr"><b>2025</b>En coiffure depuis</p></article>
+  </div>
+</div></section>
+
+<section id="salon"><div class="wrap about-grid">
+  <div>
+    <span class="eyebrow">Le salon</span>
+    <h2 class="h2">Beaucoup plus qu'un salon</h2>
+    <p class="big-quote">« Pure coiffure, <span>beaucoup plus qu'un salon...</span> »</p>
+  </div>
+  <div>
+    <p>Ouvert depuis 2012, le salon est né de la vision commune de Karl &amp; Vicky. Comptant chacun plus de 18 ans d'expérience, une belle complicité s'est tissée et installée entre eux au fil des années.</p>
+    <p style="margin-top:14px">Merci à tous de nous accompagner dans cette aventure, tout en souhaitant encore plusieurs belles années à Pure Coiffure!!!</p>
+  </div>
+</div></section>
+
+<section class="rev" id="avis"><div class="wrap">
+  <span class="eyebrow">Ce que nos clientes et clients disent</span>
+  <h2 class="h2">Une ambiance qu'on aime</h2>
+  <div class="score"><b>4,7</b><span class="stars" aria-hidden="true">★★★★★</span><strong>4,7 ★ sur Google · 94 avis</strong></div>
+  <div class="rev-grid" id="revHome"></div>
+  <div style="margin-top:26px"><button class="btn btn-line" type="button" data-avis id="allBtn">Voir tous les avis</button></div>
+</div></section>
+
+<section id="infos"><div class="wrap">
+  <span class="eyebrow">Nous joindre</span>
+  <h2 class="h2">Au plaisir de vous voir</h2>
+  <div class="info-grid">
+    <div class="icard hours"><h3>Heures</h3>
+      <div><span>Lundi</span><b>Fermé</b></div>
+      <div><span>Mardi</span><b>9 h à 16 h</b></div>
+      <div><span>Mercredi</span><b>9 h à 21 h</b></div>
+      <div><span>Jeudi</span><b>9 h à 21 h</b></div>
+      <div><span>Vendredi</span><b>9 h à 17 h</b></div>
+      <div><span>Samedi</span><b>9 h à 12 h</b></div>
+      <div><span>Dimanche</span><b>Fermé</b></div>
+      <p class="small">Heures à confirmer par téléphone, surtout pendant les Fêtes.</p>
+    </div>
+    <div class="icard"><h3>Adresse</h3><p>432, rue De Bigarré<br>Victoriaville (Québec) G6T 1L8</p><p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=Pure+Coiffure+432+rue+De+Bigarr%C3%A9+Victoriaville" target="_blank" rel="noopener">Itinéraire dans Google Maps →</a></p></div>
+    <div class="icard"><h3>Rendez-vous</h3><p>En ligne : <a href="https://www.reserv.online/purecoiffure/fr" target="_blank" rel="noopener">réserver ma place</a></p><p>Téléphone : <a href="tel:+18196046764">819-604-6764</a></p><p>Courriel : <a href="mailto:info@purecoiffure.com">info@purecoiffure.com</a></p></div>
+  </div>
+</div></section>
+</main>
+<footer class="site"><div class="wrap"><span>© Pure Coiffure · Victoriaville</span><span>Kérastase · L'Oréal Professionnel · Shu Uemura · Pureology</span></div></footer>
+<div class="sticky"><a class="btn btn-ink" href="https://www.reserv.online/purecoiffure/fr" target="_blank" rel="noopener">Rendez-vous</a><a class="btn btn-rose" href="tel:+18196046764">Appeler</a></div>
+</div>
+
+<div id="avisPage" aria-label="Tous les avis">
+  <div class="ap-top"><div class="wrap"><button class="back" type="button" id="backBtn">← Retour au site</button><span class="serif" style="font-size:22px">4,7 ★ sur Google · 94 avis</span></div></div>
+  <div class="wrap ap-body">
+    <span class="eyebrow">Avis</span>
+    <h2 class="h2">Tous les avis</h2>
+    <p class="sub">Avis recopiés mot pour mot, avec leur source.</p>
+    <div class="ap-list" id="revAll"></div>
+    <p style="margin-top:26px"><a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&query=Pure+Coiffure+432+rue+De+Bigarr%C3%A9+Victoriaville" target="_blank" rel="noopener">Voir sur Google</a></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var R=[
+    ["Jackie Shank","Je ne changerai pas de salon! Une équipe dynamique et remarquable! À l'écoute de vos besoins","Avis Google","1 mars 2018"],
+    ["Cedric Paquette","Coiffeuses gentille et ambiance tranquille. Je recommande pour coiffure d'hommes :)","Avis Google","il y a 6 mois"],
+    ["Manal Najlah","J'ai coupée les pointes par Shaley, j'ai reçu un très bon service. Je recommande","Avis Google","il y a 5 mois"],
+    ["Julie Champagne","Pour une belle coiffure dans une ambiance agréable c'est ici !","Avis Google","31 août 2017"],
+    ["Audrey-Violette L","Je suis extremement satisfaite ! Tres bon services les filles sont super souriante et embiance parfaite","Avis Google","24 oct. 2017"],
+    ["Johanne Loiselle","Allison est super bonne.","Avis Google","il y a 5 mois"],
+    ["MarlayneB236","Très belle acceuil et les gens sont très gentils. Professionnel et surtout on s'y sent bien. Bravo!","Pages Jaunes","19 févr. 2015"],
+    ["Lynda Marois","Première impression positive pour une première visite","Avis Google","30 avr. 2018"],
+    ["Lydia Fleury","Très bon service 💇","Avis Google","4 juin 2017"]
+  ];
+  function esc(x){return String(x).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  function card(r){return '<article class="rcard"><blockquote>« '+esc(r[1])+' »</blockquote><footer><b>'+esc(r[0])+'</b> · '+r[2]+' · '+r[3]+'</footer></article>'}
+  document.getElementById('revHome').innerHTML=R.slice(0,6).map(card).join('');
+  document.getElementById('revAll').innerHTML=R.map(card).join('');
+  document.getElementById('allBtn').textContent='Voir tous les avis ('+R.length+')';
+  var nav=document.getElementById('nav'),burger=document.getElementById('burger');
+  burger.addEventListener('click',function(){var o=nav.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o)});
+  document.querySelectorAll('#drawer a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('menu-open')})});
+  var savedY=0;
+  function openAvis(){savedY=window.scrollY;nav.classList.remove('menu-open');document.body.classList.add('show-avis');window.scrollTo(0,0)}
+  function closeAvis(){document.body.classList.remove('show-avis');window.scrollTo(0,savedY)}
+  document.querySelectorAll('[data-avis]').forEach(function(b){b.addEventListener('click',openAvis)});
+  document.getElementById('backBtn').addEventListener('click',closeAvis);
+  window.__openAvis=openAvis;
+  var intro=document.getElementById('intro'),reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches,seen=false;
+  try{seen=sessionStorage.getItem('pcIntro')==='1'}catch(e){}
+  function endIntro(){if(!intro.parentNode)return;intro.classList.add('out');setTimeout(function(){if(intro.parentNode)intro.parentNode.removeChild(intro)},380);try{sessionStorage.setItem('pcIntro','1')}catch(e){}}
+  if(reduce||seen){intro.parentNode.removeChild(intro)}else{intro.addEventListener('click',endIntro);setTimeout(endIntro,2100)}
+  var ms=document.querySelectorAll('.member');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(ms,e.target);setTimeout(function(){e.target.classList.add('in')},(i%4)*110);io.unobserve(e.target)}})},{threshold:.15});ms.forEach(function(m){io.observe(m)})}else{ms.forEach(function(m){m.classList.add('in')})}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

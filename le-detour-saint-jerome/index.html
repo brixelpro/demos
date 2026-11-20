@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Le Détour — Restaurant déjeuner et dîner à Saint-Jérôme</title>
+<meta name="description" content="Le Détour, restaurant déjeuner et dîner au 1425, boul. Saint-Antoine à Saint-Jérôme. Ouvert dès 5 h. Œufs, bénédictines, poutines déjeuner, crêpes. Commandes pour emporter : 450-565-8899.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Le Détour","servesCuisine":"Déjeuner","slogan":"LE TOUT FAIT AVEC AMOUR !","telephone":"+1-450-565-8899","email":"Ledetour1425@gmail.com","priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"1425, boul. Saint-Antoine","addressLocality":"Saint-Jérôme","addressRegion":"QC","postalCode":"J7Z 7M1","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"05:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"06:00","closes":"14:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"700"}}
+</script>
+<style>
+:root{--ink:#2a1a12;--brown:#5a3320;--yolk:#ffb21e;--yolk2:#ffc94d;--cream:#fff6e6;--paper:#fffbf3;--red:#d8432b;--muted:#7a6457;--line:#efdfc4;--bar:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 70px)}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:17px;padding-top:var(--bar)}
+svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3,.serif{font-family:Fraunces,Georgia,serif;line-height:1.08}
+p,li,blockquote{overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{position:fixed;top:var(--bar);left:0;right:0;z-index:50;background:rgba(255,251,243,.98);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:46px;height:46px;flex:none}
+.brand b{font-family:Fraunces,serif;font-size:24px;font-weight:800;white-space:nowrap}
+.links{display:none;gap:22px;align-items:center}
+.links a,.links button{text-decoration:none;font-weight:800;font-size:15px;background:none;border:0;cursor:pointer;font-family:inherit;color:var(--ink)}
+.links a:hover,.links button:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:800;text-decoration:none;border:0;cursor:pointer;font-family:inherit;font-size:16px;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-yolk{background:var(--yolk);color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-line{background:transparent;border:2px solid var(--ink);color:var(--ink)}
+.links a.btn-dark{background:var(--ink);color:#fff;padding:10px 16px}
+.burger{background:none;border:0;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.drawer{display:none;background:var(--paper);border-top:1px solid var(--line)}
+.menu-open .drawer{display:block}
+.drawer a,.drawer button{display:block;width:100%;text-align:left;padding:14px 20px;text-decoration:none;font-weight:800;border:0;border-bottom:1px solid var(--line);background:none;font-family:inherit;font-size:17px;color:var(--ink);cursor:pointer}
+@media(min-width:900px){.links{display:flex}.burger,.drawer{display:none!important}}
+/* HERO */
+.hero{position:relative;background:radial-gradient(90% 80% at 85% 20%,#ffe2a6 0%,var(--cream) 55%,var(--paper) 100%);padding:110px 0 70px;isolation:isolate}
+.floaters{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.fl{position:absolute;opacity:.55}
+.fl.back{opacity:.3;filter:blur(1.5px)}
+.fl svg{display:block;animation:bob var(--s,7s) ease-in-out infinite}
+.fl.spin svg{animation:spin var(--s,40s) linear infinite}
+@keyframes bob{50%{transform:translateY(-16px) rotate(10deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-grid{display:grid;gap:34px;align-items:center}
+.sign{display:inline-flex;align-items:center;gap:8px;background:var(--yolk);border:3px solid var(--ink);padding:6px 14px;border-radius:8px;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;transform:rotate(-2deg)}
+.hero h1{font-size:clamp(44px,10vw,86px);font-weight:800;margin:18px 0 10px;color:var(--ink)}
+.hero h1 span{color:var(--red)}
+.lead{font-size:clamp(18px,2.4vw,22px);color:var(--brown);max-width:540px}
+.love{font-family:Fraunces,serif;font-weight:800;font-size:22px;color:var(--red);margin-top:14px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.open{margin-top:22px;display:inline-flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);padding:10px 16px;border-radius:14px;font-weight:700}
+.open b{color:var(--red)}
+.plate{position:relative;aspect-ratio:1;max-width:460px;margin:0 auto;width:100%}
+.plate svg{width:100%;height:auto;display:block;filter:drop-shadow(0 30px 40px rgba(90,51,32,.25))}
+.tag{position:absolute;background:var(--ink);color:#fff;padding:8px 14px;border-radius:12px;font-weight:800;font-size:15px}
+.tag.t1{left:-4px;top:12%;transform:rotate(-6deg)}
+.tag.t2{right:0;bottom:12%;background:var(--red);transform:rotate(5deg)}
+@media(min-width:900px){.hero{padding:140px 0 100px}.hero-grid{grid-template-columns:1.1fr .9fr;gap:50px}}
+section{padding:72px 0}
+.eyebrow{color:var(--red);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:13px}
+.h2{font-size:clamp(34px,6vw,52px);font-weight:800;margin:8px 0 14px}
+.sub{color:var(--muted);max-width:660px}
+/* MENU */
+.menu-grid{display:grid;gap:18px;margin-top:34px}
+.dish{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;min-width:0;opacity:0;transform:translateY(40px) rotate(-1.5deg) scale(.96);transition:opacity .6s,transform .7s cubic-bezier(.2,1.2,.3,1)}
+.dish.in{opacity:1;transform:none}
+.dish:nth-child(even).in{transform:none}
+.dish h3{font-size:26px;font-weight:800;display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.dish h3 svg{flex:none;width:44px;height:44px}
+.dish ul{list-style:none}
+.dish li{padding:8px 0;border-bottom:1px dashed var(--line);font-weight:700}
+.dish li:last-child{border:0}
+.dish p{color:var(--muted);font-size:15px;margin-top:8px}
+.dish.feat{background:var(--ink);color:#fff;border-color:var(--ink)}
+.dish.feat li{border-color:#4a362b}
+.dish.feat p{color:#e4cfbf}
+.cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.cats span{background:var(--cream);border:1px solid var(--line);padding:7px 14px;border-radius:99px;font-weight:700;font-size:15px}
+.menu-note{margin-top:26px;background:var(--yolk2);border-radius:20px;padding:22px;display:grid;gap:12px;align-items:center}
+.menu-note p{font-weight:700}
+@media(min-width:760px){.menu-grid{grid-template-columns:repeat(3,1fr)}.menu-note{grid-template-columns:1fr auto}}
+/* TAKEOUT */
+.takeout{background:var(--red);color:#fff;position:relative;overflow:hidden}
+.takeout .wrap{display:grid;gap:24px;align-items:center}
+.takeout h2{font-size:clamp(30px,5.5vw,48px);font-weight:800}
+.takeout .btn-yolk{font-size:18px}
+@media(min-width:900px){.takeout .wrap{grid-template-columns:1.3fr 1fr}}
+/* REVIEWS */
+.rev{background:var(--cream)}
+.score{display:inline-flex;align-items:center;gap:14px;background:#fff;padding:14px 20px;border-radius:16px;border:1px solid var(--line);margin-top:16px;flex-wrap:wrap}
+.score b{font-family:Fraunces,serif;font-size:36px}
+.stars{color:var(--yolk);font-size:20px;letter-spacing:2px}
+.rev-grid{display:grid;gap:16px;margin-top:28px}
+.rcard{background:#fff;border-radius:18px;padding:22px;border:1px solid var(--line);min-width:0;display:flex;flex-direction:column;gap:10px}
+.rcard .stars{font-size:16px}
+.rcard blockquote{font-size:17px}
+.rcard footer{color:var(--muted);font-size:14px;margin-top:auto}
+.rcard footer b{color:var(--ink)}
+@media(min-width:700px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev .actions{margin-top:26px}
+/* INFO */
+.info-grid{display:grid;gap:18px;margin-top:30px}
+.icard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;min-width:0}
+.icard h3{font-size:24px;font-weight:800;margin-bottom:12px}
+.icard a{color:var(--red);font-weight:800}
+.hours div{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.hours div:last-of-type{border:0}
+.small{font-size:14px;color:var(--muted);margin-top:8px}
+@media(min-width:900px){.info-grid{grid-template-columns:repeat(3,1fr)}}
+footer.site{background:var(--ink);color:#e4cfbf;padding:34px 0 110px;font-size:14px}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+@media(min-width:900px){footer.site{padding-bottom:34px}}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex}
+.sticky a{flex:1;justify-content:center;box-shadow:0 10px 24px rgba(42,26,18,.35)}
+@media(min-width:900px){.sticky{display:none}}
+/* AVIS PAGE */
+#avisPage{display:none;min-height:100vh;background:var(--paper)}
+body.show-avis #avisPage{display:block}
+body.show-avis #site{display:none}
+.ap-top{position:sticky;top:var(--bar);z-index:40;background:var(--ink);color:#fff}
+.ap-top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.back{background:none;border:2px solid rgba(255,255,255,.6);color:#fff;border-radius:99px;padding:9px 16px;font-weight:800;cursor:pointer;font-family:inherit;font-size:15px}
+.ap-body{padding-top:40px;padding-bottom:80px}
+.ap-list{display:grid;gap:14px;margin-top:24px}
+@media(min-width:760px){.ap-list{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.ap-list{grid-template-columns:repeat(3,1fr)}}
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--cream);display:grid;place-items:center;cursor:pointer}
+#intro .board{transform-origin:50% 0;animation:swing 1.6s cubic-bezier(.3,1.4,.5,1) both;text-align:center}
+#intro svg{width:min(78vw,340px);height:auto}
+@keyframes swing{0%{transform:rotate(-28deg) translateY(-60vh)}45%{transform:rotate(10deg)}70%{transform:rotate(-5deg)}100%{transform:none}}
+#intro.out{opacity:0;transition:opacity .35s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.dish{opacity:1!important;transform:none!important}#intro{display:none}}
+@media(max-width:519px){:root{--bar:48px}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Le Détour — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="logo" viewBox="0 0 100 100">
+    <rect x="10" y="10" width="80" height="80" rx="14" transform="rotate(45 50 50)" fill="#ffb21e" stroke="#2a1a12" stroke-width="6"/>
+    <path d="M30 60c0-14 10-22 24-22h6v-9l16 15-16 15v-9h-6c-6 0-10 4-10 10z" fill="#2a1a12"/>
+  </symbol>
+  <symbol id="egg" viewBox="0 0 100 80"><path d="M14 40c-6-18 12-34 30-30 10-12 34-8 40 8 14 6 14 30-2 36-6 16-30 22-44 12C20 70 6 58 14 40z" fill="#fff" stroke="#efdfc4" stroke-width="2"/><circle cx="50" cy="40" r="15" fill="#ffb21e"/><circle cx="45" cy="35" r="4" fill="#ffd77a"/></symbol>
+  <symbol id="bacon" viewBox="0 0 120 40"><path d="M4 20c14-18 24 14 38 0s24 14 38 0 24 14 36 0v12c-12 14-22-14-36 0s-24-14-38 0-24-14-38 0z" fill="#c8553d"/><path d="M6 24c14-14 24 12 38 0s24 12 38 0 22 12 34 0" stroke="#f3c6a8" stroke-width="3" fill="none"/></symbol>
+  <symbol id="cup" viewBox="0 0 100 100"><path d="M34 22c-4 6 4 10 0 16M50 18c-4 6 4 10 0 16M66 22c-4 6 4 10 0 16" stroke="#c8a58c" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M18 44h58v14a29 29 0 0 1-58 0z" fill="#fff" stroke="#2a1a12" stroke-width="4"/><path d="M76 50h6a10 10 0 0 1 0 20h-8" fill="none" stroke="#2a1a12" stroke-width="4"/><path d="M10 90h76" stroke="#2a1a12" stroke-width="4" stroke-linecap="round"/></symbol>
+  <symbol id="pancake" viewBox="0 0 100 70"><ellipse cx="50" cy="52" rx="44" ry="12" fill="#d99a4e"/><ellipse cx="50" cy="40" rx="44" ry="12" fill="#e8ad5c"/><ellipse cx="50" cy="28" rx="44" ry="12" fill="#f2c27a"/><path d="M40 20c4 10 0 20 6 24" stroke="#8a4b1a" stroke-width="6" fill="none" stroke-linecap="round"/><rect x="44" y="14" width="14" height="9" rx="2" fill="#fff3c4"/></symbol>
+  <symbol id="toast" viewBox="0 0 100 100"><path d="M20 40a30 26 0 0 1 60 0v46H20z" fill="#e6a65d" stroke="#a8652a" stroke-width="5"/><path d="M30 44a20 18 0 0 1 40 0v34H30z" fill="#ffe0a8"/></symbol>
+</defs></svg>
+
+<div id="intro" aria-hidden="true">
+  <div class="board">
+    <svg viewBox="0 0 340 260">
+      <line x1="170" y1="0" x2="170" y2="40" stroke="#2a1a12" stroke-width="6"/>
+      <rect x="20" y="40" width="300" height="170" rx="18" fill="#ffb21e" stroke="#2a1a12" stroke-width="8"/>
+      <text x="170" y="130" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="800" font-size="64" fill="#2a1a12">Le Détour</text>
+      <path d="M100 160h120v-14l30 22-30 22v-14H100z" fill="#d8432b"/>
+    </svg>
+  </div>
+</div>
+
+<div id="site">
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg><b>Le Détour</b></a>
+    <nav class="links" aria-label="Navigation principale">
+      <a href="#menu">Menu</a>
+      <a href="#emporter">Pour emporter</a>
+      <button type="button" data-avis>Avis</button>
+      <a href="#infos">Heures et adresse</a>
+      <a class="btn btn-dark" href="tel:+14505658899">450-565-8899</a>
+    </nav>
+    <button class="burger" type="button" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><div><span></span><span></span><span></span></div></button>
+  </div>
+  <div class="drawer" id="drawer">
+    <a href="#menu">Menu</a>
+    <a href="#emporter">Pour emporter</a>
+    <button type="button" data-avis>Avis</button>
+    <a href="#infos">Heures et adresse</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="floaters" id="floaters" aria-hidden="true">
+    <div class="fl" style="left:4%;top:16%"><svg width="80" height="64" style="--s:7s"><use href="#egg"/></svg></div>
+    <div class="fl back" style="right:3%;top:10%"><svg width="130" height="104" style="--s:9s"><use href="#egg"/></svg></div>
+    <div class="fl" style="left:38%;top:9%"><svg width="96" height="32" style="--s:6.5s"><use href="#bacon"/></svg></div>
+    <div class="fl back" style="left:-20px;bottom:12%"><svg width="120" height="84" style="--s:8s"><use href="#pancake"/></svg></div>
+    <div class="fl" style="right:38%;bottom:6%"><svg width="60" height="60" style="--s:7.5s"><use href="#cup"/></svg></div>
+    <div class="fl spin back" style="right:10%;bottom:36%"><svg width="70" height="70" style="--s:50s"><use href="#toast"/></svg></div>
+    <div class="fl" style="left:56%;top:46%"><svg width="70" height="24" style="--s:8.5s"><use href="#bacon"/></svg></div>
+    <div class="fl" style="left:24%;bottom:2%"><svg width="50" height="40" style="--s:6s"><use href="#egg"/></svg></div>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="sign">Déjeuner · dîner · Saint-Jérôme</span>
+      <h1>Ça vaut <span>le Détour.</span></h1>
+      <p class="lead">Œufs, bénédictines, poutines déjeuner et crêpes maison, servis dès 5 h du matin sur le boulevard Saint-Antoine.</p>
+      <p class="love">« LE TOUT FAIT AVEC AMOUR ! »</p>
+      <div class="ctas">
+        <a class="btn btn-dark" href="tel:+14505658899"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Appeler</a>
+        <a class="btn btn-yolk" href="#menu">Voir le menu</a>
+      </div>
+      <div class="open">☀ <span>Lundi au samedi <b>5 h à 14 h</b> · dimanche <b>6 h à 14 h</b></span></div>
+    </div>
+    <div class="plate" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <circle cx="200" cy="200" r="190" fill="#fff" stroke="#efdfc4" stroke-width="6"/>
+        <circle cx="200" cy="200" r="150" fill="#fffaf0" stroke="#f3e6cf" stroke-width="3"/>
+        <g transform="translate(95 120)"><path d="M14 40c-6-18 12-34 30-30 10-12 34-8 40 8 14 6 14 30-2 36-6 16-30 22-44 12C20 70 6 58 14 40z" fill="#fff" stroke="#efdfc4" stroke-width="2" transform="scale(1.3)"/><circle cx="65" cy="52" r="20" fill="#ffb21e"/></g>
+        <g transform="translate(185 90)"><path d="M14 40c-6-18 12-34 30-30 10-12 34-8 40 8 14 6 14 30-2 36-6 16-30 22-44 12C20 70 6 58 14 40z" fill="#fff" stroke="#efdfc4" stroke-width="2" transform="scale(1.2)"/><circle cx="60" cy="48" r="18" fill="#ffb21e"/></g>
+        <g transform="translate(110 225) rotate(-8)"><path d="M4 20c14-18 24 14 38 0s24 14 38 0 24 14 36 0v12c-12 14-22-14-36 0s-24-14-38 0-24-14-38 0z" fill="#c8553d" transform="scale(1.4)"/></g>
+        <g transform="translate(130 262) rotate(-4)"><path d="M4 20c14-18 24 14 38 0s24 14 38 0 24 14 36 0v12c-12 14-22-14-36 0s-24-14-38 0-24-14-38 0z" fill="#b84a33" transform="scale(1.3)"/></g>
+        <g transform="translate(250 200)"><path d="M0 0h70v60H0z" fill="#e6a65d" rx="8"/><path d="M8 8h54v44H8z" fill="#ffe0a8"/></g>
+        <g transform="translate(262 236)"><path d="M0 0h70v60H0z" fill="#d9944a"/><path d="M8 8h54v44H8z" fill="#ffd894"/></g>
+        <circle cx="300" cy="140" r="10" fill="#7a3b1c"/><circle cx="318" cy="156" r="9" fill="#7a3b1c"/><circle cx="296" cy="164" r="8" fill="#7a3b1c"/>
+      </svg>
+      <span class="tag t1">Fait avec amour</span>
+      <span class="tag t2">Dès 5 h</span>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <span class="eyebrow">Le menu</span>
+    <h2 class="h2">Nos déjeuners vedettes</h2>
+    <p class="sub">Un aperçu de nos classiques. Le menu complet, avec tous les prix, est affiché au restaurant.</p>
+    <div class="menu-grid" id="dishes">
+      <article class="dish">
+        <h3><svg viewBox="0 0 100 80" aria-hidden="true"><use href="#egg"/></svg>Assiettes d'œufs</h3>
+        <ul>
+          <li>Super</li>
+          <li>Spécial</li>
+          <li>Oeufs avec un Choix de Viande</li>
+          <li>Oeufs avec Deux choix de Viande</li>
+          <li>Oeufs avec Trois Choix de Viande</li>
+          <li>Oeufs avec Viande Fumée</li>
+          <li>Oeufs avec deux Boulettes</li>
+          <li>Oeufs sans Viande</li>
+        </ul>
+        <p>Le Super : « Deux œufs, deux tranches de bacons, un jambon, une saucisse, creton, patates, fève au lard, rôties, […] fruits ou tomates, deux petites crêpes et café. »</p>
+      </article>
+      <article class="dish feat">
+        <h3><svg viewBox="0 0 100 70" aria-hidden="true"><use href="#pancake"/></svg>La Meilleure Poutine Déjeuner en Ville</h3>
+        <ul>
+          <li>La Fameuse Poutine aux Trois Viandes</li>
+          <li>Poutine Déjeuné Généreuse</li>
+          <li>Poutine Déjeuné Végé</li>
+          <li>Poutine Déjeuné Western</li>
+          <li>Poutine Déjeuné Goûteuse</li>
+          <li>Poutine Déjeuné Viande Fumée et Bacon</li>
+        </ul>
+        <p>Servies sur un nid de patates avec œuf, fromage en grains et sauce hollandaise.</p>
+      </article>
+      <article class="dish">
+        <h3><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#toast"/></svg>Bénédictines</h3>
+        <ul>
+          <li>Béné Choix de Viande</li>
+          <li>Béné Viande et Fromage</li>
+          <li>Béné Épinard Viande et Fromage</li>
+          <li>Béné Viande Fumée et Fromage</li>
+          <li>Béné Champignons et Fromage</li>
+          <li>Béné Steak et Fromage</li>
+        </ul>
+        <p>Deux œufs pochés, sauce hollandaise et muffin anglais, avec petit bol de patates, fruits et café.</p>
+      </article>
+    </div>
+    <div class="cats" aria-label="Autres sections du menu">
+      <span>Sucré Salé</span><span>Omelettes</span><span>Crêpes</span><span>Pains Dorés</span><span>Galettes Sarasin</span><span>Sandwichs déjeuner</span><span>Parfaits</span><span>Gruau</span><span>Menu du Jour</span><span>Club Sandwichs</span><span>Sous-marins</span><span>Spaghettis</span><span>Petites ou Grandes Poutines</span><span>Breuvages</span>
+    </div>
+    <div class="menu-note">
+      <p>Menu complet et prix sur place ou par téléphone. Vous pouvez aussi commander en ligne.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-dark" href="tel:+14505658899">450-565-8899</a><a class="btn btn-line" href="https://order.online/business/le-detour-586007" target="_blank" rel="noopener">Commander en ligne</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="takeout" id="emporter">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color:#ffe0a8">Pour emporter</span>
+      <h2>Faites préparer votre commande d'avance !</h2>
+      <p style="margin-top:10px;color:#ffe7dc">Appelez-nous, on prépare tout pendant que vous êtes en route. Commande en ligne aussi offerte avec DoorDash.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      <a class="btn btn-yolk" href="tel:+14505658899">Appeler le 450-565-8899</a>
+      <a class="btn btn-line" style="border-color:#fff;color:#fff" href="https://order.online/business/le-detour-586007" target="_blank" rel="noopener">Commande en ligne</a>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="avis">
+  <div class="wrap">
+    <span class="eyebrow">Ce que nos clients disent</span>
+    <h2 class="h2">On revient pour le service</h2>
+    <div class="score"><b>4,5</b><span class="stars" aria-hidden="true">★★★★★</span><strong>4,5 ★ sur Google · plus de 700 avis</strong></div>
+    <div class="rev-grid" id="revHome"></div>
+    <div class="actions"><button class="btn btn-dark" type="button" data-avis id="allBtn">Voir tous les avis</button></div>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap">
+    <span class="eyebrow">Infos pratiques</span>
+    <h2 class="h2">Venez déjeuner</h2>
+    <div class="info-grid">
+      <div class="icard hours">
+        <h3>Heures</h3>
+        <div><span>Lundi au samedi</span><b>5 h à 14 h</b></div>
+        <div><span>Dimanche</span><b>6 h à 14 h</b></div>
+        <p class="small">Heures susceptibles de changer.</p>
+      </div>
+      <div class="icard">
+        <h3>Adresse</h3>
+        <p>1425, boul. Saint-Antoine<br>Saint-Jérôme (Québec) J7Z 7M1</p>
+        <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=Le+D%C3%A9tour+1425+boul+Saint-Antoine+Saint-J%C3%A9r%C3%B4me" target="_blank" rel="noopener">Itinéraire dans Google Maps →</a></p>
+      </div>
+      <div class="icard">
+        <h3>Contact</h3>
+        <p>Téléphone : <a href="tel:+14505658899">450-565-8899</a></p>
+        <p>Courriel : <a href="mailto:Ledetour1425@gmail.com">Ledetour1425@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site"><div class="wrap"><span>© Restaurant Le Détour · Saint-Jérôme</span><span>« LE TOUT FAIT AVEC AMOUR ! »</span></div></footer>
+<div class="sticky"><a class="btn btn-dark" href="tel:+14505658899">Appeler · 450-565-8899</a></div>
+</div>
+
+<div id="avisPage" aria-label="Tous les avis">
+  <div class="ap-top"><div class="wrap">
+    <button class="back" type="button" id="backBtn">← Retour au site</button>
+    <span class="serif" style="font-size:19px;font-weight:800">4,5 ★ sur Google · plus de 700 avis</span>
+  </div></div>
+  <div class="wrap ap-body">
+    <span class="eyebrow">Avis clients</span>
+    <h2 class="h2">Tous les avis</h2>
+    <p class="sub">Avis Google recopiés mot pour mot (repris sur RestoMontreal). « … » indique un avis plus long.</p>
+    <div class="ap-list" id="revAll"></div>
+    <p style="margin-top:26px;display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Le+D%C3%A9tour+1425+boul+Saint-Antoine+Saint-J%C3%A9r%C3%B4me" target="_blank" rel="noopener">Voir sur Google</a></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var R=[
+    ["Jean",5,"C'est une très belle expérience, très bon déjeuner. Merci à Mélissa pour l'excellent service.","6 févr. 2026"],
+    ["Sylvain",5,"Le jambon à la moutarde est tout simplement un délice.","2 mai 2025"],
+    ["Amélie",5,"Meilleur service que j'ai jamais eu! Menu qui sort de l'ordinaire très belle decouverte","29 janv. 2025"],
+    ["Anne",5,"Très bon restaurant bonne bouffe bon prix super service! La dame qui nous a servis super fine.","31 mars 2025"],
+    ["Patrick",5,"très bon service ! on manque pas de café ! Je vous recommande cet endroit !","26 oct. 2025"],
+    ["Steve",5,"parfait pour les déjeuners de retraités!","14 mai 2026"],
+    ["Aghis",5,"Tout est bon rien a dire prix quantité service impeccable","11 mai 2025"],
+    ["Raynald",5,"JE VAIS SOUVENT AU DÉTOUR A CHAQUE FOIS C'EST UNE BELLE EXPÉRIENCE A LA PROCHAINE FOIS MERCI","2 nov. 2025"],
+    ["Jean-Francois",5,"Super déjeuner a bon prix!","31 août 2026"],
+    ["Raphael",5,"Très bon petit restaurant avec un super service.","17 janv. 2026"],
+    ["Pascal",5,"Rapport qualité prix excellent. Merci","31 mai 2026"],
+    ["Pascal",5,"Toujours un excellent service!!!","5 oct. 2026"],
+    ["Sonya",5,"Un de mes restaurants préférés pour déjeuner a saint-Jérôme. …","12 oct. 2026"],
+    ["Caroline",5,"Les employés étaient très chaleureux. La nourriture était vraiment bonne. Adapté pour les jeunes enfants…","14 juin 2026"],
+    ["Marie",4,"Meilleur déjeuner de saint Jérôme","8 juil. 2025"],
+    ["Grace",4,"Great breakfast poutine","29 juin 2025"]
+  ];
+  function esc(x){return String(x).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  function card(r){return '<article class="rcard"><span class="stars" aria-label="'+r[1]+' étoiles sur 5">'+'★★★★★'.slice(0,r[1])+'<span style="color:#e6d6bd">'+'★★★★★'.slice(r[1])+'</span></span><blockquote>« '+esc(r[2])+' »</blockquote><footer><b>'+esc(r[0])+'</b> · Avis Google · '+r[3]+'</footer></article>'}
+  var five=R.filter(function(r){return r[1]===5});
+  document.getElementById('revHome').innerHTML=five.slice(0,12).map(card).join('');
+  document.getElementById('revAll').innerHTML=R.map(card).join('');
+  document.getElementById('allBtn').textContent='Voir tous les avis ('+R.length+')';
+
+  var nav=document.getElementById('nav'),burger=document.getElementById('burger');
+  burger.addEventListener('click',function(){var o=nav.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o)});
+  document.querySelectorAll('#drawer a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('menu-open')})});
+  var savedY=0;
+  function openAvis(){savedY=window.scrollY;nav.classList.remove('menu-open');document.body.classList.add('show-avis');window.scrollTo(0,0)}
+  function closeAvis(){document.body.classList.remove('show-avis');window.scrollTo(0,savedY)}
+  document.querySelectorAll('[data-avis]').forEach(function(b){b.addEventListener('click',openAvis)});
+  document.getElementById('backBtn').addEventListener('click',closeAvis);
+  window.__openAvis=openAvis;
+
+  var intro=document.getElementById('intro'),reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches,seen=false;
+  try{seen=sessionStorage.getItem('detourIntro')==='1'}catch(e){}
+  function endIntro(){if(!intro.parentNode)return;intro.classList.add('out');setTimeout(function(){if(intro.parentNode)intro.parentNode.removeChild(intro)},380);try{sessionStorage.setItem('detourIntro','1')}catch(e){}}
+  if(reduce||seen){intro.parentNode.removeChild(intro)}else{intro.addEventListener('click',endIntro);setTimeout(endIntro,2100)}
+
+  var ds=document.querySelectorAll('.dish');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(ds,e.target);setTimeout(function(){e.target.classList.add('in')},i*140);io.unobserve(e.target)}})},{threshold:.15});ds.forEach(function(d){io.observe(d)})}else{ds.forEach(function(d){d.classList.add('in')})}
+
+  if(!reduce){var fl=document.getElementById('floaters'),items=fl.querySelectorAll('.fl'),tick=false;
+    window.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=Math.min(window.scrollY,900);fl.style.setProperty('--py',y+'px');tick=false})},{passive:true});
+    items.forEach(function(f,i){var d=f.classList.contains('back')?-.12:-.3;f.style.transform='translate3d(0,calc(var(--py,0px) * '+d+'),0)'});
+  }
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

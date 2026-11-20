@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Olivert — Tonte de pelouse et déneigement à Saint-Jérôme</title>
+<meta name="description" content="Olivert : tonte de pelouse hebdomadaire, ménage printanier et d'automne, réparation de pelouse et déneigement à Saint-Jérôme, Mirabel, Prévost et Blainville. Estimation gratuite : 450-822-1182.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","additionalType":"https://schema.org/HomeAndConstructionBusiness","name":"Entretien Paysager Olivert","telephone":"+1-450-822-1182","email":"info@olivert.ca","address":{"@type":"PostalAddress","streetAddress":"686, carré Louis-Bourque","addressLocality":"Saint-Jérôme","addressRegion":"QC","postalCode":"J7Z 7B7","addressCountry":"CA"},"areaServed":["Saint-Jérôme","Mirabel","Bellefeuille","Saint-Antoine","Lafontaine","Prévost","Blainville"],"slogan":"Profitez de votre été on s'occupe de votre pelouse.","sameAs":["https://www.facebook.com/olivert.pelouse/"]}
+</script>
+<style>
+:root{--g9:#0f2a17;--g8:#163d21;--g7:#1f5a2e;--g6:#2c7a3c;--g5:#3f9a4c;--g3:#9fd27a;--lime:#c6f04d;--cream:#f6f4ea;--ink:#16221a;--mut:#53624f;--snow:#eaf4fb;--ice:#8cc4e8;--bar:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 70px)}
+body{font-family:Outfit,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;padding-top:var(--bar)}
+@media (max-width:519px){:root{--bar:48px}}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;overflow-wrap:break-word}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+/* NAV */
+.nav{position:fixed;top:var(--bar);left:0;right:0;z-index:50;background:#0f2a17;color:#fff}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand b{font-family:Fraunces,serif;font-size:1.55rem;letter-spacing:.3px}
+.brand b span{color:var(--lime)}
+.links{display:none;gap:26px;align-items:center}
+.links a{text-decoration:none;font-weight:500;opacity:.9}
+.links a:hover{opacity:1;color:var(--lime)}
+.cta{background:var(--lime);color:var(--g9)!important;padding:10px 18px;border-radius:99px;font-weight:700;opacity:1!important}
+.burger{background:none;border:0;color:#fff;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:#fff;box-shadow:0 7px #fff,0 -7px #fff}
+.drawer{position:fixed;top:calc(var(--bar) + 62px);left:0;right:0;z-index:49;background:var(--g9);color:#fff;padding:8px 20px 22px;transform:translateY(-120%);transition:transform .35s ease;visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer a{display:block;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.1);text-decoration:none;font-size:1.1rem}
+@media (min-width:900px){.links{display:flex}.burger,.drawer{display:none}}
+/* HERO */
+.hero{position:relative;background:radial-gradient(120% 90% at 80% 10%,#2c7a3c 0%,#163d21 55%,#0f2a17 100%);color:#fff;padding:calc(62px + 46px) 0 0;overflow:hidden}
+.floaters{position:absolute;inset:0;pointer-events:none}
+.fl{position:absolute;opacity:.55;animation:drift var(--d,14s) ease-in-out infinite alternate;translate:0 calc(var(--py,0) * var(--k,0.1) * 1px)}
+.fl.far{opacity:.28;filter:blur(1.5px)}
+@keyframes drift{from{transform:translate(0,0) rotate(var(--r0,0deg))}to{transform:translate(var(--dx,18px),var(--dy,-26px)) rotate(var(--r1,40deg))}}
+.hero .wrap{position:relative;display:grid;gap:30px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:rgba(198,240,77,.14);color:var(--lime);border:1px solid rgba(198,240,77,.35);padding:6px 14px;border-radius:99px;font-size:.88rem;font-weight:600}
+.hero h1{font-size:clamp(2.3rem,8.5vw,4.4rem);font-weight:800;margin:16px 0 14px}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero p.lead{font-size:1.12rem;max-width:34rem;color:#dcebd9}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:14px;font-weight:700;text-decoration:none;font-size:1.02rem;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.lime{background:var(--lime);color:var(--g9)}
+.btn.ghost{border:2px solid rgba(255,255,255,.45);color:#fff}
+.btn svg{width:20px;height:20px}
+.zone{margin-top:20px;font-size:.92rem;color:#b9d3b4}
+.badge{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:22px;max-width:420px}
+.badge h3{font-size:1.3rem;margin-bottom:12px;color:var(--lime)}
+.badge ul{list-style:none;display:grid;gap:10px}
+.badge li{display:flex;gap:10px;align-items:flex-start;color:#e6f1e3}
+.badge li svg{flex:none;width:22px;height:22px;margin-top:1px}
+.lawn{position:relative;height:90px;margin-top:40px}
+.lawn svg{position:absolute;bottom:-1px;left:0;width:max(100%,1100px);max-width:none;height:90px}
+@media (min-width:900px){.hero{padding-top:calc(62px + 80px)}.hero .wrap{grid-template-columns:1.25fr .9fr;align-items:center}.badge{justify-self:end}.lawn{height:120px}.lawn svg{height:120px}}
+/* SECTIONS */
+section{padding:72px 0}
+.kicker{color:var(--g6);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+.h2{font-size:clamp(1.9rem,5.5vw,2.9rem);margin:8px 0 14px;color:var(--g9)}
+.sub{color:var(--mut);max-width:40rem;font-size:1.05rem}
+/* stripes wow */
+.stripes{position:relative;height:56px;margin:34px 0 6px;border-radius:16px;overflow:hidden;background:#3f9a4c}
+.stripes i{position:absolute;top:0;bottom:0;width:12.5%;background:linear-gradient(90deg,#57b35f,#4aa553);transform:scaleY(0);transform-origin:top;transition:transform .5s ease}
+.stripes i:nth-child(even){background:linear-gradient(90deg,#2f8a3d,#358f43);transform-origin:bottom}
+.stripes .mower{position:absolute;top:8px;left:0;width:56px;height:40px;transform:translateX(-70px);transition:transform 2.6s cubic-bezier(.45,.05,.4,1)}
+.stripes.go .mower{transform:translateX(calc(var(--sw,1000px) + 10px))}
+.stripes.go i{transform:none}
+.grid{display:grid;gap:18px;margin-top:30px}
+.card{background:#fff;border-radius:22px;padding:26px;border:1px solid #e3e6d8;position:relative;overflow:hidden;min-width:0}
+.card .ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:#e9f5df;margin-bottom:16px}
+.card .ic svg{width:32px;height:32px}
+.card h3{font-size:1.38rem;color:var(--g9);margin-bottom:8px}
+.card p{color:#44513f}
+.card .pill{display:inline-block;margin-top:14px;font-size:.82rem;font-weight:600;background:#f0f6e6;color:var(--g7);padding:5px 11px;border-radius:99px}
+.card.big{background:var(--g8);color:#fff;border:0}
+.card.big h3{color:#fff}.card.big p{color:#d5e6d0}.card.big .ic{background:rgba(198,240,77,.16)}
+.card.big .pill{background:var(--lime);color:var(--g9)}
+.card.winter{background:linear-gradient(160deg,#16314a,#0f2236);color:#fff;border:0}
+.card.winter h3{color:#fff}.card.winter p{color:#cfe2f1}.card.winter .ic{background:rgba(140,196,232,.16)}
+.card.winter .pill{background:var(--ice);color:#0f2236}
+@media (min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}.card.big{grid-row:span 2;display:flex;flex-direction:column;justify-content:center;padding:36px}.card.big h3{font-size:1.9rem}}
+.extra{margin-top:28px;background:#fff;border:1px dashed #b9cba8;border-radius:22px;padding:24px}
+.extra h3{font-size:1.25rem;color:var(--g9);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chips span{background:#eef5e4;color:var(--g7);border-radius:99px;padding:7px 14px;font-weight:600;font-size:.94rem}
+/* SEASONS */
+.seasons{background:var(--g9);color:#fff;overflow:hidden}
+.seasons .h2{color:#fff}.seasons .sub{color:#c7d9c2}
+.duo{display:grid;gap:18px;margin-top:30px}
+.sea{border-radius:24px;padding:30px;position:relative;overflow:hidden;min-height:220px}
+.sea.ete{background:linear-gradient(150deg,#3f9a4c,#1f5a2e)}
+.sea.hiv{background:linear-gradient(150deg,#2a5878,#132b40)}
+.sea .ttl{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.85}
+.sea blockquote{font-family:Fraunces,serif;font-size:clamp(1.5rem,4.6vw,2.1rem);line-height:1.2;margin:12px 0 0;position:relative;z-index:1}
+.sea svg.deco{position:absolute;right:-20px;bottom:-20px;width:170px;opacity:.25}
+@media (min-width:800px){.duo{grid-template-columns:1fr 1fr}}
+/* STEPS */
+.steps{display:grid;gap:16px;margin-top:30px;counter-reset:s}
+.step{background:#fff;border-radius:20px;padding:22px 22px 22px 74px;position:relative;border:1px solid #e3e6d8;min-width:0}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:20px;top:20px;width:38px;height:38px;border-radius:12px;background:var(--lime);color:var(--g9);font-weight:800;display:grid;place-items:center;font-family:Fraunces,serif;font-size:1.2rem}
+.step h3{font-size:1.15rem;color:var(--g9);margin-bottom:4px;font-family:Outfit,sans-serif;font-weight:700}
+.step p{color:var(--mut)}
+@media (min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
+/* CONTACT */
+.contact{background:linear-gradient(180deg,var(--cream),#e7efd8)}
+.cbox{display:grid;gap:18px;margin-top:30px}
+.info{background:#fff;border-radius:22px;padding:26px;border:1px solid #e3e6d8;min-width:0}
+.info dl{display:grid;gap:16px}
+.info dt{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--g6);font-weight:700}
+.info dd{font-size:1.08rem;overflow-wrap:anywhere}
+.info dd a{color:var(--g7);font-weight:600}
+.callbig{background:var(--g8);color:#fff;border-radius:22px;padding:30px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.callbig h3{font-size:1.8rem}
+.callbig a.num{font-family:Fraunces,serif;font-size:clamp(2rem,8vw,2.8rem);color:var(--lime);text-decoration:none;font-weight:800}
+.callbig p{color:#cfe1ca}
+@media (min-width:900px){.cbox{grid-template-columns:1.1fr .9fr}}
+footer{background:var(--g9);color:#a9bfa5;padding:34px 0 110px;font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:space-between;align-items:center}
+footer a{color:#dff0d6}
+@media (min-width:900px){footer{padding-bottom:34px}}
+/* sticky call */
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:10px}
+.sticky a{flex:1;text-align:center;padding:15px;border-radius:16px;font-weight:700;text-decoration:none}
+.sticky .c1{background:var(--lime);color:var(--g9)}
+.sticky .c2{background:var(--g8);color:#fff}
+@media (min-width:900px){.sticky{display:none}}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9000;background:#0f2a17;display:grid;place-items:center;transition:opacity .5s ease}
+#intro.out{opacity:0}
+#intro .box{text-align:center;color:#fff}
+#intro svg.lg{width:110px;height:110px}
+#intro .leaf{stroke-dasharray:260;stroke-dashoffset:260;animation:draw 1.1s ease forwards}
+#intro .vein{stroke-dasharray:90;stroke-dashoffset:90;animation:draw .6s .7s ease forwards}
+#intro .fill{opacity:0;animation:fade .5s .9s forwards}
+#intro .word{font-family:Fraunces,serif;font-size:2.6rem;font-weight:800;margin-top:10px;display:flex;justify-content:center}
+#intro .word span{display:inline-block;opacity:0;transform:translateY(30px);animation:up .5s cubic-bezier(.2,1.4,.4,1) forwards}
+#intro .word span.v{color:var(--lime)}
+#intro .blades{display:flex;justify-content:center;gap:3px;margin-top:14px;height:26px;align-items:flex-end}
+#intro .blades i{width:4px;background:var(--g5);border-radius:3px 3px 0 0;transform:scaleY(0);transform-origin:bottom;animation:grow .5s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes grow{to{transform:scaleY(1)}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.stripes i{transform:none}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Entretien Paysager Olivert — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <div class="box">
+  <svg class="lg" viewBox="0 0 100 100"><path class="fill" d="M50 88C22 74 16 44 30 22 42 30 70 22 80 14 88 46 78 76 50 88Z" fill="#2c7a3c"/><path class="leaf" d="M50 88C22 74 16 44 30 22 42 30 70 22 80 14 88 46 78 76 50 88Z" fill="none" stroke="#c6f04d" stroke-width="4" stroke-linejoin="round"/><path class="vein" d="M50 88C52 62 60 40 78 17" fill="none" stroke="#c6f04d" stroke-width="3.5" stroke-linecap="round"/></svg>
+  <div class="word"><span style="animation-delay:.55s">O</span><span style="animation-delay:.62s">l</span><span style="animation-delay:.69s">i</span><span class="v" style="animation-delay:.76s">v</span><span class="v" style="animation-delay:.83s">e</span><span class="v" style="animation-delay:.9s">r</span><span class="v" style="animation-delay:.97s">t</span></div>
+  <div class="blades" id="blades"></div>
+ </div>
+</div>
+
+<nav class="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" aria-label="Olivert, accueil">
+   <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="26" fill="#1f5a2e"/><path d="M50 84C26 72 21 46 33 27 43 34 66 27 75 20 82 47 74 73 50 84Z" fill="#c6f04d"/><path d="M50 84C52 61 59 42 74 22" fill="none" stroke="#1f5a2e" stroke-width="5" stroke-linecap="round"/></svg>
+   <b>Oli<span>vert</span></b>
+  </a>
+  <div class="links">
+   <a href="#services">Services</a><a href="#saisons">Été et hiver</a><a href="#estimation">Estimation gratuite</a><a href="#contact">Nous joindre</a>
+   <a class="cta" href="tel:+14508221182">450-822-1182</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+ </div>
+</nav>
+<div class="drawer" id="drawer">
+ <a href="#services">Services</a><a href="#saisons">Été et hiver</a><a href="#estimation">Estimation gratuite</a><a href="#contact">Nous joindre</a><a href="tel:+14508221182">Appeler : 450-822-1182</a>
+</div>
+
+<header class="hero" id="accueil">
+ <div class="floaters" id="floaters" aria-hidden="true"></div>
+ <div class="wrap">
+  <div class="rv">
+   <span class="tag">Tonte de pelouse · Déneigement · Saint-Jérôme</span>
+   <h1>Profitez de votre été, on s'occupe de votre <em>pelouse.</em></h1>
+   <p class="lead">Tonte hebdomadaire, bordures découpées et retailles ramassées, ménage du printemps et d'automne, réparation de pelouse… et l'hiver venu, le déneigement. Résidentiel et commercial.</p>
+   <div class="btns">
+    <a class="btn lime" href="tel:+14508221182"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Appeler</a>
+    <a class="btn ghost" href="#services">Nos services</a>
+   </div>
+   <p class="zone">Saint-Jérôme · Mirabel · Bellefeuille · Saint-Antoine · Lafontaine · Prévost · Blainville</p>
+  </div>
+  <aside class="badge rv">
+   <h3>Le contrat de tonte comprend</h3>
+   <ul>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="#c6f04d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Une tonte chaque semaine</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="#c6f04d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Le découpage des bordures</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="#c6f04d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Le retrait des retailles dans les entrées et les trottoirs</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="#c6f04d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>En option : ménage printanier et d'automne</li>
+   </ul>
+  </aside>
+ </div>
+ <div class="lawn" aria-hidden="true">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 70 Q60 40 120 66 T240 62 T360 70 T480 58 T600 68 T720 60 T840 70 T960 58 T1080 68 T1200 60 T1320 70 T1440 62 V120 H0Z" fill="#2c7a3c"/><path d="M0 92 Q80 70 160 90 T320 86 T480 92 T640 84 T800 92 T960 84 T1120 92 T1280 86 T1440 90 V120 H0Z" fill="#f6f4ea"/></svg>
+ </div>
+</header>
+
+<main>
+<section id="services">
+ <div class="wrap">
+  <p class="kicker rv">Nos services</p>
+  <h2 class="h2 rv">Une pelouse impeccable, toute la saison</h2>
+  <p class="sub rv">La tonte de pelouse, c'est notre force : c'est ce service qui a fait la renommée d'Olivert. Notre équipe s'occupe de votre terrain avec attention et professionnalisme.</p>
+  <div class="stripes" id="stripes" aria-hidden="true">
+   <i style="left:0;transition-delay:.15s"></i><i style="left:12.5%;transition-delay:.45s"></i><i style="left:25%;transition-delay:.75s"></i><i style="left:37.5%;transition-delay:1.05s"></i><i style="left:50%;transition-delay:1.35s"></i><i style="left:62.5%;transition-delay:1.65s"></i><i style="left:75%;transition-delay:1.95s"></i><i style="left:87.5%;transition-delay:2.25s"></i>
+   <svg class="mower" viewBox="0 0 56 40"><path d="M6 14 L30 14" stroke="#16221a" stroke-width="3" stroke-linecap="round"/><path d="M6 14 L2 4" stroke="#16221a" stroke-width="3" stroke-linecap="round"/><rect x="14" y="16" width="34" height="14" rx="5" fill="#c6f04d"/><rect x="22" y="12" width="14" height="6" rx="2" fill="#16221a"/><circle cx="20" cy="32" r="6" fill="#16221a"/><circle cx="20" cy="32" r="2.4" fill="#9fd27a"/><circle cx="43" cy="32" r="6" fill="#16221a"/><circle cx="43" cy="32" r="2.4" fill="#9fd27a"/></svg>
+  </div>
+  <div class="grid">
+   <article class="card big rv">
+    <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#c6f04d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 26h26M7 26c0-6 1-11 3-15M11 26c0-4 2-9 5-13M16 26c0-5 0-9-1-14M21 26c0-4 2-8 5-11M25 26c0-3-1-6-3-9"/></svg></div>
+    <h3>Tonte de pelouse</h3>
+    <p>Une tonte hebdomadaire, le découpage des bordures et le retrait des retailles dans les entrées et les trottoirs de la propriété. Votre pelouse reste belle, semaine après semaine, sans que vous ayez à y penser.</p>
+    <span class="pill">Résidentiel et commercial</span>
+   </article>
+   <article class="card rv">
+    <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#2c7a3c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 28V12"/><path d="M16 16c-5 0-9-3-9-9 5 0 9 3 9 9zM16 13c0-5 3-9 9-9 0 6-4 9-9 9z"/></svg></div>
+    <h3>Ménage printanier</h3>
+    <p>Optionnel au contrat de tonte, le ménage du printemps est un incontournable pour bien démarrer la saison et garder une pelouse en santé.</p>
+    <span class="pill">Ajout au contrat saisonnier</span>
+   </article>
+   <article class="card rv">
+    <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#b5651d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4l3 6 6-2-2 6 5 3-6 2 1 6-5-3-2 6-2-6-5 3 1-6-6-2 5-3-2-6 6 2z"/><path d="M16 22v7"/></svg></div>
+    <h3>Ménage d'automne</h3>
+    <p>Un autre service à ajouter à votre contrat saisonnier, essentiel pour garder une belle pelouse d'une année à l'autre.</p>
+    <span class="pill">Ajout au contrat saisonnier</span>
+   </article>
+   <article class="card rv">
+    <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#2c7a3c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24h24M8 24v-5h16v5"/><path d="M12 19v-4M16 19v-6M20 19v-4"/><path d="M22 6l4 4-3 3-4-4z"/></svg></div>
+    <h3>Réparation de pelouse</h3>
+    <p>Que les dommages soient causés par la température ou par les vers blancs, on répare votre pelouse pour qu'elle reprenne vie.</p>
+   </article>
+   <article class="card winter rv">
+    <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#8cc4e8" stroke-width="2.2" stroke-linecap="round"><path d="M16 3v26M4.7 9.5l22.6 13M4.7 22.5l22.6-13"/><path d="M12 5l4 3 4-3M12 27l4-3 4 3"/></svg></div>
+    <h3>Déneigement</h3>
+    <p>Passez un hiver en toute tranquillité : confiez le déneigement de votre entrée à notre équipe spécialisée.</p>
+    <span class="pill">Saison d'hiver</span>
+   </article>
+  </div>
+  <div class="extra rv">
+   <h3>Et plus encore</h3>
+   <div class="chips"><span>Aménagement paysager</span><span>Pose de tourbe</span><span>Terre et semence</span><span>Aération</span><span>Fertilisation</span><span>Nettoyage de printemps</span><span>Nettoyage d'automne</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="seasons" id="saisons">
+ <div class="wrap">
+  <p class="kicker rv" style="color:var(--lime)">Toute l'année</p>
+  <h2 class="h2 rv">Un seul numéro, quatre saisons</h2>
+  <p class="sub rv">L'été, on tond. L'hiver, on déneige. Entre les deux, on fait le ménage. Vous, vous profitez.</p>
+  <div class="duo">
+   <div class="sea ete rv">
+    <div class="ttl">L'été</div>
+    <blockquote>« Profitez de votre été on s'occupe de votre pelouse. »</blockquote>
+    <svg class="deco" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="22" fill="#fff"/><g stroke="#fff" stroke-width="6" stroke-linecap="round"><path d="M50 8v12M50 80v12M8 50h12M80 50h12M20 20l9 9M71 71l9 9M20 80l9-9M71 29l9-9"/></g></svg>
+   </div>
+   <div class="sea hiv rv">
+    <div class="ttl">L'hiver</div>
+    <blockquote>« Profitez de votre hiver on s'occupe de votre déneigement. »</blockquote>
+    <svg class="deco" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none"><path d="M50 6v88M12 28l76 44M12 72l76-44M38 12l12 10 12-10M38 88l12-10 12 10"/></g></svg>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="estimation">
+ <div class="wrap">
+  <p class="kicker rv">Estimation gratuite</p>
+  <h2 class="h2 rv">Simple comme un coup de fil</h2>
+  <p class="sub rv">Dites-nous quels services vous intéressent : on vous prépare une estimation gratuite.</p>
+  <div class="steps">
+   <div class="step rv"><h3>Vous appelez ou écrivez</h3><p>Au 450-822-1182 ou à info@olivert.ca, avec votre adresse et les services voulus.</p></div>
+   <div class="step rv"><h3>On évalue votre terrain</h3><p>Tonte, ménage, réparation, déneigement : on vous propose ce qu'il vous faut.</p></div>
+   <div class="step rv"><h3>On s'occupe de tout</h3><p>Notre équipe passe selon votre contrat. Vous n'avez plus qu'à profiter de votre cour.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <p class="kicker rv">Nous joindre</p>
+  <h2 class="h2 rv">Parlons de votre terrain</h2>
+  <div class="cbox">
+   <div class="info rv">
+    <dl>
+     <div><dt>Téléphone</dt><dd><a href="tel:+14508221182">450-822-1182</a></dd></div>
+     <div><dt>Courriel</dt><dd><a href="mailto:info@olivert.ca">info@olivert.ca</a></dd></div>
+     <div><dt>Adresse</dt><dd>686, carré Louis-Bourque<br>Saint-Jérôme (Québec) J7Z 7B7<br><a href="https://www.google.com/maps/search/?api=1&query=686+Carr%C3%A9+Louis-Bourque+Saint-J%C3%A9r%C3%B4me+QC+J7Z+7B7" target="_blank" rel="noopener">Voir sur Google Maps</a></dd></div>
+     <div><dt>Heures</dt><dd>Appelez-nous pour les heures et les disponibilités.</dd></div>
+     <div><dt>Secteurs desservis</dt><dd>Saint-Jérôme, Mirabel, Bellefeuille, Saint-Antoine, Lafontaine, Prévost et Blainville</dd></div>
+     <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/olivert.pelouse/" target="_blank" rel="noopener">facebook.com/olivert.pelouse</a></dd></div>
+    </dl>
+   </div>
+   <div class="callbig rv">
+    <h3>Votre estimation est gratuite</h3>
+    <p>Un appel suffit pour obtenir votre estimation.</p>
+    <a class="num" href="tel:+14508221182">450-822-1182</a>
+    <a class="btn lime" href="mailto:info@olivert.ca" style="align-self:flex-start">Écrire un courriel</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span><b style="color:#fff">Olivert</b> — Entretien paysager · Saint-Jérôme</span>
+  <span><a href="tel:+14508221182">450-822-1182</a> · <a href="mailto:info@olivert.ca">info@olivert.ca</a></span>
+ </div>
+</footer>
+
+<div class="sticky"><a class="c1" href="tel:+14508221182">Appeler</a><a class="c2" href="#estimation">Estimation</a></div>
+
+<script>
+(function(){
+ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ // intro
+ var intro=document.getElementById('intro');
+ var seen=false;try{seen=sessionStorage.getItem('olv-intro')==='1'}catch(e){}
+ if(reduce||seen){intro.remove()}else{
+  var b=document.getElementById('blades');
+  for(var i=0;i<22;i++){var x=document.createElement('i');x.style.height=(12+((i*7)%14))+'px';x.style.animationDelay=(0.9+i*0.03)+'s';b.appendChild(x)}
+  var done=false;function end(){if(done)return;done=true;intro.classList.add('out');setTimeout(function(){intro.remove()},520);try{sessionStorage.setItem('olv-intro','1')}catch(e){}}
+  setTimeout(end,2000);intro.addEventListener('click',end);intro.addEventListener('touchstart',end,{passive:true});
+ }
+ // menu
+ var bu=document.getElementById('burger'),dr=document.getElementById('drawer');
+ bu.addEventListener('click',function(){var o=dr.classList.toggle('open');bu.setAttribute('aria-expanded',o)});
+ dr.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){dr.classList.remove('open');bu.setAttribute('aria-expanded','false')})});
+ // floaters
+ var host=document.getElementById('floaters');
+ var leaf='<svg viewBox="0 0 40 40"><path d="M20 36C8 30 6 18 12 8c5 3 15 0 19-3 3 13-1 25-11 31z" fill="#9fd27a"/><path d="M20 36c1-10 4-19 11-31" stroke="#1f5a2e" stroke-width="2" fill="none"/></svg>';
+ var blade='<svg viewBox="0 0 40 40"><path d="M14 38C14 24 18 12 26 2 22 16 21 27 22 38z" fill="#c6f04d"/></svg>';
+ var flake='<svg viewBox="0 0 40 40"><g stroke="#eaf4fb" stroke-width="2.4" stroke-linecap="round"><path d="M20 3v34M5 11.5l30 17M5 28.5l30-17"/></g></svg>';
+ var drop='<svg viewBox="0 0 40 40"><path d="M20 4C14 14 10 20 10 26a10 10 0 0 0 20 0c0-6-4-12-10-22z" fill="#8cc4e8"/></svg>';
+ var mobile=window.innerWidth<700;
+ var items=[[leaf,8,18,46,0],[blade,82,14,38,1],[flake,70,58,30,0],[leaf,30,70,34,1],[drop,90,44,24,1],[leaf,58,24,60,0],[flake,14,48,26,1],[blade,46,82,30,0],[leaf,94,78,40,1],[flake,40,10,22,1]];
+ if(mobile)items=items.slice(0,8);
+ items.forEach(function(it,i){var d=document.createElement('div');d.className='fl'+(it[4]?' far':'');d.innerHTML=it[0];d.style.left=it[1]+'%';d.style.top=it[2]+'%';d.style.width=(mobile?it[3]*.75:it[3])+'px';d.style.setProperty('--d',(11+i%5*2)+'s');d.style.setProperty('--dx',((i%2?1:-1)*(12+i*2))+'px');d.style.setProperty('--dy',(-18-i*2)+'px');d.style.setProperty('--r0',(i*37%90)+'deg');d.style.setProperty('--r1',(i*37%90+50)+'deg');d.style.setProperty('--k',it[4]?0.06:0.16);host.appendChild(d)});
+ if(!reduce){var tk=false;window.addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var y=Math.min(window.scrollY,900);host.style.setProperty('--py',y);tk=false})},{passive:true})}
+ // reveal
+ var els=document.querySelectorAll('.rv');
+ if('IntersectionObserver' in window&&!reduce){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add('in')})}
+ // mower stripes
+ var st=document.getElementById('stripes');
+ function sw(){st.style.setProperty('--sw',st.clientWidth+'px')}sw();window.addEventListener('resize',sw,{passive:true});
+ if('IntersectionObserver' in window&&!reduce){var io2=new IntersectionObserver(function(es){if(es[0].isIntersecting){st.classList.add('go');io2.disconnect()}},{threshold:.6});io2.observe(st)}else{st.classList.add('go')}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

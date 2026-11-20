@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>EFL Électrique — Entrepreneur électricien à Rimouski</title>
+<meta name="description" content="EFL Électrique inc., entrepreneur électricien résidentiel et commercial à Rimouski, Mont-Joli et environs. Maître électricien, RBQ 5673-7984-01. Soumission sans frais : 418 724-3656.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Electrician","name":"EFL Électrique inc.","telephone":"+1-418-724-3656","faxNumber":"+1-418-724-3650","email":"info@eflelectrique.ca","url":"http://eflelectrique.ca/","address":{"@type":"PostalAddress","streetAddress":"468E, rue de l'Expansion","addressLocality":"Rimouski","addressRegion":"QC","postalCode":"G5M 1A9","addressCountry":"CA"},"areaServed":["Rimouski","Mont-Joli"],"founder":"Félix Lévesque","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"12"}}
+</script>
+<style>
+:root{--bg:#0c0f14;--bg2:#141a22;--card:#181f29;--volt:#ffcc00;--volt2:#ffe066;--blue:#3aa0ff;--txt:#e9eef5;--mut:#9aa7b6;--bh:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-padding-top:calc(var(--bh) + 70px)}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;font-size:17px;padding-top:var(--bh)}
+a{color:inherit}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;line-height:1.08;letter-spacing:-.015em}
+p,li{overflow-wrap:anywhere}
+#apercu{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px}
+.nav{position:fixed;left:0;right:0;top:var(--bh);z-index:50;background:rgba(12,15,20,.97);border-bottom:1px solid rgba(255,204,0,.25)}
+.nav-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:9px 16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:44px;height:44px;flex:none}
+.brand span{min-width:0}
+.brand b{font-family:'Space Grotesk',sans-serif;font-size:20px;line-height:1;white-space:nowrap}
+.brand small{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--volt);white-space:nowrap;margin-top:3px}
+.links{display:none;gap:24px;margin-left:auto}
+.links a{text-decoration:none;font-weight:600;font-size:15px;opacity:.85}
+.links a:hover{opacity:1;color:var(--volt)}
+.callbtn{display:inline-flex;align-items:center;gap:8px;background:var(--volt);color:#111;text-decoration:none;font-weight:700;border-radius:10px;padding:11px 18px;font-size:15px;white-space:nowrap}
+.callbtn:hover{background:var(--volt2)}
+.nav .callbtn{display:none}
+.burger{margin-left:auto;background:none;border:0;color:#fff;width:40px;height:40px;cursor:pointer;flex:none}
+.mnav{display:none;padding:6px 16px 16px}
+.mnav.open{display:block}
+.mnav a{display:block;padding:11px 0;text-decoration:none;font-weight:600;border-bottom:1px solid rgba(255,255,255,.08)}
+@media(min-width:1024px){.links{display:flex}.nav .callbtn{display:inline-flex;margin-left:10px}.burger,.mnav{display:none!important}.brand b{font-size:23px}.brand svg{width:50px;height:50px}}
+.hero{position:relative;overflow:hidden;padding:110px 16px 70px;background:radial-gradient(70% 60% at 80% 20%,rgba(58,160,255,.18),transparent 70%),radial-gradient(60% 50% at 10% 90%,rgba(255,204,0,.10),transparent 70%),var(--bg)}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:36px 36px;pointer-events:none}
+.floaters{position:absolute;inset:0;pointer-events:none}
+.fl{position:absolute;color:var(--volt);opacity:.16;transform:translate3d(0,calc(var(--py,0px) * var(--d,1)),0)}
+.fl.b{color:var(--blue)}
+.fl svg{display:block;animation:bob var(--t,8s) ease-in-out infinite}
+.fl.blur svg{filter:blur(2px)}
+@keyframes bob{50%{transform:translateY(-16px) rotate(10deg)}}
+.hero-in{position:relative;z-index:1;max-width:1200px;margin:0 auto;display:grid;gap:36px}
+.kicker{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,204,0,.45);color:var(--volt);font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.hero h1{font-size:clamp(40px,10.5vw,80px);margin:16px 0 14px}
+.hero h1 em{font-style:normal;color:var(--volt);text-shadow:0 0 24px rgba(255,204,0,.35)}
+.lead{font-size:19px;max-width:560px;color:#c9d3df}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.ghost{display:inline-flex;align-items:center;border:2px solid rgba(255,255,255,.7);text-decoration:none;border-radius:10px;padding:9px 18px;font-weight:700}
+.ghost:hover{background:#fff;color:#111}
+.trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;list-style:none}
+.trust li{font-size:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:6px 12px;border-radius:999px}
+.panel{justify-self:center;width:min(380px,92%);background:linear-gradient(160deg,#1b2430,#10151c);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.panel h3{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.brk{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.br{display:flex;align-items:center;gap:10px;background:#0e1319;border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:10px;font-size:14px;min-width:0}
+.br i{flex:none;width:12px;height:22px;border-radius:3px;background:#2a3340;position:relative}
+.br i:after{content:"";position:absolute;left:2px;right:2px;top:2px;height:8px;border-radius:2px;background:var(--volt);box-shadow:0 0 10px var(--volt);opacity:0;animation:on .2s forwards;animation-delay:var(--dl)}
+@keyframes on{to{opacity:1}}
+@media(min-width:1024px){.hero{padding:170px 24px 110px}.hero-in{grid-template-columns:1.15fr .85fr;align-items:center}}
+section{padding:70px 16px}
+.wrap{max-width:1200px;margin:0 auto}
+.sec-h{margin-bottom:30px}
+.sec-h small{display:inline-block;color:var(--volt);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px}
+.sec-h h2{font-size:clamp(32px,7vw,52px);margin-top:6px}
+.alt{background:var(--bg2)}
+.sgrid{display:grid;gap:14px}
+@media(min-width:700px){.sgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.sgrid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--card);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;min-width:0;opacity:0;transform:translateY(26px);transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .6s,border-color .3s}
+.svc.in{opacity:1;transform:none}
+.svc:hover{border-color:rgba(255,204,0,.5)}
+.svc svg{width:36px;height:36px;color:var(--volt);margin-bottom:10px}
+.svc h3{font-size:20px;margin-bottom:6px}
+.svc p{font-size:15.5px;color:#b7c2cf}
+.brands{margin-top:22px;color:var(--mut);font-size:15px}
+/* wow: bulb */
+#pourquoi{overflow:hidden}.lightzone{display:grid;gap:30px;align-items:center}
+@media(min-width:1024px){.lightzone{grid-template-columns:.8fr 1.2fr}}
+.bulb{justify-self:center;width:min(240px,60%);position:relative}
+.bulb .glow{position:absolute;left:50%;top:38%;width:260%;aspect-ratio:1;transform:translate(-50%,-50%) scale(.6);border-radius:50%;background:radial-gradient(circle,rgba(255,214,60,.55),rgba(255,204,0,0) 65%);opacity:0;transition:opacity 1s .5s,transform 1.2s .5s;pointer-events:none}
+.bulb .lit{opacity:0;transition:opacity .25s .5s}
+.bulb.in .glow{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.bulb.in .lit{opacity:1}
+.why{list-style:none;display:grid;gap:12px}
+.why li{display:flex;gap:12px;align-items:flex-start;background:var(--card);border-radius:12px;padding:14px 16px;min-width:0}
+.why svg{flex:none;width:22px;height:22px;color:var(--volt);margin-top:3px}
+.why b{display:block}
+.why span{color:#b7c2cf;font-size:15.5px}
+.rating{display:flex;flex-wrap:wrap;align-items:center;gap:18px;background:var(--card);border:1px solid rgba(255,204,0,.3);border-radius:16px;padding:24px}
+.rating .big{font-family:'Space Grotesk';font-size:60px;line-height:1;color:var(--volt)}
+.stars{color:var(--volt);font-size:26px;letter-spacing:3px}
+.rating p{color:var(--mut);font-size:15px}
+.cgrid{display:grid;gap:18px}
+@media(min-width:1024px){.cgrid{grid-template-columns:repeat(3,1fr)}}
+.cbox{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px;min-width:0}
+.cbox h3{font-size:20px;color:var(--volt);margin-bottom:8px}
+.bigtel{font-size:26px;font-weight:700;text-decoration:none}
+footer.site{padding:26px 16px 100px;text-align:center;font-size:14px;color:var(--mut);border-top:1px solid rgba(255,255,255,.08)}
+.stick{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;justify-content:center;padding:14px;font-size:17px;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+@media(min-width:1024px){.stick{display:none}footer.site{padding-bottom:26px}}
+#intro{position:fixed;inset:0;z-index:9000;background:#07090c;display:flex;align-items:center;justify-content:center;cursor:pointer}
+#intro svg{width:min(260px,64vw);opacity:0;animation:flick 1.3s .2s steps(1) forwards}
+#intro.out{opacity:0;transition:opacity .45s}
+@keyframes flick{0%{opacity:.25}12%{opacity:0}22%{opacity:.7}30%{opacity:.1}42%{opacity:1}52%{opacity:.3}60%,100%{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.svc{opacity:1;transform:none}.br i:after{opacity:1}.bulb .glow,.bulb .lit{opacity:1}#intro{display:none}}
+</style>
+</head>
+<body>
+<div id="apercu">Aperçu préparé pour EFL Électrique — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="logo" viewBox="0 0 200 200">
+    <rect x="8" y="8" width="184" height="184" rx="36" fill="#141a22" stroke="#ffcc00" stroke-width="6"/>
+    <text x="100" y="110" text-anchor="middle" font-family="Space Grotesk, Arial Black, sans-serif" font-weight="700" font-size="66" fill="#fff" letter-spacing="-2">EFL</text>
+    <path d="M110 120l-30 50 10-34H74l28-48-8 32z" fill="#ffcc00"/>
+    <text x="100" y="44" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#ffcc00" textLength="96" lengthAdjust="spacingAndGlyphs">ÉLECTRIQUE</text>
+  </symbol>
+  <symbol id="bolt" viewBox="0 0 60 100"><path fill="currentColor" d="M36 0L4 56h22L18 100l38-62H32z"/></symbol>
+  <symbol id="plug" viewBox="0 0 80 100"><path fill="currentColor" d="M22 0h8v24h-8zM50 0h8v24h-8zM8 24h64v22a32 32 0 01-64 0zM34 76h12v24H34z"/></symbol>
+  <symbol id="bulbi" viewBox="0 0 70 100"><path fill="currentColor" d="M35 0a33 33 0 00-20 59c4 4 6 9 6 14h28c0-5 2-10 6-14A33 33 0 0035 0zM22 78h26v8H22zM26 90h18v8H26z"/></symbol>
+  <symbol id="panel" viewBox="0 0 80 100"><path fill="currentColor" d="M6 0h68v100H6zM16 12v76h48V12zM22 20h14v8H22zM44 20h14v8H44zM22 36h14v8H22zM44 36h14v8H44zM22 52h14v8H22zM44 52h14v8H44z"/></symbol>
+  <symbol id="ev" viewBox="0 0 100 100"><path fill="currentColor" d="M14 6h44v88H14zM22 16v26h28V16zM58 30h10a8 8 0 018 8v34a6 6 0 0012 0V40l-8-10 6-6 10 12v36a14 14 0 01-28 0V38H58zM40 46l-14 22h10l-4 16 14-22H36z"/></symbol>
+  <symbol id="heat" viewBox="0 0 100 100"><path fill="currentColor" d="M6 30h88v50H6zM16 40v30h68V40zM24 44h4v22h-4zM36 44h4v22h-4zM48 44h4v22h-4zM60 44h4v22h-4zM72 44h4v22h-4zM30 4c6 8-6 12 0 20M50 4c6 8-6 12 0 20M70 4c6 8-6 12 0 20"/></symbol>
+  <symbol id="pool" viewBox="0 0 100 100"><path fill="currentColor" d="M30 6v52h8V40h24v18h8V6h-8v8H38V6zM38 22h24v10H38zM0 70c12 0 12-8 25-8s13 8 25 8 12-8 25-8 13 8 25 8v10c-12 0-12-8-25-8s-13 8-25 8-12-8-25-8-13 8-25 8z"/></symbol>
+  <symbol id="net" viewBox="0 0 100 100"><path fill="currentColor" d="M10 10h80v50H10zM18 18v34h64V18zM44 60h12v14h24v10H20V74h24z"/></symbol>
+  <symbol id="pole" viewBox="0 0 100 100"><path fill="currentColor" d="M46 0h8v100h-8zM16 14h68v8H16zM22 30h56v6H22zM16 22h6v10h-6zM78 22h6v10h-6z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M4 12l5 5L20 6"/></symbol>
+  <symbol id="doc" viewBox="0 0 80 100"><path fill="currentColor" d="M8 0h44l20 20v80H8zM18 34h44v6H18zM18 50h44v6H18zM18 66h30v6H18z"/></symbol>
+</defs></svg>
+
+<div id="intro" aria-hidden="true"><svg viewBox="0 0 200 200" style="filter:drop-shadow(0 0 18px rgba(255,204,0,.6))"><use href="#logo"/></svg></div>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top"><svg viewBox="0 0 200 200"><use href="#logo"/></svg><span><b>EFL Électrique</b><small>Rimouski · Mont-Joli</small></span></a>
+    <nav class="links"><a href="#services">Services</a><a href="#pourquoi">Pourquoi EFL</a><a href="#avis">Avis</a><a href="#contact">Nous joindre</a></nav>
+    <a class="callbtn" href="tel:+14187243656">Appeler</a>
+    <button class="burger" type="button" aria-label="Menu"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="mnav"><a href="#services">Services</a><a href="#pourquoi">Pourquoi EFL</a><a href="#avis">Avis</a><a href="#contact">Nous joindre</a></div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="grid-bg"></div>
+  <div class="floaters" aria-hidden="true">
+    <div class="fl blur" style="left:-10px;top:130px;--d:.3;--t:10s"><svg width="70" height="116"><use href="#bolt"/></svg></div>
+    <div class="fl b" style="right:7%;top:90px;--d:.6;--t:8s"><svg width="40" height="50"><use href="#plug"/></svg></div>
+    <div class="fl" style="left:46%;top:18%;--d:.8;--t:7s"><svg width="20" height="34"><use href="#bolt"/></svg></div>
+    <div class="fl b" style="left:8%;bottom:60px;--d:.5;--t:9s"><svg width="34" height="48"><use href="#bulbi"/></svg></div>
+    <div class="fl" style="right:30%;bottom:14%;--d:.9;--t:6s"><svg width="16" height="26"><use href="#bolt"/></svg></div>
+    <div class="fl b blur" style="right:-30px;bottom:30px;--d:.25;--t:12s"><svg width="110" height="136"><use href="#panel"/></svg></div>
+    <div class="fl b" style="left:30%;bottom:22%;--d:.4;--t:10s"><svg width="30" height="38"><use href="#plug"/></svg></div>
+    <div class="fl" style="right:44%;top:58%;--d:.7;--t:8s"><svg width="24" height="34"><use href="#bulbi"/></svg></div>
+  </div>
+  <div class="hero-in">
+    <div>
+      <span class="kicker"><svg width="12" height="18"><use href="#bolt"/></svg>Maître électricien · RBQ 5673-7984-01</span>
+      <h1>Votre électricien à Rimouski, <em>rapide et de qualité</em></h1>
+      <p class="lead">Entrepreneur électricien résidentiel et commercial à Rimouski, Mont-Joli et environs : un service professionnel, rapide et de qualité.</p>
+      <div class="ctas">
+        <a class="callbtn" href="tel:+14187243656"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.6.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11 11 0 00.6 3.6 1 1 0 01-.25 1z"/></svg>Soumission sans frais · 418 724-3656</a>
+        <a class="ghost" href="#services">Nos services</a>
+      </div>
+      <ul class="trust"><li>« Prix compétitif et un service de qualité »</li><li>Membre CMEQ</li><li>4,7 ★ sur Google</li></ul>
+    </div>
+    <div class="panel" aria-hidden="true">
+      <h3>Panneau EFL</h3>
+      <div class="brk">
+        <div class="br"><i style="--dl:1.9s"></i>Résidentiel</div>
+        <div class="br"><i style="--dl:2.1s"></i>Commercial</div>
+        <div class="br"><i style="--dl:2.3s"></i>Construction neuve</div>
+        <div class="br"><i style="--dl:2.5s"></i>Rénovation</div>
+        <div class="br"><i style="--dl:2.7s"></i>Spa et piscine</div>
+        <div class="br"><i style="--dl:2.9s"></i>Bornes de recharge</div>
+        <div class="br"><i style="--dl:3.1s"></i>Chauffage</div>
+        <div class="br"><i style="--dl:3.3s"></i>Éclairage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="sec-h"><small>Ce qu'on fait</small><h2>Nos services</h2></div>
+    <div class="sgrid">
+      <div class="svc"><svg><use href="#bolt"/></svg><h3>Construction neuve et rénovation</h3><p>Travaux électriques en construction neuve ou en rénovation; nouveaux fils sans dommage aux murs.</p></div>
+      <div class="svc"><svg><use href="#panel"/></svg><h3>Entrée électrique et panneau</h3><p>Entrée électrique de 400 A et plus, changement de panneau de 100 à 200 A.</p></div>
+      <div class="svc"><svg><use href="#pool"/></svg><h3>Spa, piscine et thermopompe</h3><p>Installation électrique de spa, de piscine et de thermopompe — même les soirs et les fins de semaine.</p></div>
+      <div class="svc"><svg><use href="#heat"/></svg><h3>Chauffage</h3><p>Convecteurs et planchers chauffants.</p></div>
+      <div class="svc"><svg><use href="#bulbi"/></svg><h3>Éclairage intérieur et extérieur</h3><p>Pour la maison comme pour le commerce.</p></div>
+      <div class="svc"><svg><use href="#ev"/></svg><h3>Bornes de recharge</h3><p>Installation de bornes de recharge pour véhicules électriques.</p></div>
+      <div class="svc"><svg><use href="#pole"/></svg><h3>Ligne privée</h3><p>Installation de poteaux pour ligne privée.</p></div>
+      <div class="svc"><svg><use href="#net"/></svg><h3>Câbles informatiques</h3><p>Installation de câbles informatiques.</p></div>
+      <div class="svc"><svg><use href="#plug"/></svg><h3>Tuyauterie EMT et rigide</h3><p>Pliage de tuyaux EMT et installation de tuyaux rigides.</p></div>
+      <div class="svc"><svg><use href="#doc"/></svg><h3>Inspection et conformité</h3><p>Inspection et rapport de conformité pour les assurances.</p></div>
+      <div class="svc"><svg><use href="#check"/></svg><h3>Conseil et suivi de projet</h3><p>Conseil et suivi de vos projets électriques.</p></div>
+      <div class="svc"><svg><use href="#panel"/></svg><h3>Vente de produits</h3><p>Produits Ouellet, Square D et Leviton.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pourquoi">
+  <div class="wrap lightzone">
+    <div class="bulb" id="bulb" aria-hidden="true">
+      <div class="glow"></div>
+      <svg viewBox="0 0 140 220" style="position:relative;display:block;width:100%">
+        <path d="M70 6a60 60 0 00-38 106c8 8 12 16 12 26h52c0-10 4-18 12-26A60 60 0 0070 6z" fill="#1f2834" stroke="#3a4757" stroke-width="3"/>
+        <path class="lit" d="M70 6a60 60 0 00-38 106c8 8 12 16 12 26h52c0-10 4-18 12-26A60 60 0 0070 6z" fill="#ffd84a"/>
+        <path d="M54 130V96l8-10 8 10 8-10 8 10v34" fill="none" stroke="#7a5b00" stroke-width="3" class="lit"/>
+        <path d="M54 130V96l8-10 8 10 8-10 8 10v34" fill="none" stroke="#4a5666" stroke-width="3"/>
+        <rect x="44" y="144" width="52" height="12" rx="4" fill="#8a96a5"/><rect x="46" y="160" width="48" height="12" rx="4" fill="#77838f"/><rect x="50" y="176" width="40" height="12" rx="4" fill="#8a96a5"/><path d="M58 192h24l-6 14h-12z" fill="#55606c"/>
+      </svg>
+    </div>
+    <div>
+      <div class="sec-h"><small>Pourquoi EFL</small><h2>Un maître électricien qui s'occupe de vous</h2></div>
+      <ul class="why">
+        <li><svg><use href="#check"/></svg><div><b>Félix Lévesque, maître électricien</b><span>Propriétaire de l'entreprise.</span></div></li>
+        <li><svg><use href="#check"/></svg><div><b>Licence RBQ 5673-7984-01 · membre CMEQ</b><span>Entrepreneur électricien en règle.</span></div></li>
+        <li><svg><use href="#check"/></svg><div><b>Soumission sans frais</b><span>« Prix compétitif et un service de qualité ».</span></div></li>
+        <li><svg><use href="#check"/></svg><div><b>Résidentiel et commercial</b><span>Rimouski, Mont-Joli et les environs.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="avis" class="alt">
+  <div class="wrap">
+    <div class="sec-h"><small>Avis</small><h2>Ce que nos clients disent</h2></div>
+    <div class="rating">
+      <div class="big">4,7</div>
+      <div><div class="stars" aria-label="4,7 sur 5">★★★★★</div><p>4,7 ★ sur Google · 12 avis</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-h"><small>Besoin d'un électricien?</small><h2>Nous joindre</h2></div>
+    <div class="cgrid">
+      <div class="cbox"><h3>Téléphone</h3><a class="bigtel" href="tel:+14187243656">418 724-3656</a><p style="margin-top:8px;color:#b7c2cf">Télécopieur : 418 724-3650</p><p style="margin-top:6px;color:#b7c2cf">Appelez-nous pour les heures.</p></div>
+      <div class="cbox"><h3>Courriel</h3><a href="mailto:info@eflelectrique.ca" style="font-weight:700;font-size:19px">info@eflelectrique.ca</a></div>
+      <div class="cbox"><h3>Adresse</h3><p>468E, rue de l'Expansion<br>Rimouski (Québec) G5M 1A9</p><p style="margin-top:8px"><a href="https://www.google.com/maps/search/?api=1&query=468E+rue+de+l'Expansion+Rimouski+QC+G5M+1A9">Ouvrir dans Google Maps</a></p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site">© EFL Électrique inc. · Rimouski · 418 724-3656 · RBQ 5673-7984-01</footer>
+<a class="callbtn stick" href="tel:+14187243656">Appeler 418 724-3656</a>
+
+<script>
+(function(){
+  var bn=document.getElementById('apercu');
+  function setBh(){document.documentElement.style.setProperty('--bh',bn.offsetHeight+'px')}
+  setBh();addEventListener('resize',setBh,{passive:true});
+  var bg=document.querySelector('.burger'),mn=document.querySelector('.mnav');
+  bg.addEventListener('click',function(){mn.classList.toggle('open')});
+  mn.addEventListener('click',function(e){if(e.target.tagName==='A')mn.classList.remove('open')});
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.2});
+  document.querySelectorAll('.svc').forEach(function(e,i){e.style.transitionDelay=(i%3)*0.08+'s';io.observe(e)});
+  io.observe(document.getElementById('bulb'));
+  var hero=document.querySelector('.hero'),tk=false;
+  addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(function(){hero.style.setProperty('--py',Math.min(scrollY,900)*.35+'px');tk=false})}},{passive:true});
+  var it=document.getElementById('intro'),seen=false;
+  try{seen=sessionStorage.getItem('efl-intro')}catch(e){}
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function done(){if(!it.parentNode)return;it.classList.add('out');setTimeout(function(){it.remove()},460);try{sessionStorage.setItem('efl-intro','1')}catch(e){}}
+  if(seen||rm){it.remove()}else{it.addEventListener('click',done);setTimeout(done,1800)}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Le Vieux Château Restaurant — Hawkesbury | Déjeuners, steaks, fruits de mer, pizza</title>
+<meta name="description" content="Le Vieux Château, restaurant familial à Hawkesbury depuis plus de 40 ans : déjeuners jusqu'à 14 h, steaks, fruits de mer, pizza, salle de banquet. 797, rue McGill. 613-632-9877.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Le Vieux Château Restaurant","slogan":"La famille avant tout!","telephone":"+1-613-632-9877","email":"info@levieuxchateau.ca","servesCuisine":["Déjeuners","Steaks","Fruits de mer","Pizza","Italien","Grec"],"acceptsReservations":"True","address":{"@type":"PostalAddress","streetAddress":"797 McGill St. (Hwy 34)","addressLocality":"Hawkesbury","addressRegion":"ON","postalCode":"K6A 1R5","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"21:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"08:00","closes":"22:00"}],"hasMenu":"https://levieuxchateau.ca/menu-page/","aggregateRating":{"@type":"AggregateRating","ratingValue":"3.8","reviewCount":"107","bestRating":"5"}}
+</script>
+<style>
+:root{--wine:#5b1420;--wine2:#7a1d2b;--gold:#d4a24c;--gold2:#f0cf86;--cream:#fbf5ea;--paper:#fffaf1;--ink:#2a1a14;--mut:#6f5d52;--line:#e8dccb;--bar:32px}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 72px)}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 Lato,system-ui,sans-serif;padding-top:var(--bar)}
+html.en [data-l=fr],html:not(.en) [data-l=en]{display:none!important}
+h1,h2,h3{font-family:Cinzel,Georgia,serif;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{position:fixed;top:var(--bar);left:0;right:0;z-index:50;background:var(--wine);color:#fff;box-shadow:0 2px 0 var(--gold)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand b{font-family:Cinzel,serif;font-size:18px;white-space:nowrap;letter-spacing:.03em}
+.brand small{display:block;font-size:11px;color:var(--gold2);letter-spacing:.12em;text-transform:uppercase}
+.links{display:none;gap:20px;align-items:center}
+.links a,.links button.lk{color:#f6e9d6;text-decoration:none;font-weight:700;font-size:15px;background:none;border:0;cursor:pointer;font-family:inherit;padding:0}
+.links a:hover,.links button.lk:hover{color:var(--gold2)}
+.links a.btn-gold{background:var(--gold);color:#2a1206;padding:8px 16px}
+.right{display:flex;align-items:center;gap:8px}
+.lang{background:transparent;border:1.5px solid var(--gold);color:var(--gold2);border-radius:8px;padding:6px 10px;font:700 13px Lato,sans-serif;cursor:pointer}
+.burger{background:none;border:0;color:#fff;padding:6px;cursor:pointer}
+.mmenu{display:none;background:#4a0f19}
+.mmenu.open{display:block}
+.mmenu a,.mmenu button{display:block;width:100%;text-align:left;padding:14px 20px;color:#fff;text-decoration:none;font:700 16px Lato,sans-serif;border:0;background:none;border-bottom:1px solid rgba(255,255,255,.1);cursor:pointer}
+@media(min-width:960px){.links{display:flex}.burger,.mmenu{display:none!important}}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:16px;font-family:Lato,sans-serif}
+.btn-gold{background:var(--gold);color:#2a1206}
+.btn-line{border-color:#f0cf86;color:#fff;background:transparent}
+.btn-wine{background:var(--wine);color:#fff}
+.btn-sm{padding:8px 14px;font-size:14px}
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;padding:120px 0 80px;background:radial-gradient(700px 420px at 85% 20%,rgba(212,162,76,.28),transparent 60%),linear-gradient(160deg,#3d0c15 0%,#5b1420 55%,#2b080e 100%)}
+.hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:46px;background:linear-gradient(90deg,var(--cream) 0 50%,transparent 50%) 0 0/48px 26px repeat-x,linear-gradient(var(--cream),var(--cream)) 0 26px/100% 20px no-repeat;z-index:2}
+.floaters{position:absolute;inset:0;pointer-events:none;z-index:0}
+.fl{position:absolute;opacity:.2;transform:translate3d(0,calc(var(--py,0px) * var(--d,.2)),0)}
+.fl svg{display:block;animation:bob var(--t,7s) ease-in-out infinite alternate}
+.fl.spin svg{animation:spin var(--t,40s) linear infinite}
+.fl.far{filter:blur(2px);opacity:.12}
+@keyframes bob{from{transform:translateY(-12px) rotate(-10deg)}to{transform:translateY(12px) rotate(10deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:34px;align-items:center}
+.eyebrow{color:var(--gold2);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px}
+.hero h1{font-size:clamp(38px,8.6vw,72px);margin:12px 0 10px;text-shadow:0 3px 0 rgba(0,0,0,.25)}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.lead{font-size:clamp(17px,2.3vw,20px);max-width:560px;color:#f3e3cf;margin:0 0 24px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.rating-pill{display:inline-flex;align-items:center;gap:8px;margin-top:22px;background:rgba(255,255,255,.1);border:1px solid rgba(240,207,134,.45);border-radius:999px;padding:8px 14px;font-weight:700;font-size:14.5px;color:#fff;text-decoration:none;cursor:pointer;font-family:Lato,sans-serif}
+.rating-pill .st{color:var(--gold2);letter-spacing:2px}
+.crest{display:none;justify-self:center}
+@media(min-width:960px){.hero{padding:150px 0 120px}.hero .wrap{grid-template-columns:1.15fr .85fr}.crest{display:block}}
+/* sections */
+section{padding:72px 0}
+.kick{color:var(--wine2);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin-bottom:8px}
+h2{font-size:clamp(30px,5.6vw,46px);color:var(--wine);margin-bottom:12px}
+.sub{color:var(--mut);max-width:720px;margin:0 0 28px}
+.rooms{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:800px){.rooms{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.room{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;min-width:0;position:relative;overflow:hidden}
+.room::after{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--wine),var(--gold))}
+.room h3{font-size:20px;color:var(--wine);margin:12px 0 6px}
+.room p{margin:0;color:#4b3a30}
+/* menu */
+.menu-sec{background:#fff7ea;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mtabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.mtab{border:2px solid var(--wine);background:transparent;color:var(--wine);border-radius:999px;padding:10px 18px;font:700 16px Lato,sans-serif;cursor:pointer}
+.mtab[aria-selected=true]{background:var(--wine);color:#fff}
+.mnote{color:var(--mut);font-style:italic;margin:6px 0 18px}
+.jump{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;margin-bottom:8px;scrollbar-width:thin}
+.jump a{flex:0 0 auto;font-size:13.5px;font-weight:700;text-decoration:none;color:var(--wine);background:#f3e4cf;border-radius:999px;padding:6px 12px;white-space:nowrap}
+.cats{columns:1;column-gap:28px}
+@media(min-width:800px){.cats{columns:2}}
+@media(min-width:1150px){.cats{columns:3}}
+.cat{break-inside:avoid;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 18px;margin:0 0 22px;display:inline-block;width:100%;min-width:0}
+.cat h3{font-size:18px;color:var(--wine);padding-bottom:8px;border-bottom:2px dotted var(--gold);margin-bottom:6px;overflow-wrap:anywhere}
+.cat .cn{font-size:13.5px;color:var(--mut);font-style:italic;margin:4px 0 6px}
+.it{padding:9px 0;border-bottom:1px solid #f1e6d6;opacity:0;transform:translateX(-26px) rotate(-1.5deg);transition:opacity .5s ease,transform .5s cubic-bezier(.2,.9,.3,1.2)}
+.cat.in .it{opacity:1;transform:none}
+.it:last-child{border-bottom:0}
+.row{display:flex;align-items:baseline;gap:8px}
+.row b{font-weight:700;min-width:0;overflow-wrap:anywhere}
+.row .dots{flex:1;border-bottom:2px dotted #d9c6aa;transform:translateY(-4px);min-width:12px}
+.row .pr{font-weight:700;color:var(--wine2);white-space:nowrap;font-size:15px}
+.it small{display:block;color:var(--mut);font-size:13.5px;line-height:1.45;margin-top:2px}
+.fine{color:var(--mut);font-size:14px}
+/* reviews */
+.rev-head{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-bottom:24px}
+.score{display:flex;align-items:center;gap:12px;background:var(--wine);color:#fff;border-radius:16px;padding:12px 18px}
+.score b{font-family:Cinzel,serif;font-size:34px;color:var(--gold2)}
+.score .st{color:var(--gold2);font-size:18px;letter-spacing:2px}
+.score small{display:block;font-size:13px;color:#f2dfc6}
+.revs{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:720px){.revs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.revs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rv{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.rv .st{color:#c8901f;letter-spacing:2px}
+.rv q{quotes:none;font-size:15.5px;color:#3c2b22;overflow-wrap:anywhere}
+.rv .who{margin-top:auto;font-size:13.5px;color:var(--mut)}
+.rv .who b{color:var(--ink)}
+/* info */
+.info{display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:900px){.info{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;min-width:0}
+.box h3{color:var(--wine);font-size:22px;margin-bottom:10px}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:10px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-weight:700}
+.cl{list-style:none;margin:0;padding:0}
+.cl li{padding:10px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.cl b{display:block;font-size:12.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+footer{background:#2b080e;color:#e9d7c0;text-align:center;padding:34px 0 110px;font-size:14px}
+@media(min-width:960px){footer{padding-bottom:36px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:8px;background:var(--gold);color:#2a1206;font-weight:800;text-decoration:none;border-radius:999px;padding:15px;box-shadow:0 8px 22px rgba(43,8,14,.35)}
+@media(min-width:960px){.callbar{display:none}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+/* reviews page */
+#avisPage{position:fixed;inset:0;z-index:80;background:var(--cream);display:none}
+html.showAvis #avisPage{display:block;position:static}
+html.showAvis #site{display:none}
+.ap-top{position:sticky;top:var(--bar);z-index:5;background:var(--wine);color:#fff;box-shadow:0 2px 0 var(--gold)}
+.ap-top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:10px}
+.ap-body{padding:36px 0 120px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#2b080e;display:grid;place-items:center;cursor:pointer;overflow:hidden}
+#intro .g{position:absolute;top:0;bottom:0;width:50.5%;background:repeating-linear-gradient(90deg,#4a2a14 0 30px,#3a200f 30px 34px);transition:transform 1.1s cubic-bezier(.7,0,.3,1) .8s;z-index:2}
+#intro .g.l{left:0;border-right:3px solid var(--gold)}
+#intro .g.r{right:0;border-left:3px solid var(--gold)}
+#intro .g::after{content:"";position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+#intro .g.l::after{right:16px}#intro .g.r::after{left:16px}
+#intro.open .g.l{transform:translateX(-101%)}#intro.open .g.r{transform:translateX(101%)}
+#intro .lg{text-align:center;color:#fff;transform:scale(.8);opacity:0;transition:transform .9s ease 1.2s,opacity .9s ease 1.2s}
+#intro.open .lg{transform:none;opacity:1}
+#intro .lg div{font-family:Cinzel,serif;font-size:28px;margin-top:8px;color:var(--gold2)}
+#intro.bye{opacity:0;transition:opacity .45s}
+@media(max-width:520px){:root{--bar:66px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal,.it{opacity:1!important;transform:none!important}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Le Vieux Château Restaurant — ce n'est pas son site officiel · Preview prepared for Le Vieux Château Restaurant — not their official website</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="logo" viewBox="0 0 64 64"><path d="M8 58V22h7v6h6v-6h7v6h8v-6h7v6h6v-6h7v36z" fill="#5b1420" stroke="#d4a24c" stroke-width="2.5" stroke-linejoin="round"/><path d="M26 58V46a6 6 0 0 1 12 0v12" fill="#2b080e" stroke="#d4a24c" stroke-width="2"/><text x="32" y="41" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-weight="700" font-size="13" fill="#f0cf86">VC</text><path d="M32 6v13" stroke="#d4a24c" stroke-width="2"/><path d="M32 6l9 3-9 3z" fill="#d4a24c"/></symbol>
+<symbol id="pizza" viewBox="0 0 100 100"><path d="M50 95 8 18Q50-4 92 18z" fill="#f2c45a"/><path d="M8 18Q50-4 92 18l-5 9Q50 8 13 27z" fill="#c9792e"/><circle cx="40" cy="35" r="7" fill="#b3261e"/><circle cx="60" cy="40" r="7" fill="#b3261e"/><circle cx="50" cy="62" r="6" fill="#b3261e"/></symbol>
+<symbol id="cup" viewBox="0 0 100 100"><path d="M18 40h56v18a28 28 0 0 1-56 0z" fill="#fff"/><path d="M74 46h6a10 10 0 0 1 0 20h-8" fill="none" stroke="#fff" stroke-width="6"/><path d="M34 32c-6-8 6-12 0-22M50 32c-6-8 6-12 0-22" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="10" y="86" width="72" height="6" rx="3" fill="#fff"/></symbol>
+<symbol id="fork" viewBox="0 0 40 100"><path d="M8 4v26a10 10 0 0 0 9 10v56h6V40a10 10 0 0 0 9-10V4h-4v24h-4V4h-4v24h-4V4h-4v24h-4V4z" fill="#f0cf86"/></symbol>
+<symbol id="egg" viewBox="0 0 100 100"><path d="M50 8c22 4 40 18 36 40s-20 40-40 42S8 76 12 54 26 4 50 8z" fill="#fff"/><circle cx="50" cy="50" r="17" fill="#f2b632"/></symbol>
+<symbol id="shrimp" viewBox="0 0 100 100"><path d="M78 20a40 40 0 1 0 8 52c-10 6-26 6-34-4a20 20 0 1 1 26-30z" fill="#f08a5d"/><path d="M78 20l14-10M78 20l16 2" stroke="#f08a5d" stroke-width="3"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="m12 2 3 7 7 .6-5.4 4.7L18.2 22 12 18.2 5.8 22l1.6-7.7L2 9.6 9 9z" fill="currentColor"/></symbol>
+</defs></svg>
+
+<div id="site">
+<header class="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil"><svg width="42" height="42"><use href="#logo"/></svg><span><b>Le Vieux Château</b><small><span data-l="fr">Restaurant · Hawkesbury</span><span data-l="en">Restaurant · Hawkesbury</span></small></span></a>
+  <nav class="links">
+   <a href="#menu"><span data-l="fr">Menu</span><span data-l="en">Menu</span></a>
+   <a href="#salles"><span data-l="fr">Nos salles</span><span data-l="en">Our rooms</span></a>
+   <a href="#avis"><span data-l="fr">Avis</span><span data-l="en">Reviews</span></a>
+   <a href="#infos"><span data-l="fr">Heures et contact</span><span data-l="en">Hours &amp; contact</span></a>
+   <a class="btn btn-gold btn-sm" href="tel:+16136329877"><span data-l="fr">Réserver</span><span data-l="en">Reserve</span></a>
+  </nav>
+  <div class="right"><button class="lang" data-lang><span data-l="fr">EN</span><span data-l="en">FR</span></button><button class="burger" id="burger" aria-label="Menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+ </div>
+ <div class="mmenu" id="mmenu">
+  <a href="#menu"><span data-l="fr">Menu</span><span data-l="en">Menu</span></a>
+  <a href="#salles"><span data-l="fr">Nos salles</span><span data-l="en">Our rooms</span></a>
+  <button data-avis><span data-l="fr">Avis</span><span data-l="en">Reviews</span></button>
+  <a href="#infos"><span data-l="fr">Heures et contact</span><span data-l="en">Hours &amp; contact</span></a>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+ <div class="floaters" aria-hidden="true">
+  <div class="fl spin" style="top:14%;left:-26px;--d:.35"><svg width="110" height="110" style="--t:34s"><use href="#pizza"/></svg></div>
+  <div class="fl" style="top:18%;right:7%;--d:.25"><svg width="74" height="74" style="--t:6s"><use href="#cup"/></svg></div>
+  <div class="fl far" style="top:62%;left:58%;--d:.15"><svg width="150" height="150" style="--t:9s"><use href="#pizza"/></svg></div>
+  <div class="fl" style="bottom:16%;left:6%;--d:.3"><svg width="62" height="62" style="--t:7s"><use href="#egg"/></svg></div>
+  <div class="fl" style="top:44%;left:42%;--d:.2"><svg width="24" height="60" style="--t:8s"><use href="#fork"/></svg></div>
+  <div class="fl" style="bottom:26%;right:-14px;--d:.4"><svg width="70" height="70" style="--t:6.5s"><use href="#shrimp"/></svg></div>
+  <div class="fl far" style="top:6%;left:48%;--d:.12"><svg width="50" height="50" style="--t:7.5s"><use href="#egg"/></svg></div>
+  <div class="fl" style="top:74%;left:30%;--d:.28"><svg width="54" height="54" style="--t:5.5s"><use href="#cup"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <div class="eyebrow"><span data-l="fr">La famille avant tout!</span><span data-l="en">Family First Foremost</span></div>
+   <h1>Le Vieux <em>Château</em></h1>
+   <p class="lead"><span data-l="fr">Une tradition d'excellence depuis plus de 40 ans à Hawkesbury. Déjeuners jusqu'à 14 h, steaks, fruits de mer, pizza, et une salle de banquet pour vos fêtes.</span><span data-l="en">A Tradition of Excellence for over 40 Years in Hawkesbury. Breakfast until 2 p.m., steaks, seafood, pizza, and a banquet hall for your parties.</span></p>
+   <div class="cta">
+    <a class="btn btn-gold" href="tel:+16136329877"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span data-l="fr">Appeler 613-632-9877</span><span data-l="en">Call 613-632-9877</span></a>
+    <a class="btn btn-line" href="#menu"><span data-l="fr">Voir le menu</span><span data-l="en">See the menu</span></a>
+   </div>
+   <button class="rating-pill" data-avis><span class="st">★★★★</span> <span data-l="fr">3,8 sur Tripadvisor · 107 avis</span><span data-l="en">3.8 on Tripadvisor · 107 reviews</span></button>
+  </div>
+  <div class="crest" aria-hidden="true">
+   <svg width="360" height="360" viewBox="0 0 64 64"><circle cx="32" cy="34" r="30" fill="rgba(255,255,255,.06)" stroke="rgba(240,207,134,.5)" stroke-width=".6"/><use href="#logo" x="8" y="8" width="48" height="48"/></svg>
+  </div>
+ </div>
+</section>
+
+<section id="salles">
+ <div class="wrap">
+  <div class="kick reveal"><span data-l="fr">Trois salles, une famille</span><span data-l="en">Three rooms, one family</span></div>
+  <h2 class="reveal"><span data-l="fr">Un rendez-vous de famille depuis des générations</span><span data-l="en">A family tradition for generations</span></h2>
+  <p class="sub reveal"><span data-l="fr">Bien des gens de Hawkesbury se souviennent de repas en famille au Vieux Château avec leurs parents et grands-parents, et y viennent aujourd'hui avec leurs enfants et petits-enfants. Certains membres du personnel y travaillent depuis des décennies.</span><span data-l="en">Many Hawkesbury residents can still remember family meals at Le Vieux Château with their parents and grandparents, and now come back with their children and grandchildren. Some staff members have been here for decades.</span></p>
+  <div class="rooms">
+   <div class="room reveal"><svg width="44" height="44"><use href="#cup"/></svg><h3><span data-l="fr">La salle principale</span><span data-l="en">The Main Room</span></h3><p><span data-l="fr">Style diner, banquettes et grandes fenêtres : l'endroit où les habitués déjeunent chaque matin.</span><span data-l="en">Diner-style booths and plenty of windows: where the regulars have breakfast every morning.</span></p></div>
+   <div class="room reveal"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#7a1d2b" stroke-width="2"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0zM12 14v6M8 21h8"/></svg><h3><span data-l="fr">La salle à manger</span><span data-l="en">The Dining Room</span></h3><p><span data-l="fr">Nappes blanches et vue sur le bar à service complet, pour un souper d'affaires ou entre amis.</span><span data-l="en">White tablecloths and a view of the full-service bar, for business or pleasure dinners.</span></p></div>
+   <div class="room reveal"><svg width="44" height="44"><use href="#logo"/></svg><h3><span data-l="fr">La salle de banquet</span><span data-l="en">The Banquet Hall</span></h3><p><span data-l="fr">Location privée sur réservation pour vos fêtes, avec menus table d'hôte ou à la carte. Appelez-nous pour réserver.</span><span data-l="en">Available, through reservation, for private party rental, with table d'hôte or à la carte menus. Call us to book.</span></p></div>
+  </div>
+ </div>
+</section>
+
+<section class="menu-sec" id="menu">
+ <div class="wrap">
+  <div class="kick reveal"><span data-l="fr">Le menu complet</span><span data-l="en">The full menu</span></div>
+  <h2 class="reveal"><span data-l="fr">Du déjeuner au souper</span><span data-l="en">From breakfast to dinner</span></h2>
+  <div class="mtabs" role="tablist">
+   <button class="mtab" data-m="bk" aria-selected="true"><span data-l="fr">Déjeuner</span><span data-l="en">Breakfast</span></button>
+   <button class="mtab" data-m="dn" aria-selected="false"><span data-l="fr">Dîner et souper</span><span data-l="en">Lunch &amp; Dinner</span></button>
+  </div>
+  <p class="mnote" id="mnote"></p>
+  <div class="jump" id="jump"></div>
+  <div class="cats" id="cats"></div>
+  <p class="fine"><span data-l="fr">Les plats et les prix sont ceux des menus du restaurant; ils peuvent changer. Menu de livraison et questions : 613-632-9877.</span><span data-l="en">Dishes and prices are from the restaurant's menus and may change. Delivery menu and questions: 613-632-9877.</span></p>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="wrap">
+  <div class="kick reveal"><span data-l="fr">Ce que nos clients disent</span><span data-l="en">What our guests say</span></div>
+  <h2 class="reveal"><span data-l="fr">Des clients qui reviennent</span><span data-l="en">Guests who keep coming back</span></h2>
+  <div class="rev-head reveal">
+   <div class="score"><b>3,8</b><div><span class="st">★★★★</span><small><span data-l="fr">sur Tripadvisor · 107 avis</span><span data-l="en">on Tripadvisor · 107 reviews</span></small></div></div>
+   <button class="btn btn-wine" data-avis><span data-l="fr">Voir tous les avis (<span class="nAll"></span>)</span><span data-l="en">See all reviews (<span class="nAll"></span>)</span></button>
+  </div>
+  <div class="revs" id="revHome"></div>
+ </div>
+</section>
+
+<section id="infos" style="background:#fff7ea;border-top:1px solid var(--line)">
+ <div class="wrap">
+  <div class="kick reveal"><span data-l="fr">Venez nous voir</span><span data-l="en">Come and see us</span></div>
+  <h2 class="reveal"><span data-l="fr">Heures et contact</span><span data-l="en">Hours &amp; contact</span></h2>
+  <div class="info">
+   <div class="box reveal">
+    <h3><span data-l="fr">Heures d'ouverture</span><span data-l="en">Opening hours</span></h3>
+    <table class="hours">
+     <tr><td><span data-l="fr">Dimanche au jeudi</span><span data-l="en">Sunday to Thursday</span></td><td><span data-l="fr">8 h à 21 h 30</span><span data-l="en">8:00 AM – 9:30 PM</span></td></tr>
+     <tr><td><span data-l="fr">Vendredi et samedi</span><span data-l="en">Friday &amp; Saturday</span></td><td><span data-l="fr">8 h à 22 h</span><span data-l="en">8:00 AM – 10:00 PM</span></td></tr>
+     <tr><td><span data-l="fr">Déjeuner</span><span data-l="en">Breakfast</span></td><td><span data-l="fr">jusqu'à 14 h</span><span data-l="en">until 2:00 PM</span></td></tr>
+    </table>
+   </div>
+   <div class="box reveal">
+    <h3><span data-l="fr">Contact et réservations</span><span data-l="en">Contact &amp; reservations</span></h3>
+    <ul class="cl">
+     <li><b><span data-l="fr">Téléphone</span><span data-l="en">Phone</span></b><a href="tel:+16136329877">613-632-9877</a></li>
+     <li><b><span data-l="fr">Courriel</span><span data-l="en">Email</span></b><a href="mailto:info@levieuxchateau.ca">info@levieuxchateau.ca</a></li>
+     <li><b><span data-l="fr">Adresse</span><span data-l="en">Address</span></b>797 McGill St. (Hwy 34), Hawkesbury ON K6A 1R5<br><a href="https://www.google.com/maps/search/?api=1&amp;query=797+McGill+St+Hawkesbury+ON+K6A+1R5" target="_blank" rel="noopener"><span data-l="fr">Ouvrir dans Google Maps</span><span data-l="en">Open in Google Maps</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">© Le Vieux Château Restaurant · 797 McGill St., Hawkesbury · 613-632-9877</div></footer>
+<a class="callbar" href="tel:+16136329877"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span data-l="fr">Appeler 613-632-9877</span><span data-l="en">Call 613-632-9877</span></a>
+</div>
+
+<div id="avisPage">
+ <div class="ap-top"><div class="wrap">
+  <button class="btn btn-gold btn-sm" id="back">← <span data-l="fr">Retour au site</span><span data-l="en">Back to site</span></button>
+  <button class="lang" data-lang><span data-l="fr">EN</span><span data-l="en">FR</span></button>
+ </div></div>
+ <div class="ap-body"><div class="wrap">
+  <h2><span data-l="fr">Tous les avis</span><span data-l="en">All reviews</span></h2>
+  <div class="rev-head">
+   <div class="score"><b>3,8</b><div><span class="st">★★★★</span><small><span data-l="fr">sur Tripadvisor · 107 avis</span><span data-l="en">on Tripadvisor · 107 reviews</span></small></div></div>
+   <a class="btn btn-wine" href="https://www.tripadvisor.ca/Restaurant_Review-g181753-d766945-Reviews-Le_Vieux_Chateau_Restaurant-Hawkesbury_Ontario.html" target="_blank" rel="noopener"><span data-l="fr">Voir sur Tripadvisor</span><span data-l="en">See on Tripadvisor</span></a>
+  </div>
+  <p class="sub"><span data-l="fr">Avis publiés sur Tripadvisor, reproduits tels quels, dans leur langue d'origine.</span><span data-l="en">Reviews published on Tripadvisor, reproduced as written, in their original language.</span></p>
+  <div class="revs" id="revAll"></div>
+ </div></div>
+</div>
+
+<div id="intro" aria-hidden="true"><div class="g l"></div><div class="g r"></div><div class="lg"><svg width="120" height="120"><use href="#logo"/></svg><div>Le Vieux Château</div></div></div>
+
+<script>
+var MENUS={
+bk:{fr:"Déjeuner",en:"Breakfast",note:{fr:"Déjeuner servi jusqu'à 14 h tous les jours.",en:"Breakfast until 2:00 p.m every day."},cats:[
+{t:"Breakfast Specials / Spéciaux du Déjeuner",i:[
+["Oreo or Coffee Crisp Crepes","16.99","English cream, Nutella."],
+["New Very Berry Crepes","16.99","Mixed berries in 2 folded crêpes covered with blueberry & strawberry coulis."],
+["Banana Nutella Crepes / Crêpes banane Nutella","16.99","2 folded Crêpes covered with bananas, walnuts & Nutella."],
+["Substitute crêpes for French toast / Pain doré au lieu des crêpes","+1.00",""],
+["Choco Coco","16.99","2 Eggs & bacon (3), small potatoes with a crêpes…"],
+["New Dolce Vita Nouveau","16.99","3 Pancakes with english cream, Nutella, bananas with peanut butter on the side."],
+["Eggs Benedict / Oeufs Benedictine","16.99","2 poached eggs on top of an english muffin with ham & Swiss cheese"],
+["Breakfast Club / Le Club Déjeuner","16.99","Triple decker sandwich with plain omelet, bacon, tomatoes, cheese & lettuce."],
+["Breakfast Pizza / Pizza Déjeuner","16.99","6” pizza with Hollandaise sauce, scrambled eggs, bacon, sausage and ham"],
+["Breakfast Poutine / Poutine Déjeuner","16.99","Crispy diced breakfast potatoes topped with scrambled eggs, sliced breakfast sausages…"],
+["2 Eggs & Steak / 2 Oeufs et Steak","28.99","Sirloin (10 oz), baked beans, potatoes, toast & jam."],
+["Healthy Choice / Choix Santé","14.99","2 poached eggs with toast and jam, cottage cheese & fresh fruits"],
+["King's Breakfast","18.99","3 eggs & ham (1), bacon (2), sausage (2) with beans, potatoes…"],
+["2 eggs & London Steak / 2 œufs et steak de Londres","19.99",""],
+["Side of Fruits / Accompagnement de fruits","4.99",""],
+["Brunch Potatoes / Brunch de Patates","6.99","Potatoes covered with hollandaise sauce, cooked onions & 3 blend cheese."],
+["Replace breakfast potatoes with Brunch Potatoes","+3.99",""],
+["Daily Smoothie","5.99",""]]},
+{t:"3-Egg Omelets",n:"Served with potatoes, toast jam & coffee.",i:[
+["Plain Omelet / Omelette Nature","11.99",""],["Cheese Omelet / Omelette au Fromage","13.99",""],["Veggie or Mushroom Omelet / Omelette Végétarienne ou Champignons","13.99",""],["Western Omelet / Omelette Western","14.99",""],["Chef's Special Omelet / Omlette Spéciale du Chef","14.99","Spinach, mushroom and mozzarella"],["Each extra ingredient / Chaques ingrédient supplémentaire","1.49",""]]},
+{t:"Eggs / Oeufs",n:"Served with potatoes, toast, jam and coffee.",i:[
+["1 Egg / 1 Oeuf","8.99",""],["2 Eggs / 2 Oeufs","9.99",""],["1 Egg with Bacon or Sausage or Ham / 1 Oeuf et Bacon ou Saucisses ou Jambon","10.99",""],["2 Eggs with Bacon or sausage or Ham / 2 Oeufs et Bacon ou saucisses ou Jambon","11.99",""],["2 Eggs with Bacon, Sausage or Ham / 2 Oeufs et Bacon, Saucisses ou Jambon","14.99",""],["Meat Platter / Assiette de Viande","14.99",""]]},
+{t:"Pancakes & French Toast",i:[["French Toast / Pain Doré","11.99",""],["Plain Pancake / Crêpes Nature","11.99",""],["Extra Fruits / Fruits Supplémentaire","4.99",""]]},
+{t:"Sandwiches / Sandwichs",i:[["BLT Sandwich","7.99","Bacon, lettuce & tomates."],["Western Sandwich / Sandwich Western","8.99",""],["Bagel Platter / Assiette Bagel","12.99","Cottage cheese & fruit salad."],["Fried Egg Sandwich / Sandwich aux Oeufs Frits","8.99",""],["Fried Egg on Bagel / Oeufs Frits sur Bagel","8.99",""],["Extra Cheese / Fromage Supplémentaire","0.99",""],["Extra Bacon / Bacon Supplémentaire","0.99",""]]},
+{t:"Kids / Enfants",i:[["Grilled Cheese Sanwich / Sandwich au Fromage Grillé","5.99",""],["1 Egg with Bacon / 1 Oeuf avec Bacon","5.99",""],["French Toast / Pain Doré","5.99",""],["Chocolate Chip Pancake / Crêpes aux Pépites de Chocolat","5.99",""]]},
+{t:"Sides / Les à côtés",i:[["French Toast / Pain Doré","4.29",""],["Toast / Rôtie","2.59",""],["Bagel","2.99",""],["English Cream / Crème Anglaise","2.99",""],["Potatoes / Patates","4.99",""],["Beans / Fèves au lard","3.99",""],["Tomatoes / Tomates","2.59",""],["Cottage Cheese / Fromage Cottage","3.99",""],["Nutella","3.19",""],["Bacon (4)","4.99",""],["Ham / Jambon (2)","4.99",""],["Sausages / Saucisses (3)","4.99",""]]},
+{t:"Drinks / Breuvages",i:[["Milkshake / Lait Frappé (Chocolate, Caramel)","5.99",""],["Milkshake / Lait Frappé (Oreo, Coffee Crisp)","6.99",""],["Espresso / Expresso","3.29",""],["Cappuccino","3.99",""]]}
+]},
+dn:{fr:"Dîner et souper",en:"Lunch & Dinner",cats:[
+{t:"Appetizers / Entrées",i:[["Soup of the Day","4.99",""],["Onion Soup au Gratin","8.49",""],["Chef Salad","8.99",""],["Caesar Salad","8.99",""],["Greek Salad","9.99",""],["Garlic Parmesan Breadsticks","8.99",""],["Garlic Bread","7.49",""],["Garlic Bread w/Cheese","9.49",""],["Bruschetta (2)","9.50",""],["Coquilles St-Jacques","12.50",""],["Escargots au Gratin","9.99",""],["Shrimp & Scallops au Gratin","14.99",""],["Stuffed Mushrooms","8.49",""],["Zucchini Sticks & Tzatziki","10.99",""],["Mozzarella Cheese Sticks & Salsa","12.99",""],["Chicken Wings (6)","9.99","Tossed in your choice of sauce"],["Spinach Artichoke Dip","15.00",""],["Hot Honey Brussel Sprouts","11.00",""],["Breaded Pickle Chips","11.50","Pickles with a crusted, piquant jalapeno breading"],["Nachos","sm 16.00 · lg 19.00","Add grilled chicken or ground beef 7.99"],["Calamari","18.99",""]]},
+{t:"Steaks",n:"Served with soup, greek potatoes, mushrooms, rice, vegetables, steak sauce",i:[["Chateaubriand (20oz) — for 2 / pour 2","99.99","Filet Mignon served with Greek potatoes, vegetables, sautéed mushrooms, 2 salads"],["Surf ‘n Turf (8oz)","48.99","Filet Mignon, 5 Butterfly Shrimp"],["Black Pepper Steak (10oz)","37.99","New York Steak sautéed with a creamy cognac black pepper sauce"],["Filet Mignon (8oz)","36.99",""],["Filet Mignon Brochette (9oz)","36.99","Green peppers, onions, mushrooms"],["Rib Steak (16oz)","49.99",""],["New York Sirloin Steak (10oz)","32.99",""],["“London Steak”","29.99","Strips of char-broiled beef topped with sautéed mushrooms"],["Filet Mignon Château Delight","31.99","“London Steak” with mushrooms, onions, green peppers topped with swiss & mozzarella cheese"],["Bavette Steak (6oz)","26.99","Served with Fries"],["Hamburger Steak","21.99","Ground Sirloin topped with fried onions and gravy"],["add Blue Cheese on Steak","4.00",""]]},
+{t:"Seafood / Fruits de Mer",i:[["Coquille St-Jacques","25.99","Rich creamy crab flavoured sauce filled with shrimp, scallops, served with Greek potatoes, rice & vegetables"],["(8) Butterfly Shrimp Platter","31.99","Served with garlic butter, lemon, Greek potatoes, rice & vegetables"],["Breaded Fillet of Sole","18.99","Greek potatoes, rice, vegetables, lemon & tartar sauce"],["5 Butterfly Shrimp with Chicken Fillet","33.99",""],["Atlantic Salmon Fillet","26.99","Greek potatoes, rice, vegetables lemon & tartar sauce"],["Fillet of Doré Amandine","26.49","Baked with garlic butter, herbs, spices with roasted almonds."],["Frog Legs Platter","28.49","Served with greek potatoes, rice, vegetables and garlic butter"],["Fish n' Chips","21.99","Lemon, tartar sauce, coleslaw, dill pickle & fries"],["Fisherman's Platter (For 1)","45.99","A grilled lobster tail, a shrimp skewer, two butterfly shrimp, and shrimp & scallops au gratin"],["Fisherman's Platter (For 2)","74.99","Two grilled lobster tails, two shrimp skewers, four butterfly shrimp and shrimp & scallops au gratin"],["Upgrade your potato to “loaded”","4.99",""],["Instead of soup with salad","add 3.00",""]]},
+{t:"Italian Specialties / Spécialités Italiennes",i:[["Tortellini Sauce Rosée","21.99","Cream, tomato sauce & parmesan cheese"],["Penne Sauce Rosée au Gratin","19.99",""],["Breaded Chicken Parmigiana","26.99","Tender chicken with tomato sauce, served with spaghetti & meat sauce"],["Veal Parmigiana","26.99","Breaded veal, parmesan & mozzarella cheese served with spaghetti"],["Spinach & Ricotta Cannelloni au Gratin","22.99","Stuffed with 3 cheeses"],["Lasagna au Gratin","21.99","Individually baked in meat sauce with mushrooms & pepperoni"],["Spaghetti Vesuvio","22.99","Meat sauce, pepperoni, green peppers, mushrooms, onions and wine"],["Spaghetti Bolognaise","15.99","with Meatball 19.99"],["Fettuccine with Grilled Chicken","26.99","Butter, parmesan cheese & cream"],["Seafood Fettuccine","31.99","Perfect for seafood lovers! Scallops, cocktail style shrimps, mussels and crab flavours"],["Fettuccine Alfredo","17.99","Butter, parmesan cheese & cream"],["Fettuccine Carbonara","22.99","Cream, butter, bacon, parmesan cheese"]]},
+{t:"Pizza (10\" / 12\")",i:[["Deluxe","20.99 / 26.99","All dressed with bacon, olives & onions"],["Vieux Château","20.99 / 26.99","All dressed with smoked meat"],["Meat Lovers","21.99 / 27.99","Pepperoni, ground beef, Italian sausage & bacon"],["Grilled Chicken","21.99 / 27.99","Mushrooms, ontions & BBQ sauce"],["All Dressed","18.99 / 23.99","Pepperoni, mushrooms & green peppers"],["Vegetarian","18.99 / 23.99","Mushrooms, green peppers, green olives, diced tomatoes & onions"],["Pepperoni","17.99 / 22.99",""],["Pepperoni (Crispy/Croustillant)","Small 19.79 · Medium 24.79",""],["Extra Cheese or Meat","3.59 / 4.79","Ham, bacon, pepperoni, smoked meat, italian sausages, chicken, feta, mozzarella & cheddar cheese"],["Extra Veggies","2.49 / 2.99","Tomatoes, green & red peppers, onions, mushrooms, pineapple, olives & black olives"],["Extra Stuffed Crust","3.49 / 4.49",""],["Pizzaghetti 6\"","20.99","All dressed or pepperoni with spaghetti and meat sauce"],["6\" Pizza - Caesar Salad or with French fries","20.99","All dressed or pepperoni"]]},
+{t:"Fajitas",n:"Sautéed peppers and onions. Served with 6 tortillas, guacamole, salsa, sour cream, chopped lettuce",i:[["Vegetarian","22.99",""],["Chicken","29.99",""]]},
+{t:"Brochettes",i:[["Trio Brochette","27.99","1 pork souvlaki, 1 marinated chicken brochette & 1 shrimp skewer"],["Large Chicken Brochette","24.99","Green peppers, onions & mushrooms"],["Shish-Kebab","24.99","Marinated pork Tenderloin brochette"],["Souvlaki Platter (Pork or Chicken)","22.99","2 sticks served with Greek potatoes, Greek Salad & Tzatziki"]]},
+{t:"Ribs & BBQ Chicken / Côtes Levées et Poulet BBQ",n:"Served with coleslaw & french fries",i:[["Baby Back Ribs (1/2 lb)","18.99",""],["Baby Back Ribs (1 lb)","28.99",""],["1/2 lb of Baby Back Ribs & 1/4 BBQ Chicken Breast or Leg","30.99",""],["1/2 lb of Baby Back Ribs & 6 Chicken Wings","29.99",""],["BBQ Chicken Breast","16.99",""],["BBQ Chicken Leg","14.99",""],["Half BBQ Chicken","20.99",""]]},
+{t:"Chicken / Poulet",i:[["Chicken Del Rio","27.99","Chicken fillet coated in honey mustard sauce smothered in a three cheese blend"],["Grilled Chicken Filet","22.99",""],["(8) Chicken Wing Platter","23.99","Served with coleslaw & choice of potatoes"],["Chicken Finger Platter","20.99","Served with coleslaw & choice of potatoes"]]},
+{t:"Chinese / Chinois",i:[["Egg Roll","2.99","(2) Egg Rolls 4.99"],["Combo for 1","26.99","Egg roll, dry garlic spareribs, pineapple chicken & fried rice"],["Combo for 2","37.99","Egg roll, dry garlic spareribs, pineapple chicken & fried rice"],["Chicken Fried Rice","19.99",""],["Beef Fried Rice","20.99",""],["Chicken Oriental","20.99","Chicken fried rice with bacon & white wine"],["Chinese Chicken Spaghetti","18.99",""],["Chinese Beef Spaghetti","19.99",""]]},
+{t:"Salads",i:[["Main Course Caesar Salad","15.99",""],["Main Course Chef Salad","15.99","Iceberg lettuce, carrots, tomatoes, red cabbage, shallots and cucumbers"],["Grilled Chicken on Caesar or Chef Salad","21.99",""],["Château Special Salad","22.99","Chef salad, peppers hardboiled egg, sliced ham, cheese, sliced chicken, potato salad, coleslaw & house dressing"],["Four Seasons Salad","20.99",""],["Shrimp Caesar","21.99","2 shrimp skewers marinated in a teriyaki sauce on Caesar salad"],["Greek Salad","19.99","Tomatoes, cucumbers, red & green peppers, red onions, black olives, feta cheese, oregano, olive oil & red vinegar"],["Country Style Greek Salad","21.99","Greek salad without lettuce served with pita bread & tzatziki"],["Grilled Salmon Fillet on Chef or Caesar Salad","26.99",""]]},
+{t:"Burgers & Sandwiches",i:[["Hamburger","16.99","Served with french fries & coleslaw"],["Cheeseburger","17.99","Served with french fries & coleslaw"],["Chicken Burger","17.99","Served with french fries & coleslaw"],["Bacon Cheeseburger","18.99","Served with french fries & coleslaw"],["Château Burger","20.99","A juicy beef patty topped with crispy bacon, golden onion rings, Swiss cheese, fresh lettuce, tomatoes, relish, mustard and creamy cheese sauce"],["Juicy Classic Burger","20.99","Creamy mayo, crisp lettuce, savory caramelized onions, tender sautéed mushrooms, and melted Swiss cheese"],["Smoked Meat","21.99","French fries, coleslaw & dill pickle"],["Pork or Chicken Pita","19.99","Served with Greek salad & French fries"],["Crispy Chicken Caesar Wrap","16.99","Served with french fries & coleslaw"],["Chicken Cranberry Wrap","16.99","Served with french fries & coleslaw"],["Club Sandwich","20.99","Bacon, tomatoes, lettuce & chicken. Served with fries, coleslaw and dill pickle"]]},
+{t:"7\" Subs / Sous-Marins 7\"",n:"Topped with onions, mushrooms, lettuce, & tomatoes. Served with French fries",i:[["Steak & Pepperoni","18.99",""],["Pepperoni","17.99",""],["Chicken","17.99",""],["Steak","19.99",""]]},
+{t:"Side Orders / Les à Côtés",i:[["Potatoes","5.99","Fries, mashed, baked or Greek"],["Poutine","sm 9.99 · lg 12.99",""],["Chicken Poutine","sm 12.99 · lg 15.99",""],["Italian Poutine","sm 11.99 · lg 14.99",""],["Onion Rings","12.99",""]]},
+{t:"Kid's Menu / Menu Enfant",i:[["Chicken Fingers & fries","8.99",""],["Grilled Cheese Sandwich & fries","5.99",""],["Hamburger & fries","10.99",""],["Spaghetti with Meat Sauce","5.99",""],["6\" Pizza (Cheese or Pepperoni)","5.99",""]]},
+{t:"Beverages / Breuvages",i:[["Soft Drinks: Fountain / Canned / Bottled","2.89 / 2.99 / 3.39",""],["Assorted Juices","2.69","Cranberry, pineapple, apple, orange"],["Water or Perrier","3.99",""],["Milk","3.69",""],["Coffee or Tea","2.75",""],["Herbal Tea","2.99",""],["Milkshake (Chocolate, caramel, vanilla)","5.99",""],["Milkshake (Coffee crisp, oreo)","6.99",""]]}
+]}};
+var TA="https://www.tripadvisor.ca/Restaurant_Review-g181753-d766945-Reviews-Le_Vieux_Chateau_Restaurant-Hawkesbury_Ontario.html";
+var REVIEWS=[
+[5,"Endrai D","avr. 2026|Apr 2026","Nous ne savions pas à quoi nous attendre. La sympathique serveuse « Julie » nous suggère les souvlakis. Quelle belle surprise! Tout simplement délicieux! Merci Julie",1],
+[5,"Christina E","nov. 2024|Nov 2024","We were a huge group and the service was outstanding. Our meals were delicious andi must say very generous portions. This restaurant exceeded our expectations. We had a wide range of ages and everyone was very satisfied.",1],
+[5,"pger_11","févr. 2020|Feb 2020","Food is amazing, and the portions are very generous. The french onion soup is a 'must'--you won't be disappointed. We had a birthday gathering with friends and family and the restaurant was very accomodating. The waitress was gracious and attentive to all our needs and requests. On a previous occasion we've had pizza here which is the best! If you're ever passing through Hawkesbury Ont, definately stop for a meal.",1],
+[5,"Johanne P","janv. 2023|Jan 2023","We wanted to have a breakfast outing, food was delicious, hubby said it was the best sausages EVER. But other than that we had a mishap when we arrived- a pretty heavy snowstorm and while transferring my husband from the car to the wheelchair he slipped to the ground and there was no way I could lift my husband on my own. Well Stamos - owner's son I believe- came to our rescue. Lifted him into his chair, then brought him inside through the thick snow and brought him back after our meal. Thank you Stamos! You went above and beyond! Now that's service.",1],
+[5,"verne G","avr. 2016|Apr 2016","I have been going to this Restaurant for 35 years and am completely satisfied with the friendly service and with the menue. The food is excellent and the service is without a doubt the best. The waiters and waitresses are friendly and aim to please. I highly recommend this restaraunt for any meal you wish to partake in. I also recommend it for Supper meetings and group gatherings.",1],
+[5,"Pearl & Granger","oct. 2017|Oct 2017","Stopped in for a late breakfast and was quite hungry. Ordered the French toast breakfast special which came with two strips of bacon, two sausages, two slices of ham and baked beans - what a feast! The food was absolutely delicious, and the service was fast and friendly. I definitely recommend Le Vieux Chateau Restaurant for breakfast.",1],
+[5,"katie h","mai 2015|May 2015","This has got to be the best place to eat in Hawkesbury. There are a variety of options, and the service is fast and great. I would recommend the seafood fettuccini! The owner and his son make you feel right at home. Definitely a must go if you're in the area. 5*",1],
+[5,"Marmar M","janv. 2023|Jan 2023","Perfect family time we enjoyed everything food and atmosphere, price was reasonable, we drove from Montreal but it really worth 👍",1],
+[5,"Tom P","févr. 2018|Feb 2018","I went there and had their Rib Steak. Came with mushrooms, potatoes and veggies. Deliciously cooked steak. Wine list is great and desserts are awesome.",1],
+[5,"nellaurie","mars 2018|Mar 2018","The best in hawkesbury ! Pizza,surf and turf pizza ghetti carbonara out of this world . a place to go for good food thx vieux chateaux",1],
+[5,"Tatsiana R","août 2021|Aug 2021","Très bon place! Tranquille et chaleureux Nourriture est magnifique... Tres bonne service . Grand merci a tous!",1],
+[5,"Sylvain L","mars 2016|Mar 2016","Excellent service, excellent food and very good prices. This was a first time visit for whole group. Everyone was extremely satisfied.",1],
+[5,"diverbob741","juil. 2019|Jul 2019","breakfast was excellent ,had spanish omelette tasted great with baked home fries other half had pizza(brunch time)",0],
+[5,"Peter R","déc. 2017|Dec 2017","Nicely located on a main street in the cozy town of Hawkesbury I was invited to experience the good food and also the delightful service of one special lady who in fact invited me there. Very diversified from sea food to a good steak and even buffets on my return. good parking for plenty of people.",0],
+[5,"DeanPavlakos","sept. 2017|Sep 2017","I went there and had a steak with veggies and chocolate cake for dessert. Loved the food and the atmosphere. Great staff!",0],
+[5,"Christopher S","mai 2016|May 2016","Spectacular foods and service highly recommend a stop here for superior services fast efficient friendly staff",0],
+[5,"Gianni P","mars 2016|Mar 2016","Great food .. Great ambiance.. Great prices.. High quality food.. Great for familly, party's or romantic supper.. A must for everyone..",0],
+[4,"SimpleJo","nov. 2025|Nov 2025","Un choix qui ne nous aa pas déçu. Le menu est varié, le service était ultra rapide pour un dimanche après-midi. L'ambiance est bonne, les portions généreuses, et c'est toujours un endroit plaisant.",0],
+[4,"Andre J L","oct. 2018|Oct 2018","We were there for brunch (more than once) and every time we were quite satisfied. The food is quite tasty. In the rush time, the waiting period for your meal might be a bit longer than you would like! (15 minutes +/-). Still, the food quality is worth the wait!",0],
+[4,"Shane H","juil. 2018|Jul 2018","This place has enough room and friendly staff for all. It tends to get busy at times. We normally order the all dressed pizza with spaghetti with poutine (family promo No. 5) and have for the most part not had any complaints. Its a great meal without feeling like you've been raked over the coals. If you dine in expect a good meal.",0],
+[4,"Tony S","oct. 2017|Oct 2017","Have had several meals here. Each time the service is prompt and efficient. I love the fish and chips.",0],
+[4,"Jack H","déc. 2016|Dec 2016","This Restaurant offer the largest menu of meals anywhere. The food is great and so is the service . They also have a large area you can reserve for parties etc. There is a reason they are always packed.",0]
+];
+
+(function(){
+ var H=document.documentElement,rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+ function L(fr,en){return '<span data-l="fr">'+fr+'</span><span data-l="en">'+en+'</span>'}
+ var intro=document.getElementById('intro'),seen=false;
+ try{seen=sessionStorage.getItem('vcIntro')==='1'}catch(e){}
+ function bye(){if(!intro)return;var n=intro;intro=null;n.classList.add('bye');setTimeout(function(){n.parentNode&&n.parentNode.removeChild(n)},450)}
+ if(seen||rm){intro.parentNode.removeChild(intro);intro=null}else{try{sessionStorage.setItem('vcIntro','1')}catch(e){}
+  requestAnimationFrame(function(){requestAnimationFrame(function(){intro&&intro.classList.add('open')})});intro.addEventListener('click',bye);setTimeout(bye,2300)}
+ try{if(localStorage.getItem('vcLang')==='en')H.classList.add('en')}catch(e){}
+ function syncLang(){H.lang=H.classList.contains('en')?'en-CA':'fr-CA'}syncLang();
+ document.querySelectorAll('[data-lang]').forEach(function(b){b.addEventListener('click',function(){H.classList.toggle('en');syncLang();try{localStorage.setItem('vcLang',H.classList.contains('en')?'en':'fr')}catch(e){}})});
+ var b=document.getElementById('burger'),m=document.getElementById('mmenu');
+ b.addEventListener('click',function(){m.classList.toggle('open')});
+ m.addEventListener('click',function(e){if(e.target.closest('a,button'))m.classList.remove('open')});
+ // menu
+ var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08}):null;
+ function watch(el){if(io&&!rm)io.observe(el);else el.classList.add('in')}
+ var cats=document.getElementById('cats'),jump=document.getElementById('jump'),note=document.getElementById('mnote');
+ function render(k){var M=MENUS[k],h='',j='';
+  note.innerHTML=M.note?L(M.note.fr,M.note.en):'';note.style.display=M.note?'':'none';
+  M.cats.forEach(function(c,ci){var id='c-'+k+ci;j+='<a href="#'+id+'">'+esc(c.t)+'</a>';
+   h+='<div class="cat" id="'+id+'"><h3>'+esc(c.t)+'</h3>'+(c.n?'<div class="cn">'+esc(c.n)+'</div>':'');
+   c.i.forEach(function(it,ii){h+='<div class="it" style="transition-delay:'+Math.min(ii*45,600)+'ms"><div class="row"><b>'+esc(it[0])+'</b><span class="dots"></span><span class="pr">'+esc(it[1])+'</span></div>'+(it[2]?'<small>'+esc(it[2])+'</small>':'')+'</div>'});
+   h+='</div>'});
+  cats.innerHTML=h;jump.innerHTML=j;cats.querySelectorAll('.cat').forEach(watch)}
+ document.querySelectorAll('.mtab').forEach(function(t){t.addEventListener('click',function(){document.querySelectorAll('.mtab').forEach(function(x){x.setAttribute('aria-selected','false')});t.setAttribute('aria-selected','true');render(t.dataset.m)})});
+ render('bk');
+ // reviews
+ function card(r){var d=r[2].split('|'),s='';for(var i=0;i<5;i++)s+=i<r[0]?'★':'☆';
+  return '<article class="rv"><div class="st" aria-label="'+r[0]+'/5">'+s+'</div><q>'+esc(r[3])+'</q><div class="who"><b>'+esc(r[1])+'</b> · Tripadvisor · '+L(d[0],d[1])+'</div></article>'}
+ document.getElementById('revHome').innerHTML=REVIEWS.filter(function(r){return r[4]}).slice(0,12).map(card).join('');
+ document.getElementById('revAll').innerHTML=REVIEWS.map(card).join('');
+ document.querySelectorAll('.nAll').forEach(function(x){x.textContent=REVIEWS.length});
+ function openAvis(){H.classList.add('showAvis');window.scrollTo({top:0,behavior:'instant'})}
+ function closeAvis(){H.classList.remove('showAvis');requestAnimationFrame(function(){window.scrollTo({top:document.getElementById('avis').offsetTop-90,behavior:'instant'})})}
+ document.querySelectorAll('[data-avis]').forEach(function(x){x.addEventListener('click',openAvis)});
+ document.querySelectorAll('.links a[href="#avis"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();openAvis()})});
+ document.getElementById('back').addEventListener('click',closeAvis);
+ document.querySelectorAll('.reveal').forEach(watch);
+ var hero=document.getElementById('accueil'),tk=false;
+ if(!rm)addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){hero.style.setProperty('--py',Math.min(scrollY,900)+'px');tk=false})},{passive:true});
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
