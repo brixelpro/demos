@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Salon Bellimage Coiffure | Salon de coiffure à Bromont</title>
+<meta name="description" content="Salon Bellimage Coiffure à Bromont : coupe pour elle, pour lui et enfant, coloration, mèches et balayage, traitements capillaires, mise en plis et coiffure d'événements. 450-534-4848.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Salon Bellimage Coiffure","telephone":"+1-450-534-4848","email":"info@bellimagecoiffure.com","address":{"@type":"PostalAddress","streetAddress":"54, boul. de Bromont","addressLocality":"Bromont","addressRegion":"QC","postalCode":"J2L 2K3","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday"],"opens":"09:00","closes":"17:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"15:00"}],"founder":{"@type":"Person","name":"Laurence Turin"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe pour elle, pour lui et enfant"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coloration"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mèches et balayage"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Traitement et massage capillaire"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Permanente"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mise en plis et coiffure d'événements"}}]}
+</script>
+<style>
+:root{--plum:#3b1f2b;--plum2:#5a2f42;--rose:#f6e7e3;--blush:#e9c4bb;--gold:#c79a5b;--gold2:#e2bf86;--ink:#2a1820;--muted:#6f5560;--cream:#fffaf7;--bar:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Jost,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px;padding-top:var(--bar)}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+/* nav */
+.nav{position:fixed;top:var(--bar);left:0;right:0;z-index:50;background:rgba(255,250,247,.96);border-bottom:1px solid rgba(59,31,43,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:40px;height:40px;flex:none}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:1.45rem;font-weight:600;color:var(--plum);letter-spacing:.02em;white-space:nowrap}
+.brand small{display:block;font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-top:-4px}
+.links{display:none;gap:28px;align-items:center}
+.links a{text-decoration:none;font-size:.95rem;color:var(--plum)}
+.links a.cta{background:var(--plum);color:#fff;padding:10px 20px;border-radius:40px}
+.burger{width:44px;height:44px;border:0;background:none;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--plum);box-shadow:0 7px 0 var(--plum),0 -7px 0 var(--plum)}
+.drawer{position:fixed;top:calc(var(--bar) + 64px);left:0;right:0;z-index:49;background:var(--cream);padding:8px 20px 20px;border-bottom:1px solid rgba(59,31,43,.1);transform:translateY(-120%);transition:transform .35s ease;visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer a{display:block;padding:14px 0;border-bottom:1px solid rgba(59,31,43,.08);text-decoration:none;font-size:1.1rem;color:var(--plum)}
+/* hero */
+.hero{position:relative;padding:118px 0 70px;background:radial-gradient(120% 80% at 80% 10%,#f9dcd3 0,rgba(249,220,211,0) 60%),linear-gradient(180deg,var(--rose),var(--cream));overflow:hidden}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.float svg{position:absolute;opacity:.55}
+.f-a{animation:drift 14s ease-in-out infinite}
+.f-b{animation:drift2 18s ease-in-out infinite}
+.f-c{animation:spin 30s linear infinite}
+@keyframes drift{0%,100%{transform:translate3d(0,0,0) rotate(-8deg)}50%{transform:translate3d(10px,-18px,0) rotate(6deg)}}
+@keyframes drift2{0%,100%{transform:translate3d(0,0,0) rotate(10deg)}50%{transform:translate3d(-14px,14px,0) rotate(-6deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.layer{position:absolute;inset:0;transform:translate3d(0,calc(var(--p,0) * 1px),0)}
+.layer.deep{transform:translate3d(0,calc(var(--p,0) * .4px),0)}
+.layer.deep svg{filter:blur(1.5px);opacity:.35}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:40px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--plum2)}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(2.6rem,9vw,5.2rem);color:var(--plum);margin:14px 0 16px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p.lead{font-size:1.12rem;color:var(--muted);max-width:34ch}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:40px;text-decoration:none;font-weight:500;font-size:1rem;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn.main{background:var(--plum);color:#fff}
+.btn.ghost{border:1.5px solid var(--plum);color:var(--plum)}
+.btn svg{width:18px;height:18px}
+.card-hero{position:relative;justify-self:center;width:min(100%,420px);aspect-ratio:4/5;border-radius:220px 220px 28px 28px;background:linear-gradient(160deg,var(--plum2),var(--plum));overflow:hidden;box-shadow:0 30px 60px -30px rgba(59,31,43,.6)}
+.card-hero .mono{position:absolute;inset:0;display:grid;place-items:center}
+.card-hero .mono svg{width:62%}
+.card-hero .tag{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(255,250,247,.95);border-radius:18px;padding:14px 16px;font-size:.92rem;color:var(--plum)}
+.card-hero .tag b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.25rem}
+.strand{position:absolute;inset:0}
+/* sections */
+section{padding:80px 0;position:relative}
+.sec-title{text-align:center;max-width:640px;margin:0 auto 46px}
+.sec-title h2{font-size:clamp(2.1rem,6vw,3.3rem);color:var(--plum);margin-top:10px}
+.sec-title p{color:var(--muted);margin-top:10px}
+.services{display:grid;gap:16px}
+.svc{position:relative;background:#fff;border-radius:22px;padding:24px 22px 24px 76px;border:1px solid rgba(59,31,43,.07);overflow:hidden;min-width:0;opacity:0;transform:translate3d(-40px,0,0);transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .8s}
+.svc.in{opacity:1;transform:none}
+.svc:after{content:"";position:absolute;left:0;top:0;bottom:0;width:100%;background:linear-gradient(90deg,var(--blush),rgba(233,196,187,0));transform-origin:left;transform:scaleX(0);opacity:.55;transition:transform 1s cubic-bezier(.2,.8,.2,1) .15s, opacity 1.2s ease 1s;pointer-events:none}
+.svc.in:after{transform:scaleX(1);opacity:0}
+.svc .ic{position:absolute;left:20px;top:22px;width:40px;height:40px;border-radius:50%;background:var(--rose);display:grid;place-items:center}
+.svc .ic svg{width:22px;height:22px}
+.svc h3{font-size:1.5rem;color:var(--plum)}
+.svc p{color:var(--muted);font-size:.98rem;margin-top:4px}
+.about{background:var(--plum);color:#f8ece8}
+.about .wrap{display:grid;gap:36px;align-items:center}
+.about h2{font-size:clamp(2.1rem,6vw,3.2rem);color:#fff}
+.about h2 em{color:var(--gold2)}
+.about p{color:#e9d6d1;margin-top:14px;max-width:52ch}
+.quote{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.25;color:var(--gold2);border-left:2px solid var(--gold);padding-left:20px}
+.quote small{display:block;font-family:Jost,sans-serif;font-style:normal;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:#d9bfb8;margin-top:14px}
+.brands{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.brands span{padding:12px 22px;border:1px solid rgba(59,31,43,.18);border-radius:40px;font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--plum);background:#fff}
+.note{text-align:center;color:var(--muted);margin-top:22px}
+.infos{display:grid;gap:18px}
+.box{background:#fff;border-radius:24px;padding:28px 24px;border:1px solid rgba(59,31,43,.07);min-width:0}
+.box h3{font-size:1.7rem;color:var(--plum);margin-bottom:14px}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed rgba(59,31,43,.15)}
+.hours li:last-child{border:0}
+.hours li span:last-child{font-weight:500;color:var(--plum);text-align:right}
+.hours li.off span:last-child{color:var(--muted);font-weight:400}
+.box p{color:var(--muted);margin-bottom:10px;overflow-wrap:anywhere}
+.box a.lnk{color:var(--plum);font-weight:500}
+.contact{text-align:center;background:linear-gradient(180deg,var(--cream),var(--rose))}
+.contact h2{font-size:clamp(2.2rem,7vw,3.6rem);color:var(--plum)}
+.contact p{color:var(--muted);margin:12px auto 0;max-width:46ch}
+.contact .btns{justify-content:center}
+footer{background:var(--plum);color:#d9bfb8;text-align:center;padding:28px 20px 100px;font-size:.88rem}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:10px;padding:15px;border-radius:40px;background:var(--plum);color:#fff;text-decoration:none;font-weight:500;box-shadow:0 10px 30px -10px rgba(59,31,43,.7)}
+.callbar svg{width:20px;height:20px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--plum);display:grid;place-items:center;transition:opacity .5s ease}
+#intro.out{opacity:0}
+#intro svg{width:min(70vw,300px)}
+#intro .draw{stroke-dasharray:400;stroke-dashoffset:400;animation:dr 1.1s ease forwards}
+#intro .d2{animation-delay:.35s}
+#intro .word{opacity:0;transform:translateY(10px);animation:up .6s ease .9s forwards}
+#intro .snip{transform-origin:150px 40px;animation:snip .5s ease 1.2s 2}
+@keyframes dr{to{stroke-dashoffset:0}}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes snip{50%{transform:rotate(-14deg)}}
+@media (max-width:519px){:root{--bar:48px}}
+@media (max-width:1023px){.float .sc{top:auto!important;bottom:44%;right:3%!important;opacity:.35}}
+@media (min-width:760px){
+ .services{grid-template-columns:1fr 1fr}
+ .infos{grid-template-columns:1fr 1fr}
+}
+@media (min-width:1024px){
+ body{font-size:18px}
+ .links{display:flex}.burger,.drawer{display:none}
+ .hero{padding:150px 0 100px}
+ .hero .wrap{grid-template-columns:1.15fr .85fr;gap:60px}
+ .services{grid-template-columns:repeat(3,1fr);gap:22px}
+ .about .wrap{grid-template-columns:1fr 1fr;gap:70px}
+ .infos{grid-template-columns:1.1fr 1fr 1fr}
+ .callbar{display:none}
+ footer{padding-bottom:28px}
+}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.svc{opacity:1;transform:none}.svc:after{display:none}#intro{display:none}}
+</style>
+
+<style id="avis-css">
+#avis{scroll-margin-top:100px;padding:72px 0;background:#f6e7e3}
+#avis .av-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:28px}
+#avis h2{margin:6px 0 0}
+.av-note{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;background:#fffaf7;border:1px solid #e9c4bb;border-radius:18px;padding:10px 18px;font-weight:600;color:#2a1820}
+.av-note b{font-size:1.5rem;color:#3b1f2b}
+.av-note .st{color:#f2b01e;letter-spacing:2px}
+.av-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:720px){.av-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.av-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.av-card{min-width:0;background:#fffaf7;border:1px solid #e9c4bb;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:12px;color:#2a1820}
+.av-card q{quotes:"« " " »";font-size:1.02rem;line-height:1.55;overflow-wrap:anywhere}
+.av-card .who{margin-top:auto;font-size:.9rem;color:#6f5560}
+.av-card .who strong{color:#2a1820}
+.av-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.av-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font:inherit;font-weight:600;cursor:pointer;border:0;background:#3b1f2b;color:#fff;text-decoration:none}
+.av-btn.ghost{background:transparent;border:1px solid #3b1f2b;color:#2a1820}
+#avis-page{display:none;position:relative;z-index:60;background:#f6e7e3;min-height:100vh;padding:calc(var(--avbar,32px) + 26px) 0 110px}
+body.av-open #avis-page{display:block}
+body.av-open .av-hide{display:none!important}
+#avis-page .av-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin-bottom:26px}
+#avis-page h1{font-size:clamp(1.9rem,6vw,2.8rem);margin:14px 0 10px;color:#3b1f2b}
+#avis-page .av-src{color:#6f5560;font-size:.92rem;margin:0 0 22px}
+@media(max-width:519px){#avis-page{--avbar:48px}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Salon Bellimage Coiffure — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+<svg viewBox="0 0 300 200" fill="none">
+ <g class="snip">
+  <circle class="draw" cx="128" cy="58" r="13" stroke="#e2bf86" stroke-width="3"/>
+  <circle class="draw d2" cx="172" cy="58" r="13" stroke="#e2bf86" stroke-width="3"/>
+  <path class="draw" d="M137 48 L168 14" stroke="#e2bf86" stroke-width="3" stroke-linecap="round"/>
+  <path class="draw d2" d="M163 48 L132 14" stroke="#e2bf86" stroke-width="3" stroke-linecap="round"/>
+ </g>
+ <g class="word">
+  <text x="150" y="130" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-style="italic" font-size="50" fill="#fff">Bellimage</text>
+  <text x="150" y="160" text-anchor="middle" font-family="Jost,sans-serif" font-size="13" letter-spacing="7" fill="#e2bf86">COIFFURE · BROMONT</text>
+ </g>
+</svg>
+</div>
+
+<header class="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" aria-label="Salon Bellimage Coiffure, accueil">
+   <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#3b1f2b"/><text x="20" y="27" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-style="italic" font-size="22" fill="#e2bf86">B</text><path d="M11 30c5-3 13-3 18 0" stroke="#e2bf86" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+   <span><b>Bellimage</b><small>Coiffure</small></span>
+  </a>
+  <nav class="links" aria-label="Navigation principale">
+   <a href="#services">Services</a><a href="#salon">Le salon</a><a href="#produits">Produits</a><a href="#heures">Heures</a><a href="#avis" data-avis-open>Avis</a><a class="cta" href="tel:+14505344848">450-534-4848</a>
+  </nav>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+ </div>
+</header>
+<div class="drawer" id="drawer">
+ <a href="#services">Services</a><a href="#salon">Le salon</a><a href="#produits">Produits</a><a href="#heures">Heures et adresse</a><a href="#avis" data-avis-open>Avis</a><a href="tel:+14505344848">Appeler : 450-534-4848</a>
+</div>
+
+<main class="av-hide">
+<section class="hero" id="accueil">
+ <div class="float" aria-hidden="true">
+  <div class="layer deep">
+   <svg class="f-b" style="left:-20px;top:22%;width:120px" viewBox="0 0 100 40"><path d="M2 30C20 0 40 40 60 12S90 20 98 6" stroke="#c79a5b" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+   <svg class="f-c" style="right:8%;top:62%;width:70px" viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" stroke="#5a2f42" stroke-width="2" fill="none" stroke-dasharray="4 7"/></svg>
+   <svg class="f-a" style="left:44%;top:8%;width:90px" viewBox="0 0 100 40"><path d="M2 20C25 2 45 38 70 18S96 10 98 22" stroke="#e9c4bb" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+  </div>
+  <div class="layer">
+   <svg class="f-a sc" style="right:4%;top:14%;width:74px" viewBox="0 0 60 60"><circle cx="14" cy="46" r="8" stroke="#3b1f2b" stroke-width="2.5" fill="none"/><circle cx="34" cy="50" r="8" stroke="#3b1f2b" stroke-width="2.5" fill="none"/><path d="M19 40 50 6M29 43 10 8" stroke="#3b1f2b" stroke-width="2.5" stroke-linecap="round"/></svg>
+   <svg class="f-b" style="left:6%;top:70%;width:96px" viewBox="0 0 100 30"><rect x="2" y="2" width="96" height="9" rx="4" fill="#c79a5b"/><path d="M8 11v14M16 11v14M24 11v14M32 11v14M40 11v14M48 11v14M56 11v14M64 11v14M72 11v14M80 11v14M88 11v14" stroke="#c79a5b" stroke-width="3" stroke-linecap="round"/></svg>
+   <svg class="f-a" style="left:52%;bottom:6%;width:22px" viewBox="0 0 20 28"><path d="M10 2C10 2 2 13 2 19a8 8 0 0016 0C18 13 10 2 10 2z" fill="#e9c4bb"/></svg>
+   <svg class="f-b" style="right:30%;top:4%;width:18px" viewBox="0 0 20 28"><path d="M10 2C10 2 2 13 2 19a8 8 0 0016 0C18 13 10 2 10 2z" fill="#c79a5b"/></svg>
+  </div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="eyebrow">Salon de coiffure · Bromont</span>
+   <h1>Salon <em>Bellimage</em> Coiffure</h1>
+   <p class="lead">Un service impeccable dans une ambiance conviviale. Coupe, couleur, balayage et coiffure d'événements, pour elle, pour lui et pour les enfants.</p>
+   <div class="btns">
+    <a class="btn main" href="tel:+14505344848"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>Appeler pour un rendez-vous</a>
+    <a class="btn ghost" href="#services">Nos services</a>
+   </div>
+  </div>
+  <div class="card-hero" aria-hidden="true">
+   <svg class="strand" viewBox="0 0 400 500" preserveAspectRatio="none" fill="none"><path d="M-10 120C80 60 120 220 220 160S360 80 420 140" stroke="rgba(226,191,134,.35)" stroke-width="2"/><path d="M-10 150C90 90 130 250 230 190S370 110 420 170" stroke="rgba(233,196,187,.25)" stroke-width="2"/><path d="M-10 380C90 330 160 450 260 400S380 340 420 380" stroke="rgba(226,191,134,.25)" stroke-width="2"/></svg>
+   <div class="mono"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="88" stroke="#e2bf86" stroke-width="1.5" fill="none"/><circle cx="100" cy="100" r="80" stroke="rgba(226,191,134,.4)" stroke-width="1" fill="none"/><text x="100" y="128" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-style="italic" font-size="96" fill="#fff">B</text><path d="M58 148c25-12 59-12 84 0" stroke="#e2bf86" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>
+   <div class="tag"><b>Pour elle, pour lui, pour les enfants</b>54, boul. de Bromont</div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="sec-title"><span class="eyebrow">Nos services</span><h2>Tout pour vos cheveux</h2><p>Chaque visite commence par un conseil personnalisé. Appelez-nous pour les prix et pour réserver votre moment.</p></div>
+  <div class="services">
+   <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#3b1f2b" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="18" r="3"/><circle cx="14" cy="19" r="3"/><path d="M8 16 20 3M12 17 5 4"/></svg></div><h3>Coupe</h3><p>Pour elle, pour lui et pour les enfants.</p></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#3b1f2b" stroke-width="1.8" stroke-linecap="round"><path d="M12 3s-6 7-6 11a6 6 0 0012 0c0-4-6-11-6-11z"/></svg></div><h3>Coloration</h3><p>Une couleur qui vous ressemble.</p></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#3b1f2b" stroke-width="1.8" stroke-linecap="round"><path d="M4 20C8 12 6 8 10 4M10 20c3-7 2-11 5-16M16 20c2-6 2-9 4-13"/></svg></div><h3>Mèches et balayage</h3><p>De la lumière, en douceur ou en contraste.</p></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#3b1f2b" stroke-width="1.8" stroke-linecap="round"><path d="M5 12a7 7 0 0114 0M8 12a4 4 0 018 0M12 12v8"/></svg></div><h3>Traitement et massage capillaire</h3><p>Un moment de soin pour le cuir chevelu et la fibre.</p></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#3b1f2b" stroke-width="1.8" stroke-linecap="round"><path d="M6 4c4 2 4 6 0 8s-4 6 0 8M12 4c4 2 4 6 0 8s-4 6 0 8M18 4c4 2 4 6 0 8s-4 6 0 8"/></svg></div><h3>Permanente</h3><p>Du volume et des boucles qui tiennent.</p></article>
+   <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#3b1f2b" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2 8 12.7 4 8.8 9.5 8z"/></svg></div><h3>Mise en plis et coiffure d'événements</h3><p>Pour vos événements et vos grandes occasions.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="about" id="salon">
+ <div class="wrap">
+  <div>
+   <span class="eyebrow" style="color:#e9c4bb">Le salon</span>
+   <h2 style="margin-top:12px">Un salon <em>de Bromont</em>, à votre écoute</h2>
+   <p>Au Salon Bellimage Coiffure, la propriétaire Laurence Turin prend le temps de vous conseiller avant chaque coupe ou couleur. Coupe pour toute la famille, coloration, balayage, soins et coiffures d'événements : on part de vos cheveux et de votre style.</p>
+   <p>Vous trouverez aussi au salon les produits professionnels pour continuer les soins à la maison.</p>
+  </div>
+  <blockquote class="quote">« Un service impeccable à l'ambiance conviviale. »<small>La promesse Bellimage</small></blockquote>
+ </div>
+</section>
+
+<section id="produits">
+ <div class="wrap">
+  <div class="sec-title"><span class="eyebrow">Boutique</span><h2>Les produits du salon</h2><p>Les marques professionnelles que nous utilisons et que vous pouvez rapporter à la maison.</p></div>
+  <div class="brands"><span>Kérastase</span><span>L'Oréal Professionnel</span><span>Symbiose</span><span>Steampod</span></div>
+  <p class="note">Demandez conseil au salon pour la routine qui convient à vos cheveux.</p>
+ </div>
+</section>
+
+<section id="avis" class="av-hide">
+ <div class="wrap">
+  <div class="av-head"><div><span class="eyebrow">Avis de nos clientes et clients</span><h2>Ce que nos clients disent</h2></div>
+  <div class="av-note"><b>4,6</b><span class="st">★★★★★</span><span>sur Google</span></div></div>
+  <div class="av-grid"><article class="av-card"><q>Excellent service de coiffure, rapide et de très bon goût.</q><div class="who"><strong>Karl Dubois</strong> · Avis Google · juin 2017</div></article><article class="av-card"><q>Super service de Émilie. Vous devriez prendre un RDV avec elle.</q><div class="who"><strong>Pascal D</strong> · Avis Google · novembre 2017</div></article><article class="av-card"><q>Bonne ambiance et bien accueillante, le salon est très beau !</q><div class="who"><strong>Tommy Baraby</strong> · Avis Google · mars 2018</div></article><article class="av-card"><q>Très cordiale</q><div class="who"><strong>Louise Couillard</strong> · Avis Google · avril 2018</div></article></div>
+  <div class="av-btns"><button type="button" class="av-btn" data-avis-open>Voir tous les avis (4)</button></div>
+ </div>
+</section>
+<section id="heures" style="padding-top:20px">
+ <div class="wrap">
+  <div class="infos">
+   <div class="box">
+    <h3>Heures d'ouverture</h3>
+    <ul class="hours">
+     <li class="off"><span>Lundi</span><span>Fermé</span></li>
+     <li><span>Mardi</span><span>9 h à 17 h 30</span></li>
+     <li><span>Mercredi</span><span>9 h à 17 h 30</span></li>
+     <li><span>Jeudi</span><span>9 h à 20 h</span></li>
+     <li><span>Vendredi</span><span>9 h à 20 h</span></li>
+     <li><span>Samedi</span><span>9 h à 15 h</span></li>
+     <li class="off"><span>Dimanche</span><span>Fermé</span></li>
+    </ul>
+   </div>
+   <div class="box">
+    <h3>Adresse</h3>
+    <p>54, boul. de Bromont<br>Bromont (Québec) J2L 2K3</p>
+    <p><a class="lnk" href="https://www.google.com/maps/search/?api=1&query=54+boul.+de+Bromont,+Bromont,+QC+J2L+2K3" target="_blank" rel="noopener">Voir sur Google Maps →</a></p>
+   </div>
+   <div class="box">
+    <h3>Nous joindre</h3>
+    <p>Téléphone<br><a class="lnk" href="tel:+14505344848">450-534-4848</a></p>
+    <p>Courriel<br><a class="lnk" href="mailto:info@bellimagecoiffure.com">info@bellimagecoiffure.com</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <h2>Votre prochain rendez-vous?</h2>
+  <p>Un appel suffit pour réserver votre coupe, votre couleur ou votre coiffure d'événement.</p>
+  <div class="btns"><a class="btn main" href="tel:+14505344848">Appeler le 450-534-4848</a><a class="btn ghost" href="mailto:info@bellimagecoiffure.com">Écrire un courriel</a></div>
+ </div>
+</section>
+</main>
+
+<footer class="av-hide">© Salon Bellimage Coiffure · 54, boul. de Bromont, Bromont (Québec) · 450-534-4848</footer>
+<a class="callbar" href="tel:+14505344848"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>Appeler le salon</a>
+
+<script>
+(function(){
+ var intro=document.getElementById('intro');
+ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var seen=false;try{seen=sessionStorage.getItem('bellimage-intro')==='1'}catch(e){}
+ function done(){if(!intro)return;intro.classList.add('out');var i=intro;intro=null;setTimeout(function(){i.remove()},500)}
+ if(reduce||seen){intro.remove();intro=null}else{
+  try{sessionStorage.setItem('bellimage-intro','1')}catch(e){}
+  intro.addEventListener('click',done);setTimeout(done,2100);
+ }
+ var b=document.querySelector('.burger'),d=document.getElementById('drawer');
+ b.addEventListener('click',function(){var o=d.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){d.classList.remove('open');b.setAttribute('aria-expanded','false')})});
+ var svcs=document.querySelectorAll('.svc');
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target;var idx=[].indexOf.call(svcs,el)%3;el.style.transitionDelay=(idx*.12)+'s';el.classList.add('in');io.unobserve(el)}})},{threshold:.2});
+  svcs.forEach(function(s){io.observe(s)});
+ }else svcs.forEach(function(s){s.classList.add('in')});
+ if(!reduce){
+  var hero=document.querySelector('.hero'),tick=false;
+  window.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=Math.min(window.scrollY,800);hero.style.setProperty('--p',(y*-.25).toFixed(1));tick=false})},{passive:true});
+ }
+})();
+</script>
+<div id="avis-page" aria-label="Tous les avis">
+ <div class="wrap">
+  <div class="av-top"><button type="button" class="av-btn" data-avis-close>← Retour au site</button><a class="av-btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Bellimage+Coiffure+54+boul.+de+Bromont+Bromont" target="_blank" rel="noopener">Voir sur Google →</a></div>
+  <h1>Tous les avis</h1>
+  <div class="av-note"><b>4,6</b><span class="st">★★★★★</span><span>sur Google</span></div>
+  <p class="av-src" style="margin-top:14px">Note Google de 4,6 sur 5. Extraits d&#x27;avis Google publiés par des clients du salon, reproduits mot pour mot.</p>
+  <div class="av-grid"><article class="av-card"><q>Excellent service de coiffure, rapide et de très bon goût.</q><div class="who"><strong>Karl Dubois</strong> · Avis Google · juin 2017</div></article><article class="av-card"><q>Super service de Émilie. Vous devriez prendre un RDV avec elle.</q><div class="who"><strong>Pascal D</strong> · Avis Google · novembre 2017</div></article><article class="av-card"><q>Bonne ambiance et bien accueillante, le salon est très beau !</q><div class="who"><strong>Tommy Baraby</strong> · Avis Google · mars 2018</div></article><article class="av-card"><q>Très cordiale</q><div class="who"><strong>Louise Couillard</strong> · Avis Google · avril 2018</div></article></div>
+  <div class="av-btns"><button type="button" class="av-btn" data-avis-close>← Retour au site</button></div>
+ </div>
+</div>
+<script>
+(function(){
+ var y=0,b=document.body;
+ function open(e){if(e)e.preventDefault();y=window.scrollY;b.classList.add('av-open');try{document.getElementById('drawer').classList.remove('open')}catch(_){};window.scrollTo(0,0)}
+ function close(e){if(e)e.preventDefault();b.classList.remove('av-open');window.scrollTo(0,y)}
+ document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-avis-open],[data-avis-close]');if(!t)return;if(t.hasAttribute('data-avis-open'))open(e);else close(e)});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.classList.contains('av-open'))close()});
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Figaro Coiffure | Salon de coiffure à Laval — styliste, visagiste, coloriste</title>
+<meta name="description" content="Figaro Coiffure, salon de coiffure sur le boulevard Saint-Martin Ouest à Laval : coupe visagiste, coloration, mèches, coiffures de mariage et de bal, défrisants et extensions. Appelez au 450 686-9070.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script>try{if(!sessionStorage.getItem('figIntro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HairSalon","name":"Figaro Coiffure","url":"https://coiffurefigaro.com/","telephone":"+1-450-686-9070","email":"info@coiffurefigaro.com","address":{"@type":"PostalAddress","streetAddress":"1765, boulevard Saint-Martin Ouest","addressLocality":"Laval","addressRegion":"QC","postalCode":"H7S 1N2","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":45.56754,"longitude":-73.728696},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"16:00"}],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe visagiste"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coiffures hautes (mariages, bals, cocktails, banquets)"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Forfait maquillage et coiffure"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Traitements défrisants"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pose d'extensions"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mèches, effets lumière et patines"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coloration femme et homme"}}]}</script>
+<style>
+:root{--bh:32px;--ink:#1d1418;--plum:#3b1f2b;--wine:#6e2c43;--rose:#c98f9b;--gold:#c9a46a;--gold2:#e6cf9f;--cream:#faf5ee;--paper:#f3ebe0;--txt:#2a2024;--muted:#6f6166}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 16px/1.65 Jost,system-ui,sans-serif;color:var(--txt);background:var(--cream);padding-top:var(--bh)}
+img,svg{max-width:100%}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;overflow-wrap:anywhere}
+a{color:inherit}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+/* NAV */
+.nav{position:fixed;top:var(--bh);left:0;right:0;z-index:50;background:var(--ink);color:var(--cream);border-bottom:1px solid rgba(201,164,106,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand b{font:600 26px/1 "Cormorant Garamond",serif;letter-spacing:.02em}
+.brand small{display:block;font:400 10px/1 Jost,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--gold2);margin-top:3px}
+.links{display:none;gap:28px;align-items:center;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.links a{text-decoration:none;opacity:.85}
+.links a:hover{opacity:1;color:var(--gold2)}
+.links .cta{border:1px solid var(--gold);padding:9px 16px;border-radius:40px;color:var(--gold2);opacity:1}
+.burger{background:none;border:0;color:var(--cream);width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:currentColor;position:relative}
+.burger span:before,.burger span:after{content:"";position:absolute;left:0;width:24px;height:2px;background:currentColor}
+.burger span:before{top:-7px}.burger span:after{top:7px}
+.drawer{position:fixed;top:calc(var(--bh) + 60px);left:0;right:0;z-index:49;background:var(--ink);color:var(--cream);padding:8px 20px 22px;transform:translateY(-120%);transition:transform .35s ease;visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer a{display:block;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);text-decoration:none;font-size:18px}
+/* HERO */
+.hero{position:relative;background:radial-gradient(120% 80% at 80% 0%,#5a2a3c 0%,var(--plum) 45%,var(--ink) 100%);color:var(--cream);padding:112px 0 64px;overflow:hidden;isolation:isolate}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:60px;background:var(--cream);clip-path:ellipse(70% 100% at 50% 100%);z-index:2}
+.floaters{position:absolute;inset:0;z-index:0;pointer-events:none}
+.fl{position:absolute;transform:translate3d(0,calc(var(--p,0)*var(--k,0)*1px),0)}
+.fl>svg{display:block;animation:drift var(--d,9s) ease-in-out infinite alternate}
+.fl.back{opacity:.22;filter:blur(2px)}
+.fl.mid{opacity:.4}
+.fl.front{opacity:.55}
+@keyframes drift{from{transform:translateY(-10px) rotate(calc(var(--r,8deg)*-1))}to{transform:translateY(14px) rotate(var(--r,8deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:34px}
+.eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold2)}
+.hero h1{font-size:clamp(46px,13vw,96px);margin:10px 0 8px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold2);font-weight:500}
+.hero .lead{font-size:18px;max-width:34ch;color:#eadfe3}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:50px;text-decoration:none;font-weight:500;letter-spacing:.04em;transition:transform .2s ease}
+.btn:active{transform:scale(.97)}
+.btn.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--ink)}
+.btn.line{border:1px solid rgba(230,207,159,.6);color:var(--cream)}
+.btn svg{width:18px;height:18px}
+.since{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#d9c9ce}
+.since span{display:flex;align-items:center;gap:8px}
+.since i{width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block}
+.mirror{display:none}
+/* VALUES */
+.values{padding:40px 0 10px;text-align:center}
+.values p{font:italic 500 clamp(22px,5.4vw,34px)/1.35 "Cormorant Garamond",serif;color:var(--wine);max-width:900px;margin:0 auto}
+.values small{display:block;margin-top:10px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+/* SECTIONS */
+section{scroll-margin-top:96px}
+.sec{padding:64px 0}
+.kicker{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--wine);font-weight:500}
+.sec h2{font-size:clamp(34px,8vw,54px);margin:8px 0 14px;color:var(--ink)}
+.sec .intro-p{color:var(--muted);max-width:60ch}
+/* SERVICES + wow */
+.strand{display:block;width:100%;height:70px;margin:20px 0 10px}
+.strand path{fill:none;stroke:var(--gold);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 1.6s cubic-bezier(.6,.1,.2,1)}
+.snip{transform:translateX(-40px);opacity:0;transition:transform 1.6s cubic-bezier(.6,.1,.2,1),opacity .4s}
+.cut .strand path{stroke-dashoffset:0}
+.cut .snip{transform:translateX(calc(var(--sw,300px) - 30px));opacity:1}
+.grid{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.card{background:#fff;border-radius:18px;padding:24px 22px;border:1px solid #eadfd3;position:relative;overflow:hidden;opacity:0;transform:translateY(30px) rotate(-1.5deg);transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .7s}
+.cut .card{opacity:1;transform:none}
+.cut .card:nth-child(2){transition-delay:.12s}.cut .card:nth-child(3){transition-delay:.24s}.cut .card:nth-child(4){transition-delay:.36s}.cut .card:nth-child(5){transition-delay:.48s}.cut .card:nth-child(6){transition-delay:.6s}
+.card .ic{width:46px;height:46px;border-radius:50%;background:var(--paper);display:grid;place-items:center;margin-bottom:12px}
+.card .ic svg{width:26px;height:26px}
+.card h3{font-size:26px;color:var(--ink);margin-bottom:6px}
+.card p{color:#4d4146;font-size:15.5px}
+.card .tag{display:inline-block;margin-top:12px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--wine)}
+.price-note{margin-top:22px;padding:16px 20px;border-left:3px solid var(--gold);background:var(--paper);border-radius:0 12px 12px 0;font-size:15px}
+.price-note a{color:var(--wine);font-weight:500}
+/* EVENTS */
+.events{background:linear-gradient(160deg,var(--plum),var(--ink));color:var(--cream);position:relative;overflow:hidden}
+.events h2{color:var(--cream)}
+.events .kicker{color:var(--gold2)}
+.ev-grid{display:grid;gap:30px;grid-template-columns:minmax(0,1fr);align-items:center}
+.ev-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:20px 0}
+.ev-list li{list-style:none;border:1px solid rgba(230,207,159,.35);border-radius:14px;padding:14px;text-align:center;display:flex;align-items:center;justify-content:center;font:500 21px/1.2 "Cormorant Garamond",serif}
+.events p{color:#e6d9dd}
+.veil{width:100%;max-width:280px;margin:0 auto}@media(min-width:1024px){.veil{max-width:420px}}
+/* ABOUT */
+.about-grid{display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}
+.about p{margin-bottom:14px}
+.brands{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.brands span{background:#fff;border:1px solid #eadfd3;border-radius:30px;padding:7px 14px;font-size:14px}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.pillar{background:#fff;border-radius:16px;padding:18px 10px;text-align:center;border:1px solid #eadfd3}
+.pillar svg{width:34px;height:34px;margin:0 auto 6px;display:block}
+.pillar b{font:600 20px/1.1 "Cormorant Garamond",serif;display:block}
+.pillar small{font-size:12px;color:var(--muted)}
+/* VISIT */
+.visit{background:var(--paper)}
+.v-grid{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}
+.box{background:#fff;border-radius:18px;padding:24px 22px;border:1px solid #e6dacb}
+.box h3{font-size:28px;margin-bottom:12px}
+.hours{width:100%;border-collapse:collapse;font-size:16px}
+.hours td{padding:9px 0;border-bottom:1px dashed #e3d6c6}
+.hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.hours tr.off td{color:#9a8c90}
+.small{font-size:13.5px;color:var(--muted);margin-top:12px}
+.contact-line{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #f0e7dc}
+.contact-line svg{width:22px;height:22px;flex:none;margin-top:3px}
+.contact-line a{color:var(--wine);text-decoration:none;font-weight:500;overflow-wrap:anywhere}
+footer{background:var(--ink);color:#cbbcc1;padding:40px 0 110px;font-size:14px;text-align:center}
+footer b{font:600 30px/1 "Cormorant Garamond",serif;color:var(--cream);display:block;margin-bottom:6px}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--ink);text-decoration:none;font-weight:500;padding:15px;border-radius:50px;box-shadow:0 8px 24px rgba(29,20,24,.35);font-size:17px}
+.callbar svg{width:20px;height:20px}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+/* INTRO */
+#intro{display:none}
+.intro #intro{display:flex;position:fixed;inset:0;z-index:9000;background:radial-gradient(circle at 50% 45%,#4a2433,var(--ink) 70%);align-items:center;justify-content:center;flex-direction:column;transition:opacity .5s ease}
+#intro.bye{opacity:0}
+#intro svg{width:min(78vw,460px);height:auto;overflow:visible}
+#intro .word{fill:none;stroke:var(--gold2);stroke-width:1.4;stroke-dasharray:420;stroke-dashoffset:420;animation:ink 1.3s .15s ease forwards}
+#intro .fillw{fill:var(--gold2);opacity:0;animation:fadein .5s 1.15s forwards}
+#intro .sc{transform-box:fill-box;transform-origin:center;animation:fly 1.4s .1s cubic-bezier(.5,0,.3,1) forwards}
+#intro .bl1{transform-box:fill-box;transform-origin:20% 60%;animation:snipa .18s 7 alternate}
+#intro .bl2{transform-box:fill-box;transform-origin:20% 40%;animation:snipb .18s 7 alternate}
+#intro p{color:#e6d9dd;font-size:12px;letter-spacing:.4em;text-transform:uppercase;margin-top:6px;opacity:0;animation:fadein .6s 1.2s forwards}
+@keyframes ink{to{stroke-dashoffset:0}}
+@keyframes fadein{to{opacity:1}}
+@keyframes fly{from{transform:translateX(-60px)}to{transform:translateX(560px)}}
+@keyframes snipa{to{transform:rotate(-14deg)}}
+@keyframes snipb{to{transform:rotate(14deg)}}
+/* DESKTOP */
+@media (max-width:560px){:root{--bh:46px}}
+@media (min-width:1024px){
+ .links{display:flex}.burger,.drawer{display:none}
+ .callbar{display:none}
+ footer{padding-bottom:40px}
+ .hero{padding:150px 0 110px}
+ .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center}
+ .mirror{display:block;justify-self:center;width:100%;max-width:420px}
+ .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+ .ev-grid{grid-template-columns:1.1fr .9fr;gap:60px}
+ .ev-list{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .about-grid{grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}
+ .v-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+ .sec{padding:96px 0}
+}
+@media (min-width:640px) and (max-width:1023px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.v-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .rv,.card{opacity:1!important;transform:none!important}
+ .strand path{stroke-dashoffset:0!important}.snip{opacity:0!important}
+ .fl{transform:none!important}
+}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Figaro Coiffure — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 460 170">
+  <text class="word" x="230" y="112" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="118" font-weight="500">Figaro</text>
+  <text class="fillw" x="230" y="112" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="118" font-weight="500">Figaro</text>
+  <line x1="40" y1="140" x2="420" y2="140" stroke="#c9a46a" stroke-width="1" stroke-dasharray="3 6" opacity=".6"/>
+  <g class="sc" transform="translate(0,124)">
+   <g class="bl1"><path d="M0 16 L44 12 L46 16 L0 18Z" fill="#e6cf9f"/><circle cx="-8" cy="22" r="7" fill="none" stroke="#e6cf9f" stroke-width="2.5"/></g>
+   <g class="bl2"><path d="M0 16 L44 20 L46 16 L0 14Z" fill="#c9a46a"/><circle cx="-8" cy="8" r="7" fill="none" stroke="#c9a46a" stroke-width="2.5"/></g>
+  </g>
+ </svg>
+ <p>Coiffure · Laval</p>
+</div>
+
+<header class="nav">
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Figaro Coiffure, accueil">
+   <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5" fill="none" stroke="#c9a46a"/><text x="20" y="27" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#e6cf9f">F</text></svg>
+   <span><b>Figaro</b><small>Coiffure · Laval</small></span>
+  </a>
+  <nav class="links" aria-label="Navigation principale">
+   <a href="#services">Services</a><a href="#evenements">Événements</a><a href="#salon">Le salon</a><a href="#visite">Heures et adresse</a>
+   <a class="cta" href="tel:+14506869070">450 686-9070</a>
+  </nav>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" id="burger"><span></span></button>
+ </div>
+</header>
+<div class="drawer" id="drawer">
+ <a href="#services">Services</a><a href="#evenements">Événements</a><a href="#salon">Le salon</a><a href="#visite">Heures et adresse</a><a href="tel:+14506869070">Appeler : 450 686-9070</a>
+</div>
+
+<main id="top">
+<section class="hero" id="hero">
+ <div class="floaters" aria-hidden="true">
+  <!-- ciseaux -->
+  <div class="fl back" style="left:-4%;top:14%;--k:-.25"><svg width="120" height="120" viewBox="0 0 64 64" style="--d:11s;--r:12deg"><g fill="none" stroke="#e6cf9f" stroke-width="2.4"><circle cx="14" cy="46" r="8"/><circle cx="14" cy="18" r="8"/><path d="M20 40 58 14M20 24 58 50"/></g></svg></div>
+  <div class="fl front" style="right:4%;top:84%;--k:.35"><svg width="58" height="58" viewBox="0 0 64 64" style="--d:8s;--r:-10deg"><g fill="none" stroke="#e6cf9f" stroke-width="3"><circle cx="14" cy="46" r="8"/><circle cx="14" cy="18" r="8"/><path d="M20 40 58 14M20 24 58 50"/></g></svg></div>
+  <!-- peigne -->
+  <div class="fl mid" style="left:62%;top:10%;--k:.2"><svg width="96" height="40" viewBox="0 0 96 40" style="--d:10s;--r:6deg"><rect x="2" y="2" width="92" height="10" rx="5" fill="#c98f9b"/><g stroke="#c98f9b" stroke-width="3" stroke-linecap="round"><path d="M10 12v22M18 12v22M26 12v22M34 12v22M42 12v22M50 12v18M58 12v18M66 12v18M74 12v18M82 12v18"/></g></svg></div>
+  <div class="fl back" style="left:8%;top:76%;--k:-.15"><svg width="110" height="44" viewBox="0 0 96 40" style="--d:12s;--r:-7deg"><rect x="2" y="2" width="92" height="10" rx="5" fill="#c98f9b"/><g stroke="#c98f9b" stroke-width="3"><path d="M10 12v22M18 12v22M26 12v22M34 12v22M42 12v22M50 12v22M58 12v22M66 12v22M74 12v22M82 12v22"/></g></svg></div>
+  <!-- mèches -->
+  <div class="fl mid" style="left:70%;top:72%;--k:.3"><svg width="70" height="120" viewBox="0 0 60 120" style="--d:9s;--r:9deg"><g fill="none" stroke="#c9a46a" stroke-width="2.5" stroke-linecap="round"><path d="M30 4c-22 20 22 34 0 56s22 36 0 56"/><path d="M40 10c-18 18 16 30-2 50s16 32 0 50" opacity=".6"/></g></svg></div>
+  <div class="fl back" style="right:-2%;top:4%;--k:-.3"><svg width="90" height="150" viewBox="0 0 60 120" style="--d:13s;--r:-8deg"><g fill="none" stroke="#c98f9b" stroke-width="2.5" stroke-linecap="round"><path d="M30 4c-22 20 22 34 0 56s22 36 0 56"/></g></svg></div>
+  <!-- séchoir -->
+  <div class="fl mid" style="left:78%;top:34%;--k:-.22"><svg width="74" height="74" viewBox="0 0 64 64" style="--d:10s;--r:7deg"><g fill="#e6cf9f"><path d="M6 14h30a12 12 0 0 1 0 24H6a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z"/><rect x="24" y="36" width="10" height="24" rx="4"/></g><g stroke="#e6cf9f" stroke-width="2" stroke-linecap="round" opacity=".7"><path d="M52 20h8M52 26h10M52 32h8"/></g></svg></div>
+  <!-- miroir à main -->
+  <div class="fl front" style="left:30%;top:6%;--k:.18"><svg width="44" height="84" viewBox="0 0 40 80" style="--d:7.5s;--r:12deg"><ellipse cx="20" cy="22" rx="16" ry="19" fill="none" stroke="#e6cf9f" stroke-width="2.5"/><ellipse cx="20" cy="22" rx="11" ry="14" fill="#e6cf9f" opacity=".25"/><rect x="17" y="40" width="6" height="36" rx="3" fill="#e6cf9f"/></svg></div>
+  <!-- étincelles -->
+  <div class="fl front" style="left:88%;top:22%;--k:.4"><svg width="22" height="22" viewBox="0 0 20 20" style="--d:6s;--r:30deg"><path d="M10 0l2.4 7.6L20 10l-7.6 2.4L10 20l-2.4-7.6L0 10l7.6-2.4z" fill="#e6cf9f"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <div class="eyebrow">Salon de coiffure · Laval</div>
+   <h1>Figaro <em>Coiffure</em></h1>
+   <p class="lead">Styliste, visagiste et coloriste sur le boulevard Saint-Martin Ouest. Bienvenue à toute la famille!</p>
+   <div class="btns">
+    <a class="btn gold" href="tel:+14506869070"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler</a>
+    <a class="btn line" href="#services">Nos services</a>
+   </div>
+   <div class="since"><span><i></i>Plus de 23 ans à Laval</span><span><i></i>Formations plusieurs fois par année</span></div>
+  </div>
+  <svg class="mirror" viewBox="0 0 400 460" aria-hidden="true">
+   <defs><linearGradient id="gm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6cf9f"/><stop offset="1" stop-color="#a07c45"/></linearGradient><radialGradient id="gl" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#7a3b52"/><stop offset="1" stop-color="#2a1620"/></radialGradient></defs>
+   <ellipse cx="200" cy="215" rx="150" ry="190" fill="url(#gl)" stroke="url(#gm)" stroke-width="10"/>
+   <ellipse cx="200" cy="215" rx="164" ry="204" fill="none" stroke="#c9a46a" stroke-width="1.5" stroke-dasharray="2 8" opacity=".7"/>
+   <path d="M120 120c30-30 90-40 120-10" stroke="#fff" stroke-opacity=".18" stroke-width="10" fill="none" stroke-linecap="round"/>
+   <text x="200" y="210" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="78" fill="#e6cf9f">Figaro</text>
+   <text x="200" y="250" text-anchor="middle" font-family="Jost, sans-serif" font-size="13" letter-spacing="6" fill="#d9c9ce">PASSION · BEAUTÉ</text>
+   <text x="200" y="272" text-anchor="middle" font-family="Jost, sans-serif" font-size="13" letter-spacing="6" fill="#d9c9ce">ÉLÉGANCE · MODE</text>
+   <path d="M200 405v40" stroke="url(#gm)" stroke-width="10" stroke-linecap="round"/>
+  </svg>
+ </div>
+</section>
+
+<div class="values wrap rv">
+ <p>« Passion, beauté, élégance, mode, respect de notre clientèle, service personnalisé et belle qualité d'écoute. »</p>
+ <small>On vous attend!</small>
+</div>
+
+<section class="sec" id="services">
+ <div class="wrap">
+  <div class="kicker">Nos services</div>
+  <h2>Une équipe de stylistes et de coloristes</h2>
+  <p class="intro-p">Grâce à notre formation de styliste, de visagiste et de coloriste, chaque service est adapté à vous : votre visage, vos cheveux, votre style.</p>
+  <div id="cutzone" style="position:relative">
+   <div class="snip" style="position:absolute;left:0;top:14px;width:46px;z-index:2" aria-hidden="true"><svg viewBox="0 0 64 64" width="46" height="46" fill="none" stroke="#6e2c43" stroke-width="3.5"><circle cx="14" cy="46" r="8"/><circle cx="14" cy="18" r="8"/><path d="M20 40 58 14M20 24 58 50"/></svg></div>
+   <svg class="strand" viewBox="0 0 1000 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C120 0 220 70 340 36 S560 4 680 38 S880 66 1000 30"/></svg>
+   <div class="grid">
+    <article class="card"><div class="ic"><svg viewBox="0 0 64 64" fill="none" stroke="#6e2c43" stroke-width="3.5"><circle cx="14" cy="46" r="8"/><circle cx="14" cy="18" r="8"/><path d="M20 40 58 14M20 24 58 50"/></svg></div><h3>Coupe visagiste</h3><p>Une coupe personnalisée, adaptée à la forme de votre visage, pour toute la famille.</p></article>
+    <article class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18M12 3c3 3 3 15 0 18"/></svg></div><h3>Coloration</h3><p>Couleur permanente Koleston et L'Oréal Professionnel, ou INOA sans ammoniaque. Coloration homme aussi : un résultat naturel, sans repousse apparente.</p></article>
+    <article class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.6" stroke-linecap="round"><path d="M7 3c-3 5 3 8 0 13s3 5 0 5M12 3c-3 5 3 8 0 13s3 5 0 5M17 3c-3 5 3 8 0 13s3 5 0 5"/></svg></div><h3>Mèches et effets lumière</h3><p>Mèches, effets lumière et patines, selon plusieurs techniques, pour donner du relief et de l'éclat.</p></article>
+    <article class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.6" stroke-linecap="round"><path d="M12 2l2.5 5.5L20 8l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div><h3>Coiffures hautes</h3><p>Pour vos grandes occasions : mariages, bals de graduation, cocktails et banquets. Forfait maquillage et coiffure offert.</p><span class="tag">Sur rendez-vous</span></article>
+    <article class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.6" stroke-linecap="round"><path d="M6 3v18M10 3v18M14 3v18M18 3v18"/></svg></div><h3>Traitements défrisants</h3><p>Des défrisants pour tous les types de cheveux, qui n'abîment pas les cheveux naturels ou colorés.</p></article>
+    <article class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.6" stroke-linecap="round"><path d="M8 3c0 6-2 10-2 18M12 3c0 6 0 10 0 18M16 3c0 6 2 10 2 18"/><path d="M5 7h14" stroke-dasharray="2 2"/></svg></div><h3>Extensions</h3><p>Pose d'extensions rapide et durable, pour plus de longueur ou de volume.</p></article>
+   </div>
+  </div>
+  <p class="price-note">Prix et disponibilités : <a href="tel:+14506869070">appelez-nous au 450 686-9070</a>, on se fera un plaisir de vous conseiller.</p>
+ </div>
+</section>
+
+<section class="sec events" id="evenements">
+ <div class="wrap ev-grid">
+  <div class="rv">
+   <div class="kicker">Grandes occasions</div>
+   <h2>Le jour J, on s'occupe de vous</h2>
+   <p>Mariage, bal de finissants, cocktail ou banquet : nos coiffures hautes sont pensées pour l'événement, la robe et votre visage. Pour un look complet, demandez notre forfait maquillage et coiffure.</p>
+   <ul class="ev-list"><li>Mariages</li><li>Bals de graduation</li><li>Cocktails</li><li>Banquets</li></ul>
+   <a class="btn gold" href="tel:+14506869070">Réserver votre date</a>
+  </div>
+  <svg class="veil rv" viewBox="0 0 320 320" aria-hidden="true">
+   <defs><linearGradient id="gc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6cf9f"/><stop offset="1" stop-color="#a07c45"/></linearGradient></defs>
+   <circle cx="160" cy="160" r="150" fill="none" stroke="#c9a46a" stroke-opacity=".35"/>
+   <circle cx="160" cy="160" r="128" fill="#2a1620"/>
+   <g stroke="url(#gc)" stroke-width="5" stroke-linecap="round"><path d="M92 176v50M108 178v52M124 180v52M140 181v52M156 181v52M172 181v52M188 180v52M204 178v52M220 176v50"/></g>
+   <path d="M80 178c50-16 110-16 160 0" fill="none" stroke="url(#gc)" stroke-width="7" stroke-linecap="round"/>
+   <g fill="none" stroke="#c98f9b" stroke-width="3" stroke-linecap="round"><path d="M160 168c-30-20-56-56-40-86M160 168c30-20 56-56 40-86"/></g>
+   <g fill="#c98f9b"><path d="M120 82c-14-8-14-26 0-30 6 12 6 22 0 30z"/><path d="M200 82c14-8 14-26 0-30-6 12-6 22 0 30z"/><path d="M134 124c-16 0-24-14-16-24 10 6 16 14 16 24z"/><path d="M186 124c16 0 24-14 16-24-10 6-16 14-16 24z"/></g>
+   <g fill="#faf5ee"><circle cx="160" cy="150" r="13"/><circle cx="136" cy="160" r="9"/><circle cx="184" cy="160" r="9"/><circle cx="116" cy="168" r="6"/><circle cx="204" cy="168" r="6"/><circle cx="148" cy="130" r="6"/><circle cx="172" cy="130" r="6"/><circle cx="160" cy="112" r="7"/></g>
+   <g fill="#e6cf9f"><circle cx="160" cy="150" r="4" opacity=".6"/><path d="M240 92l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path d="M78 120l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></g>
+  </svg>
+ </div>
+</section>
+
+<section class="sec about" id="salon">
+ <div class="wrap about-grid">
+  <div class="rv">
+   <div class="kicker">Le salon</div>
+   <h2>Plus de 23 ans à prendre soin de Laval</h2>
+   <p>Figaro Coiffure, c'est une équipe de stylistes, visagistes et coloristes qui reçoit toute la famille sur le boulevard Saint-Martin Ouest. Notre recette : passion, beauté, élégance et mode, avec un service personnalisé et une belle qualité d'écoute.</p>
+   <p>Pour rester à l'affût des tendances, l'équipe participe plusieurs fois par année à des congrès de coiffure et à des formations de coupe et de coloration.</p>
+   <div class="brands" aria-label="Produits utilisés"><span>Koleston</span><span>L'Oréal Professionnel</span><span>INOA</span><span>Rusk</span></div>
+  </div>
+  <div class="pillars rv">
+   <div class="pillar"><svg viewBox="0 0 64 64" fill="none" stroke="#6e2c43" stroke-width="3"><circle cx="14" cy="46" r="8"/><circle cx="14" cy="18" r="8"/><path d="M20 40 58 14M20 24 58 50"/></svg><b>Styliste</b><small>coupe et coiffage</small></div>
+   <div class="pillar"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.5"><ellipse cx="12" cy="11" rx="6" ry="8"/><path d="M9 10h.01M15 10h.01M10 14c1 1 3 1 4 0"/></svg><b>Visagiste</b><small>selon votre visage</small></div>
+   <div class="pillar"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.5"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg><b>Coloriste</b><small>couleur et mèches</small></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec visit" id="visite">
+ <div class="wrap">
+  <div class="kicker">Nous visiter</div>
+  <h2>Heures et adresse</h2>
+  <div class="v-grid">
+   <div class="box rv">
+    <h3>Heures</h3>
+    <table class="hours">
+     <tr class="off"><td>Lundi</td><td>Fermé</td></tr>
+     <tr><td>Mardi</td><td>9 h – 17 h</td></tr>
+     <tr><td>Mercredi</td><td>9 h – 17 h</td></tr>
+     <tr><td>Jeudi</td><td>9 h – 20 h</td></tr>
+     <tr><td>Vendredi</td><td>9 h – 20 h</td></tr>
+     <tr><td>Samedi</td><td>8 h – 16 h</td></tr>
+     <tr class="off"><td>Dimanche</td><td>Fermé</td></tr>
+    </table>
+    <p class="small">Les heures peuvent varier pendant les fêtes : appelez-nous pour confirmer.</p>
+   </div>
+   <div class="box rv">
+    <h3>Adresse</h3>
+    <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div>1765, boulevard Saint-Martin Ouest<br>Laval (Québec) H7S 1N2<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Figaro+Coiffure+1765+boulevard+Saint-Martin+Ouest+Laval" target="_blank" rel="noopener">Voir sur Google Maps →</a></div></div>
+   </div>
+   <div class="box rv">
+    <h3>Contact</h3>
+    <div class="contact-line"><svg viewBox="0 0 24 24" fill="#6e2c43"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><a href="tel:+14506869070">450 686-9070</a></div>
+    <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="#6e2c43" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@coiffurefigaro.com">info@coiffurefigaro.com</a></div>
+    <p class="small">Un rendez-vous, une question sur une couleur ou un forfait mariage? Appelez-nous ou écrivez-nous.</p>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap"><b>Figaro Coiffure</b>1765, boul. Saint-Martin Ouest, Laval · <a href="tel:+14506869070">450 686-9070</a><br>© 2026 Figaro Coiffure</div>
+</footer>
+<a class="callbar" href="tel:+14506869070"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler le salon</a>
+
+<script>
+(function(){
+ var d=document.documentElement;function bh(){var t=document.body.firstElementChild;if(t)d.style.setProperty('--bh',t.offsetHeight+'px')}bh();addEventListener('resize',bh,{passive:true});var _x=0,intro=document.getElementById('intro');
+ function endIntro(){if(!intro||!intro.parentNode)return;intro.classList.add('bye');try{sessionStorage.setItem('figIntro','1')}catch(e){}setTimeout(function(){if(intro.parentNode)intro.parentNode.removeChild(intro);d.classList.remove('intro')},500)}
+ if(d.classList.contains('intro')){setTimeout(endIntro,1900);intro.addEventListener('click',endIntro);intro.addEventListener('touchstart',endIntro,{passive:true})}else if(intro){intro.parentNode.removeChild(intro)}
+ var b=document.getElementById('burger'),dr=document.getElementById('drawer');
+ b.addEventListener('click',function(){var o=dr.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ dr.addEventListener('click',function(e){if(e.target.tagName==='A'){dr.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+ var hero=document.getElementById('hero'),tick=false,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!rm){addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(function(){var y=scrollY;if(y<1200)hero.style.setProperty('--p',y.toFixed(0));tick=false})}},{passive:true})}
+ var cz=document.getElementById('cutzone');
+ function sw(){cz.style.setProperty('--sw',cz.clientWidth+'px')}sw();addEventListener('resize',sw,{passive:true});
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(e.target===cz?'cut':'in');io.unobserve(e.target)}})},{threshold:.15});
+  io.observe(cz);document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+ }else{cz.classList.add('cut');document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

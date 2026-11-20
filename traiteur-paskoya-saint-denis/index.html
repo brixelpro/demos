@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cuisine Tradition Paskoya — Traiteur à Saint-Denis-sur-Richelieu</title>
+<meta name="description" content="Cuisine Tradition Paskoya, traiteur événementiel à Saint-Denis-sur-Richelieu : buffets chauds et froids, bouchées, cocktails dînatoires, méchouis, mariages, chef à domicile et plats cuisinés. Rive-Sud et Montréal. (450) 787-2565.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["Restaurant","FoodEstablishment"],"name":"Cuisine Tradition Paskoya","alternateName":"Paskoya Resto-Traiteur","description":"Service de traiteur événementiel : repas chauds ou froids, bouchées, buffets, cocktails dînatoires, méchouis, mariages, chef à domicile et plats cuisinés.","servesCuisine":"Cuisine québécoise traditionnelle","telephone":"+1-450-787-2565","email":"info@paskoya.com","address":{"@type":"PostalAddress","streetAddress":"552, chemin des Patriotes","addressLocality":"Saint-Denis-sur-Richelieu","addressRegion":"QC","postalCode":"J0H 1K0","addressCountry":"CA"},"areaServed":["Rive-Sud","Montréal","Montérégie"],"hasMenu":{"@type":"Menu","hasMenuSection":[{"@type":"MenuSection","name":"Buffet froid"},{"@type":"MenuSection","name":"Buffet chaud"},{"@type":"MenuSection","name":"Table d'hôte"},{"@type":"MenuSection","name":"Clé en main"},{"@type":"MenuSection","name":"Méchoui","hasMenuItem":{"@type":"MenuItem","name":"Méchoui porc et boeuf","offers":{"@type":"Offer","price":"25.00","priceCurrency":"CAD"}}},{"@type":"MenuSection","name":"Plats cuisinés"}]},"url":"https://www.paskoya.com/"}
+</script>
+<style>
+:root{--wine:#6e1b28;--wine2:#541420;--cream:#fbf5ea;--paper:#f3e9d8;--gold:#c9973a;--gold2:#e7c27a;--ink:#2a1d1a;--muted:#6d5d55;--leaf:#5f7f3b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Nunito Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;padding-top:32px}
+svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif;line-height:1.15;overflow-wrap:break-word}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:32px;z-index:50;background:rgba(251,245,234,.97);border-bottom:1px solid #eadcc4}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:10px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1;min-width:0}
+.brand b{font:700 1.45rem "Playfair Display",serif;color:var(--wine)}
+.brand small{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:3px}
+.links{display:none;list-style:none;gap:24px}
+.links a{text-decoration:none;font-weight:600;font-size:.95rem}
+.links a:hover{color:var(--wine)}
+.burger{background:none;border:0;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.mnav{display:none;padding:6px 20px 14px;background:var(--cream)}
+.mnav.open{display:block}
+.mnav a{display:block;padding:12px 0;text-decoration:none;font-weight:600;border-bottom:1px solid #eadcc4}
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(110% 80% at 85% 0%,#8a2635 0%,var(--wine) 45%,#3d0f17 100%);color:#fff;padding:54px 0 70px}
+.hero .wrap{position:relative;z-index:2;display:grid;gap:30px}
+.eyebrow{display:flex;flex-wrap:wrap;gap:8px}
+.eyebrow span{border:1px solid rgba(231,194,122,.6);color:var(--gold2);border-radius:999px;padding:5px 12px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.3rem,9vw,4.4rem);margin:18px 0 10px}
+.hero h1 i{color:var(--gold2)}
+.hero .slogan{font:italic 600 clamp(1.15rem,4vw,1.5rem) "Playfair Display",serif;color:var(--gold2);margin-bottom:12px}
+.hero p.lead{max-width:560px;opacity:.92;font-size:1.04rem}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#2a1206}
+.btn-line{border:2px solid rgba(255,255,255,.55);color:#fff}
+.platter{display:none}
+.floaters{position:absolute;inset:0;z-index:1;pointer-events:none}
+.fl{position:absolute;animation:bob 13s ease-in-out infinite}
+.fl svg{display:block}
+.fl.back{opacity:.25;filter:blur(1.5px)}
+.fl.mid{opacity:.45}
+.fl.front{opacity:.7}
+@keyframes bob{0%,100%{transform:translate3d(0,calc(var(--p,0px)*var(--d,.2)),0) rotate(-6deg)}50%{transform:translate3d(-10px,calc(var(--p,0px)*var(--d,.2) - 16px),0) rotate(10deg)}}
+section{padding:72px 0}
+.kicker{color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+.sec-title{font-size:clamp(1.9rem,5.5vw,2.8rem);color:var(--wine);margin:8px 0 16px}
+.intro-txt{max-width:760px;color:#4a3a34}
+/* about */
+.about{display:grid;gap:28px}
+.about p{margin-bottom:14px;color:#4a3a34}
+.fam{background:#fff;border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(110,27,40,.08);border-top:5px solid var(--gold)}
+.fam h3{color:var(--wine);font-size:1.3rem;margin-bottom:8px}
+.names{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.names span{background:var(--paper);border-radius:999px;padding:6px 14px;font-weight:700;font-size:.9rem;color:var(--wine)}
+/* services */
+.svcs{background:var(--paper);overflow:hidden}
+.svc-grid{display:grid;gap:16px;margin-top:24px}
+.svc{background:#fff;border-radius:20px;padding:22px;box-shadow:0 8px 24px rgba(110,27,40,.08);opacity:0;transform:translateX(-60px) rotate(-3deg);min-width:0}
+.svc:nth-child(even){transform:translateX(60px) rotate(3deg)}
+.svc.in{opacity:1;transform:none;transition:transform .8s cubic-bezier(.2,1.3,.4,1),opacity .5s}
+.svc .plate{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle,#fff 52%,#efe3cc 54%,#fff 62%,#e8d9bc 100%);box-shadow:0 4px 12px rgba(0,0,0,.12);display:grid;place-items:center;margin-bottom:12px}
+.svc h3{color:var(--wine);font-size:1.2rem;margin-bottom:6px}
+.svc p{font-size:.95rem;color:var(--muted)}
+/* menu */
+.menu-sec{background:var(--cream)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 18px}
+.tab{border:1.5px solid #e2cfae;background:#fff;color:var(--ink);border-radius:999px;padding:9px 15px;font:700 .9rem "Nunito Sans",sans-serif;cursor:pointer}
+.tab.on{background:var(--wine);border-color:var(--wine);color:#fff}
+.panel{display:none;background:#fff;border-radius:22px;padding:22px 18px;box-shadow:0 10px 30px rgba(110,27,40,.07);min-width:0}
+.panel.on{display:block}
+.no-js .panel{display:block;margin-bottom:16px}
+.ptitle{color:var(--wine);font-size:1.6rem;margin-bottom:6px}
+.mnote{font-size:.92rem;color:var(--muted);margin-bottom:14px;background:var(--paper);border-radius:12px;padding:10px 14px}
+.mgrid{display:grid;gap:22px}
+.mcat{min-width:0}
+.mcat h4{font-size:1.15rem;color:var(--wine);border-bottom:2px solid var(--gold2);padding-bottom:4px;margin-bottom:6px}
+.menu-list{list-style:none}
+.menu-list li{display:flex;align-items:baseline;gap:6px;padding:7px 0;border-bottom:1px dotted #e6d7bd;font-size:.95rem}
+.menu-list .it{min-width:0;overflow-wrap:break-word}
+.menu-list .dots{flex:1}
+.menu-list .pr{white-space:nowrap;font-weight:700;color:var(--wine);text-align:right}
+.menu-list .pr small{font-weight:600;color:var(--muted);font-size:.78rem}
+.menu-list .pr.two i{font-style:normal;color:#c9b48d;margin:0 6px}
+.twohead{display:flex;justify-content:flex-end;gap:14px;font-size:.75rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:14px;border:1px solid #eadcc4;max-width:100%}
+.ptable{border-collapse:collapse;font-size:.88rem;min-width:900px;width:100%}
+.ptable th,.ptable td{padding:9px 10px;border-bottom:1px solid #f0e4cf;text-align:right;white-space:nowrap}
+.ptable thead th{background:var(--wine);color:#fff;font-weight:700}
+.ptable thead th small{display:block;font-weight:400;font-size:.7rem;opacity:.8}
+.ptable thead th:first-child{text-align:left}
+.ptable tbody th{text-align:left;font-weight:600;white-space:normal;min-width:230px;max-width:300px}
+.ptable tbody th b{color:var(--wine);margin-right:4px}
+.ptable tbody tr:nth-child(even){background:#fcf8f0}
+.swipe{font-size:.8rem;color:var(--muted);text-align:center;margin-top:6px}
+.mech{display:grid;gap:16px;align-items:center}
+.mech h4{color:var(--wine);font-size:1.3rem;margin-bottom:6px}
+.mech-p{display:flex;gap:12px;flex-wrap:wrap}
+.mech-p span{background:var(--wine);color:#fff;border-radius:18px;padding:16px 20px;font:700 1.6rem "Playfair Display",serif;text-align:center;flex:1;min-width:130px}
+.mech-p small{display:block;font:600 .8rem "Nunito Sans",sans-serif;opacity:.85}
+.menu-foot{font-size:.85rem;color:var(--muted);margin-top:14px;text-align:center}
+/* avis */
+.avis{background:var(--wine);color:#fff}
+.avis .sec-title{color:#fff}
+.score{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(231,194,122,.4);border-radius:16px;padding:12px 18px;margin-bottom:24px}
+.score b{font:700 2rem "Playfair Display",serif;color:var(--gold2)}
+.score span{font-size:.9rem;opacity:.9}
+.rv-grid{display:grid;gap:16px}
+.rv{background:#fff;color:var(--ink);border-radius:20px;padding:22px;min-width:0}
+.rv .st{color:#d9a032;letter-spacing:2px}
+.rv blockquote{font:italic 600 1.08rem "Playfair Display",serif;margin:8px 0 10px;color:#3b2622}
+.rv .who{font-size:.85rem;color:var(--muted)}
+/* zone + contact */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:#fff;border:1px solid #eadcc4;border-radius:999px;padding:6px 13px;font-size:.88rem;font-weight:600}
+.contact-grid{display:grid;gap:18px;margin-top:10px}
+.card{background:#fff;border-radius:20px;padding:24px;box-shadow:0 8px 24px rgba(110,27,40,.08);min-width:0}
+.card h3{color:var(--wine);margin-bottom:10px}
+.row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #f0e4cf;overflow-wrap:anywhere}
+.row:last-child{border-bottom:0}
+.row b{min-width:92px;color:var(--wine)}
+.cta-box{background:linear-gradient(135deg,var(--gold),#a97a26);color:#2a1206;border-radius:22px;padding:28px;text-align:center}
+.cta-box h3{font-size:1.6rem;margin-bottom:6px}
+.cta-box .btn{background:var(--wine);color:#fff;margin-top:12px}
+footer{background:#2a0b11;color:#e6d4c6;padding:32px 0 100px;font-size:.88rem}
+footer .wrap{display:grid;gap:6px}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:10px}
+.callbar a{flex:1;text-align:center;padding:15px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.callbar .c1{background:var(--wine);color:#fff}
+.callbar .c2{background:var(--gold);color:#2a1206}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:radial-gradient(circle at 50% 40%,#8a2635,#3d0f17);display:grid;place-items:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .box{text-align:center;color:#fff;padding:20px}
+#intro .cl{width:200px;height:150px;margin:0 auto;display:block}
+#intro .lid{transform-origin:100px 100px;animation:lift 1s .5s cubic-bezier(.3,1.4,.5,1) forwards}
+#intro .glow{opacity:0;animation:fadein .6s .8s forwards}
+#intro .name{font:700 clamp(2.2rem,9vw,3.4rem) "Playfair Display",serif;color:var(--gold2);margin-top:6px}
+#intro .name span{display:inline-block;opacity:0;transform:translateY(14px) scale(.8);animation:pop .4s forwards}
+#intro .sub{opacity:0;animation:fadein .5s 1.4s forwards;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+@keyframes lift{to{transform:translate(46px,-56px) rotate(24deg)}}
+@keyframes fadein{to{opacity:1}}
+@keyframes pop{to{opacity:1;transform:none}}
+@media (max-width:640px){body{padding-top:48px}.nav{top:48px}}
+@media (min-width:760px){
+ .svc-grid{grid-template-columns:repeat(3,1fr)}
+ .mgrid{grid-template-columns:1fr 1fr;gap:26px 40px}
+ .rv-grid{grid-template-columns:1fr 1fr}
+ .panel{padding:32px}
+ .mech{grid-template-columns:1.3fr 1fr}
+}
+@media (min-width:1024px){
+ .links{display:flex}.burger,.mnav{display:none!important}
+ .hero{padding:90px 0 110px}
+ .hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}
+ .platter{display:block}
+ .about{grid-template-columns:1.2fr .8fr;align-items:start}
+ .mgrid{grid-template-columns:1fr 1fr;gap:30px 60px}
+ .rv-grid{grid-template-columns:repeat(3,1fr)}
+ .contact-grid{grid-template-columns:1.2fr .8fr}
+ .callbar{display:none}
+ footer{padding-bottom:32px}
+ section{padding:96px 0}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .svc{opacity:1;transform:none}
+ html{scroll-behavior:auto}
+}
+
+/* page d'avis */
+.av-btn{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:13px 22px;border-radius:999px;border:0;cursor:pointer;font-weight:700;font-size:1rem;line-height:1.2;font-family:inherit;background:var(--gold2);color:#2a1206}
+.av-btn:hover{opacity:.9}
+.score b{white-space:nowrap}
+.av-wrapbtn{text-align:center}
+#avisPage{display:none;background:var(--cream);color:var(--ink);min-height:100vh}
+body.av-open #avisPage{display:block}
+body.av-open>*:not(#avisPage):not([style*="z-index:9999"]){display:none!important}
+.avp-top{position:sticky;top:32px;z-index:50;background:var(--wine);color:#fff}
+.avp-top .avp-in{max-width:1100px;margin:0 auto;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.avp-back{background:#fff;color:var(--wine);border:0;border-radius:999px;padding:10px 16px;font-weight:700;font-size:.95rem;line-height:1;font-family:inherit;cursor:pointer}
+.avp-name{font-weight:700;font-size:.95rem;opacity:.95;min-width:0;overflow-wrap:anywhere}
+.avp-body{max-width:1100px;margin:0 auto;padding:28px 16px 60px}
+.avp-body h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin:0 0 12px;color:var(--wine)}
+.avp-score{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;background:#fff;border-radius:16px;padding:16px 18px;box-shadow:0 6px 20px rgba(0,0,0,.07);margin:0 0 10px}
+.avp-score b{font-size:2rem;line-height:1;color:var(--wine)}
+.avp-score .stars{color:#e0a325;letter-spacing:2px;font-size:1.2rem}
+.avp-score span{font-size:.92rem;color:#555;min-width:0;overflow-wrap:anywhere}
+.avp-note{font-size:.85rem;color:#666;margin:0 0 22px}
+.avp-note a{color:var(--wine)}
+.avp-grid{display:grid;gap:16px;grid-template-columns:1fr}
+.avp-card{background:#fff;border-radius:18px;padding:20px;box-shadow:0 6px 20px rgba(0,0,0,.06);min-width:0}
+.avp-card .st{color:#e0a325;letter-spacing:2px}
+.avp-card p{margin:8px 0 10px;font-size:1.02rem;line-height:1.55;color:#2a2a2a;overflow-wrap:anywhere}
+.avp-card .who{font-size:.85rem;color:#666}
+.avp-card .who b{color:#222}
+@media (min-width:700px){.avp-grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){.avp-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.avp-top{top:48px}}
+</style>
+</head>
+<body class="no-js">
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Cuisine Tradition Paskoya — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <div class="box">
+  <svg class="cl" viewBox="0 0 200 150">
+   <ellipse class="glow" cx="100" cy="100" rx="70" ry="16" fill="#e7c27a" opacity=".5"/>
+   <g class="glow"><circle cx="78" cy="96" r="9" fill="#d24a3a"/><circle cx="100" cy="92" r="11" fill="#e8b04a"/><circle cx="122" cy="96" r="9" fill="#7c9a46"/></g>
+   <rect x="20" y="104" width="160" height="10" rx="5" fill="#e7c27a"/>
+   <g class="lid"><path d="M34 102 C34 52 166 52 166 102Z" fill="#d8d2c8"/><path d="M48 96 C52 66 90 58 110 60" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/><circle cx="100" cy="52" r="8" fill="#c9973a"/></g>
+  </svg>
+  <div class="name" id="iname">Paskoya</div>
+  <div class="sub">Cuisine Tradition · Traiteur</div>
+ </div>
+</div>
+
+<nav class="nav">
+ <div class="wrap">
+  <a class="brand" href="#top"><b>Paskoya</b><small>Cuisine Tradition</small></a>
+  <ul class="links"><li><a href="#apropos">À propos</a></li><li><a href="#services">Services</a></li><li><a href="#menu">Menus</a></li><li><a href="#tous-les-avis" data-avis>Avis</a></li><li><a href="#contact">Contact</a></li></ul>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#6e1b28" stroke-width="2" stroke-linecap="round"/></svg></button>
+ </div>
+ <div class="mnav" id="mnav"><a href="#apropos">À propos</a><a href="#services">Services</a><a href="#menu">Menus</a><a href="#tous-les-avis" data-avis>Avis</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero" id="top">
+ <div class="floaters" id="floaters">
+  <div class="fl back" style="left:5%;top:10%;--d:.35;animation-duration:16s"><svg width="60" height="90" viewBox="0 0 40 60"><path d="M8 4h24c0 16-4 24-12 24S8 20 8 4Z" fill="#e7c27a"/><path d="M10 12h20c-1 10-4 14-10 14s-9-4-10-14Z" fill="#a8243a"/><path d="M20 28v24M10 56h20" stroke="#e7c27a" stroke-width="3" stroke-linecap="round"/></svg></div>
+  <div class="fl mid" style="right:8%;top:6%;--d:.25;animation-duration:12s"><svg width="46" height="46" viewBox="0 0 40 40"><circle cx="20" cy="22" r="15" fill="#d24a3a"/><path d="M20 8 l-6 -4 M20 8 l6 -4 M20 8v-5" stroke="#5f7f3b" stroke-width="3" stroke-linecap="round"/></svg></div>
+  <div class="fl front" style="left:84%;top:58%;--d:.15;animation-duration:11s"><svg width="70" height="34" viewBox="0 0 70 34"><path d="M4 17 C4 8 22 4 34 10 L66 14 L66 20 L34 24 C22 30 4 26 4 17Z" fill="#d8d2c8"/><circle cx="18" cy="15" r="7" fill="#f08a5d"/><path d="M14 12 q4 -4 9 0" stroke="#5f7f3b" stroke-width="2" fill="none"/></svg></div>
+  <div class="fl back" style="left:40%;top:72%;--d:.4;animation-duration:19s"><svg width="64" height="40" viewBox="0 0 64 40"><path d="M6 30 C2 12 22 2 32 8 C42 2 62 12 58 30Z" fill="#e8b04a"/><path d="M14 28 L18 12 M26 30 L28 8 M38 30 L36 8 M50 28 L46 12" stroke="#b07a28" stroke-width="2"/></svg></div>
+  <div class="fl mid" style="left:12%;top:76%;--d:.3;animation-duration:15s"><svg width="44" height="54" viewBox="0 0 40 50"><path d="M20 46 C4 34 4 14 20 4 C36 14 36 34 20 46Z" fill="#7c9a46"/><path d="M20 44V8" stroke="#4e6a2c" stroke-width="2"/></svg></div>
+  <div class="fl back" style="left:60%;top:14%;--d:.45;animation-duration:20s"><svg width="50" height="50" viewBox="0 0 40 40"><rect x="6" y="14" width="28" height="20" rx="4" fill="#f3e9d8"/><rect x="6" y="14" width="28" height="7" rx="3" fill="#a8243a"/><circle cx="20" cy="10" r="4" fill="#d24a3a"/></svg></div>
+  <div class="fl front" style="left:28%;top:3%;--d:.2;animation-duration:10s"><svg width="20" height="70" viewBox="0 0 20 70"><path d="M4 2v18c0 4 3 6 6 6s6-2 6-6V2M10 2v20M10 26v42" stroke="#e7c27a" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div>
+  <div class="fl mid" style="left:90%;top:32%;--d:.3;animation-duration:14s"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="14" fill="#e8b04a"/><circle cx="15" cy="17" r="3" fill="#a8243a"/><circle cx="24" cy="23" r="3" fill="#a8243a"/><circle cx="23" cy="14" r="2.5" fill="#7c9a46"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <div class="eyebrow"><span>Traiteur</span><span>Plats cuisinés</span><span>Événementiel</span><span>Livraison</span></div>
+   <h1>Cuisine Tradition <i>Paskoya</i></h1>
+   <p class="slogan">«&nbsp;Quel que soit votre événement, nous sommes votre traiteur!&nbsp;»</p>
+   <p class="lead">Repas chauds ou froids, bouchées, buffets, cocktails dînatoires, sandwichs de toutes sortes, méchouis, mariages et chef à domicile, à Saint-Denis-sur-Richelieu, sur la Rive-Sud et à Montréal.</p>
+   <div class="ctas"><a class="btn btn-gold" href="tel:+14507872565">📞 Appeler (450) 787-2565</a><a class="btn btn-line" href="#menu">Voir les menus</a></div>
+  </div>
+  <div class="platter" aria-hidden="true">
+   <svg viewBox="0 0 420 340" width="100%">
+    <ellipse cx="210" cy="190" rx="190" ry="120" fill="#fbf5ea"/><ellipse cx="210" cy="190" rx="168" ry="102" fill="none" stroke="#e7c27a" stroke-width="3"/>
+    <g><path d="M90 170 h80 l-8 26 h-64z" fill="#f3d9a4"/><path d="M96 160 h68 v12 h-68z" fill="#7c9a46"/><path d="M92 152 h76 l-6 10 h-64z" fill="#f3d9a4"/></g>
+    <g><path d="M190 140 h70 l-6 22 h-58z" fill="#f3d9a4"/><path d="M194 132 h62 v10 h-62z" fill="#d24a3a"/><path d="M190 124 h70 l-6 9 h-58z" fill="#f3d9a4"/></g>
+    <g fill="#e8b04a"><circle cx="300" cy="170" r="16"/><circle cx="330" cy="196" r="16"/><circle cx="296" cy="214" r="16"/></g>
+    <g fill="#a8243a"><circle cx="300" cy="168" r="5"/><circle cx="330" cy="194" r="5"/><circle cx="296" cy="212" r="5"/></g>
+    <g><ellipse cx="160" cy="245" rx="34" ry="14" fill="#fff"/><circle cx="150" cy="240" r="7" fill="#d24a3a"/><circle cx="168" cy="242" r="7" fill="#f08a5d"/></g>
+    <g><ellipse cx="250" cy="250" rx="36" ry="14" fill="#fff"/><path d="M226 248 q24 -18 48 0" fill="#7c9a46"/><circle cx="250" cy="244" r="6" fill="#e8b04a"/></g>
+    <g fill="#5f7f3b"><path d="M110 210 q10 -14 20 0 q-10 8 -20 0z"/><path d="M340 140 q10 -14 20 0 q-10 8 -20 0z"/></g>
+   </svg>
+  </div>
+ </div>
+</header>
+
+<section id="apropos">
+ <div class="wrap about">
+  <div>
+   <div class="kicker">Notre maison</div>
+   <h2 class="sec-title">Une expérience gastronomique complète</h2>
+   <p>Traiteur Paskoya se spécialise dans le service de repas chauds ou froids, de bouchées, de buffets, de cocktails dînatoires, de sandwichs de toutes sortes, avec un menu varié, un service de chef à domicile et des présentations culinaires à couper le souffle.</p>
+   <p>Une expérience gastronomique complète et une équipe professionnelle font la renommée de Paskoya. Notre chef propriétaire est diplômé de l'ITHQ.</p>
+   <p>À Saint-Denis-sur-Richelieu, Paskoya Resto-Traiteur vous accueille aussi pour des repas sur place ou pour emporter. Appelez-nous pour connaître nos heures.</p>
+  </div>
+  <div class="fam">
+   <h3>Une entreprise familiale</h3>
+   <p>Les deux filles du couple, Jade et Maude, se sont jointes à l'entreprise. Ensemble, avec leur équipe, ils offrent des plats cuisinés surgelés en plus du service de traiteur pour les réceptions, banquets et activités professionnelles.</p>
+   <div class="names"><span>Michel</span><span>Céline</span><span>Jade</span><span>Maude</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="svcs" id="services">
+ <div class="wrap">
+  <div class="kicker">Nos services</div>
+  <h2 class="sec-title">Servi comme il se doit</h2>
+  <p class="intro-txt">Du 5 à 7 entre amis au grand jour de votre mariage, on s'occupe du repas.</p>
+  <div class="svc-grid" id="svcgrid">
+   <div class="svc"><div class="plate"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M6 14h16v4a8 8 0 0 1-16 0z" fill="#6e1b28"/><path d="M6 12c0-5 16-5 16 0" fill="#fff" stroke="#6e1b28" stroke-width="1.5"/></svg></div><h3>Chef à domicile</h3><p>Une expérience culinaire dans le confort de votre foyer. Le menu est adapté selon vos goûts et fourni sur demande. Idéal pour une réunion de famille ou un souper entre amis.</p></div>
+   <div class="svc"><div class="plate"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M8 4h12c0 8-2 12-6 12s-6-4-6-12z" fill="#a8243a"/><path d="M14 16v8M9 25h10" stroke="#c9973a" stroke-width="2"/></svg></div><h3>Cocktail dînatoire</h3><p>Des tapas confectionnés avec la plus grande attention, selon vos goûts. Idéal pour une réunion de famille, un 5 à 7 ou une soirée entre amis. Menu fourni sur demande.</p></div>
+   <div class="svc"><div class="plate"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M4 18c4-8 16-8 20 0z" fill="#b07a28"/><path d="M6 22h16" stroke="#d24a3a" stroke-width="3" stroke-linecap="round"/><path d="M10 10q2-4 0-6M16 10q2-4 0-6" stroke="#c9973a" stroke-width="1.5" fill="none"/></svg></div><h3>Méchouis</h3><p>Durant la période estivale. Spécialistes de la cuisson au charbon de bois, nous nous déplaçons pour vos réceptions : choisissez vos pièces de viande et vos salades, on vous guide au besoin.</p></div>
+   <div class="svc"><div class="plate"><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="11" cy="15" r="6" fill="none" stroke="#c9973a" stroke-width="2.5"/><circle cx="17" cy="15" r="6" fill="none" stroke="#c9973a" stroke-width="2.5"/></svg></div><h3>Mariages</h3><p>Pour le grand moment de votre vie, laissez-nous vous conseiller et préparer votre repas ou buffet de mariage, ainsi que tout le service dont vous aurez besoin.</p></div>
+   <div class="svc"><div class="plate"><svg width="28" height="28" viewBox="0 0 28 28"><rect x="3" y="9" width="14" height="10" rx="2" fill="#6e1b28"/><path d="M17 12h5l3 4v3h-8z" fill="#a8243a"/><circle cx="8" cy="21" r="2.5" fill="#c9973a"/><circle cx="21" cy="21" r="2.5" fill="#c9973a"/></svg></div><h3>Livraison</h3><p>Nous nous déplaçons partout en Montérégie et même à Montréal, selon l'ampleur de l'événement. La distance n'est pas un problème.</p></div>
+   <div class="svc"><div class="plate"><svg width="28" height="28" viewBox="0 0 28 28"><rect x="5" y="8" width="18" height="13" rx="2" fill="#e8b04a"/><path d="M5 12h18" stroke="#b07a28" stroke-width="2"/><path d="M14 4v3M10 5l1 2M18 5l-1 2" stroke="#7fb0d0" stroke-width="1.5"/></svg></div><h3>Plats cuisinés</h3><p>Plats cuisinés surgelés à l'unité et formats familiaux pour 8 à 10 personnes (sur commande, 24 h d'avance). Location de vaisselle, de coupes à vin, de réchauds et de percolateurs aussi offerte.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="menu-sec" id="menu">
+ <div class="wrap">
+  <div class="kicker">Nos menus</div>
+  <h2 class="sec-title">Tous nos menus et nos prix</h2>
+  <p class="intro-txt">Choisissez une catégorie. Nous pouvons adapter les menus selon vos goûts.</p>
+<div class="tabs" role="tablist"><button role="tab" class="tab on" data-t="carte" aria-selected="true">À la carte</button><button role="tab" class="tab" data-t="froid" aria-selected="false">Buffet froid</button><button role="tab" class="tab" data-t="chaud" aria-selected="false">Buffet chaud</button><button role="tab" class="tab" data-t="table" aria-selected="false">Table d&#x27;hôte</button><button role="tab" class="tab" data-t="cle" aria-selected="false">Clé en main · mariage</button><button role="tab" class="tab" data-t="mechoui" aria-selected="false">Méchoui</button><button role="tab" class="tab" data-t="familial" aria-selected="false">Plats familiaux</button><button role="tab" class="tab" data-t="surgeles" aria-selected="false">Plats cuisinés surgelés</button><button role="tab" class="tab" data-t="funerailles" aria-selected="false">Buffet funérailles</button></div><div class="panels"><div class="panel on" id="p-carte" role="tabpanel"><h3 class="ptitle">À la carte</h3><p class="mnote">Les accompagnements sans prix et certains desserts : prix sur demande.</p><div class="mgrid"><div class="mcat"><h4>Bouchées</h4><ul class="menu-list"><li><span class="it">Oeufs farcis standard</span><span class="dots"></span><span class="pr">14,25 $</span></li><li><span class="it">Cuillères tomate et mangue crevettes</span><span class="dots"></span><span class="pr">60,00 $ <small>/20</small></span></li><li><span class="it">Cuillères avocat et saumon fumé</span><span class="dots"></span><span class="pr">60,00 $ <small>/20</small></span></li><li><span class="it">Ceviche de pétoncle</span><span class="dots"></span><span class="pr">60,00 $ <small>/20</small></span></li><li><span class="it">Mini vol-au-vent au poulet ou crevette</span><span class="dots"></span><span class="pr">60,00 $ <small>/30</small></span></li><li><span class="it">Brochette à l&#x27;italienne</span><span class="dots"></span><span class="pr">60,00 $ <small>/30</small></span></li><li><span class="it">Boulettes chinoises</span><span class="dots"></span><span class="pr">60,00 $ <small>/35</small></span></li><li><span class="it">Croûton de canard, oignon confit</span><span class="dots"></span><span class="pr">60,00 $ <small>/20</small></span></li><li><span class="it">Baluchon aux champignons farci</span><span class="dots"></span><span class="pr">2,50 $ <small>ch.</small></span></li><li><span class="it">Baluchon aux poires et tomates séchées</span><span class="dots"></span><span class="pr">2,50 $ <small>ch.</small></span></li><li><span class="it">Saucisse cocktail au bacon</span><span class="dots"></span><span class="pr">0,75 $ <small>ch.</small></span></li></ul></div><div class="mcat"><h4>Pains fourrés</h4><ul class="menu-list"><li><span class="it">Au poulet</span><span class="dots"></span><span class="pr">15,50 $ <small>/plateau de 15</small></span></li><li><span class="it">Au jambon</span><span class="dots"></span><span class="pr">14,50 $ <small>/plateau de 15</small></span></li><li><span class="it">Aux oeufs</span><span class="dots"></span><span class="pr">13,50 $ <small>/plateau de 15</small></span></li><li><span class="it">Au thon</span><span class="dots"></span><span class="pr">13,50 $ <small>/plateau de 15</small></span></li><li><span class="it">Plateau panini ou wrap</span><span class="dots"></span><span class="pr">25,00 $</span></li></ul></div><div class="mcat"><h4>Sandwichs</h4><ul class="menu-list"><li><span class="it">Sandwichs aux oeufs</span><span class="dots"></span><span class="pr">30,00 $ <small>/plateau</small></span></li><li><span class="it">Sandwichs au jambon</span><span class="dots"></span><span class="pr">30,00 $ <small>/plateau</small></span></li><li><span class="it">Sandwichs au poulet</span><span class="dots"></span><span class="pr">30,00 $ <small>/plateau</small></span></li><li><span class="it">Sandwichs au porc</span><span class="dots"></span><span class="pr">30,00 $ <small>/plateau</small></span></li></ul></div><div class="mcat"><h4>Salades</h4><ul class="menu-list"><li><span class="it">Macaroni / chou / patates</span><span class="dots"></span><span class="pr">10,00 $</span></li><li><span class="it">Couscous canneberge</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Taboulé</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Carottes</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Riz aux crevettes ou poulet</span><span class="dots"></span><span class="pr">12,00 $</span></li><li><span class="it">Salade chinoise / César / du chef</span><span class="dots"></span><span class="pr">17,00 $</span></li><li><span class="it">Salade tomate et mangues</span><span class="dots"></span><span class="pr">17,50 $</span></li><li><span class="it">Papillons aux légumes</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Fusilli au thon</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Penne au jambon</span><span class="dots"></span><span class="pr">11,50 $</span></li></ul></div><div class="mcat"><h4>Charcuteries, crudités et fromages</h4><ul class="menu-list"><li><span class="it">Assiette de viandes froides</span><span class="dots"></span><span class="pr">30,00 $ <small>/45 tranches</small></span></li><li><span class="it">Légumes trempette</span><span class="dots"></span><span class="pr">25,00 $</span></li><li><span class="it">Olives et cornichons</span><span class="dots"></span><span class="pr">10,00 $</span></li><li><span class="it">Assiette de fromage et d&#x27;olives</span><span class="dots"></span><span class="pr">35,00 $</span></li><li><span class="it">Assiette de fromage et terrine</span><span class="dots"></span><span class="pr">80,00 $</span></li><li><span class="it">Assiette de fruits frais</span><span class="dots"></span><span class="pr">50,00 $</span></li></ul></div><div class="mcat"><h4>Accompagnements</h4><ul class="menu-list"><li><span class="it">Riz aux fines herbes</span><span class="dots"></span><span class="pr"></span></li><li><span class="it">Pommes de terre en purée</span><span class="dots"></span><span class="pr"></span></li><li><span class="it">Riz au poulet</span><span class="dots"></span><span class="pr"></span></li><li><span class="it">Sauce à spaghetti à la viande (500 ml ou 1 L)</span><span class="dots"></span><span class="pr"></span></li><li><span class="it">Sauce aux légumes (500 ml)</span><span class="dots"></span><span class="pr"></span></li><li><span class="it">Sauce rosée (500 ml ou 1 L)</span><span class="dots"></span><span class="pr"></span></li><li><span class="it">Cretons grand-mère</span><span class="dots"></span><span class="pr"></span></li></ul></div><div class="mcat"><h4>Tartes et gâteaux</h4><ul class="menu-list"><li><span class="it">Gâteau Triple fondant ou Duo chocolat</span><span class="dots"></span><span class="pr">75,00 $ <small>/ 37,50 $</small></span></li><li><span class="it">Pavé aux framboises ou Avalanche à l&#x27;érable</span><span class="dots"></span><span class="pr">102,00 $ <small>/ 54,00 $</small></span></li><li><span class="it">Tarte au sucre à la crème</span><span class="dots"></span><span class="pr">14,50 $</span></li><li><span class="it">Pain aux courgettes</span><span class="dots"></span><span class="pr"></span></li><li><span class="it">Tarte aux oeufs</span><span class="dots"></span><span class="pr"></span></li><li><span class="it">Pain aux bananes ou aux carottes</span><span class="dots"></span><span class="pr"></span></li></ul></div><div class="mcat"><h4>Breuvages</h4><ul class="menu-list"><li><span class="it">Café, thé, tisane</span><span class="dots"></span><span class="pr">2,25 $ <small>/pers.</small></span></li><li><span class="it">Liqueur, vin, bière</span><span class="dots"></span><span class="pr">Prix sur demande</span></li></ul></div><div class="mcat"><h4>Services complémentaires</h4><ul class="menu-list"><li><span class="it">Location de vaisselle</span><span class="dots"></span><span class="pr">5,50 $ <small>/pers.</small></span></li><li><span class="it">Location de coupes à vin</span><span class="dots"></span><span class="pr">8,00 $ <small>/douzaine</small></span></li><li><span class="it">Location de réchaud de table</span><span class="dots"></span><span class="pr">15,00 $ <small>ch.</small></span></li><li><span class="it">Location de percolateur</span><span class="dots"></span><span class="pr">10,00 $ <small>ch.</small></span></li><li><span class="it">Livraison</span><span class="dots"></span><span class="pr">À déterminer</span></li></ul></div></div></div><div class="panel" id="p-froid" role="tabpanel"><h3 class="ptitle">Buffet froid</h3><p class="mnote">Prix selon le nombre de personnes. Salades d'accompagnement au choix.</p><div class="tscroll" tabindex="0" role="region" aria-label="Buffet froid"><table class="ptable"><thead><tr><th>Buffet froid</th><th>10<small>pers.</small></th><th>15<small>pers.</small></th><th>20<small>pers.</small></th><th>25<small>pers.</small></th><th>30<small>pers.</small></th><th>35<small>pers.</small></th><th>40<small>pers.</small></th><th>50 à 99<small>pers.</small></th><th>100 +<small>pers.</small></th></tr></thead><tbody><tr><th scope="row"><b>1</b> Sandwichs, olives, cornichons</th><td>68,70 $</td><td>100,99 $</td><td>132,59 $</td><td>164,02 $</td><td>193,73 $</td><td>221,21 $</td><td>247,32 $</td><td>6,11 $</td><td>5,91 $</td></tr><tr><th scope="row"><b>2</b> Sandwichs, légumes, trempette</th><td>76,40 $</td><td>112,31 $</td><td>147,45 $</td><td>182,41 $</td><td>215,45 $</td><td>246,01 $</td><td>275,04 $</td><td>6,80 $</td><td>6,57 $</td></tr><tr><th scope="row"><b>3</b> Sandwichs, légumes, trempette, fromage</th><td>108,10 $</td><td>158,91 $</td><td>208,63 $</td><td>258,09 $</td><td>304,84 $</td><td>348,08 $</td><td>389,16 $</td><td>9,62 $</td><td>9,30 $</td></tr><tr><th scope="row"><b>4</b> Sandwichs, pains fourrés, olives, cornichons</th><td>88,00 $</td><td>129,36 $</td><td>169,84 $</td><td>210,10 $</td><td>248,16 $</td><td>283,36 $</td><td>316,80 $</td><td>7,83 $</td><td>7,57 $</td></tr><tr><th scope="row"><b>5</b> Sandwichs, pains fourrés, légumes, trempette</th><td>91,30 $</td><td>134,21 $</td><td>176,21 $</td><td>217,98 $</td><td>257,47 $</td><td>293,99 $</td><td>328,68 $</td><td>8,13 $</td><td>7,85 $</td></tr><tr><th scope="row"><b>6</b> Sandwichs, pains fourrés, légumes, trempette, fromage</th><td>100,00 $</td><td>147,00 $</td><td>193,00 $</td><td>238,75 $</td><td>282,00 $</td><td>322,00 $</td><td>360,00 $</td><td>8,90 $</td><td>8,60 $</td></tr><tr><th scope="row"><b>7</b> Sandwichs, pains fourrés, 3 choix de salades, olives, cornichons</th><td>99,00 $</td><td>145,53 $</td><td>191,07 $</td><td>236,36 $</td><td>279,18 $</td><td>318,78 $</td><td>356,40 $</td><td>8,81 $</td><td>8,51 $</td></tr><tr><th scope="row"><b>8</b> Sandwichs, pains fourrés, 3 choix de salades, légumes, trempette</th><td>101,50 $</td><td>149,21 $</td><td>195,90 $</td><td>242,33 $</td><td>286,23 $</td><td>326,83 $</td><td>365,40 $</td><td>9,03 $</td><td>8,73 $</td></tr><tr><th scope="row"><b>9</b> Sandwichs, pains fourrés, 3 choix de salades, légumes, trempette, fromage</th><td>119,00 $</td><td>174,93 $</td><td>229,67 $</td><td>284,11 $</td><td>335,58 $</td><td>383,18 $</td><td>428,40 $</td><td>10,59 $</td><td>10,23 $</td></tr><tr><th scope="row"><b>10</b> Sandwichs, pains fourrés, 3 choix de salades, olives, cornichons, oeufs farcis</th><td>112,20 $</td><td>164,93 $</td><td>216,55 $</td><td>267,88 $</td><td>316,40 $</td><td>361,28 $</td><td>403,92 $</td><td>9,99 $</td><td>9,65 $</td></tr><tr><th scope="row"><b>11</b> Sandwichs, pains fourrés, 3 choix de salades, légumes, trempette, oeufs farcis</th><td>122,10 $</td><td>179,49 $</td><td>235,65 $</td><td>291,51 $</td><td>344,32 $</td><td>393,16 $</td><td>439,56 $</td><td>10,87 $</td><td>10,50 $</td></tr><tr><th scope="row"><b>12</b> Sandwichs, pains fourrés, 3 choix de salades, légumes, trempette, fromage, oeufs farcis</th><td>133,00 $</td><td>195,51 $</td><td>256,69 $</td><td>317,54 $</td><td>375,06 $</td><td>428,26 $</td><td>478,80 $</td><td>11,84 $</td><td>11,44 $</td></tr><tr><th scope="row"><b>14</b> Sandwichs, pains fourrés, 3 choix de salades, légumes, trempette, fromage, oeufs farcis, viandes froides</th><td>146,30 $</td><td>215,06 $</td><td>282,36 $</td><td>349,29 $</td><td>412,57 $</td><td>471,09 $</td><td>526,68 $</td><td>13,02 $</td><td>12,58 $</td></tr><tr><th scope="row"><b>15</b> Sandwichs, pains fourrés, 3 choix de salades, légumes, trempette, fromage, oeufs farcis, fougasse, bouchées aux crevettes</th><td>162,80 $</td><td>239,32 $</td><td>314,20 $</td><td>388,69 $</td><td>459,10 $</td><td>524,22 $</td><td>586,08 $</td><td>14,49 $</td><td>14,00 $</td></tr><tr><th scope="row"><b>16</b> Sandwichs, pains fourrés, 3 choix de salades, légumes, trempette, fromage, oeufs farcis, fougasse, bouchées aux crevettes, plateau de viandes froides</th><td>178,70 $</td><td>262,69 $</td><td>344,89 $</td><td>426,65 $</td><td>503,93 $</td><td>575,41 $</td><td>643,32 $</td><td>15,90 $</td><td>15,37 $</td></tr></tbody></table></div><p class="swipe">← Glissez pour voir tous les formats →</p></div><div class="panel" id="p-chaud" role="tabpanel"><h3 class="ptitle">Buffet chaud</h3><p class="mnote">Chaque buffet chaud comprend 3 choix de salades, ainsi que du pain et du beurre.</p><div class="tscroll" tabindex="0" role="region" aria-label="Buffet chaud"><table class="ptable"><thead><tr><th>Buffet chaud</th><th>10<small>pers.</small></th><th>15<small>pers.</small></th><th>20<small>pers.</small></th><th>25<small>pers.</small></th><th>30<small>pers.</small></th><th>35<small>pers.</small></th><th>40<small>pers.</small></th><th>50 à 99<small>pers.</small></th><th>100 +<small>pers.</small></th></tr></thead><tbody><tr><th scope="row"><b>21</b> Dinde rôtie, ragoût de boulettes, tourtière, pommes de terre</th><td>260,00 $</td><td>382,20 $</td><td>501,80 $</td><td>620,75 $</td><td>733,20 $</td><td>837,20 $</td><td>936,00 $</td><td>23,14 $</td><td>22,36 $</td></tr><tr><th scope="row"><b>22</b> Boeuf bourguignon, vol-au-vent au poulet, riz à l&#x27;ail</th><td>266,50 $</td><td>391,76 $</td><td>514,35 $</td><td>636,27 $</td><td>751,53 $</td><td>858,13 $</td><td>959,40 $</td><td>23,72 $</td><td>22,92 $</td></tr><tr><th scope="row"><b>23</b> Timbale de fruits de mer, poulet cacciatore, riz aux fines herbes, légumes jardinière</th><td>286,00 $</td><td>420,42 $</td><td>551,98 $</td><td>682,83 $</td><td>806,52 $</td><td>920,92 $</td><td>1029,60 $</td><td>25,45 $</td><td>24,60 $</td></tr><tr><th scope="row"><b>24</b> Brochettes de poulet, boulettes à l&#x27;espagnole, riz aux fines herbes, légumes jardinière</th><td>266,50 $</td><td>391,76 $</td><td>514,35 $</td><td>636,27 $</td><td>751,53 $</td><td>858,13 $</td><td>959,40 $</td><td>23,72 $</td><td>22,92 $</td></tr><tr><th scope="row"><b>25</b> Suprême de volaille, émincé de boeuf, pommes de terre, légumes jardinière</th><td>266,50 $</td><td>391,76 $</td><td>514,35 $</td><td>636,27 $</td><td>751,53 $</td><td>858,13 $</td><td>959,40 $</td><td>23,72 $</td><td>22,92 $</td></tr><tr><th scope="row"><b>26</b> Blanquette de veau, sauté de poulet aux légumes, pommes de terre, légumes jardinière</th><td>273,00 $</td><td>401,31 $</td><td>526,89 $</td><td>651,79 $</td><td>769,86 $</td><td>879,06 $</td><td>982,80 $</td><td>24,30 $</td><td>23,48 $</td></tr><tr><th scope="row"><b>27</b> Fesse de boeuf, lasagne, pommes de terre, légumes jardinière</th><td>260,00 $</td><td>382,20 $</td><td>501,80 $</td><td>620,75 $</td><td>733,20 $</td><td>837,20 $</td><td>936,00 $</td><td>23,14 $</td><td>22,36 $</td></tr><tr><th scope="row"><b>28</b> Filet de porc, lasagne, pommes de terre, légumes jardinière</th><td>253,50 $</td><td>372,65 $</td><td>489,26 $</td><td>605,23 $</td><td>714,87 $</td><td>816,27 $</td><td>912,60 $</td><td>22,56 $</td><td>21,80 $</td></tr></tbody></table></div><p class="swipe">← Glissez pour voir tous les formats →</p></div><div class="panel" id="p-table" role="tabpanel"><h3 class="ptitle">Table d&#x27;hôte</h3><p class="mnote">Chaque menu comprend des légumes jardinière, du pain et du beurre, un dessert au choix ainsi que thé ou café. Vous choisissez entre un potage du chef ou une entrée de salade. Avec service : 6,00 $ de plus. Nous pouvons adapter les menus selon vos goûts.</p><div class="twohead"><span>3 services</span><span>4 services</span></div><ul class="menu-list"><li><span class="it"><b>TH 31</b> Boeuf bourguignon, riz à l&#x27;ail</span><span class="dots"></span><span class="pr two">25,00 $<i>·</i>26,00 $</span></li><li><span class="it"><b>TH 32</b> Filet de porc, pommes de terre</span><span class="dots"></span><span class="pr two">25,00 $<i>·</i>26,00 $</span></li><li><span class="it"><b>TH 33</b> Boeuf à l&#x27;érable, pommes de terre</span><span class="dots"></span><span class="pr two">25,00 $<i>·</i>26,00 $</span></li><li><span class="it"><b>TH 34</b> Vol-au-vent au poulet, pommes de terre</span><span class="dots"></span><span class="pr two">25,00 $<i>·</i>26,00 $</span></li><li><span class="it"><b>TH 35</b> Blanquette de veau, riz aux fines herbes</span><span class="dots"></span><span class="pr two">26,00 $<i>·</i>27,00 $</span></li><li><span class="it"><b>TH 36</b> Suprême de volaille, pommes de terre</span><span class="dots"></span><span class="pr two">25,00 $<i>·</i>26,00 $</span></li><li><span class="it"><b>TH 37</b> Brochette de poulet, riz à l&#x27;ail</span><span class="dots"></span><span class="pr two">25,00 $<i>·</i>26,00 $</span></li><li><span class="it"><b>TH 38</b> Timbale de fruits de mer, riz aux fines herbes</span><span class="dots"></span><span class="pr two">26,00 $<i>·</i>27,00 $</span></li><li><span class="it"><b>TH 39</b> Émincé de boeuf, pommes de terre</span><span class="dots"></span><span class="pr two">25,00 $<i>·</i>26,00 $</span></li></ul></div><div class="panel" id="p-cle" role="tabpanel"><h3 class="ptitle">Clé en main · mariage</h3><p class="mnote">Quelques suggestions de menus pour une réception de mariage. Chaque menu comprend un dessert au choix ainsi que thé ou café. Nous pouvons adapter les menus selon vos goûts.</p><div class="twohead"><span>Sans potage</span><span>Avec potage</span></div><ul class="menu-list"><li><span class="it"><b>BUF 21</b> Émincé de dinde, ragoût de boulettes, tourtière, pommes de terre, jardinière</span><span class="dots"></span><span class="pr two">34,00 $<i>·</i>36,00 $</span></li><li><span class="it"><b>BUF 22</b> Filet de porc à la pomme de glace, boeuf bourguignon, vol-au-vent au poulet, pommes de terre, jardinière</span><span class="dots"></span><span class="pr two">34,00 $<i>·</i>36,00 $</span></li><li><span class="it"><b>BUF 23</b> Fesse de boeuf, timbale de fruits de mer, poulet cacciatore, riz aux fines herbes, jardinière</span><span class="dots"></span><span class="pr two">35,00 $<i>·</i>37,00 $</span></li><li><span class="it"><b>BUF 24</b> Fesse de boeuf, brochettes de poulet, boulettes à l&#x27;espagnole, riz aux fines herbes, jardinière</span><span class="dots"></span><span class="pr two">34,00 $<i>·</i>36,00 $</span></li><li><span class="it"><b>BUF 25</b> Fesse de boeuf, suprême de volaille forestière, veau parmigiana, pommes de terre, jardinière</span><span class="dots"></span><span class="pr two">35,00 $<i>·</i>37,00 $</span></li><li><span class="it"><b>BUF 26</b> Boeuf Stroganoff, suprême de volaille Vichy, penne sauce légumes et fromage de chèvre, pommes de terre, jardinière</span><span class="dots"></span><span class="pr two">34,00 $<i>·</i>36,00 $</span></li><li><span class="it"><b>BUF 27</b> Fesse de boeuf, cari d&#x27;agneau, boucles sauce rosée aux crevettes, pommes de terre, jardinière</span><span class="dots"></span><span class="pr two">38,00 $<i>·</i>40,00 $</span></li><li><span class="it"><b>BUF 28</b> Rôti de porc cajun, penne aux saucisses italiennes, lapin aux prunes, pommes de terre, jardinière</span><span class="dots"></span><span class="pr two">38,00 $<i>·</i>40,00 $</span></li><li><span class="it"><b>BUF 29 · De luxe</b> Cari d&#x27;agneau, magrets de canard sauce porto et fruits, filet de porc à la pomme de glace, pommes de terre, jardinière</span><span class="dots"></span><span class="pr two">40,00 $<i>·</i>42,00 $</span></li></ul></div><div class="panel" id="p-mechoui" role="tabpanel"><h3 class="ptitle">Méchoui</h3><div class="mech"><div><h4>Méchoui de porc et de boeuf</h4><p>Cuisson au charbon de bois, avec trois choix de salades, pommes de terre, légumes, pain et deux choix de sauce. Offert durant la période estivale.</p></div><div class="mech-p"><span>25,00 $<small>par personne</small></span><span>35,00 $<small>avec service</small></span></div></div></div><div class="panel" id="p-familial" role="tabpanel"><h3 class="ptitle">Plats familiaux</h3><p class="mnote">Les formats familiaux sont sur commande seulement (24 h d'avance) et sont conçus pour 8 à 10 personnes.</p><div class="mgrid"><div class="mcat"><h4>Boeuf</h4><ul class="menu-list"><li><span class="it">Boeuf bourguignon</span><span class="dots"></span><span class="pr">78,50 $</span></li><li><span class="it">Ragoût de boeuf à l&#x27;érable</span><span class="dots"></span><span class="pr">78,50 $</span></li><li><span class="it">Émincé de boeuf aux champignons</span><span class="dots"></span><span class="pr">75,50 $</span></li></ul></div><div class="mcat"><h4>Dinde et poulet</h4><ul class="menu-list"><li><span class="it">Dinde rôtie</span><span class="dots"></span><span class="pr">85,00 $</span></li><li><span class="it">Suprême de volaille aux champignons</span><span class="dots"></span><span class="pr">61,50 $</span></li><li><span class="it">Émincé de poulet cacciatore</span><span class="dots"></span><span class="pr">46,00 $</span></li><li><span class="it">Poulet à la King</span><span class="dots"></span><span class="pr">40,00 $</span></li><li><span class="it">Sauté de poulet aux légumes</span><span class="dots"></span><span class="pr">46,00 $</span></li></ul></div><div class="mcat"><h4>Porc</h4><ul class="menu-list"><li><span class="it">Ragoût de boulettes</span><span class="dots"></span><span class="pr">65,00 $</span></li><li><span class="it">Boulettes à l&#x27;espagnole</span><span class="dots"></span><span class="pr">65,00 $</span></li><li><span class="it">Filet de porc à la pomme de glace</span><span class="dots"></span><span class="pr">62,00 $</span></li><li><span class="it">Farce au porc</span><span class="dots"></span><span class="pr">6,50 $</span></li></ul></div><div class="mcat"><h4>Veau</h4><ul class="menu-list"><li><span class="it">Blanquette de veau</span><span class="dots"></span><span class="pr">76,95 $</span></li><li><span class="it">Osso buco (toujours disponible)</span><span class="dots"></span><span class="pr">12,50 $ <small>ch.</small></span></li></ul></div><div class="mcat"><h4>Fruits de mer et pâtes</h4><ul class="menu-list"><li><span class="it">Cassolette de fruits de mer</span><span class="dots"></span><span class="pr">59,00 $</span></li><li><span class="it">Macaroni à la viande</span><span class="dots"></span><span class="pr">19,50 $</span></li><li><span class="it">Lasagne</span><span class="dots"></span><span class="pr">22,00 $</span></li><li><span class="it">Lasagne Paskoya</span><span class="dots"></span><span class="pr">27,00 $</span></li></ul></div><div class="mcat"><h4>Pâtés et quiches</h4><ul class="menu-list"><li><span class="it">Tourtière (6 portions)</span><span class="dots"></span><span class="pr">11,00 $</span></li><li><span class="it">Pâté au saumon (6 portions)</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Pâté au poulet (6 portions)</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Quiche au jambon</span><span class="dots"></span><span class="pr">12,50 $</span></li><li><span class="it">Quiche à la ratatouille</span><span class="dots"></span><span class="pr">12,50 $</span></li><li><span class="it">Quiche aux asperges</span><span class="dots"></span><span class="pr">11,50 $</span></li></ul></div><div class="mcat"><h4>Accompagnements (15 portions)</h4><ul class="menu-list"><li><span class="it">Pommes de terre en purée</span><span class="dots"></span><span class="pr">9,50 $</span></li><li><span class="it">Riz à l&#x27;ail ou aux fines herbes</span><span class="dots"></span><span class="pr">7,50 $</span></li><li><span class="it">Jardinière de légumes</span><span class="dots"></span><span class="pr">7,50 $</span></li></ul></div></div></div><div class="panel" id="p-surgeles" role="tabpanel"><h3 class="ptitle">Plats cuisinés surgelés</h3><div class="mgrid"><div class="mcat"><h4>Soupes et entrées</h4><ul class="menu-list"><li><span class="it">Soupe à l&#x27;oignon (1 L)</span><span class="dots"></span><span class="pr">4,50 $</span></li><li><span class="it">Soupe aux légumes (1 L)</span><span class="dots"></span><span class="pr">4,25 $</span></li><li><span class="it">Coquille St-Jacques</span><span class="dots"></span><span class="pr">5,75 $</span></li><li><span class="it">Coquille au poulet</span><span class="dots"></span><span class="pr">4,00 $</span></li><li><span class="it">Petits pâtés Saint-Denis (4)</span><span class="dots"></span><span class="pr">4,75 $</span></li><li><span class="it">Tartelettes aux tomates (4)</span><span class="dots"></span><span class="pr">4,00 $</span></li></ul></div><div class="mcat"><h4>Boeuf</h4><ul class="menu-list"><li><span class="it">Boeuf bourguignon</span><span class="dots"></span><span class="pr">8,40 $</span></li><li><span class="it">Ragoût de boeuf à l&#x27;érable</span><span class="dots"></span><span class="pr">9,15 $</span></li><li><span class="it">Émincé de boeuf aux champignons</span><span class="dots"></span><span class="pr">7,00 $</span></li><li><span class="it">Pain de viande (4 portions)</span><span class="dots"></span><span class="pr">16,25 $</span></li><li><span class="it">Pain de viande cuit (2 portions)</span><span class="dots"></span><span class="pr">7,10 $</span></li><li><span class="it">Pâté chinois</span><span class="dots"></span><span class="pr">5,00 $</span></li></ul></div><div class="mcat"><h4>Veau</h4><ul class="menu-list"><li><span class="it">Blanquette de veau</span><span class="dots"></span><span class="pr">9,35 $</span></li><li><span class="it">Osso buco</span><span class="dots"></span><span class="pr">30,50 $ <small>/kg</small></span></li></ul></div><div class="mcat"><h4>Porc</h4><ul class="menu-list"><li><span class="it">Émincé de porc forestière</span><span class="dots"></span><span class="pr">6,50 $</span></li><li><span class="it">Filet de porc à la pomme de glace</span><span class="dots"></span><span class="pr">7,00 $</span></li><li><span class="it">Boulettes à l&#x27;espagnole</span><span class="dots"></span><span class="pr">5,00 $</span></li><li><span class="it">Rôti de porc et patates jaunes</span><span class="dots"></span><span class="pr">5,75 $</span></li><li><span class="it">Ragoût de boulettes</span><span class="dots"></span><span class="pr">4,75 $</span></li></ul></div><div class="mcat"><h4>Poulet</h4><ul class="menu-list"><li><span class="it">Suprême de volaille aux champignons</span><span class="dots"></span><span class="pr">7,00 $</span></li><li><span class="it">Poulet à la King</span><span class="dots"></span><span class="pr">6,00 $</span></li><li><span class="it">Poulet Vichy</span><span class="dots"></span><span class="pr">7,00 $</span></li></ul></div><div class="mcat"><h4>Pâtes</h4><ul class="menu-list"><li><span class="it">Spaghetti à la viande</span><span class="dots"></span><span class="pr">4,75 $</span></li><li><span class="it">Lasagne</span><span class="dots"></span><span class="pr">5,25 $</span></li><li><span class="it">Spaghettini aux crevettes</span><span class="dots"></span><span class="pr">5,75 $</span></li><li><span class="it">Penne aux saucisses italiennes</span><span class="dots"></span><span class="pr">5,00 $</span></li><li><span class="it">Fettucine au poulet César</span><span class="dots"></span><span class="pr">6,00 $</span></li></ul></div><div class="mcat"><h4>Fruits de mer et poisson</h4><ul class="menu-list"><li><span class="it">Cassolette de fruits de mer</span><span class="dots"></span><span class="pr">8,25 $</span></li><li><span class="it">Gratin de fruits de mer</span><span class="dots"></span><span class="pr">9,85 $</span></li><li><span class="it">Filet de sole au beurre et aux fines herbes</span><span class="dots"></span><span class="pr">7,25 $</span></li><li><span class="it">Filet de sole à la Paskoya</span><span class="dots"></span><span class="pr">7,25 $</span></li><li><span class="it">Saumon farci au fromage de chèvre</span><span class="dots"></span><span class="pr">7,75 $</span></li></ul></div><div class="mcat"><h4>Quiches et pâtés (4 à 6 portions · minis : 1 à 2 portions)</h4><ul class="menu-list"><li><span class="it">Tourtière</span><span class="dots"></span><span class="pr">12,00 $</span></li><li><span class="it">Minitourtière</span><span class="dots"></span><span class="pr">4,50 $</span></li><li><span class="it">Pâté au saumon</span><span class="dots"></span><span class="pr">13,00 $</span></li><li><span class="it">Minipâté au saumon</span><span class="dots"></span><span class="pr">4,50 $</span></li><li><span class="it">Pâté au poulet</span><span class="dots"></span><span class="pr">12,50 $</span></li><li><span class="it">Minipâté au poulet</span><span class="dots"></span><span class="pr">4,50 $</span></li><li><span class="it">Quiche au jambon</span><span class="dots"></span><span class="pr">12,50 $</span></li><li><span class="it">Miniquiche au jambon</span><span class="dots"></span><span class="pr">5,75 $</span></li><li><span class="it">Quiche à la ratatouille</span><span class="dots"></span><span class="pr">12,50 $</span></li><li><span class="it">Miniquiche à la ratatouille</span><span class="dots"></span><span class="pr">5,75 $</span></li><li><span class="it">Quiche aux asperges</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Miniquiche aux asperges</span><span class="dots"></span><span class="pr">5,50 $</span></li><li><span class="it">Pâté renversé à la viande</span><span class="dots"></span><span class="pr">3,00 $</span></li><li><span class="it">Pizza (individuelle)</span><span class="dots"></span><span class="pr">8,50 $</span></li></ul></div><div class="mcat"><h4>Desserts</h4><ul class="menu-list"><li><span class="it">Tarte au sucre à la crème (7 portions)</span><span class="dots"></span><span class="pr">11,50 $</span></li><li><span class="it">Tarte aux oeufs (7 portions)</span><span class="dots"></span><span class="pr">10,50 $</span></li><li><span class="it">Tarte aux pommes (7 portions)</span><span class="dots"></span><span class="pr">8,75 $</span></li><li><span class="it">Tarte à l&#x27;érable et pacanes</span><span class="dots"></span><span class="pr">6,00 $</span></li><li><span class="it">Croustade aux pommes (2 portions)</span><span class="dots"></span><span class="pr">3,00 $</span></li><li><span class="it">Pouding chômeur à l&#x27;érable (2 portions)</span><span class="dots"></span><span class="pr">4,50 $</span></li><li><span class="it">Tiramisu (1 portion)</span><span class="dots"></span><span class="pr">3,75 $</span></li><li><span class="it">Minitarte aux oeufs</span><span class="dots"></span><span class="pr">4,00 $</span></li><li><span class="it">Minitarte au sucre</span><span class="dots"></span><span class="pr">4,00 $</span></li><li><span class="it">Minitarte aux pommes</span><span class="dots"></span><span class="pr">5,00 $</span></li></ul></div></div></div><div class="panel" id="p-funerailles" role="tabpanel"><h3 class="ptitle">Buffet funérailles</h3><p class="mnote">Quelques suggestions de buffets froids pour une réunion familiale après des funérailles. Chaque formule comprend dessert et café. Nous pouvons les personnaliser selon vos goûts.</p><ul class="menu-list"><li><span class="it">BF 1 — Sandwichs, hors-d&#x27;oeuvre</span><span class="dots"></span><span class="pr">15,05 $</span></li><li><span class="it">BF 2 — Sandwichs, légumes trempette</span><span class="dots"></span><span class="pr">15,25 $</span></li><li><span class="it">BF 3 — Sandwichs, légumes trempette, fromage</span><span class="dots"></span><span class="pr">16,25 $</span></li><li><span class="it">BF 4 — Sandwichs, pains fourrés au poulet, hors-d&#x27;oeuvre</span><span class="dots"></span><span class="pr">16,05 $</span></li><li><span class="it">BF 5 — Sandwichs, pains fourrés au poulet, légumes trempette</span><span class="dots"></span><span class="pr">16,25 $</span></li><li><span class="it">BF 6 — Sandwichs, pains fourrés au poulet, légumes trempette, fromage</span><span class="dots"></span><span class="pr">17,50 $</span></li><li><span class="it">BF 7 — Sandwichs, pains fourrés au poulet, 3 choix de salades, hors-d&#x27;oeuvre</span><span class="dots"></span><span class="pr">17,75 $</span></li><li><span class="it">BF 8 — Sandwichs, pains fourrés au poulet, 3 choix de salades, légumes trempette</span><span class="dots"></span><span class="pr">18,95 $</span></li><li><span class="it">BF 9 — Sandwichs, pains fourrés au poulet, 3 choix de salades, légumes trempette, fromage</span><span class="dots"></span><span class="pr">18,70 $</span></li><li><span class="it">BF 10 — Sandwichs, pains fourrés au poulet, 3 choix de salades, hors-d&#x27;oeuvre, oeufs farcis</span><span class="dots"></span><span class="pr">18,35 $</span></li><li><span class="it">BF 11 — Sandwichs, pains fourrés au poulet, 3 choix de salades, légumes trempette, oeufs farcis</span><span class="dots"></span><span class="pr">18,40 $</span></li><li><span class="it">BF 12 — Sandwichs, pains fourrés au poulet, 3 choix de salades, légumes trempette, fromage, oeufs farcis</span><span class="dots"></span><span class="pr">19,45 $</span></li></ul></div></div>
+  <p class="menu-foot">Prix tels qu'affichés sur nos menus, à confirmer lors de votre commande.</p>
+ </div>
+</section>
+
+<section class="avis" id="avis">
+ <div class="wrap">
+  <div class="kicker" style="color:var(--gold2)">Ce que nos clients disent</div>
+  <h2 class="sec-title">Ils ont goûté, ils en parlent</h2>
+  <div class="score"><b>4,8 ★</b><span>sur 51 notes · Restaurantji<br>Avis Google ci-dessous, mot pour mot</span></div>
+  <div class="rv-grid">
+   <div class="rv"><div class="st">★★★★★</div><blockquote>« Excellent traiteur! La fraîcheur, la saveur et la quantité sont au rendez-vous. Belle variété de salades au choix. »</blockquote><div class="who">Sophie G. · Avis Google</div></div>
+   <div class="rv"><div class="st">★★★★★</div><blockquote>« Le meilleur service traiteur ! Merci pour votre professionnalisme et nourriture savoureuse! »</blockquote><div class="who">Mélanie G. · Avis Google</div></div>
+   <div class="rv"><div class="st">★★★★★</div><blockquote>« Cuisson et assaisonnements parfait et Prix raisonnable pour la qualité. … J'y retourne c'est certain. Je le recommande »</blockquote><div class="who">Patrick G. · Avis Google</div></div>
+   <div class="rv"><div class="st">★★★★★</div><blockquote>« Bon choix à bon prix »</blockquote><div class="who">André L. · Avis Google</div></div>
+   <div class="rv"><div class="st">★★★★★</div><blockquote>« ça fait bien le travail et c'est très satisfaisant. Staff très sympathique »</blockquote><div class="who">Ben A. · Avis Google</div></div>
+   <div class="rv"><div class="st">★★★★☆</div><blockquote>« La poutine smoke meat cornichons est vraiment très très bonne. C'est une belle place aussi. »</blockquote><div class="who">Jasmin L. · Avis Google</div></div>
+  </div>
+  <div class="av-wrapbtn"><button class="av-btn" type="button" data-avis>Voir tous les avis (6)</button></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="kicker">Nous joindre</div>
+  <h2 class="sec-title">Parlons de votre événement</h2>
+  <div class="contact-grid">
+   <div class="card">
+    <h3>Coordonnées</h3>
+    <div class="row"><b>Téléphone</b><span><a href="tel:+14507872565">(450) 787-2565</a><br><a href="tel:+15147991096">(514) 799-1096</a></span></div>
+    <div class="row"><b>Courriel</b><a href="mailto:info@paskoya.com">info@paskoya.com</a></div>
+    <div class="row"><b>Adresse</b><span>552, chemin des Patriotes, Saint-Denis-sur-Richelieu (Québec) J0H 1K0<br><a href="https://www.google.com/maps/search/?api=1&query=552+chemin+des+Patriotes+Saint-Denis-sur-Richelieu+QC" target="_blank" rel="noopener">Voir sur Google Maps</a></span></div>
+    <div class="row"><b>Heures</b><span>Service de traiteur sur demande, 7 jours sur 7. Appelez-nous pour les heures du resto.</span></div>
+    <h3 style="margin-top:18px">Nous desservons</h3>
+    <p style="color:var(--muted);font-size:.95rem">La Rive-Sud, Montréal et ses environs, dont :</p>
+    <div class="chips"><span class="chip">Saint-Denis</span><span class="chip">Beloeil</span><span class="chip">Mont-Saint-Hilaire</span><span class="chip">Saint-Hyacinthe</span><span class="chip">Contrecoeur</span><span class="chip">Sainte-Julie</span><span class="chip">Verchères</span><span class="chip">Boucherville</span><span class="chip">Longueuil</span><span class="chip">Saint-Hubert</span><span class="chip">Brossard</span><span class="chip">Chambly</span><span class="chip">Saint-Bruno</span><span class="chip">Saint-Jean-sur-Richelieu</span><span class="chip">Drummondville</span><span class="chip">Montréal</span><span class="chip">Laval</span></div>
+   </div>
+   <div class="cta-box">
+    <h3>Une réception à venir?</h3>
+    <p>Pour toute demande de traiteur ou de service événementiel, appelez-nous ou écrivez-nous.</p>
+    <a class="btn" href="tel:+14507872565">📞 (450) 787-2565</a><br>
+    <a class="btn" href="mailto:info@paskoya.com?subject=Demande%20de%20traiteur">✉️ info@paskoya.com</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer><div class="wrap"><strong style="font:700 1.2rem 'Playfair Display',serif;color:#e7c27a">Cuisine Tradition Paskoya</strong><span>Traiteur · Plats cuisinés · Événementiel · Livraison</span><span>552, chemin des Patriotes, Saint-Denis-sur-Richelieu (Québec) J0H 1K0 · (450) 787-2565</span></div></footer>
+
+<div class="callbar"><a class="c1" href="tel:+14507872565">📞 Appeler</a><a class="c2" href="#menu">Les menus</a></div>
+
+<script>
+(function(){
+ document.body.classList.remove('no-js');
+ var intro=document.getElementById('intro');
+ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var seen=false;try{seen=sessionStorage.getItem('pask-intro')==='1'}catch(e){}
+ function done(){if(!intro||!intro.parentNode)return;intro.classList.add('out');setTimeout(function(){intro&&intro.parentNode&&intro.parentNode.removeChild(intro)},520);try{sessionStorage.setItem('pask-intro','1')}catch(e){}}
+ if(reduce||seen){intro.parentNode.removeChild(intro)}else{
+  var n=document.getElementById('iname'),t=n.textContent;n.textContent='';
+  t.split('').forEach(function(c,i){var s=document.createElement('span');s.textContent=c;s.style.animationDelay=(0.9+i*0.06)+'s';n.appendChild(s)});
+  intro.addEventListener('click',done);intro.addEventListener('touchstart',done,{passive:true});
+  setTimeout(done,2200);
+ }
+ var b=document.getElementById('burger'),m=document.getElementById('mnav');
+ b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+ var tabs=document.querySelectorAll('.tab');
+ tabs.forEach(function(tb){tb.addEventListener('click',function(){tabs.forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});tb.classList.add('on');tb.setAttribute('aria-selected','true');document.getElementById('p-'+tb.getAttribute('data-t')).classList.add('on')})});
+ var fl=document.getElementById('floaters'),tick=false;
+ if(!reduce){window.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){fl.style.setProperty('--p',Math.min(window.scrollY,900)+'px');tick=false})},{passive:true})}
+ var sv=document.querySelectorAll('.svc');
+ if('IntersectionObserver' in window&&!reduce){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(sv,e.target);setTimeout(function(){e.target.classList.add('in')},(i%3)*150);io.unobserve(e.target)}})},{threshold:.15});sv.forEach(function(s){io.observe(s)})}else{sv.forEach(function(s){s.classList.add('in')})}
+})();
+</script>
+<div id="avisPage" aria-label="Tous les avis">
+<div class="avp-top"><div class="avp-in"><button class="avp-back" data-avis-close type="button">← Retour au site</button><span class="avp-name">Cuisine Tradition Paskoya</span></div></div>
+<div class="avp-body">
+<h1>Tous les avis de nos clients</h1>
+<div class="avp-score"><b>4,8/5</b><span class="stars">★★★★★</span><span>sur 51 notes · Restaurantji</span></div>
+<p class="avp-note">Avis Google tels que publiés (repris par Restoenligne), mot pour mot. Seuls les avis 5 et 4 étoiles sont affichés ici. · <a href="https://www.google.com/maps/search/?api=1&amp;query=Paskoya%20Resto-Traiteur%2C%20552%20Chem.%20des%20Patriotes%2C%20Saint-Denis-Sur-Richelieu%2C%20J0H%201K0" target="_blank" rel="noopener">Voir sur Google</a></p>
+<div class="avp-grid">
+<article class="avp-card"><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><p>« Excellent traiteur! La fraîcheur, la saveur et la quantité sont au rendez-vous. Belle variété de salades au choix. »</p><div class="who"><b>Sophie G.</b> · Avis Google · 2 août 2026</div></article>
+<article class="avp-card"><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><p>« Bon choix à bon prix »</p><div class="who"><b>André L.</b> · Avis Google · 4 août 2026</div></article>
+<article class="avp-card"><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><p>« Le meilleur service traiteur ! Merci pour votre professionnalisme et nourriture savoureuse! »</p><div class="who"><b>Mélanie G.</b> · Avis Google · 10 juillet 2026</div></article>
+<article class="avp-card"><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><p>« ça fait bien le travail et c'est très satisfaisant. Staff très sympathique »</p><div class="who"><b>Ben A.</b> · Avis Google · 18 mai 2026</div></article>
+<article class="avp-card"><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><p>« Cuisson et assaisonnements parfait et Prix raisonnable pour la qualité. … J'y retourne c'est certain. Je le recommande »</p><div class="who"><b>Patrick G.</b> · Avis Google · 16 avril 2026</div></article>
+<article class="avp-card"><div class="st" aria-label="4 étoiles sur 5">★★★★☆</div><p>« La poutine smoke meat cornichons est vraiment très très bonne. C'est une belle place aussi. »</p><div class="who"><b>Jasmin L.</b> · Avis Google · 26 avril 2026</div></article>
+</div>
+</div>
+</div>
+
+<script>
+(function(){
+ var pg=document.getElementById('avisPage');if(!pg)return;var y=0;
+ function open(e){if(e)e.preventDefault();y=window.scrollY||0;document.body.classList.add('av-open');window.scrollTo(0,0);try{history.replaceState(null,'','#tous-les-avis')}catch(_){}}
+ function close(e){if(e)e.preventDefault();document.body.classList.remove('av-open');try{history.replaceState(null,'',location.pathname+location.search)}catch(_){}window.scrollTo(0,y)}
+ document.querySelectorAll('[data-avis]').forEach(function(a){a.addEventListener('click',open)});
+ document.querySelectorAll('[data-avis-close]').forEach(function(a){a.addEventListener('click',close)});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('av-open'))close()});
+ if(location.hash==='#tous-les-avis')open();
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

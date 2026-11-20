@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aux P'tites Gâteries — Crèmerie à Saint-Roch-de-l'Achigan et Mascouche</title>
+<meta name="description" content="Aux P'tites Gâteries : crèmerie à Saint-Roch-de-l'Achigan et Mascouche. Crème glacée dure et molle, 9 sortes de chocolat à trempage, sundaes, gâteaux à la crème glacée, produits faits maison sur place.">
+<meta property="og:title" content="Aux P'tites Gâteries — Crèmerie">
+<meta property="og:description" content="L'endroit idéal pour déguster de bons desserts glacés. Il y en a pour tous les goûts!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"IceCreamShop","name":"Aux P'tites Gâteries","description":"Crèmerie : desserts glacés et produits faits maison sur place.","telephone":"+1-450-588-5885","email":"info@auxptitesgateries.com","url":"https://auxptitesgateries.com/","paymentAccepted":"Interac","servesCuisine":"Desserts glacés","address":{"@type":"PostalAddress","streetAddress":"1048, rue Principale","addressLocality":"Saint-Roch-de-l'Achigan","addressRegion":"QC","postalCode":"J0K 3H0","addressCountry":"CA"},"department":[{"@type":"IceCreamShop","name":"Aux P'tites Gâteries — Mascouche","telephone":"+1-450-588-5885","address":{"@type":"PostalAddress","streetAddress":"Pavillon du Grand-Coteau","addressLocality":"Mascouche","addressRegion":"QC","addressCountry":"CA"}}],"sameAs":["https://www.facebook.com/auxptitesgateries","https://www.instagram.com/auxptitesgateries/"],"hasMenu":{"@type":"Menu","hasMenuSection":[{"@type":"MenuSection","name":"À la crèmerie","hasMenuItem":[{"@type":"MenuItem","name":"Crème glacée dure"},{"@type":"MenuItem","name":"Crème glacée molle"},{"@type":"MenuItem","name":"9 sortes de chocolat à trempage"},{"@type":"MenuItem","name":"Sundae"},{"@type":"MenuItem","name":"Cappucino glacé"},{"@type":"MenuItem","name":"Yogourt glacé"},{"@type":"MenuItem","name":"Slush"}]},{"@type":"MenuSection","name":"Gâteaux","hasMenuItem":[{"@type":"MenuItem","name":"Forêt Blanc"},{"@type":"MenuItem","name":"Forêt Noir"},{"@type":"MenuItem","name":"Vanille"},{"@type":"MenuItem","name":"Chocolat"}]},{"@type":"MenuSection","name":"Gâteaux à la crème glacée","hasMenuItem":[{"@type":"MenuItem","name":"Avalanche d'Oréo"},{"@type":"MenuItem","name":"Avalanche Kit Kat"},{"@type":"MenuItem","name":"Choco-brownies"},{"@type":"MenuItem","name":"Érable"}]}]}}
+</script>
+<style>
+:root{--rose:#ff6f9c;--rose2:#ffd3e1;--menthe:#7fd9c3;--menthe2:#d8f6ee;--choco:#4a2a1d;--choco2:#6e4030;--creme:#fff8ef;--vanille:#fff1d6;--caramel:#e8a24a;--txt:#3b2219;--mut:#7a5a4c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--creme);color:var(--txt);line-height:1.6;padding-top:32px;overflow-wrap:break-word}
+img,svg{max-width:100%}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15}
+.script{font-family:Pacifico,cursive;font-weight:400}
+/* nav */
+.nav{position:fixed;top:32px;left:0;right:0;z-index:50;background:rgba(255,248,239,.97);border-bottom:2px solid var(--rose2)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:34px;height:40px}
+.brand span{font-family:Pacifico,cursive;color:var(--rose);font-size:1.25rem;white-space:nowrap}
+.links{display:none;gap:26px;list-style:none}
+.links a{text-decoration:none;font-weight:800;color:var(--choco)}
+.links a:hover{color:var(--rose)}
+.burger{width:46px;height:46px;border:0;background:var(--rose2);border-radius:14px;display:grid;place-items:center;cursor:pointer}
+.burger i{display:block;width:20px;height:2.5px;background:var(--choco);border-radius:2px;box-shadow:0 6px 0 var(--choco),0 -6px 0 var(--choco)}
+.mmenu{position:fixed;top:92px;left:0;right:0;z-index:49;background:var(--creme);border-bottom:3px solid var(--rose);padding:10px 20px 20px;transform:translateY(-130%);transition:transform .35s ease;visibility:hidden}
+.mmenu.open{transform:none;visibility:visible}
+.mmenu a{display:block;padding:12px 0;font-weight:900;font-size:1.15rem;text-decoration:none;border-bottom:1px dashed var(--rose2)}
+/* hero */
+.hero{position:relative;padding:118px 0 64px;background:radial-gradient(120% 80% at 80% 0%,var(--rose2) 0%,transparent 60%),radial-gradient(90% 70% at 0% 100%,var(--menthe2) 0%,transparent 60%),var(--creme);overflow:hidden}
+.drip{position:absolute;left:0;top:60px;width:100%;height:46px;color:var(--rose)}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.fl{position:absolute;opacity:.55;transform:translate3d(0,calc(var(--p,0px)*var(--d,.2)),0)}
+.fl>svg{display:block;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.fl.bk{opacity:.32;filter:blur(2px)}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r1,-8deg))}to{transform:translateY(12px) rotate(var(--r2,8deg))}}
+.hgrid{position:relative;z-index:1;display:grid;gap:28px;align-items:center}
+.tag{display:inline-block;background:#fff;border:2px solid var(--rose2);color:var(--choco2);font-weight:800;padding:6px 14px;border-radius:99px;font-size:.9rem}
+.hero h1{margin:14px 0 6px;font-size:clamp(2.6rem,11vw,5rem);color:var(--rose);text-shadow:3px 3px 0 #fff,6px 6px 0 var(--rose2)}
+.hero h1 small{display:block;font-family:Nunito,sans-serif;font-weight:900;font-size:clamp(1rem,4vw,1.3rem);color:var(--choco);text-shadow:none;letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
+.lead{font-size:1.12rem;color:var(--mut);max-width:34em}
+.lead b{color:var(--choco)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:99px;font-weight:900;text-decoration:none;font-size:1.05rem;transition:transform .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn.p{background:var(--rose);color:#fff;box-shadow:0 6px 0 #d94c7b}
+.btn.s{background:#fff;color:var(--choco);border:3px solid var(--choco)}
+.saison{margin-top:22px;display:flex;gap:12px;align-items:center;background:var(--choco);color:var(--vanille);padding:12px 16px;border-radius:18px;max-width:30em}
+.saison b{color:#fff}
+.saison svg{flex:0 0 34px}
+.cone-big{justify-self:center;width:min(60vw,380px)}
+.cone-big .sc{transform-origin:50% 100%;animation:wob 4s ease-in-out infinite alternate}
+@keyframes wob{from{transform:rotate(-2deg)}to{transform:rotate(2deg)}}
+/* sections */
+section{padding:72px 0;position:relative}
+.kick{font-family:Pacifico,cursive;color:var(--rose);font-size:1.4rem}
+h2{font-size:clamp(1.9rem,6vw,2.8rem);color:var(--choco);font-weight:900;margin-bottom:12px}
+.intro{color:var(--mut);max-width:40em;margin-bottom:30px}
+#menu{background:#fff}
+.mgrid{display:grid;gap:22px;min-width:0}
+.card{background:var(--creme);border-radius:26px;padding:24px;border:3px solid var(--rose2);min-width:0;position:relative}
+.card.m{border-color:var(--menthe);background:#f4fffb}
+.card.c{border-color:#e9c7a8;background:#fff7ef}
+.card h3{font-size:1.35rem;color:var(--choco);margin-bottom:4px;display:flex;align-items:center;gap:10px}
+.card h3 svg{width:34px;height:34px;flex:0 0 34px}
+.card .note{font-size:.92rem;color:var(--mut);margin-bottom:12px}
+.items{list-style:none}
+.items li{display:flex;align-items:baseline;gap:10px;padding:10px 0;border-bottom:2px dotted var(--rose2);font-weight:700}
+.card.m .items li{border-color:#bfeedd}.card.c .items li{border-color:#ecd3bd}
+.items li:last-child{border:0}
+.items li::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:var(--rose);transform:translateY(-1px)}
+.card.m .items li::before{background:var(--menthe)}.card.c .items li::before{background:var(--choco2)}
+.items em{font-style:normal;margin-left:auto;font-size:.82rem;color:var(--mut);font-weight:700;text-align:right}
+.pr{margin-top:24px;background:var(--vanille);border-radius:18px;padding:14px 18px;font-weight:700;color:var(--choco2)}
+/* trempage wow */
+#trempage{background:linear-gradient(180deg,#fff 0%,var(--vanille) 100%)}
+.tgrid{display:grid;gap:30px;align-items:center}
+.dip{width:min(70vw,300px);justify-self:center}
+.dip .coat{transform:scaleY(0);transform-origin:50% 0;transition:transform 1.4s cubic-bezier(.3,1.3,.5,1) .3s}
+.dip .dr{transform:scaleY(0);transform-origin:50% 0;transition:transform .9s ease 1.5s}
+.dip .cone{transform:translateY(-40px);transition:transform 1s cubic-bezier(.3,1.4,.5,1)}
+.dip.on .coat,.dip.on .dr{transform:scaleY(1)}
+.dip.on .cone{transform:none}
+.nine{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.nine span{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;transform:scale(0);transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.on .nine span,.nine.on span{transform:scale(1)}
+.big9{font-size:clamp(4rem,18vw,7rem);font-weight:900;color:var(--choco);line-height:1}
+/* à propos */
+.apgrid{display:grid;gap:22px}
+.pill{background:#fff;border-radius:22px;padding:22px;border:3px solid var(--menthe2);min-width:0}
+.pill h3{color:var(--choco);margin-bottom:6px;font-size:1.2rem}
+/* où */
+#ou{background:var(--choco);color:var(--vanille)}
+#ou h2{color:#fff}#ou .kick{color:var(--rose2)}
+.lgrid{display:grid;gap:22px;min-width:0}
+.loc{background:var(--choco2);border-radius:26px;padding:24px;min-width:0;border:2px solid rgba(255,211,225,.25)}
+.loc h3{font-family:Pacifico,cursive;font-weight:400;color:var(--rose2);font-size:1.5rem;margin-bottom:8px}
+.loc p{margin-bottom:6px}
+.loc a.map{display:inline-block;margin-top:10px;color:#fff;font-weight:900}
+.fermeture{background:var(--rose);color:#fff;font-weight:900;border-radius:12px;padding:8px 12px;display:inline-block;margin:8px 0}
+.hrs{margin-top:22px;background:rgba(255,255,255,.08);border-radius:20px;padding:18px 20px}
+/* contact */
+#contact{text-align:center;background:radial-gradient(80% 90% at 50% 0%,var(--rose2),var(--creme) 70%)}
+.cbig{font-size:clamp(1.8rem,8vw,3.2rem);font-weight:900;color:var(--choco);text-decoration:none;display:inline-block;margin:10px 0}
+.small{color:var(--mut);font-size:.95rem;max-width:36em;margin:10px auto 0}
+footer{background:var(--choco);color:var(--vanille);text-align:center;padding:28px 20px 100px;font-size:.92rem}
+footer a{color:#fff}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:flex;justify-content:center;gap:8px;align-items:center;background:var(--rose);color:#fff;font-weight:900;padding:15px;border-radius:99px;text-decoration:none;box-shadow:0 8px 20px rgba(217,76,123,.35)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--rose2);display:grid;place-items:center;transition:opacity .45s ease}
+#intro.out{opacity:0}
+#intro .ic{width:150px}
+#intro .s1{transform:translateY(-120vh);animation:drop .7s cubic-bezier(.3,1.5,.5,1) .15s forwards}
+#intro .s2{transform:translateY(-120vh);animation:drop .7s cubic-bezier(.3,1.5,.5,1) .45s forwards}
+#intro .ch{transform:scale(0);transform-origin:50% 100%;animation:pop .4s cubic-bezier(.3,1.8,.5,1) .95s forwards}
+#intro .nm{font-family:Pacifico,cursive;color:var(--rose);font-size:clamp(2rem,9vw,3.4rem);text-align:center;opacity:0;transform:scale(.7);animation:pop2 .5s cubic-bezier(.3,1.6,.5,1) 1.05s forwards;text-shadow:3px 3px 0 #fff}
+@keyframes drop{to{transform:none}}
+@keyframes pop{to{transform:scale(1)}}
+@keyframes pop2{to{opacity:1;transform:none}}
+@media (min-width:700px){.mgrid{grid-template-columns:1fr 1fr}.lgrid{grid-template-columns:1fr 1fr}.apgrid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1024px){
+ .links{display:flex}.burger,.mmenu{display:none}
+ .hero{padding:150px 0 100px}
+ .hgrid{grid-template-columns:1.15fr .85fr;gap:40px}
+ .mgrid{grid-template-columns:repeat(3,1fr)}
+ .tgrid{grid-template-columns:.8fr 1.2fr;gap:60px}
+ .callbar{display:none}
+ footer{padding-bottom:28px}
+ section{padding:100px 0}
+}
+@media (max-width:560px){body{padding-top:49px}.nav{top:49px}.mmenu{top:109px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.dip .coat,.dip .dr{transform:none}.dip .cone{transform:none}.nine span{transform:none}.fl{transform:none}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Aux P'tites Gâteries — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <div style="display:grid;justify-items:center;gap:6px">
+  <svg class="ic" viewBox="0 0 120 170"><path d="M30 78 60 166 90 78Z" fill="#e8a24a"/><path d="M36 86 84 86M40 100 80 100M45 115 75 115M50 130 70 130M38 80 72 150M82 80 48 150" stroke="#c47f2e" stroke-width="3" fill="none"/><g class="s2"><circle cx="60" cy="72" r="28" fill="#7fd9c3"/></g><g class="s1"><circle cx="60" cy="46" r="25" fill="#ff6f9c"/><path d="M38 52q6 10 12 0q6 10 12 0q6 10 12 0q6 10 8 0" fill="#ff6f9c"/></g><g class="ch"><path d="M60 22q4-10 12-14" stroke="#3a7d44" stroke-width="3" fill="none"/><circle cx="60" cy="22" r="8" fill="#d62246"/></g></svg>
+  <div class="nm">Aux P'tites Gâteries</div>
+ </div>
+</div>
+
+<nav class="nav" aria-label="Navigation principale"><div class="wrap">
+ <a class="brand" href="#haut"><svg viewBox="0 0 34 40"><path d="M9 18 17 39 25 18Z" fill="#e8a24a"/><circle cx="17" cy="15" r="9" fill="#ff6f9c"/><circle cx="17" cy="6" r="3.5" fill="#d62246"/></svg><span>P'tites Gâteries</span></a>
+ <ul class="links"><li><a href="#menu">Le menu</a></li><li><a href="#trempage">Trempage</a></li><li><a href="#apropos">À propos</a></li><li><a href="#ou">Nos crèmeries</a></li><li><a href="#contact">Contact</a></li></ul>
+ <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><i></i></button>
+</div></nav>
+<div class="mmenu" id="mm"><a href="#menu">Le menu</a><a href="#trempage">Trempage</a><a href="#apropos">À propos</a><a href="#ou">Nos crèmeries</a><a href="#contact">Contact</a></div>
+
+<header class="hero" id="haut">
+ <svg class="drip" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 0h1200v10c-30 0-30 30-55 30s-20-26-50-26-25 20-55 20-30-24-60-24-30 34-60 34-25-30-55-30-30 18-60 18-30-22-60-22-30 30-60 30-30-28-60-28-30 20-55 20-30-26-60-26-30 34-60 34-25-30-55-30-30 18-60 18-30-22-60-22-30 28-55 28-30-24-60-24-30 20-60 20-30-30-55-30-30 26-60 26-25-20-55-20V0Z"/></svg>
+ <div class="float" id="fl" aria-hidden="true">
+  <div class="fl bk" style="left:4%;top:20%;--d:.15;--t:11s"><svg width="70" viewBox="0 0 60 90"><path d="M15 40 30 88 45 40Z" fill="#e8a24a"/><circle cx="30" cy="34" r="17" fill="#7fd9c3"/></svg></div>
+  <div class="fl" style="left:84%;top:16%;--d:.35;--t:8s;--r1:10deg;--r2:-12deg"><svg width="46" viewBox="0 0 40 40"><circle cx="20" cy="24" r="12" fill="#d62246"/><path d="M20 12q3-8 10-10" stroke="#3a7d44" stroke-width="2.5" fill="none"/></svg></div>
+  <div class="fl" style="left:12%;top:72%;--d:.3;--t:9s"><svg width="56" viewBox="0 0 60 30"><rect x="4" y="8" width="20" height="7" rx="3.5" fill="#ff6f9c" transform="rotate(-20 14 12)"/><rect x="30" y="14" width="20" height="7" rx="3.5" fill="#7fd9c3" transform="rotate(25 40 18)"/><rect x="20" y="2" width="18" height="6" rx="3" fill="#e8a24a"/></svg></div>
+  <div class="fl bk" style="left:70%;top:76%;--d:.12;--t:12s"><svg width="80" viewBox="0 0 80 70"><path d="M8 30h64l-8 36H16Z" fill="#fff" stroke="#ff6f9c" stroke-width="3"/><circle cx="28" cy="24" r="14" fill="#fff1d6"/><circle cx="50" cy="22" r="15" fill="#6e4030"/><circle cx="40" cy="10" r="6" fill="#d62246"/></svg></div>
+  <div class="fl" style="left:48%;top:8%;--d:.25;--t:10s"><svg width="34" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13" fill="#ff6f9c"/></svg></div>
+  <div class="fl" style="left:92%;top:52%;--d:.4;--t:7s;--r1:-14deg;--r2:14deg"><svg width="44" viewBox="0 0 40 70"><path d="M10 28 20 68 30 28Z" fill="#e8a24a"/><path d="M8 28q12-40 24 0Z" fill="#fff8ef" stroke="#e9c7a8" stroke-width="2"/></svg></div>
+  <div class="fl bk" style="left:36%;top:84%;--d:.1;--t:13s"><svg width="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" fill="#7fd9c3"/></svg></div>
+  <div class="fl" style="left:62%;top:40%;--d:.3;--t:9s"><svg width="40" viewBox="0 0 50 24"><rect x="2" y="6" width="16" height="6" rx="3" fill="#6e4030" transform="rotate(30 10 9)"/><rect x="26" y="10" width="16" height="6" rx="3" fill="#ff6f9c" transform="rotate(-25 34 13)"/></svg></div>
+ </div>
+ <div class="wrap hgrid">
+  <div>
+   <span class="tag">Crèmerie · Saint-Roch-de-l'Achigan &amp; Mascouche</span>
+   <h1 class="script">Aux P'tites Gâteries<small>Desserts glacés faits maison sur place</small></h1>
+   <p class="lead">L'endroit idéal pour déguster de bons desserts glacés : un menu varié avec plusieurs produits <b>faits maison sur place</b>. Il y en a pour tous les goûts!</p>
+   <div class="btns"><a class="btn p" href="tel:+14505885885">📞 Appeler</a><a class="btn s" href="#menu">Voir le menu</a></div>
+   <div class="saison"><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="#ff6f9c"/><path d="M17 6v22M6 17h22M9 9l16 16M25 9 9 25" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg><span><b>Fermé — saison 2026.</b> Merci et à l'an prochain!</span></div>
+  </div>
+  <svg class="cone-big" viewBox="0 0 300 380" aria-hidden="true">
+   <ellipse cx="150" cy="368" rx="80" ry="10" fill="#4a2a1d" opacity=".12"/>
+   <path d="M78 170 150 360 222 170Z" fill="#e8a24a"/>
+   <path d="M88 190h124M98 220h104M108 250h84M118 280h64M84 176l94 160M216 176l-94 160M118 176l70 120M182 176l-70 120" stroke="#c47f2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+   <g class="sc">
+    <circle cx="150" cy="160" r="72" fill="#7fd9c3"/>
+    <path d="M80 168q10 22 22 4q8 26 22 6q10 22 24 2q12 24 24 4q10 22 22 2q8 18 10-12" fill="#7fd9c3"/>
+    <circle cx="150" cy="96" r="58" fill="#ff6f9c"/>
+    <path d="M94 104q8 20 20 2q10 22 22 2q10 22 24 2q10 22 22 0q8 18 12-8" fill="#ff6f9c"/>
+    <path d="M110 56q40-30 80 0q-10 30-40 30t-40-30Z" fill="#6e4030"/>
+    <path d="M118 74q4 18 10 0M150 80q4 22 9 0M176 72q4 14 8 0" stroke="#6e4030" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <g stroke-width="5" stroke-linecap="round"><path d="M128 66l8-4" stroke="#fff"/><path d="M152 60l6 6" stroke="#7fd9c3"/><path d="M170 66l8-2" stroke="#e8a24a"/><path d="M140 54l6-6" stroke="#fff1d6"/></g>
+    <path d="M150 34q6-20 22-26" stroke="#3a7d44" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <circle cx="150" cy="34" r="14" fill="#d62246"/><circle cx="145" cy="29" r="4" fill="#fff" opacity=".6"/>
+    <circle cx="118" cy="120" r="10" fill="#fff" opacity=".35"/><circle cx="112" cy="168" r="9" fill="#fff" opacity=".3"/>
+   </g>
+  </svg>
+ </div>
+</header>
+
+<main>
+<section id="menu"><div class="wrap">
+ <p class="kick">Pour vous sucrer le bec</p>
+ <h2>Le menu de la crèmerie</h2>
+ <p class="intro">Voici la variété des produits offerts. Plusieurs sont faits maison, sur place.</p>
+ <div class="mgrid">
+  <div class="card rv"><h3><svg viewBox="0 0 34 34"><path d="M10 15 17 33 24 15Z" fill="#e8a24a"/><circle cx="17" cy="12" r="9" fill="#ff6f9c"/></svg>À la crèmerie</h3>
+   <ul class="items"><li>Crème glacée dure</li><li>Crème glacée molle</li><li>9 sortes de chocolat à trempage</li><li>Sundae</li><li>Cappucino glacé</li><li>Yogourt glacé</li><li>Slush</li></ul></div>
+  <div class="card c rv"><h3><svg viewBox="0 0 34 34"><path d="M4 16h26v14H4Z" fill="#6e4030"/><path d="M4 12h26v6H4Z" fill="#fff1d6"/><circle cx="17" cy="8" r="4" fill="#d62246"/></svg>Gâteaux</h3>
+   <p class="note">Durant la saison de la crèmerie, nos gâteaux sont de retour à la succursale de Saint-Roch-de-l'Achigan.</p>
+   <ul class="items"><li>Forêt Blanc</li><li>Forêt Noir</li><li>Vanille</li><li>Chocolat</li></ul></div>
+  <div class="card m rv"><h3><svg viewBox="0 0 34 34"><path d="M4 14h26v16H4Z" fill="#7fd9c3"/><path d="M4 10h26v6H4Z" fill="#fff"/><path d="M8 10q3 6 6 0q3 6 6 0q3 6 6 0" fill="#6e4030"/></svg>Gâteaux à la crème glacée</h3>
+   <ul class="items"><li>Avalanche d'Oréo</li><li>Avalanche Kit Kat</li><li>Choco-brownies</li><li>Érable</li></ul></div>
+ </div>
+ <p class="pr rv">Et bien plus encore pour vous sucrer le bec! Prix et saveurs du moment sur place ou au <a href="tel:+14505885885">450-588-5885</a>.</p>
+</div></section>
+
+<section id="trempage"><div class="wrap tgrid">
+ <svg class="dip" id="dip" viewBox="0 0 240 320" aria-hidden="true">
+  <g class="cone">
+   <path d="M70 130 120 312 170 130Z" fill="#e8a24a"/>
+   <path d="M78 150h84M86 180h68M94 210h52M76 136l64 140M164 136l-64 140" stroke="#c47f2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+   <g fill="#fff8ef" stroke="#f1e2cc" stroke-width="3"><rect x="62" y="96" width="116" height="40" rx="20"/><rect x="74" y="64" width="92" height="38" rx="19"/><rect x="88" y="36" width="64" height="34" rx="17"/><path d="M104 40q16-34 22-30q4 12 10 30Z"/></g>
+   <g class="coat" fill="#4a2a1d"><rect x="58" y="92" width="124" height="46" rx="22"/><rect x="70" y="60" width="100" height="44" rx="21"/><rect x="84" y="32" width="72" height="40" rx="19"/><path d="M100 38q18-38 24-34q6 14 14 34Z"/><path d="M80 112q20-8 40-6M90 78q14-6 30-4M98 48q10-4 20-2" stroke="#7a4a36" stroke-width="6" stroke-linecap="round" fill="none"/></g>
+   <g class="dr" fill="#4a2a1d"><path d="M74 138h14v18q-7 10-14 0Z"/><path d="M112 138h14v30q-7 10-14 0Z"/><path d="M150 138h12v14q-6 9-12 0Z"/></g>
+  </g>
+ </svg>
+ <div>
+  <p class="kick">La spécialité qui fait craquer</p>
+  <div class="big9">9</div>
+  <h2>sortes de chocolat à trempage</h2>
+  <p class="intro" style="margin-bottom:0">Votre molle, plongée dans le chocolat de votre choix… et ça fige sous vos yeux. Demandez les saveurs du moment au comptoir!</p>
+  <div class="nine" id="nine" aria-hidden="true"><span style="background:#4a2a1d">1</span><span style="background:#6e4030;transition-delay:.06s">2</span><span style="background:#a0623f;transition-delay:.12s">3</span><span style="background:#e8a24a;transition-delay:.18s">4</span><span style="background:#ff6f9c;transition-delay:.24s">5</span><span style="background:#7fd9c3;transition-delay:.3s">6</span><span style="background:#c77d4a;transition-delay:.36s">7</span><span style="background:#d62246;transition-delay:.42s">8</span><span style="background:#3b2219;transition-delay:.48s">9</span></div>
+ </div>
+</div></section>
+
+<section id="apropos"><div class="wrap">
+ <p class="kick">Qui on est</p>
+ <h2>Deux crèmeries dans Lanaudière</h2>
+ <p class="intro">Aux P'tites Gâteries, c'est l'endroit idéal pour déguster de bons desserts glacés, avec un menu varié et plusieurs produits faits maison sur place.</p>
+ <div class="apgrid">
+  <div class="pill rv"><h3>Fait maison</h3><p>Plusieurs de nos produits sont préparés ici même, sur place.</p></div>
+  <div class="pill rv"><h3>Pour tous les goûts</h3><p>Dure ou molle, yogourt glacé, sundae, slush, cappucino glacé, gâteaux… il y en a pour tout le monde.</p></div>
+  <div class="pill rv"><h3>Paiement Interac</h3><p>Interac disponible dans nos crèmeries.</p></div>
+ </div>
+</div></section>
+
+<section id="ou"><div class="wrap">
+ <p class="kick">Venez nous voir</p>
+ <h2>Nos crèmeries</h2>
+ <div class="lgrid">
+  <div class="loc rv"><h3>Saint-Roch-de-l'Achigan</h3>
+   <p>1048, rue Principale<br>Saint-Roch-de-l'Achigan (Québec) <span style="white-space:nowrap">J0K 3H0</span></p>
+   <p>Places assises à l'intérieur</p>
+   <span class="fermeture">Fermé — saison 2026</span>
+   <p>Tél. : <a href="tel:+14505885885">450-588-5885</a></p>
+   <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=1048+rue+Principale+Saint-Roch-de-l'Achigan+QC+J0K+3H0" target="_blank" rel="noopener">Voir sur Google Maps →</a></div>
+  <div class="loc rv"><h3>Mascouche</h3>
+   <p>Pavillon du Grand-Coteau, Mascouche<br>En face des jeux d'eau</p>
+   <span class="fermeture">Fermé — saison 2026</span>
+   <p>Tél. : <a href="tel:+14505885885">450-588-5885</a> (précisez que vous appelez pour Mascouche)</p>
+   <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Pavillon+du+Grand-Coteau+Mascouche+QC" target="_blank" rel="noopener">Voir sur Google Maps →</a></div>
+ </div>
+ <div class="hrs rv"><strong>Heures d'ouverture :</strong> la crèmerie est fermée pour la saison 2026 — merci et à l'an prochain! Appelez-nous pour les heures de la prochaine saison.</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <p class="kick">Une question? Un gâteau?</p>
+ <h2>Contactez-nous</h2>
+ <a class="cbig" href="tel:+14505885885">450-588-5885</a>
+ <p><a href="mailto:info@auxptitesgateries.com" style="font-weight:800">info@auxptitesgateries.com</a></p>
+ <p class="small">Veuillez prendre note que nous ne prenons aucune commande par courriel sans confirmation.</p>
+ <p class="small"><a href="https://www.facebook.com/auxptitesgateries" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/auxptitesgateries/" target="_blank" rel="noopener">Instagram</a></p>
+</div></section>
+</main>
+<footer>© Aux P'tites Gâteries · Crèmerie · 1048, rue Principale, Saint-Roch-de-l'Achigan · <a href="tel:+14505885885">450-588-5885</a></footer>
+<a class="callbar" href="tel:+14505885885">📞 Appeler la crèmerie</a>
+
+<script>
+(function(){
+var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var intro=document.getElementById('intro');
+function endIntro(){if(!intro)return;intro.classList.add('out');var i=intro;intro=null;setTimeout(function(){i.remove()},460);}
+var seen=false;try{seen=sessionStorage.getItem('apg-intro')==='1';sessionStorage.setItem('apg-intro','1')}catch(e){}
+if(rm||seen){intro.remove();intro=null}else{intro.addEventListener('click',endIntro);setTimeout(endIntro,1900)}
+var b=document.querySelector('.burger'),mm=document.getElementById('mm');
+b.addEventListener('click',function(){var o=mm.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+mm.addEventListener('click',function(e){if(e.target.tagName==='A'){mm.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.25});
+document.querySelectorAll('.rv,#dip,#nine').forEach(function(el){io.observe(el)});
+if(!rm){var fl=document.getElementById('fl'),tk=false;
+window.addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var y=window.scrollY;if(y<1200)fl.style.setProperty('--p',(-y)+'px');tk=false})},{passive:true});}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
