@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Garage Gilles Lemay — Restauration de voitures anciennes à Saint-Didace</title>
+<meta name="description" content="Garage Gilles Lemay, Saint-Didace (Lanaudière) : restauration de voitures anciennes et de collection, débosselage, peinture, réparation de véhicules accidentés. (450) 835-5435.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoBodyShop","name":"Garage Gilles Lemay","description":"Spécialiste de la restauration de voitures anciennes, de la réparation de voitures de collection et de véhicules haut de gamme.","telephone":"+1-450-835-5435","email":"gilleslemay@garagegilleslemay.com","url":"http://www.garagegilleslemay.com/","address":{"@type":"PostalAddress","streetAddress":"451, chemin Forsight","addressLocality":"Saint-Didace","addressRegion":"QC","postalCode":"J0K 2G0","addressCountry":"CA"},"areaServed":"Lanaudière"}
+</script>
+<style>
+:root{--ink:#16130f;--ink2:#221d17;--cream:#f4ead8;--cream2:#e9dcc3;--red:#b3191f;--red2:#d8322f;--chrome:#c9ced4;--gold:#d6a756;--bh:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-padding-top:calc(var(--bh) + 70px)}
+body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--ink);color:var(--cream);line-height:1.55;font-size:17px;padding-top:var(--bh)}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.03em;line-height:1.02}
+p,li{overflow-wrap:anywhere}
+#apercu{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px}
+/* nav */
+.nav{position:fixed;left:0;right:0;top:var(--bh);z-index:50;background:rgba(22,19,15,.96);border-bottom:1px solid rgba(214,167,86,.25)}
+.nav-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:10px 16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:44px;height:44px;flex:none}
+.brand b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:19px;letter-spacing:.03em;line-height:1;white-space:nowrap}
+.brand svg{width:38px!important;height:38px!important}
+@media(min-width:1024px){.brand b{font-size:24px;letter-spacing:.06em}.brand svg{width:46px!important;height:46px!important}}
+.brand small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.links{display:none;gap:22px;margin-left:auto}
+.links a{text-decoration:none;font-weight:600;font-size:15px;opacity:.85}
+.links a:hover{opacity:1;color:var(--gold)}
+.lang{margin-left:auto;background:none;border:1px solid rgba(244,234,216,.4);color:var(--cream);font:700 13px 'Source Sans 3',sans-serif;padding:6px 9px;border-radius:6px;cursor:pointer}
+.callbtn{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:10px 16px;font-size:15px;white-space:nowrap}
+.callbtn:hover{background:var(--red2)}
+.nav .callbtn{display:none}
+.burger{background:none;border:0;color:var(--cream);width:40px;height:40px;cursor:pointer}
+.mnav{display:none;padding:6px 16px 16px;border-top:1px solid rgba(255,255,255,.08)}
+.mnav.open{display:block}
+.mnav a{display:block;padding:11px 0;text-decoration:none;font-weight:600;border-bottom:1px solid rgba(255,255,255,.06)}
+@media(min-width:1024px){.links{display:flex}.lang{margin-left:8px}.nav .callbtn{display:inline-flex}.burger,.mnav{display:none!important}}
+/* hero */
+.hero{position:relative;padding:120px 16px 70px;overflow:hidden;background:radial-gradient(120% 80% at 80% 10%,#3a2a1a 0%,var(--ink) 60%)}
+.floaters{position:absolute;inset:0;pointer-events:none;z-index:0}
+.fl{position:absolute;opacity:.16;color:var(--chrome);transform:translate3d(0,calc(var(--py,0px) * var(--d,1)),0)}
+.fl svg{display:block;animation:spin var(--t,40s) linear infinite}
+.fl.blur svg{filter:blur(2px)}
+.fl.bob svg{animation:bob var(--t,7s) ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-14px) rotate(8deg)}}
+.hero-in{position:relative;z-index:1;max-width:1200px;margin:0 auto;display:grid;gap:36px}
+.kicker{display:inline-block;color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;border:1px solid rgba(214,167,86,.45);padding:5px 10px;border-radius:4px}
+.hero h1{font-size:clamp(48px,13vw,96px);margin:14px 0 10px}
+.hero h1 span{color:var(--red2)}
+.hero .lead{font-size:19px;max-width:560px;opacity:.92}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.ghost{display:inline-flex;align-items:center;border:2px solid var(--cream);color:var(--cream);text-decoration:none;border-radius:999px;padding:9px 18px;font-weight:700}
+.ghost:hover{background:var(--cream);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;list-style:none}
+.chips li{font-size:14px;background:rgba(244,234,216,.08);border:1px solid rgba(244,234,216,.15);padding:5px 11px;border-radius:999px}
+.carcard{position:relative;border-radius:18px;padding:22px;background:linear-gradient(160deg,#2a221a,#18140f);border:1px solid rgba(214,167,86,.25);box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.carcard .tag{position:absolute;top:14px;right:14px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+@media(min-width:1024px){.hero{padding:170px 24px 110px}.hero-in{grid-template-columns:1.1fr .9fr;align-items:center}}
+/* sections */
+section{padding:70px 16px}
+.wrap{max-width:1200px;margin:0 auto}
+.sec-h{margin-bottom:30px}
+.sec-h small{color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px}
+.sec-h h2{font-size:clamp(38px,8vw,60px);margin-top:6px}
+.light{background:var(--cream);color:var(--ink)}
+.light .sec-h small{color:var(--red)}
+.svc-grid{display:grid;gap:18px}
+.svc{background:#fff;border-radius:14px;padding:24px;border-top:5px solid var(--red);box-shadow:0 6px 20px rgba(40,25,10,.08);min-width:0;opacity:0;transform:translateY(30px);transition:transform .7s cubic-bezier(.2,.7,.2,1),opacity .7s}
+.svc.in{opacity:1;transform:none}
+.svc:nth-child(2){transition-delay:.12s}.svc:nth-child(3){transition-delay:.24s}
+.svc h3{font-size:30px;margin-bottom:12px;color:var(--ink)}
+.svc .ico{width:46px;height:46px;color:var(--red);margin-bottom:8px}
+.svc ul{list-style:none}
+.svc li{padding:6px 0 6px 22px;position:relative;border-bottom:1px dashed #e4d7bf;font-size:16px}
+.svc li:last-child{border-bottom:0}
+.svc li:before{content:"";position:absolute;left:2px;top:14px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.svc li ul{margin-top:4px}
+.svc li li{border:0;padding:2px 0 2px 18px;font-size:15px;color:#4a4036}
+.svc li li:before{width:6px;height:6px;top:11px;background:#c9b48c}
+.sub{font-weight:700}
+@media(min-width:1024px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+/* restoration wow */
+.resto{background:linear-gradient(180deg,var(--ink) 0%,#1d1812 100%)}
+.reveal{position:relative;max-width:900px;margin:10px auto 0}
+.reveal svg{display:block;width:100%;height:auto}
+.paint{opacity:0;transition:opacity 2s .3s ease}
+.reveal.in .paint{opacity:1}
+.shine{transform:translateX(-200px);opacity:0;transition:transform 1.6s 1.6s ease,opacity .3s 1.6s}
+.reveal.in .shine{transform:translateX(900px);opacity:.5}
+.gun{transform:translateX(0);transition:transform 2.2s cubic-bezier(.6,.05,.25,1)}
+.reveal.in .gun{transform:translateX(780px)}
+.labels{display:flex;justify-content:space-between;font-family:'Bebas Neue';font-size:22px;letter-spacing:.08em;color:var(--gold);margin-top:8px}
+.promise{display:grid;gap:18px;margin-top:40px}
+.pcard{background:rgba(244,234,216,.05);border:1px solid rgba(244,234,216,.12);border-radius:14px;padding:22px;min-width:0}
+.pcard h3{font-size:28px;color:var(--gold);margin-bottom:10px}
+.pcard ul{list-style:none}
+.pcard li{padding:5px 0 5px 24px;position:relative}
+.pcard li:before{content:"✓";position:absolute;left:0;color:var(--red2);font-weight:700}
+@media(min-width:1024px){.promise{grid-template-columns:1fr 1fr}}
+/* story */
+.story{display:grid;gap:30px;align-items:center}
+.story p{font-size:18px;margin-bottom:14px}
+.badge{justify-self:center;width:min(300px,80%)}
+@media(min-width:1024px){.story{grid-template-columns:1.2fr .8fr}}
+/* reviews */
+.rv-top{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:26px}
+.rv-pill{background:var(--ink);color:var(--cream);border-radius:999px;padding:8px 16px;font-weight:700}
+.rv-grid{display:grid;gap:18px}
+@media(min-width:700px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv{background:#fff;border-radius:14px;padding:22px;box-shadow:0 6px 20px rgba(40,25,10,.08);min-width:0;position:relative}
+.rv:before{content:"“";position:absolute;top:-6px;right:16px;font:400 80px/1 Georgia,serif;color:#ead9b8}
+.rv blockquote{font-size:17px;position:relative;padding-right:34px}
+.rv footer{margin-top:12px;font-size:14px;color:#6a5c4c}
+.morebtn{display:inline-flex;margin-top:26px;background:var(--red);color:#fff;border:0;border-radius:999px;padding:12px 22px;font:700 16px 'Source Sans 3',sans-serif;cursor:pointer}
+.morebtn:hover{background:var(--red2)}
+/* contact */
+.contact-grid{display:grid;gap:18px}
+.cbox{background:rgba(244,234,216,.05);border:1px solid rgba(244,234,216,.12);border-radius:14px;padding:22px;min-width:0}
+.cbox h3{font-size:26px;color:var(--gold);margin-bottom:8px}
+.cbox a{color:var(--cream)}
+.big{font-size:24px;font-weight:700;text-decoration:none}
+@media(min-width:1024px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+footer.site{padding:30px 16px 100px;text-align:center;font-size:14px;opacity:.7;border-top:1px solid rgba(255,255,255,.08)}
+@media(min-width:1024px){footer.site{padding-bottom:30px}}
+.stick{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;justify-content:center;padding:14px;font-size:17px;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+@media(min-width:1024px){.stick{display:none}}
+/* reviews page */
+#avisPage{display:none;min-height:100vh;background:var(--cream);color:var(--ink)}
+body.show-avis #avisPage{display:block}
+body.show-avis #site{display:none}
+.ap-bar{position:sticky;top:var(--bh);z-index:5;background:var(--ink);color:var(--cream);padding:10px 16px}
+.ap-bar .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.back{background:none;border:2px solid var(--cream);color:var(--cream);border-radius:999px;padding:7px 14px;font:700 15px 'Source Sans 3',sans-serif;cursor:pointer}
+.ap-body{padding:30px 16px 60px}
+.ap-body h1{font-size:clamp(40px,9vw,64px);margin-bottom:10px}
+.ap-note{margin-bottom:24px;max-width:700px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#0d0b09;display:flex;align-items:center;justify-content:center;cursor:pointer}
+#intro .emb{width:min(220px,55vw);opacity:0;transform:scale(.8);animation:embIn .8s .25s forwards}
+#intro .door{position:absolute;inset:0;background:repeating-linear-gradient(180deg,#3a342c 0 34px,#2a251f 34px 38px);transform:translateY(0);animation:doorUp 1s 1.05s cubic-bezier(.7,0,.3,1) forwards}
+#intro .door:after{content:"";position:absolute;left:50%;bottom:24px;width:90px;height:10px;margin-left:-45px;border-radius:5px;background:#8d8578}
+#intro.out{opacity:0;transition:opacity .45s}
+@keyframes embIn{to{opacity:1;transform:none}}
+@keyframes doorUp{to{transform:translateY(-101%)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.svc{opacity:1;transform:none}.paint{opacity:1}.shine{display:none}.gun{display:none}#intro{display:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="apercu">Aperçu préparé pour Garage Gilles Lemay — ce n'est pas son site officiel · Preview prepared for Garage Gilles Lemay — not their official website</div>
+
+<div id="intro" aria-hidden="true">
+  <svg class="emb" viewBox="0 0 200 200"><use href="#logo"/></svg>
+  <div class="door"></div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="96" fill="#16130f" stroke="#d6a756" stroke-width="5"/>
+      <circle cx="100" cy="100" r="82" fill="none" stroke="#d6a756" stroke-width="1.5" stroke-dasharray="3 5"/>
+      <path d="M28 112h144" stroke="#b3191f" stroke-width="14"/>
+      <text x="100" y="104" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="78" fill="#f4ead8" letter-spacing="2">GL</text>
+      <text x="100" y="117" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-weight="700" font-size="10" fill="#fff" letter-spacing="3">GARAGE GILLES LEMAY</text>
+      <text x="100" y="146" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="17" fill="#d6a756" letter-spacing="3">SAINT-DIDACE</text>
+      <path d="M70 160l60 0" stroke="#d6a756" stroke-width="2"/>
+      <circle cx="100" cy="40" r="5" fill="#d6a756"/><circle cx="76" cy="46" r="3" fill="#d6a756"/><circle cx="124" cy="46" r="3" fill="#d6a756"/>
+    </symbol>
+    <symbol id="gear" viewBox="0 0 100 100"><path fill="currentColor" d="M43 4h14l2 12 8 3 10-7 10 10-7 10 3 8 12 2v14l-12 2-3 8 7 10-10 10-10-7-8 3-2 12H43l-2-12-8-3-10 7-10-10 7-10-3-8-12-2V43l12-2 3-8-7-10 10-10 10 7 8-3zM50 34a16 16 0 100 32 16 16 0 000-32z"/></symbol>
+    <symbol id="wrench" viewBox="0 0 100 100"><path fill="currentColor" d="M72 6a22 22 0 00-21 29L8 78a8 8 0 0014 14l43-43a22 22 0 0029-21l-12 12-14-4-4-14z"/></symbol>
+    <symbol id="spark" viewBox="0 0 100 100"><path fill="currentColor" d="M50 0l8 42 42 8-42 8-8 42-8-42L0 50l42-8z"/></symbol>
+    <symbol id="drop" viewBox="0 0 60 90"><path fill="currentColor" d="M30 0C30 0 0 40 0 60a30 30 0 0060 0C60 40 30 0 30 0z"/></symbol>
+    <symbol id="car" viewBox="0 0 300 110"><path fill="currentColor" d="M20 78c-6 0-10-4-10-10v-8c0-6 6-10 14-12l38-6 30-24c8-6 16-8 28-8h70c12 0 22 4 30 12l20 20 30 6c10 2 16 8 16 16v4c0 6-4 10-10 10h-14a30 30 0 00-58 0H110a30 30 0 00-58 0zM118 24l-24 20h64V22h-30c-4 0-7 0-10 2zm52-2v22h56l-14-14c-6-6-12-8-20-8z"/><circle cx="81" cy="82" r="22" fill="currentColor"/><circle cx="227" cy="82" r="22" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div id="site">
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Garage Gilles Lemay">
+      <svg viewBox="0 0 200 200"><use href="#logo"/></svg>
+      <span><b>Garage Gilles Lemay</b><small data-en="Saint-Didace · Lanaudière">Saint-Didace · Lanaudière</small></span>
+    </a>
+    <nav class="links">
+      <a href="#services" data-en="Services">Services</a>
+      <a href="#atelier" data-en="Workshop">L'atelier</a>
+      <a href="#histoire" data-en="Our story">Notre histoire</a>
+      <a href="#" data-avis data-en="Reviews">Avis</a>
+      <a href="#contact" data-en="Contact">Contact</a>
+    </nav>
+    <button class="lang" type="button" aria-label="English / Français">EN</button>
+    <a class="callbtn" href="tel:+14508355435"><span data-en="Call now">Appeler</span></a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="mnav">
+    <a href="#services" data-en="Services">Services</a>
+    <a href="#atelier" data-en="Workshop">L'atelier</a>
+    <a href="#histoire" data-en="Our story">Notre histoire</a>
+    <a href="#" data-avis data-en="Reviews">Avis</a>
+    <a href="#contact" data-en="Contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="floaters" aria-hidden="true">
+    <div class="fl blur" style="left:-30px;top:120px;--d:.3;--t:60s"><svg width="160" height="160" style="color:#c9ced4"><use href="#gear"/></svg></div>
+    <div class="fl" style="right:6%;top:90px;--d:.6;--t:35s"><svg width="70" height="70"><use href="#gear"/></svg></div>
+    <div class="fl bob" style="left:52%;top:70%;--d:.8;--t:8s"><svg width="60" height="60"><use href="#wrench"/></svg></div>
+    <div class="fl bob" style="left:8%;bottom:40px;--d:.5;--t:9s;color:#d8322f;opacity:.22"><svg width="26" height="38"><use href="#drop"/></svg></div>
+    <div class="fl bob" style="right:22%;top:30%;--d:.9;--t:6s;color:#d6a756;opacity:.3"><svg width="22" height="22"><use href="#spark"/></svg></div>
+    <div class="fl bob" style="left:30%;top:140px;--d:.7;--t:7s;color:#d6a756;opacity:.25"><svg width="16" height="16"><use href="#spark"/></svg></div>
+    <div class="fl blur" style="right:-40px;bottom:20px;--d:.25;--t:80s"><svg width="200" height="200"><use href="#gear"/></svg></div>
+    <div class="fl bob" style="right:40%;bottom:12%;--d:.4;--t:10s;color:#d8322f;opacity:.2"><svg width="18" height="27"><use href="#drop"/></svg></div>
+  </div>
+  <div class="hero-in">
+    <div>
+      <span class="kicker" data-en="Auto body · Paint · Restoration">Débosselage · Peinture · Restauration</span>
+      <h1 data-en-html="Vintage cars <span>reborn</span>">Les voitures anciennes <span>renaissent</span> ici</h1>
+      <p class="lead" data-en="Specialist in restoring vintage cars and repairing collector and high-end vehicles — in the Lanaudière region, near the Mauricie.">Spécialiste de la restauration de voitures anciennes, de la réparation de voitures de collection et de véhicules haut de gamme — dans Lanaudière, près de la Mauricie.</p>
+      <div class="ctas">
+        <a class="callbtn" href="tel:+14508355435"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.6.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11 11 0 00.6 3.6 1 1 0 01-.25 1z"/></svg><span data-en="Call (450) 835-5435">Appeler (450) 835-5435</span></a>
+        <a class="ghost" href="#services" data-en="Our services">Nos services</a>
+      </div>
+      <ul class="chips">
+        <li data-en="On-site restoration, start to finish">Restauration sur place, du début à la fin</li>
+        <li data-en="Recognized by insurance companies">Reconnu par les compagnies d'assurance</li>
+        <li data-en="Photo updates by email">Suivi avec photos par courriel</li>
+      </ul>
+    </div>
+    <div class="carcard" aria-hidden="true">
+      <span class="tag" data-en="Collector">Collection</span>
+      <svg viewBox="0 0 300 120" style="width:100%;color:#b3191f"><use href="#car"/></svg>
+      <svg viewBox="0 0 300 20" style="width:100%"><rect x="20" y="8" width="260" height="3" rx="1.5" fill="#d6a756" opacity=".5"/></svg>
+      <p style="text-align:center;font-family:'Bebas Neue';font-size:26px;letter-spacing:.08em;color:#d6a756;margin-top:6px" data-en="Since age 12, father to son">Depuis l'âge de 12 ans, de père en fils</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="light">
+  <div class="wrap">
+    <div class="sec-h"><small data-en="What we do">Ce qu'on fait</small><h2 data-en="Services">Nos services</h2></div>
+    <div class="svc-grid">
+      <article class="svc">
+        <svg class="ico"><use href="#car"/></svg>
+        <h3 data-en="Vintage & antique vehicle restoration">Restaurations de véhicules anciens et/ou antiques</h3>
+        <ul>
+          <li>Restaurations partielles ou complètes</li>
+          <li>Carrosserie reconditionnée sur brochette</li>
+          <li>Mécanique remise à neuf</li>
+          <li>Peinture</li>
+          <li>Polissage</li>
+          <li>Intérieurs des véhicules : rembourrage des sièges et changement des tapis</li>
+          <li>Pose et teinte des vitres</li>
+          <li><span class="sub">Fabrication, modification et réparation de pièces</span>
+            <ul><li>Reconstruction de pièces inaccessibles sur le marché</li><li>Conception de pièces que vous souhaitez modifier</li><li>Dédoublement des pièces majeures : panneaux de portes, couvert de valise, capot et toit</li></ul></li>
+        </ul>
+      </article>
+      <article class="svc">
+        <svg class="ico"><use href="#wrench"/></svg>
+        <h3 data-en="Collision repair">Réparation de véhicules accidentés</h3>
+        <ul>
+          <li>Reconnu par les compagnies d’assurance</li>
+          <li>Possibilité de voiture de courtoisie</li>
+          <li><span class="sub">Réparation, débosselage et peinture</span>
+            <ul><li>Tous genres de véhicules accidentés : autos, camions, véhicules haut de gamme</li><li>Véhicules récréatifs : bateaux, motocyclettes, motoneiges, tous terrains</li></ul></li>
+        </ul>
+      </article>
+      <article class="svc">
+        <svg class="ico"><use href="#spark"/></svg>
+        <h3 data-en="Specialized services">Services spécialisés</h3>
+        <ul>
+          <li>Débosselage sans peinture</li>
+          <li>Jet de sable</li>
+          <li>Réparations de fibre de verres</li>
+          <li>Soudures de différents métaux et matériaux</li>
+          <li>Peintures « Candy Apple »</li>
+          <li>Peintures marbrées</li>
+          <li>Possibilité de « Air Brush »</li>
+          <li>Polissage pour tous les véhicules</li>
+        </ul>
+      </article>
+    </div>
+    <p style="margin-top:22px;color:#6a5c4c;font-size:15px" data-en="Service list as published by the garage (in French).">Liste des services telle que publiée par le garage.</p>
+  </div>
+</section>
+
+<section id="atelier" class="resto">
+  <div class="wrap">
+    <div class="sec-h"><small data-en="The workshop">L'atelier</small><h2 data-en="From bare metal to showroom shine">Du métal nu au fini miroir</h2></div>
+    <div class="reveal" id="reveal" aria-hidden="true">
+      <svg viewBox="0 0 900 300">
+        <defs>
+          <linearGradient id="candy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2403a"/><stop offset=".55" stop-color="#b3191f"/><stop offset="1" stop-color="#6e0b10"/></linearGradient>
+        </defs>
+        <use href="#car" x="60" y="20" width="780" height="286" style="color:#5b5650"/>
+        <use class="paint" href="#car" x="60" y="20" width="780" height="286" style="color:#c21d22"/>
+        <g class="gun"><g transform="translate(40,40)"><path d="M0 0h40v14H22l-6 30H6l4-30H0z" fill="#c9ced4"/><circle cx="44" cy="7" r="5" fill="#d6a756"/></g></g>
+      </svg>
+      <div class="labels"><span data-en="Before">Avant</span><span data-en="After">Après</span></div>
+    </div>
+    <div class="promise">
+      <div class="pcard">
+        <h3 data-en="Our commitment">Notre engagement</h3>
+        <ul>
+          <li data-en="We listen to each client's requirements.">Une écoute des exigences de chacun des clients.</li>
+          <li data-en="On-site restoration from start to finish.">Une restauration sur place du début à la fin des travaux.</li>
+          <li data-en="A secure place for your vehicle during the work.">Un lieu sécuritaire assuré pour votre véhicule durant les travaux.</li>
+          <li data-en="Detailed progress updates, with photos sent by email.">Un suivi détaillé de l'avancement, avec envoi de photos par courriel.</li>
+          <li data-en="After-sales warranty.">Une garantie du service après-vente.</li>
+          <li data-en="References available on request.">Références sur demande.</li>
+        </ul>
+      </div>
+      <div class="pcard">
+        <h3 data-en="Specialized equipment">Équipement spécialisé</h3>
+        <ul>
+          <li data-en="Rotisseries (brochettes)">Brochettes</li>
+          <li data-en="Sandblasting">Sablage au jet de sable</li>
+          <li data-en="Welders">Soudeuses</li>
+          <li data-en="Paint booth">Chambre de peinture</li>
+          <li data-en="Water-based paint system">Système de peinture à l'eau</li>
+          <li data-en="Accelerated drying system">Système de séchage accéléré</li>
+          <li data-en="All the tools needed for a complete restoration">Tous les outils nécessaires à une restauration complète</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="histoire" class="light">
+  <div class="wrap story">
+    <div>
+      <div class="sec-h"><small data-en="Our story">Notre histoire</small><h2 data-en="A passion passed from father to son">Une passion de père en fils</h2></div>
+      <p data-en="Since the age of 12, father to son, Gilles Lemay has made it his duty to offer quality service in the Lanaudière region, near the Mauricie.">Depuis l'âge de 12 ans, de père en fils, Gilles Lemay se fait un devoir d'offrir un service de qualité dans la région de Lanaudière, près de la Mauricie.</p>
+      <p data-en="Antique car, collector car, high-end vehicle or accident repair: come present your project.">Voiture antique, auto de collection, véhicule haut de gamme ou réparation après un accident : on vous invite à venir présenter votre projet.</p>
+      <a class="callbtn" href="tel:+14508355435" style="margin-top:8px"><span data-en="Tell us about your project">Parlez-nous de votre projet</span></a>
+    </div>
+    <svg class="badge" viewBox="0 0 200 200" aria-hidden="true"><use href="#logo"/></svg>
+  </div>
+</section>
+
+<section id="avis" style="background:var(--cream2);color:var(--ink)">
+  <div class="wrap">
+    <div class="sec-h"><small style="color:var(--red)" data-en="Reviews">Avis</small><h2 data-en="What our clients say">Ce que nos clients disent</h2></div>
+    <div class="rv-top"><span class="rv-pill" data-en="3 reviews published online">3 avis publiés en ligne</span></div>
+    <div class="rv-grid" id="rvHome"></div>
+    <button class="morebtn" type="button" data-avis data-en="See all reviews (3)">Voir tous les avis (3)</button>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-h"><small data-en="Come see us">Venez nous voir</small><h2 data-en="Contact">Nous joindre</h2></div>
+    <div class="contact-grid">
+      <div class="cbox"><h3 data-en="Phone">Téléphone</h3><a class="big" href="tel:+14508355435">(450) 835-5435</a><p style="margin-top:8px;opacity:.8" data-en="Call us for our hours.">Appelez-nous pour les heures.</p></div>
+      <div class="cbox"><h3 data-en="Email">Courriel</h3><a href="mailto:gilleslemay@garagegilleslemay.com" style="overflow-wrap:anywhere;font-weight:700">gilleslemay@garagegilleslemay.com</a></div>
+      <div class="cbox"><h3 data-en="Address">Adresse</h3><p>451, chemin Forsight<br>Saint-Didace (Québec) J0K 2G0</p><p style="margin-top:8px"><a href="https://www.google.com/maps/search/?api=1&query=451+chemin+Forsight+Saint-Didace+QC+J0K+2G0" target="_blank" rel="noopener" data-en="Open in Google Maps">Ouvrir dans Google Maps</a></p></div>
+    </div>
+    <div class="cbox" style="margin-top:18px">
+      <h3 data-en="Getting here">Pour vous rendre</h3>
+      <p data-en="From Montréal, Québec City or Joliette: take Route 348 to Saint-Didace, then Route 349 south. About 9 km later, you'll see the garage's sign on the left side of the road; turn right onto chemin Forsight.">De Montréal, Québec ou Joliette : prenez la route 348 jusqu'à Saint-Didace, puis la route 349 sud. Après environ 9 km, vous verrez un panneau du garage sur le côté gauche de la route; tournez à droite sur le chemin Forsight.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site">© Garage Gilles Lemay · 451, chemin Forsight, Saint-Didace (Québec) · (450) 835-5435</footer>
+<a class="callbtn stick" href="tel:+14508355435"><span data-en="Call (450) 835-5435">Appeler (450) 835-5435</span></a>
+</div>
+
+<div id="avisPage">
+  <div class="ap-bar"><div class="wrap"><button class="back" type="button" id="backBtn" data-en="← Back to site">← Retour au site</button><b data-en="3 reviews published online">3 avis publiés en ligne</b></div></div>
+  <div class="ap-body"><div class="wrap">
+    <h1 data-en="All reviews">Tous les avis</h1>
+    <p class="ap-note" data-en="Reviews reproduced word for word from the garage's public listing (canada247.info). No average rating is displayed there.">Avis reproduits mot pour mot à partir de la fiche publique du garage (canada247.info). Aucune note moyenne n'y est affichée.</p>
+    <div class="rv-grid" id="rvAll"></div>
+  </div></div>
+</div>
+
+<script>
+(function(){
+  var bn=document.getElementById('apercu');
+  function setBh(){document.documentElement.style.setProperty('--bh',bn.offsetHeight+'px')}
+  setBh();addEventListener('resize',setBh,{passive:true});
+  var R=[
+    {t:"Travail très professionnel, de première qualité. Personnel très dévoué à la clientèle. Nous sommes plus que satisfait, notre voiture est revenue plus belle qu’elle était. Merci à l’equipe du Garage Gilles Lemay..",d:"6 février 2019",de:"February 6, 2019"},
+    {t:"Très professionnel, le meilleur dans son domaine!",d:"2 septembre 2018",de:"September 2, 2018"},
+    {t:"Travail très professionnel, un passionné dans ce domaine.",d:"15 août 2018",de:"August 15, 2018"}
+  ];
+  var lang='fr';
+  function card(r){var a=document.createElement('article');a.className='rv';var q=document.createElement('blockquote');q.textContent=r.t;var f=document.createElement('footer');f.textContent=(lang==='en'?'Client · canada247.info · '+r.de:'Client · canada247.info · '+r.d);a.appendChild(q);a.appendChild(f);return a}
+  function render(){['rvHome','rvAll'].forEach(function(id){var g=document.getElementById(id);g.innerHTML='';R.forEach(function(r){g.appendChild(card(r))})})}
+  render();
+  // language
+  var els=[].slice.call(document.querySelectorAll('[data-en],[data-en-html]'));
+  els.forEach(function(e){e.dataset.fr=e.innerHTML});
+  var lb=document.querySelector('.lang');
+  lb.addEventListener('click',function(){
+    lang=lang==='fr'?'en':'fr';
+    els.forEach(function(e){if(lang==='en'){if(e.dataset.enHtml)e.innerHTML=e.dataset.enHtml;else e.textContent=e.dataset.en}else e.innerHTML=e.dataset.fr});
+    document.documentElement.lang=lang;lb.textContent=lang==='fr'?'EN':'FR';
+    document.title=lang==='fr'?'Garage Gilles Lemay — Restauration de voitures anciennes à Saint-Didace':'Garage Gilles Lemay — Vintage car restoration in Saint-Didace';
+    render();
+  });
+  // menu
+  var bg=document.querySelector('.burger'),mn=document.querySelector('.mnav');
+  bg.addEventListener('click',function(){var o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+  mn.addEventListener('click',function(e){if(e.target.tagName==='A')mn.classList.remove('open')});
+  // reviews page
+  var y=0;
+  function openAvis(e){if(e)e.preventDefault();mn.classList.remove('open');y=scrollY;document.body.classList.add('show-avis');scrollTo(0,0)}
+  document.addEventListener('click',function(e){var t=e.target.closest('[data-avis]');if(t)openAvis(e)});
+  document.getElementById('backBtn').addEventListener('click',function(){document.body.classList.remove('show-avis');scrollTo(0,y)});
+  // reveal
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.25});
+  document.querySelectorAll('.svc,#reveal').forEach(function(e){io.observe(e)});
+  // parallax
+  var hero=document.querySelector('.hero'),tk=false;
+  addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var s=Math.min(scrollY,900);hero.style.setProperty('--py',(s*.35)+'px');tk=false})},{passive:true});
+  // intro
+  var it=document.getElementById('intro'),seen=false;
+  try{seen=sessionStorage.getItem('gl-intro')}catch(e){}
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function done(){if(!it.parentNode)return;it.classList.add('out');setTimeout(function(){it.remove()},460);try{sessionStorage.setItem('gl-intro','1')}catch(e){}}
+  if(seen||rm){it.remove()}else{it.addEventListener('click',done);setTimeout(done,2100)}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
