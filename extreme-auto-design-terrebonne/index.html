@@ -45,11 +45,11 @@ header.nav{position:fixed;top:var(--top);left:0;right:0;z-index:50;background:rg
 .btn-ghost{border:1.5px solid #4a4e56;color:#fff}
 /* HERO */
 .hero{position:relative;overflow:hidden;padding:116px 0 64px}
-.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 75% 40%,rgba(227,38,46,.22),transparent 70%),linear-gradient(180deg,transparent 60%,var(--bg));pointer-events:none}
-.floats{position:absolute;inset:0;pointer-events:none;z-index:0}
-.fl{position:absolute;opacity:.5;transform:translate3d(0,calc(var(--p,0px) * var(--d)),0)}
+.hero:after{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(70% 60% at 75% 40%,rgba(227,38,46,.22),transparent 70%),linear-gradient(180deg,transparent 60%,var(--bg));pointer-events:none}
+.floats{position:absolute;inset:0;pointer-events:none;z-index:1}
+.fl{position:absolute;opacity:.9;filter:drop-shadow(0 6px 14px rgba(0,0,0,.55));transform:translate3d(0,calc(var(--p,0px) * var(--d)),0)}
 .fl>svg{display:block;animation:bob var(--t) ease-in-out infinite alternate}
-.fl.far{opacity:.22;filter:blur(2px)}
+.fl.far{opacity:.5}
 @keyframes bob{from{transform:translateY(-10px) rotate(var(--r0))}to{transform:translateY(12px) rotate(var(--r1))}}
 .spin>svg{animation:spin var(--t) linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -200,15 +200,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
 <section class="hero carbon" aria-label="Accueil">
  <div class="floats" id="floats" aria-hidden="true">
   <!-- gear -->
-  <div class="fl spin" style="--d:.35;left:-30px;top:110px;--t:26s"><svg width="120" height="120" viewBox="0 0 100 100"><path fill="#3a3e45" d="M50 30a20 20 0 1 0 0 40a20 20 0 1 0 0-40zm0 12a8 8 0 1 1 0 16a8 8 0 1 1 0-16zM45 5h10l2 12 7 3 10-7 7 7-7 10 3 7 12 2v10l-12 2-3 7 7 10-7 7-10-7-7 3-2 12H45l-2-12-7-3-10 7-7-7 7-10-3-7-12-2V45l12-2 3-7-7-10 7-7 10 7 7-3z"/></svg></div>
+  <div class="fl spin" style="--d:.35;left:-30px;top:110px;--t:26s"><svg width="120" height="120" viewBox="0 0 100 100"><path fill="#7a808a" d="M50 30a20 20 0 1 0 0 40a20 20 0 1 0 0-40zm0 12a8 8 0 1 1 0 16a8 8 0 1 1 0-16zM45 5h10l2 12 7 3 10-7 7 7-7 10 3 7 12 2v10l-12 2-3 7 7 10-7 7-10-7-7 3-2 12H45l-2-12-7-3-10 7-7-7 7-10-3-7-12-2V45l12-2 3-7-7-10 7-7 10 7 7-3z"/></svg></div>
   <!-- wrench -->
   <div class="fl" style="--d:.6;right:6%;top:150px;--t:6s;--r0:-20deg;--r1:-8deg"><svg width="96" height="96" viewBox="0 0 100 100"><path fill="#c9ced6" d="M70 8a22 22 0 0 0-21 29L12 74a9 9 0 0 0 13 13l37-37A22 22 0 0 0 92 30L80 42 66 38 62 24 74 12a22 22 0 0 0-4-4z"/></svg></div>
   <!-- tire far -->
-  <div class="fl far spin" style="--d:.2;right:-40px;bottom:40px;--t:40s"><svg width="200" height="200" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#1f2125"/><circle cx="50" cy="50" r="46" fill="none" stroke="#2f3238" stroke-width="8" stroke-dasharray="6 5"/><circle cx="50" cy="50" r="24" fill="#8b9098"/><g stroke="#2a2d32" stroke-width="5"><path d="M50 28v44M28 50h44M34 34l32 32M66 34L34 66"/></g><circle cx="50" cy="50" r="7" fill="#e3262e"/></svg></div>
+  <div class="fl far spin" style="--d:.2;right:-40px;bottom:40px;--t:40s"><svg width="200" height="200" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#2a2d33"/><circle cx="50" cy="50" r="46" fill="none" stroke="#5a5f68" stroke-width="8" stroke-dasharray="6 5"/><circle cx="50" cy="50" r="24" fill="#8b9098"/><g stroke="#2a2d32" stroke-width="5"><path d="M50 28v44M28 50h44M34 34l32 32M66 34L34 66"/></g><circle cx="50" cy="50" r="7" fill="#e3262e"/></svg></div>
   <!-- oil drop -->
   <div class="fl" style="--d:.8;left:12%;bottom:90px;--t:5s;--r0:-6deg;--r1:6deg"><svg width="34" height="46" viewBox="0 0 30 40"><path fill="#e3262e" d="M15 2C11 12 3 19 3 27a12 12 0 0 0 24 0C27 19 19 12 15 2z"/></svg></div>
   <!-- carbon hex -->
-  <div class="fl far" style="--d:.25;left:38%;top:70px;--t:9s;--r0:0deg;--r1:20deg"><svg width="110" height="110" viewBox="0 0 100 100"><defs><pattern id="cw" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#202227"/><rect width="5" height="5" fill="#33363c"/><rect x="5" y="5" width="5" height="5" fill="#33363c"/></pattern></defs><path d="M50 4 90 27v46L50 96 10 73V27z" fill="url(#cw)"/></svg></div>
+  <div class="fl far" style="--d:.25;left:38%;top:70px;--t:9s;--r0:0deg;--r1:20deg"><svg width="110" height="110" viewBox="0 0 100 100"><defs><pattern id="cw" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#2c2f35"/><rect width="5" height="5" fill="#575c65"/><rect x="5" y="5" width="5" height="5" fill="#575c65"/></pattern></defs><path d="M50 4 90 27v46L50 96 10 73V27z" fill="url(#cw)"/></svg></div>
   <!-- spray gun -->
   <div class="fl" style="--d:.5;left:46%;bottom:30px;--t:7s;--r0:8deg;--r1:-6deg"><svg width="84" height="84" viewBox="0 0 100 100"><rect x="30" y="30" width="44" height="18" rx="6" fill="#c9ced6"/><rect x="10" y="35" width="22" height="8" rx="3" fill="#8b9098"/><path d="M58 48h10l-6 40h-10z" fill="#5d6169"/><rect x="40" y="6" width="22" height="26" rx="5" fill="#e3262e"/><g fill="#e3262e" opacity=".6"><circle cx="4" cy="32" r="2"/><circle cx="2" cy="40" r="2"/><circle cx="5" cy="47" r="2"/></g></svg></div>
   <!-- small gear -->
