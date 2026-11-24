@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Salon MOMO — Salon de coiffure à Saint-Eustache depuis 1983</title>
+<meta name="description" content="Salon MOMO, salon de coiffure au 129, rue Saint-Laurent à Saint-Eustache : coupes, coloration, mèches, permanentes, coiffure haute, esthétique et pose d'ongles. 4 salons depuis 1983. 450 473-9898.">
+<meta name="theme-color" content="#1d0f22">
+<meta property="og:title" content="Salon MOMO — Coiffure à Saint-Eustache">
+<meta property="og:description" content="Coupes tendance, couleurs, mèches et permanentes. 4 salons pour mieux vous servir, depuis 1983.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Salon MOMO","url":"https://salonmomo.ca/","telephone":"+1-450-473-9898","email":"info@salonmomo.ca","foundingDate":"1983","address":{"@type":"PostalAddress","streetAddress":"129, rue Saint-Laurent","addressLocality":"Saint-Eustache","addressRegion":"QC","postalCode":"J7P 5H6","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday","Friday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"16:00"}],"sameAs":["https://www.facebook.com/Salon-MOMO-391867727500486/"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Tarifs","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe femme"},"price":"28.50","priceCurrency":"CAD"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe homme"},"price":"23.00","priceCurrency":"CAD"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe enfant (moins de 9 ans)"},"price":"21.50","priceCurrency":"CAD"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coloration, coupe et mise en plis"},"price":"67.00","priceCurrency":"CAD"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Permanente (à partir de)"},"price":"67.00","priceCurrency":"CAD"}]}}
+</script>
+<style>
+:root{--bar:32px;--nav:64px;--plum:#1d0f22;--plum2:#3a1d3f;--wine:#6b2a55;--rose:#d9a38b;--rose2:#f0cdb9;--cream:#faf4ef;--ink:#2a1a2c;--mute:#6e5a6c;--line:#ead9cf}
+@media (max-width:519px){:root{--bar:48px}}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;padding-top:var(--bar);background:var(--cream);color:var(--ink);font:400 16px/1.6 "DM Sans",system-ui,sans-serif;overflow-wrap:break-word}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.12;margin:0}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+[id]{scroll-margin-top:calc(var(--bar) + var(--nav) + 8px)}
+
+/* NAV */
+.nav{position:fixed;top:var(--bar);left:0;right:0;z-index:500;height:var(--nav);background:var(--plum);color:#fff;border-bottom:1px solid rgba(217,163,139,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:100%;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:40px;height:40px;flex:none}
+.brand b{font:700 21px/1 "Playfair Display",serif;letter-spacing:.02em;white-space:nowrap}
+.brand b i{color:var(--rose);font-style:italic}
+.links{display:none;gap:26px;align-items:center}
+.links a{text-decoration:none;font-weight:500;font-size:15px;opacity:.9}
+.links a:hover{color:var(--rose)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;font:700 16px/1 "DM Sans",sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-rose{background:linear-gradient(135deg,var(--rose2),var(--rose));color:var(--plum)}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(240,205,185,.7)}
+.btn svg{width:18px;height:18px}
+.burger{width:46px;height:46px;border:0;border-radius:12px;background:rgba(255,255,255,.08);color:#fff;display:grid;place-items:center;cursor:pointer}
+.burger span,.burger span:before,.burger span:after{display:block;width:20px;height:2px;background:#fff;border-radius:2px;position:relative;transition:transform .25s}
+.burger span:before,.burger span:after{content:"";position:absolute;left:0}
+.burger span:before{transform:translateY(-6px)}.burger span:after{transform:translateY(6px)}
+.open .burger span{background:transparent}
+.open .burger span:before{transform:rotate(45deg)}.open .burger span:after{transform:rotate(-45deg)}
+.panel{position:fixed;top:calc(var(--bar) + var(--nav));left:0;right:0;z-index:499;background:var(--plum);padding:8px 20px 22px;transform:translateY(-110%);opacity:0;transition:transform .3s ease,opacity .3s;visibility:hidden}
+.open .panel{transform:none;opacity:1;visibility:visible}
+.panel a{display:block;color:#fff;text-decoration:none;font:500 20px/1 "Playfair Display",serif;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.panel .btn{margin-top:16px;width:100%}
+@media (min-width:1024px){.links{display:flex}.burger,.panel{display:none}}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 80% at 80% 10%,#55264f 0%,transparent 60%),linear-gradient(160deg,var(--plum) 0%,var(--plum2) 100%);color:#fff;padding:calc(var(--nav) + 26px) 0 56px}
+.floaty{position:absolute;inset:0;pointer-events:none;z-index:0}
+.fl{position:absolute;color:var(--rose);opacity:.5;transform:translate3d(0,calc(var(--py,0px)*var(--d)),0)}
+.fl>svg{display:block;width:100%;height:100%;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.fl.far{opacity:.22;filter:blur(1.5px)}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r0,-8deg))}to{transform:translateY(12px) rotate(var(--r1,10deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:30px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose2);font-weight:700}
+.kicker:before{content:"";width:26px;height:1px;background:var(--rose)}
+.hero h1{font-size:clamp(40px,11vw,84px);font-weight:700;margin:12px 0 10px;letter-spacing:-.01em}
+.hero h1 em{color:var(--rose);font-style:italic;font-weight:500}
+.hero p.lead{font-size:18px;line-height:1.5;max-width:520px;margin:0 0 22px;color:#f3e6ee}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
+.chips li{font-size:13px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(240,205,185,.25)}
+.emblem{display:none;position:relative;justify-self:center;width:min(430px,100%);aspect-ratio:1}
+.emblem .ring{position:absolute;inset:0;animation:spin 40s linear infinite}
+.emblem .ring text{font:700 15px "DM Sans",sans-serif;letter-spacing:.2em;fill:var(--rose2)}
+.emblem .core{position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#4a2346,#1d0f22 70%);box-shadow:0 30px 80px rgba(0,0,0,.45),inset 0 0 0 1px rgba(240,205,185,.35);display:grid;place-items:center}
+.emblem .core svg{width:62%}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (min-width:1024px){
+ .hero{padding:calc(var(--nav) + 70px) 0 100px}
+ .hero .wrap{grid-template-columns:1.15fr .85fr;gap:50px}
+ .emblem{display:block}
+ .hero p.lead{font-size:20px}
+}
+
+/* SECTIONS */
+section{padding:72px 0}
+.sh{max-width:680px;margin-bottom:34px}
+.sh .kicker{color:var(--wine)}
+.sh .kicker:before{background:var(--wine)}
+.sh h2{font-size:clamp(32px,7vw,52px);margin:10px 0 10px;color:var(--plum)}
+.sh h2 em{color:var(--wine)}
+.sh p{margin:0;color:var(--mute);font-size:17px}
+.svc{display:grid;gap:14px;grid-template-columns:1fr}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;min-width:0}
+.card .ic{width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,#f6e3d8,#f0cdb9);display:grid;place-items:center;color:var(--wine);margin-bottom:14px}
+.card .ic svg{width:28px;height:28px}
+.card h3{font-size:22px;color:var(--plum);margin-bottom:6px}
+.card p{margin:0;color:var(--mute)}
+.tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--wine);background:#f6e3d8;border-radius:999px;padding:4px 10px}
+@media (min-width:640px){.svc{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){.svc{grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:28px}}
+
+/* PRIX */
+.prix{background:linear-gradient(180deg,var(--plum) 0%,#2b1530 100%);color:#fff;position:relative;overflow:hidden}
+.prix .sh .kicker{color:var(--rose2)}.prix .sh .kicker:before{background:var(--rose)}
+.prix .sh h2{color:#fff}.prix .sh h2 em{color:var(--rose)}
+.prix .sh p{color:#dccbd6}
+.cut{position:relative;height:34px;margin:0 0 30px}
+.cut:before{content:"";position:absolute;left:0;right:0;top:50%;border-top:2px dashed rgba(240,205,185,.5)}
+.cut .sc{position:absolute;left:0;top:0;width:44px;height:34px;color:var(--rose);transform:translateX(-60px)}
+.cut .sc svg{width:44px;height:34px;display:block}
+.cut.go .sc{animation:snip 1.6s cubic-bezier(.5,.1,.3,1) forwards}
+.cut.go .sc .bl1{animation:chomp .2s ease-in-out 8 alternate}
+@keyframes snip{to{transform:translateX(calc(var(--cw,320px) - 44px))}}
+@keyframes chomp{to{transform:rotate(-14deg)}}
+.bl1{transform-origin:22px 17px}
+.plist{display:grid;gap:18px;grid-template-columns:1fr}
+.pcol{background:rgba(255,255,255,.05);border:1px solid rgba(240,205,185,.2);border-radius:22px;padding:22px 18px;min-width:0}
+.pcol h3{font-size:24px;color:var(--rose2);margin-bottom:4px}
+.pcol .sub{font-size:14px;color:#cdb8c6;margin:0 0 12px}
+.row{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px solid rgba(240,205,185,.12);opacity:0;transform:translateX(-24px);transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .6s}
+.row:nth-child(even){transform:translateX(24px)}
+.go-rows .row{opacity:1;transform:none}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n small{display:block;color:#bfa9b8;font-size:13px}
+.row .dots{flex:1 0 12px;border-bottom:1px dotted rgba(240,205,185,.4);transform:translateY(-4px)}
+.row .p{font-weight:700;color:var(--rose2);white-space:nowrap;font-variant-numeric:tabular-nums}
+.row:last-child{border-bottom:0}
+.notes{margin-top:22px;display:grid;gap:8px;font-size:14px;color:#dccbd6}
+.notes p{margin:0}
+.special{margin-top:18px;border-radius:22px;padding:22px;background:linear-gradient(135deg,var(--rose2),var(--rose));color:var(--plum)}
+.special h3{font-size:24px}
+.special .row{border-color:rgba(29,15,34,.15)}
+.special .row .p{color:var(--plum)}.special .row .dots{border-color:rgba(29,15,34,.35)}
+.special .row .n small{color:#5b3b4f}
+@media (min-width:1024px){.plist{grid-template-columns:1fr 1fr;gap:24px}.pcol{padding:30px}.side{display:grid;gap:24px;grid-template-columns:1fr 1fr;margin-top:24px}.side .special{margin-top:0}.side .pcol{margin-top:0!important}}
+
+/* ABOUT */
+.about .wrap{display:grid;gap:30px;align-items:center}
+.year{font:700 clamp(80px,26vw,180px)/.9 "Playfair Display",serif;color:transparent;-webkit-text-stroke:2px var(--wine);letter-spacing:-.03em}
+.about h2{font-size:clamp(30px,6vw,46px);color:var(--plum);margin:6px 0 14px}
+.about p{color:var(--mute);font-size:17px;margin:0 0 12px}
+.about ul{padding:0;margin:16px 0 0;list-style:none;display:grid;gap:10px}
+.about li{display:flex;gap:10px;align-items:flex-start}
+.about li svg{flex:none;width:22px;height:22px;color:var(--wine);margin-top:2px}
+.brands{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.brands span{font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--plum)}
+@media (min-width:1024px){.about .wrap{grid-template-columns:.8fr 1.2fr;gap:60px}}
+
+/* SALONS */
+.salons{background:#f3e7e0}
+.sg{display:grid;gap:14px;grid-template-columns:1fr}
+.salon{background:#fff;border-radius:20px;padding:22px;border:1px solid var(--line);min-width:0;position:relative}
+.salon.main{background:var(--plum);color:#fff;border-color:var(--plum)}
+.salon h3{font-size:22px;margin-bottom:6px}
+.salon.main h3{color:var(--rose2)}
+.salon p{margin:0 0 12px;color:var(--mute)}
+.salon.main p{color:#e7d6e1}
+.salon a.t{font-weight:700;text-decoration:none;color:var(--wine)}
+.salon.main a.t{color:var(--rose2)}
+.salon .ml{display:block;margin-top:8px;font-size:14px;color:inherit;opacity:.85}
+@media (min-width:640px){.sg{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){.sg{grid-template-columns:repeat(4,1fr);gap:18px}}
+
+/* INFOS */
+.infos .wrap{display:grid;gap:18px}
+.hours{list-style:none;padding:0;margin:0}
+.hours li{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+.hours li b{font-weight:500}
+.hours li.off span{color:var(--wine);font-weight:700}
+.big-tel{display:block;font:700 clamp(30px,8vw,44px)/1.1 "Playfair Display",serif;color:var(--plum);text-decoration:none;margin:6px 0 14px}
+.infos .card h3{margin-bottom:12px}
+.infos .card a{color:var(--wine)}
+@media (min-width:1024px){.infos .wrap{grid-template-columns:1fr 1fr 1fr;gap:22px}}
+
+footer{background:var(--plum);color:#cdb8c6;padding:40px 0 110px;font-size:14px}
+footer .wrap{display:grid;gap:14px}
+footer .brand{color:#fff}
+footer a{color:var(--rose2)}
+@media (min-width:1024px){footer{padding-bottom:40px}footer .wrap{grid-template-columns:1fr auto;align-items:center}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* sticky call */
+.callbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:400}
+.callbar .btn{width:100%;min-height:54px;box-shadow:0 10px 30px rgba(29,15,34,.35);font-size:17px}
+@media (min-width:1024px){.callbar{display:none}}
+
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--plum);display:grid;place-items:center;transition:opacity .5s ease}
+#intro.bye{opacity:0}
+#intro .box{display:grid;justify-items:center;gap:14px;padding-top:var(--bar)}
+#intro .word{display:flex;gap:2px;font:700 clamp(56px,18vw,120px)/1 "Playfair Display",serif;color:#fff}
+#intro .word span{display:inline-block;transform:translateY(-120vh);animation:drop .7s cubic-bezier(.3,1.4,.5,1) forwards}
+#intro .word span:nth-child(2){animation-delay:.12s;color:var(--rose);font-style:italic}
+#intro .word span:nth-child(3){animation-delay:.24s}
+#intro .word span:nth-child(4){animation-delay:.36s;color:var(--rose);font-style:italic}
+@keyframes drop{to{transform:none}}
+#intro .rib{position:relative;width:min(300px,70vw);height:30px}
+#intro .rib i{position:absolute;left:0;right:0;top:14px;height:2px;background:linear-gradient(90deg,var(--rose2),var(--rose));transform-origin:left;transform:scaleX(0);animation:grow .8s .6s ease forwards}
+#intro .rib svg{position:absolute;top:0;left:0;width:38px;height:30px;color:var(--rose2);transform:translateX(-10px);animation:slide .8s .6s ease forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+@keyframes slide{to{transform:translateX(calc(min(300px,70vw) - 30px))}}
+#intro small{font:700 12px/1 "DM Sans",sans-serif;letter-spacing:.32em;color:var(--rose2);opacity:0;animation:fade .5s 1.2s forwards}
+@keyframes fade{to{opacity:1}}
+
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .rv,.row{opacity:1!important;transform:none!important}
+ .fl{transform:none!important}
+ #intro{display:none}
+}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Salon MOMO — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="sc" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><circle cx="18" cy="50" r="8"/><circle cx="46" cy="50" r="8"/><path d="M23 44 41 7M41 44 23 7"/><circle cx="32" cy="26" r="2.2" fill="currentColor"/></g></symbol>
+  <symbol id="cb" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round"><path d="M6 18h52" stroke-width="7"/><path d="M9 32h46" stroke-width="20" stroke-dasharray="2.4 3.2" stroke-linecap="butt"/></g></symbol>
+  <symbol id="dr" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14h26a14 14 0 0 1 0 28H10a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z"/><circle cx="36" cy="28" r="6"/><path d="M22 42l-4 16h8l3-16M50 22h8M50 28h10M50 34h8"/></g></symbol>
+  <symbol id="cu" viewBox="0 0 64 64"><path d="M8 58C4 30 30 6 46 16s0 34-12 22S40 8 58 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="bo" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"><path d="M22 20h20v36a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4z"/><path d="M26 20v-8h12v8M30 12V6h10"/><path d="M22 34h20"/></g></symbol>
+  <symbol id="br" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><rect x="14" y="6" width="22" height="34" rx="11"/><path d="M25 40v18"/><path d="M20 14v18M25 12v22M30 14v18" stroke-width="2"/></g></symbol>
+  <symbol id="logo" viewBox="0 0 100 100"><circle cx="50" cy="50" r="47" fill="none" stroke="#d9a38b" stroke-width="2.5"/><circle cx="50" cy="50" r="41" fill="none" stroke="#d9a38b" stroke-width="1" opacity=".5"/><text x="50" y="66" text-anchor="middle" font-family="Playfair Display,Georgia,serif" font-style="italic" font-weight="700" font-size="52" fill="#f0cdb9">M</text><g transform="translate(50 79) rotate(90) scale(.2) translate(-32 -32)" fill="none" stroke="#d9a38b" stroke-width="6" stroke-linecap="round"><circle cx="18" cy="50" r="8"/><circle cx="46" cy="50" r="8"/><path d="M23 44 41 7M41 44 23 7"/></g></symbol>
+  <symbol id="chk" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ph" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></symbol>
+ </defs>
+</svg>
+
+<div id="intro" aria-hidden="true">
+ <div class="box">
+  <div class="word"><span>M</span><span>O</span><span>M</span><span>O</span></div>
+  <div class="rib"><i></i><svg viewBox="0 0 64 64"><use href="#sc" transform="rotate(90 32 32)"/></svg></div>
+  <small>SALON DE COIFFURE · DEPUIS 1983</small>
+ </div>
+</div>
+
+<header class="nav" id="top">
+ <div class="wrap">
+  <a class="brand" href="#accueil" aria-label="Salon MOMO, accueil"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg><b>Salon <i>MOMO</i></b></a>
+  <nav class="links" aria-label="Navigation principale">
+   <a href="#services">Services</a><a href="#tarifs">Tarifs</a><a href="#histoire">Notre histoire</a><a href="#salons">Nos salons</a><a href="#infos">Heures et contact</a>
+   <a class="btn btn-rose" href="tel:+14504739898"><svg><use href="#ph"/></svg>450 473-9898</a>
+  </nav>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="panel"><span></span></button>
+ </div>
+</header>
+<div class="panel" id="panel">
+ <a href="#services">Services</a><a href="#tarifs">Tarifs</a><a href="#histoire">Notre histoire</a><a href="#salons">Nos salons</a><a href="#infos">Heures et contact</a>
+ <a class="btn btn-rose" href="tel:+14504739898"><svg><use href="#ph"/></svg>Appeler le salon</a>
+</div>
+
+<main>
+<section class="hero" id="accueil">
+ <div class="floaty" aria-hidden="true">
+  <div class="fl" style="--d:.35;left:4%;top:16%;width:54px;height:54px;--t:8s"><svg><use href="#sc"/></svg></div>
+  <div class="fl far" style="--d:.15;left:72%;top:10%;width:70px;height:70px;--t:11s;--r0:12deg;--r1:-10deg"><svg><use href="#cb"/></svg></div>
+  <div class="fl" style="--d:.5;left:82%;top:58%;width:48px;height:48px;--t:7s"><svg><use href="#cu"/></svg></div>
+  <div class="fl far" style="--d:.2;left:46%;top:80%;width:62px;height:62px;--t:10s"><svg><use href="#dr"/></svg></div>
+  <div class="fl" style="--d:.42;left:6%;top:76%;width:42px;height:42px;--t:9s;--r0:-20deg;--r1:6deg"><svg><use href="#bo"/></svg></div>
+  <div class="fl far" style="--d:.25;left:58%;top:30%;width:46px;height:46px;--t:12s"><svg><use href="#br"/></svg></div>
+  <div class="fl" style="--d:.3;left:90%;top:86%;width:40px;height:40px;--t:8.5s;--r0:20deg;--r1:-14deg"><svg><use href="#sc"/></svg></div>
+  <div class="fl far" style="--d:.12;left:30%;top:6%;width:56px;height:56px;--t:13s"><svg><use href="#cu"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="kicker">Coiffure · Saint-Eustache</span>
+   <h1>Salon <em>MOMO</em></h1>
+   <p class="lead">Coupes tendance, couleurs et mèches, permanentes et coiffures de soirée. Une équipe passionnée, un accueil chaleureux, depuis 1983.</p>
+   <div class="cta">
+    <a class="btn btn-rose" href="tel:+14504739898"><svg><use href="#ph"/></svg>Appeler</a>
+    <a class="btn btn-ghost" href="#tarifs">Voir les tarifs</a>
+   </div>
+   <ul class="chips"><li>Coupe femme 28,50 $</li><li>Coupe homme 23,00 $</li><li>Esthétique et ongles sur place</li></ul>
+  </div>
+  <div class="emblem" aria-hidden="true">
+   <svg class="ring" viewBox="0 0 400 400"><defs><path id="circ" d="M200 200m-178 0a178 178 0 1 1 356 0a178 178 0 1 1-356 0"/></defs><text><textPath href="#circ" textLength="1105" lengthAdjust="spacing">SALON MOMO · DEPUIS 1983 · 4 SALONS, UNE SOLUTION · COIFFURE · SAINT-EUSTACHE · </textPath></text></svg>
+   <div class="core"><svg viewBox="0 0 100 100"><use href="#logo"/></svg></div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="sh rv"><span class="kicker">Nos services</span><h2>L'art de la coiffure, <em>sans limite</em></h2><p>Coiffeurs, stylistes et visagistes à l'affût des nouvelles tendances : les tendances sont à votre portée!</p></div>
+  <div class="svc">
+   <article class="card rv"><div class="ic"><svg><use href="#sc"/></svg></div><h3>Coupes</h3><p>Des coupes tendance adaptées à votre style, pour femmes, hommes et enfants. Barbe, toupet et tour d'oreille aussi.</p></article>
+   <article class="card rv"><div class="ic"><svg><use href="#cu"/></svg></div><h3>Couleurs et mèches</h3><p>Des couleurs aux effets naturels ou plus décontractés : coloration, mèches au papier, effet deux couleurs.</p></article>
+   <article class="card rv"><div class="ic"><svg><use href="#dr"/></svg></div><h3>Mises en plis et coiffure haute</h3><p>Mise en plis, boudins et coiffure haute pour vos soirées et grandes occasions.</p></article>
+   <article class="card rv"><div class="ic"><svg><use href="#br"/></svg></div><h3>Permanentes et traitements</h3><p>Permanentes (coupe et mise en plis compris) et traitements pour une chevelure en santé.</p></article>
+   <article class="card rv"><div class="ic"><svg><use href="#bo"/></svg></div><h3>Esthéticienne</h3><p>Service d'esthétique offert sur place.</p><span class="tag">Salon de Saint-Eustache</span></article>
+   <article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M8 21v-9a4 4 0 0 1 8 0v9M8 12V7a4 4 0 0 1 8 0v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Pose d'ongles</h3><p>Pose d'ongles disponible à notre salon.</p><span class="tag">Salon de Saint-Eustache</span></article>
+  </div>
+ </div>
+</section>
+
+<section class="prix" id="tarifs">
+ <div class="wrap">
+  <div class="sh rv"><span class="kicker">Nos tarifs</span><h2>Des prix <em>clairs</em>, un service soigné</h2><p>En vigueur le 1<sup>er</sup> mai 2025. Les prix peuvent varier selon l'emplacement.</p></div>
+  <div class="cut" id="cut" aria-hidden="true"><span class="sc"><svg viewBox="0 0 44 34"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="6" cy="9" r="5"/><circle cx="6" cy="25" r="5"/><path d="M10 12 40 22"/><path class="bl1" d="M10 22 40 12"/></g></svg></span></div>
+  <div class="plist" id="plist">
+   <div class="pcol">
+    <h3>Coupes et mises en plis</h3><p class="sub">Femmes, hommes et enfants</p>
+    <div class="row"><span class="n">Coupe femme</span><span class="dots"></span><span class="p">28,50 $</span></div>
+    <div class="row"><span class="n">Coupe homme</span><span class="dots"></span><span class="p">23,00 $</span></div>
+    <div class="row"><span class="n">Coupe enfant<small>moins de 9 ans</small></span><span class="dots"></span><span class="p">21,50 $</span></div>
+    <div class="row"><span class="n">Toupet</span><span class="dots"></span><span class="p">7,00 $</span></div>
+    <div class="row"><span class="n">Tour d'oreille</span><span class="dots"></span><span class="p">6,00 $</span></div>
+    <div class="row"><span class="n">Barbe</span><span class="dots"></span><span class="p">8,00 $</span></div>
+    <div class="row"><span class="n">Shampoing, coupe et mise en plis</span><span class="dots"></span><span class="p">57,00 $</span></div>
+    <div class="row"><span class="n">Mise en plis</span><span class="dots"></span><span class="p">26,50 $</span></div>
+    <div class="row"><span class="n">Mise en plis<small>cheveux mi-longs et longs</small></span><span class="dots"></span><span class="p">34,00 $</span></div>
+    <div class="row"><span class="n">Boudins</span><span class="dots"></span><span class="p">49,00 $</span></div>
+    <div class="row"><span class="n">Coiffure haute<small>à partir de</small></span><span class="dots"></span><span class="p">49,00 $</span></div>
+    <div class="row"><span class="n">Traitement</span><span class="dots"></span><span class="p">17,00 $</span></div>
+   </div>
+   <div class="pcol">
+    <h3>Coloration et mèches</h3><p class="sub">Effets naturels ou plus audacieux</p>
+    <div class="row"><span class="n">Coloration et mise en plis</span><span class="dots"></span><span class="p">51,00 $</span></div>
+    <div class="row"><span class="n">Coloration, coupe et mise en plis</span><span class="dots"></span><span class="p">67,00 $</span></div>
+    <div class="row"><span class="n">Surplus</span><span class="dots"></span><span class="p">8,00 $</span></div>
+    <div class="row"><span class="n">Surplus effet 2 couleurs</span><span class="dots"></span><span class="p">18,50 $</span></div>
+    <div class="row"><span class="n">Mèches au papier<small>à partir de</small></span><span class="dots"></span><span class="p">95,00 $</span></div>
+    <div class="row"><span class="n">Le papier</span><span class="dots"></span><span class="p">11,00 $</span></div>
+    <div class="row"><span class="n">Mèches et mise en plis</span><span class="dots"></span><span class="p">67,50 $</span></div>
+    <div class="row"><span class="n">Mèches, coupe et mise en plis</span><span class="dots"></span><span class="p">83,50 $</span></div>
+    <div class="row"><span class="n">Surplus de coloration ou de décolorant<small>chacun</small></span><span class="dots"></span><span class="p">15,00 $</span></div>
+    <div class="row"><span class="n">Décolorant, décapant, démaquillant<small>chacun</small></span><span class="dots"></span><span class="p">60,00 $</span></div>
+   </div>
+  </div>
+  <div class="side">
+   <div class="pcol" style="margin-top:18px">
+    <h3>Permanentes</h3><p class="sub">Coupe et mise en plis comprises</p>
+    <div class="row"><span class="n">Permanente<small>à partir de</small></span><span class="dots"></span><span class="p">67,00 $</span></div>
+    <div class="row"><span class="n">Surplus</span><span class="dots"></span><span class="p">27,00 $</span></div>
+   </div>
+   <div class="special">
+    <h3>Spécial bel âge</h3><p class="sub" style="color:#5b3b4f;margin:4px 0 8px">Du lundi au mercredi</p>
+    <div class="row"><span class="n">Shampoing, coupe et mise en plis</span><span class="dots"></span><span class="p">51,50 $</span></div>
+    <div class="row"><span class="n">Sur nos permanentes</span><span class="dots"></span><span class="p">3 $ de rabais</span></div>
+   </div>
+  </div>
+  <div class="notes"><p>Tous ces tarifs peuvent varier selon la longueur et l'épaisseur de votre chevelure.</p><p>— L'équipe MOMO</p></div>
+ </div>
+</section>
+
+<section class="about" id="histoire">
+ <div class="wrap">
+  <div class="rv"><div class="year" aria-hidden="true">1983</div></div>
+  <div class="rv">
+   <span class="kicker" style="color:var(--wine)">Notre histoire</span>
+   <h2>Plus de 35 ans à votre service</h2>
+   <p>C'est en 1983 que le premier salon MOMO a ouvert ses portes. Nos salons sont reconnus pour leur accueil chaleureux et leur service professionnel : nos équipes gagnent la confiance de leur clientèle par leur savoir-faire et leur ambiance conviviale.</p>
+   <p>Les salons MOMO, c'est de la passion et du talent à votre service. Notre équipe prend soin de chaque client pour vous offrir un moment de détente agréable qui met en valeur vos cheveux et votre visage.</p>
+   <ul>
+    <li><svg><use href="#chk"/></svg>Des coupes tendance adaptées à votre style</li>
+    <li><svg><use href="#chk"/></svg>Des couleurs aux effets naturels ou plus décontractés</li>
+    <li><svg><use href="#chk"/></svg>Des coiffeurs experts formés aux dernières tendances</li>
+   </ul>
+   <p style="margin-top:22px"><b>Nos produits professionnels.</b> Plusieurs produits sont offerts dans nos salons; certains peuvent être commandés.</p>
+   <div class="brands"><span>Joico</span><span>Schwarzkopf</span><span>Nioxin</span><span>Moroccanoil</span><span>American Crew</span><span>Kera-Spa</span><span>ISO</span><span>Oligo</span><span>Alcove</span><span>Johnny B.</span><span>Structure</span><span>Dannyco</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="salons" id="salons">
+ <div class="wrap">
+  <div class="sh rv"><span class="kicker">Nos salons</span><h2>4 salons, <em>une solution</em></h2><p>Pour mieux vous servir, où que vous soyez.</p></div>
+  <div class="sg">
+   <article class="salon main rv"><h3>Saint-Eustache</h3><p>129, rue Saint-Laurent<br>Saint-Eustache (Québec) J7P 5H6</p><a class="t" href="tel:+14504739898">450 473-9898</a><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=129+rue+Saint-Laurent+Saint-Eustache+QC+J7P+5H6" target="_blank" rel="noopener">Itinéraire Google Maps →</a></article>
+   <article class="salon rv"><h3>Anjou</h3><p>6946, avenue Baldwin<br>Anjou (Québec) H1K 3C7</p><a class="t" href="tel:+15143528141">514 352-8141</a><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=6946+avenue+Baldwin+Anjou+QC+H1K+3C7" target="_blank" rel="noopener">Itinéraire Google Maps →</a></article>
+   <article class="salon rv"><h3>LeMoyne</h3><p>80, rue Saint-Louis<br>LeMoyne (Québec) J4R 2L4</p><a class="t" href="tel:+14504658828">450 465-8828</a><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=80+rue+Saint-Louis+LeMoyne+QC+J4R+2L4" target="_blank" rel="noopener">Itinéraire Google Maps →</a></article>
+   <article class="salon rv"><h3>Repentigny</h3><p>190, rue Notre-Dame<br>Repentigny (Québec) J6A 2R2</p><a class="t" href="tel:+14505854885">450 585-4885</a><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=190+rue+Notre-Dame+Repentigny+QC+J6A+2R2" target="_blank" rel="noopener">Itinéraire Google Maps →</a></article>
+  </div>
+ </div>
+</section>
+
+<section class="infos" id="infos">
+ <div class="wrap">
+  <div class="card rv">
+   <h3>Nos heures</h3>
+   <ul class="hours">
+    <li class="off"><b>Lundi</b><span>Fermé</span></li>
+    <li><b>Mardi</b><span>9 h à 17 h</span></li>
+    <li><b>Mercredi</b><span>9 h à 20 h</span></li>
+    <li><b>Jeudi</b><span>9 h à 20 h</span></li>
+    <li><b>Vendredi</b><span>9 h à 20 h</span></li>
+    <li><b>Samedi</b><span>8 h à 16 h</span></li>
+       </ul>
+  </div>
+  <div class="card rv">
+   <h3>Prenez rendez-vous</h3>
+   <a class="big-tel" href="tel:+14504739898">450 473-9898</a>
+   <p>Laissez-nous un message et nous vous répondrons dans les plus brefs délais.</p>
+   <p style="margin-top:12px">Courriel : <a href="mailto:info@salonmomo.ca">info@salonmomo.ca</a></p>
+  </div>
+  <div class="card rv">
+   <h3>Nous trouver</h3>
+   <p>129, rue Saint-Laurent<br>Saint-Eustache (Québec) J7P 5H6</p>
+   <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&amp;query=129+rue+Saint-Laurent+Saint-Eustache+QC+J7P+5H6" target="_blank" rel="noopener">Ouvrir dans Google Maps →</a></p>
+   <p style="margin-top:12px"><a href="https://www.facebook.com/Salon-MOMO-391867727500486/" target="_blank" rel="noopener">Suivez-nous sur Facebook →</a></p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <a class="brand" href="#accueil"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg><b>Salon <i>MOMO</i></b></a>
+  <div>© Salon MOMO · 129, rue Saint-Laurent, Saint-Eustache · <a href="tel:+14504739898">450 473-9898</a></div>
+ </div>
+</footer>
+
+<div class="callbar"><a class="btn btn-rose" href="tel:+14504739898"><svg><use href="#ph"/></svg>Appeler le salon · 450 473-9898</a></div>
+
+<script>
+(function(){
+ var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var intro=document.getElementById('intro');
+ var seen=false;try{seen=sessionStorage.getItem('momoIntro')==='1'}catch(e){}
+ function endIntro(){if(!intro)return;var el=intro;intro=null;el.classList.add('bye');setTimeout(function(){el.parentNode&&el.parentNode.removeChild(el)},500);try{sessionStorage.setItem('momoIntro','1')}catch(e){}}
+ if(rm||seen){intro.parentNode.removeChild(intro);intro=null}else{intro.addEventListener('click',endIntro);setTimeout(endIntro,2100)}
+
+ var nav=document.getElementById('top'),bt=nav.querySelector('.burger'),root=document.documentElement;
+ function close(){root.classList.remove('open');bt.setAttribute('aria-expanded','false')}
+ bt.addEventListener('click',function(){var o=root.classList.toggle('open');bt.setAttribute('aria-expanded',o?'true':'false')});
+ document.querySelectorAll('.panel a').forEach(function(a){a.addEventListener('click',close)});
+
+ var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12}):null;
+ document.querySelectorAll('.rv').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+
+ var cut=document.getElementById('cut'),pl=document.querySelectorAll('.prix .row');
+ pl.forEach(function(r,i){r.style.transitionDelay=(Math.min(i,24)*45)+'ms'});
+ function goPrices(){cut.style.setProperty('--cw',cut.offsetWidth+'px');cut.classList.add('go');document.getElementById('tarifs').classList.add('go-rows')}
+ if(rm||!('IntersectionObserver' in window)){document.getElementById('tarifs').classList.add('go-rows')}else{
+  var io2=new IntersectionObserver(function(es){if(es[0].isIntersecting){goPrices();io2.disconnect()}},{threshold:.05});io2.observe(cut);}
+
+ if(!rm){var hero=document.getElementById('accueil'),tick=false;
+  window.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=window.scrollY;if(y<1200)hero.style.setProperty('--py',(-y)+'px');tick=false})},{passive:true});}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
