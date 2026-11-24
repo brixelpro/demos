@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Motel Blanche d'Haberville | Motel à Saint-Jean-Port-Joli, près du fleuve</title>
+<meta name="description" content="Motel Blanche d'Haberville, entièrement rénové, au cœur de Saint-Jean-Port-Joli sur la route 132, à quelques pas du fleuve : 36 unités avec entrée indépendante, Wi-Fi gratuit, borne électrique, vélos et chiens bienvenus. 418-598-3311.">
+<meta name="theme-color" content="#4f5d22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Motel","name":"Motel Blanche d'Haberville","telephone":"+1-418-598-3311","email":"info@motelblanchedhaberville.com","url":"https://motelblanchedhaberville.com/","numberOfRooms":36,"petsAllowed":true,"address":{"@type":"PostalAddress","streetAddress":"34, avenue de Gaspé Ouest","addressLocality":"Saint-Jean-Port-Joli","addressRegion":"QC","postalCode":"G0R 3G0","addressCountry":"CA"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi gratuit","value":true},{"@type":"LocationFeatureSpecification","name":"Borne de recharge","value":true}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"378"}}
+</script>
+<style>
+:root{--olive:#5b6b25;--olive2:#7d8f3a;--deep:#1d3346;--river:#2e5a78;--sky:#dce9f1;--sand:#f7f3ea;--ink:#1f2a33;--muted:#5d6872;--line:#e5dfd1;--bar:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 72px)}
+body{font-family:Lato,system-ui,sans-serif;color:var(--ink);background:var(--sand);line-height:1.65;padding-top:var(--bar);-webkit-font-smoothing:antialiased}
+@media(max-width:519px){:root{--bar:48px}}
+a{color:inherit}
+svg{max-width:100%}
+.script{font-family:"Great Vibes",cursive;font-weight:400}
+h1,h2,h3{line-height:1.12;font-weight:900}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 16px/1 Lato,sans-serif;padding:16px 22px;border-radius:99px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn svg{width:19px;height:19px;flex:none}
+.b-olive{background:var(--olive);color:#fff;box-shadow:0 10px 24px -12px rgba(60,72,20,.9)}
+.b-white{background:#fff;color:var(--deep)}
+.b-line{border:2px solid rgba(255,255,255,.6);color:#fff;background:transparent}
+/* logo */
+.logo{display:inline-flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:var(--olive);line-height:.9}
+.logo small{font:700 11px/1 Lato;letter-spacing:.28em;text-transform:uppercase;margin-left:4px}
+.logo span{font-size:30px;white-space:nowrap}
+/* nav */
+.nav{position:fixed;top:var(--bar);left:0;right:0;z-index:50;background:rgba(247,243,234,.97);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.links{display:none;gap:24px;align-items:center}
+.links a{text-decoration:none;color:var(--ink);font-weight:700;font-size:15px}
+.links a:hover{color:var(--olive)}
+.links .btn{color:#fff;padding:12px 18px;font-size:14.5px}
+.burger{width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:#fff;display:grid;place-items:center;flex:none}
+.burger span{display:block;width:20px;height:2px;background:var(--olive);box-shadow:0 6px 0 var(--olive),0 -6px 0 var(--olive)}
+.drawer{position:fixed;top:calc(var(--bar) + 68px);left:0;right:0;z-index:49;background:var(--sand);padding:6px 20px 20px;border-bottom:1px solid var(--line);transform:translateY(-120%);opacity:0;transition:transform .3s,opacity .3s}
+.drawer.open{transform:none;opacity:1}
+.drawer a{display:block;text-decoration:none;padding:13px 0;border-bottom:1px solid var(--line);font-weight:700}
+@media(min-width:980px){.links{display:flex}.burger,.drawer{display:none}}
+/* hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:linear-gradient(180deg,#f6c58a 0%,#e99a73 22%,#8b6f8f 46%,#2e5a78 70%,#1d3346 100%);padding:110px 0 150px}
+.sun{position:absolute;right:3%;top:8%;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,#fff1c9 0%,#ffd88a 55%,rgba(255,216,138,0) 72%);z-index:-2}
+.float{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.fl{position:absolute;transform:translate3d(0,calc(var(--p,0)*var(--d)*1px),0)}
+.fl>svg{display:block;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.fl.far{opacity:.5;filter:blur(1px)}
+.fl.near{opacity:.85}
+.fl.glide>svg{animation:glide var(--t,16s) ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(-8px) rotate(var(--r1,-4deg))}to{transform:translateY(10px) rotate(var(--r2,5deg))}}
+@keyframes glide{from{transform:translate(-30px,6px)}to{transform:translate(40px,-8px)}}
+.waves{position:absolute;left:0;right:0;bottom:0;height:120px;z-index:0;pointer-events:none}
+.wv{position:absolute;left:0;bottom:0;width:200%;height:100%;display:flex;animation:drift var(--t,14s) linear infinite}
+.wv svg{width:50%;height:100%;flex:none}
+@keyframes drift{to{transform:translateX(-50%)}}
+.hgrid{position:relative;z-index:1;display:grid;gap:30px;align-items:center}
+.tag{display:inline-block;font:700 13px/1 Lato;letter-spacing:.18em;text-transform:uppercase;background:rgba(29,51,70,.35);padding:9px 13px;border-radius:99px}
+.hero h1{font-size:clamp(40px,9vw,74px);margin:16px 0 14px;text-shadow:0 4px 30px rgba(29,51,70,.35)}
+.hero h1 .script{display:block;font-size:1.15em;line-height:1;color:#fff8e6;font-weight:400}
+.hero .lead{font-size:clamp(16.5px,2.2vw,19px);max-width:560px;color:#f4f1ec;text-shadow:0 1px 12px rgba(29,51,70,.45)}
+@media(max-width:600px){.sun{width:90px;height:90px;top:3%;right:2%}}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 22px}
+.rate{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:14px;padding:10px 14px;font-size:14.5px;text-decoration:none;cursor:pointer;color:#fff}
+.rate b{font:900 20px/1 Lato}
+.stars{color:#ffc53d;letter-spacing:1px}
+.feats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:440px;width:100%;justify-self:center}
+.feats div{background:rgba(29,51,70,.4);border:1px solid rgba(255,255,255,.26);border-radius:18px;padding:16px;text-align:center}
+.feats b{display:block;font:900 34px/1 Lato}
+.feats small{font-size:13.5px;color:#eef2f5}
+@media(min-width:980px){.hero{padding:140px 0 170px}.hgrid{grid-template-columns:1.2fr .8fr}}
+/* sections */
+section{padding:74px 0}
+.kick{font:700 13px/1 Lato;letter-spacing:.16em;text-transform:uppercase;color:var(--olive)}
+h2{font-size:clamp(30px,5.4vw,46px);color:var(--deep);margin:10px 0 14px}
+h2 .script{color:var(--olive);font-size:1.2em;font-weight:400}
+.sub{color:var(--muted);max-width:660px;font-size:17px}
+.svc{display:grid;gap:14px;margin-top:30px}
+.sv{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;min-width:0;display:flex;gap:14px;align-items:flex-start}
+.sv .ic{width:52px;height:52px;border-radius:50%;background:#eef1e2;display:grid;place-items:center;flex:none}
+.sv .ic svg{width:28px;height:28px}
+.sv h3{font-size:19px;color:var(--deep);margin-bottom:4px}
+.sv p{color:var(--muted);font-size:15px}
+@media(min-width:700px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.svc{grid-template-columns:repeat(4,minmax(0,1fr))}.sv{flex-direction:column}}
+/* about */
+.about{background:#fff}
+.agrid{display:grid;gap:30px;align-items:center}
+.agrid p+p{margin-top:12px}
+.agrid p{color:var(--muted);font-size:16.5px}
+.badge{position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(180deg,#dce9f1,#a9c6d8);min-height:300px}
+.badge svg{position:absolute;inset:0;width:100%;height:100%}
+.badge .nb{position:absolute;left:20px;bottom:18px;background:#fff;border-radius:16px;padding:14px 16px;box-shadow:0 20px 40px -24px rgba(29,51,70,.6)}
+.badge .nb b{display:block;font:900 34px/1 Lato;color:var(--deep)}
+.badge .nb small{color:var(--muted);font-size:13.5px}
+@media(min-width:980px){.agrid{grid-template-columns:1fr 1fr;gap:60px}}
+/* rooms */
+.rooms{display:grid;gap:18px;margin-top:30px}
+.room{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;min-width:0;opacity:0;transform:translateY(30px);transition:opacity .6s,transform .6s}
+.room.on{opacity:1;transform:none}
+.room .pic{height:170px;position:relative;background:linear-gradient(180deg,#f1e6cf,#e5d5b2)}
+.room .pic svg{position:absolute;inset:0;width:100%;height:100%}
+.room .bd{padding:22px}
+.room h3{font-size:24px;color:var(--deep)}
+.room .bed{color:var(--olive);font-weight:700;margin:4px 0 12px}
+.room ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px}
+.room li{font-size:14px;background:var(--sand);border:1px solid var(--line);border-radius:99px;padding:5px 11px}
+@media(min-width:860px){.rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.bk{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.bk p{color:var(--muted);font-size:15px}
+/* avis */
+.avis{background:var(--sky)}
+.rhead{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0 24px}
+.gbadge{display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 16px}
+.gbadge b{font:900 32px/1 Lato;color:var(--deep)}
+.gbadge small{display:block;color:var(--muted);font-size:13.5px}
+.rgrid{display:grid;gap:14px}
+.rev{background:#fff;border-radius:18px;padding:20px;min-width:0;border:1px solid #d3e1ea}
+.rev p{margin:8px 0 12px;font-size:16px;white-space:pre-line}
+.rev .who{font-size:13.5px;color:var(--muted)}
+.rev .who b{color:var(--ink)}
+@media(min-width:700px){.rgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.rgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* contact */
+.visit{display:grid;gap:14px;margin-top:30px}
+.vc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;min-width:0;text-decoration:none;display:block}
+.vc h3{font-size:19px;color:var(--deep);margin-bottom:6px}
+.vc p{color:var(--muted);font-size:15.5px;overflow-wrap:anywhere}
+@media(min-width:860px){.visit{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.final{margin-top:30px;background:linear-gradient(120deg,var(--deep),var(--river));color:#fff;border-radius:24px;padding:30px 24px;display:grid;gap:16px;align-items:center}
+.final h3{font-size:clamp(24px,3.6vw,34px)}
+.final p{color:#d7e4ee}
+.final .row{display:flex;flex-wrap:wrap;gap:10px}
+@media(min-width:900px){.final{grid-template-columns:1fr auto;padding:36px 42px}}
+footer{background:var(--deep);color:#b9c9d6;text-align:center;padding:32px 0 110px;font-size:14.5px}
+footer .script{font-size:34px;color:#fff;display:block}
+@media(min-width:980px){footer{padding-bottom:32px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;gap:10px;padding:15px;border-radius:99px;background:var(--olive);color:#fff;text-decoration:none;font:900 17px/1 Lato;box-shadow:0 14px 30px -12px rgba(0,0,0,.5)}
+.callbar svg{width:20px;height:20px}
+@media(min-width:980px){.callbar{display:none}}
+/* avis page */
+#avisPage{display:none;min-height:100vh;background:var(--sky)}
+body.avis-open #avisPage{display:block}
+body.avis-open main,body.avis-open footer,body.avis-open .nav,body.avis-open .drawer{display:none}
+.ap-top{position:fixed;top:var(--bar);left:0;right:0;z-index:50;background:var(--deep);color:#fff}
+.ap-top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.ap-top button{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45);border-radius:99px;padding:11px 14px;font:700 15px/1 Lato;cursor:pointer}
+.ap-body{padding:98px 20px 120px}
+.glink{display:inline-block;margin-top:12px;color:var(--olive);font-weight:700}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--sand);display:grid;place-items:center;overflow:hidden;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .w{text-align:center;position:relative;color:var(--olive)}
+#intro .nm{position:relative;display:inline-block;font-size:clamp(46px,13vw,84px);line-height:1}
+#intro .nm:after{content:"";position:absolute;inset:-4px -10px;background:var(--sand);transform-origin:right;animation:write 1.3s .2s cubic-bezier(.5,0,.3,1) forwards}
+#intro small{display:block;font:700 13px/1 Lato;letter-spacing:.3em;text-transform:uppercase;opacity:0;animation:fade .5s .1s forwards}
+#intro .sea{position:absolute;left:0;right:0;bottom:0;height:34vh;transform:translateY(100%);animation:rise 1.4s .3s cubic-bezier(.3,.8,.3,1) forwards}
+#intro .sea svg{width:100%;height:100%}
+@keyframes write{to{transform:scaleX(0)}}
+@keyframes fade{to{opacity:1}}
+@keyframes rise{to{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.room{opacity:1;transform:none}#intro{display:none}.fl{transform:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Motel Blanche d'Haberville — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+ <symbol id="gull" viewBox="0 0 60 24"><path d="M2 14c8-8 18-9 28 2 10-11 20-10 28-2-9-3-19-1-28 8C21 13 11 11 2 14z" fill="#fff"/></symbol>
+ <symbol id="boat" viewBox="0 0 60 60"><path d="M30 4v38" stroke="#fff" stroke-width="2"/><path d="M31 6c10 10 16 22 18 34H31z" fill="#fff"/><path d="M29 12c-8 8-12 18-13 28h13z" fill="#f3e7d0"/><path d="M8 44h46l-7 10H15z" fill="#c4553c"/></symbol>
+ <symbol id="bike" viewBox="0 0 64 40"><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="28" r="10"/><circle cx="50" cy="28" r="10"/><path d="M14 28 26 12h16l8 16M26 12l8 16h-6M40 6h6"/></g></symbol>
+ <symbol id="leaf" viewBox="0 0 40 40"><path d="M20 2l3 8 6-3-1 7 7 1-5 5 4 3-8 2 1 7-7-4-7 4 1-7-8-2 4-3-5-5 7-1-1-7 6 3z" fill="#d9603b"/></symbol>
+ <symbol id="wave" viewBox="0 0 400 120" preserveAspectRatio="none"><path d="M0 50c33 0 33-20 67-20s33 20 66 20 34-20 67-20 33 20 67 20 33-20 66-20 34 20 67 20v70H0z"/></symbol>
+ <symbol id="lighthouse" viewBox="0 0 40 90"><path d="M14 30h12l4 58H10z" fill="#fff"/><path d="M12 50h16l1 10H11zM10 72h20l1 10H9z" fill="#c4553c"/><rect x="12" y="20" width="16" height="10" fill="#ffd88a"/><path d="M10 20h20L20 8z" fill="#c4553c"/></symbol>
+</defs></svg>
+
+<div id="intro" aria-hidden="true">
+ <div class="w"><small>Motel</small><span class="nm script">Blanche d'Haberville</span></div>
+ <div class="sea"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><use href="#wave" fill="#2e5a78"/></svg></div>
+</div>
+
+<header class="nav"><div class="wrap">
+ <a class="logo" href="#top" aria-label="Motel Blanche d'Haberville, accueil"><small>Motel</small><span class="script">Blanche d'Haberville</span></a>
+ <nav class="links"><a href="#services">Services</a><a href="#chambres">Chambres</a><a href="#" data-avis>Avis</a><a href="#contact">Contact</a><a class="btn b-olive" href="tel:+14185983311"><svg><use href="#i-phone"/></svg>418-598-3311</a></nav>
+ <button class="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+</div></header>
+<div class="drawer" id="drawer"><a href="#services">Services</a><a href="#chambres">Chambres</a><a href="#" data-avis>Avis</a><a href="#contact">Contact</a></div>
+
+<main id="top">
+<section class="hero">
+ <div class="sun"></div>
+ <div class="float" id="float">
+  <div class="fl near glide" style="left:8%;top:14%;--d:-.12;--t:14s"><svg width="54" height="22"><use href="#gull"/></svg></div>
+  <div class="fl far glide" style="left:70%;top:10%;--d:-.06;--t:18s"><svg width="38" height="16"><use href="#gull"/></svg></div>
+  <div class="fl near glide" style="left:82%;top:22%;--d:-.16;--t:12s"><svg width="44" height="18"><use href="#gull"/></svg></div>
+  <div class="fl near" style="left:76%;top:62%;--d:-.08;--t:8s"><svg width="70" height="70"><use href="#boat"/></svg></div>
+  <div class="fl far" style="left:6%;top:66%;--d:-.05;--t:10s"><svg width="44" height="44"><use href="#boat"/></svg></div>
+  <div class="fl near" style="left:92%;top:44%;--d:-.12;--t:11s;--r1:-20deg;--r2:30deg"><svg width="26" height="26"><use href="#leaf"/></svg></div>
+  <div class="fl far" style="left:50%;top:70%;--d:-.04;--t:12s;--r1:0deg;--r2:0deg"><svg width="30" height="68"><use href="#lighthouse"/></svg></div>
+ </div>
+ <div class="wrap hgrid">
+  <div>
+   <span class="tag">Saint-Jean-Port-Joli · route 132</span>
+   <h1><span class="script">Bienvenue</span>à quelques pas du fleuve</h1>
+   <p class="lead">Entièrement rénové, le Motel Blanche d'Haberville est favorablement situé au cœur de Saint-Jean-Port-Joli. Vous serez au cœur de l'action tout en profitant d'un environnement calme et propice au repos. Arrivez, stationnez et découvrez à pied.</p>
+   <div class="cta"><a class="btn b-white" href="tel:+14185983311"><svg><use href="#i-phone"/></svg>Appeler 418-598-3311</a><a class="btn b-line" href="https://app.mews.com/distributor/063b45f5-5c16-479f-bfe2-b220001ff96b" target="_blank" rel="noopener">Réserver en ligne</a></div>
+   <a class="rate" href="#" data-avis><b>4,4</b><span class="stars">★★★★★</span><span>sur Google · 378 avis</span></a>
+  </div>
+  <div class="feats">
+   <div><b>36</b><small>unités sur trois étages</small></div>
+   <div><b>16</b><small>unités à l'écart, comme un petit chalet</small></div>
+   <div><b>100 %</b><small>des unités avec entrée indépendante</small></div>
+   <div><b>Wi-Fi</b><small>gratuit dans toutes les chambres</small></div>
+  </div>
+ </div>
+ <div class="waves" aria-hidden="true">
+  <div class="wv" style="--t:22s;opacity:.55;bottom:22px"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><use href="#wave" fill="#5b88a8"/></svg><svg viewBox="0 0 400 120" preserveAspectRatio="none"><use href="#wave" fill="#5b88a8"/></svg></div>
+  <div class="wv" style="--t:15s"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><use href="#wave" fill="#f7f3ea"/></svg><svg viewBox="0 0 400 120" preserveAspectRatio="none"><use href="#wave" fill="#f7f3ea"/></svg></div>
+ </div>
+</section>
+
+<section id="services" style="padding-top:40px">
+ <div class="wrap">
+  <span class="kick">Nos services</span>
+  <h2>Tout pour un <span class="script">séjour tranquille</span></h2>
+  <div class="svc">
+   <div class="sv"><div class="ic"><svg viewBox="0 0 64 40"><g fill="none" stroke="#5b6b25" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="28" r="10"/><circle cx="50" cy="28" r="10"/><path d="M14 28 26 12h16l8 16M26 12l8 16h-6M40 6h6"/></g></svg></div><div><h3>Pour les cyclistes</h3><p>Emplacement sécurisé pour vos vélos.</p></div></div>
+   <div class="sv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#5b6b25" stroke-width="2" stroke-linecap="round"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1.3" fill="#5b6b25"/></svg></div><div><h3>Internet sans fil</h3><p>Accès Internet haut débit sans fil gratuit dans toutes nos chambres.</p></div></div>
+   <div class="sv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#5b6b25" stroke-width="2" stroke-linejoin="round"><rect x="4" y="3" width="10" height="18" rx="2"/><path d="M14 8h2a2 2 0 0 1 2 2v6a2 2 0 0 0 4 0V9l-2-2"/><path d="M10 7 7 12h4l-3 5" stroke-width="1.6"/></svg></div><div><h3>Borne électrique</h3><p>Rechargez votre voiture électrique sur place.</p></div></div>
+   <div class="sv"><div class="ic"><svg viewBox="0 0 24 24" fill="#5b6b25"><ellipse cx="6" cy="10" rx="2" ry="2.6"/><ellipse cx="10" cy="6" rx="2" ry="2.6"/><ellipse cx="14" cy="6" rx="2" ry="2.6"/><ellipse cx="18" cy="10" rx="2" ry="2.6"/><path d="M12 11c-3 0-6 4-6 7 0 2 2 3 3 2.5s2-.8 3-.8 2 .3 3 .8 3-.5 3-2.5c0-3-3-7-6-7z"/></svg></div><div><h3>Animaux</h3><p>Les chiens sont acceptés à condition d'être accompagnés en tout temps.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="about">
+ <div class="wrap agrid">
+  <div>
+   <span class="kick">La belle Blanche d'Haberville</span>
+   <h2>Elle se dresse fièrement sur la route 132</h2>
+   <p>Dès votre arrivée au village, vous remarquerez la belle Blanche d'Haberville. Située sur la route 132, à quelques pas du fleuve, elle se dresse fièrement.</p>
+   <p>Récemment rénovées, les chambres réparties sur trois étages sont, pour la plupart, munies d'une porte-fenêtre qui offre une belle luminosité. Des 36 unités disponibles, 16 sont situées à l'écart, vous donnant presque l'impression de séjourner dans un petit chalet.</p>
+   <p>Toutes les unités sont dotées d'une entrée indépendante qui vous permet d'aller et venir en toute quiétude et de profiter simplement de l'extérieur grâce aux balcons aménagés. De la terrasse, vous serez charmés par la beauté du panorama qui s'offre à vous.</p>
+  </div>
+  <div class="badge" aria-hidden="true">
+   <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#cfe0eb"/><circle cx="300" cy="80" r="34" fill="#ffe3a6"/><path d="M0 170c60-20 120-30 200-26s140 16 200 4v152H0z" fill="#7ea2bb"/><path d="M0 200c80-10 160-8 240 0s120 8 160 4v96H0z" fill="#2e5a78"/><path d="M40 196h120v-60l-60-34-60 34z" fill="#fff"/><path d="M28 136 100 94l72 42" stroke="#5b6b25" stroke-width="10" fill="none" stroke-linejoin="round"/><g fill="#9ec2d9"><rect x="56" y="148" width="22" height="22"/><rect x="88" y="148" width="22" height="22"/><rect x="120" y="148" width="22" height="22"/></g><rect x="90" y="176" width="18" height="20" fill="#5b6b25"/><g transform="translate(270 150)"><use href="#boat" width="60" height="60"/></g><g transform="translate(200 60)"><use href="#gull" width="40" height="16"/></g></svg>
+   <div class="nb"><b>36</b><small>unités rénovées, entrée indépendante</small></div>
+  </div>
+ </div>
+</section>
+
+<section id="chambres">
+ <div class="wrap">
+  <span class="kick">Nos chambres</span>
+  <h2>Deux types d'unités <span class="script">confortables</span></h2>
+  <p class="sub">Toutes avec air climatisé, téléviseur à écran plat, cafetière, mini réfrigérateur, séchoir à cheveux, bureau de travail et Wi-Fi gratuit.</p>
+  <div class="rooms">
+   <article class="room"><div class="pic"><svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice"><rect width="400" height="170" fill="#efe4cc"/><rect x="250" y="20" width="110" height="80" rx="6" fill="#cfe0eb" stroke="#fff" stroke-width="6"/><path d="M250 80c30-10 60-12 110-4v24H250z" fill="#2e5a78"/><rect x="40" y="90" width="150" height="52" rx="10" fill="#fff"/><rect x="40" y="70" width="70" height="26" rx="8" fill="#e8eedb"/><rect x="120" y="70" width="70" height="26" rx="8" fill="#e8eedb"/><rect x="200" y="90" width="150" height="52" rx="10" fill="#fff" opacity=".0"/><rect x="40" y="138" width="150" height="10" fill="#5b6b25"/><rect x="215" y="110" width="140" height="38" rx="10" fill="#fff"/><rect x="215" y="96" width="60" height="20" rx="7" fill="#e8eedb"/><rect x="285" y="96" width="60" height="20" rx="7" fill="#e8eedb"/><rect x="215" y="144" width="140" height="8" fill="#5b6b25"/></svg></div><div class="bd"><h3>Supérieure deluxe</h3><div class="bed">Deux grands lits queen · 2 adultes</div><ul><li>Balcon</li><li>Bain-douche</li><li>Micro-ondes</li><li>Mini réfrigérateur</li><li>Cafetière</li><li>Air climatisé</li><li>Téléviseur écran plat</li><li>Bureau de travail</li><li>Séchoir à cheveux</li><li>Appels locaux gratuits</li><li>Planche et fer sur demande</li><li>Wi-Fi gratuit</li></ul></div></article>
+   <article class="room"><div class="pic"><svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice"><rect width="400" height="170" fill="#e9eef0"/><rect x="40" y="18" width="90" height="140" rx="4" fill="#cfe0eb" stroke="#fff" stroke-width="6"/><path d="M85 18v140" stroke="#fff" stroke-width="5"/><rect x="170" y="92" width="190" height="54" rx="10" fill="#fff"/><rect x="175" y="72" width="85" height="26" rx="8" fill="#dce7d0"/><rect x="270" y="72" width="85" height="26" rx="8" fill="#dce7d0"/><rect x="170" y="142" width="190" height="10" fill="#2e5a78"/></svg></div><div class="bd"><h3>Intermédiaire deluxe</h3><div class="bed">Deux lits doubles ou un lit queen · 2 adultes</div><ul><li>Portes françaises</li><li>Entrée indépendante</li><li>Bain-douche</li><li>Mini réfrigérateur</li><li>Cafetière</li><li>Air climatisé</li><li>Téléviseur écran plat</li><li>Bureau de travail</li><li>Séchoir à cheveux</li><li>Appels locaux gratuits</li><li>Micro-ondes sur demande</li><li>Planche et fer sur demande</li><li>Wi-Fi gratuit</li></ul></div></article>
+  </div>
+  <div class="bk"><a class="btn b-olive" href="https://app.mews.com/distributor/063b45f5-5c16-479f-bfe2-b220001ff96b" target="_blank" rel="noopener">Voir les tarifs et réserver</a><p>Tarifs et disponibilités en temps réel sur notre réservation en ligne, ou au 418-598-3311.</p></div>
+ </div>
+</section>
+
+<section class="avis" id="avis">
+ <div class="wrap">
+  <span class="kick">Ce que nos clients disent</span>
+  <h2>Des séjours <span class="script">réussis</span></h2>
+  <div class="rhead"><div class="gbadge"><b>4,4</b><span><span class="stars">★★★★★</span><small>sur Google · 378 avis</small></span></div></div>
+  <div class="rgrid" id="homeReviews"></div>
+  <button class="btn b-olive" style="margin-top:22px" data-avis>Voir tous les avis (6)</button>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <span class="kick">Contact</span>
+  <h2>Au cœur de <span class="script">Saint-Jean-Port-Joli</span></h2>
+  <div class="visit">
+   <a class="vc" href="https://www.google.com/maps/search/?api=1&amp;query=Motel+Blanche+d%27Haberville+34+avenue+de+Gasp%C3%A9+Ouest+Saint-Jean-Port-Joli" target="_blank" rel="noopener"><h3>Adresse</h3><p>34, avenue de Gaspé Ouest<br>Saint-Jean-Port-Joli (Québec) G0R 3G0<br><u>Voir sur Google Maps</u></p></a>
+   <div class="vc"><h3>Nous joindre</h3><p><a href="tel:+14185983311">418-598-3311</a><br><a href="mailto:info@motelblanchedhaberville.com">info@motelblanchedhaberville.com</a></p></div>
+   <a class="vc" href="https://app.mews.com/distributor/063b45f5-5c16-479f-bfe2-b220001ff96b" target="_blank" rel="noopener"><h3>Réservation</h3><p>Réservez en ligne en quelques clics, ou appelez-nous pour toute question sur votre séjour.<br><u>Réserver en ligne</u></p></a>
+  </div>
+  <div class="final"><div><h3>Votre escale au bord du fleuve vous attend</h3><p>À distance de marche des restaurants, des boutiques et du bord de l'eau.</p></div><div class="row"><a class="btn b-white" href="tel:+14185983311"><svg><use href="#i-phone"/></svg>418-598-3311</a></div></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><span class="script">Blanche d'Haberville</span>34, avenue de Gaspé Ouest, Saint-Jean-Port-Joli (Québec) G0R 3G0 · 418-598-3311</div></footer>
+<a class="callbar" href="tel:+14185983311"><svg><use href="#i-phone"/></svg>Appeler 418-598-3311</a>
+
+<div id="avisPage" role="dialog" aria-label="Tous les avis">
+ <div class="ap-top"><div class="wrap"><button id="apBack">← Retour au site</button><span class="script" style="font-size:24px;white-space:nowrap">Blanche d'Haberville</span></div></div>
+ <div class="wrap ap-body">
+  <span class="kick">Avis de nos clients</span>
+  <h2>Tous les avis</h2>
+  <div class="gbadge"><b>4,4</b><span><span class="stars">★★★★★</span><small>sur Google · 378 avis</small></span></div><br>
+  <a class="glink" href="https://www.google.com/maps/search/?api=1&amp;query=Motel+Blanche+d%27Haberville+Saint-Jean-Port-Joli" target="_blank" rel="noopener">Voir sur Google →</a>
+  <div class="rgrid" id="allReviews" style="margin-top:22px"></div>
+  <p style="color:var(--muted);font-size:14px;margin-top:22px">Avis publiés par des clients sur Google et Tripadvisor, reproduits tels quels. Dates relatives à novembre 2026.</p>
+ </div>
+</div>
+
+<script>
+(function(){
+ var R=[
+  {s:5,t:"Tres propre, motel tres silencieux, prix honnête\nEt tout fonctionne ,tv ,Micro-ondes\nChauffage tout est parfait",a:"Jean",d:"il y a un mois",src:"Avis Google"},
+  {s:5,t:"Très bien situé, peux te rendre a pied au bord de l'eau\nLa chambre était très propre",a:"Robert Barrett",d:"il y a 3 mois",src:"Avis Google"},
+  {s:5,t:"Personnel très accueillant t. Chambre très propre, bonne grandeur frigo micro-onde\nParfait pour nous",a:"Gilles Cardinal",d:"il y a 3 mois",src:"Avis Google"},
+  {s:5,t:"Chambre 25 calme super propre frigo micro onde verre terrasse",a:"Bruno Marchal",d:"il y a 2 mois",src:"Avis Google"},
+  {s:4,t:"Très bon rapport qualité prix. Bien situé pour ceux qui voyagent en direction de la Gaspésie. Très accueillant et organisé pour une arrivée tardive. Chambre très grande.",a:"Frédéric SCHNEIDER",d:"il y a 2 mois",src:"Avis Google"},
+  {s:5,t:"Très propre, très confortable. |La propriétaire est même venue carresser notre chien.|Elle est très sympathique.",a:"Stay13955249419",d:"il y a 3 mois",src:"Avis Tripadvisor",page:true}
+ ];
+ function card(r){var e=document.createElement('article');e.className='rev';e.innerHTML='<span class="stars"></span><p></p><div class="who"><b></b> · '+r.src+' · '+r.d+'</div>';e.querySelector('.stars').textContent='★★★★★'.slice(0,r.s)+'☆☆☆☆☆'.slice(0,5-r.s);e.querySelector('p').textContent='« '+r.t+' »';e.querySelector('b').textContent=r.a;return e}
+ var h=document.getElementById('homeReviews'),a=document.getElementById('allReviews');
+ R.filter(function(r){return !r.page}).slice(0,12).forEach(function(r){h.appendChild(card(r))});R.forEach(function(r){a.appendChild(card(r))});
+ var d=document.getElementById('drawer'),b=document.querySelector('.burger'),lastY=0;
+ function openA(e){if(e)e.preventDefault();if(document.body.classList.contains('avis-open'))return;lastY=scrollY;document.body.classList.add('avis-open');d.classList.remove('open');scrollTo(0,0)}
+ function closeA(){document.body.classList.remove('avis-open');scrollTo(0,lastY)}
+ window.openAvis=openA;
+ document.querySelectorAll('[data-avis]').forEach(function(x){x.addEventListener('click',openA)});
+ document.getElementById('apBack').addEventListener('click',closeA);
+ addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('avis-open'))closeA()});
+ b.addEventListener('click',function(){var o=d.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ d.addEventListener('click',function(e){if(e.target.tagName==='A'&&!e.target.hasAttribute('data-avis'))d.classList.remove('open')});
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var t=e.target;setTimeout(function(){t.classList.add('on')},(+t.dataset.i)*160);io.unobserve(t)}})},{threshold:.15});
+ document.querySelectorAll('.room').forEach(function(c,i){c.dataset.i=i;io.observe(c)});
+ var intro=document.getElementById('intro'),rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function kill(){if(!intro)return;intro.classList.add('out');var i=intro;intro=null;setTimeout(function(){i.remove()},500)}
+ var seen=false;try{seen=sessionStorage.getItem('bdh-intro')}catch(e){}
+ if(seen||rm){intro.remove();intro=null}else{try{sessionStorage.setItem('bdh-intro','1')}catch(e){}setTimeout(kill,2100);intro.addEventListener('click',kill);intro.addEventListener('touchstart',kill,{passive:true})}
+ var f=document.getElementById('float'),tq=false;
+ if(!rm){addEventListener('scroll',function(){if(tq)return;tq=true;requestAnimationFrame(function(){var y=scrollY;if(y<900)f.style.setProperty('--p',y);tq=false})},{passive:true})}
+})();
+</script>
+</body>
+</html>
