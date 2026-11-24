@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aux 3 Chocolats | Chocolaterie et pâtisserie à Saint-Rémi</title>
+<meta name="description" content="Aux 3 Chocolats, chocolaterie artisanale et pâtisserie à Saint-Rémi, en face de l'église : plus de 40 variétés de chocolats originaux, gâteaux pour toutes occasions, bistro et boutique gourmande. 450 454-6102.">
+<meta name="theme-color" content="#3a2014">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Bakery","name":"Aux 3 Chocolats","description":"Chocolaterie artisanale et pâtisserie fine, boutique gourmande et bistro.","telephone":"+1-450-454-6102","email":"choco@aux3chocolats.com","url":"http://www.aux3chocolats.com/","address":{"@type":"PostalAddress","streetAddress":"887, rue Notre-Dame","addressLocality":"Saint-Rémi","addressRegion":"QC","postalCode":"J0L 2L0","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:30","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:30","closes":"16:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"70"},"founder":{"@type":"Person","name":"Isabelle Kosa"},"foundingDate":"1996"}
+</script>
+<style>
+:root{--cream:#f8efdf;--cream2:#efe0c4;--choc:#4a2716;--dark:#2a160c;--ink:#3a2418;--muted:#7a5f4d;--car:#c88a48;--car2:#e2b277;--sage:#dfe5c6;--line:#e6d4b5;--bar:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 72px)}
+body{font-family:Lora,Georgia,serif;color:var(--ink);background:var(--cream);line-height:1.65;padding-top:var(--bar);-webkit-font-smoothing:antialiased}
+@media(max-width:519px){:root{--bar:48px}}
+a{color:inherit}
+svg{max-width:100%}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+.frak{font-family:UnifrakturMaguntia,serif;font-weight:400}
+h1,h2,h3{line-height:1.15;font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 16px/1 Lora,serif;padding:16px 22px;border-radius:99px;text-decoration:none;transition:transform .2s;cursor:pointer;border:0}
+.btn:active{transform:scale(.97)}
+.btn svg{width:19px;height:19px;flex:none}
+.b-car{background:var(--car);color:#fff;box-shadow:0 10px 24px -10px rgba(120,60,20,.7)}
+.b-ghost{background:transparent;color:var(--cream);border:1.5px solid rgba(248,239,223,.45)}
+.b-dark{background:var(--choc);color:var(--cream)}
+/* nav */
+.nav{position:fixed;top:var(--bar);left:0;right:0;z-index:50;background:rgba(42,22,12,.97);border-bottom:1px solid rgba(226,178,119,.2)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.logo{display:flex;align-items:center;gap:6px;text-decoration:none;color:var(--cream);font-size:26px;line-height:1;white-space:nowrap}
+.logo .three{font-size:40px;color:var(--car2);margin:0 -1px;transform:translateY(4px);display:inline-block}
+.links{display:none;gap:24px;align-items:center}
+.links a{text-decoration:none;color:#ead9bd;font-size:15.5px}
+.links a:hover{color:var(--car2)}
+.links .btn{padding:11px 16px;font-size:14.5px;color:#fff}
+.burger{width:44px;height:44px;border-radius:12px;border:1px solid rgba(248,239,223,.25);background:transparent;display:grid;place-items:center;flex:none}
+.burger span{display:block;width:20px;height:2px;background:var(--cream);box-shadow:0 6px 0 var(--cream),0 -6px 0 var(--cream)}
+.drawer{position:fixed;top:calc(var(--bar) + 66px);left:0;right:0;z-index:49;background:var(--dark);padding:6px 20px 20px;transform:translateY(-120%);opacity:0;transition:transform .3s,opacity .3s}
+.drawer.open{transform:none;opacity:1}
+.drawer a{display:block;color:var(--cream);text-decoration:none;padding:13px 0;border-bottom:1px solid rgba(248,239,223,.1)}
+@media(min-width:980px){.links{display:flex}.burger,.drawer{display:none}}
+/* hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;color:var(--cream);background:radial-gradient(90% 70% at 85% 10%,#7a4428 0%,#4a2716 40%,#2a160c 85%);padding:110px 0 80px}
+.hero:before{content:"";position:absolute;left:-10%;right:-10%;top:0;height:60px;background:radial-gradient(30px 34px at 30px 0,#2a160c 98%,transparent) 0 0/120px 60px repeat-x;opacity:.0}
+.float{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.fl{position:absolute;transform:translate3d(0,calc(var(--p,0)*var(--d)*1px),0)}
+.fl>svg{display:block;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.fl.far{opacity:.35;filter:blur(1.5px)}
+.fl.near{opacity:.85}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r1,-10deg))}to{transform:translateY(12px) rotate(var(--r2,12deg))}}
+.hgrid{display:grid;gap:36px;align-items:center}
+.kick{display:inline-block;font:italic 500 15px/1.3 Lora;color:var(--car2);letter-spacing:.02em}
+.hero h1{font-size:clamp(36px,8.6vw,66px);margin:12px 0 16px;letter-spacing:-.01em}
+.hero h1 em{color:var(--car2)}
+.hero .lead{font-size:clamp(16.5px,2.2vw,19px);color:#ecdcc2;max-width:560px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 24px}
+.gnote{display:inline-flex;align-items:center;gap:10px;background:rgba(248,239,223,.08);border:1px solid rgba(248,239,223,.18);padding:10px 14px;border-radius:14px;font-size:14.5px;color:#f1e3cb;text-decoration:none;cursor:pointer}
+.gnote b{font-size:18px;color:#fff}
+.stars{color:#f2b736;letter-spacing:1px}
+.medal{position:relative;justify-self:center;width:min(100%,420px);aspect-ratio:1;display:grid;place-items:center}
+.medal .disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f8efdf,#e9d6b3 60%,#d7bb8c);box-shadow:0 40px 80px -30px rgba(0,0,0,.6),inset 0 0 0 10px rgba(255,255,255,.25)}
+.medal .ring{position:absolute;inset:6%;border-radius:50%;border:1.5px dashed rgba(74,39,22,.35);animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.medal .in{position:relative;text-align:center;color:var(--choc);padding:0 14%}
+.medal .in .frak{font-size:clamp(34px,8vw,54px);line-height:.95}
+.medal .in .frak span{display:block;font-size:2em;color:#8a4b26;line-height:.8}
+.medal .in p{font:italic 500 15px/1.4 Lora;margin-top:8px;color:var(--muted)}
+.medal .in small{display:block;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;margin-top:10px;color:var(--choc)}
+@media(min-width:980px){.hero{padding:140px 0 110px}.hgrid{grid-template-columns:1.1fr .9fr}}
+.drip{display:block;width:100%;height:46px;margin-top:-1px;background:var(--cream)}
+/* sections */
+section{padding:72px 0}
+h2{font-size:clamp(30px,5.2vw,44px);color:var(--choc);margin:8px 0 14px}
+.sub{color:var(--muted);max-width:660px;font-size:17px}
+.center{text-align:center}.center .sub{margin:0 auto}
+/* douceurs */
+.trio{display:grid;gap:16px;margin-top:34px}
+.tcard{background:#fff8ec;border:1px solid var(--line);border-radius:22px;padding:24px;min-width:0}
+.tcard svg{width:58px;height:58px;margin-bottom:12px}
+.tcard h3{font-size:21px;color:var(--choc);margin-bottom:6px}
+.tcard p{color:var(--muted);font-size:15.5px}
+@media(min-width:760px){.trio{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* chocolats box */
+.box-sec{background:linear-gradient(180deg,var(--cream),var(--cream2))}
+.feature{display:grid;gap:16px;margin-top:30px}
+.feat{background:var(--choc);color:var(--cream);border-radius:22px;padding:24px;position:relative;overflow:hidden;min-width:0}
+.feat h3{font-size:22px;color:var(--car2);margin-bottom:6px}
+.feat p{color:#ead9bd;font-size:15.5px}
+@media(min-width:760px){.feature{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.box{margin-top:26px;background:#3a2014;border-radius:26px;padding:14px;box-shadow:0 30px 60px -36px rgba(42,22,12,.9),inset 0 0 0 2px rgba(226,178,119,.25)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.cell{display:flex;gap:12px;align-items:center;background:linear-gradient(160deg,#fbf3e4,#f0e1c6);border-radius:16px;padding:12px 14px;min-width:0;opacity:0;transform:translateY(-26px) scale(.96);transition:opacity .5s,transform .55s cubic-bezier(.3,1.4,.5,1)}
+.cell.on{opacity:1;transform:none}
+.cell svg{width:42px;height:42px;flex:none}
+.cell p{font-size:14.5px;line-height:1.4;color:var(--ink)}
+.cell p b{display:block;color:var(--choc);font-size:15px}
+.cell .tg{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#8a4b26;background:#f3dfbf;border-radius:99px;padding:2px 8px;margin-top:4px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.box{padding:18px}}
+.nosugar{margin-top:18px;background:#fff8ec;border:1px dashed var(--car);border-radius:18px;padding:18px 20px}
+.nosugar b{color:var(--choc)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 12px;font-size:14px}
+/* gateaux */
+.cakes{display:grid;gap:16px;margin-top:30px}
+.cake{background:#fff8ec;border:1px solid var(--line);border-radius:22px;padding:24px;min-width:0}
+.cake h3{font-size:21px;color:var(--choc);margin-bottom:12px;display:flex;gap:10px;align-items:center}
+.cake h3 svg{width:34px;height:34px}
+.cake ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.cake li{background:#fff;border:1px solid var(--line);padding:7px 13px;border-radius:99px;font-size:15px}
+@media(min-width:860px){.cakes{grid-template-columns:1.3fr 1fr 1fr}}
+/* boutique */
+.bout{display:grid;gap:30px;align-items:start}
+.blist{list-style:none;display:grid;gap:10px;margin-top:18px}
+.blist li{display:flex;gap:10px;align-items:flex-start}
+.blist li:before{content:"";flex:none;width:12px;height:12px;margin-top:7px;border-radius:50% 50% 50% 0;background:var(--car);transform:rotate(-45deg)}
+.menu{background:#fff8ec;border:1px solid var(--line);border-radius:24px;padding:26px;min-width:0}
+.menu h3{font-size:24px;color:var(--choc)}
+.menu h4{font:italic 600 18px/1.2 Lora;color:#8a4b26;margin:18px 0 8px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.menu ul{list-style:none;display:grid;gap:6px}
+.menu li{font-size:15.5px}
+.menu .note{font-size:13.5px;color:var(--muted);margin-top:14px;font-style:italic}
+@media(min-width:980px){.bout{grid-template-columns:1fr 1fr;gap:50px}}
+/* chocolatiere */
+.story{background:var(--dark);color:var(--cream)}
+.story .wrap{display:grid;gap:30px;align-items:center}
+.story h2{color:var(--cream)}
+.story p{color:#e3d0b2}
+.story p+p{margin-top:12px}
+.year{font:700 clamp(70px,14vw,130px)/1 Lora;color:var(--car2)}
+.year small{display:block;font:italic 500 17px/1.4 Lora;color:#cdb798}
+@media(min-width:980px){.story .wrap{grid-template-columns:.8fr 1.2fr}}
+/* avis */
+.rhead{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:22px 0 26px}
+.gbadge{display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px 18px}
+.gbadge b{font-size:30px;color:var(--choc);line-height:1}
+.gbadge small{display:block;color:var(--muted);font-size:13.5px}
+.rgrid{display:grid;gap:14px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;min-width:0}
+.rev p{font-size:16.5px;margin:6px 0 12px;color:var(--ink)}
+.rev .who{font-size:14px;color:var(--muted)}
+.rev .who b{color:var(--choc)}
+@media(min-width:700px){.rgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.rgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.more{margin-top:22px}
+/* visite */
+.visit{display:grid;gap:16px;margin-top:30px}
+.vc{background:#fff8ec;border:1px solid var(--line);border-radius:20px;padding:22px;min-width:0;text-decoration:none;display:block}
+.vc h3{font-size:19px;color:var(--choc);margin-bottom:6px}
+.vc p,.vc td{color:var(--muted);font-size:15.5px;overflow-wrap:anywhere}
+.vc table{border-collapse:collapse;width:100%}
+.vc td{padding:3px 0}
+.vc td+td{text-align:right;color:var(--ink)}
+@media(min-width:760px){.visit{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.visit{grid-template-columns:1fr 1fr 1.1fr}}
+.circuit{margin-top:40px;background:var(--sage);border-radius:24px;padding:26px}
+.circuit h3{font-size:22px;color:var(--choc)}
+.circuit ul{list-style:none;display:grid;gap:10px;margin-top:14px}
+.circuit li{background:rgba(255,255,255,.6);border-radius:14px;padding:12px 14px;font-size:15px}
+.circuit li b{color:var(--choc)}
+@media(min-width:860px){.circuit ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+footer{background:var(--dark);color:#cdb798;text-align:center;padding:34px 0 110px;font-size:14.5px}
+footer .frak{font-size:28px;color:var(--cream)}
+@media(min-width:980px){footer{padding-bottom:34px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;gap:10px;padding:15px;border-radius:99px;background:var(--car);color:#fff;text-decoration:none;font:700 17px/1 Lora;box-shadow:0 14px 30px -12px rgba(0,0,0,.55)}
+.callbar svg{width:20px;height:20px}
+@media(min-width:980px){.callbar{display:none}}
+/* page d'avis */
+#avisPage{display:none;min-height:100vh;background:var(--cream)}
+body.avis-open #avisPage{display:block}
+body.avis-open main,body.avis-open footer,body.avis-open .nav,body.avis-open .drawer,body.avis-open .drip{display:none}
+.ap-top{position:fixed;top:var(--bar);left:0;right:0;background:var(--dark);color:var(--cream);z-index:50}
+.ap-top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.ap-top button{background:transparent;border:1px solid rgba(248,239,223,.35);color:var(--cream);font:600 15px/1 Lora;padding:11px 14px;border-radius:99px;cursor:pointer}
+.ap-body{padding:98px 20px 120px}
+.ap-body .rev{margin-bottom:0}
+.ap-body .rgrid{margin-top:24px}
+.glink{display:inline-block;margin-top:14px;color:#8a4b26;font-weight:600}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--cream);display:grid;place-items:center;overflow:hidden;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .pour{position:absolute;left:0;right:0;top:0;height:100%;background:var(--choc);transform-origin:top;transform:scaleY(0);animation:pour 1.2s .15s cubic-bezier(.6,0,.3,1) forwards}
+#intro .drops{position:absolute;left:0;right:0;top:0;height:100%;transform:translateY(-100%);animation:dropdown 1.2s .15s cubic-bezier(.6,0,.3,1) forwards}
+#intro .drops svg{position:absolute;left:0;bottom:-38px;width:100%;height:40px}
+#intro .t{position:relative;text-align:center;color:var(--cream);opacity:0;transform:scale(.9);animation:pop .6s 1.15s forwards}
+#intro .t .frak{font-size:44px;line-height:1}
+#intro .t .frak span{display:block;font-size:90px;color:var(--car2);line-height:.85}
+#intro .t i{display:block;font:italic 500 15px Lora;color:#e3d0b2;margin-top:6px}
+@keyframes pour{to{transform:scaleY(1)}}
+@keyframes dropdown{to{transform:translateY(0)}}
+@keyframes pop{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.cell{opacity:1;transform:none}#intro{display:none}.fl{transform:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Aux 3 Chocolats — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a4b26"/><stop offset="1" stop-color="#3a1d10"/></linearGradient>
+ <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c88a48"/><stop offset="1" stop-color="#7a4428"/></linearGradient>
+ <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+ <symbol id="b-sq" viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="30" rx="7" fill="url(#cg)"/><path d="M12 18c4-4 8 4 12 0s8 4 12 0" stroke="#e2b277" stroke-width="2.2" fill="none" stroke-linecap="round"/><rect x="9" y="12" width="12" height="4" rx="2" fill="#fff" opacity=".18"/></symbol>
+ <symbol id="b-heart" viewBox="0 0 48 48"><path d="M24 42S5 30 5 17a9.5 9.5 0 0 1 19-3 9.5 9.5 0 0 1 19 3c0 13-19 25-19 25z" fill="url(#cg)"/><path d="M12 15a5 5 0 0 1 6-3" stroke="#fff" stroke-opacity=".3" stroke-width="2.5" fill="none" stroke-linecap="round"/></symbol>
+ <symbol id="b-truffle" viewBox="0 0 48 48"><circle cx="24" cy="26" r="17" fill="url(#cg)"/><g fill="#3a1d10" opacity=".55"><circle cx="16" cy="22" r="1.6"/><circle cx="28" cy="18" r="1.4"/><circle cx="31" cy="30" r="1.7"/><circle cx="20" cy="33" r="1.3"/><circle cx="24" cy="26" r="1.2"/></g><circle cx="17" cy="18" r="4" fill="#fff" opacity=".15"/></symbol>
+ <symbol id="b-dome" viewBox="0 0 48 48"><path d="M6 38c0-13 8-24 18-24s18 11 18 24z" fill="url(#mg)"/><path d="M24 14c-3 4-1 7 0 9 1-2 3-5 0-9z" fill="#f8efdf"/><rect x="5" y="37" width="38" height="5" rx="2.5" fill="#5a2f1a"/></symbol>
+ <symbol id="b-shell" viewBox="0 0 48 48"><path d="M24 8 6 36h36z" fill="url(#cg)"/><path d="M24 8v28M24 8 14 36M24 8l10 28M24 8 9 36M24 8l15 28" stroke="#e2b277" stroke-opacity=".5" stroke-width="1.3"/></symbol>
+ <symbol id="bean" viewBox="0 0 40 60"><ellipse cx="20" cy="30" rx="15" ry="26" fill="#8a4b26"/><path d="M20 6c-6 10-6 38 0 48" stroke="#4a2716" stroke-width="2.4" fill="none"/></symbol>
+ <symbol id="leaf" viewBox="0 0 40 40"><path d="M5 35C5 15 18 5 35 5c0 20-12 30-30 30z" fill="#a9b878"/><path d="M5 35 30 10" stroke="#6f7f43" stroke-width="1.6"/></symbol>
+ <symbol id="i-cake" viewBox="0 0 40 40"><rect x="7" y="18" width="26" height="15" rx="3" fill="#8a4b26"/><path d="M7 22c3 3 6-3 9 0s6-3 9 0 6-3 8 0" stroke="#f8efdf" stroke-width="2" fill="none"/><rect x="18" y="9" width="4" height="9" rx="1.5" fill="#e2b277"/><path d="M20 3c-2 3 0 5 0 5s2-2 0-5z" fill="#f2b736"/></symbol>
+</defs></svg>
+
+<div id="intro" aria-hidden="true">
+ <div class="pour"></div>
+ <div class="drops"><svg viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 0h400v6c-12 0-12 22-24 22s-12-22-24-22-10 30-26 30-14-30-28-30-12 14-24 14S262 6 250 6s-14 26-28 26-12-26-26-26-12 18-24 18-12-18-26-18-12 30-28 30-14-30-26-30-12 16-24 16S56 6 44 6 30 24 18 24 6 6 0 6z" fill="#4a2716"/></svg></div>
+ <div class="t"><div class="frak">Aux<span>3</span>Chocolats</div><i>Saint-Rémi · depuis 1996</i></div>
+</div>
+
+<header class="nav"><div class="wrap">
+ <a class="logo frak" href="#top" aria-label="Aux 3 Chocolats, accueil">Aux<span class="three">3</span>Chocolats</a>
+ <nav class="links"><a href="#chocolats">Chocolats</a><a href="#gateaux">Gâteaux</a><a href="#boutique">Boutique et bistro</a><a href="#chocolatiere">La chocolatière</a><a href="#" data-avis>Avis</a><a href="#visite">Nous visiter</a><a class="btn b-car" href="tel:+14504546102"><svg><use href="#i-phone"/></svg>450 454-6102</a></nav>
+ <button class="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+</div></header>
+<div class="drawer" id="drawer"><a href="#chocolats">Chocolats</a><a href="#gateaux">Gâteaux</a><a href="#boutique">Boutique et bistro</a><a href="#chocolatiere">La chocolatière</a><a href="#" data-avis>Avis</a><a href="#visite">Nous visiter</a></div>
+
+<main id="top">
+<section class="hero" style="padding-bottom:70px">
+ <div class="float" id="float">
+  <div class="fl near" style="left:4%;top:12%;--d:-.12;--t:8s"><svg width="46" height="46"><use href="#b-heart"/></svg></div>
+  <div class="fl far" style="left:80%;top:8%;--d:-.06;--t:12s"><svg width="80" height="80"><use href="#b-truffle"/></svg></div>
+  <div class="fl near" style="left:88%;top:44%;--d:-.18;--t:9s;--r1:10deg;--r2:-16deg"><svg width="40" height="60"><use href="#bean"/></svg></div>
+  <div class="fl far" style="left:10%;top:74%;--d:-.08;--t:11s"><svg width="70" height="70"><use href="#b-sq"/></svg></div>
+  <div class="fl near" style="left:52%;top:4%;--d:-.1;--t:7s"><svg width="34" height="34"><use href="#leaf"/></svg></div>
+  <div class="fl near" style="left:44%;top:88%;--d:-.15;--t:10s"><svg width="38" height="38"><use href="#b-dome"/></svg></div>
+  <div class="fl far" style="left:66%;top:80%;--d:-.05;--t:13s"><svg width="56" height="56"><use href="#b-shell"/></svg></div>
+ </div>
+ <div class="wrap hgrid">
+  <div>
+   <span class="kick">Chocolaterie · pâtisserie · bistro — Saint-Rémi</span>
+   <h1>Juste en face de l'église, <em>des péchés gourmands.</em></h1>
+   <p class="lead">Une boutique où les comptoirs regorgent de péchés gourmands. Plus de 40 variétés de chocolats originaux savamment composés, des pâtisseries fines et des gâteaux pour toutes les occasions, faits sur place. Laissez-vous tenter…</p>
+   <div class="cta"><a class="btn b-car" href="tel:+14504546102"><svg><use href="#i-phone"/></svg>Appeler 450 454-6102</a><a class="btn b-ghost" href="#chocolats">Voir nos chocolats</a></div>
+   <a class="gnote" href="#" data-avis><b>4,9</b><span class="stars">★★★★★</span><span>sur Google · plus de 70 avis</span></a>
+  </div>
+  <div class="medal" aria-hidden="true">
+   <div class="disc"></div><div class="ring"></div>
+   <div class="in"><div class="frak">Aux<span>3</span>Chocolats</div><p>Chocolats artisanaux faits sur place par Isabelle Kosa</p><small>Depuis 1996</small></div>
+  </div>
+ </div>
+</section>
+<svg class="drip" viewBox="0 0 400 46" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cream)"><path d="M0 0h400v8c-12 0-12 24-24 24s-12-24-24-24-10 34-26 34-14-34-28-34-12 16-24 16S262 8 250 8s-14 28-28 28-12-28-26-28-12 20-24 20-12-20-26-20-12 32-28 32-14-32-26-32-12 18-24 18S56 8 44 8 30 26 18 26 6 8 0 8z" fill="#2a160c"/></svg>
+
+<section id="douceurs" style="padding-top:40px">
+ <div class="wrap center">
+  <span class="kick" style="color:#8a4b26">Les douceurs</span>
+  <h2>Tout est fait ici, avec soin</h2>
+  <p class="sub">Aux 3 chocolats propose plus de 40 variétés de chocolats originaux savamment composés, un assortiment de truffes, de pâtes d'amande, de même que des chocolats sans sucre.</p>
+  <div class="trio" style="text-align:left">
+   <div class="tcard"><svg><use href="#b-truffle"/></svg><h3>Chocolats et truffes</h3><p>La plupart offerts en chocolat noir ou au lait; en saison, certaines bouchées au chocolat blanc. Surveillez les arrivages quotidiens dans nos présentoirs.</p></div>
+   <div class="tcard"><svg viewBox="0 0 40 40"><use href="#i-cake"/></svg><h3>Gâteaux et pâtisseries</h3><p>Pâtisseries fines en portions individuelles ou en format de groupe, et gâteaux sur mesure pour mariages, anniversaires ou baptêmes.</p></div>
+   <div class="tcard"><svg><use href="#b-dome"/></svg><h3>Bistro et boutique</h3><p>Un bistro à l'arrière de la boutique : café gourmet, pâtisseries, comptoir de crèmes glacées et plats mitonnés maison pour le lunch en semaine.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="box-sec" id="chocolats">
+ <div class="wrap">
+  <span class="kick" style="color:#8a4b26">Nos chocolats</span>
+  <h2>Une boîte de plus de 40 saveurs</h2>
+  <p class="sub">Parmi les créations qui valent le détour, des saveurs inusitées inspirées des artisans de la région.</p>
+  <div class="feature">
+   <div class="feat"><h3>Le Givré</h3><p>Un chocolat au caramel de cidre de glace, un alcool produit à la cidrerie Du Minot de Hemmingford, qui offre une expérience gustative divine.</p></div>
+   <div class="feat"><h3>Manon</h3><p>Une noix de Grenoble flottant dans une crème de café sur Gianduja.</p></div>
+  </div>
+  <div class="box"><div class="grid" id="grid">
+   <div class="cell"><svg><use href="#b-shell"/></svg><p>Un délicieux fondant avec une framboise gorgée d'alcool.</p></div>
+   <div class="cell"><svg><use href="#b-sq"/></svg><p>Un amalgame inusité grâce à l'infusion chocolatée au thé Chaï.</p></div>
+   <div class="cell"><svg><use href="#bean"/></svg><p>Écorce d'orange enrobée de chocolat.</p></div>
+   <div class="cell"><svg><use href="#b-heart"/></svg><p>Un chocolat à la mistelle de fraise de Saint-Valentin.</p></div>
+   <div class="cell"><svg><use href="#b-dome"/></svg><p>Un zeste inusité pour le palais : la crème à l'orange.</p></div>
+   <div class="cell"><svg><use href="#b-truffle"/></svg><p>Un duo irrésistible composé de chocolat et de crème à la noisette.</p></div>
+   <div class="cell"><svg><use href="#b-sq"/></svg><p>Une coquille de chocolat remplie d'un caramel au café onctueux.</p></div>
+   <div class="cell"><svg><use href="#b-heart"/></svg><p>Une bouchée relevée par une ganache à l'infusion de cannelle.</p></div>
+   <div class="cell"><svg><use href="#b-shell"/></svg><p>Un mélange de saveurs surprenant grâce à cette bouchée à la lavande cultivée au Québec.</p></div>
+   <div class="cell"><svg><use href="#b-dome"/></svg><p>Un tourbillon de caramel maison à laisser fondre lentement.</p></div>
+   <div class="cell"><svg><use href="#b-truffle"/></svg><p>Une savoureuse crème à la poire.</p></div>
+   <div class="cell"><svg><use href="#b-sq"/></svg><p>Une riche crème de café dans un moule de chocolat.</p></div>
+   <div class="cell"><svg><use href="#b-shell"/></svg><p>Un délice fourré de crème à la framboise.</p></div>
+   <div class="cell"><svg><use href="#b-heart"/></svg><p>Une ganache parfumée à la menthe.</p></div>
+   <div class="cell"><svg><use href="#b-dome"/></svg><p>Difficile de ne pas fondre devant cette bouchée au beurre d'érable de chez nous.</p></div>
+   <div class="cell"><svg><use href="#b-sq"/></svg><p>Chocolat et porto? Un amalgame de choix dans une même bouchée.</p></div>
+   <div class="cell"><svg><use href="#b-truffle"/></svg><p>Une combinaison parfaite sucré salé grâce au caramel à la fleur de sel.</p></div>
+   <div class="cell"><svg><use href="#b-heart"/></svg><p>Un mélange de caramel onctueux et de ganache à la framboise.</p></div>
+   <div class="cell"><svg><use href="#b-shell"/></svg><p>Une pacane flottant dans un caramel velouté.</p></div>
+   <div class="cell"><svg><use href="#b-truffle"/></svg><p>Le pur plaisir du chocolat à l'intérieur comme à l'extérieur d'une ganache au chocolat.</p></div>
+   <div class="cell"><svg><use href="#b-sq"/></svg><p>Un mélange de ganache et de praliné moka.</p></div>
+   <div class="cell"><svg><use href="#b-dome"/></svg><p>Aussi connu sous le nom Palais royal, ce chocolat est composé d'un croustillant à la noisette.</p></div>
+   <div class="cell"><svg><use href="#b-shell"/></svg><p>Un duo composé de praliné et de Gianduja.</p></div>
+   <div class="cell"><svg><use href="#b-sq"/></svg><p>Un chocolat fourré à la pâte d'amande et à la liqueur de Cointreau.</p></div>
+   <div class="cell"><svg><use href="#b-heart"/></svg><p>Un riche fondant parfumé à la cerise.</p></div>
+   <div class="cell"><svg><use href="#b-truffle"/></svg><p>Une crème goûteuse à la fraise enrobée de chocolat.</p></div>
+   <div class="cell"><svg><use href="#b-dome"/></svg><p>Une ganache lentement infusée à la gousse de vanille.</p></div>
+   <div class="cell"><svg><use href="#b-shell"/></svg><p>Un chocolat fourré de ganache à la menthe verte.</p></div>
+   <div class="cell"><svg><use href="#b-sq"/></svg><p>Une crème veloutée à la pêche.</p></div>
+   <div class="cell"><svg><use href="#b-heart"/></svg><p>Un traditionnel : une cerise enrobée d'un délicieux fondant.</p></div>
+   <div class="cell"><svg><use href="#b-truffle"/></svg><p>Les amateurs de banane craqueront pour ce surprenant fondant.</p></div>
+   <div class="cell"><svg><use href="#b-dome"/></svg><p>Une ganache au miel qui procure des arômes enivrants.</p></div>
+   <div class="cell"><svg><use href="#b-shell"/></svg><p>Un mariage divin entre chocolat et crème à la mûre.</p></div>
+   <div class="cell"><svg><use href="#b-sq"/></svg><p>Un exquis praliné au miel, une douceur pour le palais.</p></div>
+   <div class="cell"><svg><use href="#b-heart"/></svg><p>Une ganache parfumée à l'infusion d'anis étoilé et de miel.</p></div>
+  </div></div>
+  <div class="nosugar"><b>Chocolats sans sucre</b><div class="chips"><span>Yogourt et fraise</span><span>Noix de coco</span><span>Crème rhum</span><span>Praliné et amande</span><span>Praliné</span><span>Praliné moka</span><span>Praliné croustillant</span></div></div>
+  <p class="sub" style="margin-top:16px;font-size:15px">Saveurs et disponibilités selon les arrivages : informez-vous à la boutique ou au 450 454-6102.</p>
+ </div>
+</section>
+
+<section id="gateaux">
+ <div class="wrap">
+  <span class="kick" style="color:#8a4b26">Gâteaux pour événements spéciaux</span>
+  <h2>Chaque événement mérite un dessert somptueux</h2>
+  <p class="sub">Aux 3 chocolats confectionne sur place une variété de pâtisseries offertes en portions individuelles ou dans leur format de groupe. Voici quelques gâteaux que nous fabriquons.</p>
+  <div class="cakes">
+   <div class="cake"><h3><svg viewBox="0 0 40 40"><use href="#i-cake"/></svg>Mousses</h3><ul><li>Mousse chocolat</li><li>Mousse 3 chocolats</li><li>Palais royal</li><li>Casino</li><li>Charlotte aux poires</li><li>Mousse choco-poires</li><li>Mousse framboises</li><li>Mousse choco-framboises</li><li>Mousse fraises</li><li>Mousse choco-fraises</li><li>Fruits des champs</li><li>Choco-fruits</li><li>Framboisier</li><li>Pacane et caramel</li></ul></div>
+   <div class="cake"><h3><svg viewBox="0 0 40 40"><use href="#i-cake"/></svg>Gâteaux</h3><ul><li>Forêt noire</li><li>Forêt blanche</li><li>Saint-Honoré</li><li>Paris-Brest</li><li>Opéra</li></ul></div>
+   <div class="cake" style="background:var(--choc);color:var(--cream);border:0"><h3 style="color:var(--car2)">Sur mesure</h3><p style="color:#ead9bd">Service de gâteaux sur mesure pour les occasions spéciales telles que mariages, anniversaires ou baptêmes. Informez-vous à la boutique pour voir quelques-unes de nos réalisations et composer le dessert de vos rêves avec notre chef pâtissière.</p><a class="btn b-car" style="margin-top:16px" href="tel:+14504546102"><svg><use href="#i-phone"/></svg>Commander un gâteau</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="boutique" style="background:var(--cream2)">
+ <div class="wrap bout">
+  <div>
+   <span class="kick" style="color:#8a4b26">La boutique</span>
+   <h2>Confiseries et produits fins d'ici et d'ailleurs</h2>
+   <p class="sub">La boutique propose une variété de confiseries et de produits fins sélectionnés chez les producteurs d'ici et d'ailleurs.</p>
+   <ul class="blist"><li>Chocolats et truffes</li><li>Pâtisseries et gâteaux pour toutes occasions</li><li>Crèmes glacées fines</li><li>Produits gourmets et confiseries</li><li>Produits du terroir québécois</li><li>Dépositaire des Lampes Berger</li><li>Objets choisis</li></ul>
+  </div>
+  <div class="menu">
+   <h3>Le bistro</h3>
+   <p style="color:var(--muted);font-size:15.5px;margin-top:6px">Avec son ambiance sympathique, le bistro à l'arrière de la boutique propose chaque jour en semaine un menu de plats mitonnés maison pour l'heure du lunch. Café gourmet et pâtisserie en tout temps, ou une pause au comptoir de crèmes glacées.</p>
+   <h4>Nos paninis</h4>
+   <ul><li>Jambon et fromage</li><li>Rôti de porc, fromage bleu et poires</li><li>Rôti de porc, cornichon et fromage</li><li>Jambon de Bayonne, fromage de chèvre et piments marinés</li><li>Thon, oignons et persil</li><li>Dinde fumée et tomates</li><li>Carré aux olives, provolone, aubergines, tomates et épinards</li><li>Bagel saumon fumé, fromage à la crème, oignons et câpres</li></ul>
+   <h4>Nos salades</h4>
+   <ul><li>Salade jambon, olives et feta</li><li>Salade poulet, tomates et olives</li><li>Salade de thon, tomates et olives</li></ul>
+   <p class="note">Le menu du jour peut varier : appelez-nous pour le connaître.</p>
+  </div>
+ </div>
+</section>
+
+<section class="story" id="chocolatiere">
+ <div class="wrap">
+  <div class="year">1996<small>L'année où Isabelle Kosa ouvre sa petite boutique</small></div>
+  <div>
+   <span class="kick">La chocolatière</span>
+   <h2>Isabelle Kosa, artisane chocolatière</h2>
+   <p>C'est un peu par hasard qu'Isabelle Kosa s'est inscrite à un cours de pâtisserie à l'âge de 17 ans. Elle projetait d'abord servir ses créations à la table champêtre tenue par ses parents. C'est un stage dans une chocolaterie qui éveille son intérêt pour le chocolat : à peine sortie de l'école, elle ouvre une petite boutique où elle vend les chocolats qu'elle confectionne à la maison. Nous sommes en 1996.</p>
+   <p>Au fil des années, l'artisane a créé plusieurs nouvelles saveurs, parfois inspirées de l'air du temps, comme le chocolat au thé Chaï ou la ganache de porto, parfois librement interprétées à partir de classiques populaires : crème de café, fondant à la cerise ou crème noisette. En plus des chocolats, elle réalise sur place des pâtisseries fines et des gâteaux pour différentes occasions.</p>
+  </div>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="wrap">
+  <span class="kick" style="color:#8a4b26">Ce que nos clients disent</span>
+  <h2>Des clients qui reviennent</h2>
+  <div class="rhead"><div class="gbadge"><b>4,9</b><span><span class="stars">★★★★★</span><small>sur Google · plus de 70 avis</small></span></div></div>
+  <div class="rgrid" id="homeReviews"></div>
+  <button class="btn b-dark more" data-avis>Voir tous les avis (4)</button>
+ </div>
+</section>
+
+<section id="visite" style="background:var(--cream2)">
+ <div class="wrap">
+  <span class="kick" style="color:#8a4b26">Nous visiter</span>
+  <h2>Au cœur du village de Saint-Rémi</h2>
+  <p class="sub">Nos chocolats sont offerts en exclusivité dans notre boutique, tout juste en face de l'église du village. Profitez-en pour manger une bouchée, déguster un café gourmet ou vous attarder dans la boutique.</p>
+  <div class="visit">
+   <a class="vc" href="https://www.google.com/maps/search/?api=1&amp;query=Aux+3+Chocolats+887+rue+Notre-Dame+Saint-R%C3%A9mi&amp;query_place_id=ChIJs5S-AxlyyUwRKvOhFVCPB9I" target="_blank" rel="noopener"><h3>Adresse</h3><p>887, rue Notre-Dame<br>Saint-Rémi (Québec) J0L 2L0<br><u>Voir sur Google Maps</u></p></a>
+   <div class="vc"><h3>Nous joindre</h3><p><a href="tel:+14504546102">450 454-6102</a><br><a href="mailto:choco@aux3chocolats.com">choco@aux3chocolats.com</a></p></div>
+   <div class="vc"><h3>Heures d'ouverture</h3><table><tr><td>Dimanche et lundi</td><td>Fermé</td></tr><tr><td>Mardi au vendredi</td><td>9 h 30 à 17 h</td></tr><tr><td>Samedi</td><td>9 h 30 à 16 h</td></tr></table><p style="font-size:13.5px;margin-top:8px">Heures sujettes à changement (fêtes, saisons) : appelez-nous pour confirmer.</p></div>
+  </div>
+  <div class="circuit">
+   <h3>Le Circuit du paysan</h3>
+   <p style="color:var(--muted);margin-top:4px">Découvrez les paysages de la Montérégie et les délices produits par les artisans de la région, dont certains inspirent nos chocolats.</p>
+   <ul><li><b>Cidrerie du Minot</b><br>376, chemin Covey Hill, Hemmingford</li><li><b>Les fraises et vignoble Louis Hébert</b><br>978, chemin 4e Ligne, Saint-Valentin</li><li><b>Le Lavandou, lavanderaie et galerie d'art</b><br>3455, rang Lemieux, Franklin</li><li><b>Ruban Bleu</b><br>449, rang Saint-Simon, Saint-Isidore</li></ul>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap"><div class="frak">Aux 3 Chocolats</div>887, rue Notre-Dame, Saint-Rémi (Québec) J0L 2L0 · 450 454-6102</div></footer>
+<a class="callbar" href="tel:+14504546102"><svg><use href="#i-phone"/></svg>Appeler 450 454-6102</a>
+
+<div id="avisPage" role="dialog" aria-modal="true" aria-label="Tous les avis">
+ <div class="ap-top"><div class="wrap"><button id="apBack">← Retour au site</button><span class="frak" style="font-size:22px">Aux 3 Chocolats</span></div></div>
+ <div class="wrap ap-body">
+  <span class="kick" style="color:#8a4b26">Avis de nos clients</span>
+  <h2>Tous les avis</h2>
+  <div class="gbadge"><b>4,9</b><span><span class="stars">★★★★★</span><small>sur Google · plus de 70 avis (au 15 novembre 2026)</small></span></div><br>
+  <a class="glink" href="https://www.google.com/maps/search/?api=1&amp;query=Aux+3+Chocolats&amp;query_place_id=ChIJs5S-AxlyyUwRKvOhFVCPB9I" target="_blank" rel="noopener">Voir sur Google →</a>
+  <div class="rgrid" id="allReviews"></div>
+  <p style="color:var(--muted);font-size:14px;margin-top:22px">Avis Google publiés par des clients, reproduits tels quels.</p>
+ </div>
+</div>
+
+<script>
+(function(){
+ var R=[
+  {t:"Les chocolats sont un délice! Les gâteaux sont superbes & j'adore leur boite repas! Un endroit a essayer!",a:"Karine",d:"14 déc. 2025"},
+  {t:"Meilleur endroit pour acheter des Gateaux d'anniversaire dans la région!!",a:"Stephane",d:"26 nov. 2025"},
+  {t:"Service excellent & a l'écoute des clients",a:"Pat",d:"19 mai 2026"},
+  {t:"Très bonne sélection",a:"Gordon",d:"2 nov. 2025"}
+ ];
+ function card(r){var e=document.createElement('article');e.className='rev';e.innerHTML='<span class="stars">★★★★★</span><p></p><div class="who"><b></b> · Avis Google · '+r.d+'</div>';e.querySelector('p').textContent='« '+r.t+' »';e.querySelector('b').textContent=r.a;return e}
+ var h=document.getElementById('homeReviews'),a=document.getElementById('allReviews');
+ R.slice(0,12).forEach(function(r){h.appendChild(card(r))});R.forEach(function(r){a.appendChild(card(r))});
+ var ap=document.getElementById('avisPage'),lastY=0;
+ function openA(e){if(e)e.preventDefault();if(document.body.classList.contains('avis-open'))return;lastY=scrollY;document.body.classList.add('avis-open');d.classList.remove('open');scrollTo(0,0)}
+ function closeA(){document.body.classList.remove('avis-open');scrollTo(0,lastY)}
+ var d=document.getElementById('drawer'),b=document.querySelector('.burger');
+ document.querySelectorAll('[data-avis]').forEach(function(x){x.addEventListener('click',openA)});
+ document.getElementById('apBack').addEventListener('click',closeA);
+ addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('avis-open'))closeA()});
+ window.openAvis=openA;
+ b.addEventListener('click',function(){var o=d.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ d.addEventListener('click',function(e){if(e.target.tagName==='A'&&!e.target.hasAttribute('data-avis')){d.classList.remove('open')}});
+ var intro=document.getElementById('intro');
+ function kill(){if(!intro)return;intro.classList.add('out');var i=intro;intro=null;setTimeout(function(){i.remove()},500)}
+ var seen=false;try{seen=sessionStorage.getItem('a3c-intro')}catch(e){}
+ var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(seen||rm){intro.remove();intro=null}else{try{sessionStorage.setItem('a3c-intro','1')}catch(e){}setTimeout(kill,2000);intro.addEventListener('click',kill);intro.addEventListener('touchstart',kill,{passive:true})}
+ var cells=[].slice.call(document.querySelectorAll('.cell'));
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var t=e.target;setTimeout(function(){t.classList.add('on')},(+t.dataset.i%3)*110);io.unobserve(t)}})},{threshold:.2});
+ cells.forEach(function(c,i){c.dataset.i=i;io.observe(c)});
+ var f=document.getElementById('float'),tk=false;
+ if(!rm){addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var y=scrollY;if(y<900)f.style.setProperty('--p',y);tk=false})},{passive:true})}
+})();
+</script>
+</body>
+</html>
