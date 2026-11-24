@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mécanique Expert — Garage de mécanique à Saint-Mathieu-de-Beloeil · Rive-Sud</title>
+<meta name="description" content="Mécanique Expert, votre mécanicien de famille et d'entreprise à Saint-Mathieu-de-Beloeil : entretien et réparation toutes marques, véhicules de luxe, spécialiste Sprinter, pneus, comptes corporatifs, Club MEC. 450 281-1053.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Mécanique Expert","telephone":"+1-450-281-1053","faxNumber":"+1-450-281-1095","email":"garage@mecaniqueexpert.com","url":"https://www.mecaniqueexpert.com/","address":{"@type":"PostalAddress","streetAddress":"3035, rue Bernard-Pilon","addressLocality":"Saint-Mathieu-de-Beloeil","addressRegion":"QC","postalCode":"J3G 4S5","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"07:30","closes":"17:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"07:30","closes":"12:00"}]}
+</script>
+<style>
+:root{--top:32px;--carbon:#111317;--carbon2:#1b1e24;--carbon3:#262a32;--red:#d6202b;--red2:#ff4a52;--chrome:#c9ced6;--paper:#f4f5f7;--ink:#14171c;--soft:#5b626d;--line:#e1e4e9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--top) + 72px)}
+body{background:var(--paper);color:var(--ink);font:17px/1.65 "Inter",system-ui,sans-serif;padding-top:var(--top)}
+a{color:inherit}
+svg{max-width:100%}
+h1,h2,h3{font-family:"Saira Condensed",sans-serif;font-weight:800;line-height:1.02;text-transform:uppercase;overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:84px 0;overflow-x:clip}
+.eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(38px,6vw,62px);margin-bottom:14px}
+.lead{max-width:46em;color:#3e444d;font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 24px;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .2s;font-size:16px;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn.red{background:var(--red);color:#fff}
+.btn.ghost{border-color:var(--chrome);color:#fff}
+.btn.dark{background:var(--carbon);color:#fff}
+/* nav */
+.nav{position:fixed;top:var(--top);left:0;right:0;z-index:50;background:rgba(17,19,23,.97);color:#fff;border-bottom:1px solid #2a2e36}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.brand{display:block;text-decoration:none;min-width:0}
+.links{display:flex;gap:22px;align-items:center}
+.links a{text-decoration:none;font-size:15px;font-weight:600;cursor:pointer}
+.links a:hover{color:var(--red2)}
+.links a.cta{background:var(--red);padding:9px 16px;border-radius:6px}
+.burger{display:none;flex:0 0 44px;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2.5px;background:#fff;margin:5px auto;transition:transform .25s,opacity .25s}
+@media(max-width:940px){
+ .burger{display:block}
+ .links{position:fixed;top:calc(var(--top) + 66px);left:0;right:0;flex-direction:column;gap:0;background:var(--carbon);border-bottom:1px solid #2a2e36;transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s}
+ .links a{padding:16px 20px;width:100%;border-top:1px solid #2a2e36}
+ .links a.cta{border-radius:0}
+ .nav.open .links{transform:none;opacity:1;pointer-events:auto}
+ .nav.open .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+ .nav.open .burger span:nth-child(2){opacity:0}
+ .nav.open .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+}
+/* héros */
+.hero{position:relative;background:radial-gradient(ellipse 55% 60% at 85% 30%,rgba(214,32,43,.28),transparent 70%),linear-gradient(160deg,#1b1e24,#0b0c0f);color:#fff;padding:120px 0 90px;overflow:hidden}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;background:repeating-linear-gradient(90deg,var(--red) 0 40px,#fff 40px 80px)}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.5;transform:translate3d(0,calc(var(--py,0px)*var(--d,1)),0)}
+.f svg{display:block;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.f.far{opacity:.25;filter:blur(1.5px)}
+@media(max-width:979px){.f{opacity:.26}.f.far{opacity:.15}}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r1,-8deg))}to{transform:translateY(12px) rotate(var(--r2,10deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);gap:30px;align-items:center}
+.hero .k{display:inline-block;border-left:4px solid var(--red);padding-left:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--chrome);margin-bottom:16px}
+.hero h1{font-size:clamp(50px,10vw,104px)}
+.hero h1 span{color:var(--red2)}
+.hero p{font-size:clamp(17px,2.2vw,20px);color:#c4c9d1;max-width:34em;margin-top:16px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hrs{margin-top:20px;font-size:15px;color:#9aa1ab}
+.gauge{justify-self:center;width:min(100%,360px)}
+.needle{transform-origin:180px 180px;transform:rotate(-120deg)}
+.gauge.in .needle{transform:rotate(70deg);transition:transform 1.8s cubic-bezier(.3,1.4,.4,1)}
+@media(min-width:980px){.hero{padding:150px 0 110px}.hero .wrap{grid-template-columns:1.2fr .8fr}}
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:28px}
+.s{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0;border-bottom:4px solid var(--red)}
+.s h3{font-size:26px;margin-bottom:6px}
+.s p{color:var(--soft);font-size:16px}
+@media(min-width:700px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.svc{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.brands{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.brands span{background:var(--carbon);color:#fff;border-radius:6px;padding:8px 14px;font-family:"Saira Condensed";font-weight:800;font-size:19px;letter-spacing:.06em}
+/* club */
+.club{background:var(--carbon);color:#fff}
+.club h2{color:#fff}
+.club .lead{color:#c4c9d1}
+.cgrid2{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:28px}
+.price{background:var(--carbon2);border:1px solid #2f343d;border-radius:16px;padding:22px;min-width:0}
+.price small{display:block;letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--chrome);font-weight:700}
+.price b{display:block;font-family:"Saira Condensed";font-size:52px;line-height:1.05;color:#fff}
+.price b em{font-style:normal;font-size:22px;color:var(--red2)}
+.price span{color:#9aa1ab;font-size:15px}
+.price.hl{border-color:var(--red);background:linear-gradient(160deg,#2a1215,var(--carbon2))}
+@media(min-width:700px){.cgrid2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.cgrid2{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.perks{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:22px}
+.perks div{background:var(--carbon3);border-radius:12px;padding:14px 16px;font-weight:600}
+@media(min-width:700px){.perks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fine{color:#9aa1ab;font-size:14px;margin-top:14px}
+/* avis */
+.rv{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start;margin-top:26px}
+@media(min-width:700px){.rv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1080px){.rv{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.r{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;min-width:0;border-top:4px solid var(--red)}
+.r p{margin:0 0 12px;overflow-wrap:anywhere;white-space:pre-line}
+.r footer{font-size:14px;color:var(--soft)}
+.r footer b{color:var(--ink)}
+.more{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}
+/* contact */
+.contact{background:var(--carbon2);color:#fff}
+.contact h2{color:#fff}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:24px}
+.cbox{background:var(--carbon3);border-radius:16px;padding:22px;min-width:0}
+.cbox small{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--red2);margin-bottom:8px;font-weight:700}
+.cbox a{text-decoration:none;font-size:19px;font-weight:600;overflow-wrap:anywhere}
+.cbox a:hover{text-decoration:underline}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed #3a3f48}
+.hours li:last-child{border:0}
+@media(min-width:900px){.cgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.foot{background:#08090b;color:#8a919b;font-size:14px;text-align:center;padding:24px 0 100px}
+@media(min-width:941px){.foot{padding-bottom:24px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:8px;background:var(--red);color:#fff;font-weight:700;text-decoration:none;padding:15px;border-radius:10px;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
+@media(min-width:941px){.callbar{display:none}}
+/* page d'avis */
+#avispage{display:none;background:var(--paper);min-height:100vh;padding-top:66px}
+body.avis-open #site{display:none}
+body.avis-open #avispage{display:block}
+body.avis-open .callbar{display:none}
+.ap-head{position:sticky;top:calc(var(--top) + 66px);z-index:40;background:var(--carbon2);color:#fff}
+.ap-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;min-height:64px;padding-top:8px;padding-bottom:8px}
+.ap-head .btn{padding:10px 18px}
+.ap-body{padding:40px 0 80px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#0b0c0f;display:flex;align-items:center;justify-content:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro svg{width:min(84vw,420px)}
+#intro .ndl{transform-origin:210px 150px;transform:rotate(-120deg);animation:rev 1.2s cubic-bezier(.3,1.5,.4,1) forwards}
+#intro .txt{opacity:0;animation:fade .4s 1s forwards}
+@keyframes rev{60%{transform:rotate(95deg)}100%{transform:rotate(40deg)}}
+@keyframes fade{to{opacity:1}}
+@media(max-width:519px){:root{--top:48px}.nav .wrap{padding:0 12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}#intro{display:none}.needle{transform:rotate(70deg)}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Garage Réparation Automobile Mécanique Expert — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 420 260">
+  <path d="M90 150a120 120 0 0 1 240 0" fill="none" stroke="#262a32" stroke-width="18" stroke-linecap="round"/>
+  <path d="M270 52a120 120 0 0 1 60 98" fill="none" stroke="#d6202b" stroke-width="18" stroke-linecap="round"/>
+  <g class="ndl"><path d="M210 150L210 52" stroke="#fff" stroke-width="6" stroke-linecap="round"/></g>
+  <circle cx="210" cy="150" r="14" fill="#d6202b"/>
+  <g class="txt"><text x="210" y="214" text-anchor="middle" font-family="Saira Condensed,sans-serif" font-weight="800" font-size="50" fill="#fff">MÉCANIQUE <tspan fill="#ff4a52">EXPERT</tspan></text><text x="210" y="242" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" letter-spacing="3" fill="#c9ced6">VOTRE MÉCANICIEN DE FAMILLE ET D'ENTREPRISE</text></g>
+ </svg>
+</div>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" data-site aria-label="Mécanique Expert — accueil">
+   <svg width="216" height="40" viewBox="0 0 216 40" aria-hidden="true"><circle cx="18" cy="20" r="16" fill="none" stroke="#d6202b" stroke-width="4"/><path d="M18 20l8-8" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="18" cy="20" r="3" fill="#fff"/><text x="42" y="27" font-family="Saira Condensed,sans-serif" font-weight="800" font-size="23" fill="#fff">MÉCANIQUE <tspan fill="#ff4a52">EXPERT</tspan></text></svg>
+  </a>
+  <nav class="links" id="links">
+   <a href="#services" data-site>Services</a>
+   <a href="#club" data-site>Club MEC &amp; taux</a>
+   <a data-open-avis>Témoignages</a>
+   <a href="#contact" data-site>Coordonnées</a>
+   <a class="cta" href="tel:+14502811053">450 281-1053</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<div id="site">
+<main id="accueil">
+<section class="hero">
+ <div class="float" id="float" aria-hidden="true"></div>
+ <div class="wrap">
+  <div>
+   <span class="k">Garage de mécanique · Rive-Sud de Montréal</span>
+   <h1>Mécanique <span>Expert</span></h1>
+   <p>Votre mécanicien de famille et d'entreprise à Saint-Mathieu-de-Beloeil. L'expertise et les outils nécessaires pour effectuer les entretiens et les réparations sur votre véhicule, toutes marques et tous modèles.</p>
+   <div class="ctas"><a class="btn red" href="tel:+14502811053">📞 Prendre rendez-vous : 450 281-1053</a><a class="btn ghost" href="#services">Nos services</a></div>
+   <p class="hrs">Lundi au jeudi 7 h 30 à 17 h 30 · Vendredi 7 h 30 à midi</p>
+  </div>
+  <svg class="gauge" id="gauge" viewBox="0 0 360 300" aria-hidden="true">
+   <circle cx="180" cy="180" r="150" fill="#16181d" stroke="#2f343d" stroke-width="6"/>
+   <path d="M76 260a150 150 0 1 1 208 0" fill="none" stroke="#2f343d" stroke-width="14"/>
+   <path d="M296 120a150 150 0 0 1 -12 140" fill="none" stroke="#d6202b" stroke-width="14"/>
+   <g fill="#c9ced6" font-family="Saira Condensed,sans-serif" font-weight="800" font-size="22" text-anchor="middle"><text x="88" y="236">0</text><text x="66" y="160">1</text><text x="100" y="92">2</text><text x="180" y="62">3</text><text x="260" y="92">4</text><text x="294" y="160">5</text><text x="272" y="236">6</text></g>
+   <text x="180" y="250" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" letter-spacing="3" fill="#9aa1ab">x1000 TR/MIN</text>
+   <g class="needle"><path d="M180 180L180 58" stroke="#ff4a52" stroke-width="6" stroke-linecap="round"/></g>
+   <circle cx="180" cy="180" r="16" fill="#d6202b"/>
+  </svg>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="eyebrow">Services</div>
+  <h2>Un garage qui offre des services variés</h2>
+  <p class="lead">Nous effectuons l'entretien de toutes les marques et de tous les modèles : automobiles de tous les genres, VUS, minifourgonnettes et Sprinter.</p>
+  <div class="svc">
+   <div class="s"><h3>Entretien mécanique</h3><p>Plus les entretiens sont tenus à jour, moins il y a de chances d'avoir besoin de réparations dans le futur. Il est important de se présenter au garage dès qu'un entretien est recommandé.</p></div>
+   <div class="s"><h3>Freins, huile, pneus</h3><p>Remplacement des freins, changements d'huile, changements de pneus, alignement, balancement des pneus, etc.</p></div>
+   <div class="s"><h3>Spécialiste Sprinter</h3><p>Réparation, entretien, maintenance et pneus Sprinter. Garantie sur les pièces et la main-d'œuvre et pièces d'origine (OEM) uniquement.</p></div>
+   <div class="s"><h3>Véhicules de luxe</h3><p>Certaines marques nécessitent des outils spécialisés ainsi que des compétences spécifiques. Nous avons les outils et la compétence pour effectuer les réparations sur votre véhicule.</p></div>
+   <div class="s"><h3>Comptes corporatifs</h3><p>Votre mécanicien de famille… et d'entreprise. Informez-vous sur nos comptes corporatifs.</p></div>
+   <div class="s"><h3>Service à la clientèle</h3><p>Nos aviseurs techniques sont formés pour écouter le client, puis lui offrir une panoplie de possibilités et de recommandations. Le client choisit les options qui lui conviennent le mieux.</p></div>
+  </div>
+  <div class="brands"><span>BMW</span><span>Porsche</span><span>Mercedes</span><span>Audi</span><span>Jaguar</span><span>Lexus</span><span>Acura</span><span>Sprinter</span><span>et toutes les marques</span></div>
+ </div>
+</section>
+
+<section class="club" id="club">
+ <div class="wrap">
+  <div class="eyebrow">Club MEC</div>
+  <h2>Pour une expérience client exceptionnelle</h2>
+  <p class="lead">Des tarifs réduits sur le taux horaire et autres services, ainsi que des garanties prolongées sur les pièces et la main-d'œuvre, sont inclus avec l'adhésion au Club MEC.</p>
+  <div class="cgrid2">
+   <div class="price"><small>Taux horaire membres · voitures, VUS, camions</small><b>166,95 $ <em>/ h</em></b></div>
+   <div class="price"><small>Taux horaire membres · véhicules exotiques</small><b>196,95 $ <em>/ h</em></b><span>Classification établie par Mécanique Expert</span></div>
+   <div class="price hl"><small>Membre Club MEC</small><b>120 $</b><span>pour 1 an</span></div>
+   <div class="price hl"><small>Membre Club MEC</small><b>180 $</b><span>pour 2 ans</span></div>
+  </div>
+  <p class="fine">Tous les prix sont plus taxes (TPS, TVQ). Les taux horaires des membres sont garantis pour un ou deux ans à partir de la date d'adhésion. Contactez-nous pour connaître le taux horaire pour les véhicules exotiques.</p>
+  <div class="perks"><div>🛋️ Accès aux Salons Fleur de Lys : télévisions HD, fauteuils de massage, Internet sans fil</div><div>🛞 Service d'entreposage de pneus</div><div>🚗 Location de véhicules de courtoisie à taux réduit</div><div>🛡️ Garanties prolongées sur les pièces et la main-d'œuvre</div></div>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="wrap">
+  <div class="eyebrow">Témoignages</div>
+  <h2>Ce que nos clients disent</h2>
+  <div class="rv"><article class="r"><p>« Je fréquente le garage depuis plus d’un an et j’ai fait faire plusieurs travaux sur mon Mercedes-Benz (2010) , et mon Volks (2007). Tout d’abord je sais que je suis un client difficile, car je suis ingénieur et je suis très pointilleux sur les travaux à faire ainsi que les pièces à installer. L’équipe de Mécanique Expert a su démontrer un niveau de connaissances et d’expertise très impressionnant, ils ont même effectué plusieurs recherches supplémentaires pour répondre à mes besoins et trouver les pièces que je voulais. Le diagnostique est exacte et la réparation est rapide. J’ai eu un petit problème (défaut de fabrication) avec une pièces qu’ils avaient remplacé plus de 6 mois plus tôt et le garage à pris en main la réparation sur le champ et on honoré la garantie sans le moindre souci. Le garage est très respectueux des clients, la salle d’attente avec cinéma et salle de réunion sont vraiment super confortables. Mécanique expert offre réellement un excellent service, je les recommande à tous mes amis. »</p><footer><b>Dan B.</b> · Propriétaire mercedez-Benz · Témoignage publié sur le site</footer></article><article class="r"><p>« Super service et mécaniciens très compétents. Je devais installer des lignes bridées de performance sur ma BMW E30 1987 et la ligne dure en acier devait être changée pour accommoder la nouvelle ligne flexible.  Ils ont fait le travail en moins de temps qu&#x27;estimé et le produit final est de très bonne qualité! Je vais y retourner avec mes autres véhicules sans hésitation. »</p><footer><b>Tristan</b> · Propriétaire BMW · Témoignage publié sur le site</footer></article><article class="r"><p>« J&#x27;adore ce garage de proximité. Thierry fait tout pour rendre notre visite agréable. Coin VIP, aménagé pour notre attente, informez-vous ça vaut la peine.... Très honnête et fiable dans ces évaluations de la situation. Prix compétitif et un peu moins qu&#x27;ailleurs​.... Je recommande fortement ce garage, à plus forte raison aux femmes qui s&#x27;y connaisse un peu moins bien en mécanique, vous pouvez leur faire confiance à 200% pour avoir l&#x27;heure juste! »</p><footer><b>Edith</b> · Propriétaire Volvo · Témoignage publié sur le site</footer></article><article class="r"><p>« Services de haute qualiter, respect, très bon avec leur diagnostique et explication très précise du/ou  des problems!!  Ce sont les experts en mecanique!! »</p><footer><b>Mathieu</b> · Propriétaire de BMW · Témoignage publié sur le site</footer></article><article class="r"><p>« Y-a-t-il des gens expérimentés dans le domaine automobile à qui nous pouvons vraiment faire confiance les yeux fermés de nos jours ? OUI ! À toute l&#x27;équipe de Mécanique Expert à Belœil...!  Bravo Guy&#x27;s et merci de prendre si bien soin de mon véhicule comme vous le faites 🙂 »</p><footer><b>Stéphane</b> · Propriétaire de Porsche · Témoignage publié sur le site</footer></article><article class="r"><p>« Le meilleur service courtois et professionnel qu&#x27;on puisse souhaiter.
+La salle d&#x27;attente est chaleureuse, invitante, diverses activités ainsi que grignotines et café nous y sont proposées. »</p><footer><b>Valérie</b> · Propriétaire audi · Témoignage publié sur le site</footer></article></div>
+  <div class="more"><button class="btn dark" data-open-avis>Voir tous les avis (6)</button></div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="eyebrow" style="color:var(--red2)">Coordonnées</div>
+  <h2>Prenez rendez-vous</h2>
+  <div class="cgrid">
+   <div class="cbox"><small>Heures d'ouverture</small><ul class="hours"><li><span>Lundi au jeudi</span><span>7 h 30 – 17 h 30</span></li><li><span>Vendredi</span><span>7 h 30 – 12 h</span></li><li><span>Samedi et dimanche</span><span>Fermé</span></li></ul></div>
+   <div class="cbox"><small>Téléphone et courriel</small><a href="tel:+14502811053">450 281-1053</a><br><a href="mailto:garage@mecaniqueexpert.com" style="font-size:16px">garage@mecaniqueexpert.com</a><p style="color:#9aa1ab;font-size:14.5px;margin-top:6px">Télécopieur : 450 281-1095</p></div>
+   <div class="cbox"><small>Adresse</small><a href="https://www.google.com/maps/search/?api=1&query=3035+rue+Bernard-Pilon+Saint-Mathieu-de-Beloeil+QC+J3G+4S5" target="_blank" rel="noopener">3035, rue Bernard-Pilon<br>Saint-Mathieu-de-Beloeil (Québec) J3G 4S5</a></div>
+  </div>
+  <div class="more"><a class="btn red" href="tel:+14502811053">📞 Appeler maintenant</a><a class="btn ghost" href="mailto:garage@mecaniqueexpert.com">✉️ Écrire un courriel</a></div>
+ </div>
+</section>
+</main>
+<div class="foot">© Mécanique Expert · Saint-Mathieu-de-Beloeil · Groupe Prindle</div>
+</div>
+
+<div id="avispage" aria-label="Tous les avis">
+ <div class="ap-head"><div class="wrap"><button class="btn red" data-close-avis>← Retour au site</button><span>Témoignages de nos clients</span></div></div>
+ <div class="ap-body"><div class="wrap">
+  <div class="eyebrow">Tous les avis</div>
+  <h2>Ce que nos clients disent</h2>
+  <p class="lead">6 témoignages publiés sur notre site, recopiés tels quels.</p>
+  <div class="rv"><article class="r"><p>« Je fréquente le garage depuis plus d’un an et j’ai fait faire plusieurs travaux sur mon Mercedes-Benz (2010) , et mon Volks (2007). Tout d’abord je sais que je suis un client difficile, car je suis ingénieur et je suis très pointilleux sur les travaux à faire ainsi que les pièces à installer. L’équipe de Mécanique Expert a su démontrer un niveau de connaissances et d’expertise très impressionnant, ils ont même effectué plusieurs recherches supplémentaires pour répondre à mes besoins et trouver les pièces que je voulais. Le diagnostique est exacte et la réparation est rapide. J’ai eu un petit problème (défaut de fabrication) avec une pièces qu’ils avaient remplacé plus de 6 mois plus tôt et le garage à pris en main la réparation sur le champ et on honoré la garantie sans le moindre souci. Le garage est très respectueux des clients, la salle d’attente avec cinéma et salle de réunion sont vraiment super confortables. Mécanique expert offre réellement un excellent service, je les recommande à tous mes amis. »</p><footer><b>Dan B.</b> · Propriétaire mercedez-Benz · Témoignage publié sur le site</footer></article><article class="r"><p>« Super service et mécaniciens très compétents. Je devais installer des lignes bridées de performance sur ma BMW E30 1987 et la ligne dure en acier devait être changée pour accommoder la nouvelle ligne flexible.  Ils ont fait le travail en moins de temps qu&#x27;estimé et le produit final est de très bonne qualité! Je vais y retourner avec mes autres véhicules sans hésitation. »</p><footer><b>Tristan</b> · Propriétaire BMW · Témoignage publié sur le site</footer></article><article class="r"><p>« J&#x27;adore ce garage de proximité. Thierry fait tout pour rendre notre visite agréable. Coin VIP, aménagé pour notre attente, informez-vous ça vaut la peine.... Très honnête et fiable dans ces évaluations de la situation. Prix compétitif et un peu moins qu&#x27;ailleurs​.... Je recommande fortement ce garage, à plus forte raison aux femmes qui s&#x27;y connaisse un peu moins bien en mécanique, vous pouvez leur faire confiance à 200% pour avoir l&#x27;heure juste! »</p><footer><b>Edith</b> · Propriétaire Volvo · Témoignage publié sur le site</footer></article><article class="r"><p>« Services de haute qualiter, respect, très bon avec leur diagnostique et explication très précise du/ou  des problems!!  Ce sont les experts en mecanique!! »</p><footer><b>Mathieu</b> · Propriétaire de BMW · Témoignage publié sur le site</footer></article><article class="r"><p>« Y-a-t-il des gens expérimentés dans le domaine automobile à qui nous pouvons vraiment faire confiance les yeux fermés de nos jours ? OUI ! À toute l&#x27;équipe de Mécanique Expert à Belœil...!  Bravo Guy&#x27;s et merci de prendre si bien soin de mon véhicule comme vous le faites 🙂 »</p><footer><b>Stéphane</b> · Propriétaire de Porsche · Témoignage publié sur le site</footer></article><article class="r"><p>« Le meilleur service courtois et professionnel qu&#x27;on puisse souhaiter.
+La salle d&#x27;attente est chaleureuse, invitante, diverses activités ainsi que grignotines et café nous y sont proposées. »</p><footer><b>Valérie</b> · Propriétaire audi · Témoignage publié sur le site</footer></article></div>
+  <div class="more"><button class="btn dark" data-close-avis>← Retour au site</button></div>
+ </div></div>
+</div>
+
+<a class="callbar" href="tel:+14502811053">📞 Appeler · 450 281-1053</a>
+
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var intro=document.getElementById('intro');var seen=false;try{seen=sessionStorage.getItem('mecexp-intro')}catch(e){}
+if(reduce||seen){intro.remove()}else{try{sessionStorage.setItem('mecexp-intro','1')}catch(e){}
+ var done=function(){if(!intro.isConnected)return;intro.classList.add('out');setTimeout(function(){intro.remove()},500)};
+ setTimeout(done,2000);intro.addEventListener('click',done);intro.addEventListener('touchstart',done,{passive:true})}
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+bg.addEventListener('click',function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+function closeNav(){nav.classList.remove('open');bg.setAttribute('aria-expanded','false')}
+var lastY=0;
+document.querySelectorAll('[data-open-avis]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeNav();lastY=scrollY;document.body.classList.add('avis-open');scrollTo(0,0)})});
+document.querySelectorAll('[data-close-avis]').forEach(function(b){b.addEventListener('click',function(){document.body.classList.remove('avis-open');scrollTo(0,lastY)})});
+document.querySelectorAll('[data-site]').forEach(function(a){a.addEventListener('click',function(){closeNav();document.body.classList.remove('avis-open')})});
+var S={
+ engrenage:'<svg width="W" viewBox="0 0 50 50"><path d="M25 4l4 6 7-2 1 7 7 2-3 6 5 5-6 3 1 7-7 0-3 7-6-4-6 4-3-7-7 0 1-7-6-3 5-5-3-6 7-2 1-7 7 2z" fill="#c9ced6"/><circle cx="25" cy="25" r="8" fill="#111317"/></svg>',
+ cle:'<svg width="W" viewBox="0 0 70 30"><rect x="0" y="10" width="50" height="10" rx="5" fill="#c9ced6"/><path d="M50 2a13 13 0 1 1 0 26l-6-8h8v-10h-8z" fill="#c9ced6"/></svg>',
+ pneu:'<svg width="W" viewBox="0 0 50 50"><circle cx="25" cy="25" r="23" fill="#262a32"/><circle cx="25" cy="25" r="12" fill="#c9ced6"/><circle cx="25" cy="25" r="4" fill="#262a32"/><g stroke="#3a3f48" stroke-width="3"><path d="M25 2v6M25 42v6M2 25h6M42 25h6"/></g></svg>',
+ goutte:'<svg width="W" viewBox="0 0 30 40"><path d="M15 2C9 12 3 20 3 27a12 12 0 0 0 24 0C27 20 21 12 15 2z" fill="#d6a31e"/></svg>',
+ bougie:'<svg width="W" viewBox="0 0 20 60"><rect x="6" y="0" width="8" height="10" fill="#c9ced6"/><rect x="2" y="10" width="16" height="22" rx="3" fill="#f4f5f7"/><rect x="5" y="32" width="10" height="10" fill="#c9ced6"/><path d="M10 42v14" stroke="#c9ced6" stroke-width="4"/></svg>'
+};
+var mob=innerWidth<700;
+var list=[['engrenage',88,8,44,1,'',14],['cle',3,6,60,1.3,'',10],['pneu',92,60,44,.8,'',16],['goutte',56,4,22,.5,'far',12],['bougie',74,88,18,1.2,'',8],['engrenage',2,84,34,.6,'far',18],['goutte',46,92,18,.9,'far',9],['cle',64,46,46,1.5,'far',13],['pneu',28,95,30,1.1,'',14],['bougie',96,30,16,.4,'far',12]];
+if(mob)list=list.slice(0,8);
+var fl=document.getElementById('float');
+list.forEach(function(it){var d=document.createElement('div');d.className='f '+it[5];d.style.left=it[1]+'%';d.style.top=it[2]+'%';d.style.setProperty('--d',it[4]);d.style.setProperty('--t',it[6]+'s');d.style.setProperty('--r1',(-6-Math.random()*8)+'deg');d.style.setProperty('--r2',(6+Math.random()*10)+'deg');d.innerHTML=S[it[0]].replace('W',mob?Math.round(it[3]*.75):it[3]);fl.appendChild(d)});
+var fs=fl.querySelectorAll('.f');
+if(!reduce){var tick=false;addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=Math.min(scrollY,900)*-.18+'px';fs.forEach(function(e){e.style.setProperty('--py',y)});tick=false})},{passive:true})}
+/* moment wow : l'aiguille du compte-tours monte en régime */
+var g=document.getElementById('gauge');
+if(reduce||!('IntersectionObserver' in window)){g.classList.add('in')}else{var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){setTimeout(function(){g.classList.add('in')},document.getElementById('intro')?2000:200);io.disconnect()}})},{threshold:.4});io.observe(g)}
+})();
+</script>
+</body>
+</html>
