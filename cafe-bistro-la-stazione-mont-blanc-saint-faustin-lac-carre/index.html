@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Café Bistro La Stazione — Mont-Blanc, au bord du P'tit Train du Nord</title>
+<meta name="description" content="Café Bistro La Stazione, 1830 rue Principale à Mont-Blanc : café-bistro de la cheffe-propriétaire Véronique Daneau, en face de la piste cyclable Le P'tit Train du Nord (km 70,5). Déjeuners, plats du jour, spéciaux du midi. 819-688-5817.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Café Bistro La Stazione","telephone":"+1-819-688-5817","email":"verodaneau@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"1830, rue Principale","addressLocality":"Mont-Blanc","addressRegion":"QC","postalCode":"J0T 2G0","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday"],"opens":"11:00","closes":"16:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"10"}}</script>
+<style>
+:root{--esp:#3b2418;--esp2:#5a3826;--crema:#f4e7d3;--paper:#fbf6ee;--verde:#2f6b4f;--rosso:#c2452d;--ink:#2a1c14;--mut:#6f5f53;--line:#e8dccb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth}
+body{font-family:'Work Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;padding-top:var(--bh,32px)}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:900;line-height:1.05}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:16px;font-family:inherit;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-r{background:var(--rosso);color:#fff}
+.btn-v{background:var(--verde);color:#fff}
+.btn-out{background:transparent;color:#fff;border:2px solid #ffffff90}
+.btn-ghost{background:#fff;color:var(--esp);border:2px solid var(--esp)}
+.nav{position:fixed;top:var(--bh,32px);left:0;right:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;cursor:pointer}
+.brand b{font-family:'Playfair Display',serif;font-size:22px;line-height:1;display:block;color:var(--esp)}
+.brand small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);font-weight:700}
+.links{display:flex;gap:2px;align-items:center}
+.links a{text-decoration:none;padding:8px 12px;border-radius:10px;font-weight:500;cursor:pointer;color:var(--esp)}
+.links a:hover{background:var(--crema)}
+.links .call{background:var(--rosso);color:#fff;font-weight:700;margin-left:6px;border-radius:999px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+@media(max-width:860px){.links{display:none;position:absolute;top:66px;left:0;right:0;background:var(--paper);flex-direction:column;align-items:stretch;padding:8px 16px 18px;border-bottom:1px solid var(--line)}.links.open{display:flex}.links a{padding:13px 10px;font-size:17px}.links .call{margin:8px 0 0;text-align:center}.burger{display:block}}
+main{padding-top:66px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,#6b4430 0,transparent 55%),var(--esp);color:#fff;padding:64px 0 110px}
+.hero .wrap{position:relative;z-index:3;display:grid;gap:30px;align-items:center}
+@media(min-width:960px){.hero .wrap{grid-template-columns:1.15fr .85fr}.hero{padding:92px 0 130px}}
+.tag{display:inline-flex;align-items:center;gap:8px;background:#ffffff14;border:1px solid #ffffff30;padding:7px 14px;border-radius:999px;font-size:14px}
+.hero h1{font-size:clamp(44px,9.5vw,88px);margin:16px 0 14px}
+.hero h1 em{font-style:italic;color:#f3c78f;display:block;font-size:.55em;margin-top:8px}
+.hero p{font-size:clamp(17px,2.2vw,20px);max-width:560px;color:#ecdcc8}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chips span{background:#ffffff12;border:1px solid #ffffff2a;border-radius:10px;padding:6px 12px;font-size:14px}
+.cup{justify-self:center;width:min(320px,70vw)}
+.steam path{animation:st 3s ease-in-out infinite;opacity:.7}
+.steam path:nth-child(2){animation-delay:-1s}.steam path:nth-child(3){animation-delay:-2s}
+@keyframes st{0%{transform:translateY(8px);opacity:0}40%{opacity:.8}100%{transform:translateY(-22px);opacity:0}}
+.deco{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.deco svg{position:absolute;opacity:.85;animation:fl 8s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-16px) rotate(calc(var(--r,0deg) + 14deg))}}
+.b1{width:34px;top:12%;left:46%;--r:30deg}.b2{width:26px;top:64%;left:4%;--r:-20deg;animation-delay:-3s!important}.b3{width:40px;top:8%;right:6%;--r:60deg;animation-delay:-5s!important}.b4{width:46px;bottom:14%;right:4%;animation-delay:-2s!important}.b5{width:30px;top:44%;right:40%;--r:10deg;animation-delay:-4s!important}
+@media(max-width:860px){.b1{left:auto;right:24%;top:2%}.b5{display:none}.b4{bottom:6%}}
+.rail{position:absolute;left:0;right:0;bottom:0;height:22px;background:repeating-linear-gradient(90deg,#8a6a52 0 10px,transparent 10px 34px),linear-gradient(transparent 6px,#c9b29a 6px 9px,transparent 9px 15px,#c9b29a 15px 18px,transparent 18px);z-index:2}
+section{padding:80px 0;position:relative}
+.kick{font-weight:700;color:var(--rosso);text-transform:uppercase;letter-spacing:.16em;font-size:13px}
+h2{font-size:clamp(34px,6vw,54px);margin:6px 0 14px;color:var(--esp)}
+.sub{color:var(--mut);max-width:640px;font-size:18px}
+.loc{display:grid;gap:18px;margin-top:34px}
+@media(min-width:800px){.loc{grid-template-columns:repeat(3,1fr)}}
+.lc{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;min-width:0}
+.lc svg{width:54px;height:54px}
+.lc h3{font-size:24px;margin:10px 0 6px;color:var(--esp)}
+.lc p{color:var(--mut)}
+.train{background:var(--verde);color:#fff;overflow:hidden}
+.train h2{color:#fff}.train .sub{color:#d5e8dc}
+.track{position:relative;height:120px;margin-top:30px}
+.track .line{position:absolute;left:0;right:0;bottom:14px;height:10px;background:repeating-linear-gradient(90deg,#1f4a36 0 8px,transparent 8px 26px),linear-gradient(transparent 2px,#cfe3d6 2px 4px,transparent 4px 6px,#cfe3d6 6px 8px,transparent 8px)}
+.track .km{position:absolute;right:8%;bottom:26px;background:#fff;color:var(--verde);font-weight:700;border-radius:8px;padding:4px 10px;font-size:14px}
+.track svg{position:absolute;left:0;bottom:20px;width:150px;transform:translateX(-170px);transition:transform 3.6s cubic-bezier(.4,.1,.2,1)}
+.train.go .track svg{transform:translateX(calc(var(--w,1000px) * .62))}
+.menu .wrap{display:grid;gap:30px;align-items:center}
+@media(min-width:960px){.menu .wrap{grid-template-columns:1fr 1fr}}
+.board{background:#2b2b2b;color:#f4efe6;border-radius:22px;padding:30px;border:10px solid #7a5537;font-family:'Playfair Display',serif;box-shadow:0 16px 30px #0002}
+.board h3{font-size:30px;text-align:center;margin-bottom:14px}
+.board li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px dashed #ffffff40;font-size:19px}
+.board li span:last-child{font-family:'Work Sans',sans-serif;font-size:14px;opacity:.8;text-align:right}
+.board p{font-family:'Work Sans',sans-serif;font-size:14px;text-align:center;margin-top:14px;opacity:.85}
+.rating{display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 18px;margin-top:16px}
+.rating .big{font-family:'Playfair Display',serif;font-size:34px;font-weight:900;line-height:1}
+.stars{color:#e0a02b;letter-spacing:2px}
+.revs{display:grid;gap:18px;margin-top:30px}
+@media(min-width:700px){.revs{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1050px){.revs{grid-template-columns:repeat(3,1fr)}}
+.rev{background:#fff;border-radius:20px;padding:22px;border:1px solid var(--line);min-width:0;overflow-wrap:anywhere}
+.rev p{margin:10px 0 14px;font-size:16px}
+.rev .who{font-weight:700;font-size:14px}
+.rev .src{color:var(--mut);font-size:13px}
+.hours .wrap{display:grid;gap:30px;align-items:center}
+@media(min-width:960px){.hours .wrap{grid-template-columns:1fr 1fr}}
+.box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px}
+.hrs{width:100%;border-collapse:collapse;margin-top:8px}
+.hrs td{padding:8px 0;border-bottom:1px dashed var(--line)}
+.hrs td:last-child{text-align:right;font-weight:700}
+.hrs tr.today td{color:var(--rosso)}
+.live{display:inline-block;padding:4px 12px;border-radius:999px;font-weight:700;font-size:14px;margin-top:6px}
+.live.on{background:#1f9d55;color:#fff}.live.off{background:#e8e2d9;color:#333}
+footer{background:var(--ink);color:#d2c4b6;padding:40px 0 100px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 40px;justify-content:space-between}
+footer b{color:#fff}
+.page{display:none;min-height:80vh;padding:30px 0 90px}
+.page.on{display:block}
+body.sub-open #home{display:none}
+.back{margin:10px 0 20px}
+.disc{margin-top:22px;color:var(--mut);font-size:14px}
+.jgrid{display:grid;gap:22px}
+@media(min-width:900px){.jgrid{grid-template-columns:1.2fr 1fr}}
+.map{width:100%;height:340px;border:1px solid var(--line);border-radius:22px;background:#ece4d8}
+.jl{list-style:none;display:grid;gap:12px;margin:12px 0 18px;overflow-wrap:anywhere}
+.jl a{font-weight:700}
+.sticky-call{display:none}
+@media(max-width:860px){.sticky-call{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:60;justify-content:center;box-shadow:0 10px 24px #0004}}
+#intro{position:fixed;inset:0;z-index:9000;background:var(--esp);display:flex;align-items:center;justify-content:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .t{font-family:'Playfair Display',serif;font-weight:900;color:#fff;font-size:clamp(40px,11vw,80px);text-align:center;line-height:1}
+#intro .t span{display:inline-block;opacity:0;transform:translateY(30px);animation:up .5s forwards}
+#intro .t small{display:block;font-family:'Work Sans',sans-serif;font-size:.22em;letter-spacing:.3em;color:#f3c78f;margin-top:12px;opacity:0;animation:fd .5s 1.2s forwards}
+@keyframes up{to{opacity:1;transform:none}}@keyframes fd{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}#intro{display:none}}
+</style>
+</head>
+<body>
+<div id="bandeau" style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Café Bistro La Stazione — ce n'est pas son site officiel</div>
+<div id="intro" aria-hidden="true"><div class="t" id="it">La Stazione<small>CAFÉ · BISTRO · MONT-BLANC</small></div></div>
+
+<header class="nav"><div class="wrap">
+<a class="brand" data-go="home" aria-label="Accueil">
+<svg width="44" height="44" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#3b2418"/><path d="M14 22h18v6a9 9 0 0 1-18 0z" fill="#f4e7d3"/><path d="M32 24h3a3 3 0 0 1 0 6h-3" stroke="#f4e7d3" stroke-width="2.4" fill="none"/><path d="M19 18c0-3 2-3 2-6M25 18c0-3 2-3 2-6" stroke="#c2452d" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M12 38h24" stroke="#2f6b4f" stroke-width="2.4" stroke-linecap="round"/></svg>
+<span><b>La Stazione</b><small>Café · bistro · Mont-Blanc</small></span></a>
+<nav class="links" id="links">
+<a data-go="home">Accueil</a><a data-go="menu">Menu</a><a data-go="avis">Avis</a><a data-go="joindre">Nous joindre</a>
+<a class="call" href="tel:+18196885817">819-688-5817</a></nav>
+<button class="burger" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#3b2418" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div></header>
+
+<main>
+<div id="home">
+<section class="hero">
+<div class="deco" aria-hidden="true">
+<svg class="b1" viewBox="0 0 30 40"><ellipse cx="15" cy="20" rx="12" ry="17" fill="#8a5a3c"/><path d="M15 4c-5 10 5 22 0 32" stroke="#3b2418" stroke-width="2.4" fill="none"/></svg>
+<svg class="b2" viewBox="0 0 30 40"><ellipse cx="15" cy="20" rx="12" ry="17" fill="#a7744f"/><path d="M15 4c-5 10 5 22 0 32" stroke="#3b2418" stroke-width="2.4" fill="none"/></svg>
+<svg class="b3" viewBox="0 0 30 40"><ellipse cx="15" cy="20" rx="12" ry="17" fill="#c08a5f"/><path d="M15 4c-5 10 5 22 0 32" stroke="#5a3826" stroke-width="2.4" fill="none"/></svg>
+<svg class="b4" viewBox="0 0 60 40"><circle cx="12" cy="28" r="10" fill="none" stroke="#f3c78f" stroke-width="3"/><circle cx="48" cy="28" r="10" fill="none" stroke="#f3c78f" stroke-width="3"/><path d="M12 28l12-16h14l10 16M24 12l8 16h-20" stroke="#f3c78f" stroke-width="3" fill="none" stroke-linejoin="round"/></svg>
+<svg class="b5" viewBox="0 0 40 40"><path d="M20 2v36M4 11l32 18M4 29l32-18" stroke="#ffffffcc" stroke-width="3" stroke-linecap="round"/></svg>
+</div>
+<div class="wrap">
+<div>
+<span class="tag">🚲 Piste Le P'tit Train du Nord · km 70,5</span>
+<h1>La Stazione<em>café · bistro à Mont-Blanc</em></h1>
+<p>En face de la piste cyclable Le P'tit Train du Nord et du marché Tradition : on y arrive à vélo l'été et en ski de fond l'hiver. Déjeuners, plats du jour et spéciaux du midi de la cheffe-propriétaire Véronique Daneau.</p>
+<div class="ctas"><a class="btn btn-r" href="tel:+18196885817"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler · 819-688-5817</a><a class="btn btn-out" data-go="menu">Voir le menu</a></div>
+<div class="chips"><span>⭐ 4,1 sur Google</span><span>5 min de la station Mont-Blanc</span><span>15 min de Tremblant (versant nord)</span></div>
+</div>
+<svg class="cup" viewBox="0 0 300 300" aria-hidden="true">
+<circle cx="150" cy="160" r="130" fill="#ffffff0d"/>
+<g class="steam" fill="none" stroke="#f4e7d3" stroke-width="7" stroke-linecap="round"><path d="M115 90c-12-18 12-26 0-46"/><path d="M150 84c-12-18 12-26 0-46"/><path d="M185 90c-12-18 12-26 0-46"/></g>
+<ellipse cx="150" cy="250" rx="110" ry="18" fill="#2a1a12"/><ellipse cx="150" cy="244" rx="110" ry="18" fill="#f4e7d3"/>
+<path d="M70 120h160v50a80 80 0 0 1-160 0z" fill="#fbf6ee"/><path d="M230 140h18a28 28 0 0 1 0 56h-26" stroke="#fbf6ee" stroke-width="14" fill="none"/>
+<ellipse cx="150" cy="120" rx="80" ry="16" fill="#6b4430"/><ellipse cx="150" cy="118" rx="64" ry="10" fill="#b5835a"/>
+<path d="M136 118c8-8 20-8 28 0" stroke="#f4e7d3" stroke-width="3" fill="none"/>
+<path d="M90 170h120" stroke="#2f6b4f" stroke-width="8"/><path d="M90 182h120" stroke="#c2452d" stroke-width="8"/>
+</svg>
+</div>
+<div class="rail"></div>
+</section>
+
+<section><div class="wrap">
+<span class="kick">L'endroit</span>
+<h2>Un arrêt tout désigné</h2>
+<p class="sub">Au 1830, rue Principale à Mont-Blanc, La Stazione est au bord de la piste, à deux pas des pentes.</p>
+<div class="loc">
+<div class="lc"><svg viewBox="0 0 60 60"><circle cx="16" cy="40" r="11" fill="none" stroke="#2f6b4f" stroke-width="4"/><circle cx="46" cy="40" r="11" fill="none" stroke="#2f6b4f" stroke-width="4"/><path d="M16 40l12-18h14l4 18M28 22l8 18H16" stroke="#c2452d" stroke-width="4" fill="none" stroke-linejoin="round"/></svg><h3>À vélo l'été</h3><p>En face de la piste cyclable Le P'tit Train du Nord, au km 70,5.</p></div>
+<div class="lc"><svg viewBox="0 0 60 60"><path d="M8 46l44-10M10 52l44-10" stroke="#2f6b4f" stroke-width="4" stroke-linecap="round"/><circle cx="30" cy="14" r="6" fill="#c2452d"/><path d="M30 20l-4 14 8 4M26 26l-10 4M30 26l10-2" stroke="#3b2418" stroke-width="4" stroke-linecap="round" fill="none"/></svg><h3>En ski de fond l'hiver</h3><p>La piste se fait aussi en ski de fond : on s'arrête se réchauffer.</p></div>
+<div class="lc"><svg viewBox="0 0 60 60"><path d="M4 50 24 16l10 16 8-10 14 28z" fill="#2f6b4f"/><path d="M24 16l6 10-6-2-4 4z" fill="#fff"/></svg><h3>Près des pentes</h3><p>À environ 5 minutes de la station Mont-Blanc et 15 minutes du versant nord de Tremblant.</p></div>
+</div>
+</div></section>
+
+<section class="train" id="train"><div class="wrap">
+<span class="kick" style="color:#f3c78f">Prochain arrêt</span>
+<h2>Stazione Mont-Blanc</h2>
+<p class="sub">Le P'tit Train du Nord passait ici; aujourd'hui, ce sont les cyclistes et les skieurs de fond qui s'arrêtent au café.</p>
+<div class="track" id="track"><div class="line"></div><span class="km">km 70,5</span>
+<svg viewBox="0 0 150 80" aria-hidden="true"><rect x="20" y="20" width="70" height="40" rx="6" fill="#c2452d"/><rect x="28" y="28" width="16" height="14" rx="2" fill="#f4e7d3"/><rect x="50" y="28" width="16" height="14" rx="2" fill="#f4e7d3"/><rect x="90" y="32" width="44" height="28" rx="6" fill="#3b2418"/><rect x="112" y="14" width="10" height="20" fill="#3b2418"/><path d="M134 52l12 8H130z" fill="#f3c78f"/><g fill="#1f1f1f"><circle cx="38" cy="64" r="9"/><circle cx="72" cy="64" r="9"/><circle cx="108" cy="64" r="9"/></g><g fill="#fff" opacity=".7"><circle cx="117" cy="6" r="5"/><circle cx="106" cy="2" r="3.5"/></g></svg>
+</div>
+</div></section>
+
+<section class="menu"><div class="wrap">
+<div><span class="kick">Au menu</span><h2>Déjeuners, plats du jour et spéciaux du midi</h2><p class="sub">Le menu change avec les plats du jour et les spéciaux du midi de la cheffe Véronique Daneau. Pour savoir ce qui est servi aujourd'hui, appelez au 819-688-5817.</p><p style="margin-top:22px"><a class="btn btn-v" data-go="menu">Voir le menu</a></p></div>
+<div class="board"><h3>Aujourd'hui</h3><ul><li><span>Menu déjeuner</span><span>☕</span></li><li><span>Plats du jour</span><span>☕</span></li><li><span>Spéciaux du midi</span><span>☕</span></li></ul><p>Menu du jour sur place ou au 819-688-5817</p></div>
+</div></section>
+
+<section><div class="wrap">
+<span class="kick">Ce que nos clients disent</span>
+<h2>Les avis</h2>
+<div class="rating"><span class="big">4,1</span><span><span class="stars">★★★★☆</span><br><b>sur Google · 10 avis</b></span></div>
+<div class="revs" id="revHome"></div>
+<p style="margin-top:28px"><a class="btn btn-r" data-go="avis" id="allBtn">Voir tous les avis</a></p>
+</div></section>
+
+<section class="hours"><div class="wrap">
+<div><span class="kick">Heures</span><h2>On vous attend</h2><p class="sub">1830, rue Principale, Mont-Blanc (Québec) J0T 2G0, en face du marché Tradition.</p><p style="margin-top:20px"><a class="btn btn-ghost" data-go="joindre">Itinéraire et contact</a></p></div>
+<div class="box"><h3 style="font-size:28px;color:var(--esp)">Heures d'ouverture</h3><div class="liveBox"></div><table class="hrs"></table><p style="margin-top:14px;color:var(--mut);font-size:14px">Les heures peuvent changer selon la saison : appelez avant de passer.</p></div>
+</div></section>
+</div>
+
+<div class="page" id="menu"><div class="wrap">
+<a class="btn btn-ghost back" data-go="home">← Retour au site</a>
+<span class="kick" style="display:block">Café Bistro La Stazione</span>
+<h2>Menu</h2>
+<p class="sub">La Stazione sert un menu déjeuner, des plats du jour et des spéciaux du midi préparés par la cheffe-propriétaire Véronique Daneau. Le menu change souvent : appelez pour connaître le menu du jour.</p>
+<div class="loc">
+<div class="lc"><h3>Menu déjeuner</h3><p>Le menu déjeuner de La Stazione : demandez-le sur place ou au téléphone.</p></div>
+<div class="lc"><h3>Plats du jour</h3><p>Le plat du jour change régulièrement. Demandez-le sur place ou au téléphone.</p></div>
+<div class="lc"><h3>Spéciaux du midi</h3><p>Demandez les spéciaux du midi sur place ou au téléphone.</p></div>
+</div>
+<p style="margin-top:28px"><a class="btn btn-r" href="tel:+18196885817">Menu du jour · 819-688-5817</a></p>
+</div></div>
+
+<div class="page" id="avis"><div class="wrap">
+<a class="btn btn-ghost back" data-go="home">← Retour au site</a>
+<span class="kick" style="display:block">Café Bistro La Stazione</span>
+<h2>Tous les avis</h2>
+<div class="rating"><span class="big">4,1</span><span><span class="stars">★★★★☆</span><br><b>sur Google · 10 avis</b></span></div>
+<div class="revs" id="revAll"></div>
+<p class="disc">Avis Google tels que publiés, repris sur restoenligne.com (« … » : la suite de l'avis est sur la fiche).</p>
+<p style="margin-top:16px"><a class="btn btn-ghost" href="https://restoenligne.com/restaurants/evaluations/la-stazione-cafe-bistro" target="_blank" rel="noopener">Voir les évaluations</a></p>
+</div></div>
+
+<div class="page" id="joindre"><div class="wrap">
+<a class="btn btn-ghost back" data-go="home">← Retour au site</a>
+<span class="kick" style="display:block">Café Bistro La Stazione</span>
+<h2>Nous joindre</h2>
+<div class="jgrid">
+<iframe class="map" loading="lazy" title="Carte" data-src="https://www.google.com/maps?q=1830%20rue%20Principale%2C%20Mont-Blanc%20QC%20J0T%202G0&output=embed"></iframe>
+<div class="box">
+<div class="liveBox"></div>
+<ul class="jl">
+<li>📞 <a href="tel:+18196885817">819-688-5817</a></li>
+<li>✉️ <a href="mailto:verodaneau@hotmail.com">verodaneau@hotmail.com</a></li>
+<li>📍 1830, rue Principale, Mont-Blanc (Québec) J0T 2G0</li>
+<li>🚲 Piste Le P'tit Train du Nord, km 70,5</li>
+</ul>
+<a class="btn btn-v" href="https://www.google.com/maps/dir/?api=1&destination=1830%20rue%20Principale%2C%20Mont-Blanc%20QC%20J0T%202G0" target="_blank" rel="noopener">Itinéraire</a>
+<h3 style="font-size:22px;margin-top:24px;color:var(--esp)">Heures</h3>
+<table class="hrs"></table>
+</div></div>
+</div></div>
+</main>
+
+<footer><div class="wrap">
+<div><b>Café Bistro La Stazione</b><br>1830, rue Principale, Mont-Blanc (Québec) J0T 2G0<br>Cheffe-propriétaire : Véronique Daneau</div>
+<div><b>Téléphone</b><br><a href="tel:+18196885817">819-688-5817</a><br><a href="mailto:verodaneau@hotmail.com">verodaneau@hotmail.com</a></div>
+<div><b>Heures</b><br>Samedi au mardi : 11 h à 16 h<br>Mercredi au vendredi : fermé</div>
+</div></footer>
+<a class="btn btn-r sticky-call" href="tel:+18196885817">📞 Appeler · 819-688-5817</a>
+
+<script>
+(function(){
+function bh(){document.documentElement.style.setProperty('--bh',document.getElementById('bandeau').offsetHeight+'px')}bh();addEventListener('resize',bh,{passive:true});
+var it=document.getElementById('it');var sm=it.querySelector('small');var txt='La Stazione';it.innerHTML='';txt.split('').forEach(function(c,i){var s=document.createElement('span');s.textContent=c==' '?' ':c;s.style.animationDelay=(i*.07)+'s';it.appendChild(s)});it.appendChild(sm);
+var intro=document.getElementById('intro'),seen=false;
+try{seen=sessionStorage.getItem('sz_intro')}catch(e){}
+function end(){if(!intro)return;intro.classList.add('out');setTimeout(function(){intro&&intro.remove();intro=null},500)}
+if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){intro.remove();intro=null}else{try{sessionStorage.setItem('sz_intro','1')}catch(e){}intro.addEventListener('click',end);setTimeout(end,2000)}
+var R=[
+["Dann Schmidt","23 sept. 2026",5,"Best food along the way. Interesting poutine on gnocchi instead of fries. Works! Locally owned and run."],
+["Danny Thibodeau","23 sept. 2026",5,"Excellent service. Nourriture très bonne. Près de la piste cyclable du petit train du Nord."],
+["Christina Laferté","30 mai 2026",5,"What a little gem of a restaurant in the small quiet town of Mont-Blanc, Québec. Fresh food and delicious ingredients. …"],
+["Alireza Rashed","22 juil. 2026",5,"Un café très propre, calme et chaleureux. L’ambiance est vraiment agréable et le service est excellent. Un grand merci …"],
+["Giorgio D'Antonio","4 avr. 2026",5,"Cozy and lovely environment. The food was amazing, the grilled cheese with pulled pork was out of this world. I will surely …"],
+["Max Power","14 juin 2026",5,"Beau petit café, très bien situé sur le bord du petit train du nord, stationnement a proximité. …"],
+["Debbie Salsbury","24 sept. 2026",5,"Great stop along The Petite train du Nord"],
+["Niente Nessuno","21 janv. 2026",4,"Bon sandwiches"]
+];
+function card(r){return '<div class="rev"><span class="stars">'+'★★★★★'.slice(0,r[2])+'<span style="color:#ddd">'+'★★★★★'.slice(r[2])+'</span></span><p>'+r[3]+'</p><div class="who">'+r[0]+'</div><div class="src">Avis Google · '+r[1]+'</div></div>'}
+document.getElementById('revHome').innerHTML=R.filter(function(r){return r[2]==5}).map(card).join('');
+document.getElementById('revAll').innerHTML=R.map(card).join('');
+document.getElementById('allBtn').textContent='Voir tous les avis ('+R.length+')';
+var H=[["Dimanche","11 h à 16 h",[11,16]],["Lundi","11 h à 16 h",[11,16]],["Mardi","11 h à 16 h",[11,16]],["Mercredi","Fermé",null],["Jeudi","Fermé",null],["Vendredi","Fermé",null],["Samedi","11 h à 16 h",[11,16]]];
+var now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Toronto'})),dw=now.getDay(),hr=now.getHours()+now.getMinutes()/60;
+var t=H[dw][2],open=t&&hr>=t[0]&&hr<t[1];
+var rows=[1,2,3,4,5,6,0].map(function(i){return '<tr'+(i==dw?' class="today"':'')+'><td>'+H[i][0]+'</td><td>'+H[i][1]+'</td></tr>'}).join('');
+document.querySelectorAll('.hrs').forEach(function(x){x.innerHTML=rows});
+var lv='<span class="live '+(open?'on':'off')+'">'+(open?'Ouvert maintenant':'Fermé en ce moment')+'</span>';
+document.querySelectorAll('.liveBox').forEach(function(x){x.innerHTML=lv});
+var tr=document.getElementById('train'),tk=document.getElementById('track');
+function sw(){tk.style.setProperty('--w',tk.offsetWidth+'px')}sw();addEventListener('resize',sw,{passive:true});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){tr.classList.add('go');io.disconnect()}},{threshold:.4});io.observe(tk)}else tr.classList.add('go');
+function go(p){document.getElementById('links').classList.remove('open');
+document.querySelectorAll('.page').forEach(function(x){x.classList.toggle('on',x.id==p)});
+document.body.classList.toggle('sub-open',p!='home');
+if(p=='joindre'){var f=document.querySelector('.map');if(!f.src)f.src=f.dataset.src}
+window.scrollTo(0,0)}
+document.addEventListener('click',function(e){var a=e.target.closest('[data-go]');if(a){e.preventDefault();go(a.dataset.go)}});
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Chef à domicile Lanaudière — Traiteur et chef privé à L'Assomption</title>
+<meta name="description" content="Chef à domicile Lanaudière, traiteur et chef privé à L'Assomption depuis 2010 : cocktail dînatoire, repas gastronomique à domicile, buffet froid, réception et mariage, déjeuner et boîtes à lunch. Réservation : 514-268-7908.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Chef à domicile Lanaudière","description":"Traiteur et chef privé à domicile","slogan":"Soyez l'invité de votre réception","telephone":"+1-514-268-7908","email":"info@chefadomicilelanaudiere.com","foundingDate":"2010","address":{"@type":"PostalAddress","streetAddress":"353, rue Évangéline","addressLocality":"L'Assomption","addressRegion":"QC","postalCode":"J5W 0J7","addressCountry":"CA"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"48"}}</script>
+<style>
+:root{--ink:#17140f;--ink2:#221d16;--cream:#f7f1e6;--paper:#fffaf1;--gold:#c99a4b;--gold2:#e7c27d;--wine:#7a2e2a;--mut:#6b6253;--line:#e6dccb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth}
+body{font:16px/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);padding-top:32px}
+@media(max-width:520px){body{padding-top:48px}}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:15px;font-family:inherit}
+.btn-gold{background:var(--gold);color:#1b140a}
+.btn-line{border:1.5px solid currentColor;background:transparent;color:inherit}
+/* nav */
+.nav{position:fixed;top:32px;left:0;right:0;z-index:50;background:rgba(23,20,15,.96);color:#fff;border-bottom:1px solid rgba(201,154,75,.25)}
+@media(max-width:520px){.nav{top:48px}}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;cursor:pointer}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:700;line-height:1}
+.brand small{display:block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+.links{display:flex;gap:26px;align-items:center}
+.links a{text-decoration:none;font-size:14.5px;opacity:.9;cursor:pointer}
+.links a:hover{color:var(--gold2)}
+.burger{display:none;background:none;border:0;color:#fff;width:44px;height:44px;cursor:pointer}
+@media(max-width:900px){.links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--ink);padding:16px 20px 22px;gap:4px;align-items:stretch}.links.open{display:flex}.links a{padding:12px 4px;border-bottom:1px solid rgba(255,255,255,.08)}.burger{display:block}}
+/* hero */
+.hero{position:relative;background:radial-gradient(120% 80% at 80% 0%,#3a2c1a 0%,var(--ink) 55%);color:#fff;padding:120px 0 80px;overflow:hidden}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.kicker{color:var(--gold2);letter-spacing:.2em;text-transform:uppercase;font-size:12.5px;font-weight:600}
+.hero h1{font-size:clamp(42px,7vw,78px);margin:14px 0 12px}
+.hero h1 em{color:var(--gold2);font-style:italic}
+.hero p.lead{font-size:18px;opacity:.88;max-width:34em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.rate{position:relative;z-index:3;display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:10px 16px;border-radius:12px;background:rgba(255,255,255,.07);border:1px solid rgba(231,194,125,.3);font-size:14.5px;cursor:pointer;color:#fff;font-family:inherit}
+.rate .st{color:var(--gold2);letter-spacing:2px}
+.plate{position:relative;aspect-ratio:1;max-width:440px;justify-self:center;width:100%}
+.deco{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.deco svg{position:absolute}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(8deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes steam{0%{transform:translateY(8px) scaleY(.9);opacity:0}40%{opacity:.85}100%{transform:translateY(-26px) scaleY(1.1);opacity:0}}
+.f1{animation:fl 7s ease-in-out infinite}.f2{animation:fl 9s ease-in-out infinite -2s}.f3{animation:fl 8s ease-in-out infinite -4s}.f4{animation:fl 10s ease-in-out infinite -1s}
+.steam path{animation:steam 3.2s ease-in infinite}.steam path:nth-child(2){animation-delay:1s}.steam path:nth-child(3){animation-delay:2s}
+.cloche-lid{transform-origin:200px 250px;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.plate.open .cloche-lid{transform:translate(70px,-120px) rotate(18deg)}
+@media(max-width:900px){.hero{padding:100px 0 56px}.hero .wrap{grid-template-columns:1fr}.plate{max-width:300px;order:-1;margin-bottom:-10px}}
+@media(max-width:520px){.plate{max-width:200px}.deco .m-hide{display:none}.hero h1{margin:10px 0 8px}.hero p.lead{font-size:16.5px}}
+/* sections */
+section{padding:84px 0;position:relative}
+.sh{text-align:center;margin-bottom:44px}
+.sh h2{font-size:clamp(34px,5vw,52px);margin-top:8px}
+.sh p{color:var(--mut);max-width:40em;margin:12px auto 0}
+.kicker.d{color:var(--wine)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;min-width:0;transition:transform .3s}
+.card:hover{transform:translateY(-4px)}
+.card .ic{width:48px;height:48px;border-radius:14px;background:var(--cream);display:grid;place-items:center;margin-bottom:14px}
+.card h3{font-size:26px;margin-bottom:6px}
+.card .pr{color:var(--wine);font-weight:600;font-size:14.5px;margin-bottom:8px}
+.card p{color:var(--mut);font-size:15px}
+@media(max-width:900px){.svc{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc{grid-template-columns:1fr}}
+.center{text-align:center;margin-top:34px}
+.dark{background:var(--ink);color:#fff}
+.dark .sh p{color:#c9bfae}
+.team{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.team ul{list-style:none;display:grid;gap:16px;margin-top:22px}
+.team li{padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(231,194,125,.18)}
+.team li b{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold2);display:block}
+.team li span{font-size:14.5px;color:#d9cfbe}
+.team h2{font-size:clamp(34px,5vw,50px);margin:10px 0 14px}
+.team p{color:#d9cfbe}
+@media(max-width:900px){.team{grid-template-columns:1fr;gap:28px}}
+/* reviews */
+.gbadge{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin:-18px 0 34px}
+.gbadge .big{font-family:"Cormorant Garamond",serif;font-size:44px;font-weight:700;line-height:1}
+.gbadge .st{color:var(--gold);font-size:22px;letter-spacing:2px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:1000px){.rv{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.rv{grid-template-columns:1fr}}
+.r{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;min-width:0;overflow-wrap:anywhere}
+.r .st{color:var(--gold);letter-spacing:2px;font-size:15px}
+.r q{display:block;margin:10px 0 14px;font-size:15.5px;quotes:"« " " »"}
+.r .who{font-size:13.5px;color:var(--mut)}
+.r .who b{color:var(--ink)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact .card a{word-break:break-word}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+footer{background:var(--ink);color:#bfb4a2;padding:40px 0 100px;font-size:14px;text-align:center}
+footer b{color:#fff}
+/* pages */
+.page{display:none;min-height:100vh;padding:120px 0 90px;background:var(--paper)}
+@media(max-width:520px){.page{padding-top:132px}}
+body.sub #home{display:none}
+.page.on{display:block}
+.back{display:inline-flex;margin-bottom:26px;background:var(--ink);color:#fff}
+.page h1{font-size:clamp(38px,6vw,60px);margin-bottom:10px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;margin-bottom:18px;-webkit-overflow-scrolling:touch}
+.tabs button{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;font:600 14px Inter,sans-serif;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.menu-sec{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px;scroll-margin-top:120px;min-width:0}
+.menu-sec h2{font-size:34px;margin-bottom:4px}
+.menu-sec .sub{color:var(--wine);font-weight:600;font-size:14px;margin-bottom:16px}
+.ml{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 34px}
+.ml li{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dashed var(--line);min-width:0}
+.ml li span:first-child{min-width:0;overflow-wrap:anywhere}
+.ml li span:last-child{white-space:nowrap;font-weight:600;color:var(--wine)}
+@media(max-width:700px){.ml{grid-template-columns:1fr}.ml li{flex-direction:column;gap:2px}.ml li span:last-child{white-space:normal}.menu-sec{padding:20px}}
+.menu-sec h4{font-family:Inter,sans-serif;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin:18px 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--cream);border-radius:999px;padding:6px 12px;font-size:14px}
+.note{font-size:13.5px;color:var(--mut);margin-top:14px;font-style:italic}
+.map{width:100%;height:340px;border:0;border-radius:18px;margin-top:10px}
+.callbar{display:none}
+@media(max-width:900px){.callbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;padding:10px 14px;background:var(--ink);gap:10px}.callbar a{flex:1;justify-content:center}}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--ink);display:grid;place-items:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro svg .t{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.3s ease forwards}
+#intro .w{opacity:0;animation:fade .6s .9s forwards;font-family:"Cormorant Garamond",serif;color:#fff;font-size:28px;text-align:center;margin-top:12px}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes fade{to{opacity:1}}
+.rev{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.rev.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rev{opacity:1;transform:none}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Chef à domicile Lanaudière — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true"><div>
+<svg width="150" height="120" viewBox="0 0 150 120" fill="none" stroke="#e7c27d" stroke-width="3" stroke-linecap="round"><path class="t" d="M20 92h110M30 92c0-34 20-58 45-58s45 24 45 58M75 34v-8M68 26h14"/><path class="t" d="M50 62c6-10 14-14 22-15" stroke-width="2.4"/></svg>
+<div class="w">Soyez l'invité de votre réception</div></div></div>
+
+<nav class="nav"><div class="wrap">
+<a class="brand" data-go="home"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="none" stroke="#c99a4b" stroke-width="1.5"/><path d="M11 25h18M13 25c0-6 3-10 7-10s7 4 7 10M20 15v-2" fill="none" stroke="#e7c27d" stroke-width="1.8" stroke-linecap="round"/><text x="20" y="33.5" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" fill="#e7c27d" letter-spacing="1">CDL</text></svg><span><b>Chef à domicile</b><small>Lanaudière</small></span></a>
+<button class="burger" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')"><svg width="26" height="26" viewBox="0 0 26 26" stroke="#fff" stroke-width="2"><path d="M3 7h20M3 13h20M3 19h20"/></svg></button>
+<div class="links">
+<a data-go="home" data-to="services">Services</a>
+<a data-go="menu">Menus et prix</a>
+<a data-go="home" data-to="equipe">L'équipe</a>
+<a data-go="avis">Avis</a>
+<a data-go="joindre">Nous joindre</a>
+<a class="btn btn-gold" href="tel:+15142687908" style="padding:10px 18px">514-268-7908</a>
+</div></div></nav>
+
+<main id="home">
+<header class="hero">
+<div class="deco" aria-hidden="true">
+<svg class="f1" style="left:4%;top:16%" width="46" height="90" viewBox="0 0 46 90"><path d="M10 4v26c0 6 4 9 8 9v47M18 4v24M26 4v26c0 6-4 9-8 9" fill="none" stroke="#e7c27d" stroke-width="3" stroke-linecap="round" opacity=".75"/></svg>
+<svg class="f2" style="left:44%;top:12%" width="54" height="54" viewBox="0 0 54 54"><path d="M27 6l5 13 14 1-11 9 4 14-12-8-12 8 4-14-11-9 14-1z" fill="#c99a4b" opacity=".55"/></svg>
+<svg class="f3" style="right:5%;bottom:10%" width="62" height="62" viewBox="0 0 62 62"><path d="M31 6c10 14 18 22 18 32a18 18 0 01-36 0c0-10 8-18 18-32z" fill="#7fb069" opacity=".7"/><path d="M31 18v34" stroke="#2c4a22" stroke-width="2"/></svg>
+<svg class="f4 m-hide" style="left:8%;bottom:8%" width="70" height="40" viewBox="0 0 70 40"><path d="M4 30c10-22 52-22 62 0z" fill="none" stroke="#f3e2c0" stroke-width="3" opacity=".7"/><path d="M2 32h66" stroke="#f3e2c0" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>
+<svg class="f2 m-hide" style="left:36%;bottom:6%" width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="12" fill="#b3473f" opacity=".7"/><path d="M17 5c2-3 5-4 7-3" stroke="#7fb069" stroke-width="2.5" fill="none"/></svg>
+</div>
+<div class="wrap">
+<div>
+<div class="kicker">Traiteur et chef privé · L'Assomption depuis 2010</div>
+<h1>Soyez l'<em>invité</em> de votre réception</h1>
+<p class="lead">Un chef à la maison pour un repas digne d'un grand restaurant, un cocktail dînatoire, un mariage ou une boîte à lunch au bureau : Chef à domicile Lanaudière s'occupe de tout, d'une fête intime à une soirée avec des centaines d'invités.</p>
+<div class="cta"><a class="btn btn-gold" href="tel:+15142687908">Réserver : 514-268-7908</a><a class="btn btn-line" data-go="menu">Voir les menus</a></div>
+<button class="rate" data-go="avis"><span class="st">★★★★★</span> <b>4,9 ★ sur Google</b> · 48 avis</button>
+</div>
+<div class="plate" id="plate" aria-hidden="true">
+<svg viewBox="0 0 400 400" width="100%" height="100%">
+<defs><radialGradient id="pl" cx="50%" cy="45%"><stop offset="0" stop-color="#fffdf8"/><stop offset="1" stop-color="#e9e0cf"/></radialGradient><linearGradient id="cl" x1="0" x2="1"><stop offset="0" stop-color="#f6e7c6"/><stop offset=".5" stop-color="#d8ae64"/><stop offset="1" stop-color="#a77a34"/></linearGradient></defs>
+<ellipse cx="200" cy="270" rx="170" ry="54" fill="#0d0b08" opacity=".5"/>
+<ellipse cx="200" cy="255" rx="165" ry="52" fill="url(#pl)"/>
+<ellipse cx="200" cy="252" rx="118" ry="35" fill="none" stroke="#d6c7ab" stroke-width="2"/>
+<g><ellipse cx="200" cy="244" rx="62" ry="18" fill="#7a2e2a"/><path d="M150 236c20-26 80-26 100 0" fill="#9c4a2f"/><circle cx="176" cy="228" r="7" fill="#7fb069"/><circle cx="222" cy="226" r="6" fill="#e7c27d"/><path d="M196 214c4-8 10-10 16-8" stroke="#7fb069" stroke-width="3" fill="none"/></g>
+<g class="steam" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"><path d="M175 200c-8-14 8-20 0-36"/><path d="M200 196c-8-14 8-20 0-36"/><path d="M225 200c-8-14 8-20 0-36"/></g>
+<g class="cloche-lid"><path d="M68 250c0-80 60-130 132-130s132 50 132 130z" fill="url(#cl)"/><path d="M110 200c14-34 44-56 80-60" stroke="#fff" stroke-width="7" fill="none" opacity=".45" stroke-linecap="round"/><rect x="186" y="104" width="28" height="18" rx="9" fill="#a77a34"/><rect x="62" y="246" width="276" height="10" rx="5" fill="#a77a34"/></g>
+</svg>
+</div>
+</div>
+</header>
+
+<section id="services"><div class="wrap">
+<div class="sh rev"><div class="kicker d">Nos services</div><h2>Une table de chef, chez vous</h2><p>Repas gastronomique ou cocktail dînatoire avec chef et serveur sur place, ou à emporter et en livraison (pour 4 personnes et plus).</p></div>
+<div class="svc">
+<div class="card rev"><div class="ic"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#7a2e2a" stroke-width="2"><circle cx="9" cy="9" r="4"/><circle cx="18" cy="14" r="3"/><circle cx="10" cy="19" r="3"/></svg></div><h3>Cocktail dînatoire</h3><div class="pr">À partir de 73$/personne</div><p>14, 16 ou 18 bouchées salées et sucrées, avec le personnel sur place (chef et serveur(s)) pour une durée de 4 heures.</p></div>
+<div class="card rev"><div class="ic"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#7a2e2a" stroke-width="2"><path d="M3 18h20M5 18c0-6 3.5-9 8-9s8 3 8 9M13 9V7"/></svg></div><h3>Repas gastronomique</h3><div class="pr">À partir de 80$</div><p>De 4 à 5 services à domicile : bouchée, potage, entrée, plat principal et dessert, préparés et servis chez vous.</p></div>
+<div class="card rev"><div class="ic"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#7a2e2a" stroke-width="2"><path d="M8 3c0 6 5 6 5 12M18 3c0 6-5 6-5 12M7 23h12M13 15v8"/></svg></div><h3>Réception et mariage</h3><div class="pr">Groupes de 40 personnes et plus</div><p>Bouchées, formules Bronze, Argent et Or, desserts et snacks de fin de soirée pour votre grand jour.</p></div>
+<div class="card rev"><div class="ic"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#7a2e2a" stroke-width="2"><rect x="3" y="7" width="20" height="13" rx="3"/><path d="M3 12h20"/></svg></div><h3>Buffet froid</h3><div class="pr">25 personnes et plus</div><p>Sandwichs, salades, fromage, crudités et desserts du pâtissier, avec forfait « tout inclus » au besoin.</p></div>
+<div class="card rev"><div class="ic"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#7a2e2a" stroke-width="2"><path d="M6 10h12v6a6 6 0 01-12 0zM18 11h2a2 2 0 010 4h-2M9 3c0 2 2 2 2 4M13 3c0 2 2 2 2 4"/></svg></div><h3>Déjeuner et brunch</h3><div class="pr">Boîte déjeuner 22,99$</div><p>Un petit déjeuner au bureau ou un brunch entre amis : boîtes déjeuner ou buffet (minimum 20 personnes).</p></div>
+<div class="card rev"><div class="ic"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#7a2e2a" stroke-width="2"><rect x="4" y="8" width="18" height="13" rx="2"/><path d="M9 8V5h8v3"/></svg></div><h3>Boîtes à lunch gourmandes</h3><div class="pr">Minimum 6 boîtes identiques</div><p>Salade de canard confit, tartare aux 2 saumons, ciabatta au filet mignon de porc et plus.</p></div>
+</div>
+<div class="center"><a class="btn btn-gold" data-go="menu">Voir tous les menus et les prix</a></div>
+</div></section>
+
+<section class="dark" id="equipe"><div class="wrap team">
+<div class="rev"><div class="kicker">Depuis 2010 à L'Assomption</div><h2>Deux passionnés, une brigade</h2><p>Chef à domicile Lanaudière a vu le jour en 2010 à L'Assomption, fondé par deux personnes passionnées et expérimentées. Avoir un chef à la maison, c'est profiter d'un repas digne d'un grand restaurant sans quitter votre salle à manger. Depuis la pandémie, l'équipe offre aussi un service de prêt-à-manger.</p><div class="cta" style="margin-top:24px"><a class="btn btn-gold" href="tel:+15142687908">Parler à Karine ou Frédéric</a></div></div>
+<ul class="rev">
+<li><b>Frédéric Saey</b><span>Copropriétaire et chef exécutif · plus de 25 ans d'expérience · diplômé de l'École hôtelière (2002)</span></li>
+<li><b>Karine Fontaine</b><span>Copropriétaire, chef cuisinière et maître d'hôtel · plus de 25 ans d'expérience · diplômée de l'École hôtelière (2000)</span></li>
+<li><b>Stéphanie Garand</b><span>Chef cuisinière · École hôtelière de Joliette</span></li>
+<li><b>Daniel</b><span>Chef cuisinier · plus de 13 ans d'expérience</span></li>
+</ul>
+</div></section>
+
+<section id="avis-home"><div class="wrap">
+<div class="sh rev"><div class="kicker d">Ce que nos clients disent</div><h2>Des soirées dont on se souvient</h2></div>
+<div class="gbadge"><span class="big">4,9</span><span class="st">★★★★★</span><span><b>4,9 ★ sur Google</b> · 48 avis</span></div>
+<div class="rv" id="rvHome"></div>
+<div class="center"><a class="btn btn-gold" data-go="avis">Voir tous les avis (9)</a></div>
+</div></section>
+
+<section style="background:var(--cream)"><div class="wrap" style="text-align:center">
+<div class="kicker d">Réservez votre date</div><h2 style="font-size:clamp(32px,5vw,48px);margin:10px 0 14px">Contactez-nous pour réserver votre date</h2>
+<p style="color:var(--mut);max-width:36em;margin:0 auto 24px">Pour nous joindre en tout temps : 514-268-7908 · info@chefadomicilelanaudiere.com</p>
+<div class="cta" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-gold" href="tel:+15142687908">Appeler</a><a class="btn btn-line" href="mailto:info@chefadomicilelanaudiere.com">Écrire un courriel</a><a class="btn btn-line" data-go="joindre">Adresse et carte</a></div>
+</div></section>
+</main>
+
+<!-- MENU PAGE -->
+<div class="page" id="p-menu"><div class="wrap">
+<button class="btn back" data-go="home">← Retour au site</button>
+<div class="kicker d">Menus et prix</div><h1>Nos menus</h1>
+<p style="color:var(--mut);margin-bottom:18px">Prix tels qu'affichés dans les menus de Chef à domicile Lanaudière. Les prix n'incluent pas les taxes et peuvent être modifiés sans préavis.</p>
+<div class="tabs" id="tabs"></div>
+<div id="menus"></div>
+<div class="center"><a class="btn btn-gold" href="tel:+15142687908">Réserver : 514-268-7908</a></div>
+</div></div>
+
+<!-- AVIS PAGE -->
+<div class="page" id="p-avis"><div class="wrap">
+<button class="btn back" data-go="home">← Retour au site</button>
+<div class="kicker d">Avis</div><h1>Avis de nos clients</h1>
+<div class="gbadge" style="justify-content:flex-start;margin:6px 0 24px"><span class="big">4,9</span><span class="st">★★★★★</span><span><b>4,9 ★ sur Google</b> · 48 avis</span><a class="btn btn-line" style="padding:9px 16px" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Chef%20%C3%A0%20domicile%20Lanaudi%C3%A8re%20353%20rue%20%C3%89vang%C3%A9line%20L'Assomption">Voir sur Google</a></div>
+<div class="rv" id="rvAll"></div>
+<p class="note">Extraits d'avis Google, reproduits mot pour mot.</p>
+</div></div>
+
+<!-- JOINDRE PAGE -->
+<div class="page" id="p-joindre"><div class="wrap">
+<button class="btn back" data-go="home">← Retour au site</button>
+<div class="kicker d">Nous joindre</div><h1>Réservez votre date</h1>
+<div class="contact" style="margin-top:20px">
+<div class="card"><h3>Téléphone</h3><p><a href="tel:+15142687908">514-268-7908</a> (réservation, en tout temps)<br>Karine ou Frédéric : <a href="tel:+15148067383">514-806-7383</a></p></div>
+<div class="card"><h3>Courriel</h3><p><a href="mailto:info@chefadomicilelanaudiere.com">info@chefadomicilelanaudiere.com</a></p></div>
+<div class="card"><h3>Adresse</h3><p>353, rue Évangéline<br>L'Assomption (Québec) J5W 0J7</p><div style="margin-top:12px"><a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=353%20rue%20%C3%89vang%C3%A9line%2C%20L'Assomption%2C%20QC%20J5W%200J7">Itinéraire</a></div></div>
+<div class="card"><h3>Heures</h3><p>Sur réservation. Appelez-nous pour vérifier nos disponibilités et réserver votre date.</p></div>
+</div>
+<iframe class="map" loading="lazy" title="Carte" src="https://www.google.com/maps?q=353%20rue%20%C3%89vang%C3%A9line%2C%20L'Assomption%2C%20QC%20J5W%200J7&output=embed"></iframe>
+</div></div>
+
+<footer><div class="wrap"><b>Chef à domicile Lanaudière</b> · Traiteur et chef privé · 353, rue Évangéline, L'Assomption · <a href="tel:+15142687908">514-268-7908</a><br>© 2010-2026 Chef à domicile Lanaudière</div></footer>
+<div class="callbar"><a class="btn btn-gold" href="tel:+15142687908">Appeler</a><a class="btn btn-line" style="color:#fff" data-go="menu">Menus</a></div>
+
+<script>
+var R=[
+["Nathalie B.","7 oct. 2026","Tout était exceptionnel. De l'entrée au dessert en passant par les portions, …"],
+["Vincent D.","14 sept. 2026","Une expérience incroyable pour notre mariage en compagnie du propriétaire lui-même et de son équipe. …"],
+["Caroline T.","5 mars 2026","Absolument génial !! La nourriture, le service, l'expérience bref, tout était merveilleux !!!"],
+["Michel M.","18 mars 2026","Expérience extraordinaire. Dans le confort de notre foyer, nous avons manger comme des rois, …"],
+["Pascal R.","13 juil. 2026","Nous avons fait appel à leurs services pour le mariage de mon fils, pour un repas à domicile de 24 personnes, …"],
+["Sylvie M.","9 juin 2026","Notre événement a été une réussite totale. …"],
+["Sonia C.","15 juin 2026","Je recommande fortement les services de Chef à domicile Lanaudière …"],
+["Michel C.","5 janv. 2026","Nous avons choisis Chef à domicile Lanaudière pour servir le repas de notre mariage le 31 décembre …"],
+["Sylvie P.","3 mars 2026","Nous avons bénéficié de leurs services le 15 février dernier tout a été super …"]];
+function card(r){return '<div class="r"><div class="st">★★★★★</div><q>'+r[2]+'</q><div class="who"><b>'+r[0]+'</b> · Avis Google · '+r[1]+'</div></div>'}
+document.getElementById('rvHome').innerHTML=R.slice(0,9).map(card).join('');
+document.getElementById('rvAll').innerHTML=R.map(card).join('');
+var M=[
+{id:"cocktail",t:"Cocktail dînatoire",s:"Chef et serveur(s) sur place pour une durée de 4 heures",p:[["14 bouchées (11 variétés)","À partir de 73$/personne"],["16 bouchées (13 variétés)","À partir de 78$/personne"],["18 bouchées (15 variétés)","À partir de 82$/personne"]],
+ x:[["Quelques bouchées au menu",["Foie gras au torchon (+1,50$)","Acras de morue","Huîtres Rockefeller (+1,75$)","Mini-burger de veau","Fromage Oka en croûte de pacanes","Pogo maison","Bavette de bœuf AAA","Ratatouille","Poulet frit","Œuf farci au homard","Crevettes en tempura","Raviolis de porc braisé","Poutine en une bouchée","Tartare aux 2 saumons (+1,50$)","Kebab de porc et crevette","Arancini au smoked meat","Asperges et prosciutto","Joue de porc braisée","Guédille au homard (+1,50$)","Salade de crevettes nordiques (+1,50$)","Brochette de tomates cerises","Crevette tandoori","Salade de maïs","Salade de betteraves","Stick de poulet à la téquila"]],["Bouchées sucrées",["Guimauves enrobées de chocolat","Mini tartelette au citron","Dans une verrine (crémeux à la vanille, brownies, pacanes)"]]],
+ n:"Le prix inclus le personnel sur place (chef et serveur(s)) pour une durée de 4 heures (supplément pour temps supplémentaire). Le prix n'inclus pas les taxes. Pourboire à votre discrétion. Les prix peuvent être modifiés sans préavis."},
+{id:"gastro",t:"Repas gastronomique à domicile",s:"Chef (ou chef et serveur(s)) sur place pour une durée de 4 heures",p:[["4 Services — 1 bouchée, potage, plat principal, dessert","À partir de 80$"],["4 Services LUXE — 1 bouchée, entrée, plat principal, dessert","À partir de 90$"],["5 Services — 1 bouchée, potage, entrée, plat principal, dessert","À partir de 100$"],["5 Services LUXE — 1 bouchée, entrée 1, entrée 2, plat principal, dessert (choix du chef)","À partir de 109$"],["2 bouchées","7,95$"],["3 bouchées","10,95$"],["4 bouchées","13,50$"],["5 bouchées","15,50$"],["Pause glacée « Tout citron » (sorbet citron, liqueur Limoncello maison)","12$"]],
+ x:[["Potages",["Potage aux asperges","Potage aux carottes","Potage au maïs","Velouté aux champignons"]],["Entrées",["Ravioli de porc effiloché","Arancini aux champignons","Demi-caille impériale de Cap St-Ignace","Carpaccio de wapiti","Flanc de porc « Cochon cent façons »","Côte de romaine César","Foie gras au torchon (+3$)","Pieuvre grillée (+4$)"]],["Plats principaux",["Jarret d'agneau braisé","Joue de bœuf braisée","Joue de porc braisée au vin blanc","« Surf and Turf »","Thon rouge","Filet mignon de veau de lait"]],["Desserts",["Crémeux au basilic","Dans une verrine","Paris-Brest","Crème brûlée au citron"]]],
+ n:"Le prix inclus le personnel sur place (chef ou chef et serveur(s)) pour une durée de 4 heures (supplément pour temps supplémentaire). Le prix n'inclus pas les taxes. Pourboire à votre discrétion. Les prix peuvent être modifiés sans préavis."},
+{id:"mariage",t:"Réception et mariage",s:"Prix calculés pour des groupes de 40 personnes et plus",p:[["3 bouchées","8,95$"],["4 bouchées","11,95$"],["5 bouchées","14,95$"],["Formule Bronze","49$"],["Formule Argent","59$"],["Formule Or","65$"],["Dessert — dans une verrine","10$"],["Dessert — croustade pommes, bleuets et érable","7$"],["Dessert — gâteau aux carottes","6$"],["Fin de soirée — poutine classique","7$"],["Fin de soirée — poutine smoked meat","11$"],["Fin de soirée — poutine porc effiloché","11$"],["Fin de soirée — poutine poulet frit","12$"],["Fin de soirée — bar à poutine","13$"],["Fin de soirée — nachos","11$ par personne"],["Chef (temps supplémentaire)","55$/heure"],["Maître d'hôtel (temps supplémentaire)","55$/heure"],["Aide cuisinier (temps supplémentaire)","35$/heure"],["Serveur (temps supplémentaire)","35$/heure"]],
+ x:[["Plats principaux",["Inclus féculent et légumes, à déterminer selon vos goûts et les installations disponible à votre salle","Joue de porc (+4$)","Saumon Rockefeller (+3$)","Joue de bœuf (+7$)","Thon rouge (+10$)","Filet de veau (+14$)"]]],
+ n:"Les prix incluent le personnel pour une durée de 4 heures. Un supplément peut être ajouté pour la planification de votre événement. Les prix peuvent être modifiés sans préavis. Détails des formules : contactez Karine au 514-268-7908."},
+{id:"buffet",t:"Buffet froid",s:"25 personnes et plus",p:[["PLAN A — 2 sandwichs, 2 salades, 1 dessert","21,25$"],["PLAN B — 3 sandwichs, 2 salades, fromage cheddar, 1 dessert","25,25$"],["PLAN C — 3 sandwichs, 3 salades, fromage cheddar, crudité et trempette, 1 dessert","28,25$"],["Sandwich en pointe, 25 à 59 personnes (2 choix de salades)","18,50$/pers"],["Sandwich en pointe, 60 à 99 personnes (3 choix de salades)","18$/pers"],["Sandwich en pointe, 100 personnes et plus (3 choix de salades)","17,50$/pers"],["Plateau de fromage fins, charcuterie et craquelins","À partir de 85$"],["Bouchée — bavette","3,50$/unité"],["Bouchée — salade de crevettes nordiques","3,35$/unité"],["Bouchée — stick de poulet","2,85$/unité"],["Bouchée — brochette de tomates","2,60$/unité"],["Bouchée — crevette tandoori","2,85$/unité"],["Bouchée — œuf farci au homard","2,95$/unité"],["Bouchée — guédille au homard","4,50$/unité"],["Forfait « TOUT INCLUS » (1 breuvage par personne, ustensiles biodégradables, assiettes, napkin, cuillères de service)","3,50$/personne"],["Eau de source (500ml)","2,00$"],["Eau gazéifiée (250ml)","2,25$"],["Pepsi, 7up ou thé glacé (canette)","2,50$"]],
+ x:[["Sandwichs",["Le Coq","Le Végé","Le Petit Cochon","Le Classique","Le Pêcheur","Le Jambon-Fromage","L'Italien","Moncoco","Le Cochon Parisien"]],["Desserts",["Croustade aux pommes et petits fruits","Gâteau aux carottes","Tarte au sucre","Carré décadent au chocolat","Suggestion du pâtissier"]]],
+ n:"Avant de passer votre commande, contactez-nous pour voir nos disponibilités. Les prix sont sujet à changement sans préavis."},
+{id:"dejeuner",t:"Déjeuner et brunch",s:"Un petit déjeuner au bureau ou un brunch entre amis",p:[["Boîte déjeuner (minimum 5 boîtes)","22,99$"],["Buffet déjeuner — Plan A (minimum 20 personnes)","20,25$"],["Buffet déjeuner — Plan B (minimum 20 personnes)","24,25$"],["Buffet déjeuner — Plan C (minimum 20 personnes)","27,25$"],["Fromage fins (extra)","6$"],["Café (café, sucre, lait, gobelet et thermos)","2,75$/personne"],["Jus assortis (orange, pomme, raisin)","1,75$"],["Eau","2,00$"],["Perrier","2,50$"],["Pepsi, 7up, thé glacé","2,50$"]],
+ x:[["Dans la boîte déjeuner",["Pain de campagne, salade crémeuse aux œufs et crevette","Wrap déjeuner","Bagel au saumon fumé","Salade de fruits","Muffins ou biscuits maison"]]],
+ n:"Contactez-nous pour voir les disponibilités : Karine, 514-268-7908."},
+{id:"lunch",t:"Boîtes à lunch gourmandes",s:"Commandez minimum 6 boîtes identiques",p:[["Salade de canard confit","26,99$"],["Tartare aux 2 saumons","26,99$"],["Ciabatta au filet mignon de porc","22,99$"],["Salade de poulet grillé","22,99$"],["« Choix du Chef » (sandwich)","22,99$"],["« Choix du Chef » (salade)","22,99$"],["Forfait « TOUT INCLUS »","3,50$/personne"]],x:[],n:"Les prix sont sujet à changement sans préavis."}];
+document.getElementById('tabs').innerHTML=M.map(function(m,i){return '<button data-t="'+m.id+'"'+(i?'':' class="on"')+'>'+m.t+'</button>'}).join('');
+document.getElementById('menus').innerHTML=M.map(function(m){return '<div class="menu-sec" id="m-'+m.id+'"><h2>'+m.t+'</h2><div class="sub">'+m.s+'</div><ul class="ml">'+m.p.map(function(i){return '<li><span>'+i[0]+'</span><span>'+i[1]+'</span></li>'}).join('')+'</ul>'+m.x.map(function(g){return '<h4>'+g[0]+'</h4><div class="chips">'+g[1].map(function(c){return '<span>'+c+'</span>'}).join('')+'</div>'}).join('')+'<p class="note">'+m.n+'</p></div>'}).join('');
+document.getElementById('tabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(c){c.classList.toggle('on',c===b)});document.getElementById('m-'+b.dataset.t).scrollIntoView({behavior:'smooth'})});
+function go(p,to){document.querySelector('.links').classList.remove('open');document.querySelectorAll('.page').forEach(function(x){x.classList.remove('on')});
+ if(p==='home'){document.body.classList.remove('sub');if(to){setTimeout(function(){document.getElementById(to).scrollIntoView()},20)}else window.scrollTo(0,0);}
+ else{document.body.classList.add('sub');document.getElementById('p-'+p).classList.add('on');window.scrollTo(0,0);}}
+document.addEventListener('click',function(e){var a=e.target.closest('[data-go]');if(!a)return;e.preventDefault();go(a.dataset.go,a.dataset.to)});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.rev').forEach(function(el){io.observe(el)});
+var pl=document.getElementById('plate');setTimeout(function(){pl.classList.add('open')},900);
+(function(){var i=document.getElementById('intro');var seen=false;try{seen=sessionStorage.getItem('cdl')}catch(e){}
+ if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){i.remove();return}
+ try{sessionStorage.setItem('cdl','1')}catch(e){}
+ function k(){if(!i.parentNode)return;i.classList.add('out');setTimeout(function(){i.remove()},500)}
+ i.addEventListener('click',k);setTimeout(k,1900)})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

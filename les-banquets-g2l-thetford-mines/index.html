@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Les banquets G2L · Traiteur Réception GL à Thetford Mines</title>
+<meta name="description" content="Traiteur Les banquets G2L (Réception GL) à Thetford Mines : buffets froids de 12,75 $ à 20,50 $ par personne, boîtes à lunch, extras à la carte. 197, rue Notre-Dame Est. 418-335-5708.">
+<meta name="theme-color" content="#5a1a2b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Les banquets G2L","alternateName":"Traiteur Réception GL","servesCuisine":"Traiteur","telephone":"+1-418-335-5708","email":"info@receptiongl.com","url":"https://receptiongl.com","priceRange":"$$",
+"address":{"@type":"PostalAddress","streetAddress":"197, rue Notre-Dame Est","addressLocality":"Thetford Mines","addressRegion":"QC","postalCode":"G6G 2S1","addressCountry":"CA"},
+"hasMenu":{"@type":"Menu","name":"Buffets froids et boîtes à lunch","hasMenuSection":[
+{"@type":"MenuSection","name":"Buffets froids (par personne, taxes et service en sus)","hasMenuItem":[
+{"@type":"MenuItem","name":"Le léger","offers":{"@type":"Offer","price":"12.75","priceCurrency":"CAD"}},
+{"@type":"MenuItem","name":"Le Populaire","offers":{"@type":"Offer","price":"13.75","priceCurrency":"CAD"}},
+{"@type":"MenuItem","name":"La Simplicité","offers":{"@type":"Offer","price":"14.00","priceCurrency":"CAD"}},
+{"@type":"MenuItem","name":"Le Goûter","offers":{"@type":"Offer","price":"14.25","priceCurrency":"CAD"}},
+{"@type":"MenuItem","name":"L'Universel","offers":{"@type":"Offer","price":"14.50","priceCurrency":"CAD"}},
+{"@type":"MenuItem","name":"Le Compromis","offers":{"@type":"Offer","price":"17.00","priceCurrency":"CAD"}},
+{"@type":"MenuItem","name":"Le Complet","offers":{"@type":"Offer","price":"18.25","priceCurrency":"CAD"}},
+{"@type":"MenuItem","name":"L'Abondant","offers":{"@type":"Offer","price":"20.50","priceCurrency":"CAD"}}]},
+{"@type":"MenuSection","name":"Boîtes à lunch (taxes en sus)","hasMenuItem":[
+{"@type":"MenuItem","name":"Boîte à lunch n° 1","offers":{"@type":"Offer","price":"13.75","priceCurrency":"CAD"}},
+{"@type":"MenuItem","name":"Boîte à lunch n° 2","offers":{"@type":"Offer","price":"15.75","priceCurrency":"CAD"}}]}]}}
+</script>
+<style>
+:root{--vin:#5a1a2b;--vin2:#7a2639;--creme:#fbf5ea;--papier:#f4ead8;--or:#c99a3d;--or2:#e5c27a;--encre:#2a1a1c;--doux:#6b5650;--ligne:#e3d4bb;--bandeau:32px}
+@media (max-width:519px){:root{--bandeau:48px}}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bandeau) + 70px)}
+body{margin:0;background:var(--creme);color:var(--encre);font:400 17px/1.6 "Nunito Sans",system-ui,sans-serif;padding-top:var(--bandeau)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;margin:0 0 .5em;overflow-wrap:anywhere}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+/* NAV */
+.nav{position:fixed;top:var(--bandeau);left:0;right:0;z-index:50;background:rgba(251,245,234,.97);border-bottom:1px solid var(--ligne)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.marque svg{width:46px;height:46px;flex:none}
+.marque b{font:700 18px/1.1 Fraunces,serif;color:var(--vin);display:block}
+.marque small{font-size:12px;color:var(--doux);letter-spacing:.06em;text-transform:uppercase}
+.liens{display:none;gap:26px;align-items:center}
+.liens a{text-decoration:none;font-weight:700;font-size:15px;color:var(--encre)}
+.liens a:hover{color:var(--vin2)}
+.liens .btn{padding:10px 18px}
+.liens a.btn-vin{color:#fff}
+.burger{width:44px;height:44px;border:0;background:var(--vin);border-radius:12px;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:#fff;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:#fff;transition:transform .25s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.ouvert .burger span{background:transparent}
+.ouvert .burger span::before{transform:translateY(6px) rotate(45deg)}
+.ouvert .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.tiroir{position:fixed;top:calc(var(--bandeau) + 64px);left:0;right:0;background:var(--creme);border-bottom:1px solid var(--ligne);padding:8px 20px 20px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s;z-index:49}
+.ouvert .tiroir{transform:none;opacity:1;pointer-events:auto}
+.tiroir a{display:block;padding:13px 4px;font-weight:700;text-decoration:none;border-bottom:1px solid var(--ligne)}
+@media (min-width:900px){.liens{display:flex}.burger,.tiroir{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:800;text-decoration:none;font-size:16px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-vin{background:var(--vin);color:#fff}
+.btn-or{background:var(--or);color:#2a1a1c}
+.btn-ligne{border:2px solid var(--vin);color:var(--vin)}
+/* HERO */
+.hero{position:relative;padding:112px 0 64px;background:radial-gradient(120% 80% at 80% 10%,#fff8ec 0,var(--creme) 55%,var(--papier) 100%);overflow:hidden}
+.flotte{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.85}
+.f svg{display:block;width:100%;height:auto}
+.f.loin{opacity:.35;filter:blur(1.5px)}
+@media (max-width:899px){.f{opacity:.3}.f.loin{opacity:.2}}
+.f .tourne{animation:flotte var(--d,9s) ease-in-out infinite alternate}
+.par{transform:translate3d(0,calc(var(--py,0) * var(--k,0.2) * 1px),0)}
+@keyframes flotte{from{transform:translateY(-8px) rotate(var(--r1,-8deg))}to{transform:translateY(10px) rotate(var(--r2,10deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:34px}
+.pastille{display:inline-block;background:#fff;border:1px solid var(--ligne);color:var(--vin);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(38px,9vw,70px);color:var(--vin)}
+.hero h1 em{color:var(--or);font-style:italic;display:block;font-size:.62em}
+.hero p.lead{font-size:clamp(17px,2.2vw,20px);color:var(--doux);max-width:34em;margin:0 0 24px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chiffres{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:15px;color:var(--doux)}
+.chiffres b{color:var(--vin);font-size:20px;font-family:Fraunces,serif}
+.plateau{position:relative;max-width:460px;margin:0 auto;width:100%}
+.plateau svg{width:100%;height:auto;display:block}
+@media (min-width:1024px){.hero{padding:150px 0 100px}.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+/* SECTIONS */
+section{position:relative}
+#buffets{overflow:hidden}
+.sec{padding:76px 0}
+.sur{font-weight:800;color:var(--or);letter-spacing:.14em;text-transform:uppercase;font-size:13px;margin-bottom:8px;display:block}
+.sec h2{font-size:clamp(30px,5.5vw,48px);color:var(--vin)}
+.intro{color:var(--doux);max-width:40em;margin:0 0 34px}
+.note{display:inline-block;background:var(--vin);color:#fff;border-radius:10px;padding:6px 12px;font-size:14px;font-weight:700}
+/* buffets = assiettes */
+.buffets{display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:700px){.buffets{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1100px){.buffets{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.assiette{background:#fff;border:1px solid var(--ligne);border-radius:22px;padding:22px 20px 20px;position:relative;min-width:0;opacity:0;transform:translateX(-60px) rotate(-4deg);transition:transform .7s cubic-bezier(.2,.9,.25,1.15),opacity .5s}
+.assiette:nth-child(even){transform:translateX(60px) rotate(4deg)}
+.assiette.servi{opacity:1;transform:none}
+.assiette::before{content:"";position:absolute;inset:7px;border:1px dashed var(--or2);border-radius:16px;pointer-events:none}
+.assiette .tete{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-bottom:2px solid var(--papier);padding-bottom:10px;margin-bottom:10px}
+.assiette h3{font-size:22px;margin:0;color:var(--vin)}
+.prix{font:700 22px/1 Fraunces,serif;color:var(--or);white-space:nowrap}
+.prix small{display:block;font:600 11px "Nunito Sans",sans-serif;color:var(--doux);text-align:right;margin-top:3px}
+.assiette ul{margin:0;padding:0;list-style:none;font-size:15px}
+.assiette li{padding:4px 0 4px 20px;position:relative}
+.assiette li::before{content:"";position:absolute;left:3px;top:12px;width:7px;height:7px;border-radius:50%;background:var(--or2)}
+.assiette li.plus{color:var(--vin2);font-weight:700}
+.assiette li.plus::before{background:var(--vin2)}
+.vedette{background:var(--vin);color:#fff;border-color:var(--vin)}
+.vedette h3,.vedette .prix{color:var(--or2)}
+.vedette .prix small{color:#e9d6d9}
+.vedette li.plus{color:#f6c9d2}.vedette li.plus::before{background:#f6c9d2}
+.vedette .tete{border-color:rgba(255,255,255,.15)}
+.ruban{position:absolute;top:-12px;right:16px;background:var(--or);color:#2a1a1c;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;letter-spacing:.04em}
+/* extras */
+.papier{background:var(--papier)}
+.extras{display:grid;gap:8px 44px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.extras{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ligneprix{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px dotted #cdb894;min-width:0}
+.ligneprix span:first-child{min-width:0;overflow-wrap:anywhere}
+.ligneprix .pts{flex:1;border-bottom:2px dotted #c9b38e;transform:translateY(-4px);min-width:14px}
+.ligneprix b{font-family:Fraunces,serif;color:var(--vin);white-space:nowrap}
+.ligneprix small{display:block;color:var(--doux);font-size:13px}
+/* lunch */
+.lunchs{display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.lunchs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.boite{background:#fff;border-radius:22px;border:1px solid var(--ligne);overflow:hidden;min-width:0}
+.boite .couv{background:linear-gradient(135deg,var(--vin),var(--vin2));color:#fff;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.boite .couv h3{margin:0;font-size:24px}
+.boite .couv .prix{color:var(--or2)}
+.boite .couv .prix small{color:#ead7da}
+.boite .corps{padding:18px 22px}
+.boite ul{margin:0 0 6px;padding-left:20px}
+.choix{background:var(--creme);border-radius:14px;padding:14px 16px;margin-top:12px;font-size:15px}
+.choix b{color:var(--vin)}
+.aussi{display:grid;gap:16px;grid-template-columns:minmax(0,1fr);margin-top:30px}
+@media (min-width:760px){.aussi{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.carte{background:#fff;border:1px solid var(--ligne);border-radius:18px;padding:20px;display:flex;gap:14px;align-items:center;min-width:0}
+.carte svg{width:52px;height:52px;flex:none}
+.carte h3{font-size:20px;margin:0 0 2px;color:var(--vin)}
+.carte p{margin:0;font-size:14px;color:var(--doux)}
+/* commander */
+.etapes{display:grid;gap:18px;grid-template-columns:minmax(0,1fr);counter-reset:e}
+@media (min-width:860px){.etapes{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.etape{background:#fff;border-radius:20px;padding:24px;border:1px solid var(--ligne);position:relative;min-width:0}
+.etape::before{counter-increment:e;content:counter(e);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--or);font:700 20px Fraunces,serif;color:#2a1a1c;margin-bottom:12px}
+.etape h3{color:var(--vin);font-size:21px}
+.etape p{margin:0;color:var(--doux)}
+/* contact */
+.contact{background:var(--vin);color:#fff;overflow:hidden}
+.contact h2{color:#fff}
+.contact .sur{color:var(--or2)}
+.cgrid{display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.cgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cbloc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:22px;min-width:0}
+.cbloc h3{color:var(--or2);font-size:20px}
+.cbloc p{margin:.2em 0}
+.cbloc a{color:#fff;font-weight:700;overflow-wrap:anywhere}
+footer{background:#2a1015;color:#d9c3c7;text-align:center;padding:28px 20px 100px;font-size:14px}
+@media (min-width:900px){footer{padding-bottom:28px}}
+footer a{color:var(--or2)}
+/* bouton d'appel cell */
+.appel{position:fixed;left:16px;right:16px;bottom:14px;z-index:60;display:flex;justify-content:center;gap:8px;background:var(--vin);color:#fff;text-decoration:none;font-weight:800;padding:15px;border-radius:999px;box-shadow:0 10px 24px rgba(90,26,43,.35)}
+@media (min-width:900px){.appel{display:none}}
+/* apparition */
+.monte{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.monte.vu{opacity:1;transform:none}
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--vin);display:grid;place-items:center;transition:opacity .5s}
+#intro.fin{opacity:0}
+#intro .scene{width:min(78vw,340px);text-align:center}
+#intro svg{width:100%;height:auto;overflow:visible}
+#intro .cloche{animation:souleve 1.1s .55s cubic-bezier(.5,0,.2,1) forwards;transform-origin:150px 150px}
+#intro .mono{opacity:0;animation:apparait .6s 1s forwards}
+#intro .vap{opacity:0;animation:vapeur 1.2s 1.1s ease-out forwards}
+#intro p{color:var(--or2);font:500 italic 20px Fraunces,serif;margin:14px 0 0;opacity:0;animation:apparait .6s 1.3s forwards}
+@keyframes souleve{to{transform:translate(70px,-150px) rotate(24deg);opacity:0}}
+@keyframes apparait{to{opacity:1}}
+@keyframes vapeur{0%{opacity:0;transform:translateY(10px)}40%{opacity:.8}100%{opacity:0;transform:translateY(-40px)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.assiette,.monte{opacity:1!important;transform:none!important}.par{transform:none!important}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Les banquets G2L — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <div class="scene">
+  <svg viewBox="0 0 300 230">
+   <g class="vap" stroke="#e5c27a" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7">
+    <path d="M120 120c-10-14 10-22 0-38"/><path d="M150 112c-10-14 10-22 0-38"/><path d="M180 120c-10-14 10-22 0-38"/>
+   </g>
+   <g class="mono">
+    <circle cx="150" cy="150" r="56" fill="#fbf5ea"/>
+    <circle cx="150" cy="150" r="48" fill="none" stroke="#c99a3d" stroke-width="2"/>
+    <text x="150" y="164" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="700" font-size="40" fill="#5a1a2b">G2L</text>
+   </g>
+   <g class="cloche">
+    <path d="M62 190a88 88 0 0 1 176 0z" fill="#e5c27a"/>
+    <path d="M78 186a72 72 0 0 1 60-68" stroke="#fff6dc" stroke-width="6" fill="none" stroke-linecap="round" opacity=".7"/>
+    <circle cx="150" cy="96" r="10" fill="#c99a3d"/>
+   </g>
+   <rect x="40" y="188" width="220" height="10" rx="5" fill="#c99a3d"/>
+  </svg>
+  <p>Traiteur Réception GL</p>
+ </div>
+</div>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a class="marque" href="#haut" aria-label="Les banquets G2L, accueil">
+   <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#5a1a2b"/><circle cx="30" cy="30" r="23" fill="none" stroke="#c99a3d" stroke-width="1.5"/><path d="M15 36a15 15 0 0 1 30 0z" fill="#e5c27a"/><circle cx="30" cy="19" r="2.6" fill="#e5c27a"/><rect x="12" y="36" width="36" height="3" rx="1.5" fill="#e5c27a"/><text x="30" y="49.5" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="700" font-size="9" fill="#fbf5ea">G2L</text></svg>
+   <span><b>Les banquets G2L</b><small>Traiteur Réception GL</small></span>
+  </a>
+  <nav class="liens" aria-label="Navigation principale">
+   <a href="#buffets">Buffets froids</a><a href="#extras">Extras</a><a href="#lunch">Boîtes à lunch</a><a href="#contact">Nous rejoindre</a>
+   <a class="btn btn-vin" href="tel:+14183355708">418-335-5708</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+ </div>
+ <div class="tiroir">
+  <a href="#buffets">Buffets froids</a><a href="#extras">Extras à la carte</a><a href="#lunch">Boîtes à lunch</a><a href="#commander">Comment commander</a><a href="#contact">Nous rejoindre</a>
+ </div>
+</header>
+
+<main id="haut">
+<section class="hero">
+ <div class="flotte" aria-hidden="true">
+  <!-- pointe de sandwich -->
+  <div class="f par" style="--k:.35;left:4%;top:16%;width:74px"><div class="tourne" style="--d:8s"><svg viewBox="0 0 80 70"><path d="M6 64 40 6l34 58z" fill="#f2d49a"/><path d="M10 60 40 10l30 50" fill="none" stroke="#c98b3e" stroke-width="4"/><path d="M14 54h52" stroke="#7cb342" stroke-width="5" stroke-linecap="round"/><path d="M18 46h44" stroke="#e57373" stroke-width="5" stroke-linecap="round"/></svg></div></div>
+  <!-- oeuf farci -->
+  <div class="f par" style="--k:.22;right:6%;top:12%;width:70px"><div class="tourne" style="--d:10s;--r1:6deg;--r2:-10deg"><svg viewBox="0 0 80 50"><ellipse cx="40" cy="28" rx="36" ry="20" fill="#fffdf6" stroke="#eadcc0" stroke-width="2"/><path d="M22 24q6-12 18-4 12-8 18 4-6 12-18 6-12 6-18-6z" fill="#f6c443"/><circle cx="34" cy="22" r="2" fill="#d9534f"/><circle cx="46" cy="25" r="2" fill="#d9534f"/></svg></div></div>
+  <!-- grappe de raisins -->
+  <div class="f par loin" style="--k:.12;left:38%;top:6%;width:56px"><div class="tourne" style="--d:12s"><svg viewBox="0 0 60 80"><path d="M30 4v12" stroke="#6d4c41" stroke-width="3"/><path d="M30 10q12-8 20 0-10 4-20 0" fill="#7cb342"/><g fill="#8e5aa8"><circle cx="20" cy="24" r="8"/><circle cx="36" cy="24" r="8"/><circle cx="28" cy="36" r="8"/><circle cx="14" cy="38" r="7"/><circle cx="42" cy="38" r="7"/><circle cx="22" cy="50" r="7"/><circle cx="36" cy="50" r="7"/><circle cx="29" cy="62" r="7"/></g></svg></div></div>
+  <!-- pâtisserie -->
+  <div class="f par" style="--k:.3;right:12%;bottom:12%;width:66px"><div class="tourne" style="--d:9s;--r1:-12deg;--r2:6deg"><svg viewBox="0 0 70 70"><path d="M12 36h46l-6 28H18z" fill="#c98b3e"/><path d="M16 40l4 22M26 40l2 22M36 40v22M46 40l-2 22M54 40l-4 22" stroke="#a46d2a" stroke-width="2"/><path d="M8 36q0-22 27-22t27 22z" fill="#f8bbd0"/><circle cx="35" cy="10" r="6" fill="#d32f2f"/></svg></div></div>
+  <!-- carotte crudité -->
+  <div class="f par" style="--k:.4;left:8%;bottom:10%;width:70px"><div class="tourne" style="--d:11s;--r1:30deg;--r2:44deg"><svg viewBox="0 0 90 30"><path d="M4 15 70 5l2 20z" fill="#f08a24"/><path d="M14 12l6 4M30 10l5 5M46 9l4 5" stroke="#c9661a" stroke-width="2"/><path d="M70 8q12-8 18-2M71 15h16M70 22q12 8 18 2" stroke="#6aa84f" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div></div>
+  <!-- tasse de café -->
+  <div class="f par loin" style="--k:.15;right:34%;bottom:4%;width:60px"><div class="tourne" style="--d:13s"><svg viewBox="0 0 70 70"><path d="M24 20c-6-8 6-10 0-18M36 20c-6-8 6-10 0-18" stroke="#c9b38e" stroke-width="3" fill="none"/><path d="M10 26h40v18a20 20 0 0 1-40 0z" fill="#fff" stroke="#5a1a2b" stroke-width="3"/><path d="M50 30h6a8 8 0 0 1 0 16h-6" stroke="#5a1a2b" stroke-width="3" fill="none"/></svg></div></div>
+  <!-- cube de fromage -->
+  <div class="f par loin" style="--k:.18;left:52%;bottom:20%;width:44px"><div class="tourne" style="--d:10s;--r1:10deg;--r2:-14deg"><svg viewBox="0 0 50 50"><path d="M6 16 26 6l18 10v22L26 46 6 36z" fill="#f6c443"/><path d="M6 16l20 10 18-10M26 26v20" stroke="#d9a520" stroke-width="2" fill="none"/></svg></div></div>
+  <!-- olive / cornichon -->
+  <div class="f par" style="--k:.26;left:46%;bottom:6%;width:40px;opacity:.5"><div class="tourne" style="--d:8s"><svg viewBox="0 0 50 30"><ellipse cx="25" cy="15" rx="22" ry="11" fill="#7a9a3a"/><circle cx="14" cy="12" r="2" fill="#5f7d26"/><circle cx="26" cy="18" r="2" fill="#5f7d26"/><circle cx="36" cy="11" r="2" fill="#5f7d26"/></svg></div></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="pastille">Traiteur · Thetford Mines</span>
+   <h1>Les banquets G2L<em>Traiteur Réception GL</em></h1>
+   <p class="lead">Buffets froids, boîtes à lunch et extras à la carte pour vos réunions, fêtes de famille et événements. Préparés à Thetford Mines, sur la rue Notre-Dame Est.</p>
+   <div class="cta">
+    <a class="btn btn-vin" href="tel:+14183355708"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Appeler</a>
+    <a class="btn btn-ligne" href="#buffets">Voir le menu</a>
+   </div>
+   <div class="chiffres"><span><b>8</b> formules de buffet froid</span><span>dès <b>12,75 $</b> par personne</span><span><b>2</b> boîtes à lunch</span></div>
+  </div>
+  <div class="plateau monte" aria-hidden="true">
+   <svg viewBox="0 0 440 340">
+    <ellipse cx="220" cy="300" rx="200" ry="26" fill="#5a1a2b" opacity=".12"/>
+    <ellipse cx="220" cy="270" rx="200" ry="56" fill="#e5c27a"/>
+    <ellipse cx="220" cy="262" rx="186" ry="48" fill="#fffaf0"/>
+    <ellipse cx="220" cy="262" rx="170" ry="40" fill="none" stroke="#c99a3d" stroke-width="2" stroke-dasharray="4 7"/>
+    <g transform="translate(70 196)"><path d="M0 60 40 0l40 60z" fill="#f2d49a"/><path d="M8 52h64" stroke="#7cb342" stroke-width="6" stroke-linecap="round"/><path d="M14 42h52" stroke="#e57373" stroke-width="6" stroke-linecap="round"/><path d="M4 58 40 6l36 52" fill="none" stroke="#c98b3e" stroke-width="5"/></g>
+    <g transform="translate(130 188)"><path d="M0 64 40 0l40 64z" fill="#f6dfae"/><path d="M8 56h64" stroke="#f6c443" stroke-width="6" stroke-linecap="round"/><path d="M14 46h52" stroke="#ef9a9a" stroke-width="6" stroke-linecap="round"/><path d="M4 62 40 6l36 56" fill="none" stroke="#c98b3e" stroke-width="5"/></g>
+    <g transform="translate(232 228)"><ellipse cx="22" cy="14" rx="22" ry="13" fill="#fff" stroke="#eadcc0" stroke-width="2"/><path d="M10 12q4-8 12-3 8-5 12 3-4 8-12 4-8 4-12-4z" fill="#f6c443"/></g>
+    <g transform="translate(280 236)"><ellipse cx="22" cy="14" rx="22" ry="13" fill="#fff" stroke="#eadcc0" stroke-width="2"/><path d="M10 12q4-8 12-3 8-5 12 3-4 8-12 4-8 4-12-4z" fill="#f6c443"/></g>
+    <g transform="translate(300 180)" fill="#8e5aa8"><circle cx="20" cy="20" r="11"/><circle cx="40" cy="20" r="11"/><circle cx="30" cy="36" r="11"/><circle cx="12" cy="38" r="10"/><circle cx="48" cy="38" r="10"/><circle cx="22" cy="54" r="10"/><circle cx="40" cy="54" r="10"/><path d="M30 10V0" stroke="#6d4c41" stroke-width="4"/></g>
+    <g transform="translate(250 196)"><path d="M0 14 22 4l20 10v18L22 42 0 32z" fill="#f6c443"/><path d="M0 14l22 10 20-10M22 24v18" stroke="#d9a520" stroke-width="2" fill="none"/></g>
+    <g transform="translate(176 120)"><path d="M14 50h60l-8 40H22z" fill="#c98b3e"/><path d="M6 50q0-34 38-34t38 34z" fill="#f8bbd0"/><circle cx="44" cy="12" r="9" fill="#d32f2f"/></g>
+    <g transform="translate(270 110)"><path d="M10 40h48v34H10z" fill="#fff" stroke="#c99a3d" stroke-width="2"/><path d="M4 40q30-30 60 0" fill="#7a2639"/><path d="M20 56h28M20 64h20" stroke="#c99a3d" stroke-width="2"/></g>
+    <g transform="translate(40 120) rotate(-12)"><rect x="0" y="0" width="120" height="54" rx="10" fill="#5a1a2b"/><text x="60" y="24" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="15" fill="#e5c27a" font-weight="700">dès 12,75 $</text><text x="60" y="42" text-anchor="middle" font-family="Nunito Sans,sans-serif" font-size="11" fill="#fbf5ea">par personne</text></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="buffets">
+ <div class="wrap">
+  <span class="sur">Le menu</span>
+  <h2>Nos buffets froids</h2>
+  <p class="intro">Huit formules prêtes à servir, du lunch léger au buffet abondant. Prix par personne. <span class="note">Taxes et service en sus</span></p>
+  <div class="buffets">
+   <article class="assiette"><div class="tete"><h3>Le léger</h3><div class="prix">12,75 $<small>par personne</small></div></div><ul><li>Crudités, marinades et trempette</li><li>Sandwichs assortis (4 pointes par personne)</li><li>Œufs farcis</li><li>Pâtisseries individuelles ou gâteau</li></ul></article>
+   <article class="assiette vedette"><div class="tete"><h3>Le Populaire</h3><div class="prix">13,75 $<small>par personne</small></div></div><ul><li>Crudités, marinades et trempette</li><li>Sandwichs assortis (6 pointes par personne)</li><li>Salades 3 choix (riz, macaroni, patates, chou, verte, fusilli)</li><li>Pâtisseries individuelles ou gâteau</li><li class="plus">Ajoutez 2,25 $ pour fromage et raisins</li><li class="plus">Ajoutez 2,75 $ pour viandes froides assorties</li><li class="plus">Ajoutez 5,00 $ pour fromage et raisins et viandes froides assorties</li></ul></article>
+   <article class="assiette"><div class="tete"><h3>La Simplicité</h3><div class="prix">14,00 $<small>par personne</small></div></div><ul><li>Crudités, marinades et trempette</li><li>Sandwichs assortis (4 pointes par personne)</li><li>Salade de chou crémeuse</li><li>Pains pita farcis (salade poulet et jambon)</li><li>Pâtisseries individuelles</li></ul></article>
+   <article class="assiette"><div class="tete"><h3>Le Goûter</h3><div class="prix">14,25 $<small>par personne</small></div></div><ul><li>Crudités, marinades et trempette</li><li>Sandwichs assortis (6 pointes par personne)</li><li>Œufs farcis</li><li>Salade de chou crémeuse</li><li>Plateau de fromage en cubes</li><li>Pâtisseries individuelles ou gâteau</li></ul></article>
+   <article class="assiette"><div class="tete"><h3>L'Universel</h3><div class="prix">14,50 $<small>par personne</small></div></div><ul><li>Crudités, marinades et trempette</li><li>Sandwichs assortis (6 pointes par personne)</li><li>Salades (2 choix)</li><li>Plateau de viandes froides</li><li>Œufs farcis</li><li>Pâtisseries individuelles ou gâteau</li></ul></article>
+   <article class="assiette"><div class="tete"><h3>Le Compromis</h3><div class="prix">17,00 $<small>par personne</small></div></div><ul><li>Crudités, marinades et trempette</li><li>Sandwichs assortis (4 pointes par personne)</li><li>Fajitas (salade de poulet et jambon)</li><li>Plateau de pâté de foie et baguettes</li><li>Plateau de fromage en cubes</li><li>Pâtisseries individuelles ou gâteau</li></ul></article>
+   <article class="assiette"><div class="tete"><h3>Le Complet</h3><div class="prix">18,25 $<small>par personne</small></div></div><ul><li>Crudités, marinades et trempette</li><li>Sandwichs assortis (4 pointes par personne)</li><li>Fajitas (salade de poulet et jambon)</li><li>Œufs farcis</li><li>Plateau de viandes froides</li><li>Salades (3 choix)</li><li>Pâtisseries individuelles ou gâteau</li></ul></article>
+   <article class="assiette vedette"><span class="ruban">Le plus garni</span><div class="tete"><h3>L'Abondant</h3><div class="prix">20,50 $<small>par personne</small></div></div><ul><li>Crudités, marinades et trempette</li><li>Sandwichs assortis (4 pointes par personne)</li><li>Œufs farcis</li><li>Fajitas (salade de poulet et jambon)</li><li>Salades (2 choix)</li><li>Plateau de fromage en cubes</li><li>Mini pâté à la viande</li><li>Dumplings</li><li>Pâtisseries individuelles ou gâteau</li></ul></article>
+  </div>
+ </div>
+</section>
+
+<section class="sec papier" id="extras">
+ <div class="wrap">
+  <span class="sur">À la carte</span>
+  <h2>Les extras</h2>
+  <p class="intro">Pour compléter votre buffet ou bâtir le vôtre. <span class="note">Taxes et service en sus</span></p>
+  <div class="extras monte">
+   <div class="ligneprix"><span>Pain fourré (1)</span><span class="pts"></span><b>2,50 $</b></div>
+   <div class="ligneprix"><span>Desserts assortis (2)</span><span class="pts"></span><b>3,00 $</b></div>
+   <div class="ligneprix"><span>Salade</span><span class="pts"></span><b>2,50 $</b></div>
+   <div class="ligneprix"><span>Salade Découvertes</span><span class="pts"></span><b>3,25 $</b></div>
+   <div class="ligneprix"><span>Sandwichs (pain complet)</span><span class="pts"></span><b>30,00 $</b></div>
+   <div class="ligneprix"><span>Sandwichs découvertes<small>Au choix : croissant, panini, focaccia. Garnitures au choix : poire et brie, canneberge, tomate séchée, oignon confit, pomme et fromage suisse</small></span><span class="pts"></span><b>4,00 $</b></div>
+   <div class="ligneprix"><span>Consommé</span><span class="pts"></span><b>2,00 $</b></div>
+   <div class="ligneprix"><span>Soupe ou potage</span><span class="pts"></span><b>4,50 $</b></div>
+   <div class="ligneprix"><span>Mini fondues parmesan (4)</span><span class="pts"></span><b>8,00 $</b></div>
+   <div class="ligneprix"><span>Saucisses cocktail</span><span class="pts"></span><b>3,50 $</b></div>
+   <div class="ligneprix"><span>Ailes de poulet (8)</span><span class="pts"></span><b>15,00 $</b></div>
+   <div class="ligneprix"><span>Mini quiches lorraines (2)</span><span class="pts"></span><b>3,00 $</b></div>
+   <div class="ligneprix"><span>Mini pâté à la viande</span><span class="pts"></span><b>3,50 $</b></div>
+   <div class="ligneprix"><span>Boulettes de viande en sauce</span><span class="pts"></span><b>3,50 $</b></div>
+   <div class="ligneprix"><span>Œufs farcis</span><span class="pts"></span><b>1,50 $</b></div>
+   <div class="ligneprix"><span>Crudités, marinades et trempette</span><span class="pts"></span><b>2,25 $</b></div>
+   <div class="ligneprix"><span>Fromage et raisins</span><span class="pts"></span><b>2,50 $</b></div>
+   <div class="ligneprix"><span>Dumplings (4)</span><span class="pts"></span><b>3,75 $</b></div>
+   <div class="ligneprix"><span>Mini pizza</span><span class="pts"></span><b>3,50 $</b></div>
+   <div class="ligneprix"><span>Sous-marin (poulet, jambon)</span><span class="pts"></span><b>6,50 $</b></div>
+   <div class="ligneprix"><span>Fajitas (poulet, jambon)</span><span class="pts"></span><b>4,50 $</b></div>
+   <div class="ligneprix"><span>Muffin varié</span><span class="pts"></span><b>1,75 $</b></div>
+   <div class="ligneprix"><span>Breuvage<small>Café, boisson gazeuse, jus de légumes ou de fruits, eau, Perrier</small></span><span class="pts"></span><b>2,25 $</b></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="lunch">
+ <div class="wrap">
+  <span class="sur">Repas individuels</span>
+  <h2>Boîtes à lunch</h2>
+  <p class="intro">Un repas complet par personne, prêt à distribuer. <span class="note">Taxes en sus</span></p>
+  <div class="lunchs">
+   <article class="boite monte"><div class="couv"><h3>Boîte n° 1</h3><div class="prix">13,75 $<small>par personne</small></div></div><div class="corps"><ul><li>Crudités</li><li>Sandwichs assortis (6 pointes par personne)</li><li>Salade (1 choix : riz brun, macaroni, patates, chou, verte, carotte et fusilli)</li><li>Pâtisseries individuelles</li></ul></div></article>
+   <article class="boite monte"><div class="couv"><h3>Boîte n° 2</h3><div class="prix">15,75 $<small>par personne</small></div></div><div class="corps"><ul><li>Crudités</li><li>Sandwichs assortis (6 pointes par personne)</li><li>Fromage et raisins</li><li>Salade (1 choix : riz brun, macaroni, patates, chou, verte, carotte et fusilli)</li><li>Pâtisseries individuelles</li></ul></div></article>
+  </div>
+  <div class="choix monte"><b>Sandwich au choix (extra de 2,00 $) :</b> fajitas (jambon, poulet), croissant jambon, sous-marin, panini.<br><b>Salade découverte (extra de 3,25 $ par personne) :</b> césar, pomme, brocoli, légumineuses, couscous, fèves, concombre aneth, orge et maïs, cœur d'artichaut, penne bruschetta, farfalle.<br><b>Breuvage :</b> eau, boisson gazeuse, jus de tomate, jus de fruits — 2,50 $ par personne. <b>Café :</b> 2,25 $ par personne + 12,00 $ la cafetière jetable.</div>
+  <div class="aussi">
+   <div class="carte monte"><svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#f4ead8"/><ellipse cx="30" cy="36" rx="18" ry="6" fill="#fff" stroke="#c99a3d" stroke-width="2"/><circle cx="24" cy="32" r="5" fill="#f6c443"/><path d="M32 30h10" stroke="#c98b3e" stroke-width="5" stroke-linecap="round"/></svg><div><h3>Brunch</h3><p>Appelez-nous pour le menu et les prix.</p></div></div>
+   <div class="carte monte"><svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#f4ead8"/><path d="M14 34h32a16 16 0 0 1-32 0z" fill="#5a1a2b"/><path d="M24 26c-4-5 4-7 0-12M34 26c-4-5 4-7 0-12" stroke="#c99a3d" stroke-width="2.5" fill="none"/></svg><div><h3>Repas chauds</h3><p>Appelez-nous pour le menu et les prix.</p></div></div>
+   <div class="carte monte"><svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#f4ead8"/><path d="M10 30h40" stroke="#6d4c41" stroke-width="3"/><ellipse cx="30" cy="30" rx="14" ry="8" fill="#c98b3e"/><path d="M18 46l6-8M42 46l-6-8M26 48h8" stroke="#e57373" stroke-width="3" stroke-linecap="round"/></svg><div><h3>Méchoui</h3><p>Appelez-nous pour le menu et les prix.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec papier" id="commander">
+ <div class="wrap">
+  <span class="sur">Simple comme un coup de fil</span>
+  <h2>Comment commander</h2>
+  <div class="etapes">
+   <div class="etape monte"><h3>Choisissez</h3><p>Une formule de buffet froid, une boîte à lunch ou vos extras à la carte.</p></div>
+   <div class="etape monte"><h3>Appelez-nous</h3><p>Au <span style="white-space:nowrap">418-335-5708</span> ou au cellulaire <span style="white-space:nowrap">418-814-9708</span>, avec le nombre de personnes et la date.</p></div>
+   <div class="etape monte"><h3>Régalez-vous</h3><p>On s'occupe du buffet, vous vous occupez de vos invités.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec contact" id="contact">
+ <div class="wrap">
+  <span class="sur">Nous rejoindre</span>
+  <h2>Parlons de votre événement</h2>
+  <div class="cgrid">
+   <div class="cbloc"><h3>Téléphone</h3><p>Tél. : <a href="tel:+14183355708">418-335-5708</a></p><p>Cell. : <a href="tel:+14188149708">418-814-9708</a></p></div>
+   <div class="cbloc"><h3>Adresse</h3><p>197, rue Notre-Dame Est<br>Thetford Mines (Québec) G6G 2S1</p><p><a href="https://www.google.com/maps/search/?api=1&query=197+rue+Notre-Dame+Est+Thetford+Mines+QC+G6G+2S1" target="_blank" rel="noopener">Voir sur Google Maps →</a></p></div>
+   <div class="cbloc"><h3>Courriel et heures</h3><p><a href="mailto:info@receptiongl.com">info@receptiongl.com</a></p><p>Appelez-nous pour les heures.</p></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>© Les banquets G2L · Traiteur Réception GL · 197, rue Notre-Dame Est, Thetford Mines · <a href="tel:+14183355708">418-335-5708</a></footer>
+
+<a class="appel" href="tel:+14183355708"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Appeler le traiteur · 418-335-5708</a>
+
+<script>
+(function(){
+ var reduit=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var intro=document.getElementById('intro');
+ var vu=false;try{vu=sessionStorage.getItem('g2l-intro')==='1'}catch(e){}
+ function retire(){if(!intro||!intro.parentNode)return;intro.classList.add('fin');setTimeout(function(){intro&&intro.parentNode&&intro.parentNode.removeChild(intro);intro=null},500)}
+ if(reduit||vu){intro.parentNode.removeChild(intro);intro=null}
+ else{try{sessionStorage.setItem('g2l-intro','1')}catch(e){}intro.addEventListener('click',retire);setTimeout(retire,2100)}
+ var nav=document.getElementById('nav'),b=document.getElementById('burger');
+ b.addEventListener('click',function(){var o=nav.classList.toggle('ouvert');b.setAttribute('aria-expanded',o?'true':'false')});
+ nav.querySelectorAll('.tiroir a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('ouvert');b.setAttribute('aria-expanded','false')})});
+ if('IntersectionObserver' in window&&!reduit){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(e.target.classList.contains('assiette')?'servi':'vu');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.assiette').forEach(function(el,i){el.style.transitionDelay=(i%4)*90+'ms';io.observe(el)});
+  document.querySelectorAll('.monte').forEach(function(el){io.observe(el)});
+ }else{document.querySelectorAll('.assiette').forEach(function(el){el.classList.add('servi')});document.querySelectorAll('.monte').forEach(function(el){el.classList.add('vu')})}
+ if(!reduit){var hero=document.querySelector('.hero'),t=false;
+  window.addEventListener('scroll',function(){if(t)return;t=true;requestAnimationFrame(function(){var y=Math.min(window.scrollY,900);hero.style.setProperty('--py',(-y).toFixed(1));t=false})},{passive:true});}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

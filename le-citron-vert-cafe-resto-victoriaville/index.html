@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Le Citron Vert Café Resto · Victoriaville — dîners maison, traiteur et buffets</title>
+<meta name="description" content="Le Citron Vert Café Resto, 595, rue Notre-Dame Ouest à Victoriaville : dîners maison du mardi au vendredi, plats pour emporter, événements privés et service de traiteur ou buffet de 20 à 1000 personnes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Le Citron Vert Café Resto","telephone":"+1-819-752-4254","email":"info@citronvertvictoriaville.ca","address":{"@type":"PostalAddress","streetAddress":"595, rue Notre-Dame Ouest","addressLocality":"Victoriaville","addressRegion":"QC","addressCountry":"CA"},"servesCuisine":"Cuisine maison","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"15:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"7"},"sameAs":["https://facebook.com/citronvertvictoriaville"]}
+</script>
+<style>
+:root{
+  --lime:#8cc63f;--lime-d:#5e9a1f;--leaf:#2f5a2a;--forest:#1d3a1f;--ink:#1f2a1c;
+  --cream:#fbf6e9;--paper:#f3ecd8;--lemon:#f4d23c;--rust:#b8572e;--muted:#5b6655;
+  --r:18px;--max:1180px;--ban:32px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.1;letter-spacing:-.01em}
+p,li,blockquote{overflow-wrap:anywhere}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+.ban{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px}
+/* NAV */
+.nav{position:fixed;top:var(--ban);left:0;right:0;z-index:900;background:rgba(251,246,233,.97);border-bottom:1px solid rgba(47,90,42,.12)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand b{font-family:'Fraunces',serif;font-size:21px;color:var(--forest);white-space:nowrap}
+.brand small{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--lime-d);font-weight:600}
+.links{display:none;gap:4px;align-items:center}
+.links a,.links button{font:600 15px 'Work Sans',sans-serif;color:var(--forest);text-decoration:none;padding:9px 13px;border-radius:999px;background:none;border:0;cursor:pointer}
+.links a:hover,.links button:hover{background:rgba(140,198,63,.18)}
+.links .call{background:var(--forest);color:#fff}
+.links .call:hover{background:var(--leaf)}
+.burger{width:46px;height:46px;border:0;border-radius:12px;background:var(--forest);color:#fff;display:grid;place-items:center;cursor:pointer}
+.mnav{display:none;position:fixed;left:0;right:0;top:calc(var(--ban) + 66px);z-index:899;background:var(--cream);border-bottom:1px solid rgba(47,90,42,.15);padding:10px 22px 20px}
+.mnav.open{display:block}
+.mnav a,.mnav button{display:block;width:100%;text-align:left;font:600 18px 'Work Sans',sans-serif;color:var(--forest);text-decoration:none;padding:13px 4px;border:0;border-bottom:1px solid rgba(47,90,42,.1);background:none;cursor:pointer}
+@media(min-width:960px){.links{display:flex}.burger{display:none}.mnav{display:none!important}}
+/* HERO */
+.hero{position:relative;overflow:hidden;padding:calc(var(--ban) + 66px + 46px) 0 70px;background:radial-gradient(120% 80% at 85% 10%,#e6f3cf 0%,rgba(230,243,207,0) 60%),linear-gradient(180deg,var(--cream),var(--paper))}
+.hero .wrap{position:relative;z-index:3;display:grid;gap:40px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--lime-d);background:#fff;border:1px solid rgba(94,154,31,.3);padding:7px 14px;border-radius:999px}
+.hero h1{font-size:clamp(42px,9vw,82px);color:var(--forest);margin:18px 0 14px;font-weight:800}
+.hero h1 em{font-style:italic;color:var(--lime-d)}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:560px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:9px;font:700 16px 'Work Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--forest);cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--forest);color:#fff}
+.btn.s{background:transparent;color:var(--forest)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:15px;color:var(--leaf);font-weight:500}
+.facts span{display:flex;align-items:center;gap:7px}
+.plate{position:relative;justify-self:center;width:min(420px,86vw);aspect-ratio:1}
+.plate .disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 50% 50%,#fff 0 56%,#efe7cf 57% 63%,#fff 64% 100%);box-shadow:0 30px 60px -20px rgba(29,58,31,.35)}
+.plate .slice{position:absolute;inset:14%;animation:spin 40s linear infinite}
+.plate .tag{position:absolute;bottom:4%;right:-2%;background:var(--forest);color:#fff;border-radius:16px;padding:12px 16px;font-size:14px;line-height:1.3;transform:rotate(-4deg)}
+.plate .tag b{font-family:'Fraunces',serif;font-size:26px;color:var(--lemon);display:block}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.15fr .85fr}.hero{padding-bottom:110px}}
+/* DECOR */
+.deco{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.deco svg{position:absolute;opacity:.85}
+.f1{animation:float 9s ease-in-out infinite}
+.f2{animation:float 11s ease-in-out infinite reverse}
+.f3{animation:spin 26s linear infinite}
+.f4{animation:sway 7s ease-in-out infinite}
+@media(max-width:899px){.deco .d1{top:118px!important;left:auto!important;right:-22px;width:86px!important}.deco .d2{top:auto!important;bottom:300px;right:auto!important;left:-8px;width:52px!important}.deco .d3{top:auto!important;bottom:250px;right:4px!important;width:44px!important}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-18px) rotate(8deg)}}
+@keyframes sway{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(12deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* SECTIONS */
+section{position:relative}
+.sec{padding:88px 0}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--lime-d)}
+.sec h2{font-size:clamp(32px,5.5vw,50px);color:var(--forest);margin:10px 0 16px}
+.intro{color:var(--muted);max-width:640px;font-size:18px}
+.cards{display:grid;gap:18px;margin-top:36px}
+@media(min-width:720px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.cards.c4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card{background:#fff;border-radius:var(--r);padding:26px;border:1px solid rgba(47,90,42,.12);min-width:0}
+.card .ic{width:52px;height:52px;border-radius:14px;background:#eef6e1;display:grid;place-items:center;margin-bottom:14px}
+.card h3{font-size:23px;color:var(--forest);margin-bottom:8px}
+.card p{color:var(--muted);font-size:16px}
+.dark{background:var(--forest);color:#eef3e6}
+.dark h2{color:#fff}.dark .intro{color:#c9d9be}.dark .eyebrow{color:var(--lime)}
+.split{display:grid;gap:44px;align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr}}
+.big{font-family:'Fraunces',serif;font-size:clamp(70px,14vw,120px);color:var(--lemon);line-height:1;font-weight:800}
+.ticks{list-style:none;margin-top:22px;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start}
+.ticks li::before{content:"";flex:0 0 22px;height:22px;margin-top:3px;border-radius:50%;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%231d3a1f' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.quote{margin-top:26px;font-family:'Fraunces',serif;font-style:italic;font-size:22px;color:var(--lemon)}
+/* steam moment */
+.cupbox{position:relative;justify-self:center;width:min(340px,80vw)}
+.steam path{fill:none;stroke:#e8f5d6;stroke-width:6;stroke-linecap:round;opacity:0}
+.cupbox.on .steam path{animation:steam 3.2s ease-in-out infinite}
+.cupbox.on .steam path:nth-child(2){animation-delay:.8s}
+.cupbox.on .steam path:nth-child(3){animation-delay:1.6s}
+@keyframes steam{0%{opacity:0;transform:translateY(16px)}35%{opacity:.85}100%{opacity:0;transform:translateY(-26px)}}
+.cupbox .lemonring{transform-origin:236px 142px;animation:spin 18s linear infinite}
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid rgba(47,90,42,.15);border-radius:999px;padding:10px 20px;margin-top:6px;font-weight:600;color:var(--forest)}
+.score b{font-family:'Fraunces',serif;font-size:28px}
+.stars{color:#e3a21a;letter-spacing:2px}
+.revs{display:grid;gap:18px;margin-top:32px}
+@media(min-width:720px){.revs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.revs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rev{background:#fff;border-radius:var(--r);padding:24px;border:1px solid rgba(47,90,42,.12);display:flex;flex-direction:column;gap:12px;min-width:0}
+.rev blockquote{font-size:17px;color:var(--ink)}
+.rev .who{margin-top:auto;font-size:14px;color:var(--muted)}
+.rev .who b{color:var(--forest)}
+/* partners */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips span{background:#fff;border:1px solid rgba(47,90,42,.18);border-radius:999px;padding:9px 16px;font-weight:500;font-size:15px}
+/* hours */
+.hours{background:#fff;border-radius:var(--r);padding:26px;border:1px solid rgba(47,90,42,.12)}
+.hours table{width:100%;border-collapse:collapse;font-size:16px}
+.hours td{padding:10px 0;border-bottom:1px dashed rgba(47,90,42,.2)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--lime-d)}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:700;border-radius:999px;padding:7px 14px;font-size:14px;margin-bottom:12px}
+.status.o{background:#e3f4cf;color:#2d6a14}.status.c{background:#f6e2d8;color:#9b3d14}
+.status i{width:9px;height:9px;border-radius:50%;background:currentColor}
+footer{background:#132914;color:#c9d9be;padding:50px 0 110px;font-size:15px}
+footer .wrap{display:grid;gap:26px}
+@media(min-width:800px){footer .wrap{grid-template-columns:1.4fr 1fr 1fr}footer{padding-bottom:50px}}
+footer h4{font-family:'Fraunces',serif;color:#fff;font-size:20px;margin-bottom:8px}
+footer a{color:#fff}
+.fab{position:fixed;left:16px;right:16px;bottom:14px;z-index:800;display:flex;justify-content:center;gap:8px;background:var(--forest);color:#fff;text-decoration:none;font-weight:700;padding:15px;border-radius:999px;box-shadow:0 10px 30px -8px rgba(0,0,0,.45)}
+@media(min-width:960px){.fab{display:none}}
+/* pages */
+.page{display:none;min-height:100vh;padding:calc(var(--ban) + 66px + 34px) 0 110px;background:var(--cream)}
+body.sub #home{display:none}
+body.sub .page.on{display:block}
+.back{display:inline-flex;align-items:center;gap:8px;font:700 15px 'Work Sans',sans-serif;color:var(--forest);background:#fff;border:1px solid rgba(47,90,42,.2);border-radius:999px;padding:10px 18px;cursor:pointer;margin-bottom:26px}
+.page h1{font-size:clamp(38px,7vw,62px);color:var(--forest);margin:8px 0 14px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px}
+.tabs a{text-decoration:none;font-weight:600;font-size:15px;padding:9px 16px;border-radius:999px;background:#fff;border:1px solid rgba(47,90,42,.2);color:var(--forest)}
+.mcat{margin-top:40px;scroll-margin-top:130px}
+.mcat h2{font-size:30px;color:var(--forest);padding-bottom:10px;border-bottom:2px solid var(--lime);margin-bottom:6px}
+.mitem{display:flex;justify-content:space-between;gap:14px;padding:15px 0;border-bottom:1px dashed rgba(47,90,42,.22)}
+.mitem b{font-size:18px;color:var(--ink)}
+.mitem span{color:var(--muted);font-size:15px}
+.note{background:#fff7d6;border:1px solid #ecd77a;border-radius:14px;padding:16px 18px;margin-top:18px;font-size:16px}
+.map{width:100%;height:340px;border:0;background:#e9efe0;border-radius:var(--r);display:block}
+.cgrid{display:grid;gap:22px;margin-top:20px}
+@media(min-width:900px){.cgrid{grid-template-columns:1fr 1fr}}
+.cline{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(47,90,42,.1)}
+.cline a{font-weight:600;color:var(--forest)}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--forest);display:grid;place-items:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .ring{animation:pop .9s cubic-bezier(.3,1.6,.5,1) both}
+#intro .word{font-family:'Fraunces',serif;color:#fff;font-size:34px;text-align:center;margin-top:16px;animation:rise .8s .55s both}
+#intro .word small{display:block;font:600 12px 'Work Sans',sans-serif;letter-spacing:.24em;color:var(--lime);margin-top:6px}
+@keyframes pop{from{transform:scale(.2) rotate(-120deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes rise{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:519px){:root{--ban:48px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}#intro{display:none}}
+</style>
+</head>
+<body>
+<div class="ban">Aperçu préparé pour Le Citron Vert Café Resto — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true"><div>
+  <svg class="ring" width="120" height="120" viewBox="0 0 120 120" style="display:block;margin:0 auto"><circle cx="60" cy="60" r="56" fill="#f4d23c"/><circle cx="60" cy="60" r="48" fill="#fbf6e9"/><g fill="#8cc63f"><path d="M60 60 L60 16 A44 44 0 0 1 98 38Z"/><path d="M60 60 L98 38 A44 44 0 0 1 98 82Z" opacity=".85"/><path d="M60 60 L98 82 A44 44 0 0 1 60 104Z"/><path d="M60 60 L60 104 A44 44 0 0 1 22 82Z" opacity=".85"/><path d="M60 60 L22 82 A44 44 0 0 1 22 38Z"/><path d="M60 60 L22 38 A44 44 0 0 1 60 16Z" opacity=".85"/></g><circle cx="60" cy="60" r="6" fill="#fbf6e9"/></svg>
+  <div class="word">Le Citron Vert<small>CAFÉ · RESTO · TRAITEUR</small></div>
+</div></div>
+
+<nav class="nav" aria-label="Navigation principale"><div class="wrap">
+  <a class="brand" href="#" data-go="home">
+    <svg width="42" height="42" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="#1d3a1f"/><circle cx="60" cy="60" r="47" fill="#f4d23c"/><circle cx="60" cy="60" r="41" fill="#fbf6e9"/><g fill="#8cc63f"><path d="M60 60 L60 22 A38 38 0 0 1 93 41Z"/><path d="M60 60 L93 79 A38 38 0 0 1 60 98Z"/><path d="M60 60 L27 79 A38 38 0 0 1 27 41Z"/></g><g fill="#a9d86a"><path d="M60 60 L93 41 A38 38 0 0 1 93 79Z"/><path d="M60 60 L60 98 A38 38 0 0 1 27 79Z"/><path d="M60 60 L27 41 A38 38 0 0 1 60 22Z"/></g></svg>
+    <span><b>Le Citron Vert</b><small>Café Resto · Victoriaville</small></span>
+  </a>
+  <div class="links">
+    <a href="#" data-go="home">Accueil</a>
+    <button data-go="menu">Menu complet</button>
+    <button data-go="avis">Avis</button>
+    <button data-go="joindre">Nous joindre</button>
+    <a class="call" href="tel:+18197524254">819 752-4254</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+</div></nav>
+<div class="mnav" id="mnav">
+  <a href="#" data-go="home">Accueil</a>
+  <button data-go="menu">Menu complet</button>
+  <button data-go="avis">Avis</button>
+  <button data-go="joindre">Nous joindre</button>
+  <a href="tel:+18197524254">Appeler : 819 752-4254</a>
+</div>
+
+<main id="home">
+<section class="hero" id="top">
+  <div class="deco" aria-hidden="true">
+    <svg class="f3 d1" style="top:20%;left:-34px;width:110px" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#f4d23c"/><circle cx="50" cy="50" r="41" fill="#fffbe8"/><g fill="#8cc63f"><path d="M50 50L50 13A37 37 0 0 1 82 31Z"/><path d="M50 50L82 69A37 37 0 0 1 50 87Z"/><path d="M50 50L18 69A37 37 0 0 1 18 31Z"/></g><g fill="#b8e07c"><path d="M50 50L82 31A37 37 0 0 1 82 69Z"/><path d="M50 50L50 87A37 37 0 0 1 18 69Z"/><path d="M50 50L18 31A37 37 0 0 1 50 13Z"/></g></svg>
+    <svg class="f4 d2" style="top:9%;right:6%;width:74px;transform-origin:50% 100%" viewBox="0 0 60 90"><path d="M30 88C8 62 6 30 30 4C54 30 52 62 30 88Z" fill="#5e9a1f"/><path d="M30 86V10" stroke="#d6efb3" stroke-width="3"/><path d="M30 40l-12-9M30 56l13-10M30 70l-11-8" stroke="#d6efb3" stroke-width="2.4"/></svg>
+    <svg class="f1" style="bottom:3%;left:3%;width:70px" viewBox="0 0 80 60"><ellipse cx="40" cy="30" rx="36" ry="24" fill="#8cc63f"/><ellipse cx="40" cy="30" rx="36" ry="24" fill="none" stroke="#2f5a2a" stroke-width="3"/><path d="M4 30h-4M80 30h-4" stroke="#2f5a2a" stroke-width="5" stroke-linecap="round"/><ellipse cx="30" cy="22" rx="10" ry="5" fill="#d6efb3"/></svg>
+    <svg class="f2 d3" style="top:56%;right:3%;width:64px" viewBox="0 0 60 120"><g fill="none" stroke="#b8572e" stroke-width="5" stroke-linecap="round"><path d="M14 6v34c0 8 6 12 10 12v62"/><path d="M8 6v26M20 6v26"/><path d="M44 114V60c-10 0-12-24-6-44 3-10 10-10 12 0v98"/></g></svg>
+    <svg class="f1" style="bottom:4%;right:44%;width:46px;animation-delay:-3s" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#f4d23c"/><circle cx="30" cy="30" r="21" fill="#fffbe8"/><path d="M30 30V9M30 30l18 10M30 30L12 40" stroke="#f4d23c" stroke-width="4"/></svg>
+  </div>
+  <div class="wrap">
+    <div>
+      <span class="kicker">● Café resto · Victoriaville</span>
+      <h1>Des repas <em>maison</em>, faits avec des produits d'ici.</h1>
+      <p class="lead">Le Citron Vert vous sert le dîner du mardi au vendredi, prépare des plats pour emporter et s'occupe de vos événements : salle privée, traiteur et buffet de 20 à 1000 personnes.</p>
+      <div class="ctas">
+        <a class="btn p" href="tel:+18197524254"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>Appeler</a>
+        <button class="btn s" data-go="menu">Voir le menu</button>
+      </div>
+      <div class="facts">
+        <span>★ 4,9 sur Google</span>
+        <span>Mar. au ven. · 9 h à 15 h</span>
+        <span>Apportez votre vin</span>
+      </div>
+    </div>
+    <div class="plate rv">
+      <div class="disc"></div>
+      <svg class="slice" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="#f4d23c"/><circle cx="100" cy="100" r="84" fill="#fffbe8"/><g fill="#8cc63f"><path d="M100 100L100 22A78 78 0 0 1 167.5 61Z"/><path d="M100 100L167.5 139A78 78 0 0 1 100 178Z"/><path d="M100 100L32.5 139A78 78 0 0 1 32.5 61Z"/></g><g fill="#b8e07c"><path d="M100 100L167.5 61A78 78 0 0 1 167.5 139Z"/><path d="M100 100L100 178A78 78 0 0 1 32.5 139Z"/><path d="M100 100L32.5 61A78 78 0 0 1 100 22Z"/></g><g stroke="#fffbe8" stroke-width="3"><path d="M100 100V22M100 100l67.5-39M100 100l67.5 39M100 100V178M100 100l-67.5 39M100 100l-67.5-39"/></g><circle cx="100" cy="100" r="9" fill="#fffbe8"/></svg>
+      <div class="tag"><b>20 à 1000</b>personnes en traiteur<br>ou en buffet</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <div class="wrap">
+    <span class="eyebrow">Nos services</span>
+    <h2>Quatre façons de manger au Citron Vert</h2>
+    <p class="intro">Des produits maison faits à partir d'aliments régionaux, servis sur place, à emporter ou chez vous.</p>
+    <div class="cards c4">
+      <div class="card rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2f5a2a" stroke-width="2" stroke-linecap="round"><path d="M7 3v8a2 2 0 0 0 2 2v8M5 3v5M9 3v5M17 21V3c-2.5 0-4 3-4 7s1.5 4 4 4"/></svg></div><h3>Restaurant</h3><p>Le dîner du mardi au vendredi, de 9 h à 15 h, dans une salle au décor unique.</p></div>
+      <div class="card rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2f5a2a" stroke-width="2" stroke-linejoin="round"><path d="M4 8h16l-1.5 12h-13z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></div><h3>Pour emporter</h3><p>Des plats et des produits maison à rapporter à la maison ou au bureau.</p></div>
+      <div class="card rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2f5a2a" stroke-width="2" stroke-linecap="round"><path d="M8 21h8M12 17v4M7 3h10l-1 7a4 4 0 0 1-8 0z"/></svg></div><h3>Événements privés</h3><p>Réservez le restaurant pour vos occasions privées. Apportez votre vin ou votre bière.</p></div>
+      <div class="card rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2f5a2a" stroke-width="2" stroke-linecap="round"><path d="M3 15h18M5 15a7 7 0 0 1 14 0M12 6V4M2 19h20"/></svg></div><h3>Traiteur et buffet</h3><p>Service de traiteur ou de buffet de 20 à 1000 personnes. La fin de semaine : sur réservation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="maison">
+  <div class="deco" aria-hidden="true">
+    <svg class="f2" style="top:8%;right:4%;width:56px" viewBox="0 0 60 90"><path d="M30 88C8 62 6 30 30 4C54 30 52 62 30 88Z" fill="#8cc63f"/><path d="M30 86V10" stroke="#1d3a1f" stroke-width="3"/></svg>
+  </div>
+  <div class="wrap split">
+    <div class="rv">
+      <span class="eyebrow">Fait maison</span>
+      <h2>Le goût d'ici, dans une assiette maison</h2>
+      <p class="intro">Tourtière, quesadillas, charcuterie, pizzas et assiette du jour : tout est préparé sur place avec des aliments de la région.</p>
+      <ul class="ticks">
+        <li>Repas du dîner, du mardi au vendredi</li>
+        <li>Réunions privées et traiteur le samedi et le dimanche, sur réservation</li>
+        <li>Accessible en fauteuil roulant</li>
+      </ul>
+      <p class="quote">« Apportez votre vin ou bière lors de réception! »</p>
+    </div>
+    <div class="cupbox" id="cup" aria-hidden="true">
+      <svg viewBox="0 0 320 300">
+        <g class="steam"><path d="M120 92c-14-18 14-30 0-50"/><path d="M160 92c-14-18 14-30 0-50"/><path d="M200 92c-14-18 14-30 0-50"/></g>
+        <ellipse cx="160" cy="268" rx="130" ry="20" fill="#2f5a2a"/>
+        <ellipse cx="160" cy="262" rx="112" ry="14" fill="#fbf6e9"/>
+        <path d="M70 110h180v70a78 78 0 0 1-78 78h-24a78 78 0 0 1-78-78z" fill="#fbf6e9"/>
+        <path d="M70 128h180v14H70z" fill="#8cc63f"/>
+        <path d="M250 132c40 0 40 70-6 72" fill="none" stroke="#fbf6e9" stroke-width="16"/>
+        <ellipse cx="160" cy="110" rx="90" ry="14" fill="#7a4a2a"/>
+        <g class="lemonring"><circle cx="236" cy="142" r="30" fill="#f4d23c"/><circle cx="236" cy="142" r="24" fill="#fffbe8"/><path d="M236 142V118M236 142l21 12M236 142l-21 12" stroke="#f4d23c" stroke-width="4"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="avis">
+  <div class="wrap">
+    <span class="eyebrow">Ce que nos clients disent</span>
+    <h2>Une belle découverte, selon nos clients</h2>
+    <div class="score"><b>4,9</b><span class="stars">★★★★★</span><span>sur Google · 7 avis</span></div>
+    <div class="revs" id="homeRevs"></div>
+    <div style="margin-top:28px"><button class="btn s" data-go="avis">Voir tous les avis (7)</button></div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--paper)">
+  <div class="wrap">
+    <span class="eyebrow">Nos fournisseurs et partenaires</span>
+    <h2>Des produits de chez nous</h2>
+    <div class="chips">
+      <span>Bonté Distribution</span><span>Boucherie Benoit Brûlé</span><span>Brûlerie des Cantons</span><span>Épicerie Lacharité</span><span>Fromagerie du Presbytère</span><span>La Jambonière</span><span>Lactancia</span><span>Moulin La Pierre</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="infos">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Heures et adresse</span>
+      <h2>Venez dîner avec nous</h2>
+      <p class="intro">595, rue Notre-Dame Ouest, Victoriaville. Pour les événements et le traiteur, appelez-nous pour réserver.</p>
+      <div class="ctas"><a class="btn p" href="tel:+18197524254">819 752-4254</a><button class="btn s" data-go="joindre">Nous joindre</button></div>
+    </div>
+    <div class="hours rv" data-hours></div>
+  </div>
+</section>
+</main>
+
+<!-- PAGE MENU -->
+<section class="page" id="p-menu">
+  <div class="wrap">
+    <button class="back" data-go="home">← Retour au site</button>
+    <span class="eyebrow">Menu complet</span>
+    <h1>Au menu du Citron Vert</h1>
+    <p class="intro">Une cuisine maison qui change selon les jours et les produits de la région.</p>
+    <div class="tabs"><a href="#m-plats">Nos plats</a><a href="#m-jour">Menu du jour</a><a href="#m-emporter">Pour emporter</a><a href="#m-traiteur">Traiteur et buffet</a></div>
+    <div class="mcat" id="m-plats"><h2>Nos plats maison</h2>
+      <div class="mitem"><b>Tourtière</b><span>maison</span></div>
+      <div class="mitem"><b>Quesadillas</b><span>maison</span></div>
+      <div class="mitem"><b>Charcuterie</b><span>produits d'ici</span></div>
+      <div class="mitem"><b>Pizzas</b><span>maison</span></div>
+      <div class="mitem"><b>Assiette du jour</b><span>change chaque jour</span></div>
+    </div>
+    <div class="mcat" id="m-jour"><h2>Menu du jour</h2>
+      <p class="note">Le menu du jour change chaque jour. Pour savoir ce qui est servi aujourd'hui et connaître les prix, appelez-nous au <a href="tel:+18197524254"><b>819 752-4254</b></a> ou passez nous voir.</p>
+    </div>
+    <div class="mcat" id="m-emporter"><h2>Pour emporter</h2>
+      <p class="intro" style="margin-top:12px">Des repas pour emporter et des produits maison faits à partir d'aliments régionaux.</p>
+    </div>
+    <div class="mcat" id="m-traiteur"><h2>Traiteur et buffet</h2>
+      <p class="intro" style="margin-top:12px">Service de traiteur ou de buffet de 20 à 1000 personnes, et réservation du restaurant pour vos occasions privées. Le samedi et le dimanche : sur réservation seulement. Apportez votre vin ou votre bière.</p>
+      <div class="ctas"><a class="btn p" href="tel:+18197524254">Réserver : 819 752-4254</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE AVIS -->
+<section class="page" id="p-avis">
+  <div class="wrap">
+    <button class="back" data-go="home">← Retour au site</button>
+    <span class="eyebrow">Avis</span>
+    <h1>Tous les avis</h1>
+    <div class="score"><b>4,9</b><span class="stars">★★★★★</span><span>sur Google · 7 avis</span></div>
+    <p class="intro" style="margin-top:14px;font-size:15px">Extraits d'avis Google, tels que publiés. <a href="https://restoenligne.com/restaurants/evaluations/citron-vert-cafe-resto" target="_blank" rel="noopener">Voir la source</a></p>
+    <div class="revs" id="allRevs"></div>
+  </div>
+</section>
+
+<!-- PAGE JOINDRE -->
+<section class="page" id="p-joindre">
+  <div class="wrap">
+    <button class="back" data-go="home">← Retour au site</button>
+    <span class="eyebrow">Nous joindre</span>
+    <h1>Venez nous voir</h1>
+    <div class="cgrid">
+      <div>
+        <div class="cline"><svg width="22" height="22" viewBox="0 0 24 24" fill="#5e9a1f"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><div>595, rue Notre-Dame Ouest<br>Victoriaville (Québec)</div></div>
+        <div class="cline"><svg width="22" height="22" viewBox="0 0 24 24" fill="#5e9a1f"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><a href="tel:+18197524254">819 752-4254</a></div>
+        <div class="cline"><svg width="22" height="22" viewBox="0 0 24 24" fill="#5e9a1f"><path d="M3 5h18v14H3zm2 2v.5l7 4.5 7-4.5V7z"/></svg><a href="mailto:info@citronvertvictoriaville.ca">info@citronvertvictoriaville.ca</a></div>
+        <div class="ctas"><a class="btn p" href="https://www.google.com/maps/dir/?api=1&amp;destination=595%2C%20rue%20Notre-Dame%20Ouest%2C%20Victoriaville%2C%20QC" target="_blank" rel="noopener">Itinéraire</a><a class="btn s" href="tel:+18197524254">Appeler</a></div>
+        <div class="hours" style="margin-top:26px" data-hours></div>
+      </div>
+      <iframe class="map" loading="lazy" title="Carte : Le Citron Vert Café Resto" src="https://www.google.com/maps?q=595%2C%20rue%20Notre-Dame%20Ouest%2C%20Victoriaville%2C%20QC&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div><h4>Le Citron Vert Café Resto</h4><p>Restaurant, plats pour emporter, événements privés et traiteur à Victoriaville.</p></div>
+  <div><h4>Adresse</h4><p>595, rue Notre-Dame Ouest<br>Victoriaville (Québec)</p></div>
+  <div><h4>Contact</h4><p><a href="tel:+18197524254">819 752-4254</a><br><a href="mailto:info@citronvertvictoriaville.ca">info@citronvertvictoriaville.ca</a><br><a href="https://facebook.com/citronvertvictoriaville" target="_blank" rel="noopener">Facebook</a></p></div>
+</div></footer>
+<a class="fab" href="tel:+18197524254">Appeler le Citron Vert · 819 752-4254</a>
+
+<script>
+(function(){
+var R=[
+{t:"Vraiment bien manger et un bel acceuil je recommande vraiment",a:"Denis Dusablon",d:"14 août 2026",s:5},
+{t:"On voyage dans le temps avec le décor et la nourriture est excellente !",a:"Stephane Goulet",d:"16 juin 2026",s:5},
+{t:"super belle expérience , une dame accueillante, ambiance chaleureuse et unique ! […] repas maison goûteux et savoureux … je recommande à tous ! 💯😍",a:"Anne-marie Boudreau",d:"12 août 2026",s:5},
+{t:"Belle découverte! Restaurant-traiteur accueillant et chaleureux. […] Excellent rapport qualité-prix. […] Nous y retournerons sans hésiter.",a:"L Font",d:"26 août 2026",s:5},
+{t:"Excellent en tout point.",a:"René B",d:"31 juil. 2026",s:5},
+{t:"Facile d'accès. […] Personnels souriant, serviable. […] Bon rapport qualité prix. […] Une décoration qui sort de l'ordinaire dans le style antiquaire à la maison. […] J'adore !",a:"Philippe Lenormand",d:"28 sept. 2026",s:4}
+];
+function card(r,nr){var st="★★★★★".slice(0,r.s)+"☆☆☆☆☆".slice(0,5-r.s);return '<article class="rev'+(nr===true?'':' rv')+'"><span class="stars" aria-label="'+r.s+' étoiles sur 5">'+st+'</span><blockquote>« '+r.t+' »</blockquote><div class="who"><b>'+r.a+'</b> · Avis Google · '+r.d+'</div></article>';}
+document.getElementById('homeRevs').innerHTML=(function(){var f=R.filter(function(r){return r.s===5});return f.length<6?f.concat(R.filter(function(r){return r.s===4})):f})().slice(0,12).map(card).join('');
+document.getElementById('allRevs').innerHTML=R.map(function(r){return card(r,true)}).join('');
+
+var H=[["Dimanche",null],["Lundi",null],["Mardi",[9,15]],["Mercredi",[9,15]],["Jeudi",[9,15]],["Vendredi",[9,15]],["Samedi",null]];
+function tor(){var p=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Toronto',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());var o={};p.forEach(function(x){o[x.type]=x.value});var days={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};return {d:days[o.weekday],h:(parseInt(o.hour,10)%24)+parseInt(o.minute,10)/60};}
+function hoursHTML(){var n=tor(),cur=H[n.d][1],open=cur&&n.h>=cur[0]&&n.h<cur[1];var order=[2,3,4,5,6,0,1];var rows=order.map(function(i){var h=H[i][1];var txt=h?h[0]+' h à '+h[1]+' h':(i===6||i===0?'Sur réservation (traiteur, réunions privées)':'Fermé');return '<tr'+(i===n.d?' class="today"':'')+'><td>'+H[i][0]+'</td><td>'+txt+'</td></tr>';}).join('');return '<span class="status '+(open?'o':'c')+'"><i></i>'+(open?'Ouvert maintenant':'Fermé en ce moment')+'</span><table>'+rows+'</table>';}
+document.querySelectorAll('[data-hours]').forEach(function(e){e.innerHTML=hoursHTML()});
+
+var mnav=document.getElementById('mnav'),bg=document.getElementById('burger');
+bg.addEventListener('click',function(){var o=mnav.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+function show(id){mnav.classList.remove('open');bg.setAttribute('aria-expanded','false');document.querySelectorAll('.page').forEach(function(p){p.classList.remove('on')});if(id==='home'){document.body.classList.remove('sub')}else{document.body.classList.add('sub');document.getElementById('p-'+id).classList.add('on');reveal()}window.scrollTo(0,0)}
+document.addEventListener('click',function(e){var t=e.target.closest('[data-go]');if(!t)return;e.preventDefault();show(t.getAttribute('data-go'))});
+document.querySelectorAll('.tabs a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var el=document.querySelector(a.getAttribute('href'));if(el)el.scrollIntoView({behavior:'smooth'})})});
+
+var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12}):null;
+function reveal(){document.querySelectorAll('.rv:not(.in)').forEach(function(e){io?io.observe(e):e.classList.add('in')})}
+reveal();
+var cup=document.getElementById('cup');
+if(io){new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)cup.classList.add('on')})},{threshold:.3}).observe(cup)}else cup.classList.add('on');
+
+var intro=document.getElementById('intro'),seen=false;
+try{seen=sessionStorage.getItem('cvIntro')==='1';sessionStorage.setItem('cvIntro','1')}catch(e){}
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function done(){if(!intro)return;intro.classList.add('out');var i=intro;intro=null;setTimeout(function(){i.remove()},500)}
+if(seen||rm){intro.remove();intro=null}else{intro.addEventListener('click',done);setTimeout(done,1800)}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

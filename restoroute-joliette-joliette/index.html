@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Restoroute Joliette — Casse-croûte, sous-marins, poutines et pizzas depuis 1976</title>
+<meta name="description" content="Restoroute Joliette, casse-croûte du boulevard Manseau depuis 1976 : sous-marins 12 po, poutines et frites maison, burgers sur la plaque, pizzas et trios. 450-759-4444.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Restoroute Joliette","servesCuisine":["Casse-croûte","Poutine","Sous-marins","Pizza"],"telephone":"+1-450-759-4444","email":"restoroute.joliette@hotmail.com","foundingDate":"1976","address":{"@type":"PostalAddress","streetAddress":"1144, boul. Manseau","addressLocality":"Joliette","addressRegion":"QC","postalCode":"J6E 3G8","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"19:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.3","reviewCount":"16"},"hasMenu":"Sous-marins 12 po, casse-croûte, frites maison, poutines, sur la plaque, trios, pizzas, sandwichs, breuvages"}</script>
+<style>
+:root{--red:#d62828;--red2:#a4161a;--yel:#ffc93c;--cream:#fff7e6;--ink:#1d1a17;--mut:#6b625a;--line:#eadfca;--road:#2b2b2e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;padding-top:32px}
+h1,h2,h3,.disp{font-family:'Bowlby One',Impact,sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.05}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:16px;font-family:inherit;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 6px 0 var(--red2)}
+.btn-yel{background:var(--yel);color:var(--ink);box-shadow:0 6px 0 #d9a21b}
+.btn-ghost{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+/* nav */
+.nav{position:fixed;top:32px;left:0;right:0;z-index:50;background:var(--ink);color:#fff;border-bottom:4px solid var(--yel)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;cursor:pointer}
+.brand b{font-family:'Bowlby One',sans-serif;font-weight:400;font-size:19px;line-height:1}
+.brand small{display:block;font-size:11px;color:var(--yel);letter-spacing:.12em;text-transform:uppercase}
+.links{display:flex;gap:4px;align-items:center}
+.links a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:500;font-size:15px;cursor:pointer}
+.links a:hover{background:#ffffff1a}
+.links .call{background:var(--red);font-weight:700;margin-left:6px}
+.burger{display:none;background:none;border:0;color:#fff;width:44px;height:44px;cursor:pointer}
+@media(max-width:860px){.links{display:none;position:absolute;top:66px;left:0;right:0;background:var(--ink);flex-direction:column;align-items:stretch;padding:10px 16px 18px;border-bottom:4px solid var(--yel)}.links.open{display:flex}.links a{padding:13px 10px;font-size:17px}.burger{display:block}}
+main{padding-top:66px}
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--red);color:#fff;padding:56px 0 110px}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,#ff5d5d 0,transparent 55%),radial-gradient(circle at 10% 90%,#8f0f12 0,transparent 50%)}
+.checker{position:absolute;left:0;right:0;bottom:0;height:34px;background:repeating-conic-gradient(var(--ink) 0 25%,#fff 0 50%) 0 0/34px 34px;z-index:2}
+.hero .wrap{position:relative;z-index:3;display:grid;gap:34px;align-items:center}
+.tag{display:inline-block;background:var(--yel);color:var(--ink);font-weight:700;padding:6px 14px;border-radius:999px;font-size:14px;transform:rotate(-2deg)}
+.hero h1{font-size:clamp(44px,11vw,92px);margin:16px 0 14px;text-shadow:0 5px 0 var(--red2)}
+.hero h1 span{color:var(--yel);display:block}
+.hero p.lead{font-size:clamp(17px,2.2vw,20px);max-width:540px;opacity:.96}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.hero .info{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:15px;font-weight:500}
+.hero .info span{display:flex;align-items:center;gap:6px}
+.sign{justify-self:center;width:min(380px,82vw)}
+.deco{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.deco svg{position:absolute;opacity:.85;animation:fl 7s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-16px) rotate(calc(var(--r,0deg) + 8deg))}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.d1{width:84px;top:8%;left:52%;--r:-12deg}
+.d2{width:70px;top:62%;left:4%;--r:10deg;animation-delay:-2s!important}
+.d3{width:60px;top:14%;left:2%;--r:6deg;animation-delay:-4s!important}
+.d4{width:76px;bottom:14%;right:3%;--r:-8deg;animation-delay:-1s!important}
+.d5{width:46px;top:4%;right:6%;--r:14deg;animation-delay:-3s!important}
+@media(max-width:860px){.d1{top:auto;bottom:9%;left:58%;width:62px}.d2{top:auto;bottom:6%;width:54px}.d3{width:44px;top:2%;left:auto;right:4%}.d4{display:none}.d5{width:36px;top:40%;right:2%}.hero{padding-bottom:120px}}
+@media(min-width:960px){.hero .wrap{grid-template-columns:1.15fr .85fr}.hero{padding:84px 0 130px}}
+/* sections */
+section{padding:76px 0;position:relative}
+.kick{font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+h2{font-size:clamp(32px,6vw,52px);margin:8px 0 14px}
+.sub{color:var(--mut);max-width:620px;font-size:17px}
+/* favoris */
+.favs{display:grid;gap:18px;margin-top:34px}
+@media(min-width:700px){.favs{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.favs{grid-template-columns:repeat(4,1fr)}}
+.fav{background:#fff;border:2px solid var(--ink);border-radius:20px;padding:22px;box-shadow:6px 6px 0 var(--ink);min-width:0}
+.fav svg{width:64px;height:64px}
+.fav h3{font-size:22px;margin:12px 0 6px}
+.fav p{color:var(--mut);font-size:15px}
+.fav .pr{display:inline-block;margin-top:10px;font-weight:700;background:var(--yel);padding:3px 10px;border-radius:8px}
+/* ticket wow */
+.ticketzone{background:var(--road);color:#fff;overflow:hidden}
+.ticketzone .wrap{display:grid;gap:34px;align-items:center}
+@media(min-width:960px){.ticketzone .wrap{grid-template-columns:1fr 1fr}}
+.ticketzone h2{color:var(--yel)}
+.ticketzone .sub{color:#d9d4cc}
+.printer{position:relative;max-width:360px;margin:0 auto;width:100%}
+.printer .slot{height:26px;background:#111;border-radius:12px;border:3px solid #444;position:relative;z-index:2}
+.ticket{background:#fffdf6;color:#222;margin:0 14px;padding:20px 18px 26px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;transform:translateY(-100%);transform-origin:top;opacity:0;transition:transform 2.4s cubic-bezier(.2,.7,.2,1),opacity .3s;position:relative;z-index:1;-webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - 10px) no-repeat,radial-gradient(circle at 8px 0,transparent 7px,#000 8px) bottom/16px 10px repeat-x;mask:linear-gradient(#000 0 0) top/100% calc(100% - 10px) no-repeat,radial-gradient(circle at 8px 0,transparent 7px,#000 8px) bottom/16px 10px repeat-x}
+.ticket.go{transform:none;opacity:1}
+.ticket h4{text-align:center;font-size:16px;letter-spacing:.1em}
+.ticket .c{text-align:center;color:#666;font-size:12px;margin-bottom:10px}
+.ticket .row b{white-space:nowrap}.ticket .row{display:flex;justify-content:space-between;gap:10px;border-top:1px dashed #bbb;padding:7px 0}
+.ticket .tot{font-weight:700;text-align:center;margin-top:10px}
+/* avis */
+.rating{display:inline-flex;align-items:center;gap:12px;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:12px 18px;margin-top:18px;box-shadow:4px 4px 0 var(--yel)}
+.rating .big{font-family:'Bowlby One',sans-serif;font-size:34px;line-height:1}
+.stars{color:#f4a300;letter-spacing:2px}
+.revs{display:grid;gap:18px;margin-top:30px}
+@media(min-width:700px){.revs{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1050px){.revs{grid-template-columns:repeat(3,1fr)}}
+.rev{background:#fff;border-radius:18px;padding:22px;border:1px solid var(--line);position:relative;min-width:0;overflow-wrap:anywhere}
+.rev:before{content:"\201C";position:absolute;right:16px;top:-4px;font:80px/1 'Bowlby One',serif;color:var(--yel);opacity:.7}
+.rev p{margin:10px 0 14px;font-size:16px}
+.rev .who{font-weight:700;font-size:14px}
+.rev .src{color:var(--mut);font-size:13px}
+.center{text-align:center}
+/* about / hours */
+.about{background:var(--yel)}
+.about .wrap{display:grid;gap:30px;align-items:center}
+@media(min-width:960px){.about .wrap{grid-template-columns:1fr 1fr}}
+.since{font-family:'Bowlby One',sans-serif;font-size:clamp(70px,16vw,150px);line-height:.9;color:var(--red);text-shadow:5px 5px 0 var(--ink)}
+.cardk{background:#fff;border:2px solid var(--ink);border-radius:20px;padding:24px;box-shadow:6px 6px 0 var(--ink)}
+.hrs{width:100%;border-collapse:collapse;margin-top:8px}
+.hrs td{padding:8px 0;border-bottom:1px dashed var(--line)}
+.hrs td:last-child{text-align:right;font-weight:700}
+.hrs tr.today td{color:var(--red)}
+.live{display:inline-block;padding:4px 12px;border-radius:999px;font-weight:700;font-size:14px;margin-top:6px}
+.live.on{background:#1f9d55;color:#fff}.live.off{background:#ddd;color:#333}
+footer{background:var(--ink);color:#cfc8bf;padding:40px 0 100px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 40px;justify-content:space-between}
+footer b{color:#fff}
+/* pages */
+.page{display:none;min-height:80vh;padding:30px 0 90px}
+body.sub-open #home{display:none}
+.page.on{display:block}
+.back{margin:10px 0 20px}
+.cats{display:flex;gap:8px;overflow-x:auto;padding:6px 0 14px;-webkit-overflow-scrolling:touch}
+.cats a{flex:0 0 auto;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:7px 14px;font-weight:700;font-size:14px;text-decoration:none;cursor:pointer}
+.mgrid{display:grid;gap:22px;margin-top:10px}
+@media(min-width:900px){.mgrid{grid-template-columns:repeat(2,1fr)}}
+.mcat{background:#fff;border-radius:20px;border:2px solid var(--ink);padding:22px;min-width:0;scroll-margin-top:120px}
+.mcat h3{font-size:24px;color:var(--red);margin-bottom:4px}
+.mcat .note{color:var(--mut);font-size:14px;margin-bottom:8px}
+.item{display:flex;align-items:baseline;gap:8px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.item:last-child{border:0}
+.item .n{flex:0 1 auto;min-width:0}
+.item .dots{flex:1 1 20px;border-bottom:2px dotted #d5c9b2;transform:translateY(-4px);min-width:12px}
+.item .p{font-weight:700;white-space:nowrap}
+.item .n small{display:block;color:var(--mut)}
+.disc{margin-top:22px;color:var(--mut);font-size:14px}
+.jgrid{display:grid;gap:22px}
+@media(min-width:900px){.jgrid{grid-template-columns:1.2fr 1fr}}
+.map{width:100%;height:340px;border:0;border-radius:20px;border:2px solid var(--ink)}
+.jl{list-style:none;display:grid;gap:12px;margin:12px 0 18px}
+.jl a{font-weight:700}
+.sticky-call{display:none}
+@media(max-width:860px){.sticky-call{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:60;justify-content:center;box-shadow:0 6px 0 var(--red2),0 10px 24px #0005}}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#141214;display:flex;align-items:center;justify-content:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .neon{font-family:'Bowlby One',sans-serif;font-size:clamp(40px,12vw,90px);color:#ffe9a8;text-shadow:0 0 6px #ffc93c,0 0 22px #ff7b00,0 0 44px #d62828;animation:flick 1.6s steps(1) forwards;opacity:0;text-align:center;line-height:1}
+#intro .neon small{display:block;font-size:.32em;letter-spacing:.3em;color:#fff;margin-top:12px}
+@keyframes flick{0%{opacity:0}10%{opacity:1}14%{opacity:.2}20%{opacity:1}26%{opacity:.3}32%,100%{opacity:1}}
+@media(max-width:520px){body{padding-top:48px}.nav{top:48px}.links{top:66px}}
+@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}.ticket{transform:none;opacity:1}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Restoroute Joliette — ce n'est pas son site officiel</div>
+<div id="intro" aria-hidden="true"><div class="neon">RESTOROUTE<small>JOLIETTE · 1976</small></div></div>
+
+<header class="nav"><div class="wrap">
+<a class="brand" data-go="home" aria-label="Restoroute Joliette — accueil">
+<svg width="44" height="44" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3 43 10v15c0 11-8 18-19 21C13 43 5 36 5 25V10z" fill="#ffc93c" stroke="#fff" stroke-width="2"/><path d="M24 7 39 12.5V25c0 9-6.5 15-15 17.5C15.5 40 9 34 9 25V12.5z" fill="#d62828"/><text x="24" y="31" text-anchor="middle" font-family="Bowlby One,Impact,sans-serif" font-size="19" fill="#fff">RJ</text></svg>
+<span><b>Restoroute</b><small>Joliette · depuis 1976</small></span></a>
+<button class="burger" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav class="links" id="links">
+<a data-go="home">Accueil</a><a data-go="menu">Menu complet</a><a data-go="avis">Avis</a><a data-go="joindre">Nous joindre</a>
+<a class="call" href="tel:+14507594444">450-759-4444</a></nav>
+</div></header>
+
+<main>
+<div id="home">
+<section class="hero" style="padding-top:56px">
+<div class="deco" aria-hidden="true">
+<svg class="d1" viewBox="0 0 100 60"><rect x="6" y="18" width="88" height="26" rx="13" fill="#f2b45a"/><rect x="12" y="22" width="76" height="16" rx="8" fill="#b5462b"/><path d="M16 30q6-6 12 0t12 0 12 0 12 0 12 0" stroke="#ffd23f" stroke-width="3.5" fill="none" stroke-linecap="round"/><rect x="6" y="34" width="88" height="14" rx="7" fill="#f7c873"/></svg>
+<svg class="d2" viewBox="0 0 64 80"><path d="M10 30h44l-6 46H16z" fill="#fff"/><path d="M10 30h44l-2 12H12z" fill="#ffc93c"/><g fill="#ffd36b" stroke="#c98a1c" stroke-width="1.5"><rect x="16" y="4" width="7" height="30" rx="2" transform="rotate(-8 19 19)"/><rect x="27" y="2" width="7" height="32" rx="2"/><rect x="38" y="5" width="7" height="30" rx="2" transform="rotate(9 41 20)"/><rect x="22" y="9" width="7" height="26" rx="2" transform="rotate(4 25 22)"/></g><path d="M16 50h32" stroke="#d62828" stroke-width="5"/></svg>
+<svg class="d3" viewBox="0 0 64 64"><path d="M8 30a24 18 0 0 1 48 0z" fill="#e9a54a"/><circle cx="22" cy="20" r="1.6" fill="#fff6"/><circle cx="34" cy="16" r="1.6" fill="#fff6"/><circle cx="42" cy="22" r="1.6" fill="#fff6"/><path d="M6 33h52l-3 5H9z" fill="#5fae3c"/><rect x="7" y="38" width="50" height="8" rx="3" fill="#7a3b1e"/><path d="M8 46h48l-2 2H10z" fill="#ffc93c"/><path d="M8 50a24 8 0 0 0 48 0z" fill="#e9a54a"/></svg>
+<svg class="d4" viewBox="0 0 50 90"><rect x="17" y="2" width="16" height="12" rx="3" fill="#fff"/><path d="M14 14h22l6 18v52a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V32z" fill="#e3261b"/><rect x="12" y="44" width="26" height="22" rx="4" fill="#fff"/><path d="M18 55h14" stroke="#e3261b" stroke-width="4" stroke-linecap="round"/></svg>
+<svg class="d5" viewBox="0 0 40 40"><path d="M20 2l5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1z" fill="#ffc93c"/></svg>
+</div>
+<div class="wrap">
+<div>
+<span class="tag">Casse-croûte à Joliette · depuis 1976</span>
+<h1>Restoroute <span>Joliette</span></h1>
+<p class="lead">Sous-marins 12 pouces, frites et poutines maison, burgers sur la plaque, pizzas et trios. Le bon vieux casse-croûte, comme il se doit.</p>
+<div class="ctas"><a class="btn btn-yel" href="tel:+14507594444"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler · 450-759-4444</a><a class="btn btn-ghost" data-go="menu">Voir le menu</a></div>
+<div class="info"><span>📍 1144, boul. Manseau, Joliette</span><span id="heroStatus">🕚 Mer. au dim. · 11 h à 19 h</span></div>
+</div>
+<svg class="sign" viewBox="0 0 300 300" aria-hidden="true">
+<circle cx="150" cy="150" r="138" fill="#fff" stroke="#1d1a17" stroke-width="8"/>
+<circle cx="150" cy="150" r="118" fill="#ffc93c"/>
+<g style="transform-origin:150px 150px;animation:spin 40s linear infinite"><path id="cpath" d="M150 150m-96 0a96 96 0 1 1 192 0a96 96 0 1 1-192 0" fill="none"/><text font-family="Bowlby One,Impact" font-size="19" fill="#1d1a17" letter-spacing="3"><textPath href="#cpath">SOUS-MARINS · POUTINES · PIZZAS · BURGERS · </textPath></text></g>
+<g transform="translate(70 104)"><path d="M10 60c0-34 150-34 150 0z" fill="#e9a54a"/><circle cx="50" cy="44" r="3" fill="#fff8"/><circle cx="80" cy="38" r="3" fill="#fff8"/><circle cx="110" cy="44" r="3" fill="#fff8"/><path d="M4 62h152l-8 10H14z" fill="#5fae3c"/><rect x="8" y="70" width="144" height="16" rx="7" fill="#7a3b1e"/><path d="M10 86h140l-6 6H16z" fill="#ffd23f"/><path d="M10 94h140c0 14-140 14-140 0z" fill="#e9a54a"/></g>
+</svg>
+</div>
+<div class="checker"></div>
+</section>
+
+<section id="favoris"><div class="wrap">
+<span class="kick">Les classiques</span>
+<h2>Ce qu'on vient chercher ici</h2>
+<p class="sub">Un vrai casse-croûte : on commande, ça arrive vite, et c'est bon.</p>
+<div class="favs">
+<div class="fav"><svg viewBox="0 0 64 64"><rect x="4" y="24" width="56" height="18" rx="9" fill="#f2b45a"/><rect x="8" y="27" width="48" height="10" rx="5" fill="#b5462b"/><path d="M10 31l6 3 6-3 6 3 6-3 6 3 6-3 6 3" stroke="#5fae3c" stroke-width="3" fill="none"/></svg><h3>Sous-marins 12 po</h3><p>Steak, pepperoni, capicolli, viande fumée, végétarien… et la Spéciale Restoroute.</p><span class="pr">dès 17,55 $</span></div>
+<div class="fav"><svg viewBox="0 0 64 64"><path d="M10 26h44l-6 32H16z" fill="#fff" stroke="#1d1a17" stroke-width="2"/><path d="M14 26c4-10 32-10 36 0" fill="#f7d27a"/><circle cx="24" cy="22" r="4" fill="#fff8e0"/><circle cx="38" cy="21" r="4" fill="#fff8e0"/><path d="M14 26q18 8 36 0" stroke="#7a3b1e" stroke-width="4" fill="none"/></svg><h3>Poutines maison</h3><p>Classique ou garnie, format régulier ou familial, avec de vraies frites maison.</p><span class="pr">dès 12,65 $</span></div>
+<div class="fav"><svg viewBox="0 0 64 64"><path d="M8 30a24 16 0 0 1 48 0z" fill="#e9a54a"/><path d="M6 32h52l-3 5H9z" fill="#5fae3c"/><rect x="7" y="37" width="50" height="8" rx="3" fill="#7a3b1e"/><path d="M8 48a24 8 0 0 0 48 0z" fill="#e9a54a"/></svg><h3>Sur la plaque</h3><p>Hamburger, cheese, double cheese, hamburger grec et hamburger steak 12 oz.</p><span class="pr">dès 8,35 $</span></div>
+<div class="fav"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="#f2b45a"/><circle cx="32" cy="32" r="21" fill="#e9502e"/><circle cx="32" cy="32" r="19" fill="#ffd36b"/><g fill="#b3261e"><circle cx="24" cy="24" r="4"/><circle cx="40" cy="26" r="4"/><circle cx="30" cy="40" r="4"/><circle cx="42" cy="40" r="3.4"/></g></svg><h3>Pizzas</h3><p>Petite 10 po ou x-large 16 po : toute garnie, pepperoni-fromage, Spéciale Restoroute…</p><span class="pr">prix au téléphone</span></div>
+</div>
+<p class="center" style="margin-top:30px"><a class="btn btn-red" data-go="menu">Voir tout le menu</a></p>
+</div></section>
+
+<section class="ticketzone" id="trio"><div class="wrap">
+<div><span class="kick" style="color:var(--yel)">Commande rapide</span><h2>Un trio, ça part vite</h2><p class="sub">Hot-dog, pogo, burger ou croquettes avec frites ou poutinette, et le breuvage. Le dîner réglé en deux minutes.</p><p style="margin-top:22px"><a class="btn btn-yel" href="tel:+14507594444">Commander · 450-759-4444</a></p></div>
+<div class="printer" aria-label="Exemples de trios">
+<div class="slot"></div>
+<div class="ticket" id="ticket"><h4>RESTOROUTE JOLIETTE</h4><div class="c">1144, boul. Manseau · 450-759-4444</div>
+<div class="row"><span>Hamburger, petite poutine, breuvage</span><b>17,80 $</b></div>
+<div class="row"><span>2 hot-dogs vapeur, frites, breuvage</span><b>11,80 $</b></div>
+<div class="row"><span>1 pogo, petite poutine, breuvage</span><b>14,10 $</b></div>
+<div class="row"><span>4 croquettes, petite poutine, breuvage</span><b>14,10 $</b></div>
+<div class="tot">*** MERCI, BON APPÉTIT ***</div></div>
+</div>
+</div></section>
+
+<section id="avisHome"><div class="wrap">
+<span class="kick">Ce que nos clients disent</span>
+<h2>Les avis</h2>
+<div class="rating"><span class="big">4,3</span><span><span class="stars">★★★★☆</span><br><b>sur Google · 16 avis</b></span></div>
+<div class="revs" id="revHome"></div>
+<p class="center" style="margin-top:30px"><a class="btn btn-red" data-go="avis" id="allBtn">Voir tous les avis</a></p>
+</div></section>
+
+<section class="about" id="apropos"><div class="wrap">
+<div><div class="since">1976</div><p style="font-weight:700;font-size:20px;margin-top:14px">Le Restoroute sert Joliette depuis 1976.</p><p style="margin-top:10px;font-size:17px">Sous-marins, frites et poutines maison, burgers sur la plaque, pizzas, trios : le menu d'un vrai casse-croûte. Pour manger sur place, pour emporter, ou commander d'avance au téléphone.</p></div>
+<div class="cardk"><h3 style="font-size:26px">Heures d'ouverture</h3><div id="liveHome"></div><table class="hrs" id="hrsHome"></table><p style="margin-top:16px"><a class="btn btn-red" href="tel:+14507594444">450-759-4444</a></p></div>
+</div></section>
+</div>
+
+<!-- MENU -->
+<div class="page" id="menu"><div class="wrap">
+<a class="btn btn-ghost back" data-go="home">← Retour au site</a>
+<span class="kick" style="display:block">Restoroute Joliette</span>
+<h2>Menu complet</h2>
+<div class="cats" id="cats"></div>
+<div class="mgrid" id="mgrid"></div>
+<p class="disc">Prix tels qu'affichés sur le menu en ligne du restaurant (mainmenus.com) : ils peuvent avoir changé, confirmez au 450-759-4444. Prix des pizzas et de la pizza du trio au téléphone.</p>
+</div></div>
+
+<!-- AVIS -->
+<div class="page" id="avis"><div class="wrap">
+<a class="btn btn-ghost back" data-go="home">← Retour au site</a>
+<span class="kick" style="display:block">Restoroute Joliette</span>
+<h2>Tous les avis</h2>
+<div class="rating"><span class="big">4,3</span><span><span class="stars">★★★★☆</span><br><b>sur Google · 16 avis</b></span></div>
+<div class="revs" id="revAll"></div>
+<p class="disc">Avis Google tels que publiés, repris sur restoenligne.com.</p>
+<p style="margin-top:16px"><a class="btn btn-ghost" href="https://restoenligne.com/restaurants/evaluations/restoroute-joliette" target="_blank" rel="noopener">Voir les évaluations</a></p>
+</div></div>
+
+<!-- JOINDRE -->
+<div class="page" id="joindre"><div class="wrap">
+<a class="btn btn-ghost back" data-go="home">← Retour au site</a>
+<span class="kick" style="display:block">Restoroute Joliette</span>
+<h2>Nous joindre</h2>
+<div class="jgrid">
+<iframe class="map" loading="lazy" title="Carte" data-src="https://www.google.com/maps?q=1144%20boul.%20Manseau%2C%20Joliette%20QC%20J6E%203G8&output=embed"></iframe>
+<div class="cardk">
+<div id="liveJ"></div>
+<ul class="jl">
+<li>📞 <a href="tel:+14507594444">450-759-4444</a></li>
+<li>✉️ <a href="mailto:restoroute.joliette@hotmail.com">restoroute.joliette@hotmail.com</a></li>
+<li>📍 1144, boul. Manseau, Joliette (Québec) J6E 3G8</li>
+</ul>
+<a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&destination=1144%20boul.%20Manseau%2C%20Joliette%20QC%20J6E%203G8" target="_blank" rel="noopener">Itinéraire</a>
+<h3 style="font-size:22px;margin-top:24px">Heures</h3>
+<table class="hrs" id="hrsJ"></table>
+</div></div>
+</div></div>
+</main>
+
+<footer><div class="wrap">
+<div><b>Restoroute Joliette</b><br>1144, boul. Manseau, Joliette (Québec) J6E 3G8<br>Depuis 1976</div>
+<div><b>Téléphone</b><br><a href="tel:+14507594444">450-759-4444</a><br><a href="mailto:restoroute.joliette@hotmail.com">restoroute.joliette@hotmail.com</a></div>
+<div><b>Heures</b><br>Mercredi au dimanche : 11 h à 19 h<br>Lundi et mardi : fermé</div>
+</div></footer>
+<a class="btn btn-red sticky-call" href="tel:+14507594444">📞 Appeler · 450-759-4444</a>
+
+<script>
+(function(){
+var intro=document.getElementById('intro');
+var seen=false;try{seen=sessionStorage.getItem('rj_intro')}catch(e){}
+function endIntro(){if(!intro)return;intro.classList.add('out');setTimeout(function(){intro&&intro.remove();intro=null},500)}
+if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){intro.remove();intro=null}else{try{sessionStorage.setItem('rj_intro','1')}catch(e){}intro.addEventListener('click',endIntro);setTimeout(endIntro,1900)}
+
+var M=[
+["Sous-marins 12 po",null,[["Steak, pepperoni, fromage","17,55 $"],["Steak, capicolli, fromage","17,55 $"],["Viande fumée, fromage","21,00 $"],["Spéciale Restoroute","21,00 $"],["Charcuteries, fromage","17,55 $"],["Végétarien","17,55 $"]]],
+["Sandwichs",null,[["Sandwich viande fumée","15,00 $"],["Sandwich BLT","7,50 $"]]],
+["Casse-croûte",null,[["Hot-dog vapeur","2,60 $"],["Hot-dog grillé","2,60 $"],["Pogo","3,30 $"],["9 croquettes de poulet","9,75 $"],["Rondelles d'oignon","7,50 $"]]],
+["Frites maison",null,[["Petite frite","4,55 $"],["Frite régulière","5,00 $"],["Frites sauce BBQ","6,90 $"],["Frite familiale, petite","9,00 $"],["Frite familiale, grande","12,00 $"],["Sauce à poutine (4 oz)","1,25 $"],["Sauce à poutine (8 oz)","2,50 $"]]],
+["Sur la plaque",null,[["Hamburger","8,35 $"],["Cheeseburger","9,50 $"],["Double cheeseburger","12,65 $"],["Hamburger spécial (viande fumée)","12,65 $"],["Hamburger grec","12,65 $"],["Hamburger steak (12 oz)","20,70 $"]]],
+["Trios avec breuvage",null,[["1 hot-dog vapeur, petite poutine","14,10 $"],["1 hot-dog grillé, petite poutine","14,10 $"],["2 hot-dogs vapeur, frites","11,80 $"],["2 hot-dogs grillés, frites","11,80 $"],["Hamburger, petite poutine","17,80 $"],["Cheeseburger, petite poutine","18,80 $"],["Hamburger, frites","14,65 $"],["Cheeseburger, frites","15,65 $"],["1 pogo, petite poutine","14,10 $"],["2 pogos, frites","13,50 $"],["4 croquettes de poulet, petite poutine","14,10 $"],["1/3 de pizza 10 po avec frites","au téléphone"]]],
+["Poutines — format régulier",null,[["Classique","12,65 $"],["Saucisses","14,65 $"],["Bacon","15,30 $"],["Viande fumée","15,30 $"],["Pepperoni","15,30 $"],["Viande hachée","15,30 $"],["OMG (oignons frits, champignons, poivrons verts)","14,65 $"]]],
+["Poutines — format familial",null,[["Classique","24,75 $"],["Saucisses","29,00 $"],["OMG","29,00 $"],["Viande hachée","30,00 $"],["Viande fumée","30,00 $"],["Bacon","30,00 $"],["Pepperoni","30,00 $"],["Toute garnie (familiale seulement)","30,00 $"]]],
+["Pizzas","Petite 10 po ou x-large 16 po · prix au téléphone",[["Fromage",""],["Pepperoni-fromage",""],["Toute garnie",""],["Végétarienne",""],["Spéciale Restoroute (viande fumée et pepperoni)",""],["Bacon et oignons",""]]],
+["Breuvages","355 ml sauf mention",[["Coke, Coke diète, Coke Zéro","3,25 $"],["Sprite, Canada Dry Ginger Ale","3,25 $"],["Crush orange, Nestea","3,25 $"],["Jus Oasis pomme-raisin ou orange (300 ml)","3,25 $"],["Eau Eska (500 ml)","2,25 $"]]]
+];
+var cats=document.getElementById('cats'),g=document.getElementById('mgrid');
+M.forEach(function(c,i){var a=document.createElement('a');a.textContent=c[0];a.onclick=function(){document.getElementById('cat'+i).scrollIntoView({behavior:'smooth'})};cats.appendChild(a);
+var d=document.createElement('div');d.className='mcat';d.id='cat'+i;var h='<h3>'+c[0]+'</h3>'+(c[1]?'<div class="note">'+c[1]+'</div>':'');
+c[2].forEach(function(it){h+='<div class="item"><span class="n">'+it[0]+'</span>'+(it[1]?'<span class="dots"></span><span class="p">'+it[1]+'</span>':'')+'</div>'});d.innerHTML=h;g.appendChild(d)});
+
+var R=[
+["Michel Gagne","14 avr. 2026",5,"Super A1 personnel très professionnel bouffe excellente service impeccable"],
+["MarieQc","3 avr. 2026",5,"un vrai bon casse croûte! Le sous marin resto route hummmm … pi des vrais frites"],
+["dunes 424","23 juil. 2026",5,"Best hamburger joint in joillet and surrounding areas. Very pleasant and well prepared restaurant. They have closed for staff vacations for a month. Dined in previously food excellent"],
+["Jacqueline Duguay","29 mars 2026",5,"La poutine très bonne pizza aussi"],
+["Regis Regis","22 avr. 2026",5,"bon prix rapide bonne quantiter"],
+["Marcel Tessier","13 juil. 2026",5,"Très recommandable, 10/10"],
+["Maxime Beaucage","30 juin 2026",5,"Toujours aussi bon!"],
+["Guy Girardeau","12 févr. 2026",5,"Very good i love it tres bon wowww"],
+["Juno Romano","20 avr. 2026",5,"A recommander"],
+["Martin Grenier","2 juin 2026",4,"Rapide et délicieux, le sous-marin très bon et la poutine excellente."]
+];
+function card(r){return '<div class="rev"><span class="stars">'+'★★★★★'.slice(0,r[2])+'<span style="color:#ddd">'+'★★★★★'.slice(r[2])+'</span></span><p>'+r[3]+'</p><div class="who">'+r[0]+'</div><div class="src">Avis Google · '+r[1]+'</div></div>'}
+var five=R.filter(function(r){return r[2]==5&&r[0]!='dunes 424'});
+document.getElementById('revHome').innerHTML=five.slice(0,12).map(card).join('');
+document.getElementById('revAll').innerHTML=R.map(card).join('');
+document.getElementById('allBtn').textContent='Voir tous les avis ('+R.length+')';
+
+var H=[["Dimanche","11 h à 19 h",[11,19]],["Lundi","Fermé",null],["Mardi","Fermé",null],["Mercredi","11 h à 19 h",[11,19]],["Jeudi","11 h à 19 h",[11,19]],["Vendredi","11 h à 19 h",[11,19]],["Samedi","11 h à 19 h",[11,19]]];
+var now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Toronto'}));var dw=now.getDay(),hr=now.getHours()+now.getMinutes()/60;
+var t=H[dw][2],open=t&&hr>=t[0]&&hr<t[1];
+var order=[3,4,5,6,0,1,2];
+var rows=order.map(function(i){return '<tr'+(i==dw?' class="today"':'')+'><td>'+H[i][0]+'</td><td>'+H[i][1]+'</td></tr>'}).join('');
+['hrsHome','hrsJ'].forEach(function(id){document.getElementById(id).innerHTML=rows});
+var lv='<span class="live '+(open?'on':'off')+'">'+(open?'Ouvert maintenant':'Fermé en ce moment')+'</span>';
+document.getElementById('liveHome').innerHTML=lv;document.getElementById('liveJ').innerHTML=lv;
+
+var tk=document.getElementById('ticket');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){tk.classList.add('go');io.disconnect()}},{threshold:.15});io.observe(document.querySelector('.printer'))}else tk.classList.add('go');
+
+function go(p){document.getElementById('links').classList.remove('open');
+document.querySelectorAll('.page').forEach(function(x){x.classList.toggle('on',x.id==p)});
+document.body.classList.toggle('sub-open',p!='home');
+if(p=='joindre'){var f=document.querySelector('.map');if(!f.src)f.src=f.dataset.src}
+window.scrollTo(0,0)}
+document.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();go(a.dataset.go)})});
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Le Marché Lacroix · Épicerie, boucherie et traiteur à Saint-Hyacinthe depuis 1957</title>
+<meta name="description" content="Le Marché Lacroix, épicerie indépendante de Saint-Hyacinthe depuis 1957 : viandes, fromages, fruits et légumes, mets maison, menu du jour et traiteur En Faim. Ouvert tous les jours de 9 h à 19 h. 450-774-2726.">
+<meta name="theme-color" content="#1f3d2b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GroceryStore","name":"Le Marché Lacroix","slogan":"Une expérience inoubliable","foundingDate":"1957","telephone":"+1-450-774-2726","faxNumber":"+1-450-774-7729","email":"info@marchelacroix.com","url":"https://www.marchelacroix.com",
+"address":{"@type":"PostalAddress","streetAddress":"590, boulevard Casavant Ouest","addressLocality":"Saint-Hyacinthe","addressRegion":"QC","postalCode":"J2S 7S3","addressCountry":"CA"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"19:00"}],
+"sameAs":["https://www.facebook.com/MarcheLacroix/","https://www.instagram.com/marchelacroix/"],
+"hasOfferCatalog":{"@type":"OfferCatalog","name":"Traiteur En Faim — buffets froids","itemListElement":[
+{"@type":"Offer","itemOffered":{"@type":"Product","name":"Le Petit Rapide"},"price":"16.99","priceCurrency":"CAD"},
+{"@type":"Offer","itemOffered":{"@type":"Product","name":"Le Glouton"},"price":"19.99","priceCurrency":"CAD"},
+{"@type":"Offer","itemOffered":{"@type":"Product","name":"Le Régulier"},"price":"19.99","priceCurrency":"CAD"},
+{"@type":"Offer","itemOffered":{"@type":"Product","name":"Wrap en Fête"},"price":"19.99","priceCurrency":"CAD"},
+{"@type":"Offer","itemOffered":{"@type":"Product","name":"Spécial Paninis"},"price":"19.99","priceCurrency":"CAD"},
+{"@type":"Offer","itemOffered":{"@type":"Product","name":"Le Choix Ciabatta"},"price":"19.99","priceCurrency":"CAD"},
+{"@type":"Offer","itemOffered":{"@type":"Product","name":"Le Beau Buffet"},"price":"24.99","priceCurrency":"CAD"}]}}
+</script>
+<style>
+:root{--sapin:#1f3d2b;--sapin2:#2c5a3f;--or:#c8a04a;--or2:#e8cd8a;--kraft:#f3ead9;--kraft2:#e9dcc2;--creme:#fdf9f1;--encre:#1d211c;--doux:#5c5a4e;--rouge:#b5452f;--ligne:#ddcfb2;--bandeau:32px}
+@media (max-width:519px){:root{--bandeau:48px}}
+*{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bandeau) + 70px)}
+body{margin:0;background:var(--creme);color:var(--encre);font:400 17px/1.6 "Work Sans",system-ui,sans-serif;padding-top:var(--bandeau)}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.1;margin:0 0 .5em;overflow-wrap:anywhere}
+a{color:inherit}
+svg{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{position:fixed;top:var(--bandeau);left:0;right:0;z-index:50;background:var(--sapin);color:#fff}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;color:#fff}
+.marque svg{width:50px;height:50px;flex:none}
+.marque b{font:900 19px/1 "Playfair Display",serif;display:block}
+.marque small{font-size:11px;color:var(--or2);letter-spacing:.14em;text-transform:uppercase}
+.liens{display:none;gap:24px;align-items:center}
+.liens a{text-decoration:none;font-weight:600;font-size:15px;color:#f2eee2}
+.liens a:hover{color:var(--or2)}
+.burger{width:44px;height:44px;border:1px solid rgba(255,255,255,.25);background:transparent;border-radius:10px;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:#fff;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:#fff;transition:transform .25s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.ouvert .burger span{background:transparent}
+.ouvert .burger span::before{transform:translateY(6px) rotate(45deg)}
+.ouvert .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.tiroir{position:fixed;top:calc(var(--bandeau) + 66px);left:0;right:0;background:var(--sapin);padding:4px 20px 18px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s;z-index:49}
+.ouvert .tiroir{transform:none;opacity:1;pointer-events:auto}
+.tiroir a{display:block;padding:13px 4px;font-weight:600;text-decoration:none;color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
+@media (min-width:920px){.liens{display:flex}.burger,.tiroir{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:8px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-or{background:var(--or);color:#1d211c}
+.btn-sapin{background:var(--sapin);color:#fff}
+.btn-ligne{border:2px solid var(--sapin);color:var(--sapin)}
+.liens .btn{padding:9px 16px;color:#1d211c}
+/* store awning */
+.auvent{height:26px;background:repeating-linear-gradient(90deg,var(--sapin) 0 34px,var(--creme) 34px 68px);position:relative}
+.auvent::after{content:"";position:absolute;left:0;right:0;bottom:-12px;height:12px;background:radial-gradient(circle at 17px 0,var(--sapin) 16px,transparent 17px) 0 0/68px 12px,radial-gradient(circle at 51px 0,var(--creme) 16px,transparent 17px) 0 0/68px 12px}
+/* hero */
+.hero{position:relative;padding:72px 0 70px;background:linear-gradient(180deg,var(--kraft) 0,var(--creme) 100%);overflow:hidden}
+.flotte{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.85}
+.f svg{display:block;width:100%;height:auto}
+.f.loin{opacity:.35;filter:blur(1.5px)}
+.f .tourne{animation:flotte var(--d,9s) ease-in-out infinite alternate}
+.par{transform:translate3d(0,calc(var(--py,0) * var(--k,.2) * 1px),0)}
+@keyframes flotte{from{transform:translateY(-8px) rotate(var(--r1,-8deg))}to{transform:translateY(10px) rotate(var(--r2,10deg))}}
+@media (max-width:919px){.f{opacity:.3}.f.loin{opacity:.18}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:36px}
+.depuis{display:inline-flex;align-items:center;gap:10px;font-weight:700;color:var(--rouge);letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin-bottom:14px}
+.depuis::before,.depuis::after{content:"";width:26px;height:2px;background:var(--rouge)}
+.hero h1{font-size:clamp(42px,10vw,80px);color:var(--sapin);font-weight:900}
+.hero h1 em{display:block;font-size:.5em;color:var(--or);font-style:italic}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--doux);max-width:33em;margin:0 0 24px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.ouvert-auj{margin-top:24px;display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--ligne);border-radius:999px;padding:8px 16px 8px 10px;font-weight:600;font-size:15px}
+.ouvert-auj i{width:12px;height:12px;border-radius:50%;background:#3d9a5b;display:block;box-shadow:0 0 0 4px rgba(61,154,91,.18)}
+.vitrine{max-width:470px;margin:0 auto;width:100%}
+.vitrine svg{width:100%;height:auto;display:block}
+@media (min-width:1024px){.hero{padding:110px 0 100px}.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+.sec{padding:78px 0;position:relative}
+.sur{display:block;font-weight:700;color:var(--rouge);letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin-bottom:8px}
+.sec h2{font-size:clamp(32px,6vw,52px);color:var(--sapin);font-weight:900}
+.intro{color:var(--doux);max-width:42em;margin:0 0 34px}
+/* rayons */
+.rayons{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.rayons{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.rayon{background:#fff;border:1px solid var(--ligne);border-radius:16px;padding:18px 14px;text-align:center;min-width:0}
+.rayon svg{width:58px;height:58px;display:block;margin:0 auto 8px}
+.rayon h3{font:700 16px/1.25 "Work Sans",sans-serif;margin:0;color:var(--sapin)}
+.pirate{margin-top:26px;background:var(--sapin);color:#fff;border-radius:22px;padding:26px;display:grid;gap:18px;align-items:center;grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.pirate{grid-template-columns:auto minmax(0,1fr)}}
+.pirate svg{width:110px;height:110px}
+.pirate h3{color:var(--or2);font-size:28px;margin-bottom:.25em}
+.pirate p{margin:0;color:#dfe8e0}
+/* ticket du jour */
+.kraft{background:var(--kraft)}
+.duo{display:grid;gap:36px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:980px){.duo{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start}}
+.ticket{background:#fffdf8;max-width:460px;width:100%;margin:0 auto;padding:26px 24px 30px;font-family:"Courier New",ui-monospace,monospace;color:#2b2b2b;position:relative;transform-origin:top center;transform:scaleY(.04);opacity:0;transition:transform 1.3s cubic-bezier(.3,.8,.3,1),opacity .3s;box-shadow:0 18px 30px -18px rgba(0,0,0,.35)}
+.ticket.vu{transform:none;opacity:1}
+.ticket::after{content:"";position:absolute;left:0;right:0;bottom:-12px;height:12px;background:linear-gradient(-45deg,transparent 8px,#fffdf8 0) 0 0/16px 12px,linear-gradient(45deg,transparent 8px,#fffdf8 0) 0 0/16px 12px}
+.ticket .tt{text-align:center;border-bottom:2px dashed #bbb;padding-bottom:12px;margin-bottom:10px}
+.ticket .tt b{display:block;font-size:20px;letter-spacing:.06em}
+.ticket .tt span{font-size:13px}
+.jour{padding:10px 0;border-bottom:1px dashed #ccc;font-size:15px}
+.jour .d{font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13px;color:var(--rouge)}
+.jour .l{display:flex;gap:8px;align-items:baseline}
+.jour .l span:first-child{min-width:0;overflow-wrap:anywhere}
+.jour .l .pts{flex:1;border-bottom:2px dotted #bbb;min-width:10px;transform:translateY(-4px)}
+.jour .l b{white-space:nowrap}
+.ticket .bas{text-align:center;font-size:13px;margin-top:14px}
+.infos-traiteur{display:grid;gap:12px}
+.puce{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--ligne);border-radius:14px;padding:14px 16px}
+.puce svg{flex:none;width:28px;height:28px}
+/* traiteur */
+.onglets{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.onglets button{font:600 15px "Work Sans",sans-serif;border:2px solid var(--sapin);background:transparent;color:var(--sapin);padding:10px 16px;border-radius:999px;cursor:pointer}
+.onglets button[aria-selected="true"]{background:var(--sapin);color:#fff}
+.panneau[hidden]{display:none}
+.cartes{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:700px){.cartes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1100px){.cartes{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.carte{background:#fff;border:1px solid var(--ligne);border-radius:18px;padding:20px;min-width:0;border-top:6px solid var(--or)}
+.carte .tete{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:8px}
+.carte h3{font-size:22px;margin:0;color:var(--sapin)}
+.prix{font:900 22px/1 "Playfair Display",serif;color:var(--rouge);white-space:nowrap}
+.prix small{display:block;font:500 11px "Work Sans",sans-serif;color:var(--doux);text-align:right;margin-top:4px}
+.carte p{margin:0;color:var(--doux);font-size:15px}
+.liste{display:grid;gap:0 44px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.liste{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.lp{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px dotted #cdbf9f;min-width:0}
+.lp span:first-child{min-width:0;overflow-wrap:anywhere}
+.lp .pts{flex:1;border-bottom:2px dotted #cdbf9f;transform:translateY(-4px);min-width:12px}
+.lp b{font-family:"Playfair Display",serif;color:var(--sapin);white-space:nowrap}
+.lp small{display:block;color:var(--doux);font-size:13px}
+.groupe{font:700 20px "Playfair Display",serif;color:var(--rouge);margin:26px 0 4px}
+.groupe:first-child{margin-top:0}
+.notep{margin-top:18px;color:var(--doux);font-size:15px}
+.autres{display:grid;gap:12px;grid-template-columns:minmax(0,1fr);margin-top:28px}
+@media (min-width:760px){.autres{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.autre{background:var(--sapin);color:#fff;border-radius:16px;padding:18px 20px}
+.autre h3{color:var(--or2);font-size:20px;margin:0 0 4px}
+.autre p{margin:0;font-size:14px;color:#dfe8e0}
+/* équipe */
+.equipe{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.equipe{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.membre{background:#fff;border:1px solid var(--ligne);border-radius:16px;padding:18px 12px;text-align:center;min-width:0}
+.membre .ini{width:58px;height:58px;border-radius:50%;margin:0 auto 10px;display:grid;place-items:center;background:var(--kraft2);font:900 22px "Playfair Display",serif;color:var(--sapin)}
+.membre b{display:block;color:var(--sapin)}
+.membre span{font-size:14px;color:var(--doux)}
+.membre.large{grid-column:1/-1}
+@media (min-width:900px){.membre.large{grid-column:auto}}
+/* contact */
+.contact{background:var(--sapin);color:#fff}
+.contact h2{color:#fff}
+.contact .sur{color:var(--or2)}
+.cgrid{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.cgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cb{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px;min-width:0}
+.cb h3{color:var(--or2);font-size:21px}
+.cb p{margin:.25em 0}
+.cb a{color:#fff;font-weight:600;overflow-wrap:anywhere}
+.heures{width:100%;border-collapse:collapse;font-size:15px}
+.heures td{padding:4px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.heures td:last-child{text-align:right}
+footer{background:#142a1d;color:#c9d3cb;text-align:center;padding:26px 20px 100px;font-size:14px}
+@media (min-width:920px){footer{padding-bottom:26px}}
+footer a{color:var(--or2)}
+.appel{position:fixed;left:16px;right:16px;bottom:14px;z-index:60;display:flex;justify-content:center;align-items:center;gap:8px;background:var(--or);color:#1d211c;text-decoration:none;font-weight:700;padding:15px;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+@media (min-width:920px){.appel{display:none}}
+.monte{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.monte.vu{opacity:1;transform:none}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--sapin);display:grid;place-items:center;transition:opacity .5s;overflow:hidden}
+#intro.fin{opacity:0}
+#intro .bande{position:absolute;top:0;left:0;right:0;height:42vh;background:repeating-linear-gradient(90deg,#c8a04a 0 50px,#fdf9f1 50px 100px);transform-origin:top;transform:scaleY(0);animation:deroule .7s .1s cubic-bezier(.3,.9,.3,1.1) forwards}
+#intro .bande::after{content:"";position:absolute;left:0;right:0;bottom:-18px;height:18px;background:radial-gradient(circle at 25px 0,#c8a04a 24px,transparent 25px) 0 0/100px 18px,radial-gradient(circle at 75px 0,#fdf9f1 24px,transparent 25px) 0 0/100px 18px}
+#intro .logo{width:min(64vw,260px);opacity:0;transform:scale(.6);animation:pop .6s .75s cubic-bezier(.3,1.5,.5,1) forwards;position:relative;margin-top:18vh}
+#intro .logo svg{width:100%;height:auto}
+@keyframes deroule{to{transform:scaleY(1)}}
+@keyframes pop{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.monte,.ticket{opacity:1!important;transform:none!important}.par{transform:none!important}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Le Marché Lacroix — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <g id="logo">
+   <ellipse cx="100" cy="100" rx="96" ry="96" fill="#1f3d2b"/>
+   <ellipse cx="100" cy="100" rx="86" ry="86" fill="none" stroke="#c8a04a" stroke-width="3"/>
+   <ellipse cx="100" cy="100" rx="78" ry="78" fill="none" stroke="#c8a04a" stroke-width="1" stroke-dasharray="2 5"/>
+   <path d="M60 64q40-26 80 0" fill="none" stroke="#c8a04a" stroke-width="3" stroke-linecap="round"/>
+   <path d="M88 58q-2-14 12-18 14 4 12 18" fill="#3d7a4f"/>
+   <text x="100" y="124" text-anchor="middle" font-family="Playfair Display,Georgia,serif" font-weight="900" font-size="58" fill="#e8cd8a">ML</text>
+   <text x="100" y="152" text-anchor="middle" font-family="Work Sans,sans-serif" font-weight="700" font-size="13" letter-spacing="3" fill="#e8cd8a">DEPUIS 1957</text>
+  </g>
+ </defs>
+</svg>
+
+<div id="intro" aria-hidden="true">
+ <div class="bande"></div>
+ <div class="logo"><svg viewBox="0 0 200 200"><use href="#logo"/></svg></div>
+</div>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a class="marque" href="#haut" aria-label="Le Marché Lacroix, accueil">
+   <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#logo"/></svg>
+   <span><b>Marché Lacroix</b><small>Saint-Hyacinthe · 1957</small></span>
+  </a>
+  <nav class="liens" aria-label="Navigation principale">
+   <a href="#marche">Le marché</a><a href="#jour">Menu du jour</a><a href="#traiteur">Traiteur</a><a href="#equipe">L'équipe</a><a href="#contact">Nous joindre</a>
+   <a class="btn btn-or" href="tel:+14507742726">450-774-2726</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+ </div>
+ <div class="tiroir">
+  <a href="#marche">Le marché</a><a href="#jour">Menu de la semaine</a><a href="#traiteur">Traiteur En Faim</a><a href="#equipe">L'équipe</a><a href="#contact">Heures et adresse</a>
+ </div>
+</header>
+
+<main id="haut" style="padding-top:66px">
+<div class="auvent" aria-hidden="true"></div>
+<section class="hero">
+ <div class="flotte" aria-hidden="true">
+  <div class="f par" style="--k:.32;left:3%;top:14%;width:64px"><div class="tourne" style="--d:9s"><svg viewBox="0 0 60 64"><path d="M30 16c-14-8-28 4-24 22 3 14 14 24 24 20 10 4 21-6 24-20 4-18-10-30-24-22z" fill="#c0392b"/><path d="M30 16q2-10 8-14" stroke="#6d4c41" stroke-width="3" fill="none"/><path d="M32 12q10-8 18 0-10 6-18 0" fill="#5b9a4a"/><path d="M14 28q2-6 8-8" stroke="#fff" stroke-width="3" opacity=".5" fill="none" stroke-linecap="round"/></svg></div></div>
+  <div class="f par" style="--k:.22;right:5%;top:10%;width:90px"><div class="tourne" style="--d:11s;--r1:-20deg;--r2:-6deg"><svg viewBox="0 0 120 40"><rect x="4" y="8" width="112" height="24" rx="12" fill="#d9a35a"/><path d="M22 12l10 16M44 12l10 16M66 12l10 16M88 12l10 16" stroke="#b07a33" stroke-width="3" stroke-linecap="round"/></svg></div></div>
+  <div class="f par loin" style="--k:.12;left:40%;top:4%;width:58px"><div class="tourne" style="--d:13s"><svg viewBox="0 0 70 60"><path d="M4 52 64 52 64 22z" fill="#f4c542"/><path d="M4 52 64 22" stroke="#d9a520" stroke-width="3"/><circle cx="44" cy="42" r="4" fill="#e0b030"/><circle cx="54" cy="34" r="3" fill="#e0b030"/></svg></div></div>
+  <div class="f par" style="--k:.4;left:6%;bottom:8%;width:74px"><div class="tourne" style="--d:10s;--r1:28deg;--r2:44deg"><svg viewBox="0 0 90 30"><path d="M4 15 70 5l2 20z" fill="#ef8a2b"/><path d="M16 12l6 4M32 10l5 5M48 9l4 5" stroke="#c9661a" stroke-width="2"/><path d="M70 8q12-8 18-2M71 15h16M70 22q12 8 18 2" stroke="#5b9a4a" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div></div>
+  <div class="f par" style="--k:.28;right:10%;bottom:10%;width:80px"><div class="tourne" style="--d:9s;--r1:-6deg;--r2:8deg"><svg viewBox="0 0 90 60"><path d="M8 30c0-16 22-24 44-22 22 2 34 14 32 26-2 14-24 20-44 18C20 50 8 44 8 30z" fill="#b0413e"/><path d="M14 30c0-12 18-18 36-16 18 2 28 10 26 20" fill="none" stroke="#f6dcd0" stroke-width="5"/><ellipse cx="56" cy="30" rx="9" ry="6" fill="#f6dcd0"/></svg></div></div>
+  <div class="f par loin" style="--k:.16;right:36%;bottom:4%;width:70px"><div class="tourne" style="--d:12s"><svg viewBox="0 0 90 40"><path d="M6 20q30-22 62 0-32 22-62 0z" fill="#7fa7c9"/><path d="M68 20l18-12v24z" fill="#6c94b6"/><circle cx="20" cy="17" r="3" fill="#1d211c"/></svg></div></div>
+  <div class="f par loin" style="--k:.2;left:50%;bottom:22%;width:46px"><div class="tourne" style="--d:10s"><svg viewBox="0 0 50 50"><circle cx="25" cy="27" r="20" fill="#e2483b"/><path d="M17 8q8 6 16 0-4 8-8 6-4 2-8-6z" fill="#4f8a3c"/></svg></div></div>
+  <div class="f par" style="--k:.26;left:28%;bottom:2%;width:56px;opacity:.5"><div class="tourne" style="--d:8s;--r1:-14deg;--r2:12deg"><svg viewBox="0 0 60 60"><path d="M30 4c18 10 24 30 10 50-6-2-10-6-10-12 0 6-4 10-10 12C6 34 12 14 30 4z" fill="#6ab04c"/><path d="M30 8v46" stroke="#4a8a30" stroke-width="2"/></svg></div></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="depuis">Depuis 1957</span>
+   <h1>Le Marché Lacroix<em>Une expérience inoubliable</em></h1>
+   <p class="lead">Épicerie indépendante, boucherie réputée et cuisine maison : une institution de Saint-Hyacinthe à l'ambiance chaleureuse des anciens magasins généraux. Ici, on connaît la plupart de nos clients.</p>
+   <div class="cta">
+    <a class="btn btn-sapin" href="tel:+14507742726"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Appeler</a>
+    <a class="btn btn-ligne" href="#traiteur">Voir le traiteur</a>
+   </div>
+   <div class="ouvert-auj"><i></i>Ouvert tous les jours, de 9 h à 19 h</div>
+  </div>
+  <div class="vitrine monte" aria-hidden="true">
+   <svg viewBox="0 0 460 380">
+    <rect x="30" y="60" width="400" height="300" rx="10" fill="#7a5530"/>
+    <rect x="44" y="74" width="372" height="272" fill="#fdf9f1"/>
+    <rect x="30" y="20" width="400" height="56" rx="8" fill="#1f3d2b"/>
+    <text x="230" y="58" text-anchor="middle" font-family="Playfair Display,Georgia,serif" font-weight="900" font-size="28" fill="#e8cd8a" letter-spacing="2">MARCHÉ LACROIX</text>
+    <path d="M44 78h372v34c-15 14-31 14-46 0-15 14-31 14-46 0-15 14-31 14-46 0-15 14-31 14-46 0-15 14-31 14-46 0-15 14-31 14-46 0-15 14-31 14-46 0-15 14-31 14-46 0z" fill="#c8a04a"/>
+    <path d="M90 78v34M182 78v34M274 78v34M366 78v34" stroke="#fdf9f1" stroke-width="22" opacity=".9"/>
+    <rect x="44" y="200" width="372" height="12" fill="#a77a45"/>
+    <rect x="44" y="300" width="372" height="12" fill="#a77a45"/>
+    <g transform="translate(64 150)"><circle cx="16" cy="34" r="16" fill="#c0392b"/><circle cx="42" cy="36" r="15" fill="#d8453a"/><circle cx="68" cy="34" r="16" fill="#c0392b"/><circle cx="30" cy="20" r="15" fill="#e2483b"/><circle cx="56" cy="20" r="15" fill="#c0392b"/></g>
+    <g transform="translate(170 150)"><path d="M0 50 70 50 70 6z" fill="#f4c542"/><path d="M0 50 70 6" stroke="#d9a520" stroke-width="3"/><circle cx="50" cy="40" r="5" fill="#e0b030"/></g>
+    <g transform="translate(262 142)"><rect x="0" y="40" width="130" height="18" rx="9" fill="#d9a35a" transform="rotate(-14 65 49)"/><rect x="10" y="30" width="120" height="18" rx="9" fill="#e0b06a" transform="rotate(-24 70 39)"/></g>
+    <g transform="translate(64 240)"><path d="M0 30c0-18 24-26 48-24 24 2 38 16 36 28-2 16-26 22-48 20C14 52 0 46 0 30z" fill="#b0413e"/><ellipse cx="52" cy="30" rx="10" ry="7" fill="#f6dcd0"/><path d="M6 30c0-12 20-18 40-16" fill="none" stroke="#f6dcd0" stroke-width="5"/></g>
+    <g transform="translate(176 248)"><path d="M0 22q36-26 72 0-36 26-72 0z" fill="#7fa7c9"/><path d="M72 22l20-14v28z" fill="#6c94b6"/><circle cx="16" cy="19" r="3" fill="#1d211c"/></g>
+    <g transform="translate(290 236)"><path d="M10 0 50 0 56 60 4 60z" fill="#efe3c9" stroke="#a77a45" stroke-width="2"/><rect x="12" y="20" width="36" height="20" fill="#1f3d2b"/><text x="30" y="34" text-anchor="middle" font-family="Work Sans,sans-serif" font-size="9" font-weight="700" fill="#e8cd8a">MAISON</text></g>
+    <g transform="translate(352 238)"><path d="M6 30c-6-16 6-30 22-30s28 14 22 30l-6 26H12z" fill="#ef8a2b"/><path d="M18 0q10-12 20 0" stroke="#5b9a4a" stroke-width="5" fill="none"/></g>
+    <g transform="translate(340 300) rotate(-8)"><rect x="0" y="0" width="74" height="40" rx="4" fill="#fff" stroke="#1d211c" stroke-width="2"/><text x="37" y="17" text-anchor="middle" font-family="Courier New,monospace" font-size="10" fill="#b5452f" font-weight="700">STEAK</text><text x="37" y="31" text-anchor="middle" font-family="Courier New,monospace" font-size="10" fill="#b5452f" font-weight="700">PIRATE</text></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="marche">
+ <div class="wrap">
+  <span class="sur">Le marché</span>
+  <h2>Un marché public et une boutique gourmande</h2>
+  <p class="intro">Depuis 1957, le Marché Lacroix se démarque dans l'offre alimentaire de la région. Une équipe en cuisine prépare chaque jour des mets maison, et notre comptoir de viandes fait notre réputation.</p>
+  <div class="rayons">
+   <div class="rayon monte"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#f3ead9"/><path d="M14 32c0-10 12-14 24-13 12 1 16 8 15 14-1 8-13 11-24 10-9-1-15-4-15-11z" fill="#b0413e"/><ellipse cx="40" cy="31" rx="6" ry="4" fill="#f6dcd0"/></svg><h3>Viandes et charcuteries</h3></div>
+   <div class="rayon monte"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#f3ead9"/><path d="M12 40h36V22z" fill="#f4c542"/><path d="M12 40 48 22" stroke="#d9a520" stroke-width="2"/><circle cx="36" cy="34" r="3" fill="#e0b030"/></svg><h3>Fromages</h3></div>
+   <div class="rayon monte"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#f3ead9"/><circle cx="24" cy="34" r="10" fill="#c0392b"/><path d="M34 26 50 22 48 30z" fill="#ef8a2b"/><path d="M24 24q2-6 6-8" stroke="#5b9a4a" stroke-width="3" fill="none"/></svg><h3>Fruits et légumes</h3></div>
+   <div class="rayon monte"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#f3ead9"/><rect x="10" y="24" width="40" height="14" rx="7" fill="#d9a35a" transform="rotate(-18 30 31)"/><path d="M20 28l4 6M28 25l4 6M36 22l4 6" stroke="#b07a33" stroke-width="2"/></svg><h3>Boulangerie et pâtisserie</h3></div>
+   <div class="rayon monte"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#f3ead9"/><path d="M14 30h32a16 16 0 0 1-32 0z" fill="#1f3d2b"/><path d="M24 24c-4-5 4-7 0-12M34 24c-4-5 4-7 0-12" stroke="#c8a04a" stroke-width="2.5" fill="none"/></svg><h3>Produits maison</h3></div>
+   <div class="rayon monte"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#f3ead9"/><path d="M24 12h12v8l4 6v22H20V26l4-6z" fill="#7a2f2a"/><rect x="22" y="30" width="16" height="10" fill="#e8cd8a"/></svg><h3>Épicerie fine</h3></div>
+   <div class="rayon monte"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#f3ead9"/><path d="M10 30q18-16 34 0-16 16-34 0z" fill="#7fa7c9"/><path d="M44 30l10-8v16z" fill="#6c94b6"/><circle cx="18" cy="28" r="2" fill="#1d211c"/></svg><h3>Poissons et fruits de mer</h3></div>
+   <div class="rayon monte"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="#f3ead9"/><path d="M12 32h36a18 12 0 0 1-36 0z" fill="#fff" stroke="#a77a45" stroke-width="2"/><circle cx="22" cy="28" r="5" fill="#6ab04c"/><circle cx="32" cy="27" r="5" fill="#e2483b"/><circle cx="40" cy="29" r="4" fill="#6ab04c"/></svg><h3>Bar à salades</h3></div>
+  </div>
+  <div class="pirate monte">
+   <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58" fill="#2c5a3f"/><path d="M22 66c0-20 26-30 52-28 26 2 34 18 32 30-2 18-28 24-52 22-20-2-32-8-32-24z" fill="#b0413e"/><ellipse cx="78" cy="64" rx="12" ry="8" fill="#f6dcd0"/><path d="M28 66c0-14 22-22 44-20" fill="none" stroke="#f6dcd0" stroke-width="5"/><path d="M30 36q30-22 60 0l-6 8q-24-12-48 0z" fill="#1d211c"/><circle cx="60" cy="32" r="5" fill="#e8cd8a"/></svg>
+   <div><h3>Le Steak Pirate</h3><p>Notre produit signature. Le Marché Lacroix est réputé pour la qualité et le choix de ses viandes : informez-vous au comptoir de la boucherie.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec kraft" id="jour">
+ <div class="wrap duo">
+  <div>
+   <span class="sur">Fait maison chaque jour</span>
+   <h2>Le menu de la semaine</h2>
+   <p class="intro">Une soupe et un plat du jour préparés par notre équipe en cuisine. Le menu change chaque semaine : passez nous voir ou appelez-nous.</p>
+   <div class="infos-traiteur">
+    <div class="puce"><svg viewBox="0 0 24 24" fill="#1f3d2b"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.6V6h-2v7.4l5 3 1-1.7z"/></svg><div><b>Ouvert 7 jours sur 7</b><br>De 9 h à 19 h, du lundi au dimanche.</div></div>
+    <div class="puce"><svg viewBox="0 0 24 24" fill="#1f3d2b"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg><div><b>Une commande pour le traiteur?</b><br>Appelez Julie, notre gérante traiteur, au <span style="white-space:nowrap">450-774-2726</span>.</div></div>
+   </div>
+  </div>
+  <div class="ticket" id="ticket">
+   <div class="tt"><b>MARCHÉ LACROIX</b><span>Menu de la semaine · 24 au 29 novembre</span></div>
+   <div class="jour"><div class="d">Mardi 24</div><div class="l"><span>Soupe poulet et nouilles</span><span class="pts"></span><b>3,49 $</b></div><div class="l"><span>Poitrine de poulet texane</span><span class="pts"></span><b>12,99 $</b></div></div>
+   <div class="jour"><div class="d">Mercredi 25</div><div class="l"><span>Crème de tomate et pesto</span><span class="pts"></span><b>3,49 $</b></div><div class="l"><span>Rôti de bœuf sauce au poivre</span><span class="pts"></span><b>13,99 $</b></div></div>
+   <div class="jour"><div class="d">Jeudi 26</div><div class="l"><span>Soupe bœuf et orge</span><span class="pts"></span><b>3,49 $</b></div><div class="l"><span>Poulet sauce à l'italienne</span><span class="pts"></span><b>12,99 $</b></div></div>
+   <div class="jour"><div class="d">Vendredi 27</div><div class="l"><span>Soupe poulet et riz</span><span class="pts"></span><b>3,49 $</b></div><div class="l"><span>Cubes de bœuf Stroganoff</span><span class="pts"></span><b>12,99 $</b></div></div>
+   <div class="jour"><div class="d">Samedi 28</div><div class="l"><span>Crème d'asperges</span><span class="pts"></span><b>3,49 $</b></div><div class="l"><span>Filet de saumon citronné</span><span class="pts"></span><b>13,99 $</b></div></div>
+   <div class="jour"><div class="d">Dimanche 29</div><div class="l"><span>Crème de brocoli</span><span class="pts"></span><b>3,49 $</b></div><div class="l"><span>Poitrine de poulet sauce aux épinards</span><span class="pts"></span><b>12,99 $</b></div></div>
+   <div class="bas">*** MERCI ET À BIENTÔT ***</div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="traiteur">
+ <div class="wrap">
+  <span class="sur">Traiteur En Faim</span>
+  <h2>Le traiteur du marché</h2>
+  <p class="intro">Buffets, boîtes à lunch et bouchées pour vos réunions, vos fêtes et vos réceptions. Livraison disponible. Taxes et livraison en sus; couverts jetables pour 10 personnes ou plus. Une commande 48 heures à l'avance est appréciée.</p>
+  <div class="onglets" role="tablist">
+   <button role="tab" aria-selected="true" aria-controls="p1" id="t1">Buffets froids</button>
+   <button role="tab" aria-selected="false" aria-controls="p2" id="t2">Boîtes à lunch</button>
+   <button role="tab" aria-selected="false" aria-controls="p3" id="t3">Bouchées dînatoires</button>
+  </div>
+  <div class="panneau" id="p1" role="tabpanel" aria-labelledby="t1">
+   <div class="cartes">
+    <article class="carte"><div class="tete"><h3>Le Petit Rapide</h3><div class="prix">16,99 $<small>par personne</small></div></div><p>Sandwichs (4 pointes), 2 salades, desserts (2 pointes).</p></article>
+    <article class="carte"><div class="tete"><h3>Le Glouton</h3><div class="prix">19,99 $<small>par personne</small></div></div><p>Sandwichs (6 pointes), crudités, cheddar, 1 salade, desserts (2 pointes).</p></article>
+    <article class="carte"><div class="tete"><h3>Le Régulier</h3><div class="prix">19,99 $<small>par personne</small></div></div><p>Sandwichs (4 pointes) ou 2 pains farcis, 3 salades, desserts (2 pointes).</p></article>
+    <article class="carte"><div class="tete"><h3>Wrap en Fête</h3><div class="prix">19,99 $<small>par personne</small></div></div><p>1 wrap (7 garnitures au choix), 3 salades, desserts.</p></article>
+    <article class="carte"><div class="tete"><h3>Spécial Paninis</h3><div class="prix">19,99 $<small>par personne</small></div></div><p>1 panini (3 garnitures au choix), 3 salades, desserts.</p></article>
+    <article class="carte"><div class="tete"><h3>Le Choix Ciabatta</h3><div class="prix">19,99 $<small>par personne</small></div></div><p>1 ciabatta ou 2 mini ciabattas (6 garnitures au choix), 3 salades, desserts.</p></article>
+    <article class="carte"><div class="tete"><h3>Le Beau Buffet</h3><div class="prix">24,99 $<small>par personne</small></div></div><p>Sandwichs, 3 salades, viandes froides, œufs farcis, desserts.</p></article>
+   </div>
+  </div>
+  <div class="panneau" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+   <p class="intro" style="margin-bottom:14px">Servies en portion individuelle, avec salade et dessert au choix. Prix par boîte.</p>
+   <div class="liste">
+    <div class="lp"><span>Sandwich n° 1</span><span class="pts"></span><b>14 $</b></div>
+    <div class="lp"><span>Sandwich n° 2</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Mini croissants n° 3</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Mini paninis n° 4</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Mini paninis n° 5</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Wrap n° 6</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Wrap n° 7</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Wrap n° 8</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Paninis n° 9</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Paninis n° 10</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Baguettine n° 11</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Baguettine n° 12</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Ciabatta n° 13</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Mini ciabatta n° 14</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Salades n° 15</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Bagel au saumon n° 16<small>Saumon fumé et fromage Philadelphia</small></span><span class="pts"></span><b>20 $</b></div>
+    <div class="lp"><span>Salade repas n° 17</span><span class="pts"></span><b>19 $</b></div>
+    <div class="lp"><span>Salade repas n° 18</span><span class="pts"></span><b>19 $</b></div>
+    <div class="lp"><span>Sandwich en pointes n° 19</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Wrap végétarien n° 20</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Sans gluten n° 22</span><span class="pts"></span><b>17 $</b></div>
+    <div class="lp"><span>Sans gluten n° 23</span><span class="pts"></span><b>17 $</b></div>
+   </div>
+  </div>
+  <div class="panneau" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+   <p class="intro" style="margin-bottom:14px">Chez En Faim, canapés et bouchées sont synonymes de variété et de fantaisie.</p>
+   <div class="liste">
+    <div>
+     <div class="groupe">Bouchées roulées (12)</div>
+     <div class="lp"><span>Roulés de poulet et pesto ou roulés assaisonnés</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Roulés au poulet chipotle et mangue</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Roulés de saumon fumé et fromage à la crème</span><span class="pts"></span><b>23,99 $</b></div>
+     <div class="lp"><span>Roulés au thon</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Roulés végétariens</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Roulés d'asperges et jambon ou jambon et fromage suisse</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Roulés de porc ou dinde et fromage suisse</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Italien et fromage suisse</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Poulet fumé au bois de pommier</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Poulet BBQ au whisky</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="groupe">Mini-pitas (12)</div>
+     <div class="lp"><span>Mini-pitas à la goberge</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Mini-pitas au poulet César</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Mini-pitas végétariens</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Mini-pitas au poulet et jambon</span><span class="pts"></span><b>19,99 $</b></div>
+     <div class="lp"><span>Mini-pitas de porc, bacon et érable</span><span class="pts"></span><b>19,99 $</b></div>
+    </div>
+    <div>
+     <div class="groupe">Mini-brochettes (12)</div>
+     <div class="lp"><span>Artichauts, tomates cerises et olives</span><span class="pts"></span><b>29,99 $</b></div>
+     <div class="lp"><span>Saumon fumé, olives et poivrons grillés</span><span class="pts"></span><b>29,99 $</b></div>
+     <div class="lp"><span>Poulet grillé au pesto</span><span class="pts"></span><b>29,99 $</b></div>
+     <div class="lp"><span>Cantaloup, bocconcini et prosciutto</span><span class="pts"></span><b>29,99 $</b></div>
+     <div class="groupe">Bouchées découvertes</div>
+     <div class="lp"><span>Prosciutto et melon</span><span class="pts"></span><b>44,99 $</b></div>
+     <div class="lp"><span>Roulade d'asperges et de jambon</span><span class="pts"></span><b>44,99 $</b></div>
+     <div class="lp"><span>Mini tomates farcies au bocconcini</span><span class="pts"></span><b>44,99 $</b></div>
+     <div class="lp"><span>Roulade d'asperges et saumon fumé</span><span class="pts"></span><b>44,99 $</b></div>
+     <div class="lp"><span>Boules de fromage trois saveurs</span><span class="pts"></span><b>44,99 $</b></div>
+     <div class="groupe">Délices de la mer</div>
+     <div class="lp"><span>Assiette de saumon fumé<small>Pour 10 à 15 personnes</small></span><span class="pts"></span><b>59,99 $</b></div>
+     <div class="lp"><span>Crevettes au citron, sauce cocktail<small>Pour 12 personnes</small></span><span class="pts"></span><b>39,99 $</b></div>
+    </div>
+   </div>
+  </div>
+  <p class="notep">Les prix peuvent changer sans préavis. Pour commander un buffet, appelez-nous : c'est la meilleure façon de le recevoir le jour voulu.</p>
+  <div class="autres">
+   <div class="autre monte"><h3>Buffet chaud</h3><p>Repas généreux, disponible sur réservation. Appelez-nous.</p></div>
+   <div class="autre monte"><h3>Repas corporatifs et funéraires</h3><p>Appelez-nous pour le menu et les prix.</p></div>
+   <div class="autre monte"><h3>Repas de Noël</h3><p>Appelez-nous pour le menu et les prix.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec kraft" id="equipe">
+ <div class="wrap">
+  <span class="sur">Les visages du marché</span>
+  <h2>Notre équipe</h2>
+  <p class="intro">Un marché de quartier, c'est d'abord du monde. Voici ceux qui vous accueillent.</p>
+  <div class="equipe">
+   <div class="membre large monte"><div class="ini">P&amp;J</div><b>Pier-Luc et Jocelyn</b><span>Propriétaires</span></div>
+   <div class="membre monte"><div class="ini">M</div><b>Martial</b><span>Gérant boucherie</span></div>
+   <div class="membre monte"><div class="ini">K</div><b>Katia</b><span>Gérante</span></div>
+   <div class="membre monte"><div class="ini">J</div><b>Julie</b><span>Gérante traiteur</span></div>
+   <div class="membre monte"><div class="ini">AM</div><b>Anne-Marie</b><span>Gérante production cuisine</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec contact" id="contact">
+ <div class="wrap">
+  <span class="sur">Nous joindre</span>
+  <h2>Venez faire un tour</h2>
+  <div class="cgrid">
+   <div class="cb"><h3>Heures d'ouverture</h3>
+    <table class="heures"><tr><td>Lundi</td><td>9 h à 19 h</td></tr><tr><td>Mardi</td><td>9 h à 19 h</td></tr><tr><td>Mercredi</td><td>9 h à 19 h</td></tr><tr><td>Jeudi</td><td>9 h à 19 h</td></tr><tr><td>Vendredi</td><td>9 h à 19 h</td></tr><tr><td>Samedi</td><td>9 h à 19 h</td></tr><tr><td>Dimanche</td><td>9 h à 19 h</td></tr></table>
+   </div>
+   <div class="cb"><h3>Adresse</h3><p>590, boulevard Casavant Ouest<br>Saint-Hyacinthe (Québec) J2S 7S3</p><p><a href="https://www.google.com/maps/search/?api=1&query=590+boulevard+Casavant+Ouest+Saint-Hyacinthe+QC+J2S+7S3" target="_blank" rel="noopener">Voir sur Google Maps →</a></p></div>
+   <div class="cb"><h3>Téléphone et courriel</h3><p>Tél. : <a href="tel:+14507742726">450-774-2726</a></p><p>Téléc. : 450-774-7729</p><p><a href="mailto:info@marchelacroix.com">info@marchelacroix.com</a></p><p><a href="https://www.facebook.com/MarcheLacroix/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/marchelacroix/" target="_blank" rel="noopener">Instagram</a></p></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>© Le Marché Lacroix · Une expérience inoubliable depuis 1957 · 590, boul. Casavant Ouest, Saint-Hyacinthe · <a href="tel:+14507742726">450-774-2726</a></footer>
+
+<a class="appel" href="tel:+14507742726"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span style="white-space:nowrap">Appeler · 450-774-2726</span></a>
+
+<script>
+(function(){
+ var reduit=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var intro=document.getElementById('intro'),vu=false;
+ try{vu=sessionStorage.getItem('ml-intro')==='1'}catch(e){}
+ function retire(){if(!intro)return;var el=intro;intro=null;el.classList.add('fin');setTimeout(function(){el.parentNode&&el.parentNode.removeChild(el)},500)}
+ if(reduit||vu){intro.parentNode.removeChild(intro);intro=null}
+ else{try{sessionStorage.setItem('ml-intro','1')}catch(e){}intro.addEventListener('click',retire);setTimeout(retire,2000)}
+ var nav=document.getElementById('nav'),b=document.getElementById('burger');
+ b.addEventListener('click',function(){var o=nav.classList.toggle('ouvert');b.setAttribute('aria-expanded',o?'true':'false')});
+ nav.querySelectorAll('.tiroir a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('ouvert');b.setAttribute('aria-expanded','false')})});
+ var tabs=document.querySelectorAll('[role=tab]');
+ tabs.forEach(function(t){t.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected','false');document.getElementById(x.getAttribute('aria-controls')).hidden=true});t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false})});
+ var cibles=document.querySelectorAll('.monte,.ticket');
+ if('IntersectionObserver' in window&&!reduit){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vu');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  cibles.forEach(function(el,i){io.observe(el)});
+ }else{cibles.forEach(function(el){el.classList.add('vu')})}
+ if(!reduit){var hero=document.querySelector('.hero'),t=false;
+  window.addEventListener('scroll',function(){if(t)return;t=true;requestAnimationFrame(function(){hero.style.setProperty('--py',(-Math.min(window.scrollY,900)).toFixed(1));t=false})},{passive:true});}
+})();
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
