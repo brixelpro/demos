@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<!--
+  MODÈLE BRIXEL — niche : Casse-croûte, pizzeria et crèmerie — v1
+  REPÈRES À REMPLIR (rien d'autre à toucher pour un site normal) :
+   1. Les repères TITRE et DESCRIPTION (entre doubles accolades) ci-dessous (titre de l'onglet et meta description, vrais mots du commerce).
+   2. Le repère NOM (entre doubles accolades) dans le bandeau « Aperçu préparé pour … » (garder ce texte exact; pour langue "en" ou "bilingue", ajouter « · Preview prepared for NOM — not their official website »).
+   3. COULEURS : les variables --c-… dans :root (prendre celles du logo / de la devanture).
+   4. LE CONTENU : tout est dans le bloc de données JSON (la balise script dont l'id est donnees, plus bas). Mettre "_exemple": false une fois rempli.
+  Pour rendre le site unique : "variante":{"hero":"a|b|c"}, "ordre":[…] des sections, "speciale":{…}, "logoSvg", couleurs.
+  Ne pas modifier le MOTEUR (dernier <script>) ni les styles communs.
+-->
+<title>Pizzeria St-Georges — Pizzeria à Saint-Jérôme</title>
+<meta name="description" content="Pizzas et poutines livrées rapidement à Saint-Jérôme. Appelez-nous pour commander.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Archivo:wdth,wght@62..125,400..900&family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+/* ===== COULEURS ET POLICES — À CHANGER selon le logo / la devanture du commerce ===== */
+:root{--c-fond:#fff8ea;--c-fond2:#ffedc4;--c-texte:#1d1a17;--c-doux:#5e5248;--c-prim:#e0262c;--c-prim-texte:#fff;--c-acc:#ffc629;--c-acc-texte:#1d1a17;--c-acc-sombre:#ffc629;--c-carte:#fff;--c-ligne:#efd9ad;--c-sombre:#15172a;--c-sombre-texte:#fff3dc;--c-nav:rgba(255,248,234,.97);--c-pied:#0d0e1b;--c-turq:#14a394;--c-encre:#1d1a17;--c-neon:#ff2f6d;--f-titre:'Bowlby One',Impact,sans-serif;--f-texte:'Archivo',system-ui,sans-serif;--f-script:'Yellowtail',cursive;--titre-poids:400;--titre-esp:.005em;--em-style:normal;--rayon:16px;--rayon-btn:14px}
+/* ===== MOTEUR BRIXEL — styles communs (ne pas modifier : changer seulement les couleurs dans :root plus haut) ===== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bh,32px) + 76px);-webkit-text-size-adjust:100%}
+body{font-family:var(--f-texte);background:var(--c-fond);color:var(--c-texte);line-height:1.6;font-size:16.5px;padding-top:var(--bh,32px);-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+img,svg{max-width:100%}
+a{color:inherit}
+button{font-family:inherit}
+h1,h2,h3,h4{font-family:var(--f-titre);font-weight:var(--titre-poids,800);line-height:1.08;text-transform:var(--titre-casse,none);letter-spacing:var(--titre-esp,-.01em)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+#apercu{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px 10px}
+#exemple{position:fixed;left:0;right:0;bottom:0;z-index:9998;background:#d40000;color:#fff;font:700 13px/1.3 system-ui,sans-serif;text-align:center;padding:6px}
+/* ---- barre du haut ---- */
+.nav{position:fixed;top:var(--bh,32px);left:0;right:0;z-index:60;background:var(--c-nav,var(--c-fond));color:var(--c-nav-texte,var(--c-texte));border-bottom:var(--nav-bord,1px solid var(--c-ligne));transition:box-shadow .3s}
+.nav.ombre{box-shadow:0 8px 30px rgba(0,0,0,.12)}
+.nav-in{display:flex;align-items:center;gap:10px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;flex:1 1 auto}
+.brand .lg{width:44px;height:44px;flex:none;display:block}
+.brand .lg svg{width:100%;height:100%;display:block}
+.brand b{display:block;font-family:var(--f-titre);font-weight:var(--titre-poids,800);font-size:1.12rem;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-transform:var(--titre-casse,none)}
+.brand small{display:block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;opacity:.75;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+.brand span{min-width:0;overflow:hidden}
+.liens{display:none;gap:22px;align-items:center}
+.liens a{text-decoration:none;font-weight:600;font-size:.95rem;opacity:.85}
+.liens a:hover{opacity:1;color:var(--c-acc)}
+.nav-act{display:flex;align-items:center;gap:6px;flex:none}
+.lang{border:1.5px solid currentColor;background:none;color:inherit;font-weight:800;font-size:.78rem;border-radius:8px;padding:7px 9px;cursor:pointer;opacity:.85}
+.btn-tel{display:inline-flex;align-items:center;gap:6px;background:var(--c-prim);color:var(--c-prim-texte,#fff);text-decoration:none;font-weight:800;font-size:.9rem;border-radius:var(--rayon-btn,999px);padding:10px 14px;white-space:nowrap}
+.btn-tel svg{width:17px;height:17px;flex:none}
+.burger{width:42px;height:42px;border:0;background:none;color:inherit;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.burger span{width:22px;height:2.5px;background:currentColor;border-radius:2px;transition:transform .25s,opacity .25s}
+.nav.ouvert .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav.ouvert .burger span:nth-child(2){opacity:0}
+.nav.ouvert .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+.mnav{display:none;padding:4px 20px 18px;border-top:1px solid var(--c-ligne)}
+.nav.ouvert .mnav{display:block}
+.mnav a{display:block;padding:13px 0;text-decoration:none;font-weight:700;border-bottom:1px solid var(--c-ligne)}
+@media(max-width:400px){.btn-tel .t{display:none}.btn-tel{padding:10px 12px}.brand b{font-size:1rem}}
+@media(min-width:1024px){.liens{display:flex}.burger,.mnav{display:none!important}.nav-act{margin-left:8px}}
+/* ---- boutons ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:var(--rayon-btn,999px);font-weight:800;text-decoration:none;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s;background:none;color:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-p{background:var(--c-prim);color:var(--c-prim-texte,#fff);box-shadow:0 10px 26px -10px var(--c-prim)}
+.btn-a{background:var(--c-acc);color:var(--c-acc-texte,#111)}
+.btn-o{border-color:currentColor}
+/* ---- héros (3 styles : a, b, c) ---- */
+.hero{position:relative;overflow:hidden;isolation:isolate;padding:104px 0 70px;background:var(--hero-fond,var(--c-fond2));color:var(--hero-texte,var(--c-texte))}
+.hero .wrap{position:relative;z-index:2;display:grid;gap:34px;align-items:center}
+.surtitre{display:inline-flex;align-items:center;gap:8px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem;color:var(--hero-acc,var(--c-acc))}
+.surtitre:before{content:"";width:24px;height:2px;background:currentColor}
+.hero h1{font-size:clamp(2.3rem,9.5vw,4.6rem);margin:14px 0 14px}
+.hero h1 em{font-style:var(--em-style,normal);color:var(--hero-acc,var(--c-acc))}
+.hero .lead{font-size:1.1rem;max-width:36em;opacity:.9}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.puces{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;list-style:none}
+.puces li{font-size:.84rem;font-weight:700;padding:7px 13px;border-radius:999px;background:var(--puce-fond,rgba(127,127,127,.12));border:1px solid var(--puce-bord,rgba(127,127,127,.22))}
+.puces li .et{color:#f5b301}
+.hero-art{justify-self:center;width:min(440px,86vw)}
+.hero-art svg{width:100%;height:auto;display:block}
+.hero.v-b{text-align:center;padding-bottom:84px}
+.hero.v-b .wrap{justify-items:center}
+.hero.v-b .lead{margin:0 auto}
+.hero.v-b .cta,.hero.v-b .puces{justify-content:center}
+.hero.v-b .hero-art{width:min(260px,60vw);order:-1}
+.hero.v-b h1{font-size:clamp(2.5rem,11vw,5.6rem)}
+.hero.v-c{padding-bottom:0}
+.hero.v-c .hero-art{display:none}
+.hero.v-c .bande{margin-top:46px;background:var(--c-prim);color:var(--c-prim-texte,#fff);padding:18px 0;position:relative;z-index:2}
+.hero.v-c .bande .wrap{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:center;font-weight:800;text-align:center}
+@media(min-width:960px){.hero{padding:150px 0 110px}.hero:not(.v-b):not(.v-c) .wrap{grid-template-columns:1.1fr .9fr}.hero.v-c{padding-bottom:0}}
+.flot{position:absolute;inset:0;z-index:1;pointer-events:none}
+.fl{position:absolute;transform:translate3d(0,calc(var(--py,0px)*var(--k,.3)),0)}
+.fl>svg{display:block;animation:flotte var(--t,10s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+.fl.loin{opacity:.22;filter:blur(1.6px)}
+.fl.mi{opacity:.42}
+.fl.pres{opacity:.7}
+@keyframes flotte{from{transform:translateY(-10px) rotate(var(--r0,-10deg))}to{transform:translateY(14px) rotate(var(--r1,14deg))}}
+/* ---- sections ---- */
+section.s{padding:76px 0;position:relative}
+section.s.alt{background:var(--c-fond2)}
+section.s.sombre{background:var(--c-sombre);color:var(--c-sombre-texte,#fff)}
+.tete{max-width:720px;margin:0 0 34px}
+.tete.c{margin:0 auto 38px;text-align:center}
+.tete small{display:block;color:var(--c-acc);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;margin-bottom:8px}
+.sombre .tete small{color:var(--c-acc-sombre,var(--c-acc))}
+.tete h2{font-size:clamp(1.9rem,6.4vw,3rem)}
+.tete p{margin-top:12px;color:var(--c-doux);font-size:1.05rem}
+.sombre .tete p{color:inherit;opacity:.8}
+.grille{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:640px){.grille.g2,.grille.g3,.grille.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.grille.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.grille.g4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.carte{background:var(--c-carte);border:1px solid var(--c-ligne);border-radius:var(--rayon,18px);padding:22px;min-width:0;color:var(--c-texte)}
+.carte h3{font-size:1.2rem;margin-bottom:6px}
+.carte p{color:var(--c-doux);font-size:.97rem}
+.ico{width:52px;height:52px;border-radius:var(--rayon-ico,14px);background:var(--ico-fond,rgba(127,127,127,.12));display:grid;place-items:center;margin-bottom:14px;color:var(--c-prim)}
+.ico svg{width:30px;height:30px}
+.grp-titre{font-size:1.35rem;margin:30px 0 14px}
+.grp-titre:first-child{margin-top:0}
+/* services en liste compacte */
+.svc{display:flex;gap:14px;align-items:flex-start}
+.svc .ico{margin:0;flex:none}
+/* ---- menu ---- */
+.onglets{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px;margin-bottom:18px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.onglets::-webkit-scrollbar{display:none}
+.onglet{flex:none;border:2px solid var(--c-ligne);background:var(--c-carte);color:var(--c-texte);border-radius:999px;padding:9px 16px;font-weight:800;font-size:.9rem;cursor:pointer;white-space:nowrap}
+.onglet[aria-selected=true]{background:var(--c-prim);border-color:var(--c-prim);color:var(--c-prim-texte,#fff)}
+.sombre .onglet{background:transparent;color:inherit;border-color:rgba(255,255,255,.25)}
+.sombre .onglet[aria-selected=true]{background:var(--c-acc);border-color:var(--c-acc);color:var(--c-acc-texte,#111)}
+.panneau{display:none}
+.panneau.on{display:grid}
+.mcat{background:var(--c-carte);color:var(--c-texte);border-radius:var(--rayon,18px);padding:22px 22px 14px;border:1px solid var(--c-ligne);min-width:0}
+.mcat h3{font-size:1.35rem;color:var(--c-prim);margin-bottom:2px}
+.mcat .mnote{font-size:.86rem;color:var(--c-doux);margin-bottom:8px}
+.plat{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px dashed var(--c-ligne)}
+.plat:last-child{border-bottom:0}
+.plat .n{flex:1 1 auto;min-width:0;font-weight:700}
+.plat .n small{display:block;font-weight:400;color:var(--c-doux);font-size:.87rem;margin-top:1px}
+.plat .p{white-space:nowrap;font-weight:800;color:var(--c-prim)}
+.menu-note{margin-top:20px;font-size:.92rem;opacity:.8;text-align:center}
+/* ---- avis ---- */
+.score{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 22px;background:var(--c-carte);color:var(--c-texte);border:1px solid var(--c-ligne);border-radius:var(--rayon,18px);padding:20px 26px;max-width:640px;margin:0 auto 30px;text-align:center}
+.score .gros{font-family:var(--f-titre);font-weight:900;font-size:3.2rem;line-height:1;color:var(--c-prim)}
+.etoiles{color:#f5b301;letter-spacing:2px;font-size:1.15rem}
+.etoiles .v{color:#d6d6d6}
+.score p{color:var(--c-doux)}
+.av{display:flex;flex-direction:column;gap:10px}
+.av q{display:block;quotes:"« " " »";font-size:1rem;color:var(--c-texte)}
+.av .qui{margin-top:auto;font-size:.88rem;color:var(--c-doux)}
+.av .qui b{color:var(--c-texte)}
+.centre{text-align:center;margin-top:26px}
+body.vp>*:not(#pageAvis):not(#apercu):not(#exemple):not(script){display:none!important}
+#pageAvis{display:none;min-height:100vh}
+body.vp #pageAvis{display:block}
+#pageAvis .pa-tete{position:sticky;top:var(--bh,32px);z-index:5;background:var(--c-sombre);color:var(--c-sombre-texte,#fff)}
+#pageAvis .pa-tete .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;height:62px}
+#pageAvis .pa-tete .btn{min-height:42px;padding:0 16px;border-color:currentColor}
+#pageAvis .pa-tete b{white-space:nowrap;font-size:.95rem}
+#pageAvis .corps{padding:30px 0 80px}
+#pageAvis h1{font-size:clamp(1.9rem,6vw,2.8rem);margin-bottom:6px}
+/* ---- histoire ---- */
+.hist{display:grid;gap:30px;align-items:start}
+@media(min-width:900px){.hist{grid-template-columns:1fr 1fr}}
+.hist p{margin-bottom:14px;color:var(--c-doux);font-size:1.03rem}
+.sombre .hist p{color:inherit;opacity:.85}
+.citation{font-family:var(--f-titre);font-size:1.45rem;line-height:1.3;border-left:4px solid var(--c-acc);padding-left:16px;margin:18px 0}
+.ligne-t{list-style:none;border-left:3px solid var(--c-acc);margin-left:8px}
+.ligne-t li{position:relative;padding:0 0 20px 24px}
+.ligne-t li:before{content:"";position:absolute;left:-10px;top:5px;width:17px;height:17px;border-radius:50%;background:var(--c-prim);border:3px solid var(--c-fond)}
+.ligne-t b{display:block;font-family:var(--f-titre);font-size:1.35rem;color:var(--c-prim)}
+.chiffres{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.chiffres div{background:var(--c-carte);border:1px solid var(--c-ligne);border-radius:var(--rayon,18px);padding:16px 12px;text-align:center;min-width:0;color:var(--c-texte)}
+.chiffres b{display:block;font-family:var(--f-titre);font-weight:900;font-size:2rem;line-height:1.05;color:var(--c-prim)}
+.chiffres span{font-size:.86rem;color:var(--c-doux)}
+/* ---- zones / faq ---- */
+.zones{display:flex;flex-wrap:wrap;gap:8px}
+.zones span{padding:7px 14px;border-radius:999px;background:var(--c-carte);border:1px solid var(--c-ligne);font-weight:600;font-size:.9rem;color:var(--c-texte)}
+.faq details{background:var(--c-carte);border:1px solid var(--c-ligne);border-radius:14px;padding:16px 18px;margin-bottom:10px;color:var(--c-texte)}
+.faq summary{font-weight:800;cursor:pointer}
+.faq details p{margin-top:8px;color:var(--c-doux)}
+/* ---- contact ---- */
+.heures{width:100%;border-collapse:collapse}
+.heures td{padding:8px 0;border-bottom:1px dashed var(--c-ligne);vertical-align:top}
+.heures td+td{text-align:right;font-weight:800;padding-left:10px}
+.heures tr.auj td{color:var(--c-prim)}
+.ct a{font-weight:800;color:var(--c-prim);overflow-wrap:anywhere}
+.ct p{margin-bottom:8px}
+.gros-tel{display:block;font-family:var(--f-titre);font-size:1.7rem;font-weight:900;text-decoration:none;color:var(--c-prim)}
+.appel-final{text-align:center}
+.appel-final h2{font-size:clamp(2rem,7vw,3.4rem)}
+.appel-final p{opacity:.85;max-width:36em;margin:12px auto 24px}
+.appel-final .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+footer.pied{background:var(--c-pied,#111);color:rgba(255,255,255,.72);text-align:center;font-size:.88rem;padding:32px 20px 104px}
+footer.pied b{color:#fff;font-family:var(--f-titre);font-size:1.15rem;display:block;margin-bottom:4px}
+footer.pied a{color:#fff}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:55;display:flex;gap:8px}
+.callbar a{flex:1;min-height:54px;box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.callbar a.sec{flex:0 0 auto;background:var(--c-carte);color:var(--c-texte);padding:0 18px}
+@media(min-width:1024px){.callbar{display:none}footer.pied{padding-bottom:32px}}
+/* ---- apparition ---- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+/* ---- intro ---- */
+#intro{position:fixed;inset:0;z-index:9000;display:grid;place-items:center;background:var(--intro-fond,var(--c-sombre));color:var(--intro-texte,#fff);cursor:pointer;transition:opacity .5s;overflow:hidden}
+#intro.part{opacity:0}
+#intro .ib{text-align:center;padding:20px;position:relative;z-index:2}
+#intro .ilg{width:96px;height:96px;margin:0 auto 14px;transform:scale(0) rotate(-30deg);animation:ipop .7s .1s cubic-bezier(.3,1.6,.5,1) forwards}
+#intro .ilg svg{width:100%;height:100%}
+#intro .imot{font-family:var(--f-titre);font-weight:900;font-size:clamp(2rem,9vw,4rem);line-height:1.05;text-transform:var(--titre-casse,none)}
+#intro .imot span{display:inline-block;opacity:0;transform:translateY(-50px) rotate(-8deg);animation:ichute .5s cubic-bezier(.3,1.6,.5,1) forwards}
+#intro .isous{margin-top:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;color:var(--c-acc);opacity:0;animation:ifade .5s 1.1s forwards}
+@keyframes ipop{to{transform:none}}
+@keyframes ichute{to{opacity:1;transform:none}}
+@keyframes ifade{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}#intro{display:none}.fl{transform:none!important}}
+@media(min-width:900px){.panneau .mcat{column-count:2;column-gap:44px}.panneau .mcat h3,.panneau .mcat .mnote{column-span:all}.panneau .plat{break-inside:avoid}}
+html[lang^=en] .av q{quotes:"\201C" "\201D"}
+@media(min-width:900px){.onglets{flex-wrap:wrap;overflow:visible;justify-content:center}}
+/* ---- produits (exemples « Votre produit ») ---- */
+.pgrille{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.pgrille{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1050px){.pgrille{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.prod{display:flex;flex-direction:column;gap:3px;text-align:left;background:var(--c-carte);border:1px solid var(--c-ligne);border-radius:var(--rayon,18px);padding:10px 10px 14px;cursor:pointer;color:var(--c-texte);font:inherit;min-width:0;transition:transform .2s,box-shadow .2s}
+.prod:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(0,0,0,.4)}
+.prod[hidden]{display:none}
+.pgrille:not(.tout) .prod.plus{display:none}
+#pgrille+.centre{margin-top:22px}
+.pimg{position:relative;display:grid;place-items:center;aspect-ratio:1;border-radius:calc(var(--rayon,18px)*.7);background:repeating-linear-gradient(45deg,rgba(127,127,127,.07) 0 12px,rgba(127,127,127,.13) 12px 24px);color:var(--c-acc);overflow:hidden;margin-bottom:6px}
+.pimg svg{width:42%;height:42%;opacity:.55}
+.pimg em{position:absolute;bottom:8px;left:6px;right:6px;text-align:center;font-style:normal;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--c-doux)}
+.pnom{font-weight:700;font-size:.97rem;overflow-wrap:anywhere}
+.pcat{font-size:.8rem;color:var(--c-doux)}
+.pprix{font-weight:800;color:var(--c-prim)}
+#pfiche{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.55);display:none;align-items:flex-end;justify-content:center}
+#pfiche.on{display:flex}
+.pf-in{position:relative;background:var(--c-fond);color:var(--c-texte);width:min(520px,100%);max-height:90vh;overflow:auto;border-radius:22px 22px 0 0;padding:22px 20px 28px}
+@media(min-width:700px){#pfiche{align-items:center}.pf-in{border-radius:22px}}
+.pf-in .pimg.grand{aspect-ratio:4/3}
+.pf-in h3{font-size:1.5rem;margin-bottom:4px}
+.pf-in .pdesc{color:var(--c-doux);margin:10px 0 18px}
+.pf-x{position:absolute;top:10px;right:12px;z-index:2;width:44px;height:44px;border:0;background:var(--c-carte);border-radius:50%;font-size:1.6rem;line-height:1;cursor:pointer;color:var(--c-texte)}
+.cta-avis{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.hist.solo{grid-template-columns:minmax(0,1fr)!important;max-width:820px}
+.hist-cit{align-self:center}
+.hist-cit .citation{font-size:clamp(1.7rem,4vw,2.6rem);border-left-width:5px;padding-left:22px}
+
+/* ===== STYLE DE LA NICHE : Casse-croûte, pizzeria et crèmerie ===== */
+/* ---- identité : casse-croûte du bord de la route (rétro, contours noirs, ombres dures) ---- */
+h1,h2,.brand b{text-transform:uppercase}
+.tete small{color:var(--c-prim)}
+.sombre .tete small{color:var(--c-acc)}
+.tete h2 em,.appel-final h2 em{font-family:var(--f-script);text-transform:none;font-weight:400;color:var(--c-prim);font-size:1.25em;display:inline-block;transform:rotate(-4deg);line-height:.8;letter-spacing:0}
+.sombre .tete h2 em,.appel-final h2 em{color:var(--c-acc)}
+.nav{border-bottom:3px solid var(--c-encre)}
+.btn-tel{border:2px solid var(--c-encre);box-shadow:3px 3px 0 var(--c-encre)}
+.btn{border-width:2.5px}
+.btn-p,.btn-a{border-color:var(--c-encre);box-shadow:4px 4px 0 var(--c-encre)}
+.btn-p:hover,.btn-a:hover{box-shadow:6px 6px 0 var(--c-encre)}
+.carte,.mcat,.score,.chiffres div,.faq details{border:2.5px solid var(--c-encre);box-shadow:5px 5px 0 var(--c-encre)}
+.ico{background:var(--c-acc);border:2px solid var(--c-encre);color:var(--c-encre)}
+.puces li{background:#fff;border:2px solid var(--c-encre);box-shadow:2px 2px 0 var(--c-encre)}
+/* héros */
+.hero{--hero-fond:radial-gradient(circle at 78% 42%,rgba(255,248,234,0) 0,var(--c-fond) 72%),repeating-conic-gradient(from 0deg at 78% 42%,#ffe7ad 0 7.5deg,#fff8ea 7.5deg 15deg);--hero-acc:var(--c-prim);border-bottom:3px solid var(--c-encre)}
+.hero h1{font-size:clamp(2.5rem,11.5vw,5.1rem);line-height:.98;letter-spacing:.005em}
+.hero h1 em{font-family:var(--f-script);text-transform:none;font-weight:400;display:inline-block;font-size:1.32em;transform:rotate(-5deg);line-height:.75;padding:0 .08em;text-shadow:3px 3px 0 var(--c-acc)}
+.hero .lead{font-size:1.12rem}
+.cc-art{overflow:visible}
+.cc-soleil{transform-origin:118px 118px;animation:ccPulse 6s ease-in-out infinite}
+@keyframes ccPulse{50%{transform:scale(1.05)}}
+.cc-cornet{transform-origin:325px 214px;animation:ccBalance 4s ease-in-out infinite}
+@keyframes ccBalance{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.cc-bulbes circle{animation:ccBulbe 1.2s steps(1) infinite}
+.cc-bulbes circle:nth-child(odd){animation-delay:.6s}
+@keyframes ccBulbe{50%{fill:#fff;filter:drop-shadow(0 0 3px #ffe066)}}
+.cc-ouvert{animation:ccFlick 5s linear infinite;filter:drop-shadow(0 0 4px #ff2f6d)}
+@keyframes ccFlick{0%,18%,22%,60%,100%{opacity:1}20%,61%{opacity:.25}}
+.hero.v-b .hero-art{width:min(300px,72vw)}
+.hero.v-b h1{font-size:clamp(2.6rem,12vw,5.8rem)}
+.hero.v-c{--hero-fond:repeating-linear-gradient(90deg,#e0262c 0 44px,#d01f25 44px 88px);--hero-texte:#fff;--hero-acc:#ffc629}
+.hero.v-c h1 em{text-shadow:3px 3px 0 var(--c-encre)}
+.hero.v-c .surtitre{color:#ffc629}
+.hero.v-c .btn-p{background:#ffc629;color:var(--c-encre)}
+.hero.v-c .btn-o{color:#fff;border-color:#fff}
+.hero.v-c .puces li{color:var(--c-encre)}
+.hero.v-c .bande{background:var(--c-encre);color:#ffc629;border-top:3px solid var(--c-encre);font-family:var(--f-titre);text-transform:uppercase;letter-spacing:.04em;font-weight:400}
+.hero.v-c .bande span:not(:last-child):after{content:"★";margin-left:30px;color:#fff}
+/* ---- moment wow : l'enseigne au néon s'allume ---- */
+.cc-nuit{background:radial-gradient(ellipse at 30% 40%,rgba(255,47,109,.16),transparent 60%),linear-gradient(180deg,#15172a,#1d1630);color:#fff;overflow:hidden;padding:84px 0}
+.cc-nuit:before{content:"";position:absolute;inset:0;opacity:.13;background:linear-gradient(#000 2px,transparent 2px) 0 0/100% 26px,linear-gradient(90deg,#000 2px,transparent 2px) 0 0/52px 52px,linear-gradient(90deg,#000 2px,transparent 2px) 26px 26px/52px 52px;mask:linear-gradient(transparent,#000 30%,#000)}
+.cc-etoiles{position:absolute;inset:0;background:radial-gradient(1.5px 1.5px at 12% 18%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 72% 10%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 40% 28%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 88% 34%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 58% 6%,#fff 50%,transparent 51%);opacity:.6}
+.cc-nuit-in{display:grid;gap:44px;align-items:center;position:relative}
+@media(min-width:900px){.cc-nuit-in{grid-template-columns:1fr 1.1fr;gap:60px}}
+.cc-neon{display:grid;place-items:center}
+.cc-boite{position:relative;text-align:center;padding:26px 22px 30px;border-radius:26px;border:3px solid rgba(255,255,255,.08);background:rgba(0,0,0,.22);width:min(440px,100%)}
+.cc-tube{width:110px;height:auto;display:block;margin:0 auto 4px;overflow:visible}
+.cc-tube path{fill:none;stroke:#3a3550;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;transition:stroke .2s}
+.cc-mot{font-family:var(--f-script);font-size:clamp(3.4rem,15vw,5.4rem);line-height:1;color:#4a3346;white-space:nowrap}
+.cc-mot span{display:inline-block}.cc-mot .esp{width:.32em}
+.cc-mot2{font-family:var(--f-texte);font-weight:800;font-stretch:80%;text-transform:uppercase;letter-spacing:.3em;font-size:1.05rem;color:#2f3a4a;margin-top:8px}
+.cc-nuit.in .cc-tube path{animation:ccTube 1.4s .1s forwards}
+.cc-nuit.in .cc-mot{animation:ccAllume 1.3s .15s forwards}
+.cc-nuit.in .cc-mot .hoq{animation:ccHoquet 6s 2.4s infinite}
+.cc-nuit.in .cc-mot2{animation:ccBleu .9s .6s forwards}
+@keyframes ccAllume{0%{color:#4a3346}8%{color:#fff;text-shadow:0 0 6px #fff,0 0 18px var(--c-neon),0 0 40px var(--c-neon)}12%{color:#4a3346;text-shadow:none}22%{color:#fff;text-shadow:0 0 6px #fff,0 0 18px var(--c-neon),0 0 40px var(--c-neon)}26%{color:#4a3346;text-shadow:none}40%,100%{color:#fff;text-shadow:0 0 4px #fff,0 0 14px var(--c-neon),0 0 34px var(--c-neon),0 0 70px var(--c-neon)}}
+@keyframes ccHoquet{0%,90%,94%,100%{opacity:1}92%,96%{opacity:.25}}
+@keyframes ccBleu{0%,30%{color:#2f3a4a}15%,100%{color:#d9fbff;text-shadow:0 0 6px #33e1ff,0 0 20px #33e1ff}}
+@keyframes ccTube{0%,20%{stroke:#3a3550}10%,100%{stroke:#ffd23f;filter:drop-shadow(0 0 4px #ffd23f) drop-shadow(0 0 12px #ff9f1a)}}
+/* tableau à lettres */
+.cc-tableau{background:repeating-linear-gradient(180deg,#232323 0 10px,#151515 10px 12px);border:10px solid #c9ced2;outline:2px solid #1d1a17;border-radius:8px;box-shadow:inset 0 0 0 2px #8f979d,0 24px 50px -20px #000;padding:22px 22px 18px;font-family:var(--f-texte);font-stretch:70%;text-transform:uppercase;color:#f6f6f2}
+.cc-tab-tete{text-align:center;margin-bottom:12px}
+.cc-tab-tete span{display:inline-block;background:var(--c-prim);color:#fff;font-weight:900;letter-spacing:.14em;padding:6px 14px;font-size:1.05rem;transform:rotate(-1.5deg)}
+.cc-tableau ul{list-style:none}
+.cc-tableau li{display:flex;align-items:baseline;gap:8px;font-weight:800;font-size:clamp(1.05rem,4.4vw,1.4rem);letter-spacing:.08em;padding:7px 0;opacity:0;transform:translateY(-8px) rotate(-1deg);transition:opacity .3s,transform .4s cubic-bezier(.3,1.6,.5,1)}
+.cc-nuit.in .cc-tableau li{opacity:1;transform:none}
+.cc-tableau li:nth-child(even){transform-origin:right}
+.cc-tableau .n{min-width:0}
+.cc-tableau .pt{flex:1;border-bottom:3px dotted rgba(255,255,255,.35);min-width:16px;transform:translateY(-6px)}
+.cc-tableau .p{color:#ffc629;white-space:nowrap}
+.cc-tab-note{text-align:center;font-size:.86rem;letter-spacing:.14em;opacity:.7;margin-top:10px}
+/* ---- menu ---- */
+#menu{border-top:3px solid var(--c-encre)}
+#menu:before{content:"";position:absolute;left:0;right:0;top:0;height:22px;background:repeating-conic-gradient(var(--c-prim) 0 25%,#fff 0 50%) 0 0/22px 22px;border-bottom:3px solid var(--c-encre)}
+#menu .tete{margin-top:16px}
+#menu .onglet{border:2.5px solid var(--c-encre);font-family:var(--f-texte);font-weight:900;text-transform:uppercase;letter-spacing:.04em;box-shadow:3px 3px 0 var(--c-encre);background:#fff}
+#menu .onglet[aria-selected=true]{background:var(--c-prim);color:#fff;border-color:var(--c-encre)}
+#menu .mcat{padding:0 0 10px;overflow:hidden}
+#menu .mcat h3{background:var(--c-encre);color:var(--c-acc);padding:14px 22px;font-size:1.5rem;font-weight:400;margin:0}
+#menu .mcat .mnote{padding:10px 22px 0;margin:0;font-weight:700;color:var(--c-prim)}
+#menu .plat{padding:12px 22px;margin:0;border-bottom:2px dashed var(--c-ligne)}
+#menu .plat .n{font-size:1.04rem}
+#menu .plat .p{background:var(--c-acc);color:var(--c-encre);border:2px solid var(--c-encre);border-radius:8px;padding:1px 8px;font-weight:900;transform:rotate(-2deg);font-size:.95rem}
+@media(min-width:900px){#menu .panneau .mcat{column-gap:0}#menu .panneau .plat{margin:0 6px}}
+/* ---- reste ---- */
+#avis .score .gros{font-family:var(--f-titre);font-weight:400}
+.ligne-t{border-left:4px dashed var(--c-encre)}
+.ligne-t li:before{border:3px solid var(--c-encre);background:var(--c-acc)}
+.ligne-t b{font-family:var(--f-titre);font-weight:400}
+.citation{font-family:var(--f-script);font-size:2rem;border-left-color:var(--c-prim)}
+.appel-final{background:var(--c-prim)!important;color:#fff;border-top:3px solid var(--c-encre)}
+.appel-final h2{text-shadow:4px 4px 0 var(--c-encre)}
+.appel-final .btn-a{font-size:1.2rem}
+.callbar a{border:2.5px solid var(--c-encre)}
+.gros-tel,.chiffres b{font-weight:400}
+#intro{--intro-fond:var(--c-prim)}
+#intro .isous{color:var(--c-acc)}
+@media(max-width:700px){.brand b{font-size:.94rem;letter-spacing:0}.hero-art{width:min(340px,88vw)}.cc-tableau{padding:16px 14px 14px;border-width:8px}}
+@media(max-width:700px){.hero.v-c .bande span:after{display:none}.hero.v-c .bande .wrap{flex-direction:column;gap:6px}}
+
+</style>
+</head>
+<body>
+<div id="apercu">Aperçu préparé pour Pizzeria St-Georges — ce n'est pas son site officiel</div>
+<div id="intro" aria-hidden="true"></div>
+<header class="nav" id="nav"><div class="wrap nav-in"><a class="brand" href="#top" id="brand"></a><nav class="liens" id="liens" aria-label="Navigation"></nav><div class="nav-act"><button class="lang" id="lang" hidden>EN</button><a class="btn-tel" id="navTel" href="tel:">Appeler</a><button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button></div></div><div class="mnav" id="mnav"></div></header>
+<main id="top"></main>
+<footer class="pied" id="pied"></footer>
+<div class="callbar" id="callbar"></div>
+<div id="pageAvis" role="dialog" aria-label="Avis"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-frites" viewBox="0 0 48 48"><g fill="#ffc629" stroke="#1d1a17" stroke-width="1.6"><rect x="13" y="6" width="5" height="22" rx="1.5" transform="rotate(-8 15 17)"/><rect x="20" y="3" width="5" height="24" rx="1.5"/><rect x="27" y="5" width="5" height="23" rx="1.5" transform="rotate(7 29 16)"/><rect x="33" y="9" width="5" height="19" rx="1.5" transform="rotate(14 35 18)"/></g><path d="M9 20h30l-4 24H13z" fill="#e0262c" stroke="#1d1a17" stroke-width="2" stroke-linejoin="round"/><path d="M17 27h14" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="35" r="3.4" fill="#fff"/></symbol>
+<symbol id="i-hotdog" viewBox="0 0 48 48"><g stroke="#1d1a17" stroke-width="2" stroke-linejoin="round"><path d="M4 26c0-4 3-6 7-6h26c4 0 7 2 7 6 0 6-5 10-11 10H15C9 36 4 32 4 26z" fill="#f3b25a"/><rect x="5" y="19" width="38" height="9" rx="4.5" fill="#c4452c"/></g><path d="M9 23c3-3 5 3 8 0s5 3 8 0 5 3 8 0 5 3 7 0" stroke="#ffc629" stroke-width="2.4" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="i-cornet" viewBox="0 0 48 48"><path d="M15 24h18L24 46z" fill="#e8a54b" stroke="#1d1a17" stroke-width="2" stroke-linejoin="round"/><path d="M18 28l9 9M24 26l6 6M17 33l5-5M22 39l7-8" stroke="#a8641d" stroke-width="1.4"/><path d="M13 25c-3 0-3-6 2-6-2-5 4-8 7-6 0-5 6-6 8-2 4 0 6 4 3 7 4 1 4 7 0 7z" fill="#fff" stroke="#1d1a17" stroke-width="2" stroke-linejoin="round"/><path d="M24 7c0-3 3-4 4-3" stroke="#1d1a17" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="i-pizza" viewBox="0 0 48 48"><path d="M6 10c12-6 24-6 36 0L24 45z" fill="#ffcf5c" stroke="#1d1a17" stroke-width="2" stroke-linejoin="round"/><path d="M6 10c12-6 24-6 36 0l-2 5c-11-5-21-5-32 0z" fill="#d9822b" stroke="#1d1a17" stroke-width="2" stroke-linejoin="round"/><g fill="#e0262c"><circle cx="18" cy="20" r="3.6"/><circle cx="29" cy="19" r="3.2"/><circle cx="24" cy="30" r="3.2"/></g></symbol>
+<symbol id="i-burger" viewBox="0 0 48 48"><g stroke="#1d1a17" stroke-width="2" stroke-linejoin="round"><path d="M7 22c0-9 8-14 17-14s17 5 17 14z" fill="#f0a845"/><path d="M5 26h38l-4 5H9z" fill="#5fae3a"/><rect x="6" y="29" width="36" height="6" rx="3" fill="#7a3b1e"/><path d="M8 36h32c0 4-3 6-7 6H15c-4 0-7-2-7-6z" fill="#f0a845"/></g><g fill="#fff6d6"><ellipse cx="18" cy="15" rx="1.6" ry="1"/><ellipse cx="26" cy="13" rx="1.6" ry="1"/><ellipse cx="31" cy="17" rx="1.6" ry="1"/></g></symbol>
+<symbol id="i-poutine" viewBox="0 0 48 48"><g stroke="#1d1a17" stroke-width="1.6"><rect x="12" y="10" width="5" height="16" rx="1.5" fill="#ffc629" transform="rotate(-14 14 18)"/><rect x="21" y="8" width="5" height="18" rx="1.5" fill="#ffc629"/><rect x="30" y="10" width="5" height="16" rx="1.5" fill="#ffc629" transform="rotate(12 32 18)"/></g><path d="M10 22c4-4 8 2 13-1s9 2 15-1v4H10z" fill="#7a3b1e"/><circle cx="18" cy="21" r="3" fill="#fff8e8" stroke="#1d1a17" stroke-width="1.2"/><circle cx="29" cy="20" r="2.6" fill="#fff8e8" stroke="#1d1a17" stroke-width="1.2"/><path d="M6 24h36l-5 18H11z" fill="#fff" stroke="#1d1a17" stroke-width="2" stroke-linejoin="round"/><path d="M9 30h30" stroke="#e0262c" stroke-width="3"/></symbol>
+<symbol id="i-cerise" viewBox="0 0 48 48"><path d="M17 30C19 18 26 10 36 6M31 32c-1-10 0-18 5-26" stroke="#3f7d2c" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="16" cy="34" r="9" fill="#e0262c" stroke="#1d1a17" stroke-width="2"/><circle cx="32" cy="36" r="8" fill="#c81d25" stroke="#1d1a17" stroke-width="2"/><ellipse cx="13" cy="31" rx="2.6" ry="1.6" fill="#fff" opacity=".7"/></symbol>
+<symbol id="i-eclat" viewBox="0 0 48 48"><path d="M24 2l4 16 16 6-16 6-4 16-4-16-16-6 16-6z" fill="currentColor"/></symbol>
+<symbol id="i-etoile" viewBox="0 0 48 48"><path fill="currentColor" d="M24 4l6 13 14 1.6-10.5 9.4 3 14L24 35l-12.5 7 3-14L4 18.6 18 17z"/></symbol>
+<symbol id="i-sac" viewBox="0 0 48 48"><path fill="currentColor" d="M10 16h28l-2 26H12z"/><path d="M18 16v-3a6 6 0 0 1 12 0v3" stroke="currentColor" stroke-width="3" fill="none"/></symbol>
+<symbol id="i-auto" viewBox="0 0 48 48"><path fill="currentColor" d="M8 22l4-9c1-2 3-3 5-3h14c2 0 4 1 5 3l4 9c2 1 3 3 3 5v8c0 1-1 2-2 2h-3a5 5 0 0 1-10 0H18a5 5 0 0 1-10 0H7c-1 0-2-1-2-2v-8c0-2 1-4 3-5zm6-1h20l-3-7H17z"/></symbol>
+<symbol id="i-soleil" viewBox="0 0 48 48"><circle cx="24" cy="24" r="10" fill="#ffc629" stroke="#1d1a17" stroke-width="2"/><g stroke="#1d1a17" stroke-width="2.4" stroke-linecap="round"><path d="M24 3v6M24 39v6M3 24h6M39 24h6M9 9l4 4M35 35l4 4M9 39l4-4M35 13l4-4"/></g></symbol>
+<symbol id="i-horloge" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3.4"/><path d="M24 13v12l8 5" stroke="currentColor" stroke-width="3.4" fill="none" stroke-linecap="round"/></symbol>
+
+</defs></svg>
+<!-- ===== DONNÉES DU COMMERCE — À REMPLIR (JSON valide, textes en "fr" / "en") ===== -->
+<script id="donnees" type="application/json">
+{"_exemple":false,"accroche":"La pizza de *Saint-Jérôme*","adresse":{"codePostal":"J7Z 5B7","province":"QC","rue":"551, rue Saint-Georges","ville":"Saint-Jérôme"},"avis":{"lienGoogle":"https://www.google.com/maps/search/?api=1&query=Pizzeria+St-Georges+551+Rue+Saint-Georges+Saint-J%C3%A9r%C3%B4me","liste":[{"etoiles":5,"nom":"Karim Zarka","source":"Google","texte":"Excellente poutine au bacon et livrée très rapidement à bon prix, je vais recommander de la bas à nouveau c'est certain"},{"etoiles":5,"nom":"Louis Lafleur (Poiowly)","source":"Google","texte":"La bouffe est excellente, le service est rapide et le personnel est accueillent. L'établissement est très propre. Très bonne expérience en général."}],"nombre":104,"note":4.1},"contact":{"finalTexte":"Un appel et votre commande est lancée.","finalTitre":"Une pizza *ce soir*?"},"id":"pizza-pizzeria-st-georges-saint-jerome","intro":"Pizzas et poutines livrées rapidement à Saint-Jérôme. Appelez-nous pour commander.","langue":"fr","nom":"Pizzeria St-Georges","nomCourt":"Pizzeria St-Georges","puces":["Livraison rapide","Commandez par téléphone"],"schemaType":"Restaurant","services":{"groupes":[{"items":[{"desc":"Préparées sur commande.","icone":"","nom":"Pizzas"},{"desc":"Livrée rapidement, chez vous.","icone":"","nom":"Livraison"}],"nom":""}],"surtitre":"Chez nous","titre":"Commandez *votre pizza*"},"sousTitre":"Pizzeria · Saint-Jérôme","surtitre":"Pizzeria · Saint-Jérôme","telLien":"+14504365555","telephone":"450-436-5555","titre":"Pizzeria St-Georges — Pizzeria à Saint-Jérôme","variante":{"hero":"a"}}
+</script>
+<!-- ===== STYLE DE LA NICHE (héros, moment wow, icônes) ===== -->
+<script>
+window.SKIN={
+ schemaType:'FastFoodRestaurant',
+ ordre:['hero','wow','menu','avis','histoire','faq','contact'],
+ heroDefaut:'a',
+ iconeDefaut:'frites',
+ cta2:{texte:{fr:'Voir le menu',en:'See the menu'},cible:'#menu'},
+ callbar2:{texte:{fr:'Menu',en:'Menu'},cible:'#menu'},
+ flotteurs:[{i:'frites',x:84,y:56,s:44,p:'mi',k:.5,t:8},{i:'cerise',x:90,y:8,s:38,p:'mi',k:.4,t:10},{i:'eclat',x:47,y:5,s:22,p:'mi',k:.2,t:6,c:'#e0262c'},{i:'pizza',x:93,y:64,s:40,p:'loin',k:.25,t:12,r0:20,r1:-10},{i:'hotdog',x:3,y:88,s:44,p:'mi',k:.3,t:11},{i:'eclat',x:38,y:90,s:18,p:'pres',k:.5,t:7,c:'#ffc629'},{i:'cornet',x:58,y:76,s:34,p:'loin',k:.35,t:9}],
+ heroArt:function(D,h){
+  var E=D.enseigne||{},ens=h.esc(h.t(E.toit)||h.t({fr:'CASSE-CROÛTE',en:'SNACK BAR'})),ouv=h.esc(h.t({fr:'OUVERT',en:'OPEN'}));
+  var bulbes='';for(var i=0;i<12;i++){bulbes+='<circle cx="'+(78+i*19)+'" cy="152" r="3.6"/><circle cx="'+(78+i*19)+'" cy="208" r="3.6"/>'}
+  var store='';for(var j=0;j<8;j++){var x=86+j*22;store+='<path d="M'+x+' 236h22v22a11 11 0 0 1-22 0z" fill="'+(j%2?'#fff':'#e0262c')+'"/>'}
+  var damier='';for(var k=0;k<30;k++){damier+='<rect x="'+(60+k*10)+'" y="'+(k%2?350:345)+'" width="10" height="5"/>'}
+  return '<svg viewBox="0 0 420 440" class="cc-art">'+
+  '<g class="cc-soleil"><circle cx="118" cy="118" r="74" fill="#ffc629"/><circle cx="118" cy="118" r="74" fill="none" stroke="#1d1a17" stroke-width="3"/></g>'+
+  '<ellipse cx="210" cy="398" rx="196" ry="14" fill="rgba(29,26,23,.14)"/>'+
+  /* cornet géant */
+  '<g class="cc-cornet"><path d="M300 150h50l-25 66z" fill="#e8a54b" stroke="#1d1a17" stroke-width="3" stroke-linejoin="round"/><path d="M306 160l26 30M318 152l24 28M302 176l14-14M308 192l28-34M316 204l22-26" stroke="#a8641d" stroke-width="2"/>'+
+  '<path d="M292 152c-12 0-12-20 4-20-6-16 12-24 20-18 2-16 22-18 26-6 14-2 20 14 10 22 12 4 10 22-2 22z" fill="#fff" stroke="#1d1a17" stroke-width="3" stroke-linejoin="round"/><path d="M300 140c10 4 30 4 44-2M306 124c8 3 22 3 32-2" stroke="#e9dccb" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M322 96c0-10 10-14 14-9" stroke="#1d1a17" stroke-width="3" fill="none" stroke-linecap="round"/></g>'+
+  /* bâtiment */
+  '<rect x="60" y="214" width="300" height="172" fill="#fffdf6" stroke="#1d1a17" stroke-width="3"/>'+
+  '<rect x="60" y="355" width="300" height="31" fill="#e0262c" stroke="#1d1a17" stroke-width="3"/><g fill="#1d1a17">'+damier+'</g>'+
+  /* fenêtre de service */
+  '<rect x="90" y="252" width="168" height="80" fill="#ffd66b" stroke="#1d1a17" stroke-width="3"/><rect x="90" y="252" width="168" height="80" fill="url(#ccLum)"/>'+
+  '<g fill="#1d1a17" opacity=".85"><circle cx="150" cy="290" r="12"/><path d="M128 332c0-18 10-28 22-28s22 10 22 28z"/><rect x="141" y="272" width="18" height="6" rx="3" fill="#fff"/></g>'+
+  '<text x="222" y="285" text-anchor="middle" class="cc-ouvert" font-family="Yellowtail,cursive" font-size="22" fill="#ff2f6d">'+ouv+'</text>'+
+  '<rect x="80" y="330" width="188" height="10" rx="2" fill="#b9c2c7" stroke="#1d1a17" stroke-width="3"/>'+
+  store+'<rect x="84" y="228" width="180" height="10" rx="3" fill="#1d1a17"/>'+
+  /* porte */
+  '<rect x="284" y="262" width="56" height="124" fill="#14a394" stroke="#1d1a17" stroke-width="3"/><circle cx="312" cy="296" r="15" fill="#bfeee8" stroke="#1d1a17" stroke-width="3"/><rect x="326" y="324" width="8" height="4" rx="2" fill="#1d1a17"/>'+
+  /* enseigne du toit */
+  '<rect x="62" y="140" width="226" height="80" rx="10" fill="#e0262c" stroke="#1d1a17" stroke-width="3"/><g class="cc-bulbes" fill="#ffe9a3">'+bulbes+'</g>'+
+  '<text x="175" y="192" text-anchor="middle" font-family="\'Bowlby One\',Impact,sans-serif" font-size="30" fill="#ffc629" stroke="#1d1a17" stroke-width="1.5" paint-order="stroke" textLength="196" lengthAdjust="spacingAndGlyphs">'+ens+'</text>'+
+  '<defs><linearGradient id="ccLum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3c4" stop-opacity=".9"/><stop offset="1" stop-color="#ff9f3a" stop-opacity=".5"/></linearGradient></defs>'+
+  /* table à pique-nique */
+  '<g stroke="#1d1a17" stroke-width="3" stroke-linejoin="round"><path d="M14 398l14-40M70 398l-14-40" fill="none"/><rect x="8" y="350" width="74" height="10" rx="2" fill="#14a394"/><rect x="2" y="374" width="86" height="8" rx="2" fill="#14a394"/></g>'+
+  '<g transform="translate(26 326) scale(.62)"><use href="#i-frites" width="48" height="48"/></g>'+
+  '</svg>'},
+ wow:function(D,h){var E=D.enseigne;if(!E||!E.items||!E.items.length)return '';
+  var mot=h.t(E.neon)||'',lettres='';for(var i=0;i<mot.length;i++){lettres+='<span'+(mot[i]===' '?' class="esp"':(i===Math.floor(mot.length*.6)?' class="hoq"':''))+'>'+(mot[i]===' '?'&nbsp;':h.esc(mot[i]))+'</span>'}
+  return '<section class="s cc-nuit" id="enseigne" data-vu><div class="cc-etoiles" aria-hidden="true"></div><div class="wrap cc-nuit-in">'+
+  '<div class="cc-neon"><div class="cc-boite"><svg class="cc-tube" viewBox="0 0 120 150" aria-hidden="true"><path d="M30 64h60L60 142z"/><path d="M24 66c-14 0-14-22 4-22-6-18 14-26 22-18 4-18 26-18 28-4 16-2 20 16 10 24 12 6 8 22-6 22"/><path d="M58 8c2-6 10-6 10 0"/></svg>'+
+  '<p class="cc-mot" aria-label="'+h.esc(mot)+'">'+lettres+'</p>'+(h.t(E.neon2)?'<p class="cc-mot2">'+h.esc(h.t(E.neon2))+'</p>':'')+'</div></div>'+
+  '<div class="cc-tableau"><div class="cc-tab-tete"><span>'+h.esc(h.t(E.titre)||'')+'</span></div><ul>'+
+  E.items.map(function(it,i){return '<li style="transition-delay:'+(.2+i*.08).toFixed(2)+'s"><span class="n">'+h.esc(h.t(it.nom))+'</span><span class="pt"></span><span class="p">'+h.esc(h.t(it.prix)||'')+'</span></li>'}).join('')+
+  '</ul>'+(h.t(E.note)?'<p class="cc-tab-note">'+h.esc(h.t(E.note))+'</p>':'')+'</div></div></section>'}
+};
+
+</script>
+<!-- ===== MOTEUR BRIXEL — NE PAS MODIFIER ===== -->
+<script>
+/* ===== MOTEUR BRIXEL v1 — ne pas modifier. Tout le contenu vient du bloc de données JSON (id donnees). ===== */
+(function(){
+"use strict";
+var raw=document.getElementById('donnees').textContent;
+var D;try{D=JSON.parse(raw)}catch(e){throw new Error('JSON des données invalide : '+e.message)}
+var SK=window.SKIN||{};
+var LANG=D.langue==='en'?'en':'fr';
+var UI={
+fr:{appeler:'Appeler',menu:'Menu',services:'Services',avis:'Avis',histoire:'Notre histoire',contact:'Nous joindre',heures:'Heures',zones:'Secteurs',faq:'Questions',produits:'Produits',votreProduit:'Votre produit',votrePrix:'Votre prix',commanderTel:'Commander par téléphone',tous:'Tous',fermer:'Fermer',
+voirTous:'Voir tous les avis',retour:'← Retour au site',surGoogle:'sur Google',avisMot:'avis',voirGoogle:'Voir sur Google',lireGoogle:'Lire les avis sur Google',
+adresse:'Adresse',itin:'Itinéraire dans Google Maps',tel:'Téléphone',courriel:'Courriel',tousAvis:'Tous les avis',ceQuOnDit:'Ce que nos clients disent',
+avisTete:'Avis',noteClients:'La note donnée par nos clients sur Google.',joindre:'Venez nous voir',heuresContact:'Heures et contact',
+appelFinal:'Appelez-nous',etoilesSur:'étoiles sur 5',suivez:'Suivez-nous',menuBtn:'Ouvrir le menu',aujourdhui:"aujourd'hui"},
+en:{appeler:'Call',menu:'Menu',services:'Services',avis:'Reviews',histoire:'Our story',contact:'Contact',heures:'Hours',zones:'Areas',faq:'FAQ',produits:'Products',votreProduit:'Your product',votrePrix:'Your price',commanderTel:'Order by phone',tous:'All',fermer:'Close',
+voirTous:'See all reviews',retour:'← Back to site',surGoogle:'on Google',avisMot:'reviews',voirGoogle:'See on Google',lireGoogle:'Read the reviews on Google',
+adresse:'Address',itin:'Directions in Google Maps',tel:'Phone',courriel:'Email',tousAvis:'All reviews',ceQuOnDit:'What our customers say',
+avisTete:'Reviews',noteClients:'Our customers’ rating on Google.',joindre:'Come see us',heuresContact:'Hours and contact',
+appelFinal:'Give us a call',etoilesSur:'stars out of 5',suivez:'Follow us',menuBtn:'Open menu',aujourdhui:'today'}};
+var USERV={fr:{produits:'Nos forfaits',votreProduit:'Votre forfait',commanderTel:'Demander une soumission'},en:{produits:'Our packages',votreProduit:'Your package',commanderTel:'Request a quote'}};
+function u(k){if(SERV&&USERV[LANG][k])return USERV[LANG][k];return (UI[LANG]&&UI[LANG][k])||UI.fr[k]||k}
+function t(v){if(v==null)return '';if(typeof v==='object'&&!Array.isArray(v))return v[LANG]!=null&&v[LANG]!==''?v[LANG]:(v.fr!=null?v.fr:(v.en||''));return String(v)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function emph(s){return esc(s).replace(/\*([^*]+)\*/g,'<em>$1</em>')}
+function num(n){return LANG==='fr'?String(n).replace('.',','):String(n)}
+function $(id){return document.getElementById(id)}
+var ICO_TEL='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>';
+function telHref(){return 'tel:'+(D.telLien||String(D.telephone||'').replace(/[^\d+]/g,''))}
+function stars(n){n=Math.round(n||0);return '<span class="etoiles" aria-label="'+n+' '+esc(u('etoilesSur'))+'">'+'★★★★★'.slice(0,n)+'<span class="v">'+'★★★★★'.slice(n)+'</span></span>'}
+function logo(){if(D.logoSvg)return D.logoSvg;var ini=(D.initiales||t(D.nomCourt||D.nom).split(/\s+/).filter(Boolean).slice(0,2).map(function(w){return w[0]}).join('')).toUpperCase();
+return '<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="31" fill="var(--c-prim)"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--c-acc)" stroke-width="1.6" stroke-dasharray="2 3"/><text x="32" y="40" text-anchor="middle" font-family="'+(getComputedStyle(document.documentElement).getPropertyValue('--f-titre').replace(/"/g,"'")||'sans-serif')+'" font-weight="800" font-size="'+(ini.length>1?22:28)+'" fill="var(--c-prim-texte,#fff)">'+esc(ini)+'</text></svg>'}
+function icone(id){if(!id)id=SK.iconeDefaut||'etoile';if(id.indexOf('<svg')===0)return id;return '<svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-'+esc(id)+'"/></svg>'}
+function avisListe(){return (D.avis&&D.avis.liste)||[]}
+function aAvisTextes(){return avisListe().length>=3}
+function aSection(k){
+ if(k==='menu')return D.menu&&D.menu.categories&&D.menu.categories.length;
+ if(k==='services')return D.services&&D.services.groupes&&D.services.groupes.length;
+ if(k==='avis')return D.avis&&(aAvisTextes()||D.avis.note);
+ if(k==='histoire')return D.histoire&&((D.histoire.paragraphes||[]).length||(D.histoire.etapes||[]).length);
+ if(k==='zones')return D.zones&&D.zones.liste&&D.zones.liste.length;
+ if(k==='faq')return D.faq&&D.faq.length;
+ if(k==='wow')return !!SK.wow&&D.wow!==false;
+ if(k==='produits')return D.produits!==false;
+ if(k==='speciale')return D.speciale&&(D.speciale.titre||D.speciale.html);
+ return true}
+function ordre(){var o=(D.ordre||SK.ordre||['hero','services','menu','wow','avis','histoire','zones','faq','contact']).slice();if(o.indexOf('produits')<0){var p=o.indexOf('avis');o.splice(p<0?o.length-1:p,0,'produits')}return o.filter(aSection)}
+var SERV=/Plumber|Electrician|AutoRepair|AutoBodyShop|Roofing|RoofingContractor|GeneralContractor|Landscap|Cleaning|HousePainter|HVAC|Locksmith|MovingCompany|SnowRemoval|ProfessionalService/i.test(SK.schemaType||D.schemaType||'');
+var NAV={menu:'menu',services:'services',produits:'produits',avis:'avis',histoire:'histoire',contact:'contact'};
+/* ---------- sections ---------- */
+function tete(o,def,c){return '<div class="tete'+(c?' c':'')+' rv">'+(t(o&&o.surtitre)||def?'<small>'+esc(t(o&&o.surtitre)||def)+'</small>':'')+'<h2>'+emph(t(o&&o.titre)||'')+'</h2>'+(t(o&&o.sousTitre)?'<p>'+esc(t(o.sousTitre))+'</p>':'')+'</div>'}
+function sHero(){
+ var v=(D.variante&&D.variante.hero)||SK.heroDefaut||'a';
+ var fl=(SK.flotteurs||[]).map(function(f){return '<div class="fl '+(f.p||'mi')+'" style="left:'+f.x+'%;top:'+f.y+'%;--k:'+(f.k||.3)+'"><svg width="'+f.s+'" height="'+f.s+'" viewBox="0 0 48 48" style="--t:'+(f.t||10)+'s;--dl:-'+(f.d||0)+'s;--r0:'+(f.r0||-10)+'deg;--r1:'+(f.r1||14)+'deg'+(f.c?';color:'+f.c:'')+'"><use href="#i-'+f.i+'"/></svg></div>'}).join('');
+ var puces=(D.puces||[]).map(function(p){return '<li>'+emph(t(p))+'</li>'});
+ if(D.avis&&D.avis.note)puces.unshift('<li><span class="et">★</span> '+esc(num(D.avis.note))+' '+esc(u('surGoogle'))+(D.avis.nombre?' · '+esc(D.avis.nombre)+' '+esc(u('avisMot')):'')+'</li>');
+ var c2=D.cta2||SK.cta2;
+ var art=SK.heroArt?SK.heroArt(D,{t:t,esc:esc,emph:emph,u:u,logo:logo,icone:icone,telHref:telHref,num:num}):'';
+ var h='<section class="hero v-'+v+'" id="accueil"><div class="flot" id="flot" aria-hidden="true">'+fl+'</div><div class="wrap"><div>'+
+ '<span class="surtitre">'+esc(t(D.surtitre))+'</span><h1>'+emph(t(D.accroche)||t(D.nom))+'</h1><p class="lead">'+esc(t(D.intro))+'</p>'+
+ '<div class="cta"><a class="btn btn-p" href="'+telHref()+'">'+ICO_TEL+esc(u('appeler'))+' '+esc(D.telephone||'')+'</a>'+(c2?'<a class="btn btn-o" href="'+esc(cible(c2.cible||'#contact'))+'">'+esc(t(c2.texte))+'</a>':'')+'</div>'+
+ (puces.length?'<ul class="puces">'+puces.join('')+'</ul>':'')+'</div>'+(art?'<div class="hero-art" aria-hidden="true">'+art+'</div>':'')+'</div>';
+ if(v==='c'){var b=(D.bande||D.puces||[]).map(function(x){return '<span>'+esc(t(x).replace(/\*/g,''))+'</span>'}).join('');h+='<div class="bande"><div class="wrap">'+b+'</div></div>'}
+ return h+(SK.heroBas||'')+'</section>'}
+function sServices(){var S=D.services,cls=S.style==='liste'?'svc':'';
+ var g=S.groupes.map(function(gr){var n=gr.items.length;var col=n>=4?'g4':(n===3?'g3':'g2');if(S.colonnes)col='g'+S.colonnes;
+  return (t(gr.nom)&&S.groupes.length>1?'<h3 class="grp-titre rv">'+esc(t(gr.nom))+'</h3>':'')+'<div class="grille '+col+'">'+gr.items.map(function(it){
+   return '<article class="carte rv '+cls+'"><div class="ico">'+icone(it.icone)+'</div><div><h3>'+esc(t(it.nom))+'</h3>'+(t(it.desc)?'<p>'+esc(t(it.desc))+'</p>':'')+'</div></article>'}).join('')+'</div>'}).join('');
+ return '<section class="s '+(S.fond||'')+'" id="services"><div class="wrap">'+tete(S,u('services'))+g+(t(S.note)?'<p class="menu-note">'+esc(t(S.note))+'</p>':'')+'</div></section>'}
+function sMenu(){var M=D.menu,cats=M.categories,tabs=cats.length>2;
+ var html=cats.map(function(c,i){return '<article class="mcat"><h3>'+esc(t(c.nom))+'</h3>'+(t(c.note)?'<p class="mnote">'+esc(t(c.note))+'</p>':'')+
+  c.items.map(function(it){return '<div class="plat"><span class="n">'+esc(t(it.nom))+(t(it.desc)?'<small>'+esc(t(it.desc))+'</small>':'')+'</span>'+(t(it.prix)?'<span class="p">'+esc(t(it.prix))+'</span>':'')+'</div>'}).join('')+'</article>'});
+ var corps;
+ if(tabs){corps='<div class="onglets" role="tablist">'+cats.map(function(c,i){return '<button class="onglet" role="tab" aria-selected="'+(i===0)+'" data-i="'+i+'">'+esc(t(c.nom))+'</button>'}).join('')+'</div>'+
+  html.map(function(h,i){return '<div class="panneau grille'+(i===0?' on':'')+'" data-p="'+i+'">'+h+'</div>'}).join('')}
+ else corps='<div class="grille g2">'+html.join('')+'</div>';
+ return '<section class="s '+(M.fond!=null?M.fond:'sombre')+'" id="menu"><div class="wrap">'+tete(M,u('menu'),true)+'<div class="menu-corps">'+corps+'</div>'+(t(M.note)?'<p class="menu-note">'+esc(t(M.note))+'</p>':'')+'</div></section>'}
+function carteAvis(a){return '<article class="carte av rv"><q'+(a.lang?' lang="'+esc(a.lang)+'"':'')+'>'+esc(t(a.texte))+'</q><div class="qui"><b>'+esc(a.nom||'')+'</b>'+(a.source?' · '+esc(a.source):'')+(a.date?' · '+esc(a.date):'')+'</div></article>'}
+function accueilAvis(){var L=avisListe(),c5=L.filter(function(a){return (a.etoiles||5)>=5}),c4=L.filter(function(a){return a.etoiles===4});return c5.concat(c4).slice(0,3)}
+function cible(c){var id=String(c||'').replace(/^#/,'');return (R[id]&&ordre().indexOf(id)<0)?'#contact':c}
+function sProduits(){var P=Object.assign({},SK.produits||{},D.produits||{}),cats=(P.categories||[]).map(t),n=P.nombre||20,ic=P.icones||[];
+ var items=[];for(var i=0;i<n;i++)items.push({c:cats.length?cats[i%cats.length]:'',ico:ic.length?ic[i%ic.length]:(SK.iconeDefaut||'etoile')});
+ var chips=cats.length?'<div class="onglets pchips" role="tablist"><button class="onglet" role="tab" aria-selected="true" data-pc="">'+esc(u('tous'))+'</button>'+cats.map(function(c){return '<button class="onglet" role="tab" aria-selected="false" data-pc="'+esc(c)+'">'+esc(c)+'</button>'}).join('')+'</div>':'';
+ var cards=items.map(function(it,i){return '<button type="button" class="prod'+(i>=8?' plus':'')+'" data-pi="'+i+'" data-pcat="'+esc(it.c)+'"><span class="pimg">'+icone(it.ico)+'<em>'+esc(u('votreProduit'))+'</em></span><span class="pnom">'+esc(u('votreProduit'))+' '+(i+1)+'</span>'+(it.c?'<span class="pcat">'+esc(it.c)+'</span>':'')+'<span class="pprix">'+esc(u('votrePrix'))+'</span></button>'}).join('');
+ return '<section class="s alt" id="produits"><div class="wrap">'+tete({surtitre:P.surtitre,titre:P.titre||u('produits'),sousTitre:P.sousTitre},u('produits'),true)+chips+'<div class="pgrille" id="pgrille">'+cards+'</div>'+(n>8?'<div class="centre"><button type="button" class="btn btn-p" id="pTout">'+esc(LANG==='en'?'See all '+n:'Voir les '+n)+' '+esc(u('produits').toLowerCase().replace(/^(nos|our) /,''))+'</button></div>':'')+(t(P.note)?'<p class="menu-note">'+esc(t(P.note))+'</p>':'')+'</div></section>'}
+function ficheProd(b){var i=+b.dataset.pi,c=b.dataset.pcat,m=$('pfiche');if(!m){m=document.createElement('div');m.id='pfiche';document.body.appendChild(m)}
+ var P=Object.assign({},SK.produits||{},D.produits||{});
+ m.innerHTML='<div class="pf-in" role="dialog" aria-modal="true"><button class="pf-x" type="button" aria-label="'+esc(u('fermer'))+'">×</button><div class="pimg grand">'+b.querySelector('.pimg').innerHTML+'</div><h3>'+esc(u('votreProduit'))+' '+(i+1)+'</h3>'+(c?'<p class="pcat">'+esc(c)+'</p>':'')+'<p class="pprix">'+esc(u('votrePrix'))+'</p><p class="pdesc">'+esc(t(P.desc)||(LANG==='en'?'Your product description, photos and price will appear here.':'La description, les photos et le prix de votre produit s’afficheront ici.'))+'</p><a class="btn btn-p" href="'+telHref()+'">'+ICO_TEL+esc(u('commanderTel'))+'</a></div>';
+ m.classList.add('on');m.querySelector('.pf-x').onclick=function(){m.classList.remove('on')};m.onclick=function(e){if(e.target===m)m.classList.remove('on')}}
+function scoreBloc(){var A=D.avis;if(!A.note)return '';return '<div class="score rv"><div><div class="gros">'+esc(num(A.note))+'</div>'+stars(A.note)+'</div><div><p><b style="color:var(--c-texte)">'+esc(num(A.note))+' ★ '+esc(u('surGoogle'))+(A.nombre?' · '+esc(A.nombre)+' '+esc(u('avisMot')):'')+'</b></p>'+
+ (!aAvisTextes()?'<p>'+esc(u('noteClients'))+'</p>'+(A.lienGoogle?'<p style="margin-top:12px"><a class="btn btn-p" href="'+esc(A.lienGoogle)+'" target="_blank" rel="noopener">'+esc(u('lireGoogle'))+'</a></p>':''):'')+'</div></div>'}
+function sAvis(){var A=D.avis,h=accueilAvis();
+ return '<section class="s alt" id="avis"><div class="wrap">'+tete({surtitre:A.surtitre,titre:A.titre||u('ceQuOnDit')},u('avisTete'),true)+scoreBloc()+
+ (aAvisTextes()?'<div class="grille g3">'+h.map(carteAvis).join('')+'</div><div class="centre cta-avis"><button class="btn btn-p" data-avis>'+esc(u('voirTous'))+'</button>'+(A.lienGoogle?'<a class="btn btn-o" href="'+esc(A.lienGoogle)+'" target="_blank" rel="noopener">'+esc(u('lireGoogle'))+(A.nombre?' ('+esc(A.nombre)+')':'')+'</a>':'')+'</div>':'')+'</div></section>'}
+function sHistoire(){var H=D.histoire,p=(H.paragraphes||[]).map(function(x){return '<p>'+esc(t(x))+'</p>'}).join(''),et=H.etapes||[];
+ var droite=et.length?'<ol class="ligne-t rv">'+et.map(function(e){return '<li><b>'+esc(t(e.annee))+'</b>'+esc(t(e.texte))+'</li>'}).join('')+'</ol>':'';
+ var ch=(D.chiffres||[]).length?'<div class="chiffres rv" style="margin-top:20px">'+D.chiffres.map(function(c){return '<div><b>'+esc(t(c.val))+'</b><span>'+esc(t(c.label))+'</span></div>'}).join('')+'</div>':'';
+ var cit=t(H.citation)?'<blockquote class="citation rv">'+esc(t(H.citation))+'</blockquote>':'',solo=!droite&&!ch;
+ if(solo&&cit)return '<section class="s '+(H.fond||'')+'" id="histoire"><div class="wrap hist"><div>'+tete(H,u('histoire'))+'<div class="rv">'+p+'</div></div><div class="hist-cit">'+cit+'</div></div></section>';
+ return '<section class="s '+(H.fond||'')+'" id="histoire"><div class="wrap hist'+(solo?' solo':'')+'"><div>'+tete(H,u('histoire'))+'<div class="rv">'+p+'</div>'+cit+'</div>'+(solo?'':'<div>'+droite+ch+'</div>')+'</div></section>'}
+function sZones(){var Z=D.zones;return '<section class="s alt" id="zones"><div class="wrap">'+tete(Z,u('zones'))+'<div class="zones rv">'+Z.liste.map(function(z){return '<span>'+esc(t(z))+'</span>'}).join('')+'</div></div></section>'}
+function sFaq(){return '<section class="s" id="faq"><div class="wrap" style="max-width:820px">'+tete({titre:D.faqTitre||u('faq')},'',true)+'<div class="faq rv">'+D.faq.map(function(f){return '<details><summary>'+esc(t(f.q))+'</summary><p>'+esc(t(f.r))+'</p></details>'}).join('')+'</div></div></section>'}
+function sSpeciale(){var S=D.speciale;return '<section class="s '+(S.fond!=null?S.fond:'sombre')+'" id="speciale"><div class="wrap">'+tete(S,'',true)+(S.html?t(S.html):'')+(S.cartes?'<div class="grille g3">'+S.cartes.map(function(c){return '<article class="carte rv">'+(c.icone?'<div class="ico">'+icone(c.icone)+'</div>':'')+'<h3>'+esc(t(c.titre))+'</h3><p>'+esc(t(c.texte))+'</p></article>'}).join('')+'</div>':'')+'</div></section>'}
+function sWow(){return SK.wow(D,{t:t,esc:esc,emph:emph,u:u,tete:tete,telHref:telHref,icone:icone,num:num})}
+function jourIdx(){return (new Date().getDay()+6)%7}
+function succ(){var L=D.succursales||[];if(!L.length)return '';return '<div class="grille g3" style="margin-top:16px">'+L.map(function(b){var tl=b.telLien||String(b.tel||'').replace(/[^\d+]/g,'');
+ return '<div class="carte ct rv"><h3>'+esc(t(b.nom))+'</h3>'+(t(b.adresse)?'<p>'+esc(t(b.adresse))+'<br><a href="https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(t(b.adresse))+'" target="_blank" rel="noopener">'+esc(u('itin'))+' →</a></p>':'')+(b.tel?'<p><a href="tel:'+esc(tl)+'">'+esc(b.tel)+'</a></p>':'')+
+ ((b.heures||[]).length?'<table class="heures">'+b.heures.map(function(h){return '<tr><td>'+esc(t(h.jours))+'</td><td>'+esc(t(h.heures))+'</td></tr>'}).join('')+'</table>':'')+'</div>'}).join('')+'</div>'}
+function sContact(){var A=D.adresse||{},q=D.mapsQuery||[t(D.nom),A.rue,A.ville,A.province,A.codePostal].filter(Boolean).join(' ');
+ var H=(D.heures||[]).map(function(h){var auj=h.idx!=null&&(Array.isArray(h.idx)?h.idx.indexOf(jourIdx())>=0:h.idx===jourIdx());return '<tr'+(auj?' class="auj"':'')+'><td>'+esc(t(h.jours))+'</td><td>'+esc(t(h.heures))+'</td></tr>'}).join('');
+ var tels=(D.telephones||[]).map(function(x){return '<p>'+(t(x.label)?esc(t(x.label))+' : ':'')+'<a href="tel:'+esc(x.lien||String(x.num).replace(/[^\d+]/g,''))+'">'+esc(x.num)+'</a></p>'}).join('');
+ var R=D.reseaux||{},rs=Object.keys(R).filter(function(k){return R[k]}).map(function(k){return '<a href="'+esc(R[k])+'" target="_blank" rel="noopener">'+esc(k.charAt(0).toUpperCase()+k.slice(1))+'</a>'}).join(' · ');
+ var C=D.contact||{};
+ return '<section class="s" id="contact"><div class="wrap">'+tete({surtitre:C.surtitre,titre:C.titre||u('joindre')},u('heuresContact'))+'<div class="grille g3">'+
+ (H?'<div class="carte rv"><h3>'+esc(u('heures'))+'</h3><table class="heures">'+H+'</table>'+(t(D.heuresNote)?'<p style="margin-top:10px;font-size:.88rem">'+esc(t(D.heuresNote))+'</p>':'')+'</div>':'')+
+ (A.rue||A.ville?'<div class="carte ct rv"><h3>'+esc(u('adresse'))+'</h3><p>'+esc(A.rue||'')+(A.rue?'<br>':'')+esc([A.ville,A.province?'('+A.province+')':''].filter(Boolean).join(' '))+(A.codePostal?' '+esc(A.codePostal):'')+'</p><p><a href="https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(q)+'" target="_blank" rel="noopener">'+esc(u('itin'))+' →</a></p>'+(t(A.note)?'<p style="font-size:.88rem;color:var(--c-doux)">'+esc(t(A.note))+'</p>':'')+'</div>':'')+
+ '<div class="carte ct rv"><h3>'+esc(u('tel'))+'</h3><a class="gros-tel" href="'+telHref()+'">'+esc(D.telephone||'')+'</a>'+tels+(D.courriel?'<p>'+esc(u('courriel'))+' : <a href="mailto:'+esc(D.courriel)+'">'+esc(D.courriel)+'</a></p>':'')+(rs?'<p>'+esc(u('suivez'))+' : '+rs+'</p>':'')+'</div>'+
+ '</div>'+succ()+'</div></section>'+
+ '<section class="s sombre appel-final"><div class="wrap rv"><h2>'+emph(t(C.finalTitre)||u('appelFinal'))+'</h2>'+(t(C.finalTexte)?'<p>'+esc(t(C.finalTexte))+'</p>':'<p></p>')+'<div class="cta"><a class="btn btn-a" href="'+telHref()+'">'+ICO_TEL+esc(D.telephone||'')+'</a></div></div></section>'}
+var R={produits:sProduits,hero:sHero,services:sServices,menu:sMenu,avis:sAvis,histoire:sHistoire,zones:sZones,faq:sFaq,speciale:sSpeciale,wow:sWow,contact:sContact};
+/* ---------- page d'avis ---------- */
+function pageAvis(){var A=D.avis||{},L=avisListe();if(!aAvisTextes()){$('pageAvis').innerHTML='';return}
+ $('pageAvis').innerHTML='<div class="pa-tete"><div class="wrap"><button class="btn btn-o" id="paRetour">'+esc(u('retour'))+'</button><b>'+(A.note?esc(num(A.note))+' ★ · '+esc(A.nombre||L.length)+' '+esc(u('avisMot')):'')+'</b></div></div><div class="corps"><div class="wrap"><h1>'+esc(u('tousAvis'))+'</h1>'+
+ (A.note?'<p style="color:var(--c-doux);margin-bottom:22px">'+esc(num(A.note))+' ★ '+esc(u('surGoogle'))+(A.nombre?' · '+esc(A.nombre)+' '+esc(u('avisMot')):'')+(A.lienGoogle?' · <a href="'+esc(A.lienGoogle)+'" target="_blank" rel="noopener">'+esc(u('voirGoogle'))+'</a>':'')+'</p>':'')+
+ '<div class="grille g3">'+L.slice(0,L.length>=9?9:(L.length>=6?6:3)).map(carteAvis).join('').replace(/ rv"/g,'"')+'</div>'+(A.lienGoogle?'<p class="centre"><a class="btn btn-p" href="'+esc(A.lienGoogle)+'" target="_blank" rel="noopener">'+esc(u('lireGoogle'))+(A.nombre?' ('+esc(A.nombre)+')':'')+'</a></p>':'')+'</div></div>';
+ $('paRetour').addEventListener('click',fermerAvis)}
+var pos=0;
+function ouvrirAvis(e){if(e)e.preventDefault();if(!aAvisTextes()){var s=$('avis');if(s)s.scrollIntoView();return}pos=scrollY;fermerNav();document.body.classList.add('vp');scrollTo(0,0)}
+function fermerAvis(){document.body.classList.remove('vp');scrollTo(0,pos)}
+/* ---------- nav ---------- */
+function fermerNav(){$('nav').classList.remove('ouvert');$('burger').setAttribute('aria-expanded','false')}
+function rendreNav(o){var L=o.filter(function(k){return NAV[k]}).map(function(k){return '<a href="#'+k+'"'+(k==='avis'&&aAvisTextes()?' data-avis':'')+'>'+esc(u(k==='contact'?'contact':k))+'</a>'}).join('');
+ $('liens').innerHTML=L;$('mnav').innerHTML=L+'<a href="'+telHref()+'">'+esc(u('appeler'))+' · '+esc(D.telephone||'')+'</a>';
+ $('brand').innerHTML='<span class="lg">'+logo()+'</span><span><b>'+esc(t(D.nomCourt)||t(D.nom))+'</b>'+(t(D.sousTitre)?'<small>'+esc(t(D.sousTitre))+'</small>':'')+'</span>';
+ $('navTel').href=telHref();$('navTel').innerHTML=ICO_TEL+'<span class="t">'+esc(u('appeler'))+'</span>';
+ $('burger').setAttribute('aria-label',u('menuBtn'));
+ var c2=D.callbar2||SK.callbar2;$('callbar').innerHTML='<a class="btn btn-p" href="'+telHref()+'">'+ICO_TEL+esc(u('appeler'))+'</a>'+(c2?'<a class="btn sec" href="'+esc(cible(c2.cible))+'">'+esc(t(c2.texte))+'</a>':'');
+ $('pied').innerHTML='<b>'+esc(t(D.nom))+'</b>'+esc(t(D.piedTexte)||t(D.sousTitre))+'<br>'+esc([D.adresse&&D.adresse.rue,D.adresse&&D.adresse.ville].filter(Boolean).join(', '))+(D.telephone?' · <a href="'+telHref()+'">'+esc(D.telephone)+'</a>':'')}
+/* ---------- rendu ---------- */
+var io;
+function brancher(){
+ document.querySelectorAll('[data-avis]').forEach(function(b){b.addEventListener('click',ouvrirAvis)});
+ document.querySelectorAll('.prod').forEach(function(b){b.addEventListener('click',function(){ficheProd(b)})});
+ document.querySelectorAll('.pchips .onglet').forEach(function(b){b.addEventListener('click',function(){b.parentNode.querySelectorAll('.onglet').forEach(function(x){x.setAttribute('aria-selected',String(x===b))});var c=b.dataset.pc,g=$('pgrille'),pt=$('pTout');if(g)g.classList.toggle('tout',!!c);if(pt)pt.parentNode.hidden=!!c;document.querySelectorAll('.prod').forEach(function(p){p.hidden=!!c&&p.dataset.pcat!==c})})});
+ if($('pTout'))$('pTout').addEventListener('click',function(){$('pgrille').classList.add('tout');this.parentNode.remove()});
+ document.querySelectorAll('.menu-corps .onglet').forEach(function(b){b.addEventListener('click',function(){var box=b.closest('.menu-corps');box.querySelectorAll('.onglet').forEach(function(x){x.setAttribute('aria-selected','false')});b.setAttribute('aria-selected','true');box.querySelectorAll('.panneau').forEach(function(p){p.classList.toggle('on',p.dataset.p===b.dataset.i)});if(SK.onglet)SK.onglet(box)})});
+ if(io)io.disconnect();
+ if('IntersectionObserver' in window){io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -5% 0px'});
+  document.querySelectorAll('.rv,[data-vu]').forEach(function(el,i){io.observe(el)})}else document.querySelectorAll('.rv,[data-vu]').forEach(function(el){el.classList.add('in')});
+ if(SK.apres)SK.apres(D,{t:t,esc:esc,u:u})}
+function ld(){var A=D.adresse||{},o={"@context":"https://schema.org","@type":D.schemaType||SK.schemaType||'LocalBusiness',name:t(D.nom),telephone:D.telLien||D.telephone,
+ address:{"@type":"PostalAddress",streetAddress:A.rue,addressLocality:A.ville,addressRegion:A.province,postalCode:A.codePostal,addressCountry:A.pays||'CA'}};
+ if(D.courriel)o.email=D.courriel;if(D.siteActuel)o.url=D.siteActuel;if(D.avis&&D.avis.note&&D.avis.nombre){var rc=String(D.avis.nombre).replace(/\D/g,'');if(rc)o.aggregateRating={"@type":"AggregateRating",ratingValue:String(D.avis.note),reviewCount:rc}}
+ var s=document.createElement('script');s.type='application/ld+json';s.textContent=JSON.stringify(o);document.head.appendChild(s)}
+function rendre(){var o=ordre();document.documentElement.lang=LANG==='en'?'en-CA':'fr-CA';
+ if(D.titre&&t(D.titre))document.title=t(D.titre);
+ rendreNav(o);$('top').innerHTML=o.map(function(k){return R[k]?R[k]():''}).join('');pageAvis();
+ var lb=$('lang');if(D.langue==='bilingue'){lb.hidden=false;lb.textContent=LANG==='fr'?'EN':'FR';lb.setAttribute('aria-label',LANG==='fr'?'English':'Français')}
+ brancher()}
+/* ---------- intro ---------- */
+function intro(){var it=$('intro'),vu=false,cle='intro-'+(D.id||'brixel');
+ try{vu=sessionStorage.getItem(cle)==='1'}catch(e){}
+ if(vu||D.animIntro===false||matchMedia('(prefers-reduced-motion: reduce)').matches){it.remove();return}
+ var mot=t(D.nomCourt)||t(D.nom),sp='';for(var i=0;i<mot.length;i++){var ch=mot[i];sp+='<span style="animation-delay:'+(.35+i*.04).toFixed(2)+'s">'+(ch===' '?'&nbsp;':esc(ch))+'</span>'}
+ it.innerHTML=(SK.introFond||'')+'<div class="ib"><div class="ilg">'+logo()+'</div><div class="imot">'+sp+'</div><div class="isous">'+esc(t(D.sousTitre))+'</div></div>';
+ function fin(){if(!it.parentNode)return;it.classList.add('part');setTimeout(function(){it.remove()},520);try{sessionStorage.setItem(cle,'1')}catch(e){}}
+ it.addEventListener('click',fin);setTimeout(fin,Math.min(2300,1300+mot.length*40))}
+/* ---------- démarrage ---------- */
+function bh(){var b=$('apercu');document.documentElement.style.setProperty('--bh',(b?b.offsetHeight:0)+'px')}
+bh();addEventListener('resize',bh,{passive:true});
+if(D._exemple===true){var ex=document.createElement('div');ex.id='exemple';ex.textContent='MODÈLE — contenu d’exemple à remplacer par le vrai contenu du commerce';document.body.appendChild(ex)}
+rendre();ld();intro();
+$('burger').addEventListener('click',function(){var o=$('nav').classList.toggle('ouvert');$('burger').setAttribute('aria-expanded',o)});
+$('mnav').addEventListener('click',function(e){if(e.target.tagName==='A'&&!e.target.hasAttribute('data-avis'))fermerNav()});
+$('liens').addEventListener('click',function(e){if(e.target.tagName==='A'&&!e.target.hasAttribute('data-avis'))document.body.classList.remove('vp')});
+$('lang').addEventListener('click',function(){LANG=LANG==='fr'?'en':'fr';var y=scrollY;rendre();scrollTo(0,y)});
+var tk=false,red=matchMedia('(prefers-reduced-motion: reduce)').matches;
+addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){tk=false;var y=scrollY;$('nav').classList.toggle('ombre',y>10);if(!red&&y<1200){var f=$('flot');if(f)f.style.setProperty('--py',(-y)+'px')}if(SK.defile)SK.defile(y)})},{passive:true});
+})();
+
+</script>
+</body>
+</html>
