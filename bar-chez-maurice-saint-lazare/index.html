@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bar Chez Maurice — Spectacles, humour et restaurant · Saint-Lazare</title>
+<meta name="description" content="Bar Chez Maurice, Saint-Lazare : spectacles hommage, soirées d'humour, discothèque et restaurant (burgers, pizzas, poutines, grillades). Calendrier des spectacles et billetterie. 4,5 ★ sur Google. (450) 455-3544.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Bebas+Neue&family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["BarOrPub","Restaurant"],"name":"Bar Chez Maurice","telephone":"+1-450-455-3544","email":"info@barchezmaurice.qc.ca","url":"https://www.chezmaurice.ca/","address":{"@type":"PostalAddress","streetAddress":"1897, chemin Sainte-Angélique","addressLocality":"Saint-Lazare","addressRegion":"QC","postalCode":"J7T 2Y2","addressCountry":"CA"},"servesCuisine":["Pub","Pizza","Burgers"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"500","bestRating":"5"},"sameAs":["https://www.facebook.com/ChezMaurice1897"]}
+</script>
+<style>
+:root{--top:32px;--night:#0e0a1a;--night2:#1a1330;--night3:#261c45;--pink:#ff3d8b;--amber:#ffb627;--cyan:#3de0ff;--cream:#f6f0ff;--soft:#b9add6;--line:#33285a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--top) + 72px)}
+body{background:var(--night);color:var(--cream);font:17px/1.6 "Rubik",system-ui,sans-serif;padding-top:var(--top)}
+a{color:inherit}
+svg{max-width:100%}
+h1,h2,h3{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;line-height:1;letter-spacing:.02em;overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:84px 0;overflow-x:clip}
+.eyebrow{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);font-weight:800;margin-bottom:10px}
+h2{font-size:clamp(44px,7vw,76px);margin-bottom:12px}
+.lead{max-width:44em;color:var(--soft);font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 24px;border-radius:999px;font-weight:800;text-decoration:none;border:2px solid transparent;transition:transform .2s;cursor:pointer;font-family:inherit;font-size:16px}
+.btn:hover{transform:translateY(-2px)}
+.btn.pk{background:var(--pink);color:#fff}
+.btn.am{background:var(--amber);color:var(--night)}
+.btn.ghost{border-color:var(--cyan);color:var(--cyan);background:transparent}
+/* nav */
+.nav{position:fixed;top:var(--top);left:0;right:0;z-index:50;background:rgba(14,10,26,.97);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.brand{font-family:"Monoton",cursive;font-size:24px;color:var(--pink);text-decoration:none;text-shadow:0 0 12px rgba(255,61,139,.7);white-space:nowrap}
+.links{display:flex;gap:22px;align-items:center}
+.links a{text-decoration:none;font-size:15px;font-weight:600;cursor:pointer}
+.links a:hover{color:var(--amber)}
+.links a.cta{background:var(--amber);color:var(--night);padding:9px 16px;border-radius:999px;font-weight:800}
+.burger{display:none;flex:0 0 44px;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2.5px;background:var(--cream);margin:5px auto;transition:transform .25s,opacity .25s}
+@media(max-width:940px){
+ .burger{display:block}
+ .links{position:fixed;top:calc(var(--top) + 66px);left:0;right:0;flex-direction:column;gap:0;background:var(--night2);border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s}
+ .links a{padding:16px 20px;width:100%;border-top:1px solid var(--line)}
+ .links a.cta{border-radius:0}
+ .nav.open .links{transform:none;opacity:1;pointer-events:auto}
+ .nav.open .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+ .nav.open .burger span:nth-child(2){opacity:0}
+ .nav.open .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+}
+@media(max-width:400px){.brand{font-size:19px}}
+/* héros */
+.hero{position:relative;background:radial-gradient(ellipse 50% 60% at 20% 0%,rgba(255,61,139,.35),transparent 70%),radial-gradient(ellipse 50% 60% at 85% 10%,rgba(61,224,255,.25),transparent 70%),var(--night);padding:120px 0 90px;overflow:hidden}
+.beam{position:absolute;top:-40px;width:180px;height:140%;background:linear-gradient(180deg,rgba(255,255,255,.18),transparent 80%);clip-path:polygon(45% 0,55% 0,100% 100%,0 100%);transform-origin:50% 0;pointer-events:none;z-index:0}
+.beam.b1{left:8%;transform:rotate(18deg);animation:sweep1 7s ease-in-out infinite alternate}
+.beam.b2{right:6%;transform:rotate(-18deg);animation:sweep2 8s ease-in-out infinite alternate}
+@keyframes sweep1{to{transform:rotate(-10deg)}}
+@keyframes sweep2{to{transform:rotate(12deg)}}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.5;transform:translate3d(0,calc(var(--py,0px)*var(--d,1)),0)}
+.f svg{display:block;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.f.far{opacity:.25;filter:blur(1.5px)}
+@media(max-width:979px){.f{opacity:.28}.f.far{opacity:.15}}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r1,-8deg))}to{transform:translateY(12px) rotate(var(--r2,10deg))}}
+.hero .wrap{position:relative;z-index:1}
+.neon{font-family:"Monoton",cursive;font-size:clamp(46px,11vw,120px);line-height:1.05;color:#fff;text-shadow:0 0 6px #fff,0 0 18px var(--pink),0 0 40px var(--pink)}
+.hero .tag{font-family:"Bebas Neue";font-size:clamp(22px,3.4vw,34px);letter-spacing:.18em;color:var(--cyan);margin:14px 0 8px}
+.hero p{font-size:clamp(17px,2.2vw,20px);color:var(--soft);max-width:36em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:14px;padding:10px 16px;font-size:15px;text-decoration:none;cursor:pointer}
+.rating b{font-family:"Bebas Neue";font-size:30px;color:var(--amber)}
+.stars{color:var(--amber);letter-spacing:2px}
+.next{margin-top:30px;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;max-width:640px}
+.next div{display:flex;align-items:center;gap:14px;background:var(--night2);border:1px solid var(--line);border-left:4px solid var(--pink);border-radius:12px;padding:12px 16px}
+.next b{font-family:"Bebas Neue";font-size:26px;letter-spacing:.04em}
+.next span{color:var(--soft);font-size:15px}
+@media(min-width:700px){.next{grid-template-columns:repeat(3,minmax(0,1fr))}.next div{flex-direction:column;align-items:flex-start;gap:2px}}
+/* spectacles */
+.shows{background:var(--night2)}
+.cal{list-style:none;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:26px}
+.cal li{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--night3);border-radius:12px;padding:12px 16px;min-width:0}
+.cal b{font-family:"Bebas Neue";font-size:24px;letter-spacing:.03em;overflow-wrap:anywhere}
+.cal span{color:var(--amber);font-size:14.5px;font-weight:600;text-align:right;flex:0 0 auto;max-width:48%}
+.cal.pre li.sh{opacity:0;transform:translateY(16px)}
+.cal.pre.in li.sh{opacity:1;transform:none;transition:opacity .4s,transform .4s}
+@media(min-width:700px){.cal{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.cal{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.more{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}
+/* humour */
+.humour .grid{display:grid;grid-template-columns:minmax(0,1fr);gap:30px;align-items:center}
+.names{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.names span{border:1px solid var(--pink);color:#ffc2da;border-radius:999px;padding:6px 12px;font-size:14.5px}
+.mic{justify-self:center;width:min(100%,260px)}
+@media(min-width:960px){.humour .grid{grid-template-columns:1.4fr .6fr;gap:60px}}
+/* salle */
+.salle{background:var(--night2)}
+.cap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}
+.cap div{background:var(--night3);border-radius:16px;padding:18px 12px;text-align:center;min-width:0}
+.cap b{display:block;font-family:"Bebas Neue";font-size:clamp(40px,7vw,64px);line-height:1;color:var(--cyan)}
+.cap span{font-size:14px;color:var(--soft)}
+.tech{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:20px}
+.tech div{border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15.5px;color:var(--soft)}
+.tech b{display:block;color:var(--amber);font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+@media(min-width:800px){.tech{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* menu */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:6px 2px 14px;margin:20px 0 6px;-webkit-overflow-scrolling:touch}
+.tabs button{flex:0 0 auto;font:inherit;font-size:14.5px;font-weight:800;padding:9px 15px;border-radius:999px;border:1.5px solid var(--pink);background:transparent;color:#ffc2da;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--pink);color:#fff}
+@media(min-width:1024px){.tabs{flex-wrap:wrap;overflow:visible}}
+.panel{display:none}.panel.on{display:block}
+.board{background:var(--night2);border:1px solid var(--line);border-radius:22px;padding:22px 18px}
+.board h3{font-size:clamp(34px,4.6vw,46px);color:var(--amber)}
+.board .sub{color:var(--soft);font-size:15px;margin-top:4px}
+.rows{display:grid;grid-template-columns:minmax(0,1fr);gap:0 36px;margin-top:10px}
+.row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed var(--line);min-width:0}
+.row b{display:block;font-weight:600}
+.row small{display:block;color:var(--soft);font-size:14px;line-height:1.4;margin-top:2px}
+.row .p{flex:0 0 auto;font-weight:800;color:var(--cyan);white-space:nowrap;font-size:15.5px;text-align:right}
+.note{margin-top:14px;color:var(--soft);font-size:14.5px;border-left:3px solid var(--amber);padding-left:12px}
+@media(min-width:900px){.board{padding:34px 38px}.rows{grid-template-columns:1fr 1fr}}
+/* avis */
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:6px 0 26px}
+.score b{font-family:"Bebas Neue";font-size:72px;line-height:1;color:var(--amber)}
+.score small{display:block;color:var(--soft);font-size:15px}
+.rv{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start}
+@media(min-width:700px){.rv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1080px){.rv{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.r{background:var(--night2);border:1px solid var(--line);border-radius:18px;padding:20px;min-width:0}
+.r p{margin:8px 0 12px;overflow-wrap:anywhere}
+.r footer{font-size:14px;color:var(--soft)}
+.r footer b{color:var(--cream)}
+/* contact */
+.contact{background:linear-gradient(135deg,#2a0f3d,#120b24)}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:24px}
+.cbox{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:18px;padding:22px;min-width:0}
+.cbox small{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:8px;font-weight:800}
+.cbox a{text-decoration:none;font-size:19px;font-weight:600;overflow-wrap:anywhere}
+.cbox a:hover{text-decoration:underline}
+.cbox p{color:var(--soft);font-size:15px;margin-top:4px}
+@media(min-width:900px){.cgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.near{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:20px}
+.near div{border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.near b{display:block;color:var(--cyan);font-family:"Bebas Neue";font-size:24px;letter-spacing:.04em;margin-bottom:6px}
+.near li{list-style:none;padding:4px 0;font-size:15.5px;color:var(--soft)}
+.near li a{color:var(--cream);text-decoration:none;font-weight:600}
+@media(min-width:900px){.near{grid-template-columns:1fr 1fr}}
+.foot{background:#08060f;color:#8a7fa8;font-size:14px;text-align:center;padding:24px 0 100px}
+@media(min-width:941px){.foot{padding-bottom:24px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:8px;background:var(--amber);color:var(--night);font-weight:800;text-decoration:none;padding:15px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(0,0,0,.7)}
+@media(min-width:941px){.callbar{display:none}}
+/* page d'avis */
+#avispage{display:none;background:var(--night);min-height:100vh;padding-top:66px}
+body.avis-open #site{display:none}
+body.avis-open #avispage{display:block}
+body.avis-open .callbar{display:none}
+.ap-head{position:sticky;top:calc(var(--top) + 66px);z-index:40;background:var(--night2);border-bottom:1px solid var(--line)}
+.ap-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;min-height:64px;padding-top:8px;padding-bottom:8px}
+.ap-head .btn{padding:10px 18px}
+.ap-body{padding:40px 0 80px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#07050d;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;transition:opacity .5s;text-align:center;padding:0 16px}
+#intro.out{opacity:0}
+#intro .n{font-family:"Monoton",cursive;font-size:clamp(44px,12vw,110px);color:#fff;opacity:0;animation:flick 1.4s steps(1) forwards;text-shadow:0 0 6px #fff,0 0 22px var(--pink),0 0 50px var(--pink)}
+#intro .t{font-family:"Bebas Neue";letter-spacing:.3em;color:var(--cyan);font-size:clamp(18px,4vw,28px);opacity:0;animation:fade .4s 1.3s forwards}
+@keyframes flick{0%{opacity:0}10%{opacity:1}16%{opacity:.1}26%{opacity:1}32%{opacity:.25}44%{opacity:1}100%{opacity:1}}
+@keyframes fade{to{opacity:1}}
+@media(max-width:519px){:root{--top:48px}.nav .wrap{padding:0 12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}#intro{display:none}.cal li.sh{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Bar Chez Maurice — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true"><div class="n">Chez Maurice</div><div class="t">SPECTACLES · HUMOUR · RESTAURANT</div></div>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" data-site aria-label="Bar Chez Maurice — accueil">Chez Maurice</a>
+  <nav class="links" id="links">
+   <a href="#spectacles" data-site>Spectacles</a>
+   <a href="#humour" data-site>Humour</a>
+   <a href="#menu" data-site>Restaurant</a>
+   <a href="#salle" data-site>La salle</a>
+   <a data-open-avis>Avis</a>
+   <a href="#contact" data-site>Contact</a>
+   <a class="cta" href="https://www.epasslive.com/profil/chez-maurice" target="_blank" rel="noopener">Billetterie</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<div id="site">
+<main id="accueil">
+<section class="hero">
+ <div class="beam b1" aria-hidden="true"></div><div class="beam b2" aria-hidden="true"></div>
+ <div class="float" id="float" aria-hidden="true"></div>
+ <div class="wrap">
+  <div class="eyebrow">Bar · salle de spectacles · restaurant à Saint-Lazare</div>
+  <h1 class="neon">Chez Maurice</h1>
+  <div class="tag">Spectacles · Humour · Restaurant</div>
+  <p>Hommages, soirées d'humour, discothèque et bonne bouffe avant le show, au cœur de Saint-Lazare.</p>
+  <div class="ctas"><a class="btn am" href="https://www.epasslive.com/profil/chez-maurice" target="_blank" rel="noopener">🎟️ Billetterie</a><a class="btn pk" href="tel:+14504553544">📞 (450) 455-3544</a><a class="btn ghost" href="#spectacles">Calendrier</a></div>
+  <div class="next"><div><b>Humour</b><span>Vendredi 20 novembre 2026</span></div><div><b>Pink Floyd</b><span>21 novembre 2026</span></div><div><b>Le Third Street Band</b><span>27 novembre 2026</span></div></div>
+  <a class="rating" data-open-avis><b>4,5</b><span><span class="stars">★★★★★</span><br>sur Google · plus de 500 avis</span></a>
+ </div>
+</section>
+
+<section class="shows" id="spectacles">
+ <div class="wrap">
+  <div class="eyebrow">À l'affiche</div>
+  <h2>Le calendrier des spectacles</h2>
+  <p class="lead">Billets en vente sur notre billetterie en ligne. Pour recevoir l'info des spectacles, écrivez-nous à info@barchezmaurice.qc.ca.</p>
+  <ul class="cal" id="cal"><li class="sh"><b>Humour</b><span>Vendredi 20 novembre 2026</span></li><li class="sh"><b>Pink Floyd</b><span>21 novembre 2026</span></li><li class="sh"><b>Le Third Street Band</b><span>27 novembre 2026</span></li><li class="sh"><b>The Thrills</b><span>4 décembre 2026</span></li><li class="sh"><b>Burning Crown</b><span>5 décembre 2026</span></li><li class="sh"><b>The Westfella&#x27;s Band</b><span>11 décembre 2026</span></li><li class="sh"><b>Whats Next</b><span>12 décembre 2026</span></li><li class="sh"><b>Humour</b><span>Vendredi 18 décembre 2026</span></li><li class="sh"><b>Party du jour de l&#x27;an</b><span>2026</span></li><li class="sh"><b>Metallica</b><span>2 janvier 2027</span></li><li class="sh"><b>Green Machine</b><span>8 janvier 2027</span></li><li class="sh"><b>Matt Lang</b><span>9 janvier 2027</span></li><li class="sh"><b>Phil Bond</b><span>15 janvier 2027</span></li><li class="sh"><b>Rusty</b><span>16 janvier 2027</span></li><li class="sh"><b>Darklux</b><span>22 janvier 2027</span></li><li class="sh"><b>Tragically Hip</b><span>23 janvier 2027</span></li><li class="sh"><b>Boogie</b><span>30 janvier 2027</span></li><li class="sh"><b>Nirvana</b><span>5 février 2027</span></li><li class="sh"><b>Supertramp</b><span>6 février 2027</span></li><li class="sh"><b>Humour</b><span>Vendredi 12 février 2027</span></li><li class="sh"><b>Abba</b><span>13 février 2027</span></li><li class="sh"><b>Bounty Hunters</b><span>19 février 2027</span></li><li class="sh"><b>Éric Lapointe</b><span>20 février 2027</span></li><li class="sh"><b>Van Halen</b><span>26 février 2027</span></li><li class="sh"><b>Ozzy</b><span>27 février 2027</span></li><li class="sh"><b>Sash</b><span>6 mars 2027</span></li><li class="sh"><b>Rush</b><span>12 mars 2027</span></li><li class="sh"><b>Elvis</b><span>13 mars 2027</span></li><li class="sh"><b>Maxime Martin</b><span>18 mars 2027</span></li><li class="sh"><b>Humour</b><span>19 mars 2027</span></li><li class="sh"><b>U2</b><span>20 mars 2027</span></li><li class="sh"><b>RPM</b><span>26 mars 2027</span></li><li class="sh"><b>Bon Jovi</b><span>27 mars 2027</span></li><li class="sh"><b>Cinema5</b><span>9 avril 2027</span></li><li class="sh"><b>Boy band</b><span>10 avril 2027</span></li><li class="sh"><b>Humour</b><span>Vendredi 23 avril 2027</span></li><li class="sh"><b>Queen</b><span>24 avril 2027</span></li><li class="sh"><b>Neil Young</b><span>1er mai 2027</span></li><li class="sh"><b>Subliminal</b><span>7 mai 2027</span></li><li class="sh"><b>The Doors</b><span>8 mai 2027</span></li><li class="sh"><b>Plume</b><span>14 mai 2027</span></li><li class="sh"><b>Humour</b><span>Vendredi 21 mai 2027</span></li><li class="sh"><b>Garage électrique</b><span>5 juin 2027</span></li><li class="sh"><b>Humour</b><span>Vendredi 11 juin 2027</span></li><li class="sh"><b>Hommage Harmonium et Beau Dommage</b><span>12 juin 2027</span></li><li class="sh"><b>Jean Leloup</b><span>19 juin 2027</span></li></ul>
+  <div class="more"><a class="btn am" href="https://www.epasslive.com/profil/chez-maurice" target="_blank" rel="noopener">🎟️ Acheter des billets</a><a class="btn ghost" href="https://www.facebook.com/ChezMaurice1897" target="_blank" rel="noopener">Suivre sur Facebook</a></div>
+ </div>
+</section>
+
+<section class="humour" id="humour">
+ <div class="wrap grid">
+  <div>
+   <div class="eyebrow">Les drôles de vendredis d'humour</div>
+   <h2>L'humour, une tradition depuis 1997</h2>
+   <p class="lead">Les Drôles de jeudis du Maurice ont débuté en 1997, animés par Martin Matte. Depuis, la prestigieuse liste d'animateurs s'est allongée. Des humoristes de la relève ou de grands noms de l'humour ont ravi notre public, qui ne savait jamais qui serait sur scène.</p>
+   <div class="names"><span>Martin Matte</span><span>Sylvain Larocque</span><span>Martin Petit</span><span>Louis-José Houde</span><span>Patrick Groulx</span><span>Stéphane Fallu</span><span>Dominic Paquet</span><span>Maxim Leblanc</span><span>Martin Félip</span><span>Philippe Bond</span><span>Étienne Dano</span><span>Martin Vachon</span><span>Jérémie Larouche</span><span>Jérémie Du Temple</span><span>Alex Bisaillon</span><span>Jessy Sheehy</span></div>
+  </div>
+  <svg class="mic" viewBox="0 0 200 320" aria-hidden="true"><circle cx="100" cy="70" r="52" fill="#261c45" stroke="#ff3d8b" stroke-width="5"/><g stroke="#ff3d8b" stroke-width="2" opacity=".6"><path d="M60 50h80M54 70h92M60 90h80M100 22v96M78 26v88M122 26v88"/></g><rect x="88" y="120" width="24" height="70" rx="10" fill="#3a2d66"/><path d="M100 190v100" stroke="#b9add6" stroke-width="6"/><path d="M60 300h80" stroke="#b9add6" stroke-width="8" stroke-linecap="round"/><path d="M30 40l-14-10M170 40l14-10M26 80H8M174 80h18" stroke="#ffb627" stroke-width="5" stroke-linecap="round"/></svg>
+ </div>
+</section>
+
+<section id="menu">
+ <div class="wrap">
+  <div class="eyebrow">Restaurant &amp; menu</div>
+  <h2>Une bonne bouffe avant le show</h2>
+  <p class="lead">Burgers, pizzas, poutines, nachos, grillades et plus. Cartes des cocktails et des vins au bar. Réservez vos places pour le restaurant au (450) 455-3544.</p>
+  <div class="tabs" role="tablist" id="tabs"><button type="button" role="tab" data-i="0" aria-selected="true">Les entrées mixtes</button><button type="button" role="tab" data-i="1" aria-selected="false">Les entrées</button><button type="button" role="tab" data-i="2" aria-selected="false">Les amuse-gueules</button><button type="button" role="tab" data-i="3" aria-selected="false">Frites, poutines et rondelles</button><button type="button" role="tab" data-i="4" aria-selected="false">Sandwichs, wraps et burgers</button><button type="button" role="tab" data-i="5" aria-selected="false">Les salades repas</button><button type="button" role="tab" data-i="6" aria-selected="false">Les nachos</button><button type="button" role="tab" data-i="7" aria-selected="false">Les grillades et poissons</button><button type="button" role="tab" data-i="8" aria-selected="false">Les pizzas</button><button type="button" role="tab" data-i="9" aria-selected="false">Les pâtes et desserts</button></div>
+  <div class="panel on" data-i="0"><div class="board"><h3>Les entrées mixtes</h3><div class="rows"><div class="row"><div><b>Solo</b></div><span class="p">12,00 $</span></div><div class="row"><div><b>Duo</b></div><span class="p">22,00 $</span></div><div class="row"><div><b>Trio</b></div><span class="p">32,00 $</span></div><div class="row"><div><b>Quatuor</b></div><span class="p">42,00 $</span></div></div><p class=note>Au choix : 3 filets de poitrine de poulet, 6 bâtonnets au fromage, 6 cornichons panés, 8 bâtonnets de courgettes, 6 ailes de poulet, 8 crevettes bambam, 6 jalapeños « poppers ».</p></div></div><div class="panel" data-i="1"><div class="board"><h3>Les entrées</h3><div class="rows"><div class="row"><div><b>Potage du jour</b></div><span class="p">8,00 $</span></div><div class="row"><div><b>Soupe à l&#x27;oignon gratinée</b></div><span class="p">10,95 $</span></div><div class="row"><div><b>Escargots à l&#x27;ail au gratin</b></div><span class="p">9,95 $</span></div><div class="row"><div><b>Crevettes à l&#x27;ail au gratin</b></div><span class="p">11,95 $</span></div><div class="row"><div><b>Salade jardinière</b></div><span class="p">10,95 $</span></div><div class="row"><div><b>Salade César</b></div><span class="p">10,95 $</span></div><div class="row"><div><b>Salade d&#x27;épinards</b></div><span class="p">12,95 $</span></div><div class="row"><div><b>Salade grecque</b></div><span class="p">12,95 $</span></div></div></div></div><div class="panel" data-i="2"><div class="board"><h3>Les amuse-gueules</h3><div class="rows"><div class="row"><div><b>Calmars frits</b><small>Servis au choix avec sauce marinara ou mayonnaise épicée</small></div><span class="p">19,95 $</span></div><div class="row"><div><b>Pain à l&#x27;ail simple</b><small>Gratiné : 6,95 $</small></div><span class="p">4,00 $</span></div><div class="row"><div><b>Pain à l&#x27;ail double</b><small>Gratiné : 9,95 $</small></div><span class="p">6,00 $</span></div><div class="row"><div><b>Bruschettas (6)</b></div><span class="p">13,95 $</span></div><div class="row"><div><b>Crevettes bambam (8)</b><small>Avec frites : 15,00 $</small></div><span class="p">12,00 $</span></div><div class="row"><div><b>Crevettes bambam (16)</b><small>Avec frites : 24,00 $</small></div><span class="p">21,00 $</span></div><div class="row"><div><b>Filets de poitrine de poulet (3)</b><small>Avec frites : 15,00 $</small></div><span class="p">12,00 $</span></div><div class="row"><div><b>Filets de poitrine de poulet (6)</b><small>Avec frites : 25,00 $</small></div><span class="p">22,00 $</span></div><div class="row"><div><b>Ailes de poulet (8)</b><small>Avec frites : 19,00 $</small></div><span class="p">16,00 $</span></div><div class="row"><div><b>Ailes de poulet (12)</b><small>Avec frites : 25,00 $</small></div><span class="p">22,00 $</span></div><div class="row"><div><b>Ailes de poulet (18)</b><small>Avec frites : 33,00 $</small></div><span class="p">30,00 $</span></div></div></div></div><div class="panel" data-i="3"><div class="board"><h3>Frites, poutines et rondelles</h3><p class=sub>Petite / grande</p><div class="rows"><div class="row"><div><b>Frites</b></div><span class="p">7,50 $ / 9,25 $</span></div><div class="row"><div><b>Frites sauce régulière</b></div><span class="p">7,75 $ / 10,50 $</span></div><div class="row"><div><b>Poutine régulière</b></div><span class="p">13,50 $ / 16,50 $</span></div><div class="row"><div><b>Poutine « All Dressed »</b><small>Pepperonis, piments, champignons rôtis</small></div><span class="p">15,50 $ / 18,00 $</span></div><div class="row"><div><b>Poutine filets de poulet panés</b></div><span class="p">15,50 $ / 18,00 $</span></div><div class="row"><div><b>Poutine bacon et oignons caramélisés</b></div><span class="p">15,50 $ / 18,00 $</span></div><div class="row"><div><b>Poutine viande fumée</b></div><span class="p">16,50 $ / 18,70 $</span></div><div class="row"><div><b>Poutine viande fumée sauce aux poivres</b></div><span class="p">16,75 $ / 17,95 $</span></div><div class="row"><div><b>Poutine italienne</b></div><span class="p">15,50 $ / 17,50 $</span></div><div class="row"><div><b>Poutine sauce aux poivres</b></div><span class="p">14,50 $ / 16,00 $</span></div><div class="row"><div><b>Rondelles d&#x27;oignons</b></div><span class="p">9,75 $ / 12,75 $</span></div></div></div></div><div class="panel" data-i="4"><div class="board"><h3>Sandwichs, wraps et burgers</h3><p class=sub>Accompagnés de frites ou salade jardinière (extra 4,00 $) ou César (extra 4,25 $) ou poutine (extra 5,50 $). Cheddar extra 1,00 $ · bacon extra 1,75 $</p><div class="rows"><div class="row"><div><b>Cheeseburger classique</b><small>Bœuf 1/4 lb maigre AAA, fromage, oignons, tomates et laitue</small></div><span class="p">20,75 $</span></div><div class="row"><div><b>Cheeseburger double</b></div><span class="p">23,95 $</span></div><div class="row"><div><b>Burger végétarien</b><small>Boulette végé, fromage, oignons, tomates et laitue</small></div><span class="p">20,75 $</span></div><div class="row"><div><b>Burger T-Mex</b><small>Bœuf 1/4 lb maigre AAA, sauce Hickory, champignons rôtis, oignons rôtis, tomates et laitue</small></div><span class="p">20,75 $</span></div><div class="row"><div><b>Burger chèvre</b><small>Bœuf 1/4 lb maigre AAA, sauce balsamique, fromage Paillot de chèvre, bacon, tomates et mesclun</small></div><span class="p">22,75 $</span></div><div class="row"><div><b>Burger chipotle</b><small>Bœuf 1/4 lb maigre AAA, sauce chipotle, rondelles d&#x27;oignons frits, bacon, tomates et laitue</small></div><span class="p">20,75 $</span></div><div class="row"><div><b>Burger suisse</b><small>Bœuf 1/4 lb maigre AAA, mayo dijonnaise, champignons rôtis et fromage suisse</small></div><span class="p">20,75 $</span></div><div class="row"><div><b>Burger au poulet</b><small>Poitrine de poulet panée ou grillée, mayonnaise, laitue, tomates</small></div><span class="p">20,75 $</span></div><div class="row"><div><b>Philly steak</b><small>Steak tranché, oignons et champignons rôtis, piment vert, couvert de provolone fondu, servi sur petit pain baguette</small></div><span class="p">20,75 $</span></div><div class="row"><div><b>Smoked meat</b><small>Viande fumée servie sur pain de seigle, salade de chou et cornichons</small></div><span class="p">21,95 $</span></div><div class="row"><div><b>Sous-marin 8 po</b><small>Steak, pepperonis, oignons, champignons, piments, fromage, laitue, tomates</small></div><span class="p">20,95 $</span></div><div class="row"><div><b>Sous-marin smoked meat 8 po</b><small>Viande fumée, oignons, champignons, piments, fromage, laitue, tomates</small></div><span class="p">22,50 $</span></div><div class="row"><div><b>Club sandwich classique</b><small>Pour deux : 23,50 $</small></div><span class="p">20,75 $</span></div><div class="row"><div><b>Club Maurice</b><small>Sur pain baguette</small></div><span class="p">20,95 $</span></div><div class="row"><div><b>Wrap Marco</b><small>Steak et pepperonis, oignons, champignons, piments, fromage, laitue, tomates</small></div><span class="p">20,95 $</span></div><div class="row"><div><b>Wrap classique</b><small>Poitrine de poulet grillée ou crevettes, poivrons, oignons rôtis, laitue, cheddar, salsa et crème sure</small></div><span class="p">20,95 $</span></div><div class="row"><div><b>Wrap César</b><small>Poitrine de poulet panée ou crevettes, bacon, mozzarella, romaine et sauce César</small></div><span class="p">20,95 $</span></div><div class="row"><div><b>Wrap ranch</b><small>Poitrine de poulet panée ou crevettes, bacon, tomate, cheddar, laitue et sauce ranch</small></div><span class="p">20,95 $</span></div><div class="row"><div><b>Wrap Buffalo</b><small>Poitrine de poulet panée, bacon, tomate, cheddar, laitue, sauce ranch et sauce red hot</small></div><span class="p">20,95 $</span></div></div></div></div><div class="panel" data-i="5"><div class="board"><h3>Les salades repas</h3><div class="rows"><div class="row"><div><b>Salade César</b><small>Laitue romaine, bacon, mozzarella, sauce crémeuse César et croûtons</small></div><span class="p">18,50 $</span></div><div class="row"><div><b>Salade épinards</b><small>Épinards, fromage feta, pacanes, bleuets, concombres, poivrons, tomates, oignons rouges et vinaigrette maison</small></div><span class="p">21,00 $</span></div><div class="row"><div><b>Salade jardinière</b><small>Laitue mesclun, concombres, tomates, poivrons, oignons rouges, vinaigrette maison</small></div><span class="p">18,50 $</span></div><div class="row"><div><b>Salade chèvre chaud</b><small>Laitue mesclun, tomates, oignons rouges, pacanes, bleuets, fromage de chèvre Paillot caramélisé et vinaigrette balsamique</small></div><span class="p">22,50 $</span></div><div class="row"><div><b>Salade grecque</b><small>Tomates, fromage feta, olives kalamata, concombres, poivrons verts, oignons rouges, vinaigrette grecque</small></div><span class="p">22,00 $</span></div></div><p class=note>Ajout de feta 4,00 $ · poitrine de poulet grillée 7,00 $ · poulet pané 7,00 $ · filet de saumon 9,00 $ · 1 brochette de crevettes 9,00 $ · 2 brochettes de crevettes 13,00 $</p></div></div><div class="panel" data-i="6"><div class="board"><h3>Les nachos</h3><p class=sub>Accompagnés de salsa et crème sure, recouverts de fromage, olives, poivrons, jalapeños, bruschetta</p><div class="rows"><div class="row"><div><b>Nachos au fromage</b></div><span class="p">19,95 $</span></div><div class="row"><div><b>Nachos au poulet épicé</b></div><span class="p">23,95 $</span></div><div class="row"><div><b>Nachos mexicains bœuf épicé</b></div><span class="p">23,95 $</span></div></div></div></div><div class="panel" data-i="7"><div class="board"><h3>Les grillades et poissons</h3><div class="rows"><div class="row"><div><b>Hamburger steak, 1 boulette</b><small>Accompagné de frites et salade de chou · 2 boulettes : 22,50 $</small></div><span class="p">19,95 $</span></div><div class="row"><div><b>Fish &amp; chips (morue)</b><small>Accompagné de salade de chou</small></div><span class="p">22,95 $</span></div><div class="row"><div><b>Filet de saumon grillé</b><small>Accompagné de riz, frites et salade jardinière</small></div><span class="p">26,95 $</span></div><div class="row"><div><b>Filet de poulet grillé</b><small>Accompagné de riz, frites, salade jardinière</small></div><span class="p">23,75 $</span></div><div class="row"><div><b>Brochettes de crevettes (2)</b><small>Servies sur riz avec salade, frites et beurre à l&#x27;ail</small></div><span class="p">23,75 $</span></div><div class="row"><div><b>Brochette de poulet</b><small>Servie sur riz avec frites et salade jardinière</small></div><span class="p">24,95 $</span></div><div class="row"><div><b>Steak de bavette 7 oz</b><small>Accompagné de frites, salade jardinière et une sauce aux poivres</small></div><span class="p">32,95 $</span></div></div></div></div><div class="panel" data-i="8"><div class="board"><h3>Les pizzas</h3><p class=sub>10 po / 12 po</p><div class="rows"><div class="row"><div><b>Trois fromages</b><small>Sauce tomate, mozzarella, provolone et parmesan</small></div><span class="p">18,75 $ / 21,75 $</span></div><div class="row"><div><b>La pepperoni</b><small>Sauce tomate, pepperonis et mozzarella</small></div><span class="p">20,25 $ / 23,25 $</span></div><div class="row"><div><b>Pizza poulet BBQ</b><small>Sauce BBQ, poulet grillé, mozzarella et poivrons</small></div><span class="p">21,95 $ / 24,95 $</span></div><div class="row"><div><b>Toute garnie</b><small>Sauce tomate, pepperonis, champignons, mozzarella et poivrons</small></div><span class="p">20,50 $ / 23,50 $</span></div><div class="row"><div><b>L&#x27;italienne</b><small>Sauce tomate, saucisses italiennes fortes, poivrons et mozzarella</small></div><span class="p">19,95 $ / 22,95 $</span></div><div class="row"><div><b>Végétarienne</b><small>Sauce tomate, champignons, poivrons, oignons, olives vertes, tomates et mozzarella</small></div><span class="p">19,95 $ / 22,95 $</span></div><div class="row"><div><b>Pizza crevettes</b><small>Sauce tomate, mozzarella et crevettes</small></div><span class="p">20,95 $ / 23,95 $</span></div><div class="row"><div><b>À la grecque</b><small>Sauce tomate, poivrons, oignons, olives, tomates, mozzarella et feta</small></div><span class="p">20,50 $ / 23,50 $</span></div><div class="row"><div><b>Fous de la viande</b><small>Sauce tomate, pepperonis, saucisses italiennes fortes, viande fumée et mozzarella</small></div><span class="p">21,95 $ / 24,95 $</span></div><div class="row"><div><b>Pizza Maurice</b><small>Sauce tomate, pepperonis, oignons, bacon et mozzarella</small></div><span class="p">21,95 $ / 24,95 $</span></div><div class="row"><div><b>Pizza épinard et chèvre</b><small>Sauce tomate, épinard, mozzarella, poulet grillé, fromage de chèvre et poivrons</small></div><span class="p">23,95 $ / 25,95 $</span></div></div><p class=note>Extras : crevettes 8,00 $ · champignons, poivrons, tomates, olives, oignons 1,00 $ · pepperonis, bacon, feta 3,00 $ · poulet grillé, viande fumée, saucisses italiennes 7,00 $</p></div></div><div class="panel" data-i="9"><div class="board"><h3>Les pâtes et desserts</h3><div class="rows"><div class="row"><div><b>Spaghetti marinara</b></div><span class="p">16,95 $</span></div><div class="row"><div><b>Spaghetti bolognaise</b></div><span class="p">20,95 $</span></div><div class="row"><div><b>Brownies chocolat avec crème glacée</b></div><span class="p">6,00 $</span></div><div class="row"><div><b>Crème brûlée</b></div><span class="p">8,00 $</span></div></div><p class=note>Pâtes : avec champignons rôtis extra 2,00 $ · avec pepperonis extra 3,00 $ · avec viande fumée ou saucisse italienne extra 7,00 $ · au gratin extra 5,00 $</p></div></div>
+ </div>
+</section>
+
+<section class="salle" id="salle">
+ <div class="wrap">
+  <div class="eyebrow">La salle</div>
+  <h2>Une vraie salle de spectacle</h2>
+  <p class="lead">Scène de 25 pi de largeur sur 14 pi de profondeur, trois loges et des coulisses pour l'équipement. Le devis technique complet est offert aux artistes et producteurs.</p>
+  <div class="cap"><div><b>250</b><span>personnes en cabaret</span></div><div><b>500</b><span>personnes en salle (chaises seules)</span></div><div><b>650</b><span>personnes en discothèque</span></div></div>
+  <div class="tech"><div><b>Son</b>Système Orpheus 3 voies actif de 7000 watts, console Midas M32</div><div><b>Éclairage</b>Contrôle Martin, 16 projecteurs mobiles, panneaux DEL RGB</div><div><b>Électricité</b>200 ampères, trois phases, Cam Lock</div><div><b>Moniteurs</b>4 mix en retour de scène</div></div>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="wrap">
+  <div class="eyebrow">Ce que nos clients disent</div>
+  <h2>Toujours de bons shows</h2>
+  <div class="score"><b>4,5</b><div><span class="stars" style="font-size:22px">★★★★★</span><small>sur Google · plus de 500 avis</small></div></div>
+  <div class="rv"><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super soirée pour les Boogie Wonder Band. Belle salle ! »</p><footer><b>Chantal</b> · Avis Google · 16 juin 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Great place...super clean...super fun...great shows.! Great sound.. »</p><footer><b>Mat</b> · Avis Google · 28 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Salle de spectacle intime avec une excellente sonorisation »</p><footer><b>Richard</b> · Avis Google · 10 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Toujours de bons shows, bon service. »</p><footer><b>Christian</b> · Avis Google · 6 nov. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Belle ambiance, c&#x27;est bien organisé. Demi pichet de bière à bon prix! »</p><footer><b>Max</b> · Avis Google · 9 juin 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Une bonne bouffe &amp; une bonne bière avant un bon spectacle. »</p><footer><b>Regent</b> · Avis Google · 24 janv. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« place plus que parfait nourriture prix &amp; personnel très accueillant »</p><footer><b>Stephane</b> · Avis Google · 1 août 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super, j&#x27;ai adoré cet endroit! Je le recommande fortement. »</p><footer><b>Johanne</b> · Avis Google · 9 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« I didn&#x27;t go there for the food. We saw a show last night &amp; it was so much fun even though it was very busy staff was very friendly »</p><footer><b>Myra</b> · Avis Google · 2 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Classic bar in the center of small town saint-lazare, love it. »</p><footer><b>Sabrina</b> · Avis Google · 19 juill. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« J&#x27;ai bien aimé le repas ainsi que la soirée de danse. »</p><footer><b>France</b> · Avis Google · 1 déc. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Présent pour le show de Matt Lang donc l&#x27;ambiance était très bonne »</p><footer><b>Laurent</b> · Avis Google · 27 avr. 2025</footer></article></div>
+  <div class="more"><button class="btn pk" data-open-avis>Voir tous les avis (22)</button></div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="eyebrow">Nous contacter</div>
+  <h2>On se voit au prochain show</h2>
+  <div class="cgrid">
+   <div class="cbox"><small>Téléphone</small><a href="tel:+14504553544">(450) 455-3544</a><p>Aussi : <a href="tel:+15149454698" style="font-size:15px">(514) 945-4698</a> · Télécopieur (450) 455-8848</p></div>
+   <div class="cbox"><small>Courriel</small><a href="mailto:info@barchezmaurice.qc.ca">info@barchezmaurice.qc.ca</a></div>
+   <div class="cbox"><small>Adresse</small><a href="https://www.google.com/maps/search/?api=1&query=1897+chemin+Sainte-Ang%C3%A9lique+Saint-Lazare+QC+J7T+2Y2" target="_blank" rel="noopener">1897, chemin Sainte-Angélique<br>Saint-Lazare (Québec) J7T 2Y2</a></div>
+  </div>
+  <div class="near">
+   <div><b>Taxi</b><ul><li>3 Lacs · <a href="tel:+14504513000">(450) 451-3000</a></li><li>St-Lazare · <a href="tel:+14504241000">(450) 424-1000</a></li><li>Taxi V-S inc. · <a href="tel:+15144531222">(514) 453-1222</a></li></ul></div>
+   <div><b>Hébergement à proximité</b><ul><li>Motel La Bourgade · <a href="tel:+14504554032">(450) 455-4032</a></li><li>Holiday Inn Express · <a href="tel:+14504555522">(450) 455-5522</a></li><li>Château Vaudreuil · <a href="tel:+14504550955">(450) 455-0955</a></li><li>Travelodge by Wyndham Rigaud · <a href="tel:+14504514726">(450) 451-4726</a></li></ul></div>
+  </div>
+ </div>
+</section>
+</main>
+<div class="foot">© Bar Chez Maurice · Saint-Lazare</div>
+</div>
+
+<div id="avispage" aria-label="Tous les avis">
+ <div class="ap-head"><div class="wrap"><button class="btn am" data-close-avis>← Retour au site</button><span><b style="font-family:'Bebas Neue';font-size:28px;color:var(--amber)">4,5 ★</b> sur Google · plus de 500 avis</span></div></div>
+ <div class="ap-body"><div class="wrap">
+  <div class="eyebrow">Tous les avis</div>
+  <h2>Ce que nos clients disent</h2>
+  <p class="lead" style="margin-bottom:24px">22 avis Google, recopiés tels quels.</p>
+  <div class="rv"><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super soirée pour les Boogie Wonder Band. Belle salle ! »</p><footer><b>Chantal</b> · Avis Google · 16 juin 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Great place...super clean...super fun...great shows.! Great sound.. »</p><footer><b>Mat</b> · Avis Google · 28 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Salle de spectacle intime avec une excellente sonorisation »</p><footer><b>Richard</b> · Avis Google · 10 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Toujours de bons shows, bon service. »</p><footer><b>Christian</b> · Avis Google · 6 nov. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Belle ambiance, c&#x27;est bien organisé. Demi pichet de bière à bon prix! »</p><footer><b>Max</b> · Avis Google · 9 juin 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Une bonne bouffe &amp; une bonne bière avant un bon spectacle. »</p><footer><b>Regent</b> · Avis Google · 24 janv. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« place plus que parfait nourriture prix &amp; personnel très accueillant »</p><footer><b>Stephane</b> · Avis Google · 1 août 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super, j&#x27;ai adoré cet endroit! Je le recommande fortement. »</p><footer><b>Johanne</b> · Avis Google · 9 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« I didn&#x27;t go there for the food. We saw a show last night &amp; it was so much fun even though it was very busy staff was very friendly »</p><footer><b>Myra</b> · Avis Google · 2 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Classic bar in the center of small town saint-lazare, love it. »</p><footer><b>Sabrina</b> · Avis Google · 19 juill. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« J&#x27;ai bien aimé le repas ainsi que la soirée de danse. »</p><footer><b>France</b> · Avis Google · 1 déc. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Présent pour le show de Matt Lang donc l&#x27;ambiance était très bonne »</p><footer><b>Laurent</b> · Avis Google · 27 avr. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« It&#x27;s a really great venue. »</p><footer><b>Nina</b> · Avis Google · 4 janv. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Très bonne ambiance! »</p><footer><b>Marie-Claude</b> · Avis Google · 23 août 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Très belle place employée  sympathique »</p><footer><b>Regent</b> · Avis Google · 12 mai 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Superbe soirée »</p><footer><b>Sylvain</b> · Avis Google · 10 mai 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Beau party »</p><footer><b>Eric</b> · Avis Google · 1 févr. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Food is nothing special. Service was good. Typical pub food. Nice venue + atmosphere. »</p><footer><b>Juergen</b> · Avis Google · 28 oct. 2025</footer></article><article class="r"><div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div><p>« I ordered the fish &amp; chips &amp; didn&#x27;t get chips 😂 the food I did get though was terrific &amp; I will be back. Just hope to try the chips next time 😂 »</p><footer><b>Olivia</b> · Avis Google · 6 nov. 2026</footer></article><article class="r"><div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div><p>« Avant le spectacle, sous nos pieds, Parfait en tous points »</p><footer><b>Donald</b> · Avis Google · 12 oct. 2025</footer></article><article class="r"><div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div><p>« Bonne place pour aller voir un spectacle. »</p><footer><b>Pascal</b> · Avis Google · 24 mai 2025</footer></article><article class="r"><div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div><p>« Belle place pour des shows de musique »</p><footer><b>Lyne</b> · Avis Google · 11 avr. 2025</footer></article></div>
+  <div class="more"><button class="btn pk" data-close-avis>← Retour au site</button></div>
+ </div></div>
+</div>
+
+<a class="callbar" href="tel:+14504553544">📞 Appeler · (450) 455-3544</a>
+
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var intro=document.getElementById('intro');var seen=false;try{seen=sessionStorage.getItem('maurice-intro')}catch(e){}
+if(reduce||seen){intro.remove()}else{try{sessionStorage.setItem('maurice-intro','1')}catch(e){}
+ var done=function(){if(!intro.isConnected)return;intro.classList.add('out');setTimeout(function(){intro.remove()},500)};
+ setTimeout(done,2100);intro.addEventListener('click',done);intro.addEventListener('touchstart',done,{passive:true})}
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+bg.addEventListener('click',function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+function closeNav(){nav.classList.remove('open');bg.setAttribute('aria-expanded','false')}
+var lastY=0;
+document.querySelectorAll('[data-open-avis]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeNav();lastY=scrollY;document.body.classList.add('avis-open');scrollTo(0,0)})});
+document.querySelectorAll('[data-close-avis]').forEach(function(b){b.addEventListener('click',function(){document.body.classList.remove('avis-open');scrollTo(0,lastY)})});
+document.querySelectorAll('[data-site]').forEach(function(a){a.addEventListener('click',function(){closeNav();document.body.classList.remove('avis-open')})});
+var tabs=document.getElementById('tabs'),panels=[].slice.call(document.querySelectorAll('.panel'));
+tabs.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){var i=b.dataset.i;panels.forEach(function(p){p.classList.toggle('on',p.dataset.i===i)});tabs.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-selected',x===b)});if(tabs.scrollWidth>tabs.clientWidth){tabs.scrollTo({left:b.offsetLeft-tabs.offsetLeft-20,behavior:reduce?'auto':'smooth'})}})});
+var S={
+ note:'<svg width="W" viewBox="0 0 40 50"><path d="M14 6l22-4v30" stroke="#ff3d8b" stroke-width="4" fill="none"/><path d="M14 6v32" stroke="#ff3d8b" stroke-width="4"/><ellipse cx="9" cy="40" rx="8" ry="6" fill="#ff3d8b"/><ellipse cx="31" cy="34" rx="8" ry="6" fill="#ff3d8b"/></svg>',
+ guitare:'<svg width="W" viewBox="0 0 40 90"><rect x="17" y="2" width="6" height="44" fill="#ffb627"/><path d="M20 44c-12 0-16 8-12 16-6 4-6 18 4 22 6 2 10 2 16 0 10-4 10-18 4-22 4-8 0-16-12-16z" fill="#3de0ff"/><circle cx="20" cy="66" r="5" fill="#0e0a1a"/></svg>',
+ etoile:'<svg width="W" viewBox="0 0 40 40"><path d="M20 2l5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1z" fill="#ffb627"/></svg>',
+ biere:'<svg width="W" viewBox="0 0 44 50"><rect x="6" y="12" width="26" height="34" rx="4" fill="#ffb627"/><path d="M32 18h6a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-6" stroke="#ffb627" stroke-width="4" fill="none"/><path d="M4 14c0-8 30-8 30 0z" fill="#f6f0ff"/></svg>',
+ micro:'<svg width="W" viewBox="0 0 30 60"><circle cx="15" cy="12" r="10" fill="#b9add6"/><rect x="11" y="22" width="8" height="34" rx="4" fill="#3de0ff"/></svg>'
+};
+var mob=innerWidth<700;
+var list=[['note',88,8,34,1,'',9],['guitare',4,10,30,1.3,'',10],['etoile',92,58,28,.8,'',11],['biere',56,4,34,.5,'far',12],['note',74,88,26,1.2,'',8],['micro',2,80,20,.6,'far',10],['etoile',44,92,22,.9,'far',9],['note',64,46,20,1.5,'far',13],['etoile',28,95,18,1.1,'',10],['biere',96,32,26,.4,'far',12]];
+if(mob)list=list.slice(0,8);
+var fl=document.getElementById('float');
+list.forEach(function(it){var d=document.createElement('div');d.className='f '+it[5];d.style.left=it[1]+'%';d.style.top=it[2]+'%';d.style.setProperty('--d',it[4]);d.style.setProperty('--t',it[6]+'s');d.style.setProperty('--r1',(-6-Math.random()*8)+'deg');d.style.setProperty('--r2',(6+Math.random()*10)+'deg');d.innerHTML=S[it[0]].replace('W',mob?Math.round(it[3]*.75):it[3]);fl.appendChild(d)});
+var fs=fl.querySelectorAll('.f');
+if(!reduce){var tick=false;addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=Math.min(scrollY,900)*-.18+'px';fs.forEach(function(e){e.style.setProperty('--py',y)});tick=false})},{passive:true})}
+/* moment wow : les spectacles montent sur scène un après l'autre */
+var cal=document.getElementById('cal');
+cal.querySelectorAll('li').forEach(function(li,i){li.style.transitionDelay=Math.min(i,24)*50+'ms'});
+if(reduce||!('IntersectionObserver' in window)){}else{cal.classList.add('pre');var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){cal.classList.add('in');io.disconnect()}})},{threshold:.05});io.observe(cal)}
+})();
+</script>
+</body>
+</html>
