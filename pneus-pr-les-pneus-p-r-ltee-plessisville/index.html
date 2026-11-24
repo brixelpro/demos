@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Les Pneus PR | Pneus et mécanique à Plessisville</title>
+<meta name="description" content="Les Pneus PR, Plessisville : vente et service de pneus, alignement au laser 3D, mécanique générale, freins, suspension, air climatisé. Particuliers, commercial, industriel et agricole. 819 362-6319.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Les Pneus PR","telephone":"+1-819-362-6319","email":"info@pneuspr.ca","url":"https://www.pneuspr.ca/","address":{"@type":"PostalAddress","streetAddress":"1068, rue Saint-Calixte","addressLocality":"Plessisville","addressRegion":"QC","postalCode":"G6L 1N8","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"13:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"08:00","closes":"12:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"40"}}
+</script>
+<style>
+:root{--red:#d8232a;--red2:#ff3b41;--asph:#121212;--asph2:#1b1b1b;--line:#2c2c2c;--grey:#8b8b8b;--paper:#f3f1ed;--ink:#141414;--yel:#ffd23f;--bh:32px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bh) + 76px)}
+body{font-family:"Work Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;padding-top:var(--bh);-webkit-font-smoothing:antialiased}
+svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Anton,Impact,sans-serif;font-weight:400;line-height:1.02;letter-spacing:.01em;text-transform:uppercase;overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{position:fixed;top:var(--bh);left:0;right:0;z-index:900;background:#0d0d0d;border-bottom:3px solid var(--red)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;min-width:0}
+.brand svg{width:46px;height:46px;flex:none}
+.brand b{font-family:Anton;font-size:23px;font-weight:400;letter-spacing:.04em;line-height:1;display:block}
+.brand b i{color:var(--red2);font-style:normal}
+.brand small{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#bdbdbd;font-weight:600}
+.links{display:flex;gap:24px;align-items:center}
+.links a{color:#e6e6e6;text-decoration:none;font-weight:600;font-size:15px}
+.links a:hover{color:#fff}
+.links .cta{background:var(--red);color:#fff;padding:10px 18px;border-radius:6px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:#fff;margin:5px auto;transition:transform .3s,opacity .3s}
+@media(max-width:900px){
+ .burger{display:block}
+ .links{position:fixed;top:calc(var(--bh) + 69px);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#0d0d0d;transform:translateY(-10px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s;border-bottom:1px solid #333}
+ .links.open{transform:none;opacity:1;pointer-events:auto}
+ .links a{padding:16px 22px;border-top:1px solid #222}
+ .links .cta{margin:14px 22px 18px;text-align:center}
+ .burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger.x span:nth-child(2){opacity:0}.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+/* hero */
+.hero{position:relative;color:#fff;background:linear-gradient(115deg,#0b0b0b 0%,#1a1a1a 55%,#2a0d0e 100%);padding:122px 0 84px;overflow:hidden;isolation:isolate}
+.hero .stripes{position:absolute;right:-120px;top:0;bottom:0;width:520px;background:repeating-linear-gradient(-60deg,transparent 0 46px,rgba(216,35,42,.16) 46px 70px);z-index:-2}
+.floaters{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.fl{position:absolute;opacity:.45}
+.fl.bk{opacity:.15}
+.fl svg{display:block;animation:drift var(--d,14s) ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateY(0) rotate(var(--r0,-10deg))}to{transform:translateY(-20px) rotate(var(--r1,14deg))}}
+.par{transform:translateY(calc(var(--sy,0) * var(--k,.1) * 1px))}
+.hgrid{display:grid;gap:40px;align-items:center}
+@media(min-width:960px){.hgrid{grid-template-columns:1.2fr .9fr}.hero{padding:140px 0 100px}}
+.kick{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;transform:skewX(-10deg)}
+.kick span{display:inline-block;transform:skewX(10deg)}
+.hero h1{font-size:clamp(48px,7.4vw,84px);margin:18px 0 14px}
+.hero h1 em{font-style:normal;color:var(--red2)}
+.lead{font-size:clamp(16px,2.2vw,19px);color:#d0d0d0;max-width:560px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:8px;font-weight:700;text-decoration:none;font-size:16px;border:0;cursor:pointer;font-family:inherit;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px}
+.btn.red{background:var(--red);color:#fff;box-shadow:0 12px 26px -12px rgba(216,35,42,.9)}
+.btn.ghost{border:2px solid rgba(255,255,255,.35);color:#fff;background:transparent}
+.btn.white{background:#fff;color:var(--ink)}
+.gpill{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:#fff;font-weight:600;font-size:15px;text-decoration:none;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);padding:8px 14px;border-radius:8px}
+.gpill .st{color:var(--yel);letter-spacing:2px}
+.tirebox{position:relative;justify-self:center;width:min(100%,400px)}
+.tirebox svg{display:block;width:100%;height:auto}
+.spin{transform-origin:200px 200px;transform:rotate(calc(var(--sy,0) * .35deg))}
+.hours-card{position:absolute;right:0;bottom:-6px;background:#fff;color:var(--ink);border-radius:12px;padding:12px 16px;box-shadow:0 18px 40px -18px rgba(0,0,0,.7);font-size:14px;font-weight:600;border-left:5px solid var(--red)}
+.hours-card b{display:block;font-family:Anton;font-weight:400;font-size:20px;letter-spacing:.03em}
+/* sections */
+section{padding:80px 0}
+.eyebrow{font-weight:700;color:var(--red);letter-spacing:.16em;text-transform:uppercase;font-size:13px}
+.sec-h{font-size:clamp(38px,6.5vw,64px);margin:8px 0 14px}
+.sec-p{color:#4a4a4a;max-width:690px;font-size:17px}
+/* track wow */
+.track{position:relative;height:46px;margin:34px 0 6px;overflow:hidden}
+.track svg{position:absolute;inset:0;width:100%;height:100%}
+.track .marks{transform:scaleX(0);transform-origin:left;transition:transform 1.6s cubic-bezier(.3,.7,.2,1)}
+.track.go .marks{transform:none}
+.track .wheel{position:absolute;top:1px;left:0;width:44px;height:44px;transform:translateX(-50px) rotate(0);transition:transform 1.6s cubic-bezier(.3,.7,.2,1)}
+.track.go .wheel{transform:translateX(calc(var(--tw,1000px) - 44px)) rotate(1080deg)}
+.divs{display:grid;gap:18px;margin-top:20px}
+@media(min-width:960px){.divs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.div{background:#fff;border-radius:16px;border:1px solid #e4dfd7;padding:26px;min-width:0;position:relative;overflow:hidden}
+.div::before{content:"";position:absolute;left:0;top:0;right:0;height:6px;background:repeating-linear-gradient(90deg,var(--red) 0 18px,#141414 18px 26px)}
+.div .ic{width:52px;height:52px;border-radius:12px;background:#141414;display:grid;place-items:center;margin-bottom:14px}
+.div .ic svg{width:30px;height:30px}
+.div h3{font-size:28px;margin-bottom:6px}
+.div p.i{color:#555;font-size:15px;margin-bottom:12px}
+.div ul{list-style:none;display:grid;gap:8px}
+.div li{padding-left:22px;position:relative;font-size:15px}
+.div li::before{content:"";position:absolute;left:0;top:.45em;width:12px;height:12px;border-radius:50%;border:3px solid var(--red)}
+/* garanties */
+.dark{background:var(--asph);color:#fff}
+.dark .sec-p{color:#bdbdbd}
+.gar{display:grid;gap:16px;margin-top:34px}
+@media(min-width:760px){.gar{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1080px){.gar{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.g{background:var(--asph2);border:1px solid var(--line);border-radius:16px;padding:22px;min-width:0}
+.g svg{width:36px;height:36px;color:var(--red2);margin-bottom:10px}
+.g b{display:block;font-size:18px;margin-bottom:4px}
+.g span{color:#bdbdbd;font-size:14px}
+.brands{margin-top:40px}
+.brands h3{font-size:24px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid #3a3a3a;border-radius:999px;padding:6px 12px;font-size:14px;color:#e2e2e2}
+.ban{margin-top:22px;color:#bdbdbd;font-size:15px}
+/* histoire / équipe */
+.hist .grid2{display:grid;gap:36px}
+@media(min-width:960px){.hist .grid2{grid-template-columns:1fr 1fr;align-items:start}}
+.big{font-family:Anton;font-size:clamp(30px,4.4vw,44px);line-height:1.08;text-transform:uppercase}
+.big em{color:var(--red);font-style:normal}
+.team{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.team div{background:#fff;border:1px solid #e4dfd7;border-radius:12px;padding:12px 14px;min-width:0}
+.team b{display:block;font-size:15px}
+.team span{font-size:13px;color:#666}
+/* avis */
+.avis{background:#1a1a1a;color:#fff}
+.gbadge{display:inline-flex;align-items:center;gap:14px;background:#fff;color:var(--ink);border-radius:14px;padding:12px 20px;margin-top:18px;flex-wrap:wrap}
+.gbadge .n{font-family:Anton;font-size:46px;line-height:1}
+.gbadge .st{color:#f5a623;font-size:20px;letter-spacing:2px}
+.gbadge small{display:block;color:#555;font-size:13px}
+.rgrid{display:grid;gap:16px;margin-top:30px}
+@media(min-width:760px){.rgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1080px){.rgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rv{background:#232323;border:1px solid #333;border-radius:16px;padding:22px;min-width:0}
+.rv .st{color:var(--yel);letter-spacing:3px}
+.rv q{display:block;margin:10px 0 14px;font-size:16px;color:#f1f1f1;quotes:"« " " »";white-space:pre-line;overflow-wrap:anywhere}
+.rv .who{font-size:14px;color:#a5a5a5}
+.rv .who b{color:#fff}
+.more{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+/* contact */
+.cgrid{display:grid;gap:18px;margin-top:30px}
+@media(min-width:900px){.cgrid{grid-template-columns:1fr 1fr}}
+.card{background:#fff;border:1px solid #e4dfd7;border-radius:16px;padding:24px;min-width:0}
+.card h3{font-size:26px;margin-bottom:10px}
+.hrs{width:100%;border-collapse:collapse;font-size:15px}
+.hrs td{padding:8px 0;border-bottom:1px solid #eee}
+.hrs td:last-child{text-align:right;font-weight:600}
+.hrs .c{color:#999}
+.note{font-size:13px;color:#666;margin-top:10px}
+.cl a,.cl p{display:block;text-decoration:none;font-size:18px;font-weight:600;margin-top:4px;overflow-wrap:anywhere}
+.cl .lab{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#888;font-weight:700;margin-top:16px}
+.cl .lab:first-child{margin-top:0}
+.cl a.sm{font-size:15px;color:var(--red)}
+footer{background:#0b0b0b;color:#8b8b8b;text-align:center;font-size:14px;padding:30px 0 100px}
+@media(min-width:900px){footer{padding-bottom:30px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:800;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--red);color:#fff;font-weight:700;text-decoration:none;padding:15px;border-radius:12px;box-shadow:0 12px 30px -8px rgba(0,0,0,.5)}
+.callbar svg{width:20px;height:20px}
+@media(min-width:900px){.callbar{display:none}}
+.rv-in{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv-in.vis{opacity:1;transform:none}
+#avisPage{display:none;background:#1a1a1a;color:#fff;min-height:100vh;padding:calc(var(--bh) + 20px) 0 110px}
+body.show-avis #site{display:none}
+body.show-avis #avisPage{display:block}
+.ap-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.backb{background:#fff;color:var(--ink);border:0;font:700 15px "Work Sans",sans-serif;padding:12px 18px;border-radius:10px;cursor:pointer}
+.gl{color:#ff7a7e;font-weight:600}
+.ap-list{display:grid;gap:14px;align-items:start}
+@media(min-width:900px){.ap-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#0b0b0b;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:opacity .45s}
+#intro.out{opacity:0}
+#intro .stage{position:relative;width:min(86vw,460px);height:200px}
+#intro .tread{position:absolute;left:0;top:118px;height:34px;width:100%;background:repeating-linear-gradient(90deg,#2b2b2b 0 14px,transparent 14px 22px);transform:scaleX(0);transform-origin:left;animation:tr 1s .1s cubic-bezier(.3,.7,.2,1) forwards}
+#intro .t{position:absolute;left:0;top:90px;width:90px;height:90px;animation:roll 1s .1s cubic-bezier(.3,.7,.2,1) forwards}
+#intro .word{position:absolute;left:0;right:0;top:20px;text-align:center;font-family:Anton,Impact,sans-serif;font-size:64px;color:#fff;letter-spacing:.04em;opacity:0;transform:translateY(10px);animation:up .5s 1s ease-out forwards}
+#intro .word i{color:var(--red2);font-style:normal}
+#intro .sub{position:absolute;left:0;right:0;top:100px;text-align:center;color:#cfcfcf;font:600 14px "Work Sans",sans-serif;letter-spacing:.3em;opacity:0;animation:up .5s 1.2s ease-out forwards}
+@keyframes tr{to{transform:scaleX(1)}}
+@keyframes roll{from{transform:translateX(-120px) rotate(0)}to{transform:translateX(calc(min(86vw,460px) + 40px)) rotate(900deg)}}
+@keyframes up{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv-in{opacity:1;transform:none}#intro{display:none}.track .marks{transform:none}html{scroll-behavior:auto}}
+@media(max-width:520px){:root{--bh:48px}.hero{padding-top:104px}.hours-card{position:static;margin-top:-10px}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Pneus PR (Les Pneus P.R. Ltée) — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true"><div class="stage">
+ <div class="tread"></div>
+ <svg class="t" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#1c1c1c" stroke="#3a3a3a" stroke-width="4"/><g stroke="#2f2f2f" stroke-width="6"><path d="M50 4v14M50 82v14M4 50h14M82 50h14M17 17l10 10M73 73l10 10M83 17 73 27M27 73 17 83"/></g><circle cx="50" cy="50" r="24" fill="#bdbdbd"/><circle cx="50" cy="50" r="8" fill="#d8232a"/><g fill="#777"><circle cx="50" cy="36" r="3"/><circle cx="64" cy="50" r="3"/><circle cx="50" cy="64" r="3"/><circle cx="36" cy="50" r="3"/></g></svg>
+ <div class="word">PNEUS <i>PR</i></div>
+ <div class="sub">PNEUS + MÉCANIQUE</div>
+</div></div>
+
+<div id="site">
+<header class="nav"><div class="wrap">
+ <a class="brand" href="#top" aria-label="Les Pneus PR, accueil">
+  <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#1c1c1c" stroke="#d8232a" stroke-width="3"/><g stroke="#3a3a3a" stroke-width="3"><path d="M24 2v6M24 40v6M2 24h6M40 24h6M8.5 8.5l4 4M35.5 35.5l4 4M39.5 8.5l-4 4M12.5 35.5l-4 4"/></g><text x="24" y="30.5" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="17" fill="#fff">PR</text></svg>
+  <span><b>PNEUS <i>PR</i></b><small>Pneus + mécanique</small></span>
+ </a>
+ <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ <nav class="links">
+  <a href="#services">Services</a><a href="#garanties">Garanties</a><a href="#histoire">L'équipe</a><a href="#avis" data-open-avis>Avis</a><a href="#contact">Nous joindre</a><a class="cta" href="tel:+18193626319">819 362-6319</a>
+ </nav>
+</div></header>
+
+<main id="top">
+<section class="hero">
+ <div class="stripes"></div>
+ <div class="floaters" id="floaters"></div>
+ <div class="wrap hgrid">
+  <div>
+   <span class="kick"><span>Plessisville · depuis la fin des années 40</span></span>
+   <h1>Un seul arrêt<br>pour vos <em>pneus</em><br>et votre mécanique</h1>
+   <p class="lead">Vente et service de pneus de tous genres, alignement au laser 3D et mécanique générale pour les particuliers, le secteur commercial et industriel et le domaine agricole.</p>
+   <div class="btns">
+    <a class="btn red" href="tel:+18193626319"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler 819 362-6319</a>
+    <a class="btn ghost" href="#services">Nos services</a>
+   </div>
+   <a class="gpill" href="#avis" data-open-avis><span class="st">★★★★★</span> 4,8 sur Google · 40 avis</a>
+  </div>
+  <div class="tirebox" aria-hidden="true">
+   <svg viewBox="0 0 400 400">
+    <defs><radialGradient id="rim" cx=".4" cy=".35"><stop offset="0" stop-color="#f2f2f2"/><stop offset="1" stop-color="#8d8d8d"/></radialGradient></defs>
+    <g class="spin">
+     <circle cx="200" cy="200" r="186" fill="#161616"/>
+     <circle cx="200" cy="200" r="186" fill="none" stroke="#2b2b2b" stroke-width="26" stroke-dasharray="22 12"/>
+     <circle cx="200" cy="200" r="150" fill="#202020"/>
+     <circle cx="200" cy="200" r="112" fill="url(#rim)"/>
+     <g fill="#5a5a5a">
+      <path d="M200 96l20 70h-40z"/><path d="M200 96l20 70h-40z" transform="rotate(72 200 200)"/><path d="M200 96l20 70h-40z" transform="rotate(144 200 200)"/><path d="M200 96l20 70h-40z" transform="rotate(216 200 200)"/><path d="M200 96l20 70h-40z" transform="rotate(288 200 200)"/>
+     </g>
+     <circle cx="200" cy="200" r="38" fill="#d8232a"/>
+     <g fill="#2a2a2a"><circle cx="200" cy="178" r="6"/><circle cx="221" cy="193" r="6"/><circle cx="213" cy="218" r="6"/><circle cx="187" cy="218" r="6"/><circle cx="179" cy="193" r="6"/></g>
+     <text x="200" y="210" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="30" fill="#fff">PR</text>
+    </g>
+   </svg>
+   <div class="hours-card"><b>Lun. au jeu.</b>8 h à 12 h · 13 h à 17 h</div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <span class="eyebrow">Les services</span>
+  <h2 class="sec-h">Trois secteurs, un même savoir-faire</h2>
+  <p class="sec-p">L'équipe des Pneus PR, composée de mécaniciens et de préposés au service expérimentés, a développé un savoir-faire de pointe dans trois secteurs pour répondre aux besoins d'une clientèle vaste et diversifiée.</p>
+  <div class="track" id="track" aria-hidden="true">
+   <svg preserveAspectRatio="none" viewBox="0 0 1000 46"><g class="marks"><rect x="0" y="8" width="1000" height="30" fill="url(#tp)"/></g><defs><pattern id="tp" width="26" height="30" patternUnits="userSpaceOnUse"><path d="M2 0h10l-6 15 6 15H2l6-15z" fill="#cfc8bd"/><path d="M15 0h9l-5 15 5 15h-9l5-15z" fill="#bdb5a8"/></pattern></defs></svg>
+   <svg class="wheel" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="#141414"/><circle cx="22" cy="22" r="11" fill="#bdbdbd"/><circle cx="22" cy="22" r="4" fill="#d8232a"/><path d="M22 11v-4M22 37v-4M11 22H7M37 22h-4" stroke="#3a3a3a" stroke-width="3"/></svg>
+  </div>
+  <div class="divs">
+   <article class="div rv-in"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4"><path d="M5 20l3-8a3 3 0 0 1 3-2h10a3 3 0 0 1 3 2l3 8v5H5z"/><circle cx="10" cy="24" r="2.5" fill="#d8232a" stroke="none"/><circle cx="22" cy="24" r="2.5" fill="#d8232a" stroke="none"/></svg></div>
+    <h3>Particuliers</h3><p class="i">Un seul arrêt pour tous vos besoins en mécanique automobile :</p>
+    <ul><li>Vente et service de pneus de tous genres</li><li>Alignement au laser 3D</li><li>Réparation de suspension : ressorts, remorques de tous genres</li><li>Mécanique générale, injection</li><li>Air climatisé, freins, suspension, réparation de moteur ou de transmission</li><li>Entreposage de pneus disponible : camion ou automobile</li><li>Réparation de système d'échappement</li><li>Vente et installation de système de suspension pour camionnette</li><li>Vente de roues d'acier et de jantes de tous genres</li></ul></article>
+   <article class="div rv-in"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4"><path d="M3 22V10h15v12M18 14h6l4 5v3h-4"/><circle cx="9" cy="24" r="2.5" fill="#d8232a" stroke="none"/><circle cx="23" cy="24" r="2.5" fill="#d8232a" stroke="none"/></svg></div>
+    <h3>Commercial et industriel</h3><p class="i">Des services spécialisés en pneus et en mécanique, adaptés aux besoins de différents types d'entreprises :</p>
+    <ul><li>Vente de pneus industriels et commerciaux</li><li>Produits et services pour le créneau de la construction et du génie civil</li><li>Service routier pour réparation pneumatique</li><li>Chaînes de pneus : une grande variété en magasin</li></ul></article>
+   <article class="div rv-in"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4"><path d="M4 20V12h9l3 5h6v3"/><circle cx="9" cy="23" r="5" fill="#d8232a" stroke="none"/><circle cx="24" cy="24" r="3" fill="#d8232a" stroke="none"/><path d="M13 12V7h5"/></svg></div>
+    <h3>Agricole</h3><p class="i">L'agriculture et le secteur forestier occupent une place de choix dans l'économie de Plessisville et de sa région :</p>
+    <ul><li>Pneus agricoles</li><li>Entretien et réparation de camionnettes</li><li>Produits et services pour le secteur de la canneberge et de l'acériculture</li><li>Service routier pour réparation pneumatique</li><li>Chaînes de pneus : une grande variété en magasin</li></ul></article>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="garanties">
+ <div class="wrap">
+  <span class="eyebrow" style="color:#ff7a7e">Promotions et garanties</span>
+  <h2 class="sec-h">Des garanties avantageuses</h2>
+  <p class="sec-p">Les Pneus PR met en œuvre diverses promotions pour que sa clientèle bénéficie des meilleurs prix et du meilleur service offerts dans L'Érable. Avec la bannière V1, vous bénéficiez de :</p>
+  <div class="gar">
+   <div class="g rv-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg><b>Garantie hasard de route</b><span>Avec la bannière V1</span></div>
+   <div class="g rv-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><b>Essai de pneus de 30 jours</b><span>Garantie d'essai</span></div>
+   <div class="g rv-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l4-9h10l4 9"/><path d="M12 3v5"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><b>Assistance routière</b><span>Accès à l'achat de pneus</span></div>
+   <div class="g rv-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 7l3-3 3 3-3 3M17 4v6a7 7 0 0 1-7 7H4"/><path d="M7 14l-3 3 3 3"/></svg><b>2 ans ou 40 000 km</b><span>Garantie sur les travaux effectués sur votre véhicule</span></div>
+  </div>
+  <p class="ban">Pour connaître les promotions en cours, communiquez avec nous par téléphone (<a href="tel:+18193626319">819 362-6319</a>) ou par courriel (<a href="mailto:info@pneuspr.ca">info@pneuspr.ca</a>), ou suivez-nous sur <a href="https://www.facebook.com/LesPneusPR" target="_blank" rel="noopener">Facebook</a>.</p>
+  <div class="brands">
+   <h3>Les marques de pneus</h3>
+   <div class="chips"><span>Michelin</span><span>Nokian Tyres</span><span>Bridgestone</span><span>BFGoodrich</span><span>Firestone</span><span>Uniroyal</span><span>Fuzion</span><span>Pirelli</span><span>Sailun</span><span>Yokohama</span><span>GT Radial</span><span>Goodyear</span><span>Hankook</span><span>Dunlop</span><span>Toyo Tires</span><span>General Tire</span><span>Nexen Tire</span><span>Cooper Tires</span><span>Falken</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="hist" id="histoire">
+ <div class="wrap grid2">
+  <div class="rv-in">
+   <span class="eyebrow">Un peu d'histoire</span>
+   <h2 class="sec-h">Solidement implantés</h2>
+   <p class="big">C'est à Plessisville, à la fin des années 40, qu'est né <em>l'atelier</em> de mécanique automobile.</p>
+   <p class="sec-p" style="margin-top:16px">Aujourd'hui, l'équipe des Pneus PR est composée de personnel qualifié qui se spécialise dans trois secteurs : les services aux particuliers, le secteur commercial et industriel et le domaine agricole. Leader régional en mécanique automobile, l'entreprise est associée à deux bannières de renom, V1 et NAPA Autopro.</p>
+  </div>
+  <div class="rv-in">
+   <span class="eyebrow">L'équipe</span>
+   <p class="sec-p" style="margin:8px 0 16px">Un personnel qui fait du service à la clientèle une priorité de tous les instants :</p>
+   <div class="team">
+    <div><b>Martin Vigneault</b><span>Propriétaire</span></div>
+    <div><b>Bertrand Vigneault</b><span>Copropriétaire</span></div>
+    <div><b>Francis Vigneault</b><span>Gérant des ventes</span></div>
+    <div><b>Julie Bécotte</b><span>Adjointe administrative</span></div>
+    <div><b>Francine Montreuil</b><span>Secrétaire</span></div>
+    <div><b>Oran Déry</b><span>Mécanicien</span></div>
+    <div><b>David Crochetière</b><span>Préposé au service</span></div>
+    <div><b>Jacques Lacasse</b><span>Préposé au service</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="avis" id="avis">
+ <div class="wrap">
+  <span class="eyebrow" style="color:#ff7a7e">Ce que nos clients disent</span>
+  <h2 class="sec-h">Avis de nos clients</h2>
+  <div class="gbadge"><span class="n">4,8</span><div><span class="st">★★★★★</span><small>sur Google · 40 avis</small></div></div>
+  <div class="rgrid"><article class="rv rv-in"><span class="st">★★★★★</span><q>Alors que je circulais sur la 116 direction  Victoriaville, jai eu un problème avec la direction de mon camion. Après être arrêté dans une rue pour évaluer la situation, un résident m&#x27;a référer à ce garage étant donné que je ne connaissais pas le coin . À mon arrivé, en plein &quot;rush&quot; de pneus et voyant la cours pleine d&#x27;autos, je me sentais mal à  l&#x27;aise de demander qu&#x27;on regarde mon camion et qu&#x27;on évalue si le boulon dévissé sur la direction pouvait être réparé  afin que je puisse continuer ma route ou retourner chez moi. Le commis du nom de Francis m&#x27;a accueilli et a lui même prit le temps de passer mon camion entre 2 clients, même s&#x27;il avait une horaire plus que chargée.  Il m&#x27;a permit de continuer ainsi ma route et de revenir en toute sécurité chez moi, avec en prime des conseils pour la rotation des pneus de mon camion que personne d&#x27;autre auparavant ne m&#x27;avait donné.
+
+Un énorme  merci pour le bon service impeccable en particulier à Francis !
+Je recommande à tous et je donne un beau 5 étoiles à ce garage ! 🙂👌</q><p class="who"><b>David B.</b> · Avis Google · il y a un an</p></article><article class="rv rv-in"><span class="st">★★★★★</span><q>Francis connait sa clientèle, prix qui a du bon sens, trouve toujours le moyen de te placer dans son horaire rapidement selon l&#x27;urgence de la réparation!! Je suis toujours satisfaite lors de mes rendez-vous!!</q><p class="who"><b>Elisa-belle L.</b> · Avis Google · il y a 4 ans</p></article><article class="rv rv-in"><span class="st">★★★★★</span><q>Excellent Service, Je me suis présenté au garage avec mon véhicule qui avait un problème mécanique et il ont trouvé le moyen de me passé entre deux client. En moins 1/2 heure mon véhicule était réparer et je pouvait reprendre la route. Merci a l&#x27;équipe des pneus PR.</q><p class="who"><b>Stéphane T.</b> · Avis Google · il y a 6 ans</p></article><article class="rv rv-in"><span class="st">★★★★★</span><q>Vraiment super! Je suis récemment déménagé dans la région, lors de mon dernier changement de pneus à Longueuil (il y a à peine 20 jours) au concessionnaire ou j&#x27;ai acheté ma voiture en 2014 , ils n&#x27;ont mit que 25 lbs de pression par pneu (il en manquait 10 lbs et l&#x27;alarme de basse pression des pneus allumait). Je sais ou je vais entreposer et faire mes prochains changements de pneus à l&#x27;avenir. Je vous le recommande fortement! Bonne équipe! Merci!</q><p class="who"><b>Alain C.</b> · Avis Google · il y a 11 ans</p></article><article class="rv rv-in"><span class="st">★★★★★</span><q>À date je peux qu&#x27;ils m&#x27;ont toujours offert un excellent service. Merci et bravo pour vrai.</q><p class="who"><b>Arnaud L.</b> · Avis Google · il y a 4 mois</p></article><article class="rv rv-in"><span class="st">★★★★★</span><q>Très bon accueil, dépannage rapide.
+Merci beaucoup, je recommande !!</q><p class="who"><b>Anaelle L.</b> · Avis Google · il y a 3 mois</p></article><article class="rv rv-in"><span class="st">★★★★★</span><q>Très bon service ils m&#x27;ont donné un rendez-vous rapidement pour l&#x27;auto de mon conjoint</q><p class="who"><b>Caroline A.</b> · Avis Google · il y a 4 ans</p></article></div>
+  <div class="more"><button class="btn white" type="button" data-open-avis>Voir tous les avis (8)</button><a class="btn ghost" href="https://www.google.com/maps?cid=16624497950507132225" target="_blank" rel="noopener">Voir sur Google</a></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <span class="eyebrow">Nous joindre</span>
+  <h2 class="sec-h">Un seul numéro : 819&nbsp;362-6319</h2>
+  <div class="cgrid">
+   <div class="card cl rv-in">
+    <span class="lab">Téléphone</span><a href="tel:+18193626319">819 362-6319</a>
+    <span class="lab">Courriel</span><a href="mailto:info@pneuspr.ca">info@pneuspr.ca</a>
+    <span class="lab">Adresse</span><p>1068, rue Saint-Calixte<br>Plessisville (Québec) G6L 1N8</p>
+    <a class="sm" href="https://www.google.com/maps/search/?api=1&query=1068+rue+Saint-Calixte+Plessisville+QC+G6L+1N8" target="_blank" rel="noopener">Voir sur Google Maps</a>
+    <a class="sm" href="https://www.facebook.com/LesPneusPR" target="_blank" rel="noopener">Suivez-nous sur Facebook</a>
+   </div>
+   <div class="card rv-in">
+    <h3>Heures d'ouverture</h3>
+    <table class="hrs">
+     <tr><td>Lundi</td><td>8 h à 12 h · 13 h à 17 h</td></tr>
+     <tr><td>Mardi</td><td>8 h à 12 h · 13 h à 17 h</td></tr>
+     <tr><td>Mercredi</td><td>8 h à 12 h · 13 h à 17 h</td></tr>
+     <tr><td>Jeudi</td><td>8 h à 12 h · 13 h à 17 h</td></tr>
+     <tr><td>Vendredi</td><td>8 h à 12 h · après-midi fermé*</td></tr>
+     <tr><td>Samedi</td><td class="c">Fermé</td></tr>
+     <tr><td>Dimanche</td><td class="c">Fermé</td></tr>
+    </table>
+    <p class="note">*Fermé selon la saison : contactez-nous avant de vous présenter.</p>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer>© Les Pneus P.R. Ltée · Plessisville (Québec)</footer>
+</div>
+
+<div id="avisPage" aria-label="Tous les avis">
+ <div class="wrap">
+  <div class="ap-top"><button class="backb" type="button" data-close-avis>← Retour au site</button><a class="gl" href="https://www.google.com/maps?cid=16624497950507132225" target="_blank" rel="noopener">Voir sur Google</a></div>
+  <span class="eyebrow" style="color:#ff7a7e">Les Pneus PR</span>
+  <h2 class="sec-h">Tous les avis</h2>
+  <div class="gbadge" style="margin:4px 0 28px"><span class="n">4,8</span><div><span class="st">★★★★★</span><small>sur Google · 40 avis</small></div></div>
+  <div class="ap-list"><article class="rv"><span class="st">★★★★★</span><q>Alors que je circulais sur la 116 direction  Victoriaville, jai eu un problème avec la direction de mon camion. Après être arrêté dans une rue pour évaluer la situation, un résident m&#x27;a référer à ce garage étant donné que je ne connaissais pas le coin . À mon arrivé, en plein &quot;rush&quot; de pneus et voyant la cours pleine d&#x27;autos, je me sentais mal à  l&#x27;aise de demander qu&#x27;on regarde mon camion et qu&#x27;on évalue si le boulon dévissé sur la direction pouvait être réparé  afin que je puisse continuer ma route ou retourner chez moi. Le commis du nom de Francis m&#x27;a accueilli et a lui même prit le temps de passer mon camion entre 2 clients, même s&#x27;il avait une horaire plus que chargée.  Il m&#x27;a permit de continuer ainsi ma route et de revenir en toute sécurité chez moi, avec en prime des conseils pour la rotation des pneus de mon camion que personne d&#x27;autre auparavant ne m&#x27;avait donné.
+
+Un énorme  merci pour le bon service impeccable en particulier à Francis !
+Je recommande à tous et je donne un beau 5 étoiles à ce garage ! 🙂👌</q><p class="who"><b>David B.</b> · Avis Google · il y a un an</p></article><article class="rv"><span class="st">★★★★★</span><q>Francis connait sa clientèle, prix qui a du bon sens, trouve toujours le moyen de te placer dans son horaire rapidement selon l&#x27;urgence de la réparation!! Je suis toujours satisfaite lors de mes rendez-vous!!</q><p class="who"><b>Elisa-belle L.</b> · Avis Google · il y a 4 ans</p></article><article class="rv"><span class="st">★★★★★</span><q>Excellent Service, Je me suis présenté au garage avec mon véhicule qui avait un problème mécanique et il ont trouvé le moyen de me passé entre deux client. En moins 1/2 heure mon véhicule était réparer et je pouvait reprendre la route. Merci a l&#x27;équipe des pneus PR.</q><p class="who"><b>Stéphane T.</b> · Avis Google · il y a 6 ans</p></article><article class="rv"><span class="st">★★★★★</span><q>Vraiment super! Je suis récemment déménagé dans la région, lors de mon dernier changement de pneus à Longueuil (il y a à peine 20 jours) au concessionnaire ou j&#x27;ai acheté ma voiture en 2014 , ils n&#x27;ont mit que 25 lbs de pression par pneu (il en manquait 10 lbs et l&#x27;alarme de basse pression des pneus allumait). Je sais ou je vais entreposer et faire mes prochains changements de pneus à l&#x27;avenir. Je vous le recommande fortement! Bonne équipe! Merci!</q><p class="who"><b>Alain C.</b> · Avis Google · il y a 11 ans</p></article><article class="rv"><span class="st">★★★★★</span><q>À date je peux qu&#x27;ils m&#x27;ont toujours offert un excellent service. Merci et bravo pour vrai.</q><p class="who"><b>Arnaud L.</b> · Avis Google · il y a 4 mois</p></article><article class="rv"><span class="st">★★★★★</span><q>Très bon accueil, dépannage rapide.
+Merci beaucoup, je recommande !!</q><p class="who"><b>Anaelle L.</b> · Avis Google · il y a 3 mois</p></article><article class="rv"><span class="st">★★★★★</span><q>Très bon service ils m&#x27;ont donné un rendez-vous rapidement pour l&#x27;auto de mon conjoint</q><p class="who"><b>Caroline A.</b> · Avis Google · il y a 4 ans</p></article><article class="rv"><span class="st">★★★★☆</span><q>Service très bon il s occupe bien de leur client et les prix sont raisonnables</q><p class="who"><b>Denis M.</b> · Avis Google · il y a 7 ans</p></article></div>
+  <p style="color:#a5a5a5;font-size:14px;margin-top:22px">Avis tels que publiés sur la fiche Google des Pneus PR (8 avis lisibles sur 40).</p>
+ </div>
+</div>
+
+<a class="callbar" href="tel:+18193626319"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler Pneus PR</a>
+
+<script>
+(function(){
+ var intro=document.getElementById('intro'),rm=matchMedia('(prefers-reduced-motion: reduce)').matches,seen=false;
+ try{seen=sessionStorage.getItem('ppr-intro')==='1'}catch(e){}
+ function kill(){if(!intro||!intro.parentNode)return;intro.classList.add('out');setTimeout(function(){if(intro.parentNode)intro.parentNode.removeChild(intro)},460)}
+ if(rm||seen){intro.parentNode.removeChild(intro)}else{try{sessionStorage.setItem('ppr-intro','1')}catch(e){}setTimeout(kill,2000);intro.addEventListener('click',kill);intro.addEventListener('touchstart',kill,{passive:true})}
+ var F=document.getElementById('floaters'),mobile=innerWidth<760;
+ var S={
+  tire:'<svg viewBox="0 0 60 60" width="W"><circle cx="30" cy="30" r="27" fill="none" stroke="#bdbdbd" stroke-width="7" stroke-dasharray="6 3"/><circle cx="30" cy="30" r="12" fill="#8d8d8d"/><circle cx="30" cy="30" r="4" fill="#d8232a"/></svg>',
+  wrench:'<svg viewBox="0 0 64 64" width="W"><path d="M44 6a14 14 0 0 0-13 19L8 48a6 6 0 0 0 8 8l23-23A14 14 0 0 0 58 20l-8 8-8-2-2-8 8-8a14 14 0 0 0-4-4z" fill="#d6d6d6"/></svg>',
+  nut:'<svg viewBox="0 0 48 48" width="W"><path d="M24 3l18 10.5v21L24 45 6 34.5v-21z" fill="#a7a7a7"/><circle cx="24" cy="24" r="8" fill="#1a1a1a"/></svg>',
+  flake:'<svg viewBox="0 0 48 48" width="W"><g stroke="#e9f1ff" stroke-width="3" stroke-linecap="round"><path d="M24 4v40M7 14l34 20M7 34l34-20"/><path d="M18 8l6 5 6-5M18 40l6-5 6 5"/></g></svg>',
+  gauge:'<svg viewBox="0 0 60 40" width="W"><path d="M6 34a24 24 0 0 1 48 0" fill="none" stroke="#d6d6d6" stroke-width="5"/><path d="M30 34l14-18" stroke="#d8232a" stroke-width="4" stroke-linecap="round"/></svg>',
+  chev:'<svg viewBox="0 0 60 40" width="W"><path d="M4 4l22 32L48 4" fill="none" stroke="#d8232a" stroke-width="8"/></svg>'
+ };
+ var L=[['tire',4,16,58,.22,0],['wrench',46,10,46,.1,1],['nut',88,20,34,.25,0],['flake',58,72,34,.14,0],['gauge',8,78,52,.18,1],['tire',92,64,40,.3,1],['flake',30,46,26,.08,1],['nut',70,40,26,.2,1],['wrench',82,86,40,.12,0],['flake',16,4,22,.16,1]];
+ if(mobile)L=L.slice(0,8);
+ L.forEach(function(it,i){var d=document.createElement('div');d.className='fl par'+(it[5]?' bk':'');d.style.left=it[1]+'%';d.style.top=it[2]+'%';d.style.setProperty('--k',it[4]);d.innerHTML=S[it[0]].replace('W',mobile?Math.round(it[3]*.75):it[3]);var s=d.firstChild;s.style.setProperty('--d',(10+i*1.4)+'s');s.style.setProperty('--r0',(-16+i*3)+'deg');s.style.setProperty('--r1',(12-i*2)+'deg');F.appendChild(d)});
+ var root=document.querySelector('.hero');
+ if(!rm){var tk=false;addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){root.style.setProperty('--sy',Math.min(scrollY,1000));tk=false})},{passive:true})}
+ var tr=document.getElementById('track');function tw(){tr.style.setProperty('--tw',tr.clientWidth+'px')}tw();addEventListener('resize',tw,{passive:true});
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(e.target===tr?'go':'vis');io.unobserve(e.target)}})},{threshold:.3});
+ document.querySelectorAll('.rv-in').forEach(function(el){io.observe(el)});io.observe(tr);
+ var bg=document.querySelector('.burger'),ln=document.querySelector('.links');
+ bg.addEventListener('click',function(){var o=ln.classList.toggle('open');bg.classList.toggle('x',o);bg.setAttribute('aria-expanded',o)});
+ ln.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){ln.classList.remove('open');bg.classList.remove('x')})});
+ function openA(e){if(e)e.preventDefault();document.body.classList.add('show-avis');scrollTo(0,0)}
+ function closeA(){document.body.classList.remove('show-avis');requestAnimationFrame(function(){var t=document.getElementById('avis');scrollTo(0,t.offsetTop-90)})}
+ document.querySelectorAll('[data-open-avis]').forEach(function(b){b.addEventListener('click',openA)});
+ document.querySelectorAll('[data-close-avis]').forEach(function(b){b.addEventListener('click',closeA)});
+})();
+</script>
+</body>
+</html>
