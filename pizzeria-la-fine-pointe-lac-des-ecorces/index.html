@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pizzéria La Fine Pointe — Pizza, poutines et club sandwichs à Lac-des-Écorces</title>
+<meta name="description" content="Pizzéria La Fine Pointe, à Lac-des-Écorces depuis 2007 : pizzas, fameuses poutines et club sandwichs. Livraison dès 16 h. 101, avenue de l'Église · 819 585-4242.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Pizzéria La Fine Pointe","servesCuisine":["Pizza","Poutine","Club sandwich"],"telephone":"+1-819-585-4242","url":"https://pizzalafinepointe.com/","address":{"@type":"PostalAddress","streetAddress":"101, avenue de l'Église","addressLocality":"Lac-des-Écorces","addressRegion":"QC","postalCode":"J0W 1H0","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"11:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"11:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"19:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"50","bestRating":"5"}}
+</script>
+<style>
+:root{--rouge:#c8281e;--rouge2:#9e1b14;--creme:#fff6e8;--pate:#f3d9a4;--brun:#3a2219;--vert:#3f7d3a;--or:#f2a516;--ombre:0 10px 30px rgba(58,34,25,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"Nunito Sans",system-ui,sans-serif;background:var(--creme);color:var(--brun);line-height:1.55;padding-top:32px}
+h1,h2,h3,.logo-txt{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+/* Nav */
+.nav{position:fixed;top:32px;left:0;right:0;z-index:50;background:rgba(255,246,232,.97);border-bottom:1px solid rgba(58,34,25,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:42px;height:42px;flex:none}
+.logo-txt{font-weight:800;font-size:1.12rem;line-height:1.05;color:var(--rouge2)}
+.logo-txt small{display:block;font:600 .68rem "Nunito Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--brun);opacity:.75}
+.liens{display:none;gap:24px;align-items:center}
+.liens a{text-decoration:none;font-weight:700;font-size:.95rem}
+.liens a:hover{color:var(--rouge)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;text-decoration:none;font:800 1rem "Nunito Sans",sans-serif;padding:14px 22px;border-radius:999px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-r{background:var(--rouge);color:#fff;box-shadow:0 8px 20px rgba(200,40,30,.3)}
+.btn-c{background:#fff;color:var(--brun);border:2px solid var(--brun)}
+.btn-s{padding:10px 16px;font-size:.92rem}
+.burger{width:44px;height:44px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;gap:5px;align-items:center;cursor:pointer}
+.burger span{width:24px;height:3px;background:var(--brun);border-radius:2px;transition:transform .25s,opacity .25s}
+.menu-mob{position:fixed;top:94px;left:0;right:0;z-index:49;background:var(--creme);border-bottom:3px solid var(--rouge);padding:10px 20px 20px;transform:translateY(-130%);visibility:hidden;transition:transform .3s,visibility .3s;display:flex;flex-direction:column}
+.menu-mob.ouvert{transform:none;visibility:visible}
+.menu-mob a{padding:13px 0;font-weight:800;text-decoration:none;border-bottom:1px dashed rgba(58,34,25,.2)}
+.nav-tel{display:none}
+@media(max-width:519px){body{padding-top:48px}.nav{top:48px}.menu-mob{top:110px}html{scroll-padding-top:115px}}
+/* Hero */
+.hero{position:relative;padding:118px 0 70px;overflow:hidden;background:radial-gradient(circle at 80% 20%,#ffe3b8 0,transparent 45%),radial-gradient(circle at 10% 90%,#ffd9cf 0,transparent 40%),var(--creme)}
+@media(max-width:519px){.hero{padding-top:128px}}
+.flotte{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.5;animation:flot 9s ease-in-out infinite;will-change:transform}
+.f svg{display:block;width:100%;height:100%}
+.f.loin{opacity:.28;filter:blur(1.5px)}
+@keyframes flot{0%,100%{transform:translate3d(0,calc(var(--p,0)*-1px),0) rotate(var(--r0,0deg))}50%{transform:translate3d(0,calc(var(--p,0)*-1px - 18px),0) rotate(var(--r1,12deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:36px;align-items:center}
+.pastille{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:7px 14px;font-weight:800;font-size:.85rem;box-shadow:var(--ombre)}
+.pastille b{color:var(--or)}
+.hero h1{font-size:clamp(2.3rem,9vw,4.4rem);line-height:.98;font-weight:800;margin:18px 0 14px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--rouge)}
+.hero p.lead{font-size:1.12rem;max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 18px}
+.infos-rapides{display:flex;flex-wrap:wrap;gap:8px 18px;font-weight:700;font-size:.93rem}
+.infos-rapides span{display:flex;align-items:center;gap:6px}
+.pizza-hero{justify-self:center;width:min(340px,82vw);aspect-ratio:1;position:relative}
+.pizza-hero svg{width:100%;height:100%;animation:tourne 60s linear infinite}
+@keyframes tourne{to{transform:rotate(360deg)}}
+.etiquette{position:absolute;right:-6px;bottom:18px;background:var(--rouge);color:#fff;font:800 1rem "Bricolage Grotesque",sans-serif;padding:10px 16px;border-radius:14px;transform:rotate(-6deg);box-shadow:var(--ombre)}
+@media(min-width:1024px){.hero{padding:150px 0 100px}.hero .wrap{grid-template-columns:1.15fr .85fr}.pizza-hero{width:420px}.liens{display:flex}.burger,.menu-mob{display:none}.nav-tel{display:inline-flex}}
+/* Sections */
+section{padding:72px 0}
+.titre{text-align:center;margin-bottom:38px}
+.titre small{display:block;color:var(--rouge);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.8rem;margin-bottom:6px}
+.titre h2{font-size:clamp(1.9rem,6vw,2.8rem);line-height:1.05}
+.titre p{max-width:38em;margin:10px auto 0}
+/* Menu */
+.menu-sec{background:var(--brun);color:var(--creme);position:relative}
+.menu-sec .titre small{color:var(--or)}
+.cartes{display:grid;gap:18px}
+.carte{background:#4a2d22;border:1px solid rgba(255,246,232,.12);border-radius:22px;padding:26px 22px;opacity:0;transform:translateY(40px) rotate(-2deg);transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .7s}
+.carte.vu{opacity:1;transform:none}
+.carte:nth-child(2){transition-delay:.12s}.carte:nth-child(3){transition-delay:.24s}
+.carte .ic{width:58px;height:58px;margin-bottom:12px}
+.carte h3{font-size:1.5rem;margin-bottom:6px;color:#fff}
+.carte p{opacity:.9}
+.favoris{margin-top:34px;background:var(--creme);color:var(--brun);border-radius:22px;padding:26px 22px}
+.favoris h3{font-size:1.3rem;margin-bottom:6px}
+.favoris .sous{font-size:.92rem;opacity:.8;margin-bottom:14px}
+.favoris ul{list-style:none;display:grid;gap:10px}
+.favoris li{display:flex;gap:10px;align-items:flex-start;border-bottom:1px dashed rgba(58,34,25,.2);padding-bottom:10px;min-width:0}
+.favoris li b{flex:none;color:var(--rouge)}
+.favoris li span{min-width:0;overflow-wrap:anywhere}
+.note-menu{margin-top:22px;text-align:center;font-weight:700}
+.note-menu a{color:var(--or)}
+@media(min-width:760px){.cartes{grid-template-columns:repeat(3,1fr)}.favoris ul{grid-template-columns:1fr 1fr;column-gap:30px}}
+/* Livraison */
+.bande{background:var(--rouge);color:#fff;padding:34px 0;text-align:center}
+.bande h2{font-size:clamp(1.5rem,5vw,2.2rem)}
+.bande p{margin-top:6px;font-weight:600}
+/* Avis */
+.note-g{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:30px}
+.note-g div{background:#fff;border-radius:16px;padding:14px 20px;box-shadow:var(--ombre);text-align:center;font-weight:700}
+.note-g strong{display:block;font:800 1.8rem "Bricolage Grotesque",sans-serif;color:var(--rouge)}
+.etoiles{color:var(--or);letter-spacing:2px}
+.grille-avis{display:grid;gap:16px}
+.avis{background:#fff;border-radius:18px;padding:20px;box-shadow:var(--ombre);display:flex;flex-direction:column;gap:10px;min-width:0}
+.avis blockquote{font-size:1.02rem;overflow-wrap:anywhere}
+.avis .qui{font-size:.88rem;opacity:.8;margin-top:auto}
+.avis .qui b{opacity:1;color:var(--brun)}
+@media(min-width:700px){.grille-avis{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.grille-avis{grid-template-columns:repeat(3,1fr)}}
+.centre{text-align:center;margin-top:28px}
+/* À propos / infos */
+.apropos .wrap{display:grid;gap:30px;align-items:center}
+.apropos h2{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.05;margin-bottom:14px}
+.apropos p{margin-bottom:12px}
+.pastilles{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.pastilles span{background:#fff;border-radius:999px;padding:8px 14px;font-weight:700;font-size:.9rem;box-shadow:var(--ombre)}
+.infos{background:#fff}
+.infos .wrap{display:grid;gap:22px}
+.bloc{background:var(--creme);border-radius:22px;padding:26px 22px;min-width:0}
+.bloc h3{font-size:1.4rem;margin-bottom:12px}
+.heures{width:100%;border-collapse:collapse}
+.heures td{padding:8px 0;border-bottom:1px dashed rgba(58,34,25,.2)}
+.heures td:last-child{text-align:right;font-weight:700}
+.heures tr.ferme td:last-child{color:var(--rouge)}
+.bloc p{margin-bottom:10px;overflow-wrap:anywhere}
+@media(min-width:900px){.apropos .wrap{grid-template-columns:1fr 1fr}.infos .wrap{grid-template-columns:repeat(3,1fr)}}
+footer{background:var(--brun);color:var(--creme);padding:36px 0 110px;text-align:center;font-size:.9rem}
+footer .logo-txt{color:#fff}
+@media(min-width:1024px){footer{padding-bottom:40px}}
+.appel-fixe{position:fixed;left:14px;right:14px;bottom:14px;z-index:40;display:flex}
+.appel-fixe a{flex:1}
+@media(min-width:1024px){.appel-fixe{display:none}}
+/* Page avis */
+#page-avis{display:none;padding:120px 0 120px;min-height:100vh}
+body.voir-avis #page-avis{display:block}
+body.voir-avis #site{display:none}
+.retour{margin-bottom:22px}
+#page-avis h1{font-size:clamp(2rem,7vw,3rem);line-height:1.05;margin-bottom:16px}
+.liste-avis{display:grid;gap:14px}
+@media(min-width:800px){.liste-avis{grid-template-columns:1fr 1fr}}
+/* Intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--rouge);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;transition:opacity .45s;cursor:pointer}
+#intro.part{opacity:0}
+#intro svg{width:150px;height:150px}
+#intro .pointe{transform-origin:75px 120px;animation:tombe .8s cubic-bezier(.3,1.5,.5,1) both}
+#intro .mot{display:flex;gap:2px;font:800 2rem "Bricolage Grotesque",sans-serif;color:#fff}
+#intro .mot span{display:inline-block;opacity:0;animation:lettre .45s cubic-bezier(.3,1.6,.5,1) forwards}
+@keyframes tombe{from{transform:translateY(-120px) rotate(-30deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes lettre{from{transform:translateY(-40px);opacity:0}to{transform:none;opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.carte{opacity:1;transform:none}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Pizzéria La Fine Pointe — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+  <svg viewBox="0 0 150 150"><g class="pointe"><path d="M75 128 L22 30 Q75 8 128 30 Z" fill="#f3d9a4"/><path d="M75 128 L30 40 Q75 20 120 40 Z" fill="#f2a516"/><circle cx="62" cy="50" r="9" fill="#9e1b14"/><circle cx="90" cy="56" r="8" fill="#9e1b14"/><circle cx="76" cy="84" r="7" fill="#9e1b14"/><path d="M50 66 q8-6 12 2 q-8 4-12-2z" fill="#3f7d3a"/></g></svg>
+  <div class="mot"><span style="animation-delay:.5s">L</span><span style="animation-delay:.56s">a</span><span style="animation-delay:.62s">&nbsp;</span><span style="animation-delay:.68s">F</span><span style="animation-delay:.74s">i</span><span style="animation-delay:.8s">n</span><span style="animation-delay:.86s">e</span><span style="animation-delay:.92s">&nbsp;</span><span style="animation-delay:.98s">P</span><span style="animation-delay:1.04s">o</span><span style="animation-delay:1.1s">i</span><span style="animation-delay:1.16s">n</span><span style="animation-delay:1.22s">t</span><span style="animation-delay:1.28s">e</span></div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#accueil" aria-label="Pizzéria La Fine Pointe, accueil">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#c8281e"/><path d="M24 40 L11 14 Q24 8 37 14 Z" fill="#f3d9a4"/><path d="M24 40 L13.5 18 Q24 13 34.5 18 Z" fill="#f2a516"/><circle cx="20" cy="21" r="2.6" fill="#9e1b14"/><circle cx="28" cy="23" r="2.4" fill="#9e1b14"/><circle cx="24" cy="30" r="2.1" fill="#9e1b14"/></svg>
+      <span class="logo-txt">La Fine Pointe<small>Pizzéria · depuis 2007</small></span>
+    </a>
+    <nav class="liens" aria-label="Navigation principale">
+      <a href="#menu">Menu</a><a href="#avis" data-avis-lien>Avis</a><a href="#apropos">À propos</a><a href="#infos">Heures</a><a class="btn btn-r btn-s nav-tel" href="tel:+18195854242">Appeler</a>
+    </nav>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu-mob" id="menuMob">
+  <a href="#menu">Menu</a><a href="#avis" data-avis-lien>Avis</a><a href="#apropos">À propos</a><a href="#infos">Heures et adresse</a><a href="tel:+18195854242">Appeler : 819 585-4242</a>
+</div>
+
+<div id="site">
+<section class="hero" id="accueil">
+  <div class="flotte" id="flotte" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="pastille"><b>★ 4,5</b> sur Google · plus de 100 avis</span>
+      <h1>La meilleure pizza de la région de <em>Mont-Laurier</em>.</h1>
+      <p class="lead">Pizzas, fameuses poutines de toutes sortes et club sandwichs, à Lac-des-Écorces depuis 2007. Sur place, pour emporter ou en livraison dès 16 h.</p>
+      <div class="cta">
+        <a class="btn btn-r" href="tel:+18195854242">📞 Appeler : 819 585-4242</a>
+        <a class="btn btn-c" href="#menu">Voir le menu</a>
+      </div>
+      <div class="infos-rapides"><span>📍 101, avenue de l'Église</span><span>🛵 Livraison dès 16 h</span><span>🕚 Ouvert du mercredi au dimanche</span></div>
+    </div>
+    <div class="pizza-hero" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="#e3b46a"/><circle cx="100" cy="100" r="84" fill="#c8281e"/><circle cx="100" cy="100" r="80" fill="#f2c14e"/>
+      <g fill="#fbe2a0" opacity=".7"><circle cx="70" cy="80" r="14"/><circle cx="130" cy="120" r="16"/><circle cx="110" cy="62" r="11"/><circle cx="76" cy="134" r="12"/></g>
+      <g fill="#a3201a"><circle cx="100" cy="100" r="11"/><circle cx="62" cy="96" r="10"/><circle cx="138" cy="92" r="10"/><circle cx="96" cy="58" r="9"/><circle cx="104" cy="142" r="10"/><circle cx="70" cy="128" r="8"/><circle cx="132" cy="134" r="8"/><circle cx="128" cy="62" r="8"/><circle cx="68" cy="66" r="8"/></g>
+      <g fill="#3f7d3a"><path d="M84 80 q10-8 15 3 q-10 5-15-3z"/><path d="M118 108 q10-8 15 3 q-10 5-15-3z"/><path d="M80 112 q10-8 15 3 q-10 5-15-3z"/></g>
+      <g stroke="#e3b46a" stroke-width="2.5" opacity=".9"><line x1="100" y1="4" x2="100" y2="196"/><line x1="4" y1="100" x2="196" y2="100"/><line x1="32" y1="32" x2="168" y2="168"/><line x1="168" y1="32" x2="32" y2="168"/></g></svg>
+      <span class="etiquette">Depuis 2007</span>
+    </div>
+  </div>
+</section>
+
+<section class="menu-sec" id="menu">
+  <div class="wrap">
+    <div class="titre"><small>Le menu</small><h2>Ce qu'on fait de bon</h2><p>Trois spécialités qui font notre réputation depuis 2007.</p></div>
+    <div class="cartes">
+      <article class="carte"><svg class="ic" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 56 L6 10 Q30 0 54 10 Z" fill="#f3d9a4"/><path d="M30 56 L10 16 Q30 7 50 16 Z" fill="#f2a516"/><circle cx="24" cy="22" r="4" fill="#c8281e"/><circle cx="36" cy="26" r="4" fill="#c8281e"/><circle cx="30" cy="38" r="3.4" fill="#c8281e"/></svg><h3>Pizzas</h3><p>Notre spécialité : des pizzas bien garnies, comme la deluxe bacon olive ou la pizza au poulet BBQ.</p></article>
+      <article class="carte"><svg class="ic" viewBox="0 0 60 60" aria-hidden="true"><path d="M8 24 h44 l-6 30 h-32 z" fill="#c8281e"/><g fill="#f2c14e"><rect x="15" y="10" width="6" height="18" rx="2" transform="rotate(-10 18 19)"/><rect x="25" y="6" width="6" height="22" rx="2"/><rect x="35" y="9" width="6" height="19" rx="2" transform="rotate(10 38 18)"/></g><path d="M12 26 q18 8 36 0" stroke="#7a3d22" stroke-width="4" fill="none"/><circle cx="22" cy="24" r="3" fill="#fff6e8"/><circle cx="36" cy="25" r="3" fill="#fff6e8"/></svg><h3>Poutines</h3><p>Nos fameuses poutines de toutes sortes, à manger sur place ou à emporter.</p></article>
+      <article class="carte"><svg class="ic" viewBox="0 0 60 60" aria-hidden="true"><path d="M6 44 L54 44 L30 14 Z" fill="#f3d9a4"/><path d="M8 40 L52 40" stroke="#3f7d3a" stroke-width="4"/><path d="M10 34 L50 34" stroke="#c8281e" stroke-width="4"/><path d="M13 29 L47 29" stroke="#f2c14e" stroke-width="4"/><rect x="28" y="6" width="3" height="14" fill="#7a3d22"/></svg><h3>Club sandwichs</h3><p>Le club sandwich, servi avec une généreuse portion de frites.</p></article>
+    </div>
+    <div class="favoris">
+      <h3>Les favoris de nos clients</h3>
+      <p class="sous">Les plats que nos clients nomment dans leurs avis.</p>
+      <ul>
+        <li><b>●</b><span>Pizza deluxe bacon olive</span></li>
+        <li><b>●</b><span>Pizza au poulet BBQ</span></li>
+        <li><b>●</b><span>Pizza végé</span></li>
+        <li><b>●</b><span>Poutine</span></li>
+        <li><b>●</b><span>Club sandwich au poulet et frites</span></li>
+        <li><b>●</b><span>Salade César</span></li>
+        <li><b>●</b><span>Crottes de fromage frites</span></li>
+        <li><b>●</b><span>Wraps</span></li>
+      </ul>
+    </div>
+    <p class="note-menu">Menu complet et prix sur place ou par téléphone : <a href="tel:+18195854242">819 585-4242</a></p>
+  </div>
+</section>
+
+<div class="bande"><div class="wrap"><h2>🛵 On livre, dès 16 h</h2><p>Livraison tous les jours d'ouverture à partir de 16 h. Aussi pour emporter.</p></div></div>
+
+<section id="avis">
+  <div class="wrap">
+    <div class="titre"><small>Avis</small><h2>Ce que nos clients disent</h2></div>
+    <div class="note-g">
+      <div><strong>4,5 ★</strong>sur Google · plus de 100 avis</div>
+      <div><strong>4,7 ★</strong>sur Restomontreal · 50 évaluations</div>
+    </div>
+    <div class="grille-avis" id="grilleAccueil"></div>
+    <div class="centre"><button class="btn btn-r" data-avis-lien id="btnTous">Voir tous les avis</button></div>
+  </div>
+</section>
+
+<section class="apropos" id="apropos">
+  <div class="wrap">
+    <div>
+      <div class="titre" style="text-align:left;margin-bottom:14px"><small>À propos</small></div>
+      <h2>Votre pizzéria du coin, depuis 2007</h2>
+      <p>Pizzéria La Fine Pointe est ouverte depuis 2007 au cœur de Lac-des-Écorces, tout près de Mont-Laurier. On y fait des pizzas, des poutines de toutes sortes et des club sandwichs, à manger sur place, à emporter ou en livraison.</p>
+      <p>Comme le dit une cliente : « Il faut vraiment y aller sans se fier à l'apparence extérieure de l'endroit. »</p>
+      <div class="pastilles"><span>🍕 Sur place</span><span>🥡 Pour emporter</span><span>🛵 Livraison</span><span>♿ Entrée accessible</span></div>
+    </div>
+    <div class="pizza-hero" aria-hidden="true" style="width:min(300px,70vw)">
+      <svg viewBox="0 0 200 200" id="pizzaScroll" style="animation:none"><circle cx="100" cy="100" r="96" fill="#e3b46a"/><circle cx="100" cy="100" r="80" fill="#f2c14e"/><g fill="#a3201a"><circle cx="100" cy="100" r="11"/><circle cx="62" cy="96" r="10"/><circle cx="138" cy="92" r="10"/><circle cx="96" cy="58" r="9"/><circle cx="104" cy="142" r="10"/><circle cx="68" cy="66" r="8"/><circle cx="132" cy="134" r="8"/></g><g fill="#3f7d3a"><path d="M84 80 q10-8 15 3 q-10 5-15-3z"/><path d="M118 108 q10-8 15 3 q-10 5-15-3z"/></g><g stroke="#e3b46a" stroke-width="2.5"><line x1="100" y1="4" x2="100" y2="196"/><line x1="4" y1="100" x2="196" y2="100"/><line x1="32" y1="32" x2="168" y2="168"/><line x1="168" y1="32" x2="32" y2="168"/></g></svg>
+    </div>
+  </div>
+</section>
+
+<section class="infos" id="infos">
+  <div class="wrap">
+    <div class="bloc"><h3>Heures</h3>
+      <table class="heures"><tr class="ferme"><td>Lundi</td><td>Fermé</td></tr><tr class="ferme"><td>Mardi</td><td>Fermé</td></tr><tr><td>Mercredi</td><td>11 h à 19 h</td></tr><tr><td>Jeudi</td><td>11 h à 20 h</td></tr><tr><td>Vendredi</td><td>11 h à 20 h</td></tr><tr><td>Samedi</td><td>12 h à 20 h</td></tr><tr><td>Dimanche</td><td>12 h à 19 h</td></tr></table>
+      <p style="margin-top:12px;font-size:.92rem">Livraison à partir de 16 h, tous les jours d'ouverture.</p>
+    </div>
+    <div class="bloc"><h3>Adresse</h3><p>101, avenue de l'Église<br>Lac-des-Écorces (Québec) J0W 1H0</p><p><a href="https://www.google.com/maps/search/?api=1&query=101+Avenue+de+l'%C3%89glise+Lac-des-%C3%89corces+QC" target="_blank" rel="noopener">Voir sur Google Maps →</a></p></div>
+    <div class="bloc"><h3>Commander</h3><p>Pour commander, pour emporter ou en livraison :</p><p><a class="btn btn-r" href="tel:+18195854242">819 585-4242</a></p></div>
+  </div>
+</section>
+
+<footer><div class="wrap"><p class="logo-txt" style="font-size:1.3rem">Pizzéria La Fine Pointe</p><p>101, avenue de l'Église, Lac-des-Écorces · 819 585-4242</p><p style="opacity:.7;margin-top:8px">La meilleure pizza de la région de Mont-Laurier, depuis 2007.</p></div></footer>
+</div>
+
+<main id="page-avis" aria-label="Tous les avis">
+  <div class="wrap">
+    <button class="btn btn-c retour" id="retour">← Retour au site</button>
+    <h1>Tous les avis</h1>
+    <div class="note-g" style="justify-content:flex-start">
+      <div><strong>4,5 ★</strong>sur Google · plus de 100 avis</div>
+      <div><strong>4,7 ★</strong>sur Restomontreal · 50 évaluations</div>
+    </div>
+    <div class="liste-avis" id="listeAvis"></div>
+    <p class="centre"><a class="btn btn-c" href="https://www.restomontreal.ca/resto/pizza-la-fine-pointe-mont-laurier/19279/fr/" target="_blank" rel="noopener">Voir les avis sur Restomontreal</a></p>
+  </div>
+</main>
+
+<div class="appel-fixe"><a class="btn btn-r" href="tel:+18195854242">📞 Appeler la pizzéria</a></div>
+
+<script>
+(function(){
+var A=[
+{n:"Terence",e:5,d:"29 oct. 2026",t:"La meilleur pizza qui soit !",a:1},
+{n:"Chantal",e:5,d:"6 févr. 2026",t:"La meilleure pizza de la région. […]",a:1},
+{n:"Vanessa",e:5,d:"25 août 2026",t:"Très bonne bouffe ,très bon prix ,savoureux & délicieux je vous recommande vivement",a:1},
+{n:"Nathalie",e:5,d:"28 juin 2026",t:"Belle place, personnel accueillant, la pizza au poulet bbq très bonne & les frites excellentes. […]",a:1},
+{n:"Éric",e:5,d:"21 août 2026",t:"La meilleur pizza du coin de Mont-Laurier.",a:1},
+{n:"Jesus",e:5,d:"30 mai 2025",t:"[…] y font la meilleure Pizza, une excellente poutine […]",a:1},
+{n:"France",e:5,d:"23 juill. 2026",t:"Nourriture très bonne, la pizza excellente.",a:1},
+{n:"Vincent",e:5,d:"4 juill. 2026",t:"Excellente nourriture & peu dispendieux par personne",a:1},
+{n:"Alain",e:5,d:"8 août 2025",t:"A ne pas manquer ! Belle salle de bain ! Beau travail de céramique ! Félicitations a cette artisans !",a:1},
+{n:"Tania",e:5,d:"9 juin 2025",t:"super bon & plus de place que je pensais ;)",a:1},
+{n:"Bryan",e:5,d:"6 août 2025",t:"[…] Great service, great pizza!!",a:1},
+{n:"Eric",e:5,d:"19 oct. 2025",t:"Tres bonne pizza",a:1},
+{n:"Tom",e:5,d:"29 oct. 2025",t:"C'est une première pour moi. […] C'était délicieux.",a:0},
+{n:"Roxanne",e:5,d:"3 févr. 2025",t:"Très bien",a:0},
+{n:"Éric",e:4,d:"11 juill. 2026",t:"La deluxe bacon olive... WOW […]",a:0},
+{n:"Jason",e:4,d:"1 juin 2026",t:"[…] First time trying this location; I will return.",a:0},
+{n:"Patrice",e:4,d:"30 mai 2025",t:"je nai pas manger sur place cela me semble petit pour mon gout mais le take out était planifié. […]",a:0},
+{n:"Patrick",e:4,d:"29 sept. 2024",t:"Belle place bonne pizza bon service mais poyr la livraison un gros 3",a:0},
+{n:"Alex",e:2,d:"2 nov. 2025",t:"Bon restaurant, bonne nourriture, la commande À l'auto Extrême Lente",a:0}
+];
+function carte(v){var s="★★★★★".slice(0,v.e)+"☆☆☆☆☆".slice(0,5-v.e);var el=document.createElement("article");el.className="avis";
+el.innerHTML='<div class="etoiles" aria-label="'+v.e+' étoiles sur 5">'+s+'</div><blockquote></blockquote><div class="qui"><b></b> · Restomontreal · '+v.d+'</div>';
+el.querySelector("blockquote").textContent="« "+v.t+" »";el.querySelector(".qui b").textContent=v.n;return el;}
+var g=document.getElementById("grilleAccueil"),l=document.getElementById("listeAvis");
+A.filter(function(v){return v.a}).forEach(function(v){g.appendChild(carte(v))});
+A.forEach(function(v){l.appendChild(carte(v))});
+document.getElementById("btnTous").textContent="Voir tous les avis ("+A.length+")";
+var posAvant=0;
+function ouvrirAvis(e){if(e)e.preventDefault();posAvant=window.scrollY;fermerMenu();document.body.classList.add("voir-avis");window.scrollTo(0,0);}
+function fermerAvis(){document.body.classList.remove("voir-avis");window.scrollTo(0,posAvant);}
+document.querySelectorAll("[data-avis-lien]").forEach(function(a){a.addEventListener("click",ouvrirAvis)});
+document.getElementById("retour").addEventListener("click",fermerAvis);
+/* menu mobile */
+var b=document.querySelector(".burger"),m=document.getElementById("menuMob");
+function fermerMenu(){m.classList.remove("ouvert");b.setAttribute("aria-expanded","false")}
+b.addEventListener("click",function(){var o=m.classList.toggle("ouvert");b.setAttribute("aria-expanded",o)});
+m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){if(!a.hasAttribute("data-avis-lien")){fermerMenu();document.body.classList.remove("voir-avis")}})});
+document.querySelectorAll('.liens a[href^="#"]').forEach(function(a){if(!a.hasAttribute("data-avis-lien"))a.addEventListener("click",function(){document.body.classList.remove("voir-avis")})});
+/* éléments flottants */
+var formes={
+pointe:'<svg viewBox="0 0 60 60"><path d="M30 56 L6 10 Q30 0 54 10 Z" fill="#f3d9a4"/><path d="M30 56 L10 16 Q30 7 50 16 Z" fill="#f2a516"/><circle cx="24" cy="22" r="4" fill="#c8281e"/><circle cx="36" cy="26" r="4" fill="#c8281e"/><circle cx="30" cy="38" r="3.4" fill="#c8281e"/></svg>',
+pep:'<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#a3201a"/><circle cx="14" cy="15" r="3" fill="#7d1612"/><circle cx="25" cy="24" r="2.5" fill="#7d1612"/></svg>',
+bas:'<svg viewBox="0 0 40 40"><path d="M6 34 Q4 10 34 6 Q36 30 6 34Z" fill="#3f7d3a"/><path d="M6 34 L30 10" stroke="#2c5a28" stroke-width="2"/></svg>',
+frite:'<svg viewBox="0 0 40 40"><path d="M8 18 h24 l-4 20 h-16 z" fill="#c8281e"/><g fill="#f2c14e"><rect x="12" y="4" width="4" height="16" rx="1"/><rect x="18" y="2" width="4" height="18" rx="1"/><rect x="24" y="5" width="4" height="15" rx="1"/></g></svg>'};
+var pos=[["pointe",6,14,70,0],["pep",80,10,34,1],["bas",88,62,40,0],["pep",14,74,28,1],["frite",70,82,46,0],["bas",42,6,30,1],["pointe",92,34,54,1],["pep",48,90,26,0]];
+var fl=document.getElementById("flotte"),els=[];
+pos.forEach(function(p,i){var d=document.createElement("div");d.className="f"+(p[4]?" loin":"");d.style.cssText="left:"+p[1]+"%;top:"+p[2]+"%;width:"+p[3]+"px;height:"+p[3]+"px;animation-delay:-"+(i*1.3)+"s;--r0:"+(i*25)+"deg;--r1:"+(i*25+14)+"deg";d.innerHTML=formes[p[0]];fl.appendChild(d);els.push([d,p[4]?0.15:0.35])});
+var tic=false,pz=document.getElementById("pizzaScroll");
+function maj(){tic=false;var y=window.scrollY;if(y<900)els.forEach(function(e){e[0].style.setProperty("--p",(y*e[1]).toFixed(1))});if(pz)pz.style.transform="rotate("+(y*0.15).toFixed(1)+"deg)";}
+window.addEventListener("scroll",function(){if(!tic){tic=true;requestAnimationFrame(maj)}},{passive:true});
+/* moment wow : les cartes se servent */
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("vu");io.unobserve(x.target)}})},{threshold:.2});
+document.querySelectorAll(".carte").forEach(function(c){io.observe(c)});
+/* intro */
+var intro=document.getElementById("intro"),vu=false;
+try{vu=sessionStorage.getItem("fpIntro")==="1";sessionStorage.setItem("fpIntro","1")}catch(e){}
+function fin(){if(!intro.parentNode)return;intro.classList.add("part");setTimeout(function(){intro.remove()},460)}
+if(vu||matchMedia("(prefers-reduced-motion: reduce)").matches){intro.remove()}else{intro.addEventListener("click",fin);setTimeout(fin,1900)}
+})();
+</script>
+</body>
+</html>
