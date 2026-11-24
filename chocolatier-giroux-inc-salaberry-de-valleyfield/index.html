@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Chocolatier Giroux — Chocolats artisanaux, café spécialisé · Salaberry-de-Valleyfield</title>
+<meta name="description" content="Chocolatier Giroux : chocolats artisanaux faits sur place, café spécialisé bio et équitable, thés et tisanes, comptoir café et coin cadeaux au centre-ville de Salaberry-de-Valleyfield. 4,8 ★ sur Google. 450 373-3890.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["CafeOrCoffeeShop","Store"],"name":"Chocolatier Giroux","telephone":"+1-450-373-3890","email":"chocolatiergiroux@gmail.com","url":"https://girouxchocolatier.ca/","address":{"@type":"PostalAddress","streetAddress":"115, rue Champlain","addressLocality":"Salaberry-de-Valleyfield","addressRegion":"QC","postalCode":"J6T 1W9","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"16:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:30","closes":"16:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"100","bestRating":"5"},"sameAs":["https://www.facebook.com/giroux.chocolatier/"]}
+</script>
+<style>
+:root{--top:32px;--choco:#2b1a12;--choco2:#3d2619;--milk:#7b4a2d;--cream:#f8efe3;--paper:#fffaf3;--gold:#c99a4b;--gold2:#e2bd7a;--cherry:#9e1f2f;--ink:#2a1d16;--soft:#6e5a4c;--line:#e8d9c4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--top) + 72px)}
+body{background:var(--cream);color:var(--ink);font:17px/1.65 "Karla",system-ui,sans-serif;padding-top:var(--top)}
+a{color:inherit}
+svg{max-width:100%}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.12;overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:84px 0;overflow-x:clip}
+.eyebrow{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--milk);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(32px,5vw,52px);font-weight:800;margin-bottom:16px}
+.lead{max-width:44em;color:#4a3a2f;font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .2s;cursor:pointer;font-family:inherit;font-size:16px}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:var(--choco)}
+.btn.line{border-color:var(--gold2);color:var(--cream);background:transparent}
+.btn.dark{background:var(--choco);color:var(--cream)}
+/* nav */
+.nav{position:fixed;top:var(--top);left:0;right:0;z-index:50;background:rgba(43,26,18,.97);color:var(--cream);border-bottom:1px solid #4a3123}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.brand{text-decoration:none;display:block;min-width:0}
+.links{display:flex;gap:24px;align-items:center}
+.links a{text-decoration:none;font-size:15px;letter-spacing:.03em;cursor:pointer}
+.links a:hover{color:var(--gold2)}
+.links a.cta{background:var(--gold);color:var(--choco);padding:9px 16px;border-radius:999px;font-weight:700}
+.burger{display:none;flex:0 0 44px;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--cream);margin:5px auto;transition:transform .25s,opacity .25s}
+@media(max-width:900px){
+ .burger{display:block}
+ .links{position:fixed;top:calc(var(--top) + 66px);left:0;right:0;flex-direction:column;gap:0;background:var(--choco);transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s;border-bottom:1px solid #4a3123}
+ .links a{padding:16px 20px;width:100%;border-top:1px solid #4a3123}
+ .links a.cta{border-radius:0}
+ .nav.open .links{transform:none;opacity:1;pointer-events:auto}
+ .nav.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+ .nav.open .burger span:nth-child(2){opacity:0}
+ .nav.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+/* héros */
+.hero{position:relative;background:radial-gradient(ellipse 70% 60% at 80% 30%,#5a3522 0,transparent 70%),radial-gradient(ellipse 60% 50% at 0% 100%,#4a2c1c 0,transparent 70%),var(--choco);color:var(--cream);padding:120px 0 90px;overflow:hidden}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.55;transform:translate3d(0,calc(var(--py,0px)*var(--d,1)),0)}
+.f svg{display:block;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.f.far{opacity:.3;filter:blur(1.5px)}
+@media(max-width:979px){.f{opacity:.3}.f.far{opacity:.18}}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r1,-8deg))}to{transform:translateY(12px) rotate(var(--r2,10deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:center}
+.hero .tag{display:inline-block;border:1px solid var(--gold);color:var(--gold2);font-size:12px;letter-spacing:.3em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(42px,9vw,86px);font-weight:800}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--gold2)}
+.hero p{font-size:clamp(17px,2.2vw,20px);color:#e9dccb;max-width:34em;margin-top:18px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:rgba(255,255,255,.07);border:1px solid #5a3b29;border-radius:14px;padding:10px 16px;font-size:15px;text-decoration:none;cursor:pointer;color:var(--cream)}
+.rating b{font-size:22px;color:var(--gold2);font-family:"Playfair Display"}
+.stars{color:var(--gold2);letter-spacing:2px}
+.box{justify-self:center;width:min(100%,440px)}
+@media(min-width:980px){.hero{padding:150px 0 110px}.hero .wrap{grid-template-columns:1.1fr .9fr}}
+/* égouttement wow */
+.drip{display:block;width:100%;height:60px;background:var(--choco);position:relative;z-index:2}
+.drip svg{display:block;width:100%;height:100%;transform-origin:top;transform:scaleY(.15);transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.drip.in svg{transform:scaleY(1)}
+/* universes */
+.uni{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:30px}
+.uni a{display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px;transition:transform .2s,border-color .2s;min-width:0}
+.uni a:hover{transform:translateY(-3px);border-color:var(--gold)}
+.uni svg{width:46px;height:46px;margin-bottom:10px}
+.uni h3{font-size:22px;margin-bottom:4px}
+.uni p{color:var(--soft);font-size:15.5px}
+@media(min-width:700px){.uni{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.uni{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* chocolat */
+.choc{background:var(--paper)}
+.split{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:start}
+@media(min-width:960px){.split{grid-template-columns:1fr 1fr;gap:60px}}
+.quote{font-family:"Playfair Display";font-style:italic;font-size:19px;line-height:1.55;border-left:3px solid var(--gold);padding-left:18px;color:#3e2d22;margin-top:18px}
+.quote cite{display:block;font-family:"Karla";font-style:normal;font-size:13px;letter-spacing:.14em;color:var(--soft);margin-top:8px}
+.pct{display:flex;gap:14px;margin:22px 0 6px;flex-wrap:wrap}
+.pct div{flex:1 1 140px;background:var(--choco);color:var(--cream);border-radius:18px;padding:16px 18px}
+.pct div.milk{background:var(--milk)}
+.pct b{display:block;font-family:"Playfair Display";font-size:36px;color:var(--gold2);line-height:1}
+.cards{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.card h3{font-size:22px;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.card ul{list-style:none}
+.card li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.card li:last-child{border:0;color:var(--soft);font-style:italic}
+@media(min-width:700px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:960px){.cards{grid-template-columns:minmax(0,1fr)}.card ul{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}.card li:last-child{grid-column:1/-1}}
+.occ{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.occ span{background:var(--choco);color:var(--cream);padding:8px 14px;border-radius:999px;font-size:15px}
+.occ span:nth-child(2n){background:var(--cherry)}
+.occ span:nth-child(3n){background:var(--milk)}
+/* café */
+.cafe{background:var(--choco2);color:var(--cream)}
+.cafe .eyebrow{color:var(--gold2)}
+.cafe .lead{color:#e6d6c3}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.badges span{border:1px solid var(--gold);color:var(--gold2);border-radius:999px;padding:7px 14px;font-size:14px;letter-spacing:.06em}
+.beans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px;list-style:none}
+.beans li{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid #5a3b29;border-radius:14px;padding:12px 14px;font-size:15.5px;min-width:0;overflow-wrap:anywhere}
+.beans li i{flex:0 0 14px;height:20px;border-radius:50%;background:var(--gold);position:relative;transform:rotate(25deg)}
+.beans li i:after{content:"";position:absolute;left:6px;top:2px;bottom:2px;width:2px;background:var(--choco2);border-radius:2px}
+@media(min-width:700px){.beans{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1024px){.beans{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.subgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:40px}
+.subgrid .card{background:rgba(255,255,255,.06);border-color:#5a3b29;color:var(--cream)}
+.subgrid .card li{border-color:#5a3b29}
+.subgrid .card li:last-child{color:#d9c6ae}
+.subgrid p{color:#e6d6c3}
+@media(min-width:900px){.subgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* cadeaux */
+.gifts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.gifts span{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15.5px}
+.kiosk{margin-top:26px;display:flex;gap:16px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.kiosk svg{flex:0 0 52px}
+/* avis */
+.avis{background:var(--paper)}
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 28px}
+.score b{font-family:"Playfair Display";font-size:56px;line-height:1;color:var(--choco)}
+.score .stars{font-size:24px;color:var(--gold)}
+.score small{display:block;color:var(--soft);font-size:15px}
+.rv{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start}
+@media(min-width:700px){.rv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1080px){.rv{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.r{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:20px;min-width:0}
+.r .stars{color:var(--gold);font-size:16px}
+.r p{margin:8px 0 12px;font-size:16px;overflow-wrap:anywhere}
+.r footer{font-size:14px;color:var(--soft)}
+.r footer b{color:var(--ink)}
+.more{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+/* infos */
+.info{background:var(--choco);color:var(--cream)}
+.info .eyebrow{color:var(--gold2)}
+.igrid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:26px}
+.ibox{background:#3a2419;border:1px solid #5a3b29;border-radius:18px;padding:22px;min-width:0}
+.ibox small{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}
+.ibox a{text-decoration:none;font-size:19px;overflow-wrap:anywhere}
+.ibox a:hover{text-decoration:underline}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px dashed #5a3b29}
+.hours li:last-child{border:0}
+.hours span:last-child{color:var(--gold2)}
+@media(min-width:900px){.igrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.owners{margin-top:24px;color:#e6d6c3}
+.site-foot{background:#1c110b;color:#a8937f;font-size:14px;text-align:center;padding:26px 0 100px}
+@media(min-width:901px){.site-foot{padding-bottom:26px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:8px;background:var(--gold);color:var(--choco);font-weight:700;text-decoration:none;padding:15px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
+@media(min-width:901px){.callbar{display:none}}
+/* page d'avis */
+#avispage{display:none;background:var(--cream);min-height:100vh;padding-top:66px}
+body.avis-open #site{display:none}
+body.avis-open #avispage{display:block}
+body.avis-open .callbar{display:none}
+.ap-head{position:sticky;top:calc(var(--top) + 66px);z-index:40;background:var(--choco);color:var(--cream);border-bottom:1px solid #4a3123}
+.ap-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:66px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.ap-head .btn{padding:10px 18px}
+.ap-body{padding:40px 0 80px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--choco);display:flex;align-items:center;justify-content:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro svg{width:min(80vw,420px)}
+#intro .lt{opacity:0;transform:translateY(30px);animation:up .5s cubic-bezier(.3,1.4,.5,1) forwards}
+#intro .steam{stroke-dasharray:60;stroke-dashoffset:60;animation:draw 1s .9s ease-out forwards}
+#intro .sub{opacity:0;animation:fade .5s 1.2s forwards}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+@media(max-width:519px){:root{--top:48px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}#intro{display:none}.drip svg{transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Chocolatier Giroux — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 420 200">
+  <text class="sub" x="210" y="40" text-anchor="middle" font-family="Karla,sans-serif" font-size="18" letter-spacing="9" fill="#e2bd7a">CHOCOLATIER</text>
+  <g font-family="Playfair Display,serif" font-weight="800" font-size="84" fill="#f8efe3">
+   <text class="lt" x="40" y="130" style="animation-delay:.05s">G</text>
+   <text class="lt" x="108" y="130" style="animation-delay:.15s">I</text>
+   <text class="lt" x="140" y="130" style="animation-delay:.25s">R</text>
+   <g class="lt" style="animation-delay:.35s"><path d="M206 78h60l-6 42c-2 12-12 16-24 16s-22-4-24-16z" fill="#c99a4b"/><path d="M264 88c14 0 16 22 0 22" fill="none" stroke="#c99a4b" stroke-width="6"/></g>
+   <text class="lt" x="280" y="130" style="animation-delay:.45s">U</text>
+   <text class="lt" x="342" y="130" style="animation-delay:.55s">X</text>
+  </g>
+  <path class="steam" d="M226 70c-8-10 8-16 0-28M244 70c-8-10 8-16 0-28" fill="none" stroke="#e2bd7a" stroke-width="3.5" stroke-linecap="round"/>
+  <text class="sub" x="210" y="172" text-anchor="middle" font-family="Karla,sans-serif" font-size="16" letter-spacing="7" fill="#e2bd7a">CAFÉ · REVUES</text>
+ </svg>
+</div>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" data-site aria-label="Chocolatier Giroux — accueil">
+   <svg width="168" height="50" viewBox="0 0 168 50" aria-hidden="true">
+    <text x="84" y="11" text-anchor="middle" font-family="Karla,sans-serif" font-size="8.5" letter-spacing="3.6" fill="#e2bd7a">CHOCOLATIER</text>
+    <g font-family="Playfair Display,serif" font-weight="800" font-size="30" fill="#f8efe3"><text x="6" y="38">GIR</text><text x="111" y="38">UX</text></g>
+    <path d="M86 20h20l-2 13c-1 4-4 6-8 6s-7-2-8-6z" fill="#c99a4b"/><path d="M105 23c5 0 5 8 0 8" fill="none" stroke="#c99a4b" stroke-width="2.2"/>
+    <path d="M92 18c-3-3 3-5 0-9M99 18c-3-3 3-5 0-9" fill="none" stroke="#e2bd7a" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="84" y="48" text-anchor="middle" font-family="Karla,sans-serif" font-size="7" letter-spacing="3" fill="#e2bd7a">CAFÉ · REVUES</text>
+   </svg>
+  </a>
+  <nav class="links" id="links">
+   <a href="#chocolats" data-site>Chocolats</a>
+   <a href="#cafe" data-site>Café &amp; thés</a>
+   <a href="#cadeaux" data-site>Cadeaux</a>
+   <a data-open-avis>Avis</a>
+   <a href="#infos" data-site>Heures &amp; adresse</a>
+   <a class="cta" href="tel:+14503733890">450 373-3890</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<div id="site">
+<main id="accueil">
+<section class="hero">
+ <div class="float" id="float" aria-hidden="true"></div>
+ <div class="wrap">
+  <div>
+   <span class="tag">Chocolatier · Café · Revues</span>
+   <h1>Chocolats artisanaux, <em>faits sur place</em></h1>
+   <p>Des chocolats produits sur place par des artisans chocolatiers, un café spécialisé bio et équitable, des thés en feuilles et un coin cadeaux, en face du canal de Beauharnois, au cœur du centre-ville de Salaberry-de-Valleyfield.</p>
+   <div class="ctas">
+    <a class="btn gold" href="tel:+14503733890">📞 Appeler le 450 373-3890</a>
+    <a class="btn line" href="#chocolats">Nos chocolats</a>
+   </div>
+   <a class="rating" data-open-avis><b>4,8</b><span><span class="stars">★★★★★</span><br>sur Google · plus de 100 avis</span></a>
+  </div>
+  <div class="box" aria-hidden="true">
+   <svg viewBox="0 0 440 380" width="100%">
+    <ellipse cx="220" cy="350" rx="170" ry="16" fill="#1c110b" opacity=".5"/>
+    <!-- boîte -->
+    <path d="M50 170h340v150c0 12-10 22-22 22H72c-12 0-22-10-22-22z" fill="#5a3522"/>
+    <path d="M50 170h340v20H50z" fill="#c99a4b"/>
+    <rect x="70" y="196" width="300" height="134" rx="12" fill="#3d2619"/>
+    <g>
+     <rect x="84" y="208" width="60" height="52" rx="12" fill="#2b1a12"/><path d="M92 226q22-10 44 0" stroke="#7b4a2d" stroke-width="4" fill="none"/>
+     <circle cx="190" cy="234" r="28" fill="#7b4a2d"/><path d="M172 228q18 10 36 0" stroke="#e2bd7a" stroke-width="3" fill="none"/>
+     <rect x="236" y="208" width="60" height="52" rx="26" fill="#f3e3cc"/><circle cx="266" cy="234" r="8" fill="#c99a4b"/>
+     <path d="M310 260l26-50 26 50z" fill="#2b1a12"/><path d="M326 244h20" stroke="#e2bd7a" stroke-width="3"/>
+     <circle cx="114" cy="296" r="27" fill="#9e1f2f"/><path d="M114 270c2-14 12-22 22-24" stroke="#4f6b34" stroke-width="4" fill="none"/><circle cx="104" cy="288" r="6" fill="#c84a58"/>
+     <rect x="160" y="272" width="60" height="50" rx="10" fill="#7b4a2d"/><path d="M170 282h40M170 296h40M170 310h40" stroke="#5a3522" stroke-width="3"/>
+     <circle cx="266" cy="297" r="27" fill="#2b1a12"/><path d="M250 297c8-12 24-12 32 0-8 12-24 12-32 0z" fill="#c99a4b"/>
+     <rect x="310" y="272" width="50" height="50" rx="25" fill="#e2bd7a"/><path d="M322 297c6-10 20-10 26 0" stroke="#7b4a2d" stroke-width="3" fill="none"/>
+    </g>
+    <!-- couvercle soulevé -->
+    <g transform="rotate(-8 220 120)"><rect x="40" y="96" width="360" height="56" rx="10" fill="#7b4a2d"/><rect x="40" y="96" width="360" height="14" rx="7" fill="#c99a4b"/><rect x="200" y="96" width="40" height="56" fill="#9e1f2f"/></g>
+    <!-- boucle -->
+    <path d="M220 88c-30-40-70-10-40 10M220 88c30-40 70-10 40 10" fill="none" stroke="#9e1f2f" stroke-width="10" stroke-linecap="round"/>
+    <!-- tasse -->
+    <g transform="translate(330 20)"><path d="M10 44h56l-5 38c-1 10-10 14-23 14s-22-4-23-14z" fill="#f8efe3"/><path d="M64 52c14 0 14 22 0 22" fill="none" stroke="#f8efe3" stroke-width="6"/><path d="M28 36c-6-8 6-12 0-22M44 36c-6-8 6-12 0-22" fill="none" stroke="#e2bd7a" stroke-width="3" stroke-linecap="round"/></g>
+   </svg>
+  </div>
+ </div>
+</section>
+<div class="drip" id="drip" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 0h1440v14c-30 0-36 30-60 30s-26-30-56-30-40 46-72 46-30-46-64-46-30 20-60 20-34-20-70-20-34 38-68 38-30-38-62-38-40 24-74 24-32-24-66-24-28 44-60 44-34-44-70-44-40 18-72 18-32-18-64-18-30 34-62 34-36-34-70-34-34 22-66 22-30-22-64-22-34 40-68 40-30-40-60-40-38 16-70 16-34-16-66-16-32 30-64 30-30-30-60-30-34 20-68 20-36-20-36-20z" fill="#2b1a12"/></svg></div>
+
+<section id="univers">
+ <div class="wrap">
+  <div class="eyebrow">La maison Giroux</div>
+  <h2>Six bonnes raisons de passer nous voir</h2>
+  <div class="uni">
+   <a href="#chocolats"><svg viewBox="0 0 46 46"><rect x="4" y="8" width="38" height="30" rx="6" fill="#2b1a12"/><path d="M4 23h38M17 8v30M30 8v30" stroke="#5a3522" stroke-width="2"/></svg><h3>Chocolat artisanal</h3><p>Des chocolats produits sur place par des artisans chocolatiers.</p></a>
+   <a href="#cafe"><svg viewBox="0 0 46 46"><ellipse cx="23" cy="23" rx="13" ry="18" fill="#7b4a2d" transform="rotate(25 23 23)"/><path d="M17 8c10 10-4 20 8 30" stroke="#2b1a12" stroke-width="2.5" fill="none"/></svg><h3>Café spécialisé</h3><p>Biologique et équitable, provenant du micro-torréfacteur Lenoir Lacroix.</p></a>
+   <a href="#cafe"><svg viewBox="0 0 46 46"><path d="M23 4c12 8 16 22 0 38C7 26 11 12 23 4z" fill="#4f6b34"/><path d="M23 10v30" stroke="#e8f0dc" stroke-width="2"/></svg><h3>Thés &amp; tisanes en feuilles</h3><p>Infusion des feuilles de théier et composition d'extraits de plantes naturelles.</p></a>
+   <a href="#comptoir"><svg viewBox="0 0 46 46"><path d="M8 16h26l-3 20c-1 5-5 7-10 7s-9-2-10-7z" fill="#c99a4b"/><path d="M33 20c7 0 7 11 0 11" stroke="#c99a4b" stroke-width="3" fill="none"/><path d="M16 12c-3-4 3-6 0-10M24 12c-3-4 3-6 0-10" stroke="#7b4a2d" stroke-width="2" fill="none"/></svg><h3>Comptoir café</h3><p>Des breuvages de qualité et un bistro sucré salé.</p></a>
+   <a href="#cadeaux"><svg viewBox="0 0 46 46"><rect x="6" y="18" width="34" height="24" rx="3" fill="#9e1f2f"/><rect x="4" y="12" width="38" height="8" rx="2" fill="#c84a58"/><path d="M23 12v30" stroke="#e2bd7a" stroke-width="4"/><path d="M23 12c-6-10-14-4-8 0M23 12c6-10 14-4 8 0" stroke="#e2bd7a" stroke-width="3" fill="none"/></svg><h3>Coin cadeaux</h3><p>Des cadeaux hors du commun et originaux.</p></a>
+   <a href="#cadeaux"><svg viewBox="0 0 46 46"><rect x="8" y="6" width="26" height="34" rx="2" fill="#f3e3cc" stroke="#2b1a12" stroke-width="2"/><rect x="13" y="10" width="26" height="32" rx="2" fill="#fffaf3" stroke="#2b1a12" stroke-width="2"/><path d="M17 16h18M17 21h18M17 26h12" stroke="#7b4a2d" stroke-width="2"/></svg><h3>Kiosque à revues</h3><p>Le plus grand choix de magazines de la région.</p></a>
+  </div>
+ </div>
+</section>
+
+<section class="choc" id="chocolats">
+ <div class="wrap">
+  <div class="split">
+   <div>
+    <div class="eyebrow">Chocolat artisanal</div>
+    <h2>De A à Z, ici même</h2>
+    <p class="lead">Nous travaillons du chocolat noir 64 % cacao et du chocolat au lait 36 %. Nos ganaches et autres garnitures sont des recettes maison.</p>
+    <div class="pct"><div><b>64 %</b>cacao · chocolat noir</div><div class="milk"><b>36 %</b>chocolat au lait</div></div>
+    <blockquote class="quote">« Le chocolatier-confiseur s'occupe de sa production de A à Z : choix des matières premières, préparation de la pâte, garniture, cuisson et décoration, conditionnement et commercialisation. […] Mais ses connaissances techniques et son habileté manuelle seraient insuffisantes sans la créativité, la patience, la recherche des formes, un vrai talent esthétique et le sens de la présentation. »<cite>JOSÉE LESPARRE © CIDJ – 05/2020</cite></blockquote>
+   </div>
+   <div>
+    <div class="cards">
+     <div class="card"><h3>Des barres</h3><ul><li>Turtle</li><li>Noisettes entières</li><li>Caramel au lait</li><li>Ganaches assorties</li><li>et beaucoup plus!</li></ul></div>
+     <div class="card"><h3>Des boîtes</h3><ul><li>Tourbillons de noisettes</li><li>Cerises au sirop</li><li>Chocolats assortis</li><li>Ganaches à l'érable</li><li>et beaucoup plus!</li></ul></div>
+     <div class="card"><h3>Des bouchées</h3><ul><li>Riz soufflé</li><li>Brisures d'amandes</li><li>Orangettes et gingembre confit</li><li>Grains de café enrobés</li><li>et beaucoup plus!</li></ul></div>
+    </div>
+    <p style="margin-top:22px">Des modèles pour toutes les occasions ainsi que des montages uniques et originaux! Les centres de table feront le bonheur de vos hôtes ou de vos invités!</p>
+    <div class="occ"><span>Saint-Valentin</span><span>Pâques</span><span>Halloween</span><span>Noël</span><span>Centres de table</span><span>Montages originaux</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="cafe" id="cafe">
+ <div class="wrap">
+  <div class="eyebrow">Café spécialisé</div>
+  <h2>Moins de 10 % du café du monde mérite ce nom</h2>
+  <p class="lead">Pour se mériter l'appellation de « grade spécialisé », le café doit être de type arabica, cultivé à plus de 1200 mètres d'altitude, cueilli manuellement et sélectivement, et sa torréfaction doit exprimer toutes les saveurs et subtilités de son terroir.</p>
+  <div class="badges"><span>Biologique</span><span>Équitable</span><span>Micro-torréfacteur Lenoir Lacroix</span></div>
+  <h3 style="font-size:24px;margin-top:30px">Nos cafés en grains</h3>
+  <ul class="beans">
+   <li><i></i>Mélange maison velouté</li><li><i></i>Classique</li><li><i></i>Barista</li><li><i></i>Espresso art latté</li><li><i></i>Amalgame</li><li><i></i>Sortilège</li><li><i></i>Fuego</li><li><i></i>Colombien</li><li><i></i>Costa Rica</li><li><i></i>Pérou</li><li><i></i>Mexique</li><li><i></i>Nicaragua</li><li><i></i>Brésil</li><li><i></i>Éthiopie</li><li><i></i>Éthiopien Sidamo</li><li><i></i>Kenya AA</li><li><i></i>Sumatra Mandheling</li><li><i></i>Décaf colombien</li><li><i></i>Pérou décaf</li>
+  </ul>
+  <div class="subgrid">
+   <div class="card"><h3>Thés et tisanes en feuilles</h3><p>La tisane a une action relaxante sur notre corps. Le thé, au contraire, stimule notre système nerveux et favorise la concentration. En fonction de l'action souhaitée, à vous de choisir le thé ou la tisane qui vous correspondra parmi notre grande variété!</p><ul style="margin-top:10px"><li>Sacs de thé Giroux</li><li>Tisanes Les fées sorcières</li></ul></div>
+   <div class="card" id="comptoir"><h3>Comptoir café</h3><p>Prendre une pause dans la journée, quelle que soit la saison, ça fait du bien. Froids, chauds, caféinés, chocolatés, rafraîchissants, sucrés, amers et même pétillants : il y a du choix pour tous les goûts!</p><ul style="margin-top:10px"><li>Thé glacé maison original ou à la pêche</li><li>Limonade maison originale ou à la framboise</li><li>Moka glacé, cappuccino glacé, latté glacé, americano glacé, macchiato au caramel glacé</li><li>Desserts faits maison : muffins, biscuits et gâteaux variés, et même des options véganes</li><li>Et plus encore!</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section id="cadeaux">
+ <div class="wrap">
+  <div class="eyebrow">Coin cadeaux</div>
+  <h2>Pour offrir… ou pour se gâter</h2>
+  <p class="lead">Des bonbons, des tasses, des linges à vaisselle tissés à la main, des sacs originaux, des peluches, des chandelles et plus encore! En plus de vous offrir de la variété, nous encourageons des artisans et des commerçants d'ici. Et vous pourrez même partir avec vos cadeaux déjà emballés et prêts à offrir!</p>
+  <div class="gifts"><span>🍬 Bonbons</span><span>☕ Tasses</span><span>🧵 Linges à vaisselle tissés à la main</span><span>👜 Sacs originaux</span><span>🧸 Peluches</span><span>🕯️ Chandelles</span><span>🍁 Produits d'érable</span><span>🎁 Emballage cadeau</span></div>
+  <div class="kiosk"><svg viewBox="0 0 52 52" width="52" height="52"><rect x="8" y="6" width="30" height="40" rx="2" fill="#f3e3cc" stroke="#2b1a12" stroke-width="2"/><rect x="14" y="10" width="30" height="38" rx="2" fill="#fffaf3" stroke="#2b1a12" stroke-width="2"/><path d="M19 18h20M19 24h20M19 30h14" stroke="#9e1f2f" stroke-width="2.5"/></svg><div><b style="font-family:'Playfair Display';font-size:20px">Kiosque à revues</b><br>Le plus grand choix de magazines de la région.</div></div>
+ </div>
+</section>
+
+<section class="avis" id="avis">
+ <div class="wrap">
+  <div class="eyebrow">Ce que nos clients disent</div>
+  <h2>Reçus comme des rois</h2>
+  <div class="score"><b>4,8</b><div><span class="stars">★★★★★</span><small>sur Google · plus de 100 avis</small></div></div>
+  <div class="rv"><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« This is a must if you are visiting Salaberry-de-Valleyfield. Great coffee with a ton of different options. Try the Dirty Chai Latte &amp; if you really need to zonk yourself for long 401 trips add a couple more espresso shots &amp; joke about it being a Filthy Chai Latte. They also have an excellent selection of beans &amp; coffee paraphenalia. But that&#x27;s all just the coffee side of things. If you are a chocolate lover type this place is Heavenly. They have display after display of bespoke chocolate creations in innumerable brilliant &amp; fun designs. &amp; the owner said they take orders for chocolate designs as well. Fully bilingual &amp; ridiculously friendly people. Highly recommended! »</p><footer><b>Simon</b> · Avis Google · 11 juin 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Encore une fois aujourd&#x27;hui nous avons ete reçu comme des rois ,nous y allons une fois par année environ &amp; jamais déçu les chocolat au cerise ouff les meilleurs pour moi &amp; les petites rose au caramel oh my god ca m&#x27;enlève les mots de la bouche 🥰 »</p><footer><b>Jessi</b> · Avis Google · 21 févr. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Excellent service, excellents produits, superbe boutique avec beaucoup de stock (cuisine, cadeaux, chocolats en masse, bonbons, torchons, tasses, name it) &amp; le monsieur qui m&#x27;a servi était très sympathique (samedi 1er novembre, midi). Je recommande vivement, un bel endroit cozy à découvrir 😄 »</p><footer><b>Casthavian</b> · Avis Google · 1 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Thank you guys for making the custom coconut chocolates for my dad - they are OUTSTANDING. You are our favorite place to come when we need quality chocolate &amp; are always so kind :) »</p><footer><b>Liz</b> · Avis Google · 26 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Best cafe in Valleyfield, surely. Real espresso, delicious desserts &amp; chocolate! »</p><footer><b>Mayah</b> · Avis Google · 25 mai 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Ambiance feutré &amp; calme pour les gens qui aiment la simplicité. Très bons services .personnels courtois .la bouffe Très bonne.les prix sont raisonnables.grands choix de magazines. »</p><footer><b>Francine</b> · Avis Google · 5 juill. 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Service super chaleureux, très bons cafés &amp; viennoiseries, les prix sont compétitifs. »</p><footer><b>A</b> · Avis Google · 21 août 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Amazing place, many nice gifts, tasty coffee, &amp; always smiling staff. Will come back. »</p><footer><b>Magdalena</b> · Avis Google · 8 juill. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super bon service  &amp; les breuvage  sont wow Assayer  café  glacé »</p><footer><b>Josée</b> · Avis Google · 4 juill. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Ses chocolat son extremement bon je les recomande »</p><footer><b>Rwane</b> · Avis Google · 8 oct. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super café, les propriétaires sont très gentil, &amp; leur café est délicieux ! »</p><footer><b>Dekum</b> · Avis Google · 20 juin 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Parfait pour un café jasette ! Belle boutique cadeau ! »</p><footer><b>Mart</b> · Avis Google · 11 nov. 2024</footer></article></div>
+  <div class="more"><button class="btn dark" data-open-avis>Voir tous les avis (18)</button><a class="btn" style="border-color:var(--choco)" href="https://search.google.com/local/reviews?placeid=ChIJjTcEZi9OyUwRpCUYEuVsDro" target="_blank" rel="noopener">Voir sur Google</a></div>
+ </div>
+</section>
+
+<section class="info" id="infos">
+ <div class="wrap">
+  <div class="eyebrow">Heures &amp; adresse</div>
+  <h2>Nous ne sommes jamais bien loin!</h2>
+  <p class="lead" style="color:#e6d6c3">Nous sommes situés en face du canal de Beauharnois, au cœur du centre-ville de Salaberry-de-Valleyfield. Une visite en vaut doublement la peine!</p>
+  <div class="igrid">
+   <div class="ibox"><small>Heures</small><ul class="hours"><li><span>Mardi au vendredi</span><span>8 h 30 – 16 h 30</span></li><li><span>Samedi</span><span>8 h 30 – 16 h</span></li><li><span>Dimanche et lundi</span><span>Fermé</span></li></ul></div>
+   <div class="ibox"><small>Adresse</small><a href="https://www.google.com/maps/search/?api=1&query=115+rue+Champlain+Salaberry-de-Valleyfield+QC+J6T+1W9" target="_blank" rel="noopener">115, rue Champlain<br>Salaberry-de-Valleyfield (Québec) J6T 1W9</a></div>
+   <div class="ibox"><small>Nous joindre</small><a href="tel:+14503733890">450 373-3890</a><br><a href="mailto:chocolatiergiroux@gmail.com" style="font-size:16px">chocolatiergiroux@gmail.com</a></div>
+  </div>
+  <p class="owners">À bientôt! — <b>Danny Pawluk &amp; Chantal Meunier</b>, propriétaires</p>
+  <div class="more"><a class="btn gold" href="tel:+14503733890">📞 Appeler</a><a class="btn line" href="https://www.facebook.com/giroux.chocolatier/" target="_blank" rel="noopener">Facebook</a></div>
+ </div>
+</section>
+</main>
+<div class="site-foot">© Chocolatier Giroux · Salaberry-de-Valleyfield</div>
+</div>
+
+<div id="avispage" aria-label="Tous les avis">
+ <div class="ap-head"><div class="wrap"><button class="btn gold" data-close-avis>← Retour au site</button><span><b style="font-family:'Playfair Display';font-size:22px;color:var(--gold2)">4,8 ★</b> sur Google · plus de 100 avis</span></div></div>
+ <div class="ap-body"><div class="wrap">
+  <div class="eyebrow">Tous les avis</div>
+  <h2>Ce que nos clients disent</h2>
+  <p class="lead" style="margin-bottom:26px">18 avis Google, recopiés tels quels. Pour lire tous les avis, consultez notre fiche Google.</p>
+  <div class="rv"><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« This is a must if you are visiting Salaberry-de-Valleyfield. Great coffee with a ton of different options. Try the Dirty Chai Latte &amp; if you really need to zonk yourself for long 401 trips add a couple more espresso shots &amp; joke about it being a Filthy Chai Latte. They also have an excellent selection of beans &amp; coffee paraphenalia. But that&#x27;s all just the coffee side of things. If you are a chocolate lover type this place is Heavenly. They have display after display of bespoke chocolate creations in innumerable brilliant &amp; fun designs. &amp; the owner said they take orders for chocolate designs as well. Fully bilingual &amp; ridiculously friendly people. Highly recommended! »</p><footer><b>Simon</b> · Avis Google · 11 juin 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Encore une fois aujourd&#x27;hui nous avons ete reçu comme des rois ,nous y allons une fois par année environ &amp; jamais déçu les chocolat au cerise ouff les meilleurs pour moi &amp; les petites rose au caramel oh my god ca m&#x27;enlève les mots de la bouche 🥰 »</p><footer><b>Jessi</b> · Avis Google · 21 févr. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Excellent service, excellents produits, superbe boutique avec beaucoup de stock (cuisine, cadeaux, chocolats en masse, bonbons, torchons, tasses, name it) &amp; le monsieur qui m&#x27;a servi était très sympathique (samedi 1er novembre, midi). Je recommande vivement, un bel endroit cozy à découvrir 😄 »</p><footer><b>Casthavian</b> · Avis Google · 1 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Thank you guys for making the custom coconut chocolates for my dad - they are OUTSTANDING. You are our favorite place to come when we need quality chocolate &amp; are always so kind :) »</p><footer><b>Liz</b> · Avis Google · 26 nov. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Best cafe in Valleyfield, surely. Real espresso, delicious desserts &amp; chocolate! »</p><footer><b>Mayah</b> · Avis Google · 25 mai 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Ambiance feutré &amp; calme pour les gens qui aiment la simplicité. Très bons services .personnels courtois .la bouffe Très bonne.les prix sont raisonnables.grands choix de magazines. »</p><footer><b>Francine</b> · Avis Google · 5 juill. 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Service super chaleureux, très bons cafés &amp; viennoiseries, les prix sont compétitifs. »</p><footer><b>A</b> · Avis Google · 21 août 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Amazing place, many nice gifts, tasty coffee, &amp; always smiling staff. Will come back. »</p><footer><b>Magdalena</b> · Avis Google · 8 juill. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super bon service  &amp; les breuvage  sont wow Assayer  café  glacé »</p><footer><b>Josée</b> · Avis Google · 4 juill. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Ses chocolat son extremement bon je les recomande »</p><footer><b>Rwane</b> · Avis Google · 8 oct. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super café, les propriétaires sont très gentil, &amp; leur café est délicieux ! »</p><footer><b>Dekum</b> · Avis Google · 20 juin 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Parfait pour un café jasette ! Belle boutique cadeau ! »</p><footer><b>Mart</b> · Avis Google · 11 nov. 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Endroit magnifique avec super beau produit a prix respectable »</p><footer><b>Étienne</b> · Avis Google · 5 juill. 2025</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Merveilleux petit café comme il ne se fait plus »</p><footer><b>Daniel</b> · Avis Google · 4 août 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Nice &amp; cozy cafe. Good coffee ☕️ »</p><footer><b>Anton</b> · Avis Google · 15 août 2024</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Super bon »</p><footer><b>Geovanny</b> · Avis Google · 28 mai 2025</footer></article><article class="r"><div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div><p>« J&#x27; aime beaucoup cet endroit chaleureux, je m&#x27;y sens comme chez moi. Les propriétaires sont très sympathiques, le cafe &amp; les sandwiches sont parfaits. C&#x27; est un très rares bons endroits au Centre ville. »</p><footer><b>Marie-Laure</b> · Avis Google · 10 oct. 2024</footer></article><article class="r"><div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div><p>« Great coffee &amp; matcha .the caramel cookie are soo great yummy »</p><footer><b>Fred</b> · Avis Google · 20 juin 2026</footer></article></div>
+  <div class="more"><a class="btn dark" href="https://search.google.com/local/reviews?placeid=ChIJjTcEZi9OyUwRpCUYEuVsDro" target="_blank" rel="noopener">Voir sur Google</a><button class="btn" style="border-color:var(--choco)" data-close-avis>← Retour au site</button></div>
+ </div></div>
+</div>
+
+<a class="callbar" href="tel:+14503733890">📞 Appeler · 450 373-3890</a>
+
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var intro=document.getElementById('intro');var seen=false;try{seen=sessionStorage.getItem('giroux-intro')}catch(e){}
+if(reduce||seen){intro.remove()}else{try{sessionStorage.setItem('giroux-intro','1')}catch(e){}
+ var done=function(){if(!intro.isConnected)return;intro.classList.add('out');setTimeout(function(){intro.remove()},500)};
+ setTimeout(done,2100);intro.addEventListener('click',done);intro.addEventListener('touchstart',done,{passive:true})}
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+bg.addEventListener('click',function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+function closeNav(){nav.classList.remove('open');bg.setAttribute('aria-expanded','false')}
+/* page d'avis */
+var lastY=0;
+function openAvis(){closeNav();lastY=scrollY;document.body.classList.add('avis-open');scrollTo(0,0)}
+function closeAvis(){document.body.classList.remove('avis-open');scrollTo(0,lastY)}
+document.querySelectorAll('[data-open-avis]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();openAvis()})});
+document.querySelectorAll('[data-close-avis]').forEach(function(b){b.addEventListener('click',closeAvis)});
+document.querySelectorAll('[data-site]').forEach(function(a){a.addEventListener('click',function(){closeNav();if(document.body.classList.contains('avis-open')){document.body.classList.remove('avis-open')}})});
+/* flottants */
+var S={
+ carre:'<svg width="W" viewBox="0 0 50 50"><rect x="3" y="3" width="44" height="44" rx="8" fill="#5a3522"/><path d="M3 25h44M25 3v44" stroke="#3d2619" stroke-width="3"/><path d="M8 8h14v4H8z" fill="#7b4a2d"/></svg>',
+ grain:'<svg width="W" viewBox="0 0 40 50"><ellipse cx="20" cy="25" rx="16" ry="22" fill="#7b4a2d"/><path d="M14 6c12 12-6 26 8 40" stroke="#2b1a12" stroke-width="3" fill="none"/></svg>',
+ cerise:'<svg width="W" viewBox="0 0 50 56"><path d="M24 22C26 10 34 4 44 2" stroke="#4f6b34" stroke-width="3" fill="none"/><circle cx="22" cy="36" r="17" fill="#9e1f2f"/><circle cx="16" cy="30" r="4" fill="#d05666"/></svg>',
+ truffe:'<svg width="W" viewBox="0 0 50 50"><circle cx="25" cy="25" r="21" fill="#3d2619"/><path d="M10 22q15-10 30 0" stroke="#c99a4b" stroke-width="3" fill="none"/><circle cx="20" cy="30" r="2" fill="#c99a4b"/><circle cx="30" cy="32" r="2" fill="#c99a4b"/></svg>',
+ noisette:'<svg width="W" viewBox="0 0 44 50"><path d="M22 10c14 0 18 14 16 24s-8 14-16 14S8 44 6 34 8 10 22 10z" fill="#a0683c"/><path d="M8 16c4-10 24-10 28 0-6-2-22-2-28 0z" fill="#5a3522"/></svg>',
+ rose:'<svg width="W" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="#c99a4b"/><path d="M25 25c-6-2-6-10 0-10s8 6 4 10-12 4-12-4 8-14 16-10 8 16 0 20" stroke="#8a5a26" stroke-width="2.5" fill="none"/></svg>',
+ tasse:'<svg width="W" viewBox="0 0 56 50"><path d="M6 18h36l-3 22c-1 6-7 8-15 8s-14-2-15-8z" fill="#f8efe3"/><path d="M41 22c9 0 9 14 0 14" stroke="#f8efe3" stroke-width="4" fill="none"/><path d="M18 14c-4-5 4-8 0-13M28 14c-4-5 4-8 0-13" stroke="#e2bd7a" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>'
+};
+var mob=innerWidth<700;
+var list=[['carre',86,8,64,1,'',10],['grain',4,6,34,1.3,'',8],['cerise',92,58,48,.8,'',9],['truffe',56,4,44,.5,'far',12],['noisette',74,88,40,1.2,'',11],['rose',2,88,46,.6,'far',10],['tasse',48,90,52,.9,'far',13],['grain',62,46,26,1.5,'far',9],['cerise',30,94,36,1.1,'',10],['carre',96,30,34,.4,'far',12]];
+if(mob)list=list.slice(0,8);
+var fl=document.getElementById('float');
+list.forEach(function(it){var d=document.createElement('div');d.className='f '+it[5];d.style.left=it[1]+'%';d.style.top=it[2]+'%';d.style.setProperty('--d',it[4]);d.style.setProperty('--t',it[6]+'s');d.style.setProperty('--r1',(-6-Math.random()*8)+'deg');d.style.setProperty('--r2',(6+Math.random()*10)+'deg');d.innerHTML=S[it[0]].replace('W',mob?Math.round(it[3]*.75):it[3]);fl.appendChild(d)});
+var fs=fl.querySelectorAll('.f');
+if(!reduce){var tick=false;addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=Math.min(scrollY,900)*-.18+'px';fs.forEach(function(e){e.style.setProperty('--py',y)});tick=false})},{passive:true})}
+/* moment wow : le chocolat coule */
+var drip=document.getElementById('drip');
+if(reduce||!('IntersectionObserver' in window)){drip.classList.add('in')}else{var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){drip.classList.add('in');io.disconnect()}})},{threshold:.3});io.observe(drip)}
+})();
+</script>
+</body>
+</html>
