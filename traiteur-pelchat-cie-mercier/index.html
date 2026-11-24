@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Traiteur Pelchat &amp; Cie — Traiteur à Mercier depuis 2002</title>
+<meta name="description" content="Traiteur Pelchat &amp; Cie à Mercier : canapés, buffets froids, plats cuisinés pour emporter, repas pour parents pressés, mariages, 5 à 7, événements corporatifs et soupers gastronomiques à domicile. (450) 692-7386.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Traiteur Pelchat & Cie","servesCuisine":"Traiteur","telephone":"+1-450-692-7386","email":"pelchattraiteur@videotron.ca","url":"https://traiteurpelchat.com/","foundingDate":"2002","founder":{"@type":"Person","name":"Nancy Pelchat"},"address":{"@type":"PostalAddress","streetAddress":"299, boulevard Sainte-Marguerite","addressLocality":"Mercier","addressRegion":"QC","postalCode":"J6R 2L1","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"16:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"12:00"}]}
+</script>
+<style>
+:root{--top:32px;--olive:#3f4a2c;--olive2:#56633c;--sage:#e7ead8;--cream:#faf6ee;--paper:#fffdf8;--terra:#b4532f;--terra2:#d27852;--gold:#c9a24e;--ink:#262a1d;--soft:#606652;--line:#e4dfcf}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--top) + 72px)}
+body{background:var(--cream);color:var(--ink);font:17px/1.65 "Nunito Sans",system-ui,sans-serif;padding-top:var(--top)}
+a{color:inherit}
+svg{max-width:100%}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.08;overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:84px 0;overflow-x:clip}
+.eyebrow{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--terra);font-weight:800;margin-bottom:10px}
+h2{font-size:clamp(36px,5.6vw,58px);margin-bottom:14px}
+.lead{max-width:44em;color:#44493a;font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 24px;border-radius:999px;font-weight:800;text-decoration:none;border:2px solid transparent;transition:transform .2s;font-size:16px}
+.btn:hover{transform:translateY(-2px)}
+.btn.terra{background:var(--terra);color:#fff}
+.btn.ghost{border-color:var(--cream);color:var(--cream)}
+.btn.dark{background:var(--olive);color:var(--cream)}
+/* nav */
+.nav{position:fixed;top:var(--top);left:0;right:0;z-index:50;background:rgba(250,246,238,.97);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{flex:0 0 auto}
+.brand b{display:block;font-family:"Cormorant Garamond";font-size:23px;line-height:1;white-space:nowrap}
+.brand small{display:block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--soft);margin-top:3px}
+.links{display:flex;gap:24px;align-items:center}
+.links a{text-decoration:none;font-size:15px;font-weight:600}
+.links a:hover{color:var(--terra)}
+.links a.cta{background:var(--olive);color:var(--cream);padding:9px 16px;border-radius:999px}
+.burger{display:none;flex:0 0 44px;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px auto;transition:transform .25s,opacity .25s}
+@media(max-width:900px){
+ .burger{display:block}
+ .links{position:fixed;top:calc(var(--top) + 66px);left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s}
+ .links a{padding:16px 20px;width:100%;border-top:1px solid var(--line)}
+ .links a.cta{border-radius:0}
+ .nav.open .links{transform:none;opacity:1;pointer-events:auto}
+ .nav.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+ .nav.open .burger span:nth-child(2){opacity:0}
+ .nav.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+/* héros */
+.hero{position:relative;background:radial-gradient(ellipse 60% 60% at 85% 25%,#5d6b40 0,transparent 70%),radial-gradient(ellipse 50% 50% at 0% 100%,#2e361f 0,transparent 70%),var(--olive);color:var(--cream);padding:122px 0 92px;overflow:hidden}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.5;transform:translate3d(0,calc(var(--py,0px)*var(--d,1)),0)}
+.f svg{display:block;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.f.far{opacity:.26;filter:blur(1.5px)}
+@media(max-width:979px){.f{opacity:.28}.f.far{opacity:.16}}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r1,-8deg))}to{transform:translateY(12px) rotate(var(--r2,10deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:center}
+.since{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:16px}
+.since:before{content:"";width:34px;height:2px;background:var(--gold)}
+.hero h1{font-size:clamp(46px,9.5vw,92px)}
+.hero h1 em{font-style:italic;color:var(--terra2)}
+.hero p{font-size:clamp(17px,2.2vw,20px);color:#e5e8d6;max-width:34em;margin-top:18px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .hrs{margin-top:22px;font-size:15px;color:#cdd3b8}
+.plat{justify-self:center;width:min(100%,440px)}
+@media(min-width:980px){.hero{padding:150px 0 112px}.hero .wrap{grid-template-columns:1.1fr .9fr}}
+/* événements */
+.events{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:28px}
+.events div{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;min-width:0}
+.events b{display:block;font-family:"Cormorant Garamond";font-size:22px;line-height:1.1;margin-top:8px}
+.events svg{width:38px;height:38px}
+@media(min-width:760px){.events{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.equip{margin-top:30px;display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.equip .box{background:var(--sage);border-radius:20px;padding:22px}
+.equip h3{font-size:26px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:15px}
+@media(min-width:900px){.equip{grid-template-columns:1fr 1fr}}
+/* menus */
+.menus{background:var(--paper)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:6px 2px 14px;margin:24px 0 6px;-webkit-overflow-scrolling:touch}
+.tabs button{flex:0 0 auto;font:inherit;font-size:15px;font-weight:700;padding:10px 16px;border-radius:999px;border:1.5px solid var(--olive);background:transparent;color:var(--olive);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--olive);color:var(--cream)}
+@media(min-width:1024px){.tabs{flex-wrap:wrap;overflow:visible}}
+.panel{display:none}
+.panel.on{display:block}
+.board{position:relative;background:var(--cream);border:1px solid var(--line);border-radius:26px;padding:26px 20px}
+.board h3{font-size:clamp(30px,4vw,40px);margin-bottom:6px;padding-right:70px}
+.board .intro{color:var(--soft);font-size:15.5px}
+.items{list-style:none;display:grid;grid-template-columns:minmax(0,1fr);gap:0 32px;margin-top:14px}
+.items li{padding:11px 0;border-bottom:1px dashed var(--line);min-width:0}
+.items li.grp{grid-column:1/-1;border-bottom:0;padding:14px 0 0;font-family:"Cormorant Garamond";font-size:24px;font-weight:700;color:var(--terra)}
+.items li small{color:var(--soft)}
+@media(min-width:760px){.board{padding:36px 40px}.items{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.items{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cloche{position:absolute;right:18px;top:14px;width:64px;transform-origin:20% 100%}
+.cloche.lift{animation:lift 1.1s cubic-bezier(.3,1.3,.5,1) forwards}
+@keyframes lift{0%{transform:none}55%{transform:translateY(-16px) rotate(-18deg)}100%{transform:translateY(-6px) rotate(-12deg)}}
+.items li.pop{opacity:0;transform:translateY(12px)}
+.items li.pop.in{opacity:1;transform:none;transition:opacity .4s,transform .4s}
+.custom{margin-top:22px;font-size:16.5px}
+/* propriétaire */
+.chef{background:var(--sage)}
+.chef .grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;align-items:center}
+.medal{justify-self:center;width:min(100%,320px)}
+.chef p{margin-top:14px;color:#3b4030}
+.facts{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:22px}
+.facts div{background:var(--paper);border-radius:16px;padding:14px 18px;border-left:4px solid var(--terra)}
+.facts b{font-family:"Cormorant Garamond";font-size:21px;display:block}
+@media(min-width:900px){.chef .grid{grid-template-columns:.8fr 1.2fr;gap:60px}.facts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.mission{margin-top:26px;font-family:"Cormorant Garamond";font-style:italic;font-size:clamp(22px,2.8vw,28px);line-height:1.35;color:var(--olive)}
+/* contact */
+.contact{background:var(--olive);color:var(--cream)}
+.contact .eyebrow{color:var(--gold)}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:26px}
+.cbox{background:#4a5634;border:1px solid #5f6c45;border-radius:18px;padding:22px;min-width:0}
+.cbox small{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;font-weight:800}
+.cbox a{text-decoration:none;font-size:19px;overflow-wrap:anywhere}
+.cbox a:hover{text-decoration:underline}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed #6a774f}
+.hours li:last-child{border:0}
+.hours span:last-child{color:var(--gold)}
+@media(min-width:900px){.cgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.foot{background:#20261a;color:#a3aa8e;font-size:14px;text-align:center;padding:26px 0 100px}
+@media(min-width:901px){.foot{padding-bottom:26px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:8px;background:var(--terra);color:#fff;font-weight:800;text-decoration:none;padding:15px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(0,0,0,.5)}
+@media(min-width:901px){.callbar{display:none}}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--olive);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .dome{animation:dome 1.2s .3s cubic-bezier(.3,1.2,.5,1) forwards;transform-origin:15% 100%}
+#intro .name{opacity:0;animation:fade .6s .9s forwards}
+@keyframes dome{to{transform:translate(70px,-90px) rotate(28deg);opacity:0}}
+@keyframes fade{to{opacity:1}}
+@media(max-width:519px){:root{--top:48px}.brand b{font-size:20px}.brand small{font-size:9.5px;letter-spacing:.14em}.nav .wrap{padding:0 12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}#intro{display:none}.items li.pop{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Traiteur Pelchat &amp; Cie — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 300 220" width="300">
+  <g class="name" text-anchor="middle"><text x="150" y="118" font-family="Cormorant Garamond,serif" font-weight="700" font-size="44" fill="#faf6ee">Pelchat</text><text x="150" y="144" font-family="Nunito Sans,sans-serif" font-size="12" letter-spacing="5" fill="#c9a24e">TRAITEUR · & CIE</text></g>
+  <rect x="40" y="160" width="220" height="10" rx="5" fill="#c9a24e"/>
+  <g class="dome"><path d="M58 160c0-56 40-92 92-92s92 36 92 92z" fill="#e7ead8" stroke="#c9a24e" stroke-width="4"/><circle cx="150" cy="62" r="9" fill="#c9a24e"/><path d="M90 120c10-22 26-34 44-38" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" opacity=".7"/></g>
+ </svg>
+</div>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" aria-label="Traiteur Pelchat & Cie — accueil">
+   <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="22" fill="#3f4a2c"/><path d="M12 30c0-9 5-15 11-15s11 6 11 15z" fill="#faf6ee"/><circle cx="23" cy="13" r="2.5" fill="#c9a24e"/><rect x="9" y="30" width="28" height="3" rx="1.5" fill="#c9a24e"/><text x="23" y="29" text-anchor="middle" font-family="Cormorant Garamond,serif" font-weight="700" font-size="13" fill="#b4532f">P</text></svg>
+   <span><b>Pelchat &amp; Cie</b><small>Traiteur · Mercier · 2002</small></span>
+  </a>
+  <nav class="links" id="links">
+   <a href="#evenements">Événements</a>
+   <a href="#menus">Nos menus</a>
+   <a href="#chef">La propriétaire</a>
+   <a href="#contact">Heures &amp; contact</a>
+   <a class="cta" href="tel:+14506927386">(450) 692-7386</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main id="accueil">
+<section class="hero">
+ <div class="float" id="float" aria-hidden="true"></div>
+ <div class="wrap">
+  <div>
+   <span class="since">Traiteur depuis 2002</span>
+   <h1>Laissez-nous <em>surprendre</em> vos invités</h1>
+   <p>Traiteur Pelchat vous offre une variété de produits et de services pour répondre à vos besoins culinaires. La plupart des produits proviennent du terroir québécois et sont choisis avec soin pour vous offrir une expérience gustative unique.</p>
+   <div class="ctas">
+    <a class="btn terra" href="tel:+14506927386">📞 Appeler le (450) 692-7386</a>
+    <a class="btn ghost" href="#menus">Voir nos menus</a>
+   </div>
+   <p class="hrs">Plats cuisinés pour emporter · Mardi au vendredi 9 h à 16 h 30 · Samedi 9 h à midi</p>
+  </div>
+  <div class="plat" aria-hidden="true">
+   <svg viewBox="0 0 440 380" width="100%">
+    <ellipse cx="220" cy="300" rx="190" ry="54" fill="#2e361f" opacity=".55"/>
+    <ellipse cx="220" cy="286" rx="190" ry="54" fill="#faf6ee"/>
+    <ellipse cx="220" cy="286" rx="150" ry="38" fill="#efe9da"/>
+    <!-- canapés -->
+    <g><ellipse cx="140" cy="276" rx="26" ry="12" fill="#d9b071"/><circle cx="140" cy="268" r="12" fill="#e65b3d"/><circle cx="140" cy="266" r="7" fill="#fff"/><path d="M134 258c4-6 10-6 12 0" fill="#4f7a2c"/></g>
+    <g><ellipse cx="206" cy="292" rx="26" ry="12" fill="#d9b071"/><path d="M188 286c8-10 28-10 36 0z" fill="#f08a6b"/><path d="M194 282h24" stroke="#fff" stroke-width="2"/></g>
+    <g><ellipse cx="276" cy="276" rx="26" ry="12" fill="#3b2a1d"/><path d="M262 270c6-8 22-8 28 0z" fill="#f4e6c9"/><circle cx="276" cy="264" r="4" fill="#8a5a26"/></g>
+    <g><ellipse cx="310" cy="300" rx="22" ry="10" fill="#d9b071"/><path d="M296 296l14-12 14 12z" fill="#7a3b2a"/></g>
+    <g><ellipse cx="160" cy="306" rx="22" ry="10" fill="#e6e0cd"/><circle cx="154" cy="300" r="7" fill="#e65b3d"/><circle cx="168" cy="300" r="7" fill="#fff"/></g>
+    <!-- brochette -->
+    <path d="M230 250l70-36" stroke="#8a6a3a" stroke-width="4" stroke-linecap="round"/><circle cx="252" cy="239" r="9" fill="#e65b3d"/><circle cx="270" cy="230" r="9" fill="#fff"/><circle cx="288" cy="221" r="8" fill="#4f7a2c"/>
+    <!-- cloche levée -->
+    <g transform="rotate(-24 120 160)"><path d="M40 170c0-70 50-112 116-112s116 42 116 112z" fill="#e7ead8" stroke="#c9a24e" stroke-width="5"/><circle cx="156" cy="52" r="12" fill="#c9a24e"/><path d="M80 130c12-30 34-46 58-52" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" opacity=".8"/></g>
+    <!-- vapeur -->
+    <path d="M200 236c-10-14 10-22 0-38M230 232c-10-14 10-22 0-38" stroke="#faf6ee" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section id="evenements">
+ <div class="wrap">
+  <div class="eyebrow">Nos services</div>
+  <h2>Pour tous types d'événements et d'occasions</h2>
+  <p class="lead">Contactez-nous et c'est avec plaisir que nous vous proposerons un menu adapté à votre événement.</p>
+  <div class="events">
+   <div><svg viewBox="0 0 38 38"><path d="M6 26c0-9 6-15 13-15s13 6 13 15z" fill="#3f4a2c"/><rect x="4" y="26" width="30" height="3" rx="1.5" fill="#c9a24e"/><circle cx="19" cy="9" r="2.5" fill="#c9a24e"/></svg><b>Souper gastronomique à domicile</b></div>
+   <div><svg viewBox="0 0 38 38"><circle cx="14" cy="22" r="9" fill="none" stroke="#c9a24e" stroke-width="3"/><circle cx="24" cy="22" r="9" fill="none" stroke="#b4532f" stroke-width="3"/></svg><b>Mariages et réceptions</b></div>
+   <div><svg viewBox="0 0 38 38"><rect x="6" y="12" width="26" height="20" rx="3" fill="#3f4a2c"/><path d="M14 12V8h10v4" stroke="#3f4a2c" stroke-width="3" fill="none"/><rect x="6" y="19" width="26" height="3" fill="#c9a24e"/></svg><b>Événements corporatifs</b></div>
+   <div><svg viewBox="0 0 38 38"><path d="M10 6h18l-9 14z" fill="#b4532f"/><path d="M19 20v12M12 32h14" stroke="#3f4a2c" stroke-width="3"/></svg><b>5 à 7 (cocktail dînatoire)</b></div>
+   <div><svg viewBox="0 0 38 38"><path d="M8 32l11-24 11 24z" fill="#c9a24e"/><circle cx="19" cy="6" r="3" fill="#b4532f"/><circle cx="14" cy="24" r="2" fill="#fff"/><circle cx="22" cy="20" r="2" fill="#fff"/></svg><b>Fêtes privées</b></div>
+   <div><svg viewBox="0 0 38 38"><path d="M19 32c-8-6-12-11-12-16a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 5-4 10-12 16z" fill="#56633c"/></svg><b>Funérailles</b></div>
+   <div><svg viewBox="0 0 38 38"><circle cx="19" cy="19" r="13" fill="#fff" stroke="#3f4a2c" stroke-width="2"/><circle cx="19" cy="19" r="6" fill="#e9b949"/></svg><b>Brunchs</b></div>
+   <div><svg viewBox="0 0 38 38"><rect x="7" y="10" width="24" height="20" rx="3" fill="#b4532f"/><path d="M12 16h14M12 21h14M12 26h8" stroke="#fff" stroke-width="2"/></svg><b>Menus sur mesure</b></div>
+  </div>
+  <div class="equip">
+   <div class="box"><h3>Des menus variés et originaux</h3><div class="chips"><span>Bouchées froides</span><span>Repas santé pour parents pressés</span><span>Plats cuisinés pour emporter</span><span>Cocktails</span><span>Menus sur mesure</span></div></div>
+   <div class="box"><h3>Équipements et accessoires</h3><p style="margin-bottom:10px;color:var(--soft)">Mis à votre disposition :</p><div class="chips"><span>Tables et chaises</span><span>Vaisselle</span><span>Ustensiles</span><span>Verres</span><span>Tasses</span><span>etc.</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="menus" id="menus">
+ <div class="wrap">
+  <div class="eyebrow">Nos menus</div>
+  <h2>Voici ce qu'on vous sert</h2>
+  <p class="lead">Voici la liste des produits disponibles. N'hésitez pas à nous demander… afin de personnaliser votre menu.</p>
+  <div class="tabs" role="tablist" id="tabs"></div>
+
+  <div class="panel" data-id="canapes" data-name="Canapés froids"><div class="board"><svg class="cloche" viewBox="0 0 90 60" aria-hidden="true"><path d="M8 56c0-30 16-46 37-46s37 16 37 46z" fill="#e7ead8" stroke="#c9a24e" stroke-width="3"/><circle cx="45" cy="8" r="5" fill="#c9a24e"/></svg><h3>Canapés froids</h3><ul class="items">
+   <li>Salade de tomates et mangue</li><li>Rouleaux d'asperges</li><li>Truffes au fromage</li><li>Mini brochette de tortellini et tomates séchées</li><li>Mini brochette de tomates et bocconcini</li><li>Mini pita de chèvre et poivron rouge</li><li>Mousse de poivron rouge rôti</li><li>Pâté de foie et porto</li><li>Rouleaux de jambon</li><li>Cari de poulet, mangue et avocat</li><li>Salami et cœurs de palmier</li><li>Mini pita de poulet et pécan</li><li>Poulet et canneberges</li><li>Salsa de chorizo, pruneaux et olives kalamata</li><li>Bouchée de canard confit et moutarde à l'orange</li><li>Mousse de saumon fumé</li><li>Won ton frit à la truite fumée</li><li>Cuillère de moules à la provençale</li><li>Poire Neptune</li><li>Profiterole aux crevettes</li><li>Dattes, chèvre et pécan</li><li>Roquefort et noix</li>
+  </ul></div></div>
+
+  <div class="panel" data-id="buffets" data-name="Buffets froids"><div class="board"><svg class="cloche" viewBox="0 0 90 60" aria-hidden="true"><path d="M8 56c0-30 16-46 37-46s37 16 37 46z" fill="#e7ead8" stroke="#c9a24e" stroke-width="3"/><circle cx="45" cy="8" r="5" fill="#c9a24e"/></svg><h3>Buffets froids</h3><ul class="items">
+   <li>Canapés (voir la liste)</li><li>Wraps</li><li>Pains farcis</li><li>Sandwichs en pointes</li><li>Sandwichs assortis</li><li>Mini pitas de poulet pécan</li><li>Fromage en cubes</li><li>Fromages fins</li><li>Assiette de tomates bocconcini</li><li>Miche pumpernickel avec trempette aux épinards</li><li>Trempettes et crudités</li><li>Mousse de crevettes</li><li>Mousse de saumon</li><li>Saumon fumé</li><li>Crevettes cocktail</li><li>Galantine de porc</li><li>Mini brochette de poulet</li><li>Saucisses cocktail</li><li>Viandes froides</li><li>Assiette de pâtés</li><li>Œufs farcis</li><li>Pizza aux tomates</li>
+   <li class="grp">Salades</li>
+   <li>Chou</li><li>Pommes de terre</li><li>Macaroni</li><li>Riz</li><li>Carottes</li><li>Légumineuses</li><li>Mesclun</li><li>Pot-pourri</li><li>Pommes et cheddar</li><li>Méditerranéenne</li><li>Pâtes et crevettes</li><li>Antipasto</li><li>Santé</li><li>Fruits frais</li>
+   <li class="grp">Desserts</li>
+   <li>Assiette de fruits frais</li><li>Mignardises classiques</li><li>Pâtisseries fines</li>
+   <li class="grp">Boissons non alcoolisées</li>
+   <li>Soda</li><li>Bouteille d'eau</li><li>Jus assortis</li><li>Thé</li><li>Café</li>
+  </ul></div></div>
+
+  <div class="panel" data-id="plats" data-name="Plats cuisinés"><div class="board"><svg class="cloche" viewBox="0 0 90 60" aria-hidden="true"><path d="M8 56c0-30 16-46 37-46s37 16 37 46z" fill="#e7ead8" stroke="#c9a24e" stroke-width="3"/><circle cx="45" cy="8" r="5" fill="#c9a24e"/></svg><h3>Plats cuisinés</h3><p class="intro">Pour emporter.</p><ul class="items">
+   <li>Boulettes polynésiennes</li><li>Boulettes péché mignon</li><li>Poulet Général Tao</li><li>Porc effiloché</li><li>Casserole de bœuf</li><li>Pâté chinois</li><li>Ragoût de boulettes</li><li>Bœuf aux carottes</li><li>Bœuf bourguignon</li><li>Coquille de fruits de mer</li><li>Brochette de poulet</li>
+   <li class="grp">Pâtes cuisinées</li>
+   <li>Macaroni à la viande</li><li>Macaroni au thon</li><li>Macaroni chinois</li><li>Fettuccini Alfredo</li><li>Fettuccini au pesto</li><li>Penne à la saucisse</li><li>Penne primavera</li><li>Lasagne individuelle</li><li>Lasagne familiale</li>
+   <li class="grp">Potages et soupes</li>
+   <li>Légumes</li><li>Carottes</li><li>Brocoli</li><li>Velouté de courges au Sambuca</li><li>Poulet et nouilles</li><li>Soupe aux légumes Pasquale</li>
+   <li class="grp">Sauces</li>
+   <li>Rosée <small>12 oz</small></li><li>Spaghetti <small>16 oz · 32 oz</small></li><li>Poulet <small>16 oz · 32 oz</small></li><li>Fruits de mer <small>16 oz</small></li>
+   <li class="grp">Quiches <small style="font-family:'Nunito Sans';font-size:15px">6 pouces ou 9 pouces</small></li>
+   <li>Bacon</li><li>Jambon</li><li>Épinards</li><li>Végétarienne</li>
+   <li class="grp">Pâtés <small style="font-family:'Nunito Sans';font-size:15px">6 pouces ou 9 pouces</small></li>
+   <li>Poulet</li><li>Tourtière</li><li>Saumon</li><li>Pâté au poulet <small>8 portions</small></li><li>Pâté au poulet <small>15 portions</small></li>
+   <li class="grp">Tartes maison</li>
+   <li>Tarte aux fruits</li><li>Tarte au sucre</li><li>Tarte aux pommes</li>
+  </ul></div></div>
+
+  <div class="panel" data-id="parents" data-name="Parents pressés"><div class="board"><svg class="cloche" viewBox="0 0 90 60" aria-hidden="true"><path d="M8 56c0-30 16-46 37-46s37 16 37 46z" fill="#e7ead8" stroke="#c9a24e" stroke-width="3"/><circle cx="45" cy="8" r="5" fill="#c9a24e"/></svg><h3>Repas santé pour parents pressés</h3><p class="intro">Un menu santé et personnalisé à votre famille… pourquoi pas? Appelez-nous sans tarder!</p><ul class="items">
+   <li>Potage aux légumes</li><li>Potage aux carottes</li><li>Pâté chinois</li><li>Brochette de poulet</li><li>Casserole de bœuf</li><li>Bœuf aux carottes</li><li>Macaroni au thon</li><li>Lasagne familiale</li><li>Pâté au poulet <small>8 portions</small></li><li>Quiche 6 pouces ou 9 pouces <small>végétarienne ou aux épinards</small></li><li>Sauce spaghetti <small>32 oz</small></li>
+  </ul></div></div>
+
+  <p class="custom">Nous offrons également des soupers gastronomiques à domicile et des repas d'affaires. Pour les prix et pour personnaliser votre menu, appelez-nous au <a href="tel:+14506927386"><b>(450) 692-7386</b></a> ou écrivez à <a href="mailto:pelchattraiteur@videotron.ca">pelchattraiteur@videotron.ca</a>.</p>
+ </div>
+</section>
+
+<section class="chef" id="chef">
+ <div class="wrap grid">
+  <svg class="medal" viewBox="0 0 320 320" aria-hidden="true">
+   <circle cx="160" cy="160" r="150" fill="#3f4a2c"/>
+   <circle cx="160" cy="160" r="140" fill="none" stroke="#c9a24e" stroke-width="3" stroke-dasharray="4 8"/>
+   <g transform="translate(16 -26) scale(.9)"><path d="M96 150c-24 0-32-34-6-42 4-26 36-34 50-14 14-24 46-20 52 4 26-8 42 22 22 40v40H96z" fill="#faf6ee"/><rect x="96" y="178" width="128" height="34" rx="6" fill="#faf6ee"/><path d="M104 196h112" stroke="#c9a24e" stroke-width="4"/></g>
+   <text x="160" y="236" text-anchor="middle" font-family="Cormorant Garamond,serif" font-weight="700" font-size="30" fill="#faf6ee">Nancy Pelchat</text>
+   <text x="160" y="258" text-anchor="middle" font-family="Nunito Sans,sans-serif" font-size="11" letter-spacing="4" fill="#c9a24e">CHEF PROPRIÉTAIRE</text>
+  </svg>
+  <div>
+   <div class="eyebrow">La propriétaire</div>
+   <h2>Nancy Pelchat, chef propriétaire</h2>
+   <p>Diplômée de l'Institut de tourisme et d'hôtellerie du Québec (ITHQ), Nancy est reconnue pour son dévouement, son dynamisme et son amour pour la bouffe! Elle détient une formation spécialisée en cuisine italienne, permettant une approche différente et originale.</p>
+   <p>Durant cinq années, elle a travaillé pour le Casino de Montréal, où elle a remporté le concours du jeune meilleur commis rôtisseur. Elle a donc représenté le Québec lors de la Confrérie de la Chaîne des Rôtisseurs du bailliage national du Canada. En 2002, elle lance son propre service de traiteur, le local ayant pignon sur rue à Mercier.</p>
+   <p>Mère de quatre enfants, elle est consciente plus que jamais de l'importance de manger santé et d'offrir un service rapide. Vous trouverez chez Traiteur Pelchat des menus variés et surtout des petites attentions… adaptés à vos besoins, possiblement quotidiens!</p>
+   <div class="facts"><div><b>ITHQ</b>Diplômée</div><div><b>5 ans</b>au Casino de Montréal</div><div><b>Depuis 2002</b>à Mercier</div></div>
+   <p class="mission">« Notre mission : constamment être à l'affût des nouvelles tendances, afin d'offrir un service personnalisé, comprenant des produits de grande qualité. »</p>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="eyebrow">Heures &amp; contact</div>
+  <h2>Parlons de votre événement</h2>
+  <p class="lead" style="color:#e1e5d1">N'hésitez pas à nous contacter si vous avez des questions ou pour toute demande personnalisée.</p>
+  <div class="cgrid">
+   <div class="cbox"><small>Heures d'ouverture</small><ul class="hours"><li><span>Lundi</span><span>Fermé</span></li><li><span>Mardi au vendredi</span><span>9 h – 16 h 30</span></li><li><span>Samedi</span><span>9 h – midi</span></li><li><span>Dimanche</span><span>Fermé</span></li></ul></div>
+   <div class="cbox"><small>Adresse</small><a href="https://www.google.com/maps/search/?api=1&query=299+boulevard+Sainte-Marguerite+Mercier+QC+J6R+2L1" target="_blank" rel="noopener">299, boulevard Sainte-Marguerite<br>Mercier (Québec) J6R 2L1</a></div>
+   <div class="cbox"><small>Nous joindre</small><a href="tel:+14506927386">(450) 692-7386</a><br><a href="mailto:pelchattraiteur@videotron.ca" style="font-size:16px">pelchattraiteur@videotron.ca</a></div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:26px"><a class="btn terra" href="tel:+14506927386">📞 Appeler maintenant</a><a class="btn ghost" href="mailto:pelchattraiteur@videotron.ca">Écrire un courriel</a></div>
+ </div>
+</section>
+</main>
+<div class="foot">© Traiteur Pelchat &amp; Cie · Mercier (Québec)</div>
+<a class="callbar" href="tel:+14506927386">📞 Appeler · (450) 692-7386</a>
+
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var intro=document.getElementById('intro');var seen=false;try{seen=sessionStorage.getItem('pelchat-intro')}catch(e){}
+if(reduce||seen){intro.remove()}else{try{sessionStorage.setItem('pelchat-intro','1')}catch(e){}
+ var done=function(){if(!intro.isConnected)return;intro.classList.add('out');setTimeout(function(){intro.remove()},500)};
+ setTimeout(done,2100);intro.addEventListener('click',done);intro.addEventListener('touchstart',done,{passive:true})}
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+bg.addEventListener('click',function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+document.querySelectorAll('#links a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');bg.setAttribute('aria-expanded','false')})});
+var S={
+ toque:'<svg width="W" viewBox="0 0 50 50"><path d="M12 30c-8 0-10-12-2-14 1-9 12-12 16-5 5-8 16-6 17 2 8-2 12 9 5 14v6H12z" fill="#faf6ee"/><rect x="12" y="34" width="31" height="10" rx="2" fill="#faf6ee"/></svg>',
+ fouet:'<svg width="W" viewBox="0 0 30 60"><path d="M15 34C5 26 5 6 15 2c10 4 10 24 0 32z" fill="none" stroke="#e7ead8" stroke-width="2"/><path d="M15 34C10 24 10 8 15 2M15 34c5-10 5-26 0-32" fill="none" stroke="#e7ead8" stroke-width="1.6"/><rect x="12" y="34" width="6" height="22" rx="3" fill="#b4532f"/></svg>',
+ tomate:'<svg width="W" viewBox="0 0 40 40"><circle cx="20" cy="22" r="16" fill="#e65b3d"/><path d="M12 8l8 6 8-6-4 8h-8z" fill="#4f7a2c"/></svg>',
+ basilic:'<svg width="W" viewBox="0 0 40 50"><path d="M20 46C4 34 4 12 20 4c16 8 16 30 0 42z" fill="#5f8f37"/><path d="M20 8v36" stroke="#3e6a22" stroke-width="2"/></svg>',
+ olive:'<svg width="W" viewBox="0 0 60 40"><path d="M4 30c16-4 34-14 52-26" stroke="#8a9a5b" stroke-width="2.5" fill="none"/><ellipse cx="22" cy="20" rx="7" ry="4.5" fill="#56633c" transform="rotate(-30 22 20)"/><ellipse cx="40" cy="12" rx="7" ry="4.5" fill="#8a9a5b" transform="rotate(-30 40 12)"/><ellipse cx="30" cy="30" rx="6" ry="9" fill="#2f3a20"/></svg>',
+ brochette:'<svg width="W" viewBox="0 0 70 24"><path d="M2 12h66" stroke="#c9a24e" stroke-width="2.5"/><circle cx="20" cy="12" r="8" fill="#e65b3d"/><circle cx="36" cy="12" r="8" fill="#fff"/><circle cx="52" cy="12" r="7" fill="#5f8f37"/></svg>',
+ tarte:'<svg width="W" viewBox="0 0 60 40"><ellipse cx="30" cy="24" rx="27" ry="12" fill="#c9883f"/><ellipse cx="30" cy="20" rx="22" ry="9" fill="#7a3b2a"/><path d="M14 20h32M18 16l24 8M42 16l-24 8" stroke="#e0b06a" stroke-width="2.5"/></svg>'
+};
+var mob=innerWidth<700;
+var list=[['toque',86,8,62,1,'',10],['tomate',4,6,36,1.3,'',8],['basilic',92,58,40,.8,'',9],['olive',56,4,58,.5,'far',12],['brochette',74,90,64,1.2,'',11],['fouet',2,86,30,.6,'far',10],['tarte',46,92,54,.9,'far',13],['tomate',64,46,26,1.5,'far',9],['basilic',28,95,30,1.1,'',10],['toque',96,32,36,.4,'far',12]];
+if(mob)list=list.slice(0,8);
+var fl=document.getElementById('float');
+list.forEach(function(it){var d=document.createElement('div');d.className='f '+it[5];d.style.left=it[1]+'%';d.style.top=it[2]+'%';d.style.setProperty('--d',it[4]);d.style.setProperty('--t',it[6]+'s');d.style.setProperty('--r1',(-6-Math.random()*8)+'deg');d.style.setProperty('--r2',(6+Math.random()*10)+'deg');d.innerHTML=S[it[0]].replace('W',mob?Math.round(it[3]*.75):it[3]);fl.appendChild(d)});
+var fs=fl.querySelectorAll('.f');
+if(!reduce){var tick=false;addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=Math.min(scrollY,900)*-.18+'px';fs.forEach(function(e){e.style.setProperty('--py',y)});tick=false})},{passive:true})}
+/* onglets + moment wow : la cloche se soulève et les plats sont servis */
+var tabs=document.getElementById('tabs'),panels=[].slice.call(document.querySelectorAll('.panel'));
+function serve(p){if(reduce)return;var c=p.querySelector('.cloche');c.classList.remove('lift');void c.getBoundingClientRect();c.classList.add('lift');
+ p.querySelectorAll('.items li').forEach(function(li,i){li.classList.add('pop');li.classList.remove('in');li.style.transitionDelay=(250+Math.min(i,30)*35)+'ms';requestAnimationFrame(function(){requestAnimationFrame(function(){li.classList.add('in')})})})}
+function show(id){panels.forEach(function(p){var on=p.dataset.id===id;p.classList.toggle('on',on);if(on)serve(p)});
+ tabs.querySelectorAll('button').forEach(function(b){var on=b.dataset.id===id;b.setAttribute('aria-selected',on);if(on&&tabs.scrollWidth>tabs.clientWidth){tabs.scrollTo({left:b.offsetLeft-tabs.offsetLeft-20,behavior:reduce?'auto':'smooth'})}})}
+panels.forEach(function(p){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.dataset.id=p.dataset.id;b.textContent=p.dataset.name;b.addEventListener('click',function(){show(p.dataset.id)});tabs.appendChild(b)});
+panels[0].classList.add('on');tabs.firstChild.setAttribute('aria-selected','true');
+if(!reduce&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){serve(document.querySelector('.panel.on'));io.disconnect()}})},{threshold:.2});io.observe(document.getElementById('menus'))}
+})();
+</script>
+</body>
+</html>
