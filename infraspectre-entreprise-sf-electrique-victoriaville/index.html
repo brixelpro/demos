@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Infraspectre — Thermographie à Victoriaville | Centre-du-Québec</title>
+<meta name="description" content="Infraspectre, consultant en thermographie au Centre-du-Québec : analyse de bâtiments, maintenance préventive, points chauds électriques. Particuliers, commerçants, professionnels et industriels. 819 352-6525.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Infraspectre","description":"Consultant en thermographie - Maintenance préventive - Analyse de bâtiments. La nouvelle référence en thermographie au Centre-du-Québec.","telephone":"+1-819-352-6525","email":"stephane@infraspectre.com","address":{"@type":"PostalAddress","postOfficeBoxNumber":"205","addressLocality":"Victoriaville","addressRegion":"QC","postalCode":"G6P 2S8","addressCountry":"CA"},"areaServed":"Centre-du-Québec","slogan":"Une vision qui en dit long"}
+</script>
+<style>
+:root{--bg:#0b0d1a;--bg2:#111430;--card:#161a3a;--line:#2a2f5c;--ink:#f4f5ff;--mut:#b6bad8;--cold:#3b5bff;--vio:#8b3dff;--mag:#e0379a;--hot:#ff6a2b;--sun:#ffd23f;--grad:linear-gradient(90deg,#3b5bff,#8b3dff 30%,#e0379a 55%,#ff6a2b 78%,#ffd23f)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;padding-top:32px}
+h1,h2,h3,.logo-t{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.15}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.grad-t{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* nav */
+.nav{position:fixed;top:32px;left:0;right:0;z-index:50;background:rgba(11,13,26,.94);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-t{font-size:20px;font-weight:700;letter-spacing:.5px}
+.links{display:flex;gap:26px;align-items:center}
+.links a{text-decoration:none;color:var(--mut);font-weight:500;font-size:15px;cursor:pointer}
+.links a:hover{color:var(--ink)}
+.links a.btn{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:16px;font-family:inherit}
+.btn-hot{background:linear-gradient(90deg,#e0379a,#ff6a2b);color:#fff}
+.btn-ghost{border:1.5px solid #4a5090;color:var(--ink);background:transparent}
+.btn-sm{padding:9px 16px;font-size:14px}
+.burger{display:none;background:none;border:0;color:var(--ink);padding:8px;cursor:pointer}
+.mnav{display:none}
+@media(max-width:900px){.links{display:none}.burger{display:block}
+ .mnav.open{display:flex;flex-direction:column;position:fixed;top:96px;left:0;right:0;background:#0f1230;border-bottom:1px solid var(--line);z-index:49;padding:10px 20px 18px}
+ .mnav a{padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:500;cursor:pointer}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:150px 0 90px;background:radial-gradient(ellipse at 80% 20%,rgba(139,61,255,.28),transparent 55%),radial-gradient(ellipse at 10% 90%,rgba(59,91,255,.25),transparent 55%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.kick{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--sun);font-weight:600;margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5.4vw,62px);font-weight:700;margin-bottom:18px}
+.hero p.lead{color:var(--mut);font-size:18px;max-width:560px;margin-bottom:28px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.scale{margin-top:34px;max-width:420px}
+.scale .bar{height:10px;border-radius:6px;background:var(--grad)}
+.scale .lbl{display:flex;justify-content:space-between;font-size:12px;color:var(--mut);margin-top:6px}
+.house{position:relative;width:100%}
+.house svg{display:block;width:100%;height:auto}
+.deco{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.fl{position:absolute;opacity:.75;animation:flo 9s ease-in-out infinite}
+.fl.b{animation-duration:12s;animation-delay:-3s}
+.fl.c{animation-duration:14s;animation-delay:-6s}
+@keyframes flo{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-18px) rotate(8deg)}}
+.spin{animation:spin 30s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pulse{animation:pul 3.2s ease-in-out infinite}
+@keyframes pul{0%,100%{opacity:.55}50%{opacity:1}}
+/* sections */
+section{padding:84px 0;position:relative}
+.sec-h{max-width:720px;margin-bottom:40px}
+.sec-h h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}
+.sec-h p{color:var(--mut)}
+.alt{background:var(--bg2)}
+.def{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.def blockquote{border-left:4px solid;border-image:var(--grad) 1;padding:6px 0 6px 20px;font-size:19px}
+.def small{display:block;color:var(--mut);margin-top:8px;font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 22px;min-width:0;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad)}
+.card h3{font-size:21px;margin:14px 0 8px}
+.card p{color:var(--mut);font-size:15px}
+.ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:#1f2450}
+/* scan wow */
+.scan{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.scanbox{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#0e1026;aspect-ratio:4/3}
+.scanbox svg{position:absolute;inset:0;width:100%;height:100%}
+.thermal{opacity:0;transition:opacity 1.4s ease .4s}
+.scanline{position:absolute;left:0;right:0;top:0;height:3px;background:var(--sun);box-shadow:0 0 18px var(--sun);transform:translateY(-10px);opacity:0}
+.scanbox.go .thermal{opacity:1}
+.scanbox.go .scanline{animation:scanl 2.2s ease-out forwards}
+@keyframes scanl{0%{transform:translateY(0);opacity:1}90%{opacity:1}100%{transform:translateY(calc(var(--h,300px)));opacity:0}}
+.ticks{list-style:none;display:grid;gap:12px;margin-top:18px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;color:var(--mut)}
+.ticks li b{color:var(--ink);font-weight:600}
+.dot{flex:none;width:10px;height:10px;border-radius:50%;margin-top:8px;background:var(--hot)}
+.partners{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.chip{border:1px solid var(--line);background:var(--card);padding:10px 16px;border-radius:12px;font-size:14px;color:var(--mut)}
+.chip b{color:var(--ink)}
+.cta-band{background:linear-gradient(120deg,#2a1a6e,#6a1f6e 50%,#a3361f);border-radius:26px;padding:44px 34px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(24px,3.4vw,36px)}
+.cta-band p{color:#f1e6ff;margin-top:6px}
+.contact-g{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ci{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;min-width:0;overflow-wrap:anywhere}
+.ci span{display:block;color:var(--mut);font-size:13px;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px}
+.ci a{font-size:18px;font-weight:600;text-decoration:none}
+footer{padding:36px 0 110px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.callbar{display:none}
+@media(max-width:900px){
+ .hero{padding:126px 0 60px}.hero .wrap,.def,.scan,.contact-g{grid-template-columns:1fr}
+ .house{max-width:360px;margin:0 auto}.cards{grid-template-columns:1fr 1fr}
+ section{padding:64px 0}
+ .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;justify-content:center;padding:15px;border-radius:999px;background:linear-gradient(90deg,#e0379a,#ff6a2b);color:#fff;font-weight:700;text-decoration:none}
+}
+@media(max-width:900px){.fl-t{left:auto!important;right:5%;top:auto!important;bottom:30%}.fl-h{left:6%!important;bottom:3%!important}.fl-z{left:auto!important;right:5%;top:10%!important}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.cta-band{padding:32px 22px}}
+@media(max-width:519px){body{padding-top:48px}.nav{top:48px}.mnav.open{top:112px}.hero{padding-top:140px}.page{padding-top:140px!important}}
+/* pages */
+.page{display:none;min-height:100vh;padding:130px 0 120px}
+body.p-services .page#pg-services,body.p-joindre .page#pg-joindre{display:block}
+body.p-services main,body.p-joindre main{display:none}
+.back{margin-bottom:26px}
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.svc .card{padding:30px 26px}
+.svc ul{list-style:none;margin:14px 0 20px;display:grid;gap:8px}
+.svc li{color:var(--mut);padding-left:18px;position:relative}
+.svc li:before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:2px;background:var(--hot)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;min-width:0}
+.step b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--grad);color:#0b0d1a;margin-bottom:10px}
+.map{width:100%;height:340px;border:0;border-radius:18px;margin-top:22px;background:#1a1d3d}
+@media(max-width:700px){.svc,.steps{grid-template-columns:1fr}}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#07081a;display:grid;place-items:center;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .ring{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.3s ease forwards}
+#intro .iw{opacity:0;animation:fade .6s ease .9s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.thermal{opacity:1}#intro{display:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Infraspectre — ce n'est pas son site officiel</div>
+
+<div id="intro" aria-hidden="true">
+ <svg width="220" height="220" viewBox="0 0 220 220">
+  <defs><linearGradient id="ig" x1="0" x2="1"><stop offset="0" stop-color="#3b5bff"/><stop offset=".35" stop-color="#8b3dff"/><stop offset=".6" stop-color="#e0379a"/><stop offset=".8" stop-color="#ff6a2b"/><stop offset="1" stop-color="#ffd23f"/></linearGradient></defs>
+  <circle class="ring" cx="110" cy="96" r="62" fill="none" stroke="url(#ig)" stroke-width="8" transform="rotate(-90 110 96)"/>
+  <g class="iw"><circle cx="110" cy="96" r="30" fill="url(#ig)"/><circle cx="110" cy="96" r="12" fill="#07081a"/><circle cx="116" cy="90" r="4" fill="#fff"/>
+  <text x="110" y="196" text-anchor="middle" fill="#fff" font-family="Space Grotesk,sans-serif" font-size="26" font-weight="700" letter-spacing="2">INFRASPECTRE</text></g>
+ </svg>
+</div>
+
+<header class="nav"><div class="wrap">
+ <a class="logo" href="#top" onclick="go('accueil');return false" aria-label="Infraspectre, accueil">
+  <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#3b5bff"/><stop offset=".4" stop-color="#8b3dff"/><stop offset=".7" stop-color="#ff6a2b"/><stop offset="1" stop-color="#ffd23f"/></linearGradient></defs><circle cx="20" cy="20" r="17" fill="none" stroke="url(#lg)" stroke-width="4"/><circle cx="20" cy="20" r="8" fill="url(#lg)"/><circle cx="20" cy="20" r="3" fill="#0b0d1a"/></svg>
+  <span class="logo-t">INFRA<span class="grad-t">SPECTRE</span></span></a>
+ <nav class="links">
+  <a onclick="go('accueil','thermo')">La thermographie</a>
+  <a onclick="go('services')">Nos services</a>
+  <a onclick="go('joindre')">Nous joindre</a>
+  <a class="btn btn-hot btn-sm" href="tel:+18193526525">819 352-6525</a>
+ </nav>
+ <button class="burger" aria-label="Menu" onclick="document.querySelector('.mnav').classList.toggle('open')"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<nav class="mnav">
+ <a onclick="go('accueil','thermo')">La thermographie</a>
+ <a onclick="go('services')">Nos services</a>
+ <a onclick="go('joindre')">Nous joindre</a>
+ <a href="tel:+18193526525">Appeler : 819 352-6525</a>
+</nav>
+
+<main id="top">
+<section class="hero">
+ <div class="deco" aria-hidden="true">
+  <svg class="fl fl-z" style="left:4%;top:18%" width="46" height="46" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z" fill="#ffd23f"/></svg>
+  <svg class="fl b fl-t" style="left:44%;top:12%" width="34" height="80" viewBox="0 0 20 48"><rect x="7" y="2" width="6" height="34" rx="3" fill="none" stroke="#e0379a" stroke-width="2.5"/><rect x="9" y="16" width="2" height="20" fill="#ff6a2b"/><circle cx="10" cy="40" r="6" fill="#ff6a2b"/></svg>
+  <svg class="fl c" style="right:3%;bottom:10%" width="70" height="70" viewBox="0 0 40 40"><g class="spin" style="transform-origin:20px 20px"><circle cx="20" cy="20" r="16" fill="none" stroke="#3b5bff" stroke-width="2" stroke-dasharray="4 5"/></g><circle cx="20" cy="20" r="6" fill="#3b5bff"/></svg>
+  <svg class="fl fl-h" style="left:52%;bottom:8%" width="58" height="58" viewBox="0 0 40 40"><path d="M6 20 20 7l14 13v14H6z" fill="none" stroke="#8b3dff" stroke-width="2.5"/><rect x="16" y="24" width="8" height="10" fill="#e0379a"/></svg>
+  <svg class="fl b" style="right:40%;bottom:6%" width="40" height="40" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke="#ffd23f" stroke-width="2"/></svg>
+ </div>
+ <div class="wrap">
+  <div class="rv">
+   <span class="kick">Thermographie · Centre-du-Québec</span>
+   <h1>Infraspectre : <span class="grad-t">une vision qui en dit long</span></h1>
+   <p class="lead">La nouvelle référence en thermographie au Centre-du-Québec. Consultant en thermographie, maintenance préventive et analyse de bâtiments, pour les particuliers, les commerçants, les professionnels et les industriels.</p>
+   <div class="ctas">
+    <a class="btn btn-hot" href="tel:+18193526525"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="#fff"/></svg>Appeler</a>
+    <a class="btn btn-ghost" onclick="go('services')">Nos services</a>
+   </div>
+   <div class="scale" aria-hidden="true"><div class="bar"></div><div class="lbl"><span>Froid</span><span>Isolation</span><span>Point chaud</span></div></div>
+  </div>
+  <div class="house rv" aria-hidden="true">
+   <svg viewBox="0 0 400 360">
+    <defs>
+     <radialGradient id="h1" cx=".3" cy=".35" r=".55"><stop offset="0" stop-color="#ffd23f"/><stop offset=".35" stop-color="#ff6a2b"/><stop offset=".7" stop-color="#e0379a" stop-opacity=".7"/><stop offset="1" stop-color="#8b3dff" stop-opacity="0"/></radialGradient>
+     <radialGradient id="h2" cx=".75" cy=".7" r=".45"><stop offset="0" stop-color="#ff6a2b"/><stop offset=".6" stop-color="#e0379a" stop-opacity=".6"/><stop offset="1" stop-color="#8b3dff" stop-opacity="0"/></radialGradient>
+     <clipPath id="hc"><path d="M50 170 200 50l150 120v170H50z"/></clipPath>
+    </defs>
+    <path d="M50 170 200 50l150 120v170H50z" fill="#24308a"/>
+    <g clip-path="url(#hc)"><rect x="0" y="0" width="400" height="360" fill="#2a3bb0"/><circle class="pulse" cx="130" cy="210" r="120" fill="url(#h1)"/><circle class="pulse" style="animation-delay:-1.6s" cx="290" cy="290" r="100" fill="url(#h2)"/><circle cx="200" cy="80" r="55" fill="url(#h1)" opacity=".8"/></g>
+    <path d="M50 170 200 50l150 120" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="4"/>
+    <rect x="92" y="196" width="70" height="56" rx="4" fill="#ffd23f" opacity=".9"/><path d="M127 196v56M92 224h70" stroke="#ff6a2b" stroke-width="3"/>
+    <rect x="240" y="196" width="70" height="56" rx="4" fill="#3b5bff" stroke="#8b3dff" stroke-width="3"/>
+    <rect x="176" y="260" width="48" height="80" rx="3" fill="#e0379a"/>
+    <g font-family="Inter,sans-serif" font-size="13" font-weight="600"><rect x="238" y="96" width="118" height="30" rx="15" fill="#0b0d1a" opacity=".85"/><text x="297" y="116" text-anchor="middle" fill="#ffd23f">Perte de chaleur</text></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="thermo"><div class="wrap def">
+ <div class="rv">
+  <span class="kick">La thermographie en bref</span>
+  <h2 style="font-size:clamp(28px,4vw,42px);margin-bottom:14px">Voir ce que l'œil ne voit pas</h2>
+  <p style="color:var(--mut)">Avec une caméra infrarouge, la thermographie rend visibles les écarts de température d'un bâtiment ou d'un équipement : faiblesses de l'isolation, infiltrations d'eau, points chauds dans un panneau électrique. Un outil simple pour prévenir plutôt que réparer.</p>
+ </div>
+ <div class="rv">
+  <blockquote>« Nous pouvons tous avoir besoin de la thermographie : à chacun son application. »<small>— Infraspectre</small></blockquote>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="sec-h rv"><span class="kick">À chacun son application</span><h2>Pour qui?</h2><p>Que ce soit pour votre maison, votre commerce, un chantier ou une usine, Infraspectre adapte l'analyse thermographique à vos besoins.</p></div>
+ <div class="cards">
+  <div class="card rv"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v10H3z" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M9 21v-6h6v6" stroke="#ff6a2b" stroke-width="2" fill="none"/></svg></div><h3>Particuliers</h3><p>Cibler les faiblesses de l'enveloppe de votre maison pour améliorer l'isolation et le rendement énergétique.</p></div>
+  <div class="card rv"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 9h18l-2-5H5zM4 9v11h16V9" fill="none" stroke="#e0379a" stroke-width="2"/><path d="M10 20v-5h4v5" stroke="#ffd23f" stroke-width="2" fill="none"/></svg></div><h3>Commerçants</h3><p>Repérer les failles de votre commerce : vérification de la toiture, infiltrations d'eau et points chauds.</p></div>
+  <div class="card rv"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M4 20h16M6 20V9l6-4 6 4v11" fill="none" stroke="#8b3dff" stroke-width="2"/><path d="M10 13h4" stroke="#ffd23f" stroke-width="2"/></svg></div><h3>Professionnels</h3><p>Appuyer les entrepreneurs généraux et spécialisés sur la qualité de leur construction, et aider assureurs et inspecteurs en bâtiment.</p></div>
+  <div class="card rv"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 21V10l5 3V10l5 3V6h4l1 15z" fill="none" stroke="#3b5bff" stroke-width="2"/><path d="M14 3h2" stroke="#ff6a2b" stroke-width="2"/></svg></div><h3>Industriels</h3><p>Sécurité des équipements, rendement énergétique, moins d'arrêts imprévus, planification des arrêts de production et prévention des incendies.</p></div>
+ </div>
+ <div style="margin-top:28px" class="rv"><a class="btn btn-ghost" onclick="go('services')">Voir le détail des services →</a></div>
+</div></section>
+
+<section class="alt"><div class="wrap scan">
+ <div class="scanbox" id="scanbox" aria-label="Exemple d'image thermique d'un panneau électrique">
+  <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+   <rect width="400" height="300" fill="#1b1f3f"/>
+   <rect x="120" y="40" width="160" height="220" rx="8" fill="#2a2f5c" stroke="#4a5090" stroke-width="3"/>
+   <g fill="#3a4080"><rect x="140" y="62" width="50" height="22" rx="3"/><rect x="210" y="62" width="50" height="22" rx="3"/><rect x="140" y="98" width="50" height="22" rx="3"/><rect x="210" y="98" width="50" height="22" rx="3"/><rect x="140" y="134" width="50" height="22" rx="3"/><rect x="210" y="134" width="50" height="22" rx="3"/><rect x="140" y="170" width="50" height="22" rx="3"/><rect x="210" y="170" width="50" height="22" rx="3"/><rect x="140" y="206" width="50" height="22" rx="3"/><rect x="210" y="206" width="50" height="22" rx="3"/></g>
+   <g class="thermal">
+    <rect width="400" height="300" fill="#2433a6" opacity=".85"/>
+    <rect x="120" y="40" width="160" height="220" rx="8" fill="#5a2fc8"/>
+    <g fill="#7a3be0"><rect x="140" y="62" width="50" height="22" rx="3"/><rect x="210" y="62" width="50" height="22" rx="3"/><rect x="140" y="98" width="50" height="22" rx="3"/><rect x="140" y="134" width="50" height="22" rx="3"/><rect x="210" y="134" width="50" height="22" rx="3"/><rect x="140" y="170" width="50" height="22" rx="3"/><rect x="210" y="170" width="50" height="22" rx="3"/><rect x="140" y="206" width="50" height="22" rx="3"/><rect x="210" y="206" width="50" height="22" rx="3"/></g>
+    <circle cx="235" cy="109" r="40" fill="url(#h1)"/>
+    <rect x="210" y="98" width="50" height="22" rx="3" fill="#ffd23f"/>
+    <circle cx="235" cy="109" r="30" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="5 4"/>
+    <g font-family="Inter,sans-serif" font-weight="700"><rect x="276" y="82" width="104" height="30" rx="15" fill="#0b0d1a"/><text x="328" y="102" text-anchor="middle" fill="#ffd23f" font-size="13">Point chaud</text></g>
+    <rect x="20" y="268" width="140" height="10" rx="5" fill="url(#ig2)"/>
+    <defs><linearGradient id="ig2" x1="0" x2="1"><stop offset="0" stop-color="#3b5bff"/><stop offset=".35" stop-color="#8b3dff"/><stop offset=".6" stop-color="#e0379a"/><stop offset=".8" stop-color="#ff6a2b"/><stop offset="1" stop-color="#ffd23f"/></linearGradient></defs>
+   </g>
+  </svg>
+  <div class="scanline"></div>
+ </div>
+ <div class="rv">
+  <span class="kick">Maintenance préventive</span>
+  <h2 style="font-size:clamp(28px,4vw,42px);margin-bottom:12px">Trouver le problème avant qu'il coûte cher</h2>
+  <p style="color:var(--mut)">L'imagerie thermique permet de repérer un point chaud dans un équipement électrique ou une faiblesse de l'isolation, sans rien démonter.</p>
+  <ul class="ticks">
+   <li><span class="dot"></span><span><b>Bâtiments :</b> isolation, rendement énergétique, infiltrations d'eau, toitures.</span></li>
+   <li><span class="dot" style="background:var(--sun)"></span><span><b>Électricité :</b> points chauds, sécurité des équipements, prévention des incendies.</span></li>
+   <li><span class="dot" style="background:var(--vio)"></span><span><b>Industrie :</b> moins d'arrêts imprévus et des arrêts de production mieux planifiés.</span></li>
+  </ul>
+  <div class="partners"><span class="chip">Fournisseur recommandé <b>CAA-Québec</b> (Habitation)</span><span class="chip">Partenaire <b>Habitation durable</b></span></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="cta-band rv">
+  <div><h2>Un projet en tête?</h2><p>Soumettez gratuitement votre projet : appelez-nous ou écrivez-nous.</p></div>
+  <div class="ctas"><a class="btn" style="background:#fff;color:#2a1a6e" href="tel:+18193526525">819 352-6525</a><a class="btn btn-ghost" style="border-color:#fff" href="mailto:stephane@infraspectre.com">Écrire un courriel</a></div>
+ </div>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap">
+ <div class="sec-h rv"><span class="kick">Nous joindre</span><h2>Parlons de votre bâtiment</h2><p>Infraspectre dessert le Centre-du-Québec à partir de Victoriaville.</p></div>
+ <div class="contact-g">
+  <div class="ci rv"><span>Téléphone</span><a href="tel:+18193526525">819 352-6525</a></div>
+  <div class="ci rv"><span>Courriel</span><a href="mailto:stephane@infraspectre.com">stephane@infraspectre.com</a></div>
+  <div class="ci rv"><span>Adresse postale</span><b>Case postale 205<br>Victoriaville (Québec) G6P 2S8</b></div>
+  <div class="ci rv"><span>Heures</span><b>Appelez-nous pour les heures</b></div>
+ </div>
+ <div style="margin-top:24px" class="rv"><a class="btn btn-ghost" onclick="go('joindre')">Carte et coordonnées →</a></div>
+</div></section>
+</main>
+
+<div class="page" id="pg-services"><div class="wrap">
+ <button class="btn btn-ghost btn-sm back" onclick="go('accueil')">← Retour au site</button>
+ <div class="sec-h"><span class="kick">Nos services</span><h2>La thermographie, <span class="grad-t">à chacun son application</span></h2><p>Consultant en thermographie, maintenance préventive et analyse de bâtiments au Centre-du-Québec.</p></div>
+ <div class="svc">
+  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v10H3z" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M9 21v-6h6v6" stroke="#ff6a2b" stroke-width="2" fill="none"/></svg></div><h3>Particuliers</h3><p style="color:var(--mut)">Une analyse thermographique de votre maison pour voir où la chaleur s'échappe.</p><ul><li>Faiblesses de l'enveloppe du bâtiment</li><li>Amélioration de l'isolation</li><li>Meilleur rendement énergétique de la maison</li></ul><a class="btn btn-hot btn-sm" href="tel:+18193526525">Demander une estimation</a></div>
+  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 9h18l-2-5H5zM4 9v11h16V9" fill="none" stroke="#e0379a" stroke-width="2"/><path d="M10 20v-5h4v5" stroke="#ffd23f" stroke-width="2" fill="none"/></svg></div><h3>Commerçants</h3><p style="color:var(--mut)">Repérer les failles de l'environnement de votre commerce.</p><ul><li>Vérification de la toiture commerciale</li><li>Détection des infiltrations d'eau</li><li>Détection des points chauds</li></ul><a class="btn btn-hot btn-sm" href="tel:+18193526525">Demander une estimation</a></div>
+  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M4 20h16M6 20V9l6-4 6 4v11" fill="none" stroke="#8b3dff" stroke-width="2"/><path d="M10 13h4" stroke="#ffd23f" stroke-width="2"/></svg></div><h3>Professionnels</h3><p style="color:var(--mut)">Un appui indépendant pour les gens du bâtiment.</p><ul><li>Entrepreneurs généraux et spécialisés : qualité de la construction</li><li>Assureurs : vérification du réseau électrique et de l'isolation</li><li>Inspecteurs en bâtiment</li></ul><a class="btn btn-hot btn-sm" href="tel:+18193526525">Demander une estimation</a></div>
+  <div class="card"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 21V10l5 3V10l5 3V6h4l1 15z" fill="none" stroke="#3b5bff" stroke-width="2"/><path d="M14 3h2" stroke="#ff6a2b" stroke-width="2"/></svg></div><h3>Industriels</h3><p style="color:var(--mut)">La thermographie au service de la maintenance préventive.</p><ul><li>Sécurité des équipements</li><li>Rendement énergétique</li><li>Moins d'arrêts imprévus et planification des arrêts de production (shutdown)</li><li>Prévention des incendies</li></ul><a class="btn btn-hot btn-sm" href="tel:+18193526525">Demander une estimation</a></div>
+ </div>
+ <div class="sec-h" style="margin-top:56px"><h2 style="font-size:30px">Comment ça marche</h2></div>
+ <div class="steps">
+  <div class="step"><b>1</b><h3 style="font-size:19px;margin-bottom:6px">Votre projet</h3><p style="color:var(--mut)">Vous nous appelez ou nous écrivez pour décrire le bâtiment ou l'équipement à analyser.</p></div>
+  <div class="step"><b>2</b><h3 style="font-size:19px;margin-bottom:6px">L'inspection</h3><p style="color:var(--mut)">Prise d'images avec une caméra infrarouge, sans rien démonter.</p></div>
+  <div class="step"><b>3</b><h3 style="font-size:19px;margin-bottom:6px">L'analyse</h3><p style="color:var(--mut)">On vous explique ce que les images révèlent et où agir.</p></div>
+ </div>
+</div></div>
+
+<div class="page" id="pg-joindre"><div class="wrap">
+ <button class="btn btn-ghost btn-sm back" onclick="go('accueil')">← Retour au site</button>
+ <div class="sec-h"><span class="kick">Nous joindre</span><h2>Infraspectre, Victoriaville</h2><p>La nouvelle référence en thermographie au Centre-du-Québec.</p></div>
+ <div class="contact-g">
+  <div class="ci"><span>Téléphone</span><a href="tel:+18193526525">819 352-6525</a></div>
+  <div class="ci"><span>Courriel</span><a href="mailto:stephane@infraspectre.com">stephane@infraspectre.com</a></div>
+  <div class="ci"><span>Adresse postale</span><b>Case postale 205<br>Victoriaville (Québec) G6P 2S8</b></div>
+  <div class="ci"><span>Heures</span><b>Appelez-nous pour les heures</b></div>
+ </div>
+ <div class="ctas" style="margin-top:22px"><a class="btn btn-hot" href="tel:+18193526525">Appeler</a><a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Victoriaville%2C%20QC" target="_blank" rel="noopener">Itinéraire</a></div>
+ <iframe class="map" title="Carte de Victoriaville" loading="lazy" src="https://www.google.com/maps?q=Victoriaville%2C%20QC%20G6P%202S8&amp;output=embed"></iframe>
+</div></div>
+
+<footer><div class="wrap"><span>© Infraspectre — Consultant en thermographie, Victoriaville</span><span>819 352-6525 · stephane@infraspectre.com</span></div></footer>
+<a class="callbar" href="tel:+18193526525">Appeler Infraspectre</a>
+
+<script>
+(function(){
+ var intro=document.getElementById('intro');
+ function done(){if(!intro)return;intro.classList.add('out');setTimeout(function(){intro&&intro.remove();intro=null},500)}
+ var seen=false;try{seen=sessionStorage.getItem('is_intro')}catch(e){}
+ if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){intro.remove();intro=null}
+ else{try{sessionStorage.setItem('is_intro','1')}catch(e){}intro.addEventListener('click',done);setTimeout(done,1900)}
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+ document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+ var sb=document.getElementById('scanbox');
+ var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){sb.style.setProperty('--h',sb.offsetHeight+'px');sb.classList.add('go');io2.disconnect()}})},{threshold:.4});
+ io2.observe(sb);
+})();
+function go(p,anchor){
+ document.querySelector('.mnav').classList.remove('open');
+ document.body.classList.remove('p-services','p-joindre');
+ if(p!=='accueil'){document.body.classList.add('p-'+p);window.scrollTo(0,0);return}
+ if(anchor){var t=document.getElementById(anchor);if(t){setTimeout(function(){t.scrollIntoView()},10)}}else window.scrollTo(0,0);
+}
+</script>
+<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
