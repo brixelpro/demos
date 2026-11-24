@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mécanique JMA — Garage, Line-X et antirouille à Beauceville</title>
+<meta name="description" content="Mécanique JMA à Beauceville depuis 2006 : entretien mécanique, diagnostic, carrosserie et esthétique, pare-brise, pneus, revêtement Line-X et antirouille Otoprotec. 418 774-3433.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Mécanique JMA inc.","telephone":"+1-418-774-3433","email":"mecaniquejma@hotmail.com","foundingDate":"2006","address":{"@type":"PostalAddress","streetAddress":"95, 125e Rue","addressLocality":"Beauceville","addressRegion":"QC","postalCode":"G5X 0B6","addressCountry":"CA"},"openingHours":"Mo-Fr 08:00-17:00","founder":"Marc-André Gobeil","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"30"}}
+</script>
+<style>
+:root{--bh:32px;--navy:#06172a;--navy2:#0b2440;--blue:#0099ff;--blue2:#5cbcff;--ink:#0d1b2a;--mut:#56657a;--bg:#f3f6fa;--card:#fff;--line:#dde5ef}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bh) + 70px)}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;padding-top:var(--bh);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+svg{max-width:100%}
+h1,h2,h3{line-height:1.15;overflow-wrap:anywhere}
+.o{font-family:Orbitron,sans-serif;letter-spacing:.02em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+#apercu{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px}
+.nav{position:fixed;top:var(--bh);left:0;right:0;z-index:50;background:var(--navy);border-bottom:1px solid #16314f}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;min-width:0}
+.brand svg{width:54px;height:auto;flex:none}
+.brand span{font:800 15px/1.05 Orbitron,sans-serif;color:var(--blue)}
+.brand span small{display:block;font-size:12px;color:#fff;letter-spacing:.2em}
+.links{display:none;gap:24px}
+.links a{color:#b8c7da;text-decoration:none;font-weight:500;font-size:15px}
+.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:600;border-radius:10px;padding:14px 22px;font-size:16px;border:0;cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-line{border:1.5px solid #3b5b80;color:#fff;background:transparent}
+.btn-dark{border:1.5px solid var(--ink);color:var(--ink);background:transparent}
+.nav .btn{display:none;padding:9px 14px;font-size:14px}
+.burger{background:none;border:0;width:40px;height:40px;cursor:pointer}
+.mmenu{display:none;position:fixed;top:calc(var(--bh) + 64px);left:0;right:0;z-index:49;background:var(--navy);padding:6px 20px 16px;border-bottom:1px solid #16314f}
+.mmenu.open{display:block}
+.mmenu a{display:block;color:#fff;text-decoration:none;padding:12px 0;border-bottom:1px solid #16314f}
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 75% 40%,#0f3a66 0%,#0a2340 45%,#06172a 80%);padding:112px 0 64px}
+.float{position:absolute;inset:0;pointer-events:none}
+.par{position:absolute;inset:0;transform:translate3d(0,var(--py,0px),0)}
+.fl{position:absolute;opacity:.18;animation:drift 17s ease-in-out infinite alternate;will-change:transform}
+.fl.back{opacity:.09;filter:blur(1.5px)}
+@keyframes drift{from{transform:translate3d(0,0,0) rotate(0)}to{transform:translate3d(-14px,-24px,0) rotate(-20deg)}}
+.hero .wrap{position:relative;display:grid;gap:34px}
+.tag{display:inline-block;font:600 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue2);border:1px solid #1f4a78;border-radius:999px;padding:6px 12px}
+.hero h1{font:900 clamp(30px,7.6vw,58px)/1.08 Orbitron,sans-serif;margin:16px 0}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero .lead{color:#c3d2e4;font-size:18px;max-width:560px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:10px 14px;border:1px solid #1f4a78;border-radius:10px;background:rgba(255,255,255,.04);color:#fff;text-decoration:none;font-size:15px;cursor:pointer}
+.st{color:#ffc531;letter-spacing:2px}
+.car{position:relative;max-width:440px;width:100%;margin:0 auto}
+.beam{opacity:0;transition:opacity .8s .4s}
+.car.on .beam{opacity:1}
+.badges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+.badges div{background:rgba(255,255,255,.05);border:1px solid #1f4a78;border-radius:12px;padding:12px 8px;text-align:center}
+.badges b{display:block;font:800 20px Orbitron,sans-serif;color:var(--blue)}
+.badges small{color:#b8c7da;font-size:12px;line-height:1.3;display:block}
+/* sections */
+section{padding:72px 0}
+.sh{margin-bottom:32px}
+.sh h2{font:800 clamp(24px,5.4vw,38px)/1.15 Orbitron,sans-serif}
+.sh h2 i{font-style:normal;color:var(--blue)}
+.sh p{color:var(--mut);margin-top:10px;max-width:650px}
+.grid{display:grid;gap:16px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;min-width:0;box-shadow:0 2px 0 #e7edf5}
+.svc .ic{width:48px;height:48px;border-radius:12px;background:#e6f4ff;display:grid;place-items:center;margin-bottom:12px}
+.svc h3{font-size:19px;margin-bottom:10px}
+.svc ul{list-style:none}
+.svc li{padding:8px 0 8px 22px;border-top:1px solid #eef2f7;position:relative;font-size:15px}
+.svc li:before{content:"";position:absolute;left:2px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--blue);transform:rotate(45deg)}
+.note{margin-top:18px;color:var(--mut)}
+/* line-x */
+.dark{background:var(--navy);color:#fff}
+.dark .sh p{color:#b8c7da}
+.lx{display:grid;gap:30px;align-items:center}
+.truck{background:#0b2440;border:1px solid #1f4a78;border-radius:18px;padding:20px}
+.coat{transform:scaleX(0);transform-origin:left;transition:transform 2s cubic-bezier(.4,0,.2,1)}
+.truck.go .coat{transform:scaleX(1)}
+.spray{opacity:0;transform:translate3d(0,0,0);transition:transform 2s cubic-bezier(.4,0,.2,1),opacity .3s}
+.truck.go .spray{opacity:1;transform:translate3d(300px,0,0)}
+.truck.done .spray{opacity:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chips span{border:1px solid #2a5a8c;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;color:#d5e5f7}
+.lx p{color:#c3d2e4;margin-bottom:12px}
+/* antirouille */
+.prod{display:grid;gap:14px}
+.pr{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:18px 20px;min-width:0}
+.pr h3{font-size:17px;margin-bottom:6px}
+.pr h3 small{display:inline-block;margin-left:6px;font-size:12px;font-weight:600;color:var(--blue);background:#e6f4ff;border-radius:6px;padding:2px 8px;vertical-align:middle}
+.pr p{color:var(--mut);font-size:15px}
+/* équipe */
+.team{display:grid;gap:14px}
+.mem{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
+.av{flex:none;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--blue),#0a4f8f);display:grid;place-items:center;color:#fff;font:800 18px Orbitron,sans-serif}
+.mem b{display:block;font-size:17px}
+.mem span{color:var(--mut);font-size:14px}
+.about p{color:#33445a;margin-bottom:12px;max-width:760px}
+/* avis */
+.rbig{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:24px}
+.rbig strong{font:900 42px Orbitron,sans-serif;color:var(--ink)}
+.rbig small{display:block;color:var(--mut)}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.rev q{quotes:"« " " »";overflow-wrap:anywhere}
+.rev.snip q{font-style:italic}
+.rev .who{margin-top:auto;color:var(--mut);font-size:14px}
+.rev .who b{color:var(--ink)}
+.center{text-align:center;margin-top:26px}
+/* contact */
+.contact{display:grid;gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0}
+.box h3{font-size:18px;margin-bottom:10px}
+.box a{overflow-wrap:anywhere}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:7px 0;border-bottom:1px solid #eef2f7}
+.hours td+td{text-align:right;color:var(--mut)}
+footer{background:var(--navy);color:#b8c7da;padding:28px 0 100px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40}
+.callbar .btn{width:100%;box-shadow:0 8px 24px rgba(0,40,90,.35)}
+/* page avis */
+#pageAvis{display:none;min-height:100vh;padding:calc(var(--bh) + 16px) 0 60px}
+body.avis-ouvert #pageAvis{display:block}
+body.avis-ouvert #site{display:none}
+.pa-top{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-bottom:22px}
+.pa-h{font:600 13px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:24px 0 12px}
+.pa-list{display:grid;gap:14px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#030b14;display:grid;place-items:center;cursor:pointer;transition:opacity .45s}
+#intro svg{width:min(70vw,320px)}
+#intro .hl{opacity:0;animation:flick 1.1s .35s forwards}
+@keyframes flick{0%{opacity:0}20%{opacity:1}30%{opacity:.2}45%{opacity:1}55%{opacity:.4}70%,100%{opacity:1}}
+#intro .txt{opacity:0;transform:translate3d(0,14px,0);animation:up .6s 1.2s forwards}
+@keyframes up{to{opacity:1;transform:none}}
+#intro.out{opacity:0}
+@media(min-width:700px){.g3,.rv,.contact,.pa-list,.prod{grid-template-columns:repeat(2,minmax(0,1fr))}.team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){
+ .links{display:flex}.burger{display:none}.nav .btn{display:inline-flex}
+ .hero{padding:150px 0 96px}.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}
+ .g3,.rv,.pa-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .lx{grid-template-columns:1fr 1fr}
+ .contact{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .callbar{display:none}footer{padding-bottom:28px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.beam{opacity:1}.coat{transform:none}}
+</style>
+</head>
+<body>
+<div id="apercu">Aperçu préparé pour Mécanique JMA — ce n'est pas son site officiel</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <symbol id="carf" viewBox="0 0 200 120"><g fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M44 46l18-30c4-6 9-9 17-9h42c8 0 13 3 17 9l18 30"/>
+  <path d="M20 50c0-4 3-6 7-6h146c4 0 7 2 7 6v32c0 6-4 10-10 10H30c-6 0-10-4-10-10z"/>
+  <path d="M30 92v16h24V92M146 92v16h24V92"/>
+  <path d="M64 70h72M78 80h44"/></g>
+  <path d="M30 56l30 6-4 8-26-4z M170 56l-30 6 4 8 26-4z" fill="#fff"/></symbol>
+ <symbol id="wr" viewBox="0 0 100 100"><path fill="#9fd4ff" d="M70 6a22 22 0 0 0-21 29L8 76a9 9 0 0 0 13 13l41-41A22 22 0 0 0 92 26l-13 13-12-3-3-12 13-13a22 22 0 0 0-7-5z"/></symbol>
+ <symbol id="ti" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="#9fd4ff" stroke-width="14" stroke-dasharray="7 4"/><circle cx="50" cy="50" r="20" fill="none" stroke="#9fd4ff" stroke-width="6"/></symbol>
+ <symbol id="sn" viewBox="0 0 100 100"><g stroke="#9fd4ff" stroke-width="6" stroke-linecap="round"><path d="M50 6v88M12 28l76 44M12 72l76-44M38 14l12 12 12-12M38 86l12-12 12 12"/></g></symbol>
+ <symbol id="dr" viewBox="0 0 60 80"><path fill="#9fd4ff" d="M30 2C22 20 6 36 6 52a24 24 0 0 0 48 0C54 36 38 20 30 2z"/></symbol>
+ <symbol id="bolt" viewBox="0 0 100 100"><path fill="#9fd4ff" d="M50 4l40 23v46L50 96 10 73V27z"/><circle cx="50" cy="50" r="16" fill="#06172a"/></symbol>
+</defs></svg>
+
+<div id="intro" aria-hidden="true">
+ <svg viewBox="0 0 240 190">
+  <g class="hl"><ellipse cx="62" cy="66" rx="40" ry="16" fill="#0099ff" opacity=".35"/><ellipse cx="178" cy="66" rx="40" ry="16" fill="#0099ff" opacity=".35"/></g>
+  <use href="#carf" x="20" y="0" width="200" height="120"/>
+  <g class="txt"><text x="120" y="152" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="25" fill="#0099ff">MECANIQUE</text><text x="120" y="180" text-anchor="middle" font-family="Orbitron" font-weight="800" font-size="20" fill="#fff" letter-spacing="6">JMA</text></g>
+ </svg>
+</div>
+
+<div id="site">
+<nav class="nav"><div class="wrap">
+ <a class="brand" href="#accueil"><svg viewBox="0 0 200 120"><use href="#carf"/></svg><span>MECANIQUE<small>JMA</small></span></a>
+ <div class="links"><a href="#services">Services</a><a href="#linex">Line-X</a><a href="#antirouille">Antirouille</a><a href="#equipe">Équipe</a><a href="#avis" data-avis>Avis</a><a href="#contact">Contact</a></div>
+ <div style="display:flex;gap:8px;align-items:center">
+  <a class="btn btn-blue" href="tel:+14187743433">418 774-3433</a>
+  <button class="burger" id="burger" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></button>
+ </div>
+</div></nav>
+<div class="mmenu" id="mmenu"><a href="#services">Services</a><a href="#linex">Line-X</a><a href="#antirouille">Antirouille</a><a href="#equipe">Équipe</a><a href="#avis" data-avis>Avis</a><a href="#contact">Contact</a></div>
+
+<header class="hero" id="accueil">
+ <div class="float" aria-hidden="true"><div class="par" id="par">
+  <svg class="fl back" viewBox="0 0 100 100" style="left:-40px;top:90px;width:160px;animation-duration:24s"><use href="#ti"/></svg>
+  <svg class="fl" viewBox="0 0 100 100" style="right:8%;top:70px;width:64px"><use href="#wr"/></svg>
+  <svg class="fl" viewBox="0 0 100 100" style="left:46%;top:40px;width:34px;animation-duration:13s"><use href="#sn"/></svg>
+  <svg class="fl" viewBox="0 0 60 80" style="left:12%;bottom:60px;width:26px;opacity:.3;animation-duration:11s"><use href="#dr"/></svg>
+  <svg class="fl back" viewBox="0 0 100 100" style="right:-30px;bottom:30px;width:170px;animation-duration:26s"><use href="#ti"/></svg>
+  <svg class="fl" viewBox="0 0 100 100" style="left:54%;bottom:50px;width:40px;animation-duration:19s"><use href="#bolt"/></svg>
+  <svg class="fl back" viewBox="0 0 100 100" style="left:28%;top:46%;width:80px;animation-duration:22s"><use href="#wr"/></svg>
+  <svg class="fl" viewBox="0 0 100 100" style="right:36%;top:30%;width:22px;animation-duration:15s"><use href="#sn"/></svg>
+ </div></div>
+ <div class="wrap">
+  <div>
+   <span class="tag">Beauceville · depuis 2006</span>
+   <h1>Mécanique, carrosserie et <em>Line-X</em>, au même garage</h1>
+   <p class="lead">Mécanique JMA offre une gamme complète de services d'entretien mécanique et d'esthétique, la reconstruction de voitures accidentées, les pneus, le pare-brise, l'antirouille et le vrai revêtement Line&#8209;X.</p>
+   <div class="cta">
+    <a class="btn btn-blue" href="tel:+14187743433"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#fff" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Appeler : 418 774-3433</a>
+    <a class="btn btn-line" href="#services">Nos services</a>
+   </div>
+   <a class="rating" href="#avis" data-avis><span class="st">★★★★</span><span><b>4,1</b> sur Google · 30 avis</span></a>
+  </div>
+  <div>
+   <div class="car" id="car"><svg viewBox="0 0 240 150">
+    <g class="beam"><path d="M40 70L0 150h90z" fill="#0099ff" opacity=".18"/><path d="M200 70l40 80h-90z" fill="#0099ff" opacity=".18"/><ellipse cx="62" cy="68" rx="26" ry="10" fill="#0099ff" opacity=".5"/><ellipse cx="178" cy="68" rx="26" ry="10" fill="#0099ff" opacity=".5"/></g>
+    <use href="#carf" x="20" y="10" width="200" height="120"/></svg></div>
+   <div class="badges"><div><b>2006</b><small>au service de la Beauce</small></div><div><b>Line-X</b><small>Line-X de Beauce</small></div><div><b>Tech-Net</b><small>membre du réseau</small></div></div>
+  </div>
+ </div>
+</header>
+
+<section id="services"><div class="wrap">
+ <div class="sh"><h2>Nos <i>services</i></h2><p>De l'entretien au diagnostic, de la carrosserie à l'esthétique : on s'occupe de votre véhicule au complet.</p></div>
+ <div class="grid g3">
+  <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 100 100"><use href="#wr" style="fill:#0099ff"/></svg></div><h3>Mécanique générale</h3><ul><li>Entretiens (changement d'huile, freins, suspension, etc.)</li><li>Diagnostic de « check engine » de haute technologie par ordinateur (toute marque)</li></ul></div>
+  <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z" fill="#0099ff"/></svg></div><h3>Pièces et électronique</h3><ul><li>Démarreur à distance de toute marque</li><li>Installation d'équipements électroniques (GPS, caméra, siège chauffant, etc.)</li><li>Vente et installation de toute pièce ou équipement pour votre véhicule (pneus, système antidémarreur)</li></ul></div>
+  <div class="svc"><div class="ic"><svg width="30" height="20" viewBox="0 0 200 120"><g fill="none" stroke="#0099ff" stroke-width="12" stroke-linejoin="round"><path d="M44 46l18-30c4-6 9-9 17-9h42c8 0 13 3 17 9l18 30"/><path d="M20 50h160v40H20z"/><path d="M34 92v18M166 92v18"/></g></svg></div><h3>Réparation de carrosserie</h3><ul><li>Réparation de la carrosserie et du châssis (frame)</li><li>Reconstruction de voitures accidentées</li><li>Peinture</li><li>Remplacement et réparation de pare-brise</li></ul></div>
+  <div class="svc"><div class="ic"><svg width="22" height="28" viewBox="0 0 60 80"><path fill="#0099ff" d="M30 2C22 20 6 36 6 52a24 24 0 0 0 48 0C54 36 38 20 30 2z"/></svg></div><h3>Esthétique</h3><ul><li>Cire et cire nettoyante</li><li>Nettoyage vapeur</li><li>Traitement Aquapel</li><li>Compound (polissage)</li><li>Nettoyage intérieur et extérieur</li><li>Polissage de phares avant et arrière</li></ul></div>
+  <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#0099ff" stroke-width="14" stroke-dasharray="7 4"/></svg></div><h3>Pneus et accessoires</h3><ul><li>Un choix complet de pneus</li><li>Franchisé Automod : accessoires pour voitures, remorques, VTT, roulottes, etc.</li><li>Outils et coffres pour les entrepreneurs, et même pour les chasseurs</li></ul></div>
+  <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M3 7h18v10H3z" fill="none" stroke="#0099ff" stroke-width="2.4"/><path d="M7 12h10" stroke="#0099ff" stroke-width="2.4"/></svg></div><h3>Achat de véhicule</h3><ul><li>Contactez-nous pour l'achat d'une de nos voitures</li><li>Ou pour la réparation de la voiture de vos rêves</li></ul></div>
+ </div>
+ <p class="note">Mécanique JMA est membre du réseau Tech-Net, qui regroupe des ateliers offrant un service à la clientèle exemplaire, des services d'entretien et de réparation dignes de confiance et de la formation continue pour les mécaniciens.</p>
+</div></section>
+
+<section id="linex" class="dark"><div class="wrap lx">
+ <div>
+  <div class="sh" style="margin-bottom:18px"><h2>Line-X <i>de Beauce</i></h2></div>
+  <p>Propriétaire de Line-X de Beauce, Mécanique JMA est l'endroit idéal pour le vrai revêtement protecteur par pulvérisation, pour à peu près n'importe quoi — et de n'importe quelle couleur.</p>
+  <p>Possibilité de faire votre solage de maison pour régler définitivement les infiltrations d'eau.</p>
+  <div class="chips"><span>Boîte de camion</span><span>Voiture</span><span>Récréatif</span><span>Industriel</span><span>Agricole</span><span>Résidentiel</span><span>Plancher</span><span>Marine</span><span>Construction</span><span>Tondeuse</span><span>Voiture complète</span><span>Jantes</span><span>Banc</span><span>Remorque</span></div>
+ </div>
+ <div class="truck" id="truck"><svg viewBox="0 0 360 170" role="img" aria-label="Boîte de camion recouverte de Line-X">
+  <rect x="20" y="40" width="300" height="90" rx="6" fill="#2b4a6c"/>
+  <rect class="coat" x="20" y="40" width="300" height="90" rx="6" fill="#111"/>
+  <g class="coat" opacity=".35"><circle cx="40" cy="60" r="2" fill="#555"/><circle cx="90" cy="100" r="2" fill="#555"/><circle cx="150" cy="70" r="2" fill="#555"/><circle cx="210" cy="110" r="2" fill="#555"/><circle cx="270" cy="62" r="2" fill="#555"/><circle cx="300" cy="96" r="2" fill="#555"/></g>
+  <path d="M20 40h300M20 130h300" stroke="#9fd4ff" stroke-width="3"/>
+  <g class="spray"><path d="M10 10h22l6 12H16z" fill="#9fd4ff"/><path d="M24 22l-6 18h12z" fill="#0099ff" opacity=".6"/></g>
+  <circle cx="80" cy="140" r="22" fill="#0b2440" stroke="#9fd4ff" stroke-width="6"/><circle cx="270" cy="140" r="22" fill="#0b2440" stroke="#9fd4ff" stroke-width="6"/>
+  <text x="170" y="94" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="22" fill="#fff">LINE-X</text>
+ </svg></div>
+</div></section>
+
+<section id="antirouille"><div class="wrap">
+ <div class="sh"><h2>Antirouille <i>Otoprotec</i></h2><p>Des produits annuels, écologiques et permanents, appliqués à haute pression pour couvrir les zones à accès restreint.</p></div>
+ <div class="prod">
+  <div class="pr"><h3>55 H/P Ambre <small>Annuel</small></h3><p>Huile adhésive à base d'huile, de cire et d'additifs antioxydants pour toutes les surfaces, exposées ou non. Pas de tache d'huile sous votre véhicule : la cire se solidifie et le produit continue son travail contre la rouille durant l'année.</p></div>
+  <div class="pr"><h3>Ecotec Ambre <small>Écologique</small></h3><p>Pour les véhicules neufs, hybrides ou électriques. Huile végétale biodégradable, cire de sulfonate de calcium et antioxydants, 100 % écologique sans COV, fini semi-sec qui ne coule pas.</p></div>
+  <div class="pr"><h3>Hybritec Ambre et Noir <small>Universel</small></h3><p>L'Ambre pour les surfaces non exposées (intérieur des portières, ailes); le Noir pour les surfaces exposées, avec une meilleure insonorisation et un fini noir opaque.</p></div>
+  <div class="pr"><h3>Corrotec et Corrodex <small>Permanent</small></h3><p>Pour les surfaces de métal neuves, sans rouille. Secs au toucher mais flexibles au froid. Corrodex, à base d'eau, convient aux environnements moins ventilés : le résultat final est le même.</p></div>
+ </div>
+</div></section>
+
+<section id="equipe" style="background:#e9eff6"><div class="wrap about">
+ <div class="sh"><h2>L'<i>équipe</i></h2><p>Un garage beauceron, depuis 2006.</p></div>
+ <div class="team">
+  <div class="mem"><div class="av">MA</div><div><b>Marc-André Gobeil</b><span>Propriétaire et mécanicien</span></div></div>
+  <div class="mem"><div class="av">LG</div><div><b>Line Gagné</b><span>Secrétaire-comptable</span></div></div>
+ </div>
+</div></section>
+
+<section id="avis"><div class="wrap">
+ <div class="sh"><h2>Ce que nos <i>clients</i> disent</h2></div>
+ <div class="rbig"><strong>4,1</strong><div><div class="st">★★★★</div><small>sur Google · 30 avis</small></div></div>
+ <div class="grid rv" id="revHome"></div>
+ <div class="center"><button class="btn btn-dark" data-avis>Voir tous les avis (5)</button></div>
+</div></section>
+
+<section id="contact" style="background:#e9eff6"><div class="wrap">
+ <div class="sh"><h2>Nous <i>joindre</i></h2></div>
+ <div class="contact">
+  <div class="box"><h3>Heures d'ouverture</h3><table class="hours"><tr><td>Lundi au vendredi</td><td>8 h à 17 h</td></tr><tr><td>Samedi</td><td>Sur rendez-vous</td></tr><tr><td>Dimanche</td><td>Fermé</td></tr></table></div>
+  <div class="box"><h3>Téléphone et courriel</h3><p><a href="tel:+14187743433" style="font:800 22px Orbitron,sans-serif;text-decoration:none;color:var(--blue)">418 774-3433</a></p><p style="margin-top:8px"><a href="mailto:mecaniquejma@hotmail.com">mecaniquejma@hotmail.com</a></p><p style="margin-top:6px;color:var(--mut);font-size:14px">Administration et comptabilité : <a href="mailto:mecaniquejma@sogetel.net">mecaniquejma@sogetel.net</a></p></div>
+  <div class="box"><h3>Adresse</h3><p>95, 125e Rue<br>Beauceville (Québec) G5X 0B6</p><p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%A9canique+JMA+95+125e+Rue+Beauceville" target="_blank" rel="noopener">Itinéraire sur Google Maps →</a></p><p style="margin-top:6px"><a href="https://www.facebook.com/MecaniqueJMA/" target="_blank" rel="noopener">Page Facebook →</a></p></div>
+ </div>
+</div></section>
+<footer><div class="wrap"><span>© Mécanique JMA inc. · Beauceville</span><span><a href="tel:+14187743433">418 774-3433</a></span></div></footer>
+<div class="callbar"><a class="btn btn-blue" href="tel:+14187743433">Appeler le garage</a></div>
+</div>
+
+<div id="pageAvis"><div class="wrap">
+ <div class="pa-top"><button class="btn btn-dark" id="retour">← Retour au site</button><a class="btn btn-dark" href="https://www.google.com/maps/place/?q=place_id:ChIJUUzHYC66uUwRdeHfLR4V2jw" target="_blank" rel="noopener">Voir sur Google</a></div>
+ <div class="rbig"><strong>4,1</strong><div><div class="st">★★★★</div><small>sur Google · 30 avis — Mécanique JMA, Beauceville</small></div></div>
+ <div class="pa-h">Avis Google 5 étoiles</div><div class="pa-list" id="revAll"></div>
+ <div class="pa-h">Extraits d'avis mis en avant par Google</div><div class="pa-list" id="revSnip"></div>
+</div></div>
+
+<script>
+(function(){
+var root=document.documentElement,body=document.body;
+function setBh(){root.style.setProperty('--bh',document.getElementById('apercu').offsetHeight+'px')}
+setBh();addEventListener('resize',setBh,{passive:true});
+var R=[
+ {t:"Merci JMA pour l’inspection de mon pickup. J’ai toujours un stress d’aller dans un garage car l’automobile est un domaine que je connais pas du tout. Marc-André à su me mettre en confiance et prendre le temps de m’expliquer au fur et à mesure. Je suis heureux d’avoir trouvé JMA et d’avoir maintenant un garagiste de confiance.",a:"Samuel Marsan",d:"il y a 3 mois"},
+ {t:"Propriétaire et employés.ées super sympathique, fiables et su'a coche.  Ils font aussi la carrosserie et sont détaillants/installateurs LineX et Automod.\nT'as pas envie de te tromper? Cherche pas plus loin (et à 5 secondes du pont...de Beauceville!).",a:"Chris Maranda",d:"il y a 3 ans"}
+];
+var S=["Je recommande fortement pour leur professionnalisme!","Mécano très compétent","Pas tant cher pour les changements de pneus pis assez bon service"];
+function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]}).replace(/\n/g,'<br>')}
+function card(r){return '<div class="rev"><div class="st">★★★★★</div><q>'+esc(r.t)+'</q><div class="who"><b>'+esc(r.a)+'</b> · Avis Google, '+r.d+'</div></div>'}
+function snip(s){return '<div class="rev snip"><div class="st">★★★★★</div><q>'+esc(s)+'</q><div class="who">Extrait d\'un avis Google 5 étoiles</div></div>'}
+document.getElementById('revHome').innerHTML=R.map(card).join('')+S.map(snip).join('');
+document.getElementById('revAll').innerHTML=R.map(card).join('');
+document.getElementById('revSnip').innerHTML=S.map(snip).join('');
+var lastY=0,mm=document.getElementById('mmenu');
+function openAvis(e){if(e)e.preventDefault();lastY=scrollY;body.classList.add('avis-ouvert');mm.classList.remove('open');scrollTo(0,0)}
+document.querySelectorAll('[data-avis]').forEach(function(el){el.addEventListener('click',openAvis)});
+document.getElementById('retour').addEventListener('click',function(){body.classList.remove('avis-ouvert');scrollTo(0,lastY)});
+document.getElementById('burger').addEventListener('click',function(){mm.classList.toggle('open')});
+mm.querySelectorAll('a:not([data-avis])').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open')})});
+var truck=document.getElementById('truck');
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('go');if(e.target===truck)setTimeout(function(){truck.classList.add('done')},2100);io.unobserve(e.target)}})},{threshold:.35});
+io.observe(truck);
+var par=document.getElementById('par'),tk=false;
+addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var y=scrollY;if(y<900)par.style.setProperty('--py',(y*.25)+'px');tk=false})},{passive:true});
+var car=document.getElementById('car');
+var intro=document.getElementById('intro'),seen=false;
+try{seen=sessionStorage.getItem('jmaIntro')==='1'}catch(e){}
+function done(){car.classList.add('on')}
+function endIntro(){if(!intro)return;var i=intro;intro=null;i.classList.add('out');setTimeout(function(){i.remove()},460);try{sessionStorage.setItem('jmaIntro','1')}catch(e){}done()}
+if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){intro.remove();intro=null;done()}else{intro.addEventListener('click',endIntro);setTimeout(endIntro,2200)}
+})();
+</script>
+</body>
+</html>
