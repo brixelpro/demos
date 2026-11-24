@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MCC Mécanique — Spécialiste en mécanique européenne à Magog</title>
+<meta name="description" content="Garage familial à Magog spécialisé dans l'entretien et la réparation des voitures européennes haut de gamme : Audi, BMW, Porsche, Mercedes-Benz, Ferrari et plus. +35 ans d'expérience. 819-769-0244.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,600;0,800;1,800;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"MCC Mécanique","description":"Garage familial spécialisé dans l'entretien et la réparation des voitures européennes haut de gamme.","telephone":"+1-819-769-0244","email":"m.c.c.mecanique@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"2385, rue Sherbrooke","addressLocality":"Magog","addressRegion":"QC","postalCode":"J1X 4L8","addressCountry":"CA"},"openingHours":"Mo-Fr 08:00-17:00","areaServed":"Estrie","foundingDate":"2015","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"52"}}
+</script>
+<style>
+:root{--bh:32px;--bg:#0c0d0f;--bg2:#14161a;--card:#1a1d22;--line:#2a2e35;--txt:#eef0f3;--mut:#a7aeb8;--red:#d8312c;--gold:#f2c230;--grn:#1f9a4b;--chrome:linear-gradient(180deg,#ffffff 0%,#c9ced6 38%,#7d8590 52%,#e8ebef 70%,#9aa1ab 100%)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bh) + 70px)}
+body{background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-serif;padding-top:var(--bh);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,svg{max-width:100%}
+h1,h2,h3{font-family:Saira,sans-serif;line-height:1.1;overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+#apercu{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px}
+/* nav */
+.nav{position:fixed;top:var(--bh);left:0;right:0;z-index:50;background:rgba(12,13,15,.94);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;text-decoration:none;min-width:0}
+.brand svg{height:40px;width:auto}
+.links{display:none;gap:26px;align-items:center}
+.links a{text-decoration:none;font-weight:500;color:var(--mut);font-size:15px}
+.links a:hover{color:#fff}
+.right{display:flex;align-items:center;gap:10px}
+.lang{background:none;border:1px solid #444b55;color:#fff;font:600 13px Inter,sans-serif;border-radius:6px;padding:6px 10px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:600;border-radius:8px;padding:14px 22px;font-size:16px;cursor:pointer;border:0;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-red{background:var(--red);color:#fff}
+.btn-ghost{border:1px solid #4a515c;color:#fff;background:transparent}
+.nav .btn{padding:9px 14px;font-size:14px;display:none}
+.burger{background:none;border:0;color:#fff;width:40px;height:40px;cursor:pointer}
+.mmenu{display:none;position:fixed;top:calc(var(--bh) + 64px);left:0;right:0;z-index:49;background:#101215;border-bottom:1px solid var(--line);padding:8px 20px 18px}
+.mmenu.open{display:block}
+.mmenu a{display:block;padding:12px 0;text-decoration:none;border-bottom:1px solid var(--line);font-weight:500}
+/* hero */
+.hero{position:relative;padding:118px 0 64px;overflow:hidden;background:radial-gradient(ellipse at 70% 30%,#2a2f37 0%,#121417 55%,#0c0d0f 100%)}
+.stripes{position:absolute;left:0;right:0;top:64px;height:6px;display:flex}
+.stripes i{flex:1}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.fl{position:absolute;opacity:.16;animation:drift 18s ease-in-out infinite alternate;will-change:transform}
+.fl.back{opacity:.09;filter:blur(1.5px)}
+.par{position:absolute;inset:0;transform:translate3d(0,var(--py,0px),0)}
+@keyframes drift{from{transform:translate3d(0,0,0) rotate(0)}to{transform:translate3d(14px,-22px,0) rotate(24deg)}}
+.spin{animation:spin 26s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:36px}
+.kicker{display:inline-flex;align-items:center;gap:8px;font:600 13px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.kicker b{width:26px;height:3px;background:linear-gradient(90deg,#000 33%,var(--red) 33% 66%,var(--gold) 66%)}
+.hero h1{font-size:clamp(34px,8.5vw,64px);font-weight:800;font-style:italic;margin:14px 0 16px;letter-spacing:-.01em}
+.hero h1 span{background:var(--chrome);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:#c9ced6;font-size:18px;max-width:560px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03);font-size:15px;text-decoration:none;cursor:pointer}
+.rating .st{color:var(--gold);letter-spacing:2px}
+.carcard{position:relative;border:1px solid var(--line);border-radius:18px;padding:24px;background:linear-gradient(160deg,#1c2026,#121417);min-width:0}
+.carcard h3{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-family:Inter,sans-serif;font-weight:600;margin-bottom:14px}
+.brands{display:flex;flex-wrap:wrap;gap:8px}
+.brands span{border:1px solid #3a4049;border-radius:999px;padding:7px 13px;font:600 14px Saira,sans-serif;letter-spacing:.03em;background:#0f1114}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:20px}
+.facts div{background:#0f1114;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.facts b{display:block;font:800 italic 26px Saira,sans-serif;background:var(--chrome);-webkit-background-clip:text;background-clip:text;color:transparent}
+.facts small{color:var(--mut);font-size:12px;line-height:1.3;display:block}
+/* sections */
+section{padding:72px 0}
+.sec-h{margin-bottom:34px}
+.sec-h h2{font-size:clamp(28px,6vw,44px);font-weight:800;font-style:italic}
+.sec-h p{color:var(--mut);margin-top:10px;max-width:640px}
+.alt{background:var(--bg2)}
+.grid{display:grid;gap:16px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0;opacity:0;transform:translate3d(0,30px,0);transition:opacity .6s,transform .6s}
+.svc.in{opacity:1;transform:none}
+.svc .ic{width:46px;height:46px;border-radius:10px;background:#0f1114;border:1px solid #333a43;display:grid;place-items:center;margin-bottom:14px}
+.svc h3{font-size:21px;margin-bottom:6px}
+.svc p{color:var(--mut);font-size:15px;margin-bottom:10px}
+.svc ul{list-style:none}
+.svc li{padding:7px 0;border-top:1px dashed #30353d;font-size:15px}
+.svc li:before{content:"";display:inline-block;width:7px;height:7px;background:var(--red);transform:skewX(-20deg);margin-right:10px;vertical-align:middle}
+.svc.track{border-color:#5a2a28;background:linear-gradient(160deg,#241615,#1a1d22 60%)}
+.more{margin-top:18px;color:var(--mut)}
+/* tach */
+.about{display:grid;gap:36px;align-items:center}
+.tach{max-width:360px;margin:0 auto;width:100%}
+.needle{transform-origin:150px 150px;transform:rotate(-120deg);transition:transform 1.8s cubic-bezier(.2,.9,.25,1.05)}
+.tach.go .needle{transform:rotate(95deg)}
+.tachnum{opacity:0;transition:opacity .6s 1.2s}
+.tach.go .tachnum{opacity:1}
+.team{display:grid;gap:12px;margin-top:22px}
+.team div{border-left:3px solid var(--red);background:var(--card);padding:12px 16px;border-radius:0 10px 10px 0}
+.team b{font-family:Saira,sans-serif;font-size:18px}
+.team span{display:block;color:var(--mut);font-size:14px}
+.about p{color:#cfd3da;margin-bottom:14px}
+/* avis */
+.rbig{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-bottom:28px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.rbig strong{font:800 italic 46px Saira,sans-serif}
+.rbig .st{color:var(--gold);font-size:22px;letter-spacing:3px}
+.rbig small{color:var(--mut);display:block}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.rev .st{color:var(--gold);letter-spacing:2px}
+.rev q{quotes:"« " " »";font-size:16px;color:#e3e6ea;overflow-wrap:anywhere}
+.rev .who{color:var(--mut);font-size:14px;margin-top:auto}
+.rev .who b{color:#fff;font-weight:600}
+.rev.snip q{font-style:italic}
+.center{text-align:center;margin-top:28px}
+/* contact */
+.contact{display:grid;gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0}
+.box h3{font-size:20px;margin-bottom:10px}
+.box p,.box a{overflow-wrap:anywhere}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:8px 0;border-bottom:1px dashed #30353d}
+.hours td+td{text-align:right;color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:30px 0 100px;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40}
+.callbar .btn{width:100%;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+/* page avis */
+#pageAvis{display:none;position:relative;z-index:60;background:var(--bg);min-height:100vh;padding:calc(var(--bh) + 16px) 0 60px}
+body.avis-ouvert #pageAvis{display:block}
+body.avis-ouvert #site{display:none}
+.pa-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:24px}
+.pa-list{display:grid;gap:14px}
+.pa-h{font:600 13px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:26px 0 12px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#0c0d0f;display:grid;place-items:center;cursor:pointer}
+#intro .door{position:absolute;inset:0;background:repeating-linear-gradient(180deg,#2b3038 0 26px,#1d2127 26px 30px);transform:translate3d(0,0,0);transition:transform 1s cubic-bezier(.7,0,.3,1)}
+#intro.up .door{transform:translate3d(0,-100%,0)}
+#intro .lg{width:min(78vw,420px);opacity:0;transform:scale(.9);transition:opacity .5s .55s,transform .8s .55s}
+#intro.up .lg{opacity:1;transform:none}
+#intro.out{opacity:0;transition:opacity .45s}
+.shine{animation:shine 1.4s 1.1s ease-out both}
+@keyframes shine{from{transform:translateX(-160px)}to{transform:translateX(560px)}}
+html:not([lang=en]) .en{display:none!important}
+html[lang=en] .fr{display:none!important}
+@media(min-width:700px){
+ .grid.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .grid.rv{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .contact{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .pa-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(min-width:1024px){
+ .links{display:flex}.burger{display:none}.nav .btn{display:inline-flex}
+ .hero{padding:150px 0 96px}
+ .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center}
+ .grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .grid.rv{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .about{grid-template-columns:.8fr 1.2fr}
+ .contact{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .pa-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .callbar{display:none}
+ footer{padding-bottom:30px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.svc{opacity:1;transform:none}.needle{transform:rotate(95deg)}.tachnum{opacity:1}}
+</style>
+</head>
+<body>
+<div id="apercu">Aperçu préparé pour MCC Mécanique — ce n'est pas son site officiel · Preview prepared for MCC Mécanique — not their official website</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <linearGradient id="chr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#cfd4db"/><stop offset=".52" stop-color="#77808b"/><stop offset=".72" stop-color="#eef0f3"/><stop offset="1" stop-color="#9aa1ab"/></linearGradient>
+  <symbol id="logo" viewBox="0 0 400 84">
+   <g transform="skewX(-14) translate(14 0)">
+    <rect x="4" y="6" width="120" height="9" fill="#111"/><rect x="4" y="15" width="120" height="9" fill="#d8312c"/><rect x="4" y="24" width="120" height="9" fill="#f2c230"/>
+    <rect x="4" y="38" width="22" height="26" fill="#1f9a4b"/><rect x="26" y="38" width="22" height="26" fill="#fff"/><rect x="48" y="38" width="22" height="26" fill="#d8312c"/>
+    <path d="M78 38h46v26H78z" fill="url(#chr)"/>
+   </g>
+   <text x="140" y="60" font-family="Saira,sans-serif" font-weight="900" font-style="italic" font-size="64" fill="url(#chr)" letter-spacing="-1">MCC</text>
+   <text x="148" y="80" font-family="Saira,sans-serif" font-weight="600" font-size="15" fill="#c5cbd2" letter-spacing="6">MÉCANIQUE</text>
+  </symbol>
+  <symbol id="gear" viewBox="0 0 100 100"><path fill="#cfd4db" d="M43 4h14l2 12a35 35 0 0 1 9 4l10-7 10 10-7 10a35 35 0 0 1 4 9l12 2v14l-12 2a35 35 0 0 1-4 9l7 10-10 10-10-7a35 35 0 0 1-9 4l-2 12H43l-2-12a35 35 0 0 1-9-4l-10 7-10-10 7-10a35 35 0 0 1-4-9L3 57V43l12-2a35 35 0 0 1 4-9l-7-10 10-10 10 7a35 35 0 0 1 9-4zM50 32a18 18 0 1 0 0 36 18 18 0 0 0 0-36z"/></symbol>
+  <symbol id="wrench" viewBox="0 0 100 100"><path fill="#cfd4db" d="M70 6a22 22 0 0 0-21 29L8 76a9 9 0 0 0 13 13l41-41A22 22 0 0 0 92 26l-13 13-12-3-3-12 13-13a22 22 0 0 0-7-5z"/></symbol>
+  <symbol id="piston" viewBox="0 0 60 100"><rect x="6" y="4" width="48" height="34" rx="6" fill="#cfd4db"/><rect x="6" y="12" width="48" height="3" fill="#555"/><rect x="6" y="20" width="48" height="3" fill="#555"/><path d="M24 38h12l6 44H18z" fill="#cfd4db"/><circle cx="30" cy="86" r="11" fill="none" stroke="#cfd4db" stroke-width="6"/></symbol>
+  <symbol id="tire" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="#cfd4db" stroke-width="14" stroke-dasharray="7 4"/><circle cx="50" cy="50" r="22" fill="none" stroke="#cfd4db" stroke-width="6"/><circle cx="50" cy="50" r="5" fill="#cfd4db"/></symbol>
+  <symbol id="drop" viewBox="0 0 60 80"><path fill="#f2c230" d="M30 2C22 20 6 36 6 52a24 24 0 0 0 48 0C54 36 38 20 30 2z"/></symbol>
+  <symbol id="plug" viewBox="0 0 40 100"><rect x="12" y="2" width="16" height="22" rx="3" fill="#cfd4db"/><rect x="6" y="24" width="28" height="30" rx="4" fill="#cfd4db"/><rect x="12" y="54" width="16" height="30" fill="#9aa1ab"/><path d="M20 84v12h10" stroke="#cfd4db" stroke-width="4" fill="none"/></symbol>
+  <symbol id="star" viewBox="0 0 20 20"><path fill="#f2c230" d="M10 1l2.7 5.7 6.2.8-4.6 4.3 1.2 6.2L10 15l-5.5 3 1.2-6.2L1.1 7.5l6.2-.8z"/></symbol>
+ </defs>
+</svg>
+
+<div id="intro" aria-hidden="true"><svg class="lg" viewBox="0 0 400 84"><use href="#logo"/><clipPath id="cp"><rect x="0" y="0" width="400" height="84"/></clipPath><g clip-path="url(#cp)"><rect class="shine" x="0" y="0" width="60" height="84" fill="rgba(255,255,255,.35)" transform="skewX(-20)"/></g></svg><div class="door"></div></div>
+
+<div id="site">
+<nav class="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" aria-label="MCC Mécanique"><svg viewBox="0 0 400 84"><use href="#logo"/></svg></a>
+  <div class="links">
+   <a href="#services"><span class="fr">Services</span><span class="en">Services</span></a>
+   <a href="#apropos"><span class="fr">À propos</span><span class="en">About us</span></a>
+   <a href="#avis" data-avis><span class="fr">Avis</span><span class="en">Reviews</span></a>
+   <a href="#contact"><span class="fr">Contact</span><span class="en">Contact</span></a>
+  </div>
+  <div class="right">
+   <button class="lang" id="langBtn" aria-label="Changer de langue">EN</button>
+   <a class="btn btn-red" href="tel:+18197690244"><span class="fr">819-769-0244</span><span class="en">819-769-0244</span></a>
+   <button class="burger" id="burger" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+ </div>
+</nav>
+<div class="mmenu" id="mmenu">
+ <a href="#services"><span class="fr">Services</span><span class="en">Services</span></a>
+ <a href="#apropos"><span class="fr">À propos</span><span class="en">About us</span></a>
+ <a href="#avis" data-avis><span class="fr">Avis</span><span class="en">Reviews</span></a>
+ <a href="#contact"><span class="fr">Contact</span><span class="en">Contact</span></a>
+</div>
+
+<header class="hero" id="accueil">
+ <div class="stripes"><i style="background:#111"></i><i style="background:#d8312c"></i><i style="background:#f2c230"></i><i style="background:#1f9a4b"></i><i style="background:#fff"></i><i style="background:#d8312c"></i></div>
+ <div class="float" aria-hidden="true"><div class="par" id="par">
+  <svg class="fl back" style="left:-30px;top:120px;width:150px;animation-duration:22s" viewBox="0 0 100 100"><use href="#gear"/></svg>
+  <svg class="fl" style="right:6%;top:90px;width:70px;animation-duration:16s" viewBox="0 0 100 100"><use href="#wrench"/></svg>
+  <svg class="fl back" style="right:-40px;bottom:40px;width:190px;animation-duration:25s" viewBox="0 0 100 100"><use href="#tire"/></svg>
+  <svg class="fl" style="left:44%;bottom:30px;width:40px;animation-duration:14s" viewBox="0 0 60 100"><use href="#piston"/></svg>
+  <svg class="fl" style="left:8%;bottom:70px;width:28px;opacity:.28;animation-duration:12s" viewBox="0 0 60 80"><use href="#drop"/></svg>
+  <svg class="fl" style="right:30%;top:60px;width:26px;animation-duration:19s" viewBox="0 0 40 100"><use href="#plug"/></svg>
+  <svg class="fl" style="left:56%;top:46%;width:60px;animation-duration:20s" viewBox="0 0 100 100"><use href="#gear"/></svg>
+  <svg class="fl back" style="left:22%;top:38%;width:90px;animation-duration:24s" viewBox="0 0 100 100"><use href="#wrench"/></svg>
+ </div></div>
+ <div class="wrap">
+  <div>
+   <span class="kicker"><b></b><span class="fr">Garage familial · Magog, Estrie</span><span class="en">Family-owned garage · Magog, Eastern Townships</span></span>
+   <h1 class="fr">Votre spécialiste en <span>mécanique européenne</span> à Magog</h1>
+   <h1 class="en">Your <span>European car</span> specialist in Magog</h1>
+   <p class="lead fr">+35 ans d'expérience. Réparation de qualité. Satisfaction du client. Un service sur mesure, précis et attentionné — parce que chaque véhicule mérite le meilleur soin.</p>
+   <p class="lead en">35+ years of experience. Quality repairs. Customer satisfaction. Personalized, precise and attentive service — because every vehicle deserves the best care.</p>
+   <div class="cta">
+    <a class="btn btn-red" href="tel:+18197690244"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#fff" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span class="fr">Appeler : 819-769-0244</span><span class="en">Call: 819-769-0244</span></a>
+    <a class="btn btn-ghost" href="#services"><span class="fr">Nos services</span><span class="en">Our services</span></a>
+   </div>
+   <a class="rating" href="#avis" data-avis><span class="st">★★★★★</span><span class="fr"><b>4,9</b> sur Google · 52 avis</span><span class="en"><b>4.9</b> on Google · 52 reviews</span></a>
+  </div>
+  <div class="carcard">
+   <h3 class="fr">Les marques qu'on connaît par cœur</h3><h3 class="en">Brands we know inside out</h3>
+   <div class="brands"><span>Audi</span><span>BMW</span><span>Ferrari</span><span>Jaguar</span><span>Lamborghini</span><span>Land Rover</span><span>Maserati</span><span>Mercedes-Benz</span><span>Mini</span><span>Porsche</span></div>
+   <div class="facts">
+    <div><b>35+</b><small class="fr">ans d'expérience</small><small class="en">years of experience</small></div>
+    <div><b>2015</b><small class="fr">ouverture à Magog</small><small class="en">opened in Magog</small></div>
+    <div><b>4,9</b><small class="fr">★ sur Google</small><small class="en">★ on Google</small></div>
+   </div>
+  </div>
+ </div>
+</header>
+
+<section id="services">
+ <div class="wrap">
+  <div class="sec-h"><h2 class="fr">Nos services offerts</h2><h2 class="en">What we offer</h2>
+   <p class="fr">De l'entretien courant à la préparation pour la piste, on traite votre voiture européenne avec le respect qu'elle mérite.</p>
+   <p class="en">From routine maintenance to track preparation, we treat your European car with the respect it deserves.</p></div>
+  <div class="grid g3">
+   <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 60 80"><use href="#drop"/></svg></div>
+    <h3 class="fr">Entretien courant</h3><h3 class="en">Routine maintenance</h3>
+    <p class="fr">Tout ce qu'il faut pour garder votre voiture en santé au quotidien :</p><p class="en">Everything you need to keep your car healthy every day:</p>
+    <ul class="fr"><li>Changement d'huile et vidange</li><li>Vérification préventive (check-up)</li><li>Batterie</li></ul>
+    <ul class="en"><li>Oil change and fluid service</li><li>Preventive inspection (check-up)</li><li>Battery service</li></ul></div>
+   <div class="svc"><div class="ic"><svg width="22" height="30" viewBox="0 0 60 100"><use href="#piston"/></svg></div>
+    <h3 class="fr">Moteur et performance</h3><h3 class="en">Engine &amp; performance</h3>
+    <p class="fr">Pour assurer puissance et fiabilité :</p><p class="en">Ensure power and reliability:</p>
+    <ul class="fr"><li>Mise au point (tune-up)</li><li>Système d'injection</li><li>Moteur, transmission et boîte de vitesses</li></ul>
+    <ul class="en"><li>Tune-ups</li><li>Fuel injection system service</li><li>Engine, transmission and gearbox repair</li></ul></div>
+   <div class="svc"><div class="ic"><svg width="28" height="28" viewBox="0 0 100 100"><use href="#tire"/></svg></div>
+    <h3 class="fr">Pneus et alignement</h3><h3 class="en">Tires &amp; alignment</h3>
+    <p class="fr">Pour rouler en sécurité, été comme hiver :</p><p class="en">Drive safely all year round:</p>
+    <ul class="fr"><li>Vente et installation de pneus</li><li>Alignement des roues</li></ul>
+    <ul class="en"><li>Tire sales and installation</li><li>Wheel alignment</li></ul></div>
+   <div class="svc"><div class="ic"><svg width="28" height="28" viewBox="0 0 100 100"><use href="#gear"/></svg></div>
+    <h3 class="fr">Freins et suspension</h3><h3 class="en">Brakes &amp; suspension</h3>
+    <p class="fr">Une conduite stable et sécuritaire :</p><p class="en">For a stable and safe ride:</p>
+    <ul class="fr"><li>Freins</li><li>Suspension et direction</li></ul>
+    <ul class="en"><li>Brakes</li><li>Suspension and steering</li></ul></div>
+   <div class="svc"><div class="ic"><svg width="16" height="30" viewBox="0 0 40 100"><use href="#plug"/></svg></div>
+    <h3 class="fr">Confort et habitacle</h3><h3 class="en">Comfort &amp; interior</h3>
+    <p class="fr">Pour améliorer votre expérience de conduite :</p><p class="en">Enhance your driving experience:</p>
+    <ul class="fr"><li>Air climatisé</li><li>Diagnostic de pannes</li></ul>
+    <ul class="en"><li>Air conditioning service</li><li>Vehicle diagnostics</li></ul></div>
+   <div class="svc track"><div class="ic"><svg width="28" height="20" viewBox="0 0 28 20"><rect width="28" height="20" fill="#fff"/><g fill="#111"><rect width="7" height="5"/><rect x="14" width="7" height="5"/><rect x="7" y="5" width="7" height="5"/><rect x="21" y="5" width="7" height="5"/><rect y="10" width="7" height="5"/><rect x="14" y="10" width="7" height="5"/><rect x="7" y="15" width="7" height="5"/><rect x="21" y="15" width="7" height="5"/></g></svg></div>
+    <h3 class="fr">Voitures de piste</h3><h3 class="en">Track cars</h3>
+    <p class="fr">Services mécaniques spécialisés pour les voitures de course de type lapping, BMW série M et Porsche :</p><p class="en">Expert mechanical services for lapping and track race cars, BMW M Series and Porsche:</p>
+    <ul class="fr"><li>Alignement de performance</li><li>Installation ou réglage de suspensions sport</li><li>Mise à niveau du système de freinage</li><li>Vérification et remplacement des fluides haute performance</li></ul>
+    <ul class="en"><li>Performance alignment</li><li>Sport suspension installation or adjustment</li><li>Brake system upgrades</li><li>High-performance fluid inspection and replacement</li></ul></div>
+  </div>
+  <p class="more fr">Et plus encore! Une question? Appelez-nous au <a href="tel:+18197690244">819-769-0244</a>.</p>
+  <p class="more en">And more! Questions? Call us at <a href="tel:+18197690244">819-769-0244</a>.</p>
+ </div>
+</section>
+
+<section id="apropos" class="alt">
+ <div class="wrap about">
+  <div class="tach" id="tach">
+   <svg viewBox="0 0 300 300" role="img" aria-label="+35 ans d'expérience">
+    <circle cx="150" cy="150" r="140" fill="#0f1114" stroke="url(#chr)" stroke-width="6"/>
+    <path d="M58 228A120 120 0 1 1 242 228" fill="none" stroke="#2a2e35" stroke-width="14"/>
+    <path d="M214 74A120 120 0 0 1 242 228" fill="none" stroke="#d8312c" stroke-width="14"/>
+    <g fill="#c5cbd2" font-family="Saira" font-size="18" font-weight="600" text-anchor="middle">
+     <text x="62" y="208">0</text><text x="46" y="142">1</text><text x="66" y="80">2</text><text x="120" y="48">3</text><text x="182" y="48">4</text><text x="236" y="80">5</text><text x="256" y="142">6</text><text x="240" y="208">7</text>
+    </g>
+    <text x="150" y="112" text-anchor="middle" fill="#7d8590" font-family="Inter" font-size="11" letter-spacing="2">x1000 RPM</text>
+    <g class="needle"><path d="M146 150L150 42 154 150z" fill="#d8312c"/></g>
+    <circle cx="150" cy="150" r="14" fill="url(#chr)"/>
+    <g class="tachnum"><text x="150" y="222" text-anchor="middle" font-family="Saira" font-weight="900" font-style="italic" font-size="44" fill="#fff">+35</text>
+    <text x="150" y="246" text-anchor="middle" font-family="Inter" font-size="13" fill="#a7aeb8" class="fr">ANS D'EXPÉRIENCE</text><text x="150" y="246" text-anchor="middle" font-family="Inter" font-size="13" fill="#a7aeb8" class="en">YEARS OF EXPERIENCE</text></g>
+   </svg>
+  </div>
+  <div>
+   <div class="sec-h" style="margin-bottom:18px"><h2 class="fr">Notre savoir-faire</h2><h2 class="en">Our expertise</h2></div>
+   <p class="fr">Depuis plus de 35 ans, Marco Charpentier met son expertise au service de la mécanique automobile haut de gamme. Son parcours l'a mené au sein d'équipes prestigieuses telles que Audi, BMW et Ferrari Québec, où il a perfectionné ses compétences techniques et développé une compréhension unique des exigences propres aux voitures européennes de luxe.</p>
+   <p class="en">For over 35 years, Marco Charpentier has dedicated his expertise to high-end automotive mechanics. His career led him to work with prestigious brands such as Audi, BMW and Ferrari Québec, where he refined his technical skills and developed a deep understanding of the unique requirements of European luxury vehicles.</p>
+   <p class="fr">Depuis 2015, le garage MCC Mécanique est une entreprise familiale enracinée à Magog, la ville natale de Marco. Notre mission : un service professionnel et personnalisé, des réparations fiables et des pièces de qualité — toujours à un prix compétitif.</p>
+   <p class="en">Since 2015, MCC Mécanique has been a family-owned business rooted in Magog, Marco's hometown. Our mission: professional, personalized service, reliable repairs and high-quality parts — always at a competitive price.</p>
+   <div class="team">
+    <div><b>Marco</b><span class="fr">Fondateur, passionné de mécanique automobile européenne</span><span class="en">Founder, lifelong European car enthusiast</span></div>
+    <div><b>Christophe</b><span class="fr">Son fils, diplômé en mécanique automobile depuis 2015</span><span class="en">His son, certified automotive technician since 2015</span></div>
+    <div><b>Nathalie</b><span class="fr">Gestion et service à la clientèle, pour un accueil chaleureux</span><span class="en">Management and customer service, for a warm welcome</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="wrap">
+  <div class="sec-h"><h2 class="fr">Ce que nos clients disent</h2><h2 class="en">What our customers say</h2></div>
+  <div class="rbig"><strong>4,9</strong><div><div class="st">★★★★★</div><small class="fr">sur Google · 52 avis</small><small class="en">on Google · 52 reviews</small></div></div>
+  <div class="grid rv" id="revHome"></div>
+  <div class="center"><button class="btn btn-ghost" data-avis><span class="fr">Voir tous les avis (6)</span><span class="en">See all reviews (6)</span></button></div>
+ </div>
+</section>
+
+<section id="contact" class="alt">
+ <div class="wrap">
+  <div class="sec-h"><h2 class="fr">Votre voiture mérite les meilleurs soins — passez nous voir!</h2><h2 class="en">Treat your car to the best — we'll take care of the rest!</h2></div>
+  <div class="contact">
+   <div class="box"><h3 class="fr">Heures d'ouverture</h3><h3 class="en">Business hours</h3>
+    <table class="hours"><tr><td class="fr">Lundi au vendredi</td><td class="en">Monday to Friday</td><td><span class="fr">8 h à 17 h</span><span class="en">8 am to 5 pm</span></td></tr></table></div>
+   <div class="box"><h3 class="fr">Nous joindre</h3><h3 class="en">Contact us</h3>
+    <p><a href="tel:+18197690244" style="font:800 italic 26px Saira,sans-serif;text-decoration:none">819-769-0244</a></p>
+    <p><a href="mailto:m.c.c.mecanique@hotmail.com">m.c.c.mecanique@hotmail.com</a></p>
+    <p style="color:var(--mut);margin-top:8px" class="fr">Questions? Rendez-vous? Communiquez avec nous dès aujourd'hui.</p><p style="color:var(--mut);margin-top:8px" class="en">Questions? Appointments? Get in touch today.</p></div>
+   <div class="box"><h3 class="fr">Adresse</h3><h3 class="en">Address</h3>
+    <p>2385, rue Sherbrooke<br>Magog (Québec) J1X 4L8</p>
+    <p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&amp;query=MCC+M%C3%A9canique+2385+rue+Sherbrooke+Magog" target="_blank" rel="noopener"><span class="fr">Itinéraire sur Google Maps →</span><span class="en">Directions on Google Maps →</span></a></p></div>
+  </div>
+ </div>
+</section>
+
+<footer><div class="wrap"><span>© MCC Mécanique · Magog (Québec)</span><span><a href="tel:+18197690244">819-769-0244</a> · <a href="mailto:m.c.c.mecanique@hotmail.com">m.c.c.mecanique@hotmail.com</a></span></div></footer>
+<div class="callbar"><a class="btn btn-red" href="tel:+18197690244"><span class="fr">Appeler le garage</span><span class="en">Call the garage</span></a></div>
+</div>
+
+<div id="pageAvis">
+ <div class="wrap">
+  <div class="pa-top">
+   <button class="btn btn-ghost" id="retour"><span class="fr">← Retour au site</span><span class="en">← Back to site</span></button>
+   <a class="btn btn-ghost" href="https://www.google.com/maps/place/?q=place_id:ChIJiy4lQNc3tkwRmxWQFyxDp5M" target="_blank" rel="noopener"><span class="fr">Voir sur Google</span><span class="en">See on Google</span></a>
+  </div>
+  <div class="rbig"><strong>4,9</strong><div><div class="st">★★★★★</div><small class="fr">sur Google · 52 avis — MCC Mécanique, Magog</small><small class="en">on Google · 52 reviews — MCC Mécanique, Magog</small></div></div>
+  <div class="pa-h fr">Avis Google</div><div class="pa-h en">Google reviews</div>
+  <div class="pa-list" id="revAll"></div>
+  <div class="pa-h fr">Extraits d'avis mis en avant par Google</div><div class="pa-h en">Review highlights shown by Google</div>
+  <div class="pa-list" id="revSnip"></div>
+ </div>
+</div>
+
+<script>
+(function(){
+var root=document.documentElement,body=document.body;
+function setBh(){var h=document.getElementById('apercu').offsetHeight;root.style.setProperty('--bh',h+'px')}
+setBh();addEventListener('resize',setBh,{passive:true});
+var R=[
+ {t:"Super service, y compris le raccompagnement, Marco a su mettre le doigt juste sur le probleme electrique de ma x1, super satisfait de cette équipe, allez y les yeux fermés !!!",a:"Calou Deglons",d:"il y a 2 ans",de:"2 years ago"},
+ {t:"Toute l’équipe est excellente!  Une famille tissée serrée.  Un service rapide, efficace et toujours juste!  J’y vais depuis plusieurs années pour ma Audi.  Un garage à recommander.",a:"J Robert G Adams",d:"il y a 2 ans",de:"2 years ago"},
+ {t:"Je suis arrivé sans rendez-vous j'avais un problème avec mon système de chauffage climatisation et le propriétaire fut assez gentil pour prendre le temps de m'aider à trouver la solution afin que celui-ci fonctionne. MERCI!",a:"j-f bourgeois",d:"il y a 2 ans",de:"2 years ago"}
+];
+var S=["Mécaniciens très compétents, sympathiques et en qui on peut avoir confiance.","Ma BMW roule a merveille.","Donne les bonnes explications."];
+function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+function card(r){return '<div class="rev"><div class="st">★★★★★</div><q>'+esc(r.t)+'</q><div class="who"><b>'+esc(r.a)+'</b> · <span class="fr">Avis Google, '+r.d+'</span><span class="en">Google review, '+r.de+'</span></div></div>'}
+function snip(s){return '<div class="rev snip"><div class="st">★★★★★</div><q>'+esc(s)+'</q><div class="who"><span class="fr">Extrait d\'un avis Google 5 étoiles</span><span class="en">Excerpt from a 5-star Google review</span></div></div>'}
+document.getElementById('revHome').innerHTML=R.map(card).join('')+S.map(snip).join('');
+document.getElementById('revAll').innerHTML=R.map(card).join('');
+document.getElementById('revSnip').innerHTML=S.map(snip).join('');
+/* page avis */
+var lastY=0;
+function openAvis(e){if(e)e.preventDefault();lastY=scrollY;body.classList.add('avis-ouvert');document.getElementById('mmenu').classList.remove('open');scrollTo(0,0)}
+function closeAvis(){body.classList.remove('avis-ouvert');scrollTo(0,lastY)}
+document.querySelectorAll('[data-avis]').forEach(function(el){el.addEventListener('click',openAvis)});
+document.getElementById('retour').addEventListener('click',closeAvis);
+/* menu */
+var mm=document.getElementById('mmenu');
+document.getElementById('burger').addEventListener('click',function(){mm.classList.toggle('open')});
+mm.querySelectorAll('a:not([data-avis])').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open')})});
+/* langue */
+var lb=document.getElementById('langBtn');
+lb.addEventListener('click',function(){var en=root.lang!=='en';root.lang=en?'en':'fr';lb.textContent=en?'FR':'EN';document.title=en?'MCC Mécanique — European car specialist in Magog':'MCC Mécanique — Spécialiste en mécanique européenne à Magog'});
+/* apparitions */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(e.target.id==='tach'?'go':'in');io.unobserve(e.target)}})},{threshold:.25});
+document.querySelectorAll('.svc,#tach').forEach(function(el,i){if(el.classList.contains('svc'))el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+/* parallaxe */
+var par=document.getElementById('par'),tick=false;
+addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=scrollY;if(y<900)par.style.setProperty('--py',(y*.25)+'px');tick=false})},{passive:true});
+/* intro */
+var intro=document.getElementById('intro'),seen=false;
+try{seen=sessionStorage.getItem('mccIntro')==='1'}catch(e){}
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function endIntro(){if(!intro)return;intro.classList.add('out');var i=intro;intro=null;setTimeout(function(){i.remove()},460);try{sessionStorage.setItem('mccIntro','1')}catch(e){}}
+if(seen||reduce){intro.remove();intro=null}else{
+ requestAnimationFrame(function(){requestAnimationFrame(function(){intro&&intro.classList.add('up')})});
+ intro.addEventListener('click',endIntro);setTimeout(endIntro,2300);
+}
+})();
+</script>
+</body>
+</html>
