@@ -1,145 +1,305 @@
 <!DOCTYPE html>
-<html lang="fr-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Café La Petite Voisine — Saint-Jérôme</title>
-<meta name="description" content="Café de quartier au centre-ville de Saint-Jérôme depuis 2019 : cafés de spécialité, sandwichs, quiches, soupes, salades et biscuits décorés.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Café La Petite Voisine — Ton café de quartier à Saint-Jérôme</title>
+<meta name="description" content="Café La Petite Voisine, café de quartier au centre-ville de Saint-Jérôme depuis juin 2019 : café de spécialité, chaï latte, sandwichs, biscuits et petite terrasse cachée. 7, rue de la Gare · 450 304-1939.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Café La Petite Voisine","telephone":"+1-450-304-1939","email":"cafelapetitevoisine@gmail.com","url":"https://cafelapetitevoisine.com/","address":{"@type":"PostalAddress","streetAddress":"7, rue de la Gare","addressLocality":"Saint-Jérôme","addressRegion":"QC","postalCode":"J7Z 2B5","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"16:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"1008","bestRating":"5"}}
+</script>
 <style>
-:root{--c1:#d4683f;--c2:#5b3426;--acc:#f3c6a5;--fond:#fdf7f2;--encre:#1b1c1e;--gris:#5d6066;--rayon:18px}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--encre);background:var(--fond);line-height:1.55}
+:root{--creme:#fbf4ea;--lait:#f1e2cf;--cafe:#4a2c1d;--cafe2:#2e1b12;--caramel:#c98b4a;--rose:#e9b8a7;--sauge:#8fa58a;--ombre:0 12px 30px rgba(74,44,29,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--creme);color:var(--cafe2);line-height:1.6;padding-top:32px}
+h1,h2,h3,.lg{font-family:Fraunces,Georgia,serif}
 a{color:inherit}
-.bandeau-demo{background:var(--encre);color:#fff;font-size:13px;text-align:center;padding:8px 14px}
-.bandeau-demo a{color:var(--acc);font-weight:600}
-header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fond) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.08)}
-.nav-in{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px}
-.logo{font-weight:800;font-size:21px;letter-spacing:-.4px;color:var(--c1);text-decoration:none;font-family:"DM Serif Display",Georgia,serif}
-.nav-liens{display:flex;gap:22px;font-size:15px;font-weight:600}
-.nav-liens a{text-decoration:none;opacity:.8}.nav-liens a:hover{opacity:1;color:var(--c1)}
-.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s;cursor:pointer}
+svg{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{position:fixed;top:32px;left:0;right:0;z-index:50;background:rgba(251,244,234,.97);border-bottom:1px solid rgba(74,44,29,.1)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:42px;height:42px;flex:none}
+.lg{font-weight:800;font-size:1.1rem;line-height:1.05;color:var(--cafe)}
+.lg small{display:block;font:500 .68rem "DM Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
+.liens{display:none;gap:24px;align-items:center}
+.liens a{text-decoration:none;font-weight:700;font-size:.95rem}
+.liens a:hover{color:var(--caramel)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;text-decoration:none;font:700 1rem "DM Sans",sans-serif;padding:14px 22px;border-radius:999px;transition:transform .2s}
 .btn:hover{transform:translateY(-2px)}
-.btn-plein{background:var(--c1);color:#fff}.btn-blanc{background:#fff;color:var(--c1)}
-.btn-contour{border-color:#fff;color:#fff}.btn-contour-c{border-color:var(--c1);color:var(--c1)}
-.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 500px at 85% -10%,var(--acc) 0%,transparent 55%),linear-gradient(135deg,var(--c2),var(--c1));color:#fff}
-.hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.07)}
-.hero-in{max-width:1100px;margin:auto;padding:90px 20px 100px;position:relative;z-index:1}
-.etiquette{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:22px}
-.hero h1{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(38px,6vw,66px);line-height:1.05;letter-spacing:-1.2px;max-width:760px}
-.hero p{font-size:clamp(17px,2vw,20px);opacity:.92;max-width:580px;margin:20px 0 32px}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.points{max-width:1100px;margin:-46px auto 0;padding:0 20px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.point{background:#fff;border-radius:var(--rayon);padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
-.point b{display:block;font-size:17px;margin-bottom:4px}.point span{color:var(--gris);font-size:14px}
-section{max-width:1100px;margin:auto;padding:80px 20px 0}
-h2{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(30px,4vw,42px);letter-spacing:-.8px;margin-bottom:10px}
-.sous{color:var(--gris);margin-bottom:30px;max-width:640px}
-.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
-.plat{background:#fff;border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;gap:16px}
-.plat h3{font-size:16px}.plat p{font-size:13.5px;color:var(--gris);margin-top:3px}
-.prix{font-weight:800;color:var(--c1);white-space:nowrap}
-.note{font-size:13px;color:var(--gris);margin-top:16px}
-.vedette{background:var(--encre);color:#fff;border-radius:28px;padding:50px 36px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
-.vedette h2{color:#fff}.vedette p{opacity:.85}
-.vedette .gros{font-family:"DM Serif Display",Georgia,serif;font-size:56px;font-weight:800;color:var(--acc);line-height:1.05}
-.carte{background:#fff;border-radius:var(--rayon);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.carte h3{font-size:22px;margin-bottom:6px}.carte p{color:var(--gris);margin-bottom:18px}
-.heures{width:100%;border-collapse:collapse;font-size:15px}.heures td{padding:7px 0;border-bottom:1px solid #eee}.heures td:last-child{text-align:right;font-weight:600}
-.valeurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
-.valeur{border-left:4px solid var(--acc);padding:6px 0 6px 16px}.valeur b{display:block;margin-bottom:2px}.valeur span{color:var(--gris);font-size:14.5px}
-footer{margin-top:80px;background:var(--c2);color:rgba(255,255,255,.8);padding:40px 20px;font-size:14px}
-.foot-in{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
-.barre-mobile{display:none}
-@media (max-width:760px){.nav-liens{display:none}.vedette,.carte{grid-template-columns:1fr}.vedette{padding:36px 24px}
-.barre-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;border-top:1px solid #e4e1d8;padding:10px;gap:10px}
-.barre-mobile a{flex:1;justify-content:center}footer{padding-bottom:90px}}
+.btn-f{background:var(--cafe);color:var(--creme);box-shadow:0 10px 22px rgba(74,44,29,.25)}
+.btn-c{background:transparent;color:var(--cafe);border:2px solid var(--cafe)}
+.btn-s{padding:10px 16px;font-size:.92rem}
+.burger{width:44px;height:44px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;gap:5px;align-items:center;cursor:pointer}
+.burger span{width:24px;height:3px;background:var(--cafe);border-radius:2px}
+.menu-mob{position:fixed;top:94px;left:0;right:0;z-index:49;background:var(--creme);border-bottom:3px solid var(--caramel);padding:8px 20px 18px;transform:translateY(-130%);visibility:hidden;transition:transform .3s,visibility .3s;display:flex;flex-direction:column}
+.menu-mob.ouvert{transform:none;visibility:visible}
+.menu-mob a{padding:13px 0;font-weight:700;text-decoration:none;border-bottom:1px dashed rgba(74,44,29,.2)}
+.nav-tel{display:none}
+@media(max-width:519px){body{padding-top:48px}.nav{top:48px}.menu-mob{top:110px}html{scroll-padding-top:115px}}
+.hero{position:relative;overflow:hidden;padding:120px 0 80px;background:radial-gradient(circle at 85% 25%,#f6d9c6 0,transparent 42%),radial-gradient(circle at 5% 85%,#e7eedf 0,transparent 40%),var(--creme)}
+@media(max-width:519px){.hero{padding-top:128px}}
+.flotte{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.45;animation:flot 11s ease-in-out infinite;will-change:transform}
+.f svg{display:block;width:100%;height:100%}
+.f.loin{opacity:.22;filter:blur(1.5px)}
+@keyframes flot{0%,100%{transform:translate3d(0,calc(var(--p,0)*-1px),0) rotate(var(--r0,0deg))}50%{transform:translate3d(0,calc(var(--p,0)*-1px - 16px),0) rotate(var(--r1,15deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:34px;align-items:center}
+.pastille{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:7px 14px;font-weight:700;font-size:.86rem;box-shadow:var(--ombre)}
+.pastille b{color:var(--caramel)}
+.hero h1{font-size:clamp(2.3rem,9vw,4.3rem);line-height:1.02;font-weight:800;margin:18px 0 14px;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--caramel)}
+.lead{font-size:1.1rem;max-width:33em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 18px}
+.mini{display:flex;flex-wrap:wrap;gap:8px 18px;font-weight:600;font-size:.93rem}
+.tasse{justify-self:center;width:min(360px,80vw)}
+.tasse svg{width:100%;height:auto;display:block}
+.vapeur path{animation:monte 3.2s ease-in-out infinite;opacity:0}
+.vapeur path:nth-child(2){animation-delay:1s}.vapeur path:nth-child(3){animation-delay:2s}
+@keyframes monte{0%{transform:translateY(14px);opacity:0}40%{opacity:.7}100%{transform:translateY(-22px);opacity:0}}
+@media(min-width:1024px){.hero{padding:150px 0 100px}.hero .wrap{grid-template-columns:1.1fr .9fr}.liens{display:flex}.burger,.menu-mob{display:none}.nav-tel{display:inline-flex}}
+section{padding:76px 0}
+.titre{text-align:center;margin-bottom:40px}
+.titre small{display:block;color:var(--caramel);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;margin-bottom:6px}
+.titre h2{font-size:clamp(1.9rem,6vw,2.8rem);line-height:1.08}
+.titre p{max-width:40em;margin:12px auto 0}
+.menu-sec{background:var(--cafe);color:var(--creme)}
+.menu-sec .titre small{color:var(--rose)}
+.cols{display:grid;gap:18px}
+.carte{background:#5a3726;border-radius:22px;padding:26px 22px;min-width:0}
+.carte h3{font-size:1.4rem;margin-bottom:12px;color:#fff}
+.carte ul{list-style:none;display:grid;gap:9px}
+.carte li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed rgba(251,244,234,.22);padding-bottom:8px;min-width:0}
+.carte li span{min-width:0;overflow-wrap:anywhere}
+.carte li b{flex:none;color:var(--rose)}
+.carte .note{font-size:.88rem;opacity:.8;margin-top:12px}
+.tasse-scroll{display:flex;justify-content:center;margin:40px 0 0}
+.tasse-scroll svg{width:150px;height:auto}
+#remplir{transform-origin:50% 100%;transform:scaleY(.05);transition:transform 1.8s cubic-bezier(.4,0,.2,1)}
+.tasse-scroll.vu #remplir{transform:scaleY(1)}
+.menu-sec .final{text-align:center;margin-top:18px;font-weight:700}
+.menu-sec .final a{color:var(--rose)}
+@media(min-width:900px){.cols{grid-template-columns:repeat(3,1fr)}}
+.avis-sec{background:var(--lait)}
+.notes{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:30px}
+.notes div{background:#fff;border-radius:16px;padding:14px 20px;box-shadow:var(--ombre);text-align:center;font-weight:700}
+.notes strong{display:block;font:800 1.9rem Fraunces,serif;color:var(--caramel)}
+.etoiles{color:var(--caramel);letter-spacing:2px}
+.grille-avis{display:grid;gap:16px}
+.avis{background:#fff;border-radius:18px;padding:20px;box-shadow:var(--ombre);display:flex;flex-direction:column;gap:10px;min-width:0}
+.avis blockquote{overflow-wrap:anywhere}
+.avis .qui{font-size:.88rem;opacity:.8;margin-top:auto}
+@media(min-width:700px){.grille-avis{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.grille-avis{grid-template-columns:repeat(3,1fr)}}
+.centre{text-align:center;margin-top:28px}
+.histoire .wrap{display:grid;gap:30px;align-items:center}
+.histoire h2{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.08;margin-bottom:14px}
+.histoire p{margin-bottom:12px}
+.citation{font:600 1.35rem/1.35 Fraunces,serif;color:var(--cafe);background:#fff;border-radius:22px;padding:28px;box-shadow:var(--ombre);border-left:6px solid var(--caramel)}
+.citation small{display:block;font:500 .9rem "DM Sans",sans-serif;margin-top:12px;opacity:.75}
+@media(min-width:900px){.histoire .wrap{grid-template-columns:1.1fr .9fr}}
+.infos{background:#fff}
+.infos .wrap{display:grid;gap:18px}
+.bloc{background:var(--creme);border-radius:20px;padding:24px;min-width:0}
+.bloc h3{font-size:1.35rem;margin-bottom:12px}
+.bloc p{margin-bottom:8px;overflow-wrap:anywhere}
+.heures{width:100%;border-collapse:collapse}
+.heures td{padding:8px 0;border-bottom:1px dashed rgba(74,44,29,.2)}
+.heures td:last-child{text-align:right;font-weight:700}
+@media(min-width:900px){.infos .wrap{grid-template-columns:repeat(3,1fr)}}
+footer{background:var(--cafe2);color:var(--creme);padding:34px 0 110px;text-align:center;font-size:.9rem}
+footer .lg{color:#fff;font-size:1.3rem}
+@media(min-width:1024px){footer{padding-bottom:40px}}
+.appel-fixe{position:fixed;left:14px;right:14px;bottom:14px;z-index:40;display:flex}
+.appel-fixe a{flex:1}
+@media(min-width:1024px){.appel-fixe{display:none}}
+#page-avis{display:none;padding:120px 0 120px;min-height:100vh}
+body.voir-avis #page-avis{display:block}
+body.voir-avis #site{display:none}
+#page-avis h1{font-size:clamp(2rem,7vw,3rem);margin:18px 0}
+.liste-avis{display:grid;gap:14px}
+@media(min-width:800px){.liste-avis{grid-template-columns:1fr 1fr}}
+#intro{position:fixed;inset:0;z-index:9000;background:var(--cafe);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;cursor:pointer;transition:opacity .45s}
+#intro.part{opacity:0}
+#intro svg{width:120px;height:120px}
+#intro .nom{font:800 2rem Fraunces,serif;color:var(--creme);opacity:0;transform:translateY(12px);animation:apparait .7s .7s forwards}
+#intro .vap path{stroke-dasharray:60;stroke-dashoffset:60;animation:trace 1s .2s forwards}
+@keyframes trace{to{stroke-dashoffset:0}}
+@keyframes apparait{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}#intro{display:none}#remplir{transform:none}}
 </style>
-<style id="intro-css">
-#intro{position:fixed;inset:0;z-index:9000;background:radial-gradient(circle at 50% 45%,#e68457 0,#d4683f 50%,#5b3426 100%);display:grid;place-items:center;cursor:pointer;transition:opacity .5s,visibility .5s}
-#intro.done{opacity:0;visibility:hidden}
-#intro .ib{width:min(340px,80vw);text-align:center;color:#fff}
-#intro svg{width:150px;height:auto;overflow:visible}
-#intro .nm{font:700 clamp(34px,10vw,54px)/1.05 "DM Serif Display",Georgia,serif;margin-top:14px;display:flex;justify-content:center;flex-wrap:wrap}
-#intro .nm span{display:inline-block;opacity:0;transform:translateY(30px) scale(.6)}
-#intro.go .nm span{animation:ipop .5s cubic-bezier(.3,1.8,.5,1) forwards}
-#intro .sub{font:600 12px/1.4 system-ui,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:#ffe2cc;opacity:0;margin-top:14px}
-#intro.go .sub{animation:ipop .5s ease 1.35s forwards}
-#intro .skip{position:absolute;bottom:24px;left:0;right:0;text-align:center;font:12px system-ui,sans-serif;opacity:.6;color:#fff}
-@keyframes ipop{to{opacity:1;transform:none}}
-@keyframes idraw{to{stroke-dashoffset:0}}
-@keyframes igrow{0%{transform:scale(0)}to{transform:scale(1)}}
-@keyframes isteam{40%{opacity:.9}to{stroke-dashoffset:0;opacity:0;transform:translateY(-14px)}}
-@keyframes ifill{from{transform:scaleY(0)}to{transform:scaleY(1)}}
-@keyframes islide{from{transform:translateX(-60px);opacity:0}to{transform:none;opacity:1}}
-#intro .d{stroke-dasharray:400;stroke-dashoffset:400}
-#intro.go .d{animation:idraw .9s ease-out forwards}
-#intro .g{transform-box:fill-box;transform-origin:center;transform:scale(0)}
-#intro.go .g{animation:igrow .55s cubic-bezier(.3,1.8,.5,1) forwards}
-#intro .gb{transform-box:fill-box;transform-origin:center bottom;transform:scale(0)}
-#intro.go .gb{animation:igrow .55s cubic-bezier(.3,1.8,.5,1) forwards}
-#intro .f{transform-box:fill-box;transform-origin:center bottom;transform:scaleY(0)}
-#intro.go .f{animation:ifill .8s ease-out forwards}
-#intro .s{opacity:0;transform-box:fill-box;transform-origin:center}
-#intro.go .s{animation:islide .5s ease-out forwards}
-#intro .stm{stroke-dasharray:60;stroke-dashoffset:60;opacity:0}
-#intro.go .stm{animation:isteam 1.3s ease-out forwards}
-@media (prefers-reduced-motion:reduce){#intro{display:none}}
-</style>
-</head><body>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Café La Petite Voisine — ce n'est pas son site officiel</div>
+
 <div id="intro" aria-hidden="true">
- <div class="ib">
-  <svg viewBox="0 0 170 160">
-  <g class="s"><path d="M30 64 H122 V104 C122 130 104 146 76 146 C48 146 30 130 30 104Z" fill="#fff"/><path d="M122 76 C150 74 150 114 122 112" stroke="#fff" stroke-width="9" fill="none"/></g>
-  <ellipse cx="76" cy="66" rx="44" ry="7" fill="#7a4a35"/>
-  <path class="g" style="animation-delay:.55s" d="M76 104 C60 92 62 80 70 80 C74 80 76 84 76 86 C76 84 78 80 82 80 C90 80 92 92 76 104Z" fill="#f3c6a5"/>
-  <path class="stm" style="animation-delay:.6s" d="M60 50q-8-12 0-24t0-20" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path class="stm" style="animation-delay:.75s" d="M78 46q-8-12 0-24t0-20" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path class="stm" style="animation-delay:.9s" d="M96 50q-8-12 0-24t0-20" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
- </svg>
-  <div class="nm" data-txt="La Petite Voisine"></div>
-  <div class="sub">Ton café de quartier</div>
- </div>
- <div class="skip">Touchez pour entrer</div>
+  <svg viewBox="0 0 120 120"><g class="vap" stroke="#e9b8a7" stroke-width="4" fill="none" stroke-linecap="round"><path d="M44 46 q-8-10 0-20 q8-10 0-20"/><path d="M60 46 q-8-10 0-20 q8-10 0-20"/><path d="M76 46 q-8-10 0-20 q8-10 0-20"/></g><path d="M24 52 h70 v20 a30 30 0 0 1 -30 30 h-10 a30 30 0 0 1 -30 -30z" fill="#fbf4ea"/><path d="M94 58 h6 a10 10 0 0 1 0 20 h-8" stroke="#fbf4ea" stroke-width="6" fill="none"/></svg>
+  <div class="nom">La Petite Voisine</div>
 </div>
 
-<div class="bandeau-demo">Maquette proposée par <a href="https://brixelpro.com">Brixel Pro</a> — aperçu d'un nouveau site pour Café La Petite Voisine</div>
-<header class="nav"><div class="nav-in">
-<a href="#" class="logo">Café La Petite Voisine</a>
-<nav class="nav-liens"><a href="#menu">Menu</a><a href="#vedette">Biscuits</a><a href="#nous-trouver">Nous trouver</a></nav>
-<a href="tel:4503041939" class="btn btn-plein">450 304-1939</a>
-</div></header>
-<div class="hero"><div class="hero-in">
-<span class="etiquette">Centre-ville de Saint-Jérôme · depuis 2019</span>
-<h1>Ton café de quartier, en plein cœur de St-Jérôme.</h1><p>Des beaux et bons cafés de spécialité, des plats maison et une équipe qui connaît ta commande par cœur.</p>
-<div class="actions"><a href="#menu" class="btn btn-blanc">Voir le menu</a><a href="tel:4503041939" class="btn btn-contour">Commander des biscuits</a></div>
-</div></div>
-<div class="points"><div class="point"><b>Cafés de spécialité</b><span>Préparés comme il faut</span></div><div class="point"><b>Fait maison</b><span>Sandwichs, quiches, soupes</span></div><div class="point"><b>Décor instagrammable</b><span>Pour tes événements</span></div></div>
-<section id="menu"><h2>Menu</h2><p class="sous">Un aperçu de ce qui t&#x27;attend au comptoir.</p>
-<div class="grille"><div class="plat"><div><h3>Cafés de spécialité</h3><p>Espresso, latté, cappuccino et plus</p></div></div><div class="plat"><div><h3>Sandwich viande fumée</h3><p>Un favori des habitués</p></div></div><div class="plat"><div><h3>Grilled cheese et soupe</h3><p>Le duo réconfort</p></div></div><div class="plat"><div><h3>Quiches maison</h3><p>Selon l&#x27;inspiration du jour</p></div></div><div class="plat"><div><h3>Chocolatine</h3><p>Pour accompagner ton café</p></div></div><div class="plat"><div><h3>Boîte de 6 biscuits décorés</h3><p>Décorés avec amour par l&#x27;équipe</p></div><span class="prix">21 $</span></div></div><p class="note">Aperçu. Le menu complet serait intégré au site final.</p></section>
-<section id="vedette"><div class="vedette"><div><h2>Des biscuits décorés pour toutes les occasions.</h2><p>Nos magiciennes décorent chaque biscuit à la main. Parfait pour un cadeau, une fête ou juste pour te gâter.</p></div>
-<div><div class="gros">6 biscuits · 21 $</div><p>Boîte cadeau</p></div></div></section>
-<section id="nous-trouver"><h2>Nous trouver</h2><p class="sous">À deux pas de la gare, au centre-ville.</p>
-<div class="carte"><div><h3>Saint-Jérôme</h3><p>7, rue de la Gare<br>Saint-Jérôme (Québec) J7Z 2B5</p>
-<div class="actions"><a class="btn btn-plein" href="tel:4503041939">Appeler</a><a class="btn btn-contour-c" href="https://maps.google.com/?q=7+rue+de+la+Gare+Saint-J%C3%A9r%C3%B4me">Itinéraire</a></div></div>
-<div><h3>Heures</h3><table class="heures"><tr><td>Lundi au vendredi</td><td>7 h – 16 h</td></tr><tr><td>Fin de semaine</td><td>À confirmer</td></tr></table><p class="note">Heures à confirmer avec le commerce.</p></div></div></section>
-<section><h2>La Petite Voisine, c&#x27;est…</h2><p class="sous">Un endroit sain et authentique, qui participe à la revitalisation du centre-ville.</p><div class="valeurs"><div class="valeur"><b>Un milieu sain</b><span>Un environnement de travail authentique.</span></div><div class="valeur"><b>Du bon café</b><span>Des cafés de spécialité bien faits.</span></div><div class="valeur"><b>Le centre-ville</b><span>On participe à sa revitalisation.</span></div><div class="valeur"><b>Pour vos événements</b><span>Un décor parfait pour se rassembler.</span></div></div></section>
-<footer><div class="foot-in"><div><b style="color:#fff">Café La Petite Voisine</b><br>7, rue de la Gare, Saint-Jérôme · 450 304-1939</div>
-<div>Maquette réalisée par <a href="https://brixelpro.com" style="color:var(--acc)">Brixel Pro</a></div></div></footer>
-<div class="barre-mobile"><a class="btn btn-plein" href="tel:4503041939">Appeler</a><a class="btn btn-contour-c" href="#menu">Menu</a></div>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#accueil" aria-label="Café La Petite Voisine">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#4a2c1d"/><path d="M12 22 h22 v6 a10 10 0 0 1 -10 10 h-2 a10 10 0 0 1 -10 -10z" fill="#fbf4ea"/><path d="M34 24 h2 a4 4 0 0 1 0 8 h-3" stroke="#fbf4ea" stroke-width="2.5" fill="none"/><path d="M20 18 q-3-4 0-8 M26 18 q-3-4 0-8" stroke="#e9b8a7" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span class="lg">La Petite Voisine<small>Café · Saint-Jérôme</small></span>
+    </a>
+    <nav class="liens"><a href="#menu">Menu</a><a href="#avis" data-avis-lien>Avis</a><a href="#histoire">Notre histoire</a><a href="#infos">Heures</a><a class="btn btn-f btn-s nav-tel" href="tel:+14503041939">Appeler</a></nav>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu-mob" id="menuMob"><a href="#menu">Menu</a><a href="#avis" data-avis-lien>Avis</a><a href="#histoire">Notre histoire</a><a href="#infos">Heures et adresse</a><a href="tel:+14503041939">Appeler : 450 304-1939</a></div>
 
-<script id="intro-js">
+<div id="site">
+<section class="hero" id="accueil">
+  <div class="flotte" id="flotte" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="pastille"><b>★ 4,9</b> sur Google · plus de 1000 avis</span>
+      <h1>Le meilleur café en plein cœur de <em>St-Jérôme</em></h1>
+      <p class="lead">Ton café de quartier depuis juin 2019 : café de spécialité, chaï latte, sandwichs frais, biscuits et pâtisseries, et une petite terrasse cachée.</p>
+      <div class="cta">
+        <a class="btn btn-f" href="tel:+14503041939">📞 Appeler : 450 304-1939</a>
+        <a class="btn btn-c" href="#menu">Voir le menu</a>
+      </div>
+      <div class="mini"><span>📍 7, rue de la Gare</span><span>☕ Lun-ven 7 h · sam-dim 9 h</span></div>
+    </div>
+    <div class="tasse" aria-hidden="true">
+      <svg viewBox="0 0 300 260">
+        <g class="vapeur" stroke="#c98b4a" stroke-width="6" fill="none" stroke-linecap="round"><path d="M110 70 q-12-16 0-32 q12-16 0-32"/><path d="M145 70 q-12-16 0-32 q12-16 0-32"/><path d="M180 70 q-12-16 0-32 q12-16 0-32"/></g>
+        <ellipse cx="150" cy="232" rx="120" ry="18" fill="#e7d3bb"/>
+        <path d="M60 90 h180 v50 a80 80 0 0 1 -80 80 h-20 a80 80 0 0 1 -80 -80z" fill="#fff"/>
+        <path d="M240 104 h14 a26 26 0 0 1 0 52 h-22" stroke="#fff" stroke-width="14" fill="none"/>
+        <ellipse cx="150" cy="92" rx="90" ry="14" fill="#7a4a30"/>
+        <path d="M130 90 q20-14 40 0 q-20 14 -40 0z M150 80 v20" stroke="#f1e2cf" stroke-width="4" fill="#c98b4a"/>
+        <path d="M86 150 q64 26 128 0" stroke="#e9b8a7" stroke-width="10" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="menu-sec" id="menu">
+  <div class="wrap">
+    <div class="titre"><small>Le menu</small><h2>Salé ou sucré, toujours avec un bon café</h2><p>Une sélection de boissons au café artisanales et de pâtisseries maison.</p></div>
+    <div class="cols">
+      <article class="carte"><h3>☕ À boire</h3><ul><li><span>Café de spécialité</span></li><li><span>Latte</span></li><li><span>Chaï latte (essayez-le au lait de pistache)</span></li><li><span>Matcha</span></li><li><span>Limonade maison</span></li></ul><p class="note">Laits végétaux offerts : soya, amande, avoine, coconut, macadam, pistache.</p></article>
+      <article class="carte"><h3>🥪 À manger</h3><ul><li><span>Sandwichs frais, dont le smoked meat</span></li><li><span>Quiches</span></li><li><span>Viennoiseries</span></li><li><span>Pâtisseries maison</span></li><li><span>Biscuits décorés</span></li></ul><p class="note">Boîtes de 6 biscuits à 21 $ pour l'Halloween (commande par courriel).</p></article>
+      <article class="carte"><h3>🛍️ À emporter</h3><ul><li><span>Café AUTENTICO</span><b>10 $ – 80 $</b></li><li><span>Lait de pistache</span><b>10,00 $</b></li><li><span>Lait de macadam</span><b>7,50 $</b></li><li><span>Lait de soya, d'amande ou d'avoine</span><b>7,00 $</b></li><li><span>Lait de coconut</span><b>6,00 $</b></li></ul><p class="note">Ramassage au café seulement.</p></article>
+    </div>
+    <div class="tasse-scroll" id="tasseScroll" aria-hidden="true">
+      <svg viewBox="0 0 120 120"><defs><clipPath id="cl"><path d="M22 30 h66 v30 a30 30 0 0 1 -30 30 h-6 a30 30 0 0 1 -30 -30z"/></clipPath></defs><path d="M22 30 h66 v30 a30 30 0 0 1 -30 30 h-6 a30 30 0 0 1 -30 -30z" fill="#fbf4ea"/><g clip-path="url(#cl)"><rect id="remplir" x="20" y="34" width="72" height="60" fill="#c98b4a"/></g><path d="M88 38 h6 a10 10 0 0 1 0 20 h-7" stroke="#fbf4ea" stroke-width="6" fill="none"/></svg>
+    </div>
+    <p class="final">Le menu complet et les prix sont au comptoir, ou appelez-nous : <a href="tel:+14503041939">450 304-1939</a></p>
+  </div>
+</section>
+
+<section class="avis-sec" id="avis">
+  <div class="wrap">
+    <div class="titre"><small>Avis</small><h2>Ce que nos voisins disent</h2></div>
+    <div class="notes"><div><strong>4,9 ★</strong>sur Google · plus de 1000 avis</div><div><strong>4,9 ★</strong>sur Restomontreal · 593 évaluations</div></div>
+    <div class="grille-avis" id="grilleAccueil"></div>
+    <div class="centre"><button class="btn btn-f" data-avis-lien id="btnTous">Voir tous les avis</button></div>
+  </div>
+</section>
+
+<section class="histoire" id="histoire">
+  <div class="wrap">
+    <div>
+      <div class="titre" style="text-align:left;margin-bottom:10px"><small>Notre histoire</small></div>
+      <h2>Mettre du soleil dans la vie des gens</h2>
+      <p>« Salut, moi c'est Pam, et depuis juin 2019, mon équipe et moi servons les meilleurs cafés de St-Jérôme. »</p>
+      <p>« C'est avec grand bonheur que La Petite Voisine désire mettre du soleil dans la vie des gens. » On souhaite aussi changer les stéréotypes liés au centre-ville de St-Jérôme, une tasse à la fois.</p>
+      <p>Besoin d'un endroit au décor instagrammable pour ton prochain évènement? Écris-nous à <a href="mailto:cafelapetitevoisine@gmail.com">cafelapetitevoisine@gmail.com</a>.</p>
+    </div>
+    <div class="citation">« On n'est pas de simple baristas, on est des magiciennes du bonheur! »<small>— Nos merveilleuses Petites Voisines</small></div>
+  </div>
+</section>
+
+<section class="infos" id="infos">
+  <div class="wrap">
+    <div class="bloc"><h3>Heures</h3><table class="heures"><tr><td>Lundi au vendredi</td><td>7 h à 16 h</td></tr><tr><td>Samedi et dimanche</td><td>9 h à 16 h</td></tr></table></div>
+    <div class="bloc"><h3>Adresse</h3><p>7, rue de la Gare<br>Saint-Jérôme (Québec) J7Z 2B5</p><p><a href="https://www.google.com/maps/search/?api=1&query=7+Rue+de+la+Gare+Saint-J%C3%A9r%C3%B4me+QC+J7Z+2B5" target="_blank" rel="noopener">Voir sur Google Maps →</a></p></div>
+    <div class="bloc"><h3>Nous joindre</h3><p><a href="tel:+14503041939">450 304-1939</a></p><p><a href="mailto:cafelapetitevoisine@gmail.com">cafelapetitevoisine@gmail.com</a></p><p><a href="https://www.instagram.com/cafelapetitevoisine/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/cafelapetitevoisine" target="_blank" rel="noopener">Facebook</a></p></div>
+  </div>
+</section>
+<footer><div class="wrap"><p class="lg">Café La Petite Voisine</p><p>7, rue de la Gare, Saint-Jérôme · 450 304-1939</p><p style="opacity:.7;margin-top:6px">Ton café de quartier depuis juin 2019.</p></div></footer>
+</div>
+
+<main id="page-avis">
+  <div class="wrap">
+    <button class="btn btn-c" id="retour">← Retour au site</button>
+    <h1>Tous les avis</h1>
+    <div class="notes" style="justify-content:flex-start"><div><strong>4,9 ★</strong>sur Google · plus de 1000 avis</div><div><strong>4,9 ★</strong>sur Restomontreal · 593 évaluations</div></div>
+    <div class="liste-avis" id="listeAvis"></div>
+    <p class="centre"><a class="btn btn-c" href="https://www.restomontreal.ca/resto/cafe-la-petite-voisine-st-jerome/13391/fr/" target="_blank" rel="noopener">Voir plus d'avis en ligne</a></p>
+  </div>
+</main>
+
+<div class="appel-fixe"><a class="btn btn-f" href="tel:+14503041939">📞 Appeler le café</a></div>
+
+<script>
 (function(){
- var d=document,intro=d.getElementById('intro'),key='intro-cafe-la-petite-voisine-saint-jerome',seen=false;
- if(!intro)return;
- try{seen=sessionStorage.getItem(key)==='1'}catch(e){}
- var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
- function end(){if(!intro||intro.classList.contains('done'))return;intro.classList.add('done');try{sessionStorage.setItem(key,'1')}catch(e){}setTimeout(function(){intro&&intro.parentNode&&intro.parentNode.removeChild(intro);intro=null},520)}
- if(reduce||seen){intro.parentNode.removeChild(intro);return}
- var nm=intro.querySelector('.nm'),txt=nm.getAttribute('data-txt');
- for(var i=0;i<txt.length;i++){var s=d.createElement('span');s.textContent=txt[i]===' '?'\u00a0':txt[i];s.style.animationDelay=(0.7+i*0.045)+'s';nm.appendChild(s)}
- intro.addEventListener('click',end);
- function go(){intro&&intro.classList.add('go')}
- requestAnimationFrame(function(){requestAnimationFrame(go)});setTimeout(go,60);
- setTimeout(end,2100);
+var A=[
+{n:"Mahïly",e:5,d:"10 nov. 2026",t:"Service rapide & le personnel chaleureux & souriant ☺ Chaï latte délicieux & l'endroit est très cozy, je recommande",a:1},
+{n:"Luc",e:5,d:"20 oct. 2026",t:"On y trouve le meilleur café en ville, un petit bijou au coeur de Saint-Jérôme avec une propriétaire & des employées très attentionnées.",a:1},
+{n:"Marie-Eve",e:5,d:"24 oct. 2026",t:"On adore venir à La Petite Voisine en famille. Le café est excellent, choix de nourriture abordable salé ou sucré",a:1},
+{n:"Monique",e:5,d:"5 nov. 2026",t:"Très belle expérience pour une première fois. Nourriture excellente. Service avec sourire par Amélie.",a:1},
+{n:"Ianik",e:5,d:"18 oct. 2026",t:"Magnifique trésor caché. Service chaleureux, rapide & courtois. Terrasse tranquille & intime.",a:1},
+{n:"Caroline",e:5,d:"19 oct. 2026",t:"Toujours agréablement surprise comme c'est délicieux! J'adore le cachets de cet endroit, c'est très chaleureux & accueillant.",a:1},
+{n:"Chantal",e:5,d:"5 nov. 2026",t:"Touriste d'un jour, j'ai tout de suite apprécié l'atmosphère de franche camaraderie entre les employées & la clientèle.",a:1},
+{n:"Catherine",e:5,d:"14 oct. 2026",t:"Chaleureux petit café avec une équipe de petites voisines tout simplement extraordinaires !",a:1},
+{n:"Alix",e:5,d:"13 oct. 2026",t:"Quel beau café, endroit vraiment chaleureux. […] & que dire du délicieux Chaï latte avec lait de pistache! Juste WOW! 😋",a:1},
+{n:"Latesh",e:5,d:"11 oct. 2026",t:"This café is a must-see place in St Jerome. The coffee is very good & the food was beyond exceptional.",a:1},
+{n:"Sara-elie",e:5,d:"18 oct. 2026",t:"Tout étais super bon leur sandwich sont frais & délicieux leur café & limonade spécial étais délicieux",a:1},
+{n:"David",e:5,d:"11 oct. 2026",t:"Absolutely incredible staff & scrumptious food. Happy to have visited on a flying visit to St Jerome!",a:1},
+{n:"Marie-Andrée",e:5,d:"27 oct. 2026",t:"Petite découverte incroyable...j'ai adoré dès les premiers instants […] Un 5 étoiles c'est trop peu pour ce bijou d'endroit!!!",a:0},
+{n:"Christine",e:5,d:"12 oct. 2026",t:"Notre spot café à St-Jérôme ☕ vraiment excellent & dans tous les détails. […] Une belle terrasse vraiment cachée comme annoncée. […]",a:0},
+{n:"Ian",e:5,d:"28 oct. 2026",t:"Magical place & people! […] wonderful coffee. We went either side of a few days trip further north, very highly recommended!",a:0},
+{n:"Catherine",e:5,d:"1 nov. 2026",t:"Quel bel endroit cozy ! Les personnes qui y travaillent sont toujours tellement gentilles. […]",a:0},
+{n:"David",e:5,d:"5 nov. 2026",t:"Super découverte […] Accueillant, excellente bouffe & café. Limonade maison. […]",a:0},
+{n:"Frédérique",e:5,d:"11 oct. 2026",t:"Marie-Ève nous a vraiment très bien servis! Nous sommes très contents de notre expérience! 🙂",a:0},
+{n:"Fanny",e:5,d:"11 oct. 2026",t:"[…] Je recommande , la petite voisine vaut sincèrement le détour ✨",a:0},
+{n:"Thomas",e:5,d:"28 oct. 2026",t:"Service & menu exceptionnel!",a:0},
+{n:"Lucie",e:5,d:"3 nov. 2026",t:"Qualifié & service hors pair!",a:0},
+{n:"Catherine",e:5,d:"16 oct. 2026",t:"Trop cute comme place!!!! J'adore!",a:0},
+{n:"Chantal",e:5,d:"3 nov. 2026",t:"Belle découverte !  Excellent endroit !",a:0},
+{n:"Brigitte",e:5,d:"4 nov. 2026",t:"Chaleureux & délicieux",a:0},
+{n:"Pierre",e:5,d:"14 oct. 2026",t:"Super belle découverte",a:0},
+{n:"Arianne",e:5,d:"19 oct. 2026",t:"Merci gabby💘💘💘",a:0},
+{n:"Marianne",e:4,d:"3 nov. 2026",t:"Très cute café : ambiance chaleureuse & excellent service d'Abby & Alison! […] Bref, une belle découverte!",a:0},
+{n:"Carole",e:4,d:"4 nov. 2026",t:"Sûrement un bel endroit pour un café avec une viennoise ou un sandwich. […] Une autre fois, nous irons pour prendre un bon latte.",a:0},
+{n:"Caroline",e:4,d:"9 nov. 2026",t:"Petite terrasse intime...l'été",a:0},
+{n:"Émilie",e:2,d:"17 oct. 2026",t:"Un Café incapable de faire un bon café. […]",a:0}
+];
+function carte(v){var el=document.createElement("article");el.className="avis";el.innerHTML='<div class="etoiles" aria-label="'+v.e+' étoiles sur 5">'+"★★★★★".slice(0,v.e)+"☆☆☆☆☆".slice(0,5-v.e)+'</div><blockquote></blockquote><div class="qui"><b></b> · Avis Google · '+v.d+'</div>';el.querySelector("blockquote").textContent="« "+v.t+" »";el.querySelector(".qui b").textContent=v.n;return el}
+var g=document.getElementById("grilleAccueil"),l=document.getElementById("listeAvis");
+A.filter(function(v){return v.a}).forEach(function(v){g.appendChild(carte(v))});
+A.forEach(function(v){l.appendChild(carte(v))});
+document.getElementById("btnTous").textContent="Voir tous les avis ("+A.length+")";
+var pos=0,b=document.querySelector(".burger"),m=document.getElementById("menuMob");
+function fermerMenu(){m.classList.remove("ouvert");b.setAttribute("aria-expanded","false")}
+function ouvrir(e){if(e)e.preventDefault();pos=window.scrollY;fermerMenu();document.body.classList.add("voir-avis");window.scrollTo(0,0)}
+function fermer(){document.body.classList.remove("voir-avis");window.scrollTo(0,pos)}
+document.querySelectorAll("[data-avis-lien]").forEach(function(a){a.addEventListener("click",ouvrir)});
+document.getElementById("retour").addEventListener("click",fermer);
+b.addEventListener("click",function(){var o=m.classList.toggle("ouvert");b.setAttribute("aria-expanded",o)});
+document.querySelectorAll('#menuMob a,.liens a').forEach(function(a){if(!a.hasAttribute("data-avis-lien"))a.addEventListener("click",function(){fermerMenu();document.body.classList.remove("voir-avis")})});
+var F={grain:'<svg viewBox="0 0 40 40"><ellipse cx="20" cy="20" rx="12" ry="17" fill="#6b3f28" transform="rotate(25 20 20)"/><path d="M14 8 q10 12 0 24" stroke="#3a2015" stroke-width="2.5" fill="none" transform="rotate(25 20 20)"/></svg>',croissant:'<svg viewBox="0 0 60 40"><path d="M4 30 Q8 6 30 4 Q52 6 56 30 Q46 22 30 22 Q14 22 4 30z" fill="#d9a35f"/><path d="M18 10 l4 12 M30 6 v16 M42 10 l-4 12" stroke="#b07a3c" stroke-width="2.5"/></svg>',tasse:'<svg viewBox="0 0 40 40"><path d="M6 14 h22 v8 a10 10 0 0 1 -10 10 h-2 a10 10 0 0 1 -10 -10z" fill="#e9b8a7"/><path d="M28 16 h3 a4 4 0 0 1 0 8 h-3" stroke="#e9b8a7" stroke-width="3" fill="none"/></svg>',biscuit:'<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="#d9a35f"/><g fill="#5a3726"><circle cx="14" cy="15" r="2.4"/><circle cx="24" cy="13" r="2"/><circle cx="25" cy="24" r="2.4"/><circle cx="15" cy="26" r="2"/></g></svg>',coeur:'<svg viewBox="0 0 40 40"><path d="M20 34 Q4 22 8 12 q6-8 12 0 q6-8 12 0 q4 10 -12 22z" fill="#e9b8a7"/></svg>'};
+var P=[["grain",5,12,40,0],["croissant",82,8,70,1],["tasse",88,58,44,0],["biscuit",12,74,46,1],["grain",70,86,30,1],["coeur",46,5,26,0],["grain",30,90,34,0],["biscuit",95,32,30,1]];
+var fl=document.getElementById("flotte"),els=[];
+P.forEach(function(p,i){var d=document.createElement("div");d.className="f"+(p[4]?" loin":"");d.style.cssText="left:"+p[1]+"%;top:"+p[2]+"%;width:"+p[3]+"px;height:"+p[3]+"px;animation-delay:-"+(i*1.5)+"s;--r0:"+(i*20)+"deg;--r1:"+(i*20+18)+"deg";d.innerHTML=F[p[0]];fl.appendChild(d);els.push([d,p[4]?.15:.35])});
+var tic=false;window.addEventListener("scroll",function(){if(tic)return;tic=true;requestAnimationFrame(function(){tic=false;var y=window.scrollY;if(y<900)els.forEach(function(e){e[0].style.setProperty("--p",(y*e[1]).toFixed(1))})})},{passive:true});
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("vu");io.unobserve(x.target)}})},{threshold:.4});
+io.observe(document.getElementById("tasseScroll"));
+var intro=document.getElementById("intro"),vu=false;
+try{vu=sessionStorage.getItem("lpvIntro")==="1";sessionStorage.setItem("lpvIntro","1")}catch(e){}
+function fin(){if(!intro.parentNode)return;intro.classList.add("part");setTimeout(function(){intro.remove()},460)}
+if(vu||matchMedia("(prefers-reduced-motion: reduce)").matches)intro.remove();else{intro.addEventListener("click",fin);setTimeout(fin,1900)}
 })();
 </script>
-<script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-</body></html>
+</body>
+</html>
