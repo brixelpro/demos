@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Atelier mécanique GSL — Spécialiste en voitures allemandes à Waterloo</title>
+<meta name="description" content="Atelier mécanique GSL à Waterloo, depuis 1995 : entretien et réparation de Volkswagen, Audi, BMW, Mercedes, Mini Cooper, Porsche et Smart. 450-539-0730.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Atelier mécanique GSL inc.","telephone":"+1-450-539-0730","email":"info@ateliergsl.com","foundingDate":"1995","founder":"Steve Lavertu","address":{"@type":"PostalAddress","streetAddress":"360, rue Bernard","addressLocality":"Waterloo","addressRegion":"QC","postalCode":"J0E 2N0","addressCountry":"CA"},"openingHours":["Mo-Th 07:30-12:00","Mo-Th 13:00-17:30","Fr 07:30-12:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"139"}}
+</script>
+<style>
+:root{--bh:32px;--bk:#0a0b0d;--bk2:#15171b;--blue:#1f44a8;--blue2:#4f7be8;--sil:#b9bdc4;--txt:#eef0f4;--mut:#a3a9b3;--card:#17191e;--line:#2a2d34}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bh) + 70px)}
+body{background:var(--bk);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-serif;padding-top:var(--bh);-webkit-font-smoothing:antialiased}
+a{color:inherit}svg{max-width:100%}
+h1,h2,h3{line-height:1.12;overflow-wrap:anywhere}
+.ab{font-family:"Archivo Black",sans-serif;font-weight:400}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+#apercu{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px}
+.nav{position:fixed;top:var(--bh);left:0;right:0;z-index:50;background:#000;border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:10px}
+.brand{display:flex;align-items:center;text-decoration:none}.brand svg{height:42px;width:auto}
+.links{display:none;gap:24px}.links a{color:var(--mut);text-decoration:none;font-weight:500;font-size:15px}.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;border-radius:10px;padding:14px 22px;font-size:16px;border:0;cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-blue{background:var(--blue);color:#fff}.btn-line{border:1.5px solid #3c414b;color:#fff;background:transparent}
+.nav .btn{display:none;padding:9px 14px;font-size:14px}
+.burger{background:none;border:0;width:40px;height:40px;cursor:pointer}
+.mmenu{display:none;position:fixed;top:calc(var(--bh) + 64px);left:0;right:0;z-index:49;background:#000;padding:6px 20px 16px;border-bottom:1px solid var(--line)}
+.mmenu.open{display:block}.mmenu a{display:block;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line)}
+.hero{position:relative;overflow:hidden;padding:108px 0 64px;background:radial-gradient(ellipse at 80% 30%,#1a2c5e 0%,#0d1222 45%,#0a0b0d 80%)}
+.float{position:absolute;inset:0;pointer-events:none}
+.par{position:absolute;inset:0;transform:translate3d(0,var(--py,0px),0)}
+.fl{position:absolute;opacity:.16;animation:drift 18s ease-in-out infinite alternate;will-change:transform}
+.fl.back{opacity:.08;filter:blur(1.5px)}
+@keyframes drift{from{transform:translate3d(0,0,0) rotate(0)}to{transform:translate3d(12px,-22px,0) rotate(22deg)}}
+.hero .wrap{position:relative;display:grid;gap:30px}
+.tag{display:inline-flex;align-items:center;gap:8px;font:600 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sil)}
+.tag b{width:24px;height:12px;background:linear-gradient(#000 33%,#dd0000 33% 66%,#ffce00 66%)}
+.hero h1{font:400 clamp(32px,8vw,60px)/1.05 "Archivo Black",sans-serif;margin:14px 0 16px;text-transform:uppercase}
+.hero h1 span{color:var(--blue2)}
+.hero .lead{color:#c8ccd4;font-size:18px;max-width:580px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03);text-decoration:none;font-size:15px;cursor:pointer}
+.st{color:#ffc531;letter-spacing:2px}
+.shieldbox{display:grid;place-items:center}
+.shieldbox svg{width:min(62vw,300px)}
+.marques{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.marques span{border:1px solid #333843;border-radius:999px;padding:6px 12px;font-weight:600;font-size:14px;background:#0f1115}
+section{padding:72px 0}
+.alt{background:var(--bk2)}
+.sh{margin-bottom:30px}
+.sh h2{font:400 clamp(26px,5.6vw,40px)/1.1 "Archivo Black",sans-serif;text-transform:uppercase}
+.sh h2 span{color:var(--blue2)}
+.sh p{color:var(--mut);margin-top:10px;max-width:640px}
+.svcs{display:grid;gap:12px}
+.sv{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
+.sv i{flex:none;width:40px;height:40px;border-radius:10px;background:var(--blue);display:grid;place-items:center;font-style:normal;font:400 16px "Archivo Black",sans-serif}
+.sv b{display:block;font-size:17px}
+.quote{margin-top:26px;border-left:4px solid var(--blue);background:var(--card);border-radius:0 14px 14px 0;padding:20px 22px;color:#d6dae1}
+.quote strong{display:block;font:400 20px "Archivo Black",sans-serif;color:#fff;margin-bottom:6px}
+.tl{display:grid;gap:14px;position:relative}
+.ev{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 20px 20px 22px;min-width:0;opacity:0;transform:translate3d(-26px,0,0);transition:opacity .7s,transform .7s}
+.ev.in{opacity:1;transform:none}
+.ev .yr{font:400 30px "Archivo Black",sans-serif;color:var(--blue2)}
+.ev p{color:#cfd3da}
+.team{display:grid;gap:14px;margin-top:26px}
+.mem{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
+.mem h3{font:400 20px "Archivo Black",sans-serif;margin-bottom:8px}
+.mem p{color:#cfd3da;font-size:15px}
+.rbig{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:24px}
+.rbig strong{font:400 44px "Archivo Black",sans-serif}
+.rbig small{display:block;color:var(--mut)}
+.grid{display:grid;gap:14px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.rev q{quotes:"« " " »";overflow-wrap:anywhere;color:#e4e7ec}
+.rev.snip q{font-style:italic}
+.rev .who{margin-top:auto;color:var(--mut);font-size:14px}.rev .who b{color:#fff}
+.center{text-align:center;margin-top:26px}
+.contact{display:grid;gap:14px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0}
+.box h3{font-size:18px;margin-bottom:10px}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:7px 0;border-bottom:1px solid #262a31;vertical-align:top}
+.hours td+td{text-align:right;color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:28px 0 100px;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40}.callbar .btn{width:100%;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+#pageAvis{display:none;min-height:100vh;padding:calc(var(--bh) + 16px) 0 60px}
+body.avis-ouvert #pageAvis{display:block}body.avis-ouvert #site{display:none}
+.pa-top{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-bottom:22px}
+.pa-h{font:600 13px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:24px 0 12px}
+#intro{position:fixed;inset:0;z-index:9000;background:#000;display:grid;place-items:center;cursor:pointer;transition:opacity .45s}
+#intro svg{width:min(56vw,240px)}
+#intro .rim{stroke-dasharray:620;stroke-dashoffset:620;animation:draw 1.1s .2s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+#intro .fill{opacity:0;animation:fade .5s 1.1s forwards}
+@keyframes fade{to{opacity:1}}
+#intro.out{opacity:0}
+@media(min-width:700px){.svcs,.rv,.contact,.team,.pa-list{grid-template-columns:repeat(2,minmax(0,1fr))}.tl{grid-template-columns:repeat(3,minmax(0,1fr))}.pa-list{display:grid;gap:14px}}
+@media(min-width:1024px){
+ .links{display:flex}.burger{display:none}.nav .btn{display:inline-flex}
+ .hero{padding:150px 0 96px}.hero .wrap{grid-template-columns:1.2fr .8fr;align-items:center}
+ .rv,.pa-list{grid-template-columns:repeat(3,minmax(0,1fr))}.contact{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .callbar{display:none}footer{padding-bottom:28px}
+}
+.pa-list{display:grid;gap:14px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.ev{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="apercu">Aperçu préparé pour Atelier mécanique GSL — ce n'est pas son site officiel</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <linearGradient id="chr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#9aa0a8"/><stop offset=".6" stop-color="#e9ecef"/><stop offset="1" stop-color="#6d737c"/></linearGradient>
+ <linearGradient id="bl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f7be8"/><stop offset="1" stop-color="#1a3b96"/></linearGradient>
+ <symbol id="shield" viewBox="0 0 120 140"><path class="rim" d="M60 4l50 16v40c0 36-22 62-50 76C32 122 10 96 10 60V20z" fill="none" stroke="url(#chr)" stroke-width="8"/><path class="fill" d="M60 14l40 13v33c0 30-18 52-40 64C38 112 20 90 20 60V27z" fill="url(#bl)"/><text class="fill" x="60" y="80" text-anchor="middle" font-family="Archivo Black" font-size="30" fill="#c9d6f7" stroke="#0d235e" stroke-width="1">GSL</text></symbol>
+ <symbol id="gear" viewBox="0 0 100 100"><path fill="#b9bdc4" d="M43 4h14l2 12a35 35 0 0 1 9 4l10-7 10 10-7 10a35 35 0 0 1 4 9l12 2v14l-12 2a35 35 0 0 1-4 9l7 10-10 10-10-7a35 35 0 0 1-9 4l-2 12H43l-2-12a35 35 0 0 1-9-4l-10 7-10-10 7-10a35 35 0 0 1-4-9L3 57V43l12-2a35 35 0 0 1 4-9l-7-10 10-10 10 7a35 35 0 0 1 9-4zM50 32a18 18 0 1 0 0 36 18 18 0 0 0 0-36z"/></symbol>
+ <symbol id="wr" viewBox="0 0 100 100"><path fill="#b9bdc4" d="M70 6a22 22 0 0 0-21 29L8 76a9 9 0 0 0 13 13l41-41A22 22 0 0 0 92 26l-13 13-12-3-3-12 13-13a22 22 0 0 0-7-5z"/></symbol>
+ <symbol id="ti" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="#b9bdc4" stroke-width="14" stroke-dasharray="7 4"/><circle cx="50" cy="50" r="20" fill="none" stroke="#b9bdc4" stroke-width="6"/></symbol>
+ <symbol id="tonka" viewBox="0 0 120 70"><path fill="#ffce00" d="M6 30h40l10-18h30l8 18h20v24H6z"/><circle cx="28" cy="56" r="11" fill="#b9bdc4"/><circle cx="92" cy="56" r="11" fill="#b9bdc4"/></symbol>
+</defs></svg>
+<div id="intro" aria-hidden="true"><svg viewBox="0 0 120 140"><path class="rim" d="M60 4l50 16v40c0 36-22 62-50 76C32 122 10 96 10 60V20z" fill="none" stroke="url(#chr)" stroke-width="8"/><path class="fill" d="M60 14l40 13v33c0 30-18 52-40 64C38 112 20 90 20 60V27z" fill="url(#bl)"/><text class="fill" x="60" y="80" text-anchor="middle" font-family="Archivo Black" font-size="30" fill="#c9d6f7">GSL</text></svg></div>
+
+<div id="site">
+<nav class="nav"><div class="wrap">
+ <a class="brand" href="#accueil" aria-label="Atelier mécanique GSL"><svg viewBox="0 0 260 70"><text x="0" y="16" font-family="Inter" font-weight="700" font-size="14" fill="#fff" letter-spacing="2.2">ATELIER MÉCANIQUE</text><g font-family="Archivo Black" font-size="54"><text x="-2" y="66" fill="#1f44a8">GSL</text><text x="-2" y="66" fill="#b9bdc4" clip-path="url(#half)">GSL</text></g><clipPath id="half"><rect x="0" y="0" width="200" height="44"/></clipPath><svg x="196" y="2" width="58" height="66" viewBox="0 0 120 140"><use href="#shield"/></svg></svg></a>
+ <div class="links"><a href="#services">Services</a><a href="#histoire">Notre histoire</a><a href="#equipe">Équipe</a><a href="#avis" data-avis>Avis</a><a href="#contact">Contact</a></div>
+ <div style="display:flex;gap:8px;align-items:center"><a class="btn btn-blue" href="tel:+14505390730">450-539-0730</a><button class="burger" id="burger" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+</div></nav>
+<div class="mmenu" id="mmenu"><a href="#services">Services</a><a href="#histoire">Notre histoire</a><a href="#equipe">Équipe</a><a href="#avis" data-avis>Avis</a><a href="#contact">Contact</a></div>
+
+<header class="hero" id="accueil">
+ <div class="float" aria-hidden="true"><div class="par" id="par">
+  <svg class="fl back" viewBox="0 0 100 100" style="left:-40px;top:100px;width:160px;animation-duration:24s"><use href="#gear"/></svg>
+  <svg class="fl" viewBox="0 0 100 100" style="right:7%;top:70px;width:62px"><use href="#wr"/></svg>
+  <svg class="fl back" viewBox="0 0 100 100" style="right:-40px;bottom:30px;width:180px;animation-duration:26s"><use href="#ti"/></svg>
+  <svg class="fl" viewBox="0 0 120 70" style="left:10%;bottom:50px;width:70px;opacity:.22;animation-duration:15s"><use href="#tonka"/></svg>
+  <svg class="fl" viewBox="0 0 100 100" style="left:52%;top:50px;width:40px;animation-duration:13s"><use href="#gear"/></svg>
+  <svg class="fl back" viewBox="0 0 100 100" style="left:30%;top:45%;width:90px;animation-duration:21s"><use href="#wr"/></svg>
+  <svg class="fl" viewBox="0 0 100 100" style="left:60%;bottom:40px;width:46px;animation-duration:17s"><use href="#ti"/></svg>
+ </div></div>
+ <div class="wrap">
+  <div>
+   <span class="tag"><b></b>Waterloo · depuis 1995</span>
+   <h1>Spécialiste en <span>voitures allemandes</span></h1>
+   <p class="lead">Le raffinement et la performance! Entretien et réparation Volkswagen, Audi, BMW, Mercedes et Mini Cooper, par une équipe qui connaît parfaitement ces voitures.</p>
+   <div class="cta"><a class="btn btn-blue" href="tel:+14505390730"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#fff" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Appeler : 450-539-0730</a><a class="btn btn-line" href="#services">Nos services</a></div>
+   <a class="rating" href="#avis" data-avis><span class="st">★★★★★</span><span><b>4,7</b> sur Google · 139 avis</span></a>
+  </div>
+  <div class="shieldbox"><svg viewBox="0 0 120 140"><use href="#shield"/></svg>
+   <div class="marques"><span>Volkswagen</span><span>Audi</span><span>BMW</span><span>Mercedes</span><span>Mini Cooper</span><span>Porsche</span><span>Smart</span></div></div>
+ </div>
+</header>
+
+<section id="services"><div class="wrap">
+ <div class="sh"><h2>Nos <span>services</span></h2><p>Le meilleur en matière de mécanique générale pour voitures allemandes, à des tarifs très compétitifs.</p></div>
+ <div class="svcs">
+  <div class="sv"><i>1</i><div><b>Entretien recommandé par le manufacturier</b></div></div>
+  <div class="sv"><i>2</i><div><b>Entretien normal du véhicule</b><span style="color:var(--mut)">Changement d'huile, freins, suspension</span></div></div>
+  <div class="sv"><i>3</i><div><b>Réparation de transmissions</b></div></div>
+  <div class="sv"><i>4</i><div><b>Remise à l'état neuf de moteurs au diesel et au gaz</b></div></div>
+  <div class="sv"><i>5</i><div><b>Pose de moteurs d'origine</b></div></div>
+  <div class="sv"><i>6</i><div><b>Installation de pneus et de mags</b></div></div>
+  <div class="sv"><i>7</i><div><b>Nettoyage interne du système d'admission</b></div></div>
+  <div class="sv"><i>8</i><div><b>Air conditionné</b><span style="color:var(--mut)">Diagnostic, réparation et entretien</span></div></div>
+ </div>
+ <div class="quote"><strong>Vous en avez assez de vous faire traiter comme un numéro?</strong>Vous avez bien raison! Nous prendrons le temps de vous écouter et nous règlerons votre problème.</div>
+</div></section>
+
+<section id="histoire" class="alt"><div class="wrap">
+ <div class="sh"><h2>Une histoire de <span>famille</span></h2><p>À l'Atelier mécanique GSL, la réparation de voitures allemandes est une histoire de famille et de passion.</p></div>
+ <div class="tl">
+  <div class="ev"><div class="yr">L'enfance</div><p>Dès l'âge de six ans, le jeune Steve Lavertu réparait déjà ses Tonka en métal. À sept ans, il démontait et remontait son vélo pour en comprendre le fonctionnement.</p></div>
+  <div class="ev"><div class="yr">1995</div><p>Le bouche-à-oreille fait son œuvre à Waterloo : la demande devient si grande que Steve ouvre son garage de réparation de voitures allemandes, avec les connaissances transmises par son père, Gilles.</p></div>
+  <div class="ev"><div class="yr">2010</div><p>Après deux rénovations et un agrandissement, le garage déménage et quadruple son espace pour en offrir toujours plus à sa clientèle.</p></div>
+ </div>
+</div></section>
+
+<section id="equipe"><div class="wrap">
+ <div class="sh"><h2>Notre <span>équipe</span></h2></div>
+ <div class="team">
+  <div class="mem"><h3>Steve Lavertu, propriétaire</h3><p>Un passionné de mécanique automobile et de service à la clientèle. Son sens de l'écoute lui permet d'exceller dans son métier : ses priorités sont d'écouter le client et de bâtir une relation de confiance avec lui. Il se tient toujours à l'affût des nouvelles technologies. Ceux qui le connaissent le décrivent comme un propriétaire accueillant et comique.</p></div>
+  <div class="mem"><h3>Erik Collin, mécanicien</h3><p>Il a consacré la majorité de sa carrière aux voitures allemandes. Ce qui le passionne le plus : le diagnostic et la diversité du travail. Il apprécie l'équipe dynamique et la possibilité de relever de nouveaux défis.</p></div>
+ </div>
+</div></section>
+
+<section id="avis" class="alt"><div class="wrap">
+ <div class="sh"><h2>Ce que nos <span>clients</span> disent</h2></div>
+ <div class="rbig"><strong>4,7</strong><div><div class="st">★★★★★</div><small>sur Google · 139 avis</small></div></div>
+ <div class="grid rv" id="revHome"></div>
+ <div class="center"><button class="btn btn-line" data-avis>Voir tous les avis (8)</button></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <div class="sh"><h2>Nous <span>joindre</span></h2></div>
+ <div class="contact">
+  <div class="box"><h3>Heures d'ouverture</h3><table class="hours"><tr><td>Lundi au jeudi</td><td>7 h 30 à 12 h<br>13 h à 17 h 30</td></tr><tr><td>Vendredi</td><td>7 h 30 à 12 h</td></tr><tr><td>Samedi et dimanche</td><td>Fermé</td></tr></table><p style="color:var(--mut);font-size:14px;margin-top:8px">L'atelier est fermé durant les congés fériés.</p></div>
+  <div class="box"><h3>Téléphone et courriel</h3><p><a href="tel:+14505390730" style="font:400 24px 'Archivo Black',sans-serif;text-decoration:none">450-539-0730</a></p><p style="color:var(--mut)">Sans frais : <a href="tel:+18775390009">1-877-539-0009</a></p><p style="margin-top:8px"><a href="mailto:info@ateliergsl.com">info@ateliergsl.com</a></p></div>
+  <div class="box"><h3>Adresse</h3><p>360, rue Bernard<br>Waterloo (Québec) J0E 2N0</p><p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&amp;query=Atelier+m%C3%A9canique+GSL+360+rue+Bernard+Waterloo" target="_blank" rel="noopener">Itinéraire sur Google Maps →</a></p><p style="margin-top:6px"><a href="https://www.facebook.com/pages/Atelier-GSL/358989857531034" target="_blank" rel="noopener">Page Facebook →</a></p></div>
+ </div>
+</div></section>
+<footer><div class="wrap"><span>© Atelier mécanique GSL inc. · Waterloo</span><span><a href="tel:+14505390730">450-539-0730</a></span></div></footer>
+<div class="callbar"><a class="btn btn-blue" href="tel:+14505390730">Appeler l'atelier</a></div>
+</div>
+
+<div id="pageAvis"><div class="wrap">
+ <div class="pa-top"><button class="btn btn-line" id="retour">← Retour au site</button><a class="btn btn-line" href="https://www.google.com/maps/place/?q=place_id:ChIJ7yPg28PXyUwRGzYA2E8-jsM" target="_blank" rel="noopener">Voir sur Google</a></div>
+ <div class="rbig"><strong>4,7</strong><div><div class="st">★★★★★</div><small>sur Google · 139 avis — Atelier mécanique GSL, Waterloo</small></div></div>
+ <div class="pa-h">Avis Google 5 étoiles</div><div class="pa-list" id="revAll"></div>
+ <div class="pa-h">Extrait d'avis mis en avant par Google</div><div class="pa-list" id="revSnip"></div>
+</div></div>
+
+<script>
+(function(){
+var root=document.documentElement,body=document.body;
+function setBh(){root.style.setProperty('--bh',document.getElementById('apercu').offsetHeight+'px')}
+setBh();addEventListener('resize',setBh,{passive:true});
+var R=[
+{t:"Depuis 2004 que l’on fait affaire avec Steve chez GSL volks au début et maintenant notre Mercedes GLK . Toujours le meilleur service et les meilleurs prix , imbattables. Notre confiance à 100% depuis 23 ans et jamais déçu. Honnête et très compétent pour les autos allemandes . En fait ce sont les meilleurs sans aucun doute .",a:"Martin Raincity",d:"il y a 6 mois"},
+{t:"Nous avons 2 Audi et l’entretien se fait chez GLS depuis quelques années.\nExcellent service à la clientèle (Steve est rapide et efficace) de la part de toute l’équipe et bien entendu, excellent service mécanique! J’ai toujours eu “l’heure juste” avec Steve: réparation à venir, coût d’entretien, etc.  Contrairement aux concessionnaires allemands, il ne remplacera pas une pièce si ce n’est pas à faire dans l’immédiat.\nJ’aime beaucoup son expertise et son honnêteté et c’est la raison pour laquelle il a une clientèle très fidèle.",a:"Pascale D'Amato",d:"il y a 2 ans"},
+{t:"Super service, honnête. Ne vous facturera pas de pièces inutilement même si ça pourrait être facile de le faire et avantageux pour eux. Très professionnels et minutieux, hautement recommandé!",a:"Marc Ouellet",d:"il y a 5 ans"},
+{t:"Je fais entretenir mon Audi Q5 chez GSL depuis quelques années, la qualité du service y est toujours impeccable. Je recommande l'Atelier Mécanique GSL pour l'entretient et réparation de votre véhicule.  Vous pouvez faire confiance à Steve et son équipe en toute quiétude.",a:"Bastien Biron",d:"il y a un an"},
+{t:"Steve est une référence dans le domaine de l'automobile allemande. Entièrement digne de confiance, avec tarifs très raisonnables! Je recommande à 100000%!",a:"Benoit Lenders",d:"il y a 2 ans"},
+{t:"Une équipe professionnelle ! Elle donne de très bon conseil qui sont toujours à l’avantage du client, et bien évidement ils offrent de bons prix. C’est le meilleur garage que j’ai eu à ce jour 💯",a:"Aldrick Monrazel",d:"il y a un an"},
+{t:"Super bon service!\nExcellent employés et connaissance des produits WV et Audi.\nJe le recommande sans hésitation.\nSi tous les garages étaient comme cela nous serions en sécurité.",a:"François Prévost",d:"modifié il y a 5 ans"}
+];
+var S=["Diagnostic fiable, employés connaissants et facture juste."];
+function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]}).replace(/\n/g,'<br>')}
+function card(r){return '<div class="rev"><div class="st">★★★★★</div><q>'+esc(r.t)+'</q><div class="who"><b>'+esc(r.a)+'</b> · Avis Google, '+r.d+'</div></div>'}
+function snip(s){return '<div class="rev snip"><div class="st">★★★★★</div><q>'+esc(s)+'</q><div class="who">Extrait d\'un avis Google 5 étoiles</div></div>'}
+document.getElementById('revHome').innerHTML=R.slice(0,6).map(card).join('');
+document.getElementById('revAll').innerHTML=R.map(card).join('');
+document.getElementById('revSnip').innerHTML=S.map(snip).join('');
+var lastY=0,mm=document.getElementById('mmenu');
+function openAvis(e){if(e)e.preventDefault();lastY=scrollY;body.classList.add('avis-ouvert');mm.classList.remove('open');scrollTo(0,0)}
+document.querySelectorAll('[data-avis]').forEach(function(el){el.addEventListener('click',openAvis)});
+document.getElementById('retour').addEventListener('click',function(){body.classList.remove('avis-ouvert');scrollTo(0,lastY)});
+document.getElementById('burger').addEventListener('click',function(){mm.classList.toggle('open')});
+mm.querySelectorAll('a:not([data-avis])').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open')})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.3});
+document.querySelectorAll('.ev').forEach(function(el,i){el.style.transitionDelay=(i*180)+'ms';io.observe(el)});
+var par=document.getElementById('par'),tk=false;
+addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var y=scrollY;if(y<900)par.style.setProperty('--py',(y*.25)+'px');tk=false})},{passive:true});
+var intro=document.getElementById('intro'),seen=false;
+try{seen=sessionStorage.getItem('gslIntro')==='1'}catch(e){}
+function endIntro(){if(!intro)return;var i=intro;intro=null;i.classList.add('out');setTimeout(function(){i.remove()},460);try{sessionStorage.setItem('gslIntro','1')}catch(e){}}
+if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){intro.remove();intro=null}else{intro.addEventListener('click',endIntro);setTimeout(endIntro,2000)}
+})();
+</script>
+</body>
+</html>
