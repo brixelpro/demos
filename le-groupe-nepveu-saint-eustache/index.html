@@ -86,9 +86,33 @@ footer{background:#081629;color:#a9bdd3;padding:30px 0 100px;font-size:14px}
 .callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;gap:10px;background:var(--orange);color:#1b1206;font-weight:800;text-decoration:none;border-radius:12px;padding:14px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
+.view{display:none}.view.on{display:block}
+.pagehead{background:linear-gradient(180deg,#0a1b33,var(--night));color:#fff;padding:120px 0 50px}
+.pagehead h1{font-size:clamp(2rem,7vw,3.4rem);text-transform:uppercase;margin:12px 0 8px}
+.pagehead p{color:#d7e6f5;margin:0;max-width:36em}
+.back{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);color:#fff;border:0;border-radius:999px;padding:8px 14px;font:700 14px "Archivo",sans-serif;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0 0 26px}
+.chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-weight:800;color:var(--night)}
+.chips li.home{background:var(--orange);border-color:var(--orange);color:#1b1206}
+.map{width:100%;height:340px;border:0;border-radius:20px;display:block}
+.steps{display:grid;gap:14px;counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 20px 20px 66px;position:relative;font-weight:600}
+.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--night);color:#fff;display:grid;place-items:center;font:400 17px "Archivo Black",sans-serif}
+.revbox{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 24px;text-align:center;max-width:640px;margin:0 auto}
+.stars{font-size:34px;letter-spacing:6px;color:var(--orange)}
+.teaser{display:grid;gap:16px}
+.tz{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;cursor:pointer;text-align:left;font:inherit;color:inherit}
+.tz h3{color:var(--night);text-transform:uppercase;font-size:1.2rem}
+.tz p{color:var(--muted);margin:0 0 10px}
+.tz span{font-weight:800;color:var(--night2)}
+.mnav{display:flex;gap:6px;overflow-x:auto;padding:10px 20px;background:var(--night2);scrollbar-width:none}
+.mnav a{flex:none;color:#fff;text-decoration:none;font-weight:700;font-size:13px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08)}
+@media (min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}.teaser{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1024px){.mnav{display:none}.pagehead{padding:150px 0 60px}}
+@media (max-width:1023px){.hero{padding-top:170px}.pagehead{padding-top:170px}}
 @media (min-width:760px){.svc{grid-template-columns:repeat(3,1fr)}.contact{grid-template-columns:1fr 1fr}}
 @media (min-width:1024px){nav{display:flex}.navcall{display:inline-flex;padding:.6em 1.1em;min-height:0}.hero{padding:150px 0 140px}.hero .wrap{grid-template-columns:1.2fr .8fr;align-items:center}.truck{max-width:none}.callbar{display:none}footer{padding-bottom:30px}.brand b{max-width:none}}
-@media (max-width:600px){body{padding-top:48px}header{top:48px}.hero{padding-top:130px}}
+@media (max-width:600px){body{padding-top:48px}header{top:48px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.snowcover,.road .plow2{display:none}}
 </style>
 </head>
@@ -98,11 +122,11 @@ footer{background:#081629;color:#a9bdd3;padding:30px 0 100px;font-size:14px}
 <svg class="plow" viewBox="0 0 140 80"><rect x="30" y="18" width="62" height="34" rx="5" fill="#f28a1e"/><rect x="74" y="8" width="34" height="44" rx="5" fill="#f28a1e"/><rect x="80" y="14" width="22" height="16" rx="3" fill="#b9dcf2"/><rect x="88" y="2" width="8" height="6" rx="2" fill="#ffd166"/><path d="M110 22h10l12 8v30h-22z" fill="#c7d3df"/><circle cx="46" cy="60" r="12" fill="#0b1a2e"/><circle cx="90" cy="60" r="12" fill="#0b1a2e"/></svg></div></div>
 <script>(function(){var i=document.getElementById('intro');if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){i.remove();return}var d=false;function end(){if(d)return;d=true;i.classList.add('out');setTimeout(function(){i.remove()},480)}var t=setTimeout(end,2200);i.addEventListener('click',function(){clearTimeout(t);end()})})();</script>
 <header><div class="wrap">
-<a class="brand" href="#top"><svg viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="#f28a1e"/><text x="22" y="31" text-anchor="middle" font-family="Archivo Black,sans-serif" font-size="25" fill="#0d2340">L</text><g stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M35 6v8M31 10h8M32.2 7.2l5.6 5.6M37.8 7.2l-5.6 5.6"/></g></svg><span><b>Le Groupe Nepveu</b><small>Déneigement · Saint-Eustache</small></span></a>
-<nav><a href="#services">Services</a><a href="#zone">Secteur</a><a href="#contact">Contact</a></nav>
+<a class="brand" href="#" data-go="accueil"><svg viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="#f28a1e"/><text x="22" y="31" text-anchor="middle" font-family="Archivo Black,sans-serif" font-size="25" fill="#0d2340">L</text><g stroke="#fff" stroke-width="1.6" stroke-linecap="round"><path d="M35 6v8M31 10h8M32.2 7.2l5.6 5.6M37.8 7.2l-5.6 5.6"/></g></svg><span><b>Le Groupe Nepveu</b><small>Déneigement · Saint-Eustache</small></span></a>
+<nav><a href="#" data-go="accueil">Accueil</a><a href="#" data-go="services">Services</a><a href="#" data-go="secteurs">Secteurs</a><a href="#" data-go="avis">Avis</a><a href="#" data-go="joindre">Nous joindre</a></nav>
 <a class="btn btn-or navcall" href="tel:+14504915661">450 491-5661</a>
-</div></header>
-<main id="top">
+</div><div class="mnav"><a href="#" data-go="accueil">Accueil</a><a href="#" data-go="services">Services</a><a href="#" data-go="secteurs">Secteurs</a><a href="#" data-go="avis">Avis</a><a href="#" data-go="joindre">Contact</a></div></header>
+<main id="top"><div class="view on" id="v-accueil">
 <section class="hero">
 <div class="fl" style="left:6%;top:12%;width:40px;height:40px"><svg viewBox="0 0 40 40" style="--t:8s"><g stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M20 3v34M5 11l30 18M5 29l30-18"/></g></svg></div>
 <div class="fl" style="right:5%;top:64%;width:54px;height:54px"><svg viewBox="0 0 40 40" style="--t:10s"><g stroke="#dff0fb" stroke-width="2" stroke-linecap="round"><path d="M20 3v34M5 11l30 18M5 29l30-18"/></g></svg></div>
@@ -112,7 +136,7 @@ footer{background:#081629;color:#a9bdd3;padding:30px 0 100px;font-size:14px}
 <span class="kicker">Déneigement · Saint-Eustache</span>
 <h1>Le Groupe Nepveu</h1>
 <p class="lead">Déneigement résidentiel et commercial à Saint-Eustache et dans les environs. Un appel, et on s'occupe de votre entrée tout l'hiver.</p>
-<div class="cta"><a class="btn btn-or" href="tel:+14504915661"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler 450 491-5661</a><a class="btn btn-ghost" href="#services">Nos services</a></div>
+<div class="cta"><a class="btn btn-or" href="tel:+14504915661"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Appeler 450 491-5661</a><a class="btn btn-ghost" href="#" data-go="services">Nos services</a></div>
 </div>
 <svg class="truck" viewBox="0 0 420 250" aria-hidden="true"><ellipse cx="210" cy="226" rx="206" ry="24" fill="#f6fbff"/><rect x="80" y="96" width="150" height="88" rx="10" fill="#f28a1e"/><rect x="200" y="62" width="82" height="122" rx="10" fill="#f28a1e"/><rect x="214" y="76" width="54" height="40" rx="6" fill="#b9dcf2"/><rect x="230" y="50" width="22" height="12" rx="4" fill="#ffd166" class="beacon"/><path d="M286 110h22l38 22v72h-58z" fill="#c7d3df"/><path d="M346 132l28 72h-28z" fill="#9fb0c2"/><g class="wh"><circle cx="120" cy="190" r="26" fill="#0b1a2e"/><circle cx="120" cy="190" r="9" fill="#c7d3df"/><path d="M120 166v48M96 190h48" stroke="#3b4d63" stroke-width="4"/></g><g class="wh"><circle cx="246" cy="190" r="26" fill="#0b1a2e"/><circle cx="246" cy="190" r="9" fill="#c7d3df"/><path d="M246 166v48M222 190h48" stroke="#3b4d63" stroke-width="4"/></g></svg>
 </div></section>
@@ -129,16 +153,53 @@ footer{background:#081629;color:#a9bdd3;padding:30px 0 100px;font-size:14px}
 <div class="road" id="road"><b>Saint-Eustache</b><span>et les environs</span><div class="snowcover" aria-hidden="true"></div>
 <svg class="plow2" viewBox="0 0 140 80" aria-hidden="true"><rect x="30" y="18" width="62" height="34" rx="5" fill="#f28a1e"/><rect x="74" y="8" width="34" height="44" rx="5" fill="#f28a1e"/><rect x="80" y="14" width="22" height="16" rx="3" fill="#b9dcf2"/><path d="M110 22h10l12 8v30h-22z" fill="#c7d3df"/><circle cx="46" cy="60" r="12" fill="#0b1a2e"/><circle cx="90" cy="60" r="12" fill="#0b1a2e"/></svg></div>
 </div></section>
+<section style="padding-top:0"><div class="wrap"><div class="teaser reveal">
+<button type="button" class="tz" data-go="secteurs"><h3>Nos secteurs</h3><p>Saint-Eustache et les villes autour.</p><span>Voir les secteurs</span></button>
+<button type="button" class="tz" data-go="avis"><h3>Avis</h3><p>Ce que nos clients en pensent.</p><span>Voir les avis</span></button>
+<button type="button" class="tz" data-go="joindre"><h3>Nous joindre</h3><p>Téléphone, adresse et itinéraire.</p><span>Nous joindre</span></button>
+</div></div></section>
 <section id="contact"><div class="wrap">
 <h2 class="t">Demandez votre soumission</h2>
 <div class="contact reveal">
 <div class="box"><h3>Appelez-nous</h3><a class="big" href="tel:+14504915661">450 491-5661</a></div>
 <div class="box"><h3>Où nous trouver</h3><p>75, rue Daoust, Saint-Eustache (Québec) J7R 5B7</p><p><a href="https://www.google.com/maps/search/?api=1&amp;query=75%2C+rue+Daoust%2C+Saint-Eustache+%28Qu%C3%A9bec%29+J7R+5B7" target="_blank" rel="noopener">Voir sur Google Maps</a></p></div>
 </div></div></section>
+</div>
+<div class="view" id="v-services">
+<div class="pagehead"><div class="wrap"><button type="button" class="back" data-go="accueil">← Retour au site</button><h1>Nos services</h1><p>Déneigement à Saint-Eustache et dans les environs.</p></div></div>
+<section><div class="wrap"><div class="svc">
+<article class="card"><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><rect width="52" height="52" rx="14" fill="#dff0fb"/><path d="M12 26L26 14l14 12v14H12z" fill="#0d2340"/><rect x="22" y="30" width="8" height="10" fill="#f28a1e"/></svg><h3>Entrées résidentielles</h3><p>Votre entrée de cour dégagée après chaque bordée, pour partir travailler sans prendre la pelle.</p><p style="margin-top:14px"><a class="btn btn-or" href="tel:+14504915661">Demander une soumission</a></p></article>
+<article class="card dark"><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><rect width="52" height="52" rx="14" fill="#16345c"/><rect x="10" y="18" width="32" height="22" fill="#dff0fb"/><rect x="8" y="14" width="36" height="5" fill="#f28a1e"/></svg><h3>Stationnements commerciaux</h3><p>Accès et stationnements dégagés pour vos clients et vos employés.</p><p style="margin-top:14px"><a class="btn btn-or" href="tel:+14504915661">Demander une soumission</a></p></article>
+<article class="card"><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><rect width="52" height="52" rx="14" fill="#fde6cf"/><g stroke="#0d2340" stroke-width="3" stroke-linecap="round"><path d="M26 10v32M12 18l28 16M12 34l28-16"/></g><circle cx="26" cy="26" r="5" fill="#f28a1e"/></svg><h3>Contrat de saison</h3><p>Un seul appel en début d'hiver, et votre déneigement est réglé jusqu'au printemps.</p><p style="margin-top:14px"><a class="btn btn-or" href="tel:+14504915661">Demander une soumission</a></p></article>
+</div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2 class="t">Comment ça marche</h2>
+<ol class="steps"><li>Vous nous appelez au 450 491-5661.</li><li>On regarde votre entrée ou votre stationnement et on vous fait une soumission.</li><li>On s'occupe de la neige tout l'hiver.</li></ol></div></section>
+</div>
+<div class="view" id="v-secteurs">
+<div class="pagehead"><div class="wrap"><button type="button" class="back" data-go="accueil">← Retour au site</button><h1>Nos secteurs</h1><p>Le Groupe Nepveu déneige à Saint-Eustache et dans les villes autour.</p></div></div>
+<section><div class="wrap"><ul class="chips"><li class="home">Saint-Eustache</li><li>Deux-Montagnes</li><li>Sainte-Marthe-sur-le-Lac</li><li>Pointe-Calumet</li><li>Saint-Joseph-du-Lac</li><li>Oka</li><li>Mirabel</li><li>Boisbriand</li><li>Sainte-Thérèse</li><li>Blainville</li><li>Rosemère</li><li>Lorraine</li><li>Bois-des-Filion</li><li>Saint-Placide</li><li>Saint-Colomban</li><li>Saint-Jérôme</li><li>Lachute</li><li>Laval</li><li>Terrebonne</li><li>Montréal (secteur ouest)</li></ul>
+<iframe class="map" loading="lazy" title="Carte de Saint-Eustache" src="https://www.google.com/maps?q=Saint-Eustache%2C+QC&amp;output=embed"></iframe>
+<p class="sub" style="margin-top:22px">Votre ville n'est pas dans la liste? Appelez-nous au <a href="tel:+14504915661" style="font-weight:800">450 491-5661</a>, on vous dit si on se rend chez vous.</p></div></section>
+</div>
+<div class="view" id="v-avis">
+<div class="pagehead"><div class="wrap"><button type="button" class="back" data-go="accueil">← Retour au site</button><h1>Avis</h1><p>Ce que nos clients disent de Le Groupe Nepveu.</p></div></div>
+<section><div class="wrap"><div class="revbox"><div class="stars">★★★★★</div><h2 class="t" style="font-size:1.6rem;margin-top:10px">Vous êtes client?</h2><p class="sub" style="margin:0 auto 20px">Votre avis aide vos voisins à trouver un bon déneigeur. Ça prend une minute sur Google.</p><a class="btn btn-or" href="https://www.google.com/search?q=Le+Groupe+Nepveu+Saint-Eustache+avis" target="_blank" rel="noopener">Voir et laisser un avis sur Google</a></div></div></section>
+</div>
+<div class="view" id="v-joindre">
+<div class="pagehead"><div class="wrap"><button type="button" class="back" data-go="accueil">← Retour au site</button><h1>Nous joindre</h1><p>Appelez-nous pour votre soumission.</p></div></div>
+<section id="contact"><div class="wrap">
+
+<div class="contact reveal">
+<div class="box"><h3>Appelez-nous</h3><a class="big" href="tel:+14504915661">450 491-5661</a></div>
+<div class="box"><h3>Où nous trouver</h3><p>75, rue Daoust, Saint-Eustache (Québec) J7R 5B7</p><p><a href="https://www.google.com/maps/search/?api=1&amp;query=75%2C+rue+Daoust%2C+Saint-Eustache+%28Qu%C3%A9bec%29+J7R+5B7" target="_blank" rel="noopener">Voir sur Google Maps</a></p></div>
+</div></div></section>
+<section style="padding-top:0;background:var(--ice)"><div class="wrap"><iframe class="map" loading="lazy" title="Carte" src="https://www.google.com/maps?q=75%2C+rue+Daoust%2C+Saint-Eustache+%28Qu%C3%A9bec%29+J7R+5B7&amp;output=embed"></iframe><p style="margin-top:16px"><a class="btn btn-or" href="https://www.google.com/maps/dir/?api=1&amp;destination=75%2C+rue+Daoust%2C+Saint-Eustache+%28Qu%C3%A9bec%29+J7R+5B7" target="_blank" rel="noopener">Itinéraire</a></p></div></section>
+</div>
 </main>
 <footer><div class="wrap">© Le Groupe Nepveu · Déneigement à Saint-Eustache</div></footer>
 <a class="callbar" href="tel:+14504915661">📞 Appeler 450 491-5661</a>
-<script>(function(){var els=document.querySelectorAll('.reveal,.road');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.3});els.forEach(function(e){io.observe(e)})})();</script>
+<script>(function(){function go(p){document.querySelectorAll(".view").forEach(function(v){v.classList.toggle("on",v.id==="v-"+p)});window.scrollTo(0,0);document.querySelectorAll(".view.on .reveal,.view.on .road").forEach(function(e){e.classList.add("in")})}document.addEventListener("click",function(e){var a=e.target.closest("[data-go]");if(!a)return;e.preventDefault();go(a.getAttribute("data-go"))});})();
+(function(){var els=document.querySelectorAll('.reveal,.road');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.3});els.forEach(function(e){io.observe(e)})})();</script>
 <script data-goatcounter="https://brixelpro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
