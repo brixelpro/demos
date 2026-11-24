@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Garage Martin Léonard — Mécanique, remorquage 24 h et magasin général à Lac-du-Cerf</title>
+<meta name="description" content="Garage Martin Léonard, Lac-du-Cerf depuis 1999 : réparation mécanique, remorquage 24 h/7 j, essence et diesel, propane, dépanneur, chasse et pêche, quincaillerie et chalets à louer sur le lac Mallonne. 819 597-2003.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800;1,900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Garage Martin Léonard Inc.","description":"Réparation mécanique, remorquage 24 h/7 j, station-service, propane, dépanneur, chasse et pêche, quincaillerie et location de chalets à Lac-du-Cerf depuis 1999.","telephone":"+1-819-597-2003","faxNumber":"+1-819-597-2095","email":"admin@garagemleonard.com","url":"https://garagemartinleonard.com/","foundingDate":"1999","address":{"@type":"PostalAddress","streetAddress":"200, rue Principale","addressLocality":"Lac-du-Cerf","addressRegion":"QC","postalCode":"J0W 1S1","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"20:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"93"},"sameAs":["https://www.facebook.com/GarageMartinLeonard/"]}
+</script>
+<style>
+:root{--red:#e01b2b;--red2:#a80f1c;--ink:#0d0e10;--coal:#16181c;--steel:#23262c;--chrome:#c9ced6;--mut:#9aa1ab;--txt:#eef0f3;--banner:48px}
+@media(min-width:521px){:root{--banner:32px}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--banner) + 64px)}
+body{background:var(--ink);color:var(--txt);font:400 16px/1.6 Barlow,system-ui,sans-serif;padding-top:var(--banner)}
+a{color:inherit}
+img,svg{max-width:100%}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;line-height:1.05;letter-spacing:.01em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.it{font-style:italic;font-weight:900}
+/* NAV */
+.nav{position:fixed;top:var(--banner);left:0;right:0;z-index:50;background:rgba(13,14,16,.94);border-bottom:1px solid #2a2d33}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.brand{display:flex;align-items:center;text-decoration:none;min-width:0}
+.brand svg{height:44px;width:auto}
+.links{display:none;gap:22px;align-items:center;font:600 15px Barlow,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.links a{text-decoration:none;color:var(--chrome)}
+.links a:hover{color:#fff}
+.links .cta{background:var(--red);color:#fff;padding:9px 16px;border-radius:6px}
+.burger{background:none;border:1px solid #3a3e46;color:#fff;border-radius:8px;width:44px;height:40px;font-size:20px;cursor:pointer}
+.mmenu{display:none;position:fixed;top:calc(var(--banner) + 60px);left:0;right:0;z-index:49;background:#111317;border-bottom:2px solid var(--red);padding:8px 20px 16px}
+.mmenu.open{display:block}
+.mmenu a{display:block;padding:12px 0;border-bottom:1px solid #24272d;text-decoration:none;font:600 17px Barlow,sans-serif;text-transform:uppercase;letter-spacing:.05em}
+@media(min-width:960px){.links{display:flex}.burger{display:none}}
+/* HERO */
+.hero{position:relative;padding:110px 0 70px;overflow:hidden;background:radial-gradient(120% 80% at 80% 10%,#2b1013 0%,transparent 55%),radial-gradient(90% 70% at 0% 100%,#1b1e24 0%,transparent 60%),var(--ink)}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#2c3037 1.2px,transparent 1.4px);background-size:14px 14px;opacity:.45;-webkit-mask:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent);mask:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent)}
+.floaters{position:absolute;inset:0;pointer-events:none;z-index:0}
+.fl{position:absolute;opacity:.18;transform:translate3d(0,calc(var(--p,0px)*var(--d,1)),0)}
+.fl>svg{display:block;animation:spin var(--t,40s) linear infinite}
+.fl.bob>svg{animation:bob var(--t,7s) ease-in-out infinite alternate}
+.fl.far{filter:blur(2px);opacity:.12}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{from{transform:translateY(-10px) rotate(-8deg)}to{transform:translateY(12px) rotate(8deg)}}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:34px}
+.tag{display:inline-flex;gap:8px;align-items:center;background:#1d2026;border:1px solid #33373f;border-radius:30px;padding:6px 14px;font:600 13px Barlow,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--chrome)}
+.tag i{width:8px;height:8px;border-radius:50%;background:#2fd06b;box-shadow:0 0 0 4px rgba(47,208,107,.18)}
+.hero h1{font-size:clamp(44px,11vw,92px);margin:16px 0 8px;font-weight:900;font-style:italic;text-transform:uppercase}
+.hero h1 span{color:var(--red);display:block;font-size:.5em;letter-spacing:.04em}
+.hero p.lead{font-size:18px;color:#cfd3da;max-width:560px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:8px;font:700 17px Barlow,sans-serif;text-decoration:none;text-transform:uppercase;letter-spacing:.04em;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn.red{background:linear-gradient(180deg,#f0293a,var(--red2));color:#fff;box-shadow:0 8px 24px -8px rgba(224,27,43,.7)}
+.btn.ghost{border:2px solid #474c55;color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chips span{font:600 13px Barlow,sans-serif;background:#1a1c21;border:1px solid #2e3138;border-radius:6px;padding:6px 10px;color:var(--chrome)}
+.heroLogo{display:none}
+@media(min-width:960px){.hero{padding:150px 0 110px}.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}.heroLogo{display:block}}
+.heroLogo svg{width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))}
+/* SECTIONS */
+section{padding:72px 0;position:relative}
+.kicker{font:700 13px Barlow,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.st{font-size:clamp(34px,7vw,56px);font-weight:900;font-style:italic;text-transform:uppercase;margin:6px 0 14px}
+.sub{color:#b9bec7;max-width:680px}
+.grid{display:grid;gap:18px;margin-top:34px}
+@media(min-width:720px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.g3{grid-template-columns:repeat(3,1fr)}}
+.card{background:linear-gradient(180deg,#1a1d22,#14161a);border:1px solid #2a2e35;border-radius:14px;padding:24px;min-width:0;position:relative;overflow:hidden}
+.card h3{font-size:28px;font-style:italic;font-weight:800;text-transform:uppercase;margin:12px 0 10px}
+.card p{color:#c3c8d0}
+.card .ic{width:52px;height:52px;border-radius:12px;background:#2a0d11;border:1px solid #5a141c;display:grid;place-items:center}
+.card ul{list-style:none;margin-top:12px;display:grid;gap:6px}
+.card li{padding-left:22px;position:relative;color:#d6dae0}
+.card li:before{content:"";position:absolute;left:2px;top:.62em;width:10px;height:3px;background:var(--red);transform:skewX(-20deg)}
+.cols2 ul{grid-template-columns:1fr}
+@media(min-width:480px){.cols2 ul{grid-template-columns:1fr 1fr}}
+.note{margin-top:14px;font-size:14px;color:var(--mut)}
+/* TOW */
+.tow{background:linear-gradient(180deg,#140608,#0d0e10);border-top:1px solid #3a1015;border-bottom:1px solid #3a1015;overflow:hidden}
+.big24{font:900 italic clamp(90px,26vw,220px)/.85 "Barlow Condensed",sans-serif;color:var(--red);letter-spacing:-.02em}
+.big24 small{display:block;font-size:.22em;color:#fff;letter-spacing:.08em;margin-top:8px}
+.big24{margin-bottom:28px}
+.road{position:relative;height:120px;margin-top:30px;border-bottom:4px dashed #3b3f47}
+.truck{position:absolute;left:0;bottom:-2px;width:min(520px,92vw);transform:translate3d(-110%,0,0);transition:transform 2.8s cubic-bezier(.2,.7,.2,1)}
+.tow.on .truck{transform:translate3d(0,0,0)}
+@media(min-width:1024px){.tow.on .truck{transform:translate3d(560px,0,0)}}
+.tow .wheel{transform-box:fill-box;transform-origin:center}
+.tow.on .wheel{animation:spin .6s linear 5}
+.partners{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.partners span{border:1px solid #4a1a20;background:#1c0b0e;border-radius:6px;padding:8px 12px;font:700 14px Barlow,sans-serif;letter-spacing:.04em}
+@media(min-width:960px){.towg{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}}
+/* CHALETS */
+.chalets{background:radial-gradient(80% 60% at 100% 0%,#0f2420 0%,transparent 60%),var(--coal)}
+.lake{border-radius:16px;overflow:hidden;border:1px solid #2a3a36}
+.lake svg{display:block;width:100%;height:auto}
+.feat{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.feat span{background:#14231f;border:1px solid #24413a;color:#cfe9e1;border-radius:20px;padding:5px 12px;font-size:14px}
+/* AVIS */
+.score{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:10px}
+.score b{font:900 italic 64px/1 "Barlow Condensed",sans-serif}
+.stars{color:#ffc531;letter-spacing:2px;font-size:20px}
+.rv{background:#16181c;border:1px solid #2a2e35;border-radius:14px;padding:22px;min-width:0;display:flex;flex-direction:column;gap:10px;opacity:0;transform:translate3d(0,24px,0);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+.rv q{quotes:none;font-size:17px;color:#e8eaee;overflow-wrap:anywhere}
+.rv .who{margin-top:auto;font:600 14px Barlow,sans-serif;color:var(--mut)}
+.rv .who strong{color:#fff}
+/* HORAIRE */
+.hours{width:100%;border-collapse:collapse;margin-top:10px}
+.hours td{padding:9px 0;border-bottom:1px solid #2a2e35}
+.hours td:last-child{text-align:right;font-weight:600}
+.open24{display:inline-block;background:var(--red);color:#fff;border-radius:6px;padding:4px 10px;font:700 14px Barlow,sans-serif;margin-top:12px}
+/* CONTACT */
+.contact a{text-decoration:none}
+.cline{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #2a2e35;flex-wrap:wrap}
+.cline span:first-child{color:var(--mut)}
+.cline a,.cline b{font-weight:600;overflow-wrap:anywhere}
+footer{padding:40px 0 110px;border-top:1px solid #23262c;color:var(--mut);font-size:14px;text-align:center}
+@media(min-width:960px){footer{padding-bottom:40px}}
+/* STICKY CALL */
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:10px}
+.callbar a{flex:1;text-align:center;justify-content:center}
+@media(min-width:960px){.callbar{display:none}}
+/* REVEAL */
+.rev{opacity:0;transform:translate3d(0,30px,0);transition:opacity .7s,transform .7s}
+.rev.in{opacity:1;transform:none}
+/* AVIS PAGE */
+#avisPage{display:none;position:relative;z-index:70;background:var(--ink);min-height:100vh;padding:calc(var(--banner) + 20px) 0 60px}
+body.avis-on #site,body.avis-on .nav,body.avis-on .callbar,body.avis-on .mmenu{display:none}
+body.avis-on #avisPage{display:block}
+.back{display:inline-flex;align-items:center;gap:8px;background:#1d2026;border:1px solid #3a3e46;border-radius:8px;padding:10px 16px;color:#fff;font:700 15px Barlow,sans-serif;cursor:pointer;text-transform:uppercase;letter-spacing:.05em}
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:9000;background:#0b0c0e;display:grid;place-items:center;transition:opacity .45s}
+#intro.out{opacity:0}
+#intro .lg{width:min(84vw,560px);transform:translate3d(-130vw,0,0) rotate(-6deg);animation:pull 1.15s cubic-bezier(.2,.9,.25,1.15) .15s forwards}
+#intro .hook{transform-box:fill-box;transform-origin:50% 0;animation:swing 1s ease-in-out 1.2s 1}
+@keyframes pull{to{transform:none}}
+@keyframes swing{0%,100%{transform:rotate(0)}30%{transform:rotate(14deg)}65%{transform:rotate(-8deg)}}
+#intro .spark{position:absolute;width:6px;height:6px;border-radius:50%;background:#ffb02e;opacity:0;animation:spk .6s ease-out 1.25s forwards}
+@keyframes spk{0%{opacity:1;transform:none}100%{opacity:0;transform:translate3d(var(--x),var(--y),0)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.rev,.rv{opacity:1;transform:none}#intro{display:none}.fl{transform:none}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Garage Martin Léonard — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <linearGradient id="chr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset=".5" stop-color="#9aa1ab"/><stop offset=".55" stop-color="#5d636c"/><stop offset="1" stop-color="#d9dde2"/></linearGradient>
+  <linearGradient id="rd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5a3c"/><stop offset=".6" stop-color="#e01b2b"/><stop offset="1" stop-color="#8f0b16"/></linearGradient>
+  <pattern id="hex" width="14" height="12" patternUnits="userSpaceOnUse"><path d="M7 1l6 3.5v5L7 13 1 9.5v-5z" fill="#2a2d33" stroke="#0a0a0a" stroke-width="1.4"/></pattern>
+  <symbol id="logo" viewBox="0 0 600 300">
+   <path d="M40 150C40 70 230 22 380 22s200 40 200 110-120 150-280 150S40 230 40 150z" fill="#0a0a0a" stroke="#fff" stroke-width="10"/>
+   <path d="M120 120C200 60 330 40 440 52s130 48 120 90" fill="none" stroke="url(#chr)" stroke-width="16" stroke-linecap="round"/>
+   <path d="M150 104C230 62 330 50 430 60" fill="none" stroke="#e01b2b" stroke-width="7" stroke-linecap="round"/>
+   <path d="M150 180h380l-30 60H180z" fill="url(#hex)"/>
+   <text x="40" y="78" font-family="Barlow Condensed,Arial Narrow,sans-serif" font-style="italic" font-weight="900" font-size="58" fill="#e01b2b" stroke="#fff" stroke-width="5" paint-order="stroke" letter-spacing="2">GARAGE</text>
+   <text x="330" y="104" font-family="Barlow Condensed,Arial Narrow,sans-serif" font-style="italic" font-weight="800" font-size="40" fill="#fff" letter-spacing="3">MARTIN</text>
+   <text x="18" y="182" font-family="Barlow Condensed,Arial Narrow,sans-serif" font-style="italic" font-weight="900" font-size="112" fill="#fff" stroke="#0a0a0a" stroke-width="12" paint-order="stroke" letter-spacing="-2" textLength="560" lengthAdjust="spacingAndGlyphs">Léonard</text>
+   <text x="355" y="222" font-family="Barlow Condensed,Arial Narrow,sans-serif" font-style="italic" font-weight="900" font-size="34" fill="#e01b2b" stroke="#fff" stroke-width="3" paint-order="stroke" letter-spacing="1">REMORQUAGE</text>
+   <g fill="none" stroke="url(#chr)" stroke-width="9">
+    <ellipse cx="232" cy="238" rx="18" ry="10" transform="rotate(20 232 238)"/><ellipse cx="266" cy="254" rx="18" ry="10" transform="rotate(-10 266 254)"/><ellipse cx="302" cy="258" rx="18" ry="10" transform="rotate(10 302 258)"/><ellipse cx="338" cy="252" rx="18" ry="10" transform="rotate(-18 338 252)"/><ellipse cx="372" cy="238" rx="18" ry="10" transform="rotate(-28 372 238)"/>
+   </g>
+   <g class="hook"><path d="M195 212c-28-6-48 10-46 32 2 20 26 30 42 20" fill="none" stroke="url(#rd)" stroke-width="16" stroke-linecap="round"/><circle cx="205" cy="218" r="11" fill="url(#rd)"/><circle cx="201" cy="214" r="3" fill="#fff" opacity=".8"/></g>
+  </symbol>
+  <symbol id="gear" viewBox="0 0 100 100"><path fill="currentColor" d="M44 4h12l2 12 8 3 10-7 8 8-7 10 3 8 12 2v12l-12 2-3 8 7 10-8 8-10-7-8 3-2 12H44l-2-12-8-3-10 7-8-8 7-10-3-8-12-2V44l12-2 3-8-7-10 8-8 10 7 8-3zM50 34a16 16 0 100 32 16 16 0 000-32z"/></symbol>
+  <symbol id="wrench" viewBox="0 0 100 100"><path fill="currentColor" d="M70 6a22 22 0 00-20 31L8 79a8 8 0 0011 11l42-42a22 22 0 0029-23l-12 12-12-3-3-12 12-12a22 22 0 00-5-4z"/></symbol>
+  <symbol id="tire" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="currentColor"/><circle cx="50" cy="50" r="24" fill="#0d0e10"/><circle cx="50" cy="50" r="10" fill="currentColor"/><g stroke="#0d0e10" stroke-width="5"><path d="M50 4v10M50 86v10M4 50h10M86 50h10M17 17l7 7M76 76l7 7M83 17l-7 7M24 76l-7 7"/></g></symbol>
+  <symbol id="pine" viewBox="0 0 100 120"><path fill="currentColor" d="M50 0l22 34H60l26 34H64l30 38H6l30-38H14l26-34H28zM44 106h12v14H44z"/></symbol>
+  <symbol id="fish" viewBox="0 0 120 60"><path fill="currentColor" d="M8 30C30 4 70 2 92 26l22-16-6 20 6 20-22-16C70 58 30 56 8 30zm76-4a4 4 0 100 1z"/></symbol>
+  <symbol id="hookS" viewBox="0 0 60 100"><circle cx="30" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="6"/><path d="M30 18v40c0 24-28 24-28 4" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></symbol>
+ </defs>
+</svg>
+
+<div id="intro" aria-hidden="true">
+ <svg class="lg" viewBox="0 0 600 300"><use href="#logo"/></svg>
+</div>
+
+<nav class="nav" aria-label="Navigation principale">
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Garage Martin Léonard — accueil"><svg viewBox="0 0 600 300" width="90" height="45"><use href="#logo"/></svg></a>
+  <div class="links">
+   <a href="#services">Services</a><a href="#remorquage">Remorquage</a><a href="#magasin">Magasin</a><a href="#chalets">Chalets</a><a href="#avis" data-avis>Avis</a><a href="#horaire">Horaire</a><a class="cta" href="tel:+18195972003">819 597-2003</a>
+  </div>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+ </div>
+</nav>
+<div class="mmenu" id="mmenu">
+ <a href="#services">Services</a><a href="#remorquage">Remorquage 24 h</a><a href="#magasin">Magasin général</a><a href="#chalets">Chalets</a><a href="#avis" data-avis>Avis</a><a href="#horaire">Horaire</a><a href="#contact">Contact</a>
+</div>
+
+<div id="site">
+<header class="hero" id="top">
+ <div class="floaters" aria-hidden="true">
+  <div class="fl" style="left:4%;top:16%;--d:.5;--t:38s;color:#c9ced6"><svg width="90" height="90"><use href="#gear"/></svg></div>
+  <div class="fl far" style="right:6%;top:10%;--d:.25;--t:60s;color:#c9ced6"><svg width="150" height="150"><use href="#gear"/></svg></div>
+  <div class="fl bob" style="left:70%;top:62%;--d:.7;--t:6s;color:#e01b2b"><svg width="64" height="64"><use href="#wrench"/></svg></div>
+  <div class="fl" style="left:12%;top:72%;--d:.45;--t:24s;color:#8a9099"><svg width="80" height="80"><use href="#tire"/></svg></div>
+  <div class="fl far bob" style="left:46%;top:8%;--d:.3;--t:9s;color:#3f7d5c"><svg width="70" height="84"><use href="#pine"/></svg></div>
+  <div class="fl bob" style="right:16%;top:34%;--d:.6;--t:7.5s;color:#9aa1ab"><svg width="84" height="42"><use href="#fish"/></svg></div>
+  <div class="fl bob" style="left:34%;top:84%;--d:.8;--t:5.5s;color:#e01b2b"><svg width="34" height="56"><use href="#hookS"/></svg></div>
+  <div class="fl far" style="left:88%;top:78%;--d:.35;--t:50s;color:#c9ced6"><svg width="70" height="70"><use href="#gear"/></svg></div>
+ </div>
+ <div class="wrap">
+  <div>
+   <span class="tag"><i></i>Lac-du-Cerf · depuis 1999</span>
+   <h1>Garage Martin Léonard<span>Mécanique · Remorquage 24 h<br>Magasin général</span></h1>
+   <p class="lead">Plusieurs services sous le même toit : l'atelier mécanique, le remorquage jour et nuit, l'essence, le propane, le dépanneur, la chasse et la pêche, la quincaillerie… et trois chalets sur le lac Mallonne.</p>
+   <div class="btns">
+    <a class="btn red" href="tel:+18195972003">📞 Appeler 819 597-2003</a>
+    <a class="btn ghost" href="#services">Nos services</a>
+   </div>
+   <div class="chips"><span>★ 4,8 sur Google · 93 avis</span><span>Remorquage 24 h / 7 j</span><span>Affilié CAA-Québec</span></div>
+  </div>
+  <div class="heroLogo rev"><svg viewBox="0 0 600 300"><use href="#logo"/></svg></div>
+ </div>
+</header>
+
+<section id="services">
+ <div class="wrap">
+  <div class="kicker">L'atelier</div>
+  <h2 class="st">Réparation mécanique</h2>
+  <p class="sub">Pour la réparation ou l'entretien de votre véhicule, notre atelier a l'équipement moderne et spécialisé qu'il faut pour les véhicules d'aujourd'hui. Sur rendez-vous : appelez-nous.</p>
+  <div class="grid g3">
+   <div class="card rev"><div class="ic"><svg width="30" height="30" style="color:#e01b2b"><use href="#wrench"/></svg></div><h3>Entretien</h3><ul><li>Changement d'huile et filtres</li><li>Entretien du manufacturier</li><li>Air climatisé</li><li>Électronique</li></ul></div>
+   <div class="card rev"><div class="ic"><svg width="30" height="30" style="color:#e01b2b"><use href="#tire"/></svg></div><h3>Pneus et alignement</h3><ul><li>Pose de pneus</li><li>Balancement électronique (mags)</li><li>Alignement</li><li>Vente de pneus de plusieurs grandes marques</li></ul><p class="note">Plusieurs marques sont admissibles aux rabais postaux des manufacturiers : demandez-nous les détails.</p></div>
+   <div class="card rev"><div class="ic"><svg width="30" height="30" style="color:#e01b2b"><use href="#gear"/></svg></div><h3>Soudure et extras</h3><ul><li>Soudure, y compris MIG et aluminium</li><li>Voiture de courtoisie sur demande</li><li>Pièces et produits automobiles en inventaire</li><li>Huiles Castrol, Ultramar, Rain-X…</li></ul></div>
+  </div>
+  <div class="card rev" style="margin-top:18px">
+   <div class="kicker">Garantie Assistance Plus</div>
+   <p style="margin-top:8px">Nous garantissons la qualité de nos services : si une réparation n'a pas été bien exécutée, nous la refaisons gratuitement pendant la période de garantie. La plupart des pièces et services sont couverts <strong>12 mois ou 20 000 km</strong> (le premier des deux). Garantie « Le Spécialiste » sur les pièces installées; garantie prolongée aussi offerte sur les réparations faites à l'atelier.</p>
+   <p class="note">Garantie limitée à l'acheteur d'origine, pour un véhicule utilisé normalement et entretenu raisonnablement. Détails au comptoir.</p>
+  </div>
+ </div>
+</section>
+
+<section class="tow" id="remorquage">
+ <div class="wrap">
+  <div class="towg">
+   <div class="big24 rev">24 h<small>7 jours sur 7</small></div>
+   <div class="rev">
+    <div class="kicker">Remorquage</div>
+    <h2 class="st">On vient vous chercher</h2>
+    <p class="sub">Service de remorquage de qualité à prix compétitif, avec nos remorques plate-forme International.</p>
+    <ul class="card" style="margin-top:18px;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;padding:18px">
+     <li>Automobile</li><li>Motocyclette</li><li>Camions (petits et moyens)</li><li>Véhicules hors route</li><li>Dépannage</li><li>Déverrouillage</li><li>Crevaison</li><li>Survoltage</li><li>Panne et accident</li><li>Transport</li><li>Remisage de véhicule</li><li>Entreposage intérieur et extérieur</li>
+    </ul>
+    <p class="note" style="margin-top:16px">Nous remorquons pour :</p>
+    <div class="partners"><span>CAA-Québec</span><span>Sykes Canada</span><span>Sûreté du Québec</span><span>Sigma Assistel</span><span>FADOC</span></div>
+    <div class="btns"><a class="btn red" href="tel:+18195972003">Appeler pour un remorquage</a></div>
+   </div>
+  </div>
+  <div class="road" aria-hidden="true">
+   <svg class="truck" viewBox="0 0 520 120">
+    <g><rect x="190" y="70" width="300" height="10" fill="#9aa1ab"/>
+     <path d="M210 48h120l14 22H196z" fill="#2d6ed1"/><path d="M228 52h40v14h-46zM274 52h44l10 14h-54z" fill="#9cc3ff" opacity=".7"/>
+     <rect x="380" y="34" width="110" height="46" rx="6" fill="#e01b2b"/><path d="M440 40h40v20h-40z" fill="#1b1d22"/><rect x="380" y="34" width="56" height="10" fill="#fff" opacity=".85"/>
+     <path d="M190 70l-20 -24h20l14 24" fill="#5d636c"/>
+     <text x="386" y="70" font-family="Barlow Condensed,sans-serif" font-style="italic" font-weight="900" font-size="15" fill="#fff">24 H</text>
+    </g>
+    <g fill="#111" stroke="#c9ced6" stroke-width="4"><circle class="wheel" cx="236" cy="84" r="14"/><circle class="wheel" cx="300" cy="84" r="14"/><circle class="wheel" cx="410" cy="84" r="16"/><circle class="wheel" cx="465" cy="84" r="16"/></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section id="magasin">
+ <div class="wrap">
+  <div class="kicker">Magasin général</div>
+  <h2 class="st">Tout sous le même toit</h2>
+  <p class="sub">En passant au village, faites le plein et trouvez à peu près tout ce qu'il faut pour la maison, le chalet, le camping, la chasse et la pêche.</p>
+  <div class="grid g3">
+   <div class="card rev"><h3>Station-service</h3><ul><li>Essence</li><li>Diesel</li><li>Remplissage de propane</li><li>Huiles 2 temps, 4 temps, hydrauliques, transmission</li><li>Pièces de remorques</li><li>Batteries, essuie-glaces…</li></ul></div>
+   <div class="card rev"><h3>Chasse et pêche</h3><ul><li>Permis de chasse et de pêche</li><li>Vers de terre, sangsues, menées</li><li>Munitions</li><li>Vêtements de chasse : manteaux, pantalons, bottes, en plusieurs grandeurs</li><li>Appeaux électroniques, GPS</li><li>Matériel de pêche des grandes marques, du débutant à l'expert</li></ul></div>
+   <div class="card rev"><h3>Camping et plein air</h3><ul><li>Raccords et adaptateurs électriques (VR – 120 V)</li><li>Pièces et équipement pour tentes et roulottes</li><li>Rames, pagaies, glacières, trousses de sécurité</li><li>Jeux extérieurs et jeux de société</li></ul></div>
+   <div class="card rev"><h3>Dépanneur</h3><ul><li>Glace, eau, lait, pain</li><li>Croustilles, condiments, café</li><li>Gâteaux Vachon, crème glacée, chocolat, bonbons, boissons gazeuses</li><li>Produits ménagers, couches, hygiène, piles</li><li>Pharmacie de base</li></ul></div>
+   <div class="card rev"><h3>Quincaillerie</h3><ul><li>Plomberie : tuyaux PVC, robinets, valves</li><li>Électricité : interrupteurs, fiches, plafonniers</li><li>Vis de tous genres, crochets</li><li>Semences de fleurs, fruits et légumes</li></ul></div>
+   <div class="card rev"><h3>Services et plus</h3><ul><li>Comptoir postal</li><li>Loto-Québec</li><li>Feux d'artifice</li><li>Jouets et ballons</li><li>Articles souvenirs</li></ul></div>
+  </div>
+  <p class="note">Vous cherchez un produit en particulier? Appelez-nous, on se fera un devoir de vous le trouver.</p>
+ </div>
+</section>
+
+<section class="chalets" id="chalets">
+ <div class="wrap">
+  <div class="grid g2" style="align-items:center;margin-top:0">
+   <div class="rev">
+    <div class="kicker" style="color:#4fd1a5">Location</div>
+    <h2 class="st">3 chalets sur le lac Mallonne</h2>
+    <p class="sub">Rénovés et très bien équipés, au bord de l'eau, à la fin de semaine ou à la semaine selon la saison. Pêche printanière, vacances d'été, période de chasse… et un chalet est aussi offert l'hiver. Le lac Mallonne est reconnu pour l'achigan et le doré, ensemencé chaque année par l'association des riverains.</p>
+    <div class="feat"><span>2 chambres</span><span>Salle de bain avec douche</span><span>BBQ</span><span>Foyer intérieur et extérieur</span><span>Cuisine équipée</span><span>Abri cuisinette</span><span>TV</span><span>Chaloupe à rames fournie</span><span>Coin pour arranger le poisson (lavabo + congélateur)</span></div>
+    <p class="note">125, chemin du Lac-Mallonne, Lac-du-Cerf · CITQ 222392 · Animaux non admis.</p>
+    <div class="btns"><a class="btn red" href="tel:+18196602032">Réserver : Nadine 819 660-2032</a></div>
+   </div>
+   <div class="lake rev" aria-hidden="true">
+    <svg viewBox="0 0 600 380">
+     <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a4c"/><stop offset=".55" stop-color="#e2475a"/><stop offset="1" stop-color="#3a1c3f"/></linearGradient><linearGradient id="wt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b2846"/><stop offset="1" stop-color="#0d1a22"/></linearGradient></defs>
+     <rect width="600" height="230" fill="url(#sky)"/><circle cx="420" cy="170" r="46" fill="#ffd27a" opacity=".9"/>
+     <path d="M0 200l60-40 50 30 70-60 80 60 60-40 90 50 70-40 120 50v20H0z" fill="#21182c"/>
+     <rect y="228" width="600" height="152" fill="url(#wt)"/>
+     <g fill="#ffd27a" opacity=".5"><rect x="380" y="240" width="80" height="3"/><rect x="395" y="256" width="50" height="3"/><rect x="405" y="272" width="30" height="3"/></g>
+     <g fill="#0f0d14"><path d="M20 236l24-60 24 60zM60 236l18-46 18 46zM540 236l22-56 22 56zM506 236l16-40 16 40z"/>
+      <path d="M140 236v-34l40-26 40 26v34z"/><path d="M134 204l46-32 46 32" stroke="#0f0d14" stroke-width="6" fill="none"/>
+      <rect x="168" y="212" width="16" height="24" fill="#ffb347"/><rect x="194" y="210" width="14" height="12" fill="#ffb347"/>
+      <path d="M250 292q40 14 80 0l-6 10h-68z"/></g>
+    </svg>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="wrap">
+  <div class="kicker">Ce que nos clients disent</div>
+  <h2 class="st">Avis de clients</h2>
+  <div class="score"><b>4,8</b><div><div class="stars">★★★★★</div><div style="color:#c3c8d0">sur Google · 93 avis</div></div></div>
+  <div class="grid g2" id="avisHome"></div>
+  <div class="btns"><button class="btn ghost" data-avis style="background:none;cursor:pointer">Voir tous les avis (4)</button></div>
+ </div>
+</section>
+
+<section id="horaire" style="background:var(--coal)">
+ <div class="wrap">
+  <div class="kicker">Horaire</div>
+  <h2 class="st">Heures d'ouverture</h2>
+  <div class="grid g2">
+   <div class="card rev"><h3>Magasin et essence</h3><table class="hours"><tr><td>Lundi au samedi</td><td>8 h à 20 h</td></tr><tr><td>Dimanche</td><td>9 h à 20 h</td></tr></table><p class="note">Temps des fêtes : heures et journées fermées sur notre page Facebook.</p></div>
+   <div class="card rev"><h3>Garage — mécanique</h3><table class="hours"><tr><td>Lundi au vendredi</td><td>8 h à 12 h · 13 h à 17 h</td></tr><tr><td>Samedi</td><td>8 h à 12 h, sur rendez-vous</td></tr></table><p class="note">Appelez pour prendre rendez-vous; l'horaire peut varier et certains samedis il n'y a pas de mécanique.</p><span class="open24">Remorquage 24 h / 7 j</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="grid g2" style="margin-top:0">
+   <div class="rev">
+    <div class="kicker">Contact</div>
+    <h2 class="st">Venez nous voir</h2>
+    <p class="sub">Martin, Nadine et toute l'équipe ont hâte de vous rencontrer pour bien vous servir.</p>
+    <div class="btns"><a class="btn red" href="tel:+18195972003">📞 819 597-2003</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Garage+Martin+L%C3%A9onard+200+rue+Principale+Lac-du-Cerf" target="_blank" rel="noopener">Itinéraire</a></div>
+   </div>
+   <div class="card rev contact">
+    <div class="cline"><span>Adresse</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Garage+Martin+L%C3%A9onard+200+rue+Principale+Lac-du-Cerf" target="_blank" rel="noopener">200, rue Principale, Lac-du-Cerf (QC) J0W 1S1</a></div>
+    <div class="cline"><span>Téléphone</span><a href="tel:+18195972003">819 597-2003</a></div>
+    <div class="cline"><span>Cellulaire</span><a href="tel:+18194409094">819 440-9094</a></div>
+    <div class="cline"><span>Télécopieur</span><b>819 597-2095</b></div>
+    <div class="cline"><span>Courriel</span><a href="mailto:admin@garagemleonard.com">admin@garagemleonard.com</a></div>
+    <div class="cline"><span>Chalets</span><a href="tel:+18196602032">Nadine · 819 660-2032</a></div>
+    <div class="cline"><span>Facebook</span><a href="https://www.facebook.com/GarageMartinLeonard/" target="_blank" rel="noopener">GarageMartinLeonard</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+<footer><div class="wrap">© Garage Martin Léonard Inc. · Lac-du-Cerf, depuis 1999</div></footer>
+<div class="callbar"><a class="btn red" href="tel:+18195972003">📞 Appeler</a><a class="btn ghost" style="background:#0d0e10" href="#avis" data-avis>★ Avis</a></div>
+</div>
+
+<div id="avisPage" aria-label="Tous les avis">
+ <div class="wrap">
+  <button class="back" id="backBtn">← Retour au site</button>
+  <div class="kicker" style="margin-top:24px">Garage Martin Léonard</div>
+  <h2 class="st">Tous les avis</h2>
+  <div class="score"><b>4,8</b><div><div class="stars">★★★★★</div><div style="color:#c3c8d0">sur Google · 93 avis</div></div></div>
+  <div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Garage+Martin+L%C3%A9onard+Lac-du-Cerf" target="_blank" rel="noopener">Voir sur Google</a></div>
+  <div class="grid g2" id="avisAll"></div>
+  <p class="note" style="margin-top:24px">Avis publiés sur Google, reproduits mot pour mot.</p>
+ </div>
+</div>
+
+<script>
+(function(){
+var A=[
+ {n:"Simon Nadon",s:5,d:"juillet 2026",t:"Très bien. Malgré mon urgence et mon impatience. Martin est resté d'une gentillesse et patience exemplaire. Et ça a coûté une fraction de ce que je m'attendais. Merci à toi Martin et je vous recommande grandement ce garage."},
+ {n:"Denis Fillion",s:5,d:"juin 2026",t:"Excellent service, très bel accueil. Je suis de Notre-Dame-du-Laus et ça valait le déplacement!"},
+ {n:"Axelo Pixelo",s:5,d:"octobre 2026",t:"Peak garage/dépanneur c le meilleur! toute mon enfance"},
+ {n:"Tundra Tundra",s:5,d:"septembre 2026",t:"Service personnalisé"}
+];
+function card(r){var e=document.createElement('article');e.className='rv';e.innerHTML='<div class="stars">'+'★★★★★'.slice(0,r.s)+'</div><q></q><div class="who"><strong></strong> · Avis Google · '+r.d+'</div>';e.querySelector('q').textContent='« '+r.t+' »';e.querySelector('strong').textContent=r.n;return e}
+var H=document.getElementById('avisHome'),L=document.getElementById('avisAll');
+A.slice(0,12).forEach(function(r){H.appendChild(card(r))});A.forEach(function(r){var c=card(r);c.classList.add('in');L.appendChild(c)});
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+// intro
+var I=document.getElementById('intro'),seen=false;try{seen=sessionStorage.getItem('gml_intro')}catch(e){}
+function endIntro(){if(!I)return;I.classList.add('out');var x=I;I=null;setTimeout(function(){x.remove()},460);try{sessionStorage.setItem('gml_intro','1')}catch(e){}}
+if(seen||rm){I.remove();I=null}else{
+ for(var i=0;i<10;i++){var s=document.createElement('i');s.className='spark';s.style.cssText='left:'+(38+Math.random()*10)+'%;top:'+(58+Math.random()*6)+'%;--x:'+(Math.random()*160-80)+'px;--y:'+(-Math.random()*90)+'px';I.appendChild(s)}
+ I.addEventListener('click',endIntro);setTimeout(endIntro,2100)}
+// menu
+var b=document.querySelector('.burger'),m=document.getElementById('mmenu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('open')});
+// avis page
+var y0=0;
+function openAvis(e){if(e)e.preventDefault();y0=window.scrollY;m.classList.remove('open');document.body.classList.add('avis-on');window.scrollTo(0,0)}
+function closeAvis(){document.body.classList.remove('avis-on');window.scrollTo(0,y0)}
+document.querySelectorAll('[data-avis]').forEach(function(a){a.addEventListener('click',openAvis)});
+document.getElementById('backBtn').addEventListener('click',closeAvis);
+// reveal
+var els=document.querySelectorAll('.rev,#avisHome .rv');
+if('IntersectionObserver' in window&&!rm){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});els.forEach(function(el){io.observe(el)});
+ var tw=document.querySelector('.tow');var io2=new IntersectionObserver(function(es){if(es[0].isIntersecting){tw.classList.add('on');io2.disconnect()}},{threshold:.35});io2.observe(tw)}
+else{els.forEach(function(el){el.classList.add('in')});document.querySelector('.tow').classList.add('on')}
+// parallax
+if(!rm){var fl=document.querySelector('.floaters'),tk=false;window.addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var y=window.scrollY;if(y<1200)fl.style.setProperty('--p',(y*-.35)+'px');tk=false})},{passive:true});
+ document.querySelectorAll('.fl').forEach(function(f){f.style.transform='translate3d(0,calc(var(--p,0px) * '+(f.style.getPropertyValue('--d')||1)+'),0)'})}
+})();
+</script>
+</body>
+</html>
