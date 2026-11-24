@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>En passant… Comptoir santé — Mets cuisinés santé · Saint-Jean-sur-Richelieu</title>
+<meta name="description" content="En passant… Comptoir santé : mets cuisinés sains et savoureux, frais ou congelés, préparés sur place sous la supervision d'une nutritionniste. Format individuel ou familial, livraison à Saint-Jean-sur-Richelieu. 450 349-1750.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FoodEstablishment","name":"En passant… Comptoir santé","telephone":"+1-450-349-1750","email":"sophie.tougas@enpassant.ca","url":"https://www.enpassant.ca/","foundingDate":"2005","address":{"@type":"PostalAddress","streetAddress":"378, boulevard Saint-Luc, suite 100","addressLocality":"Saint-Jean-sur-Richelieu","addressRegion":"QC","postalCode":"J2W 2A3","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"10:00","closes":"17:00"}],"sameAs":["https://www.facebook.com/En-passant-Comptoir-santé-152030597004/"],"hasMenu":{"@type":"Menu","name":"Menu hiver 2026-2027"}}
+</script>
+<style>
+:root{--top:32px;--teal:#5bbfc4;--teal2:#2f9aa0;--tealdk:#1d6f74;--orange:#f39a2b;--orange2:#e07f0c;--cream:#fffaf2;--paper:#ffffff;--mint:#e8f6f6;--peach:#fff0dd;--ink:#1f3537;--soft:#58706f;--line:#d9ecec}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--top) + 72px)}
+body{background:var(--cream);color:var(--ink);font:17px/1.65 "Nunito",system-ui,sans-serif;padding-top:var(--top)}
+a{color:inherit}
+svg{max-width:100%}
+h1,h2,h3{font-family:"Baloo 2",system-ui,sans-serif;font-weight:800;line-height:1.08;overflow-wrap:anywhere}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:80px 0;overflow-x:clip}
+.eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--orange2);font-weight:800;margin-bottom:8px}
+h2{font-size:clamp(34px,5.4vw,54px);margin-bottom:14px;color:var(--tealdk)}
+.lead{max-width:44em;color:#3f5658;font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 24px;border-radius:999px;font-weight:800;text-decoration:none;border:2px solid transparent;transition:transform .2s;cursor:pointer;font-family:inherit;font-size:16px}
+.btn:hover{transform:translateY(-2px)}
+.btn.or{background:var(--orange);color:#2b1a05}
+.btn.te{background:var(--tealdk);color:#fff}
+.btn.line{border-color:var(--tealdk);color:var(--tealdk);background:transparent}
+/* nav */
+.nav{position:fixed;top:var(--top);left:0;right:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{flex:0 0 auto}
+.brand b{display:block;font-family:"Baloo 2";font-size:22px;line-height:1;color:var(--teal2);letter-spacing:.02em;white-space:nowrap}
+.brand small{display:block;font-family:"Baloo 2";font-weight:600;font-size:15px;color:var(--orange2);line-height:1.1}
+.links{display:flex;gap:22px;align-items:center}
+.links a{text-decoration:none;font-size:15px;font-weight:700;cursor:pointer}
+.links a:hover{color:var(--teal2)}
+.links a.cta{background:var(--orange);color:#2b1a05;padding:9px 16px;border-radius:999px}
+.burger{display:none;flex:0 0 44px;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2.5px;background:var(--tealdk);margin:5px auto;border-radius:2px;transition:transform .25s,opacity .25s}
+@media(max-width:940px){
+ .burger{display:block}
+ .links{position:fixed;top:calc(var(--top) + 66px);left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s}
+ .links a{padding:16px 20px;width:100%;border-top:1px solid var(--line)}
+ .links a.cta{border-radius:0}
+ .nav.open .links{transform:none;opacity:1;pointer-events:auto}
+ .nav.open .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+ .nav.open .burger span:nth-child(2){opacity:0}
+ .nav.open .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+}
+/* héros */
+.hero{position:relative;background:radial-gradient(ellipse 60% 60% at 85% 30%,#d4f0f0 0,transparent 70%),radial-gradient(ellipse 50% 50% at 0% 100%,#ffe6c6 0,transparent 70%),var(--cream);padding:118px 0 86px;overflow:hidden}
+.float{position:absolute;inset:0;pointer-events:none;z-index:0}
+.f{position:absolute;opacity:.6;transform:translate3d(0,calc(var(--py,0px)*var(--d,1)),0)}
+.f svg{display:block;animation:bob var(--t,9s) ease-in-out infinite alternate}
+.f.far{opacity:.3;filter:blur(1.5px)}
+@media(max-width:979px){.f{opacity:.32}.f.far{opacity:.18}}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r1,-8deg))}to{transform:translateY(12px) rotate(var(--r2,10deg))}}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);gap:30px;align-items:center}
+.pill{display:inline-block;background:var(--mint);color:var(--tealdk);font-weight:800;font-size:14px;padding:7px 14px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(42px,8.6vw,82px);color:var(--tealdk)}
+.hero h1 em{font-style:normal;color:var(--orange2)}
+.hero p{font-size:clamp(17px,2.2vw,20px);color:#3f5658;max-width:34em;margin-top:16px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 16px;font-size:15px;text-decoration:none;cursor:pointer}
+.rating b{font-family:"Baloo 2";font-size:24px;color:var(--orange2)}
+.stars{color:var(--orange);letter-spacing:2px}
+.mascot{justify-self:center;width:min(100%,400px)}
+.notice{margin-top:18px;background:var(--peach);border-left:4px solid var(--orange);border-radius:0 12px 12px 0;padding:10px 14px;font-size:15.5px;font-weight:700;max-width:34em}
+@media(min-width:980px){.hero{padding:148px 0 108px}.hero .wrap{grid-template-columns:1.15fr .85fr}}
+/* concept */
+.steps{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:28px}
+.steps div{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.steps b{display:block;font-family:"Baloo 2";font-size:23px;color:var(--tealdk);margin:6px 0 4px;line-height:1.15}
+.steps svg{width:46px;height:46px}
+@media(min-width:800px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* menu */
+.menu{background:#fff}
+.runner{position:relative;height:60px;margin:6px 0 4px;overflow:hidden}
+.runner svg{position:absolute;left:0;top:0;height:60px;width:auto;transform:translateX(-80px)}
+.runner.go svg{animation:run 2.6s cubic-bezier(.45,.05,.4,1) forwards}
+@keyframes run{0%{transform:translateX(-80px)}100%{transform:translateX(calc(var(--rw,1000px) - 70px))}}
+.runner:after{content:"";position:absolute;left:0;right:0;bottom:6px;border-bottom:3px dotted var(--teal)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:6px 2px 14px;margin:14px 0 6px;-webkit-overflow-scrolling:touch}
+.tabs button{flex:0 0 auto;font:inherit;font-size:15px;font-weight:800;padding:10px 16px;border-radius:999px;border:2px solid var(--teal2);background:transparent;color:var(--tealdk);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--teal2);color:#fff}
+@media(min-width:1024px){.tabs{flex-wrap:wrap;overflow:visible}}
+.panel{display:none}.panel.on{display:block}
+.board{background:var(--mint);border-radius:24px;padding:22px 18px}
+.board h3{font-size:clamp(26px,3.6vw,36px);color:var(--tealdk)}
+.board .sub{color:var(--soft);font-size:15px;margin-top:2px}
+.head{display:grid;grid-template-columns:minmax(0,1fr) 64px 64px;gap:8px;font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--soft);text-transform:uppercase;padding:14px 0 4px;border-bottom:2px solid var(--teal)}
+.head span:not(:first-child),.row .p{text-align:right}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 64px 64px;gap:8px;padding:12px 0;border-bottom:1px dashed #b9dede;align-items:baseline}
+.row b{display:block;font-size:17px}
+.row small{display:block;color:var(--soft);font-size:14.5px;line-height:1.45;margin-top:2px}
+.row .p{font-weight:800;color:var(--tealdk);white-space:nowrap;font-size:15.5px}
+.tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;background:var(--orange);color:#2b1a05;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:0 40px}
+@media(min-width:900px){.board{padding:34px 38px}.cols{grid-template-columns:1fr 1fr}}
+.list{list-style:none;display:grid;grid-template-columns:minmax(0,1fr);gap:0 30px;margin-top:8px}
+.list li{padding:9px 0;border-bottom:1px dashed #b9dede}
+.list li.grp{grid-column:1/-1;border:0;padding:16px 0 2px;font-family:"Baloo 2";font-size:22px;color:var(--orange2)}
+@media(min-width:760px){.list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.fine{font-size:14.5px;color:var(--soft);margin-top:14px}
+.row.pop{opacity:0;transform:translateX(-24px)}
+.row.pop.in{opacity:1;transform:none;transition:opacity .4s,transform .4s}
+/* nutritionniste */
+.nutri{background:var(--peach)}
+.ngrid{display:grid;grid-template-columns:minmax(0,1fr);gap:30px;align-items:center}
+.ngrid p{margin-top:12px;color:#40504f}
+.badge{justify-self:center;width:min(100%,300px)}
+.goals{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.goals span{background:#fff;border-radius:999px;padding:8px 14px;font-weight:800;font-size:15px;color:var(--tealdk)}
+@media(min-width:900px){.ngrid{grid-template-columns:.7fr 1.3fr;gap:60px}}
+/* commandes + faq */
+.two{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.card h3{font-size:24px;color:var(--tealdk);margin-bottom:8px}
+.card ul{list-style:none}
+.card li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.card li:last-child{border:0}
+@media(min-width:900px){.two{grid-template-columns:1fr 1fr}}
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-top:10px}
+summary{cursor:pointer;font-weight:800;color:var(--tealdk)}
+details p{margin-top:8px;color:#40504f;font-size:16px}
+/* avis */
+.avis{background:#fff}
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:6px 0 26px}
+.score b{font-family:"Baloo 2";font-size:56px;line-height:1;color:var(--orange2)}
+.score small{display:block;color:var(--soft);font-size:15px}
+.rv{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start}
+@media(min-width:700px){.rv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1080px){.rv{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.r{background:var(--mint);border-radius:20px;padding:20px;min-width:0}
+.r p{margin:8px 0 12px;white-space:pre-line;overflow-wrap:anywhere}
+.r footer{font-size:14px;color:var(--soft)}
+.r footer b{color:var(--ink)}
+.more{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}
+/* contact */
+.contact{background:var(--tealdk);color:#fff}
+.contact h2{color:#fff}
+.contact .eyebrow{color:#ffd08f}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:24px}
+.cbox{background:#24808a;border-radius:20px;padding:22px;min-width:0}
+.cbox small{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#ffd08f;margin-bottom:8px;font-weight:800}
+.cbox a{text-decoration:none;font-size:19px;overflow-wrap:anywhere}
+.cbox a:hover{text-decoration:underline}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed #5aaab0}
+.hours li:last-child{border:0}
+@media(min-width:900px){.cgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.foot{background:#154f53;color:#b6dcdd;font-size:14px;text-align:center;padding:24px 0 100px}
+@media(min-width:941px){.foot{padding-bottom:24px}}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;justify-content:center;align-items:center;gap:8px;background:var(--orange);color:#2b1a05;font-weight:800;text-decoration:none;padding:15px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(0,0,0,.45)}
+@media(min-width:941px){.callbar{display:none}}
+/* page d'avis */
+#avispage{display:none;background:var(--cream);min-height:100vh;padding-top:66px}
+body.avis-open #site{display:none}
+body.avis-open #avispage{display:block}
+body.avis-open .callbar{display:none}
+.ap-head{position:sticky;top:calc(var(--top) + 66px);z-index:40;background:var(--tealdk);color:#fff}
+.ap-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;min-height:64px;padding-top:8px;padding-bottom:8px}
+.ap-head .btn{padding:10px 18px}
+.ap-body{padding:40px 0 80px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:var(--teal);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;overflow:hidden;transition:opacity .5s}
+#intro.out{opacity:0}
+#intro .dash{animation:dash 1.4s cubic-bezier(.5,0,.4,1) forwards}
+#intro h2{font-size:clamp(40px,11vw,80px);color:#fff;opacity:0;animation:fade .5s .9s forwards;margin:0}
+#intro p{font-family:"Baloo 2";font-weight:600;font-size:clamp(22px,6vw,34px);color:#fff3e0;opacity:0;animation:fade .5s 1.2s forwards}
+@keyframes dash{0%{transform:translateX(-70vw)}60%{transform:translateX(6vw)}100%{transform:translateX(0)}}
+@keyframes fade{to{opacity:1}}
+.legs{animation:legs .25s linear infinite alternate;transform-origin:50% 0}
+@keyframes legs{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
+@media(max-width:519px){:root{--top:48px}.brand b{font-size:19px}.brand small{font-size:13.5px}.nav .wrap{padding:0 12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}#intro{display:none}.row.pop{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour En passant... Comptoir santé — ce n'est pas son site officiel</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <g id="fork"><path d="M30 6v22M38 6v22M46 6v22M54 6v22" stroke="#f39a2b" stroke-width="5" stroke-linecap="round"/><path d="M28 24h28v10c0 8-6 12-14 12s-14-4-14-12z" fill="#f39a2b"/><path d="M38 44h8l-2 34h-4z" fill="#f39a2b"/><circle cx="37" cy="33" r="2.2" fill="#1f3537"/><circle cx="47" cy="33" r="2.2" fill="#1f3537"/><path d="M37 38q5 4 10 0" stroke="#1f3537" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M54 52l14-12" stroke="#f39a2b" stroke-width="4" stroke-linecap="round"/><path d="M30 54l-12 6" stroke="#f39a2b" stroke-width="4" stroke-linecap="round"/></g>
+</defs></svg>
+
+<div id="intro" aria-hidden="true">
+ <svg class="dash" viewBox="0 0 90 110" width="110"><use href="#fork"/><g class="legs" style="transform-origin:42px 76px"><path d="M42 76l-12 22h-8M42 76l12 22h8" stroke="#f39a2b" stroke-width="4" fill="none" stroke-linecap="round"/></g><path d="M4 50h14M0 62h16M6 74h12" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/></svg>
+ <h2>EN PASSANT…</h2>
+ <p>Comptoir santé</p>
+</div>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a class="brand" href="#accueil" data-site aria-label="En passant… Comptoir santé — accueil">
+   <svg width="46" height="50" viewBox="0 0 46 50" aria-hidden="true"><ellipse cx="23" cy="25" rx="21" ry="24" fill="#5bbfc4"/><g transform="translate(2 4) scale(.5)"><use href="#fork"/><path d="M42 76l-10 14M42 76l10 14" stroke="#f39a2b" stroke-width="4" stroke-linecap="round"/></g></svg>
+   <span><b>EN PASSANT…</b><small>Comptoir santé</small></span>
+  </a>
+  <nav class="links" id="links">
+   <a href="#concept" data-site>Concept</a>
+   <a href="#menu" data-site>Menu</a>
+   <a href="#nutritionniste" data-site>Nutritionniste</a>
+   <a href="#commandes" data-site>Commandes</a>
+   <a data-open-avis>Avis</a>
+   <a href="#contact" data-site>Nous joindre</a>
+   <a class="cta" href="tel:+14503491750">450 349-1750</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<div id="site">
+<main id="accueil">
+<section class="hero">
+ <div class="float" id="float" aria-hidden="true"></div>
+ <div class="wrap">
+  <div>
+   <span class="pill">Une nutritionniste dans votre cuisine… depuis 2005</span>
+   <h1>Cuisine <em>saine</em> et savoureuse</h1>
+   <p>De la soupe au dessert, découvrez notre vaste choix de mets congelés complets. En 30 minutes seulement, toute la famille peut déguster un repas complet… et est libérée de la corvée de vaisselle! Alors, que mangerez-vous ce soir?</p>
+   <div class="ctas"><a class="btn or" href="tel:+14503491750">📞 Appeler le 450 349-1750</a><a class="btn line" href="#menu">Voir le menu</a></div>
+   <p class="notice">🎄 Menu des Fêtes 2026 : réservez avant le 14 décembre 2026.</p>
+   <a class="rating" data-open-avis><b>5,0</b><span><span class="stars">★★★★★</span><br>avis Google récents</span></a>
+  </div>
+  <div class="mascot" aria-hidden="true">
+   <svg viewBox="0 0 400 400" width="100%">
+    <ellipse cx="200" cy="200" rx="170" ry="186" fill="#5bbfc4"/>
+    <ellipse cx="200" cy="372" rx="110" ry="12" fill="#2f9aa0" opacity=".35"/>
+    <g transform="translate(110 60) scale(2.2)"><use href="#fork"/><g class="legs" style="transform-origin:42px 76px"><path d="M42 76l-12 22h-8M42 76l12 22h8" stroke="#f39a2b" stroke-width="4" fill="none" stroke-linecap="round"/></g></g>
+    <path d="M70 200h40M60 228h44M74 256h34" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".85"/>
+    <g transform="translate(286 92) rotate(18)"><path d="M0 0c10-14 26-14 30 0-4 30-26 52-15 70-20-16-22-46-15-70z" fill="#f39a2b"/><path d="M10 -6c-4-10 2-18 8-20M18 -6c2-10 10-14 16-12" stroke="#4fa34a" stroke-width="5" fill="none" stroke-linecap="round"/></g>
+    <g transform="translate(276 268)"><path d="M0 22h50l-6 30H6z" fill="#fff"/><path d="M2 22c0-16 10-24 23-24s23 8 23 24z" fill="#c8732d"/><circle cx="14" cy="10" r="3" fill="#7a2f4a"/><circle cx="30" cy="6" r="3" fill="#7a2f4a"/><circle cx="36" cy="16" r="3" fill="#7a2f4a"/></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section id="concept">
+ <div class="wrap">
+  <div class="eyebrow">Notre concept</div>
+  <h2>De bons repas et du temps pour soi</h2>
+  <p class="lead">Depuis 2005, En passant… Comptoir santé vous propose des mets cuisinés d'une qualité exceptionnelle. Notre équipe dévouée travaille sans relâche pour vous proposer des solutions repas saines, équilibrées, mais surtout savoureuses.</p>
+  <div class="steps">
+   <div><svg viewBox="0 0 46 46"><rect x="6" y="10" width="34" height="28" rx="6" fill="#5bbfc4"/><path d="M12 10V6h22v4" stroke="#2f9aa0" stroke-width="3" fill="none"/><path d="M16 24h14" stroke="#fff" stroke-width="3"/></svg><b>Préparés sur place</b>Tous les plats sont préparés sur place et congelés dans les 24 heures suivant leur production. La production du jour est aussi offerte réfrigérée.</div>
+   <div><svg viewBox="0 0 46 46"><circle cx="16" cy="24" r="10" fill="#f39a2b"/><circle cx="32" cy="24" r="12" fill="#5bbfc4"/></svg><b>Individuel ou familial</b>Plats cuisinés en format individuel ou familial, frais ou congelés. Une vingtaine de mets qui varient au gré des saisons.</div>
+   <div><svg viewBox="0 0 46 46"><path d="M23 40C8 30 6 18 12 10c5-6 11-2 11 4 0-6 6-10 11-4 6 8 4 20-11 30z" fill="#e07f0c"/></svg><b>Ingrédients choisis</b>La liste d'ingrédients imprimée sur chaque mets facilite le choix des gens souffrant d'intolérance ou d'allergie alimentaire.</div>
+  </div>
+ </div>
+</section>
+
+<section class="menu" id="menu">
+ <div class="wrap">
+  <div class="eyebrow">Menu hiver 2026-2027</div>
+  <h2>Que mangerez-vous ce soir?</h2>
+  <p class="lead">Prix en format individuel (IND.) et familial (FAM.). Menu et prix sujets à changement sans préavis.</p>
+  <div class="runner" id="runner" aria-hidden="true"><svg viewBox="0 0 90 110"><use href="#fork"/><g class="legs" style="transform-origin:42px 76px"><path d="M42 76l-12 22h-8M42 76l12 22h8" stroke="#f39a2b" stroke-width="4" fill="none" stroke-linecap="round"/></g></svg></div>
+  <div class="tabs" role="tablist" id="tabs"></div>
+
+  <div class="panel" data-id="plats" data-name="Petits plats savoureux"><div class="board"><h3>Petits plats savoureux</h3>
+   <div class="head"><span>Plat</span><span>Ind.</span><span>Fam.</span></div>
+   <div class="row"><div><b>Les vrais petits pains fourrés</b><small>Nos fameux petits pains faits de porc et de veau extra-maigres. Les favoris des enfants!</small></div><span class="p">4,95 $</span><span class="p">19,00 $</span></div>
+   <div class="row"><div><b>Cari de tofu et pois chiches</b><small>Un plat qui réchauffe avec sa sauce épicée et onctueuse à base de lait de coco. Servi sur riz et accompagné de légumes aux amandes.</small></div><span class="p">11,25 $</span><span class="p">40,00 $</span></div>
+   <div class="row"><div><b>Les pastas!</b><small>Les pâtes, on les aime à toutes les sauces! Informez-vous sur les choix offerts en magasin.</small></div><span class="p">11,25 $</span><span class="p">40,00 $</span></div>
+   <div class="row"><div><b>Bol à la coréenne</b><small>C'est le grand retour! Un plat savoureux mariant dinde et tofu hachés, style BBQ coréen, riz collant et légumes sautés.</small></div><span class="p">11,25 $</span><span class="p">40,00 $</span></div>
+   <div class="row"><div><b>Boulettes suédoises</b><small>Nos fameuses boulettes porc et veau et leur sauce crémeuse sont servies sur un lit de nouilles aux œufs et accompagnées de légumes vapeur.</small></div><span class="p">11,25 $</span><span class="p">40,00 $</span></div>
+   <div class="row"><div><b>Le Burger du Bourgeois</b><small>Une boulette de porc et veau nappée de notre délicieuse sauce brune maison. Accompagnée de sa julienne de légumes et de pommes de terre en purée.</small></div><span class="p">11,25 $</span><span class="p">40,00 $</span></div>
+   <div class="row"><div><b>Filet de porc aux pruneaux <span class="tag">NOUVEAU</span></b><small>Filet de porc cuit doucement, dans une sauce crémeuse à la moutarde et au vin rouge. Servi sur nouilles aux œufs et accompagné de légumes vapeur.</small></div><span class="p">11,25 $</span><span class="p">40,00 $</span></div>
+   <div class="row"><div><b>Pâté chinois aux trois purées</b><small>Un classique revisité à la façon En passant… Garni de pommes de terre, carottes et rutabagas.</small></div><span class="p">12,50 $</span><span class="p">46,00 $</span></div>
+   <div class="row"><div><b>Cochon braisé</b><small>Du porc braisé ultra tendre, accompagné de purée de pommes de terre et de chou aux canneberges. Si simple… mais tellement savoureux!</small></div><span class="p">12,50 $</span><span class="p">46,00 $</span></div>
+   <div class="row"><div><b>Polpettes de dinde</b><small>De savoureuses boulettes à l'italienne, servies sur notre délicieux orzo aux tomates et accompagnées d'une poêlée de légumes colorés.</small></div><span class="p">12,50 $</span><span class="p">46,00 $</span></div>
+   <div class="row"><div><b>Poulet cheddar et poireaux</b><small>Cubes de poitrine garnis d'un mélange de poireaux et de fromage, relevé d'un soupçon de bacon. Accompagné d'une purée verte et de carottes au miel.</small></div><span class="p">12,50 $</span><span class="p">46,00 $</span></div>
+   <div class="row"><div><b>Poulet chasseur</b><small>Un émincé de poulet savoureux dans une sauce au vin blanc, garni d'oignons, de champignons et de prosciutto sautés. Servi sur une purée de courge et pommes de terre.</small></div><span class="p">12,50 $</span><span class="p">46,00 $</span></div>
+   <div class="row"><div><b>Saumon sauce moutarde</b><small>Notre filet de saumon nappé de sa populaire sauce moutarde et accompagné de riz et de légumes.</small></div><span class="p">14,25 $</span><span class="p">52,00 $</span></div>
+   <div class="row"><div><b>Morue au pesto de tomates séchées</b><small>Un filet de morue garni de fromage feta et de brocoli servi sur un orzo au pesto de tomates séchées et graines de tournesol.</small></div><span class="p">14,75 $</span><span class="p">54,00 $</span></div>
+  </div></div>
+
+  <div class="panel" data-id="soupes" data-name="Soupes et sauces"><div class="board"><div class="cols"><div><h3>À la soupe!</h3>
+   <div class="head"><span>Soupe</span><span>Ind.</span><span>Fam.</span></div>
+   <div class="row"><div><b>Soupe aux légumes</b></div><span class="p">3,95 $</span><span class="p">9,50 $</span></div>
+   <div class="row"><div><b>Potage de carotte</b></div><span class="p">3,95 $</span><span class="p">9,50 $</span></div>
+   <div class="row"><div><b>Velouté de courge épicée au lait de coco <span class="tag">NOUVEAU</span></b></div><span class="p">3,95 $</span><span class="p">9,50 $</span></div>
+   <div class="row"><div><b>Crème de champignons</b></div><span class="p">4,95 $</span><span class="p">14,95 $</span></div>
+   <div class="row"><div><b>Velouté betterave et poire</b></div><span class="p">4,95 $</span><span class="p">14,95 $</span></div>
+   <div class="row"><div><b>Chaudrée de brocoli, maïs et cheddar</b></div><span class="p">4,95 $</span><span class="p">14,95 $</span></div>
+   <div class="row"><div><b>Nos soupes-repas</b></div><span class="p">8,50 $</span><span class="p">30,00 $</span></div>
+  </div><div><h3 style="margin-top:20px">Les sauces maison</h3>
+   <div class="head"><span>Sauce</span><span></span><span>Prix</span></div>
+   <div class="row"><div><b>Sauce tomate maison</b><small>750 ml</small></div><span></span><span class="p">8,25 $</span></div>
+   <div class="row"><div><b>Sauce tomate et légumes grillés</b><small>1 L</small></div><span></span><span class="p">9,95 $</span></div>
+   <div class="row"><div><b>Sauce à spaghetti veau et tofu</b><small>1 L</small></div><span></span><span class="p">16,95 $</span></div>
+  </div></div></div></div>
+
+  <div class="panel" data-id="douceurs" data-name="Muffins et desserts"><div class="board"><div class="cols"><div><h3>Les muffins santé</h3>
+   <div class="head"><span>Muffin</span><span>Ind.</span><span>Fam.</span></div>
+   <div class="row"><div><b>Muffins mélasse et canneberges</b></div><span class="p">2,25 $</span><span class="p">11,00 $</span></div>
+   <div class="row"><div><b>Muffins caramel et pomme</b></div><span class="p">2,25 $</span><span class="p">11,00 $</span></div>
+   <div class="row"><div><b>Muffins petits fruits et chocolat</b></div><span class="p">2,75 $</span><span class="p">12,50 $</span></div>
+   <div class="row"><div><b>Muffins framboises, lime et chocolat blanc</b></div><span class="p">2,75 $</span><span class="p">12,50 $</span></div>
+   <div class="row"><div><b>Muffins banane, chanvre et bleuets</b></div><span class="p">2,75 $</span><span class="p">12,50 $</span></div>
+  </div><div><h3 style="margin-top:20px">Les desserts</h3>
+   <div class="head"><span>Dessert</span><span>Ind.</span><span>Fam.</span></div>
+   <div class="row"><div><b>Biscuits Ménage à trois</b></div><span class="p">2,50 $</span><span class="p">12,00 $</span></div>
+   <div class="row"><div><b>Cake du moment</b></div><span class="p">2,50 $</span><span class="p">13,00 $</span></div>
+   <div class="row"><div><b>Gâteau Reine-Élisabeth</b></div><span class="p">3,00 $</span><span class="p">14,00 $</span></div>
+   <div class="row"><div><b>Carrés aux dattes</b></div><span class="p">3,00 $</span><span class="p">14,00 $</span></div>
+   <div class="row"><div><b>Carrés aux fruits</b></div><span class="p">3,75 $</span><span class="p">15,50 $</span></div>
+   <div class="row"><div><b>Croustade pommes, poires et érable</b></div><span class="p">3,75 $</span><span class="p">15,50 $</span></div>
+  </div></div></div></div>
+
+  <div class="panel" data-id="moment" data-name="En boutique ces temps-ci"><div class="board"><h3>En boutique ces temps-ci</h3><p class="sub">En plus du menu régulier.</p><ul class="list">
+   <li class="grp">Les wraps</li><li>Thon</li><li>Tofu à l'arachide</li><li>Porc effiloché BBQ</li><li>Burrito campagnard</li><li>Burrito saucisse et champignon</li><li>Burrito déjeuner</li><li>Poulet César</li><li>Poulet mangue-cari</li>
+   <li class="grp">Les soupes</li><li>Soupe légumes et orge</li><li>Soupe tomate et orzo</li><li>Crème de tomate</li><li>Velouté popeye</li>
+   <li class="grp">Les soupes-repas</li><li>Soupe poulet et nouilles</li><li>Soupe-repas mexicaine</li>
+   <li class="grp">Les repas du moment</li><li>Kouftés de veau (ind.)</li><li>Salade tiède de quinoa et tofu</li><li>Spaghetti, sauce à la viande (ind.)</li><li>Rotolos portobello, sauce ricotta et poivrons rouges</li><li>Rigatonis aux saucisses et pesto</li><li>Poulet safran et orange</li>
+   <li class="grp">Les douceurs</li><li>Gâteau carotte et poire</li><li>Carré aux bleuets</li>
+  </ul></div></div>
+
+  <div class="panel" data-id="fetes" data-name="🎄 Menu des Fêtes 2026"><div class="board" style="background:var(--peach)"><h3>En passant… Vive les Fêtes!</h3><p class="sub">Réservez avant le 14 décembre 2026 au 450 349-1750. Plusieurs autres mets délicieux sont offerts à la boutique.</p>
+   <div class="head"><span>Mets</span><span>Ind.</span><span>Fam.</span></div>
+   <div class="row"><div><b>Potage navet et érable</b></div><span class="p">3,95 $</span><span class="p">9,50 $</span></div>
+   <div class="row"><div><b>Velouté betterave et poire</b></div><span class="p">4,95 $</span><span class="p">14,95 $</span></div>
+   <div class="row"><div><b>Bouchées de saucisse miel et moutarde</b><small>36 bouchées</small></div><span></span><span class="p">14,50 $</span></div>
+   <div class="row"><div><b>Cake apéritif olive, chorizo et fromage en grains</b></div><span></span><span class="p">17,50 $</span></div>
+   <div class="row"><div><b>Trempette chaude aux deux fromages</b></div><span></span><span class="p">17,50 $</span></div>
+   <div class="row"><div><b>Tartelettes aux crevettes (8) · Croûtons forestiers (12)</b></div><span></span><span class="p">18,95 $</span></div>
+   <div class="row"><div><b>Les vrais petits pains fourrés</b></div><span class="p">4,95 $</span><span class="p">19,00 $</span></div>
+   <div class="row"><div><b>Tourtière traditionnelle (porc et veau)</b></div><span class="p">8,75 $</span><span class="p">22,00 $</span></div>
+   <div class="row"><div><b>Pâté à la dinde</b></div><span class="p">8,75 $</span><span class="p">22,00 $</span></div>
+   <div class="row"><div><b>Poitrine de dinde, farce canneberges et pacanes</b></div><span class="p">13,95 $</span><span class="p">48,00 $</span></div>
+   <div class="row"><div><b>Ragoût des Fêtes (porc, poulet et boulettes)</b></div><span class="p">13,95 $</span><span class="p">48,00 $</span></div>
+   <div class="row"><div><b>Gâteau Reine-Élisabeth · Carrés aux dattes</b></div><span class="p">3,00 $</span><span class="p">14,00 $</span></div>
+   <div class="row"><div><b>Croustade poire et canneberges · Gâteau aux ananas</b></div><span class="p">3,75 $</span><span class="p">15,50 $</span></div>
+   <div class="row"><div><b>Muffins aux framboises et au lait de poule</b></div><span class="p">2,75 $</span><span class="p">12,50 $</span></div>
+   <div class="row"><div><b>Galettes de la Mère Noël</b></div><span class="p">2,50 $</span><span class="p">12,00 $</span></div>
+   <p class="fine">Toute l'équipe vous souhaite de joyeuses Fêtes 2026!</p>
+  </div></div>
+  <p class="fine" style="font-size:15.5px">Valeurs nutritives : recevez-les par courriel. Aux petits soins : nos chèques-cadeaux font plaisir aux nouvelles mamans, aux convalescents et aux gens qui ont peu de temps pour cuisiner.</p>
+ </div>
+</section>
+
+<section class="nutri" id="nutritionniste">
+ <div class="wrap ngrid">
+  <svg class="badge" viewBox="0 0 300 300" aria-hidden="true"><circle cx="150" cy="150" r="140" fill="#fff"/><circle cx="150" cy="150" r="124" fill="#5bbfc4"/><path d="M150 96c26-30 70-6 46 34-10 18-30 34-46 46-16-12-36-28-46-46-24-40 20-64 46-34z" fill="#f39a2b"/><path d="M150 82c-4-14 4-26 16-30" stroke="#4fa34a" stroke-width="7" fill="none" stroke-linecap="round"/><text x="150" y="218" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="26" fill="#fff">Sophie Tougas</text><text x="150" y="238" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="10.5" letter-spacing="1" fill="#fff3e0">DIÉTÉTISTE-NUTRITIONNISTE</text></svg>
+  <div>
+   <div class="eyebrow">Une nutritionniste dans votre cuisine</div>
+   <h2>Sophie Tougas, nutritionniste et propriétaire</h2>
+   <p>Sophie Tougas est nutritionniste / diététiste, membre de l'Ordre professionnel des diététistes du Québec depuis 1999. Sa mission : améliorer les habitudes alimentaires de sa précieuse clientèle, un pas à la fois. Maman de deux garçons, elle connaît bien le tourbillon dans lequel on se retrouve à l'heure des repas après la journée de travail. Offrir des solutions rapides et saines, voilà sa priorité!</p>
+   <p>Lors de votre visite, elle se fera un plaisir de répondre à vos questions portant sur la nutrition. De la documentation gratuite est aussi mise à la disposition des plus curieux. Nous offrons également des purées pour les gens souffrant de dysphagie ou qui ont de la difficulté à mastiquer ou à avaler : les Trepurees de Campbell's sont disponibles sur commande.</p>
+   <div class="goals"><span>+ de fibres</span><span>+ de protéines</span><span>− de sucres ajoutés</span><span>− de mauvais gras</span></div>
+   <p style="font-family:'Baloo 2';font-weight:800;font-size:22px;color:var(--tealdk);margin-top:16px">Bons pour la santé, bons dans le bedon!</p>
+  </div>
+ </div>
+</section>
+
+<section id="commandes">
+ <div class="wrap">
+  <div class="eyebrow">Commandes et livraison</div>
+  <h2>Rien de plus simple!</h2>
+  <p class="lead">Nul besoin de faire préparer les commandes à l'avance si vous passez nous voir en boutique. Pour ceux qui habitent loin ou qui veulent limiter les déplacements, il nous fait plaisir de préparer votre commande à l'avance, par téléphone ou par courriel.</p>
+  <div class="two">
+   <div class="card"><h3>🚚 Livraison</h3><ul><li>Territoire de Saint-Jean-sur-Richelieu seulement (secteurs Saint-Luc, Saint-Jean, Iberville et L'Acadie)</li><li>Minimum de commande : 70 $</li><li>Frais de livraison : 5 $</li><li>Délai habituel : 48 heures</li><li>Ailleurs au Québec : commandez par courriel ou par téléphone et passez chercher en boutique</li></ul></div>
+   <div class="card"><h3>💳 Paiement</h3><ul><li>Sur place : comptant, débit, Visa, Mastercard</li><li>Par téléphone : Visa, Mastercard</li></ul><h3 style="margin-top:16px">♻️ Contenants</h3><p>Réutilisables et recyclables : nos contenants et nos sacs portent les codes 1 et 5.</p></div>
+  </div>
+  <h3 style="font-size:28px;color:var(--tealdk);margin-top:36px">Questions fréquentes</h3>
+  <details><summary>Comment réchauffer les plats individuels?</summary><p>Sans contredit, au four à micro-ondes. La cuisson au four traditionnel peut également convenir, mais elle rendra votre plat un peu plus sec : il suffit d'ajouter un peu d'eau au moment de servir pour retrouver la texture originale.</p></details>
+  <details><summary>Comment réchauffer les plats familiaux?</summary><p>En sac : plonger le sac dans l'eau bouillante et laisser mijoter à feu moyen selon le temps indiqué sur l'emballage. Barquettes : recouvrir d'un papier d'aluminium, placer sur une plaque à biscuits au milieu du four préchauffé à 350 °F et réchauffer environ 1 heure ou jusqu'à ce que le contenu soit bouillonnant. Attention : ne jamais placer les barquettes de plastique à plus de 375 °F. Pour un meilleur résultat, faites décongeler le mets la veille au réfrigérateur.</p></details>
+  <details><summary>Le plastique des sacs et des barquettes est-il sécuritaire?</summary><p>Oui. Ils sont composés de nylon et de polyéthylène, sans danger pour la santé. Nos contenants plastiques et nos sacs portent les codes 1 et 5.</p></details>
+ </div>
+</section>
+
+<section class="avis" id="avis">
+ <div class="wrap">
+  <div class="eyebrow">Ce que nos clients disent</div>
+  <h2>Tout est bon!</h2>
+  <div class="score"><b>5,0</b><div><span class="stars" style="font-size:22px">★★★★★</span><small>avis Google récents (5)</small></div></div>
+  <div class="rv"><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« On y va depuis plusieurs années, jamais été déçu.
+
+Ma fille autiste avec beaucoup de problème alimentaire adore les muffins framboises/chocolat blanc.
+
+Petit coup de coeur pour le repas de porc braisé.
+
+Celui boulette suédoise est très bon aussi par contre pas assez de sauce!
+
+Merci 🙂 »</p><footer><b>Francis Moreau</b> · Avis Google · 12 nov. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Ç est pas compliqué tout est bon. Je dois faire attention au sodium et avec leurs repas je suis pas inquiète. Merci à toute l équipe. »</p><footer><b>Nicole Dinel</b> · Avis Google · 1 mai 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« De très bonnes personnes et nous comprends sans jugement. Merci »</p><footer><b>alain sarrasin</b> · Avis Google · 5 nov. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Des gens super sympathiques et nourriture excellente »</p><footer><b>SOPHIE LANGLAIS</b> · Avis Google · 5 févr. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Plats délicieux »</p><footer><b>Manu</b> · Avis Google · 19 août 2026</footer></article></div>
+  <div class="more"><button class="btn te" data-open-avis>Voir tous les avis (5)</button><a class="btn line" href="https://maps.google.com/?cid=894952947516302459" target="_blank" rel="noopener">Voir sur Google</a></div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="eyebrow">Nous joindre</div>
+  <h2>Passez nous voir… en passant!</h2>
+  <div class="cgrid">
+   <div class="cbox"><small>Heures d'ouverture</small><ul class="hours"><li><span>Lundi</span><span>Fermé</span></li><li><span>Mardi au vendredi</span><span>10 h – 19 h</span></li><li><span>Samedi et dimanche</span><span>10 h – 17 h</span></li></ul></div>
+   <div class="cbox"><small>Adresse</small><a href="https://maps.google.com/?cid=894952947516302459" target="_blank" rel="noopener">378, boulevard Saint-Luc, suite 100<br>Saint-Jean-sur-Richelieu (Québec) J2W 2A3</a><p style="font-size:14px;margin-top:6px;color:#d7eeee">Près de l'église</p></div>
+   <div class="cbox"><small>Téléphone et courriel</small><a href="tel:+14503491750">450 349-1750</a><br><a href="mailto:sophie.tougas@enpassant.ca" style="font-size:16px">sophie.tougas@enpassant.ca</a></div>
+  </div>
+  <div class="more"><a class="btn or" href="tel:+14503491750">📞 Appeler</a><a class="btn" style="border-color:#fff;color:#fff" href="https://www.facebook.com/En-passant-Comptoir-santé-152030597004/" target="_blank" rel="noopener">Facebook</a></div>
+ </div>
+</section>
+</main>
+<div class="foot">© En passant… Comptoir santé · Saint-Jean-sur-Richelieu</div>
+</div>
+
+<div id="avispage" aria-label="Tous les avis">
+ <div class="ap-head"><div class="wrap"><button class="btn or" data-close-avis>← Retour au site</button><span><b style="font-family:'Baloo 2';font-size:22px;color:#ffd08f">5,0 ★</b> avis Google récents</span></div></div>
+ <div class="ap-body"><div class="wrap">
+  <div class="eyebrow">Tous les avis</div>
+  <h2>Ce que nos clients disent</h2>
+  <p class="lead" style="margin-bottom:24px">5 avis Google, recopiés tels quels.</p>
+  <div class="rv"><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« On y va depuis plusieurs années, jamais été déçu.
+
+Ma fille autiste avec beaucoup de problème alimentaire adore les muffins framboises/chocolat blanc.
+
+Petit coup de coeur pour le repas de porc braisé.
+
+Celui boulette suédoise est très bon aussi par contre pas assez de sauce!
+
+Merci 🙂 »</p><footer><b>Francis Moreau</b> · Avis Google · 12 nov. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Ç est pas compliqué tout est bon. Je dois faire attention au sodium et avec leurs repas je suis pas inquiète. Merci à toute l équipe. »</p><footer><b>Nicole Dinel</b> · Avis Google · 1 mai 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« De très bonnes personnes et nous comprends sans jugement. Merci »</p><footer><b>alain sarrasin</b> · Avis Google · 5 nov. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Des gens super sympathiques et nourriture excellente »</p><footer><b>SOPHIE LANGLAIS</b> · Avis Google · 5 févr. 2026</footer></article><article class="r"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><p>« Plats délicieux »</p><footer><b>Manu</b> · Avis Google · 19 août 2026</footer></article></div>
+  <div class="more"><a class="btn te" href="https://maps.google.com/?cid=894952947516302459" target="_blank" rel="noopener">Voir sur Google</a><button class="btn line" data-close-avis>← Retour au site</button></div>
+ </div></div>
+</div>
+
+<a class="callbar" href="tel:+14503491750">📞 Appeler · 450 349-1750</a>
+
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var intro=document.getElementById('intro');var seen=false;try{seen=sessionStorage.getItem('enpassant-intro')}catch(e){}
+if(reduce||seen){intro.remove()}else{try{sessionStorage.setItem('enpassant-intro','1')}catch(e){}
+ var done=function(){if(!intro.isConnected)return;intro.classList.add('out');setTimeout(function(){intro.remove()},500)};
+ setTimeout(done,2200);intro.addEventListener('click',done);intro.addEventListener('touchstart',done,{passive:true})}
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+bg.addEventListener('click',function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+function closeNav(){nav.classList.remove('open');bg.setAttribute('aria-expanded','false')}
+var lastY=0;
+function openAvis(){closeNav();lastY=scrollY;document.body.classList.add('avis-open');scrollTo(0,0)}
+function closeAvis(){document.body.classList.remove('avis-open');scrollTo(0,lastY)}
+document.querySelectorAll('[data-open-avis]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();openAvis()})});
+document.querySelectorAll('[data-close-avis]').forEach(function(b){b.addEventListener('click',closeAvis)});
+document.querySelectorAll('[data-site]').forEach(function(a){a.addEventListener('click',function(){closeNav();document.body.classList.remove('avis-open')})});
+var S={
+ carotte:'<svg width="W" viewBox="0 0 40 60"><path d="M10 14c8-6 18-4 20 4-2 16-8 30-14 40-6-12-10-28-6-44z" fill="#f39a2b"/><path d="M16 12c-2-8 2-12 6-12M22 12c2-8 8-10 12-8" stroke="#4fa34a" stroke-width="4" fill="none" stroke-linecap="round"/></svg>',
+ pois:'<svg width="W" viewBox="0 0 60 30"><path d="M4 16C10 2 50 2 56 16 50 28 10 28 4 16z" fill="#7cc35f"/><circle cx="18" cy="15" r="5" fill="#a6dc7d"/><circle cx="30" cy="15" r="5" fill="#a6dc7d"/><circle cx="42" cy="15" r="5" fill="#a6dc7d"/></svg>',
+ muffin:'<svg width="W" viewBox="0 0 50 50"><path d="M8 24h34l-5 24H13z" fill="#5bbfc4"/><path d="M6 26c0-14 9-20 19-20s19 6 19 20z" fill="#c8732d"/><circle cx="18" cy="16" r="2.5" fill="#7a2f4a"/><circle cx="30" cy="13" r="2.5" fill="#7a2f4a"/><circle cx="33" cy="21" r="2.5" fill="#7a2f4a"/></svg>',
+ bol:'<svg width="W" viewBox="0 0 60 50"><path d="M4 22h52c0 14-12 24-26 24S4 36 4 22z" fill="#fff" stroke="#2f9aa0" stroke-width="3"/><path d="M8 22c6-6 38-6 44 0z" fill="#f39a2b"/><path d="M22 14c-4-5 4-8 0-13M34 14c-4-5 4-8 0-13" stroke="#2f9aa0" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>',
+ feuille:'<svg width="W" viewBox="0 0 40 50"><path d="M20 46C2 34 4 10 20 4c16 6 18 30 0 42z" fill="#4fa34a"/><path d="M20 8v36" stroke="#2f7a2b" stroke-width="2"/></svg>',
+ pomme:'<svg width="W" viewBox="0 0 44 48"><path d="M22 14c8-6 20-2 20 12s-10 20-20 20S2 40 2 26 14 8 22 14z" fill="#e2493b"/><path d="M22 14c0-6 2-10 6-12" stroke="#6b4423" stroke-width="3" fill="none"/><path d="M26 8c6-4 12-2 12 2-6 2-10 2-12-2z" fill="#4fa34a"/></svg>',
+ fourchette:'<svg width="W" viewBox="0 0 20 60"><path d="M4 2v14M10 2v14M16 2v14" stroke="#f39a2b" stroke-width="3" stroke-linecap="round"/><path d="M3 14h14v4c0 4-3 6-7 6s-7-2-7-6z" fill="#f39a2b"/><path d="M8 24h4l-1 34H9z" fill="#f39a2b"/></svg>'
+};
+var mob=innerWidth<700;
+var list=[['carotte',88,8,40,1,'',10],['pois',3,6,52,1.3,'',8],['muffin',92,58,44,.8,'',9],['bol',54,3,56,.5,'far',12],['feuille',74,90,32,1.2,'',11],['pomme',2,88,38,.6,'far',10],['fourchette',46,92,26,.9,'far',13],['pois',64,48,40,1.5,'far',9],['carotte',30,95,30,1.1,'',10],['feuille',96,32,26,.4,'far',12]];
+if(mob)list=list.slice(0,8);
+var fl=document.getElementById('float');
+list.forEach(function(it){var d=document.createElement('div');d.className='f '+it[5];d.style.left=it[1]+'%';d.style.top=it[2]+'%';d.style.setProperty('--d',it[4]);d.style.setProperty('--t',it[6]+'s');d.style.setProperty('--r1',(-6-Math.random()*8)+'deg');d.style.setProperty('--r2',(6+Math.random()*10)+'deg');d.innerHTML=S[it[0]].replace('W',mob?Math.round(it[3]*.75):it[3]);fl.appendChild(d)});
+var fs=fl.querySelectorAll('.f');
+if(!reduce){var tick=false;addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=Math.min(scrollY,900)*-.18+'px';fs.forEach(function(e){e.style.setProperty('--py',y)});tick=false})},{passive:true})}
+/* onglets */
+var tabs=document.getElementById('tabs'),panels=[].slice.call(document.querySelectorAll('.panel'));
+function serve(p){if(reduce)return;p.querySelectorAll('.row').forEach(function(r,i){r.classList.add('pop');r.classList.remove('in');r.style.transitionDelay=(Math.min(i,20)*45)+'ms';requestAnimationFrame(function(){requestAnimationFrame(function(){r.classList.add('in')})})})}
+function show(id){panels.forEach(function(p){var on=p.dataset.id===id;p.classList.toggle('on',on);if(on)serve(p)});
+ tabs.querySelectorAll('button').forEach(function(b){var on=b.dataset.id===id;b.setAttribute('aria-selected',on);if(on&&tabs.scrollWidth>tabs.clientWidth){tabs.scrollTo({left:b.offsetLeft-tabs.offsetLeft-20,behavior:reduce?'auto':'smooth'})}})}
+panels.forEach(function(p){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.dataset.id=p.dataset.id;b.textContent=p.dataset.name;b.addEventListener('click',function(){show(p.dataset.id)});tabs.appendChild(b)});
+panels[0].classList.add('on');tabs.firstChild.setAttribute('aria-selected','true');
+/* moment wow : la fourchette passe en courant… en passant! */
+var run=document.getElementById('runner');
+if(!reduce&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){run.style.setProperty('--rw',run.clientWidth+'px');run.classList.add('go');serve(document.querySelector('.panel.on'));io.disconnect()}})},{threshold:.5});io.observe(run)}
+})();
+</script>
+</body>
+</html>
