@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Restaurant Chez Fabien — Restaurant italien du Vieux-Terrebonne</title>
+<meta name="description" content="Chez Fabien, restaurant italien au cœur du Vieux-Terrebonne : pâtes, pizza et viandes, table d'hôte qui change chaque mois, grand choix de vins, terrasse et salle privée. 778, rue St-Pierre · 450 492-6032.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Restaurant Chez Fabien","servesCuisine":["Italienne","Française","Pâtes","Pizza","Grillades"],"telephone":"+1-450-492-6032","email":"chezfabien@chezfabien.com","address":{"@type":"PostalAddress","streetAddress":"778, rue St-Pierre","addressLocality":"Terrebonne","addressRegion":"QC","postalCode":"J6W 1E4","addressCountry":"CA"},"openingHours":["Mo 11:00-21:30","Tu 11:00-22:00","We 11:00-22:00","Th 11:00-23:00","Fr 11:00-24:00","Su 16:00-22:00"],"acceptsReservations":"True","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","bestRating":"5","ratingCount":"1000"},"sameAs":["https://www.facebook.com/RestaurantChezFabien"]}
+</script>
+<style>
+:root{--wine:#5b1626;--wine2:#7d2134;--deep:#1d0d10;--cream:#f7efe1;--cream2:#efe3cc;--gold:#c9a25a;--olive:#5f6b35;--ink:#2a1a16;--muted:#6f5d52;--bh:34px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--bh) + 70px)}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;padding-top:var(--bh);-webkit-font-smoothing:antialiased}
+html[lang=fr] .en,html[lang=en] .fr{display:none!important}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+/* banner */
+#apercu{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px}
+/* nav */
+.nav{position:fixed;top:var(--bh);left:0;right:0;z-index:50;background:rgba(29,13,16,.94);color:var(--cream);border-bottom:1px solid rgba(201,162,90,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:40px;height:40px;flex:none}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:700;letter-spacing:.02em;white-space:nowrap}
+.brand small{display:block;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-top:-4px}
+.links{display:none;gap:26px;align-items:center;font-size:.92rem}
+.links a{text-decoration:none;opacity:.88}
+.links a:hover{opacity:1;color:var(--gold)}
+.navr{display:flex;align-items:center;gap:8px}
+.lang{background:none;border:1px solid rgba(201,162,90,.6);color:var(--gold);font:600 .78rem Inter,sans-serif;padding:6px 10px;border-radius:20px;cursor:pointer;letter-spacing:.08em}
+.burger{background:none;border:0;color:var(--cream);width:42px;height:42px;cursor:pointer;display:grid;place-items:center}
+.burger span{display:block;width:22px;height:2px;background:currentColor;position:relative}
+.burger span:before,.burger span:after{content:"";position:absolute;left:0;width:22px;height:2px;background:currentColor}
+.burger span:before{top:-7px}.burger span:after{top:7px}
+.menu-m{display:none;position:fixed;left:0;right:0;top:calc(var(--bh) + 62px);background:var(--deep);color:var(--cream);z-index:49;padding:10px 20px 20px;border-bottom:1px solid rgba(201,162,90,.3)}
+.menu-m.open{display:block}
+.menu-m a{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);text-decoration:none;font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:40px;font-weight:600;text-decoration:none;font-size:.98rem;border:0;cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:var(--gold);color:var(--deep)}
+.btn-ghost{border:1.5px solid rgba(247,239,225,.55);color:var(--cream);background:transparent}
+.btn-wine{background:var(--wine);color:var(--cream)}
+.nav .btn{padding:9px 16px;font-size:.88rem;display:none}
+/* hero */
+.hero{position:relative;background:radial-gradient(ellipse at 70% 20%,#5b2430 0%,#2a1015 45%,var(--deep) 80%);color:var(--cream);padding:110px 0 70px;overflow:hidden;isolation:isolate}
+.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:80px;background:linear-gradient(transparent,rgba(29,13,16,.6));z-index:-1}
+.glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(232,170,90,.35),transparent 65%);top:-120px;right:-160px;z-index:-1;animation:flick 5s ease-in-out infinite}
+@keyframes flick{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:1;transform:scale(1.05)}}
+.float{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.fl{position:absolute;opacity:.42;transform:translate3d(0,calc(var(--p,0)*var(--d)*1px),0)}
+.fl svg{display:block;animation:drift var(--t,14s) ease-in-out infinite alternate}
+.fl.far{opacity:.22}
+@keyframes drift{0%{transform:translateY(0) rotate(var(--r0,-8deg))}100%{transform:translateY(-22px) rotate(var(--r1,10deg))}}
+.hero-grid{display:grid;gap:36px;align-items:center}
+.eyebrow{display:inline-block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+.hero h1{font-size:clamp(2.6rem,9vw,4.6rem);line-height:1.02;font-weight:600}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p.lead{margin:18px 0 26px;font-size:1.06rem;color:rgba(247,239,225,.85);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.badges{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;font-size:.88rem;color:rgba(247,239,225,.8)}
+.badges span:before{content:"✦ ";color:var(--gold)}
+.hero-card{position:relative;border-radius:22px;padding:26px;background:linear-gradient(160deg,#3a1820,#24100f);border:1px solid rgba(201,162,90,.3);box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.hero-card .rate{display:flex;align-items:center;gap:14px}
+.hero-card .big{font-family:"Cormorant Garamond",serif;font-size:3.4rem;line-height:1;color:var(--gold);font-weight:700}
+.stars{color:var(--gold);letter-spacing:2px}
+.hero-card blockquote{margin-top:18px;font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-style:italic;line-height:1.35}
+.hero-card cite{display:block;margin-top:8px;font-style:normal;font-size:.84rem;color:rgba(247,239,225,.7)}
+.today{margin-top:18px;padding-top:16px;border-top:1px solid rgba(201,162,90,.25);font-size:.92rem}
+.today b{color:var(--gold)}
+/* sections */
+section{padding:76px 0}
+.h2{font-size:clamp(2.1rem,6vw,3.1rem);line-height:1.08;color:var(--wine);font-weight:600}
+.kicker{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--olive);font-weight:600;display:block;margin-bottom:10px}
+.intro{max-width:640px;color:var(--muted);margin-top:14px}
+/* cuisine */
+.cuisine{background:var(--cream)}
+.cgrid{display:grid;gap:16px;margin-top:34px}
+.dish{background:#fffaf1;border:1px solid var(--cream2);border-radius:18px;padding:22px;display:flex;gap:16px;align-items:flex-start;opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.dish.in{opacity:1;transform:none}
+.dish svg{width:54px;height:54px;flex:none}
+.dish h3{font-size:1.5rem;color:var(--wine);line-height:1.1}
+.dish p{color:var(--muted);font-size:.95rem;margin-top:4px}
+.thote{margin-top:22px;border-radius:20px;background:var(--wine);color:var(--cream);padding:28px;display:grid;gap:18px;align-items:center;position:relative;overflow:hidden}
+.thote h3{font-size:1.9rem;line-height:1.1}
+.thote p{color:rgba(247,239,225,.85);margin-top:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{background:#efe3cc;color:var(--ink);padding:6px 12px;border-radius:20px;font-size:.84rem}
+/* wine */
+.vin{background:linear-gradient(180deg,#24100f,#3a141c);color:var(--cream);position:relative;overflow:hidden}
+.vin .h2{color:var(--cream)}
+.vin .kicker{color:var(--gold)}
+.vgrid{display:grid;gap:36px;align-items:center}
+.glass{width:180px;margin:0 auto;display:block}
+.liquid{transform-origin:50% 100%;transform:scaleY(0);transition:transform 2.2s cubic-bezier(.3,.7,.2,1)}
+.vin.in .liquid{transform:scaleY(1)}
+.pour{opacity:0;transition:opacity .4s}
+.vin.in .pour{animation:pour 2.4s ease forwards}
+@keyframes pour{0%{opacity:1}80%{opacity:1}100%{opacity:0}}
+.vin ul{list-style:none;display:grid;gap:12px;margin-top:22px}
+.vin li{display:flex;gap:12px;align-items:flex-start}
+.vin li:before{content:"";flex:none;width:8px;height:8px;margin-top:9px;border-radius:50%;background:var(--gold)}
+/* reviews */
+.avis{background:#fffaf1}
+.rhead{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between}
+.gscore{display:inline-flex;align-items:center;gap:12px;background:var(--cream);border:1px solid var(--cream2);border-radius:16px;padding:12px 18px;margin-top:16px}
+.gscore b{font-family:"Cormorant Garamond",serif;font-size:2.2rem;color:var(--wine);line-height:1}
+.gscore small{display:block;color:var(--muted);font-size:.82rem}
+.rgrid{display:grid;gap:16px;margin-top:30px}
+.rev{background:var(--cream);border-radius:18px;padding:22px;border:1px solid var(--cream2);display:flex;flex-direction:column;gap:10px;min-width:0}
+.rev q{font-family:"Cormorant Garamond",serif;font-size:1.3rem;line-height:1.35;quotes:"« " " »" "“" "”";overflow-wrap:anywhere}
+.rev q[lang=en]{quotes:"“" "”"}
+.rev .who{font-size:.85rem;color:var(--muted);margin-top:auto}
+.rev .who b{color:var(--ink)}
+.more{margin-top:28px;text-align:center}
+/* about */
+.about .agrid{display:grid;gap:30px;align-items:center}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.fact{background:#fffaf1;border:1px solid var(--cream2);border-radius:16px;padding:16px}
+.fact b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.25rem;color:var(--wine);line-height:1.15}
+.fact span{font-size:.86rem;color:var(--muted)}
+.frame{border-radius:24px;background:var(--wine);padding:30px;color:var(--cream);position:relative;overflow:hidden}
+.frame p{font-family:"Cormorant Garamond",serif;font-size:1.55rem;line-height:1.3;font-style:italic}
+.frame small{display:block;margin-top:12px;color:var(--gold);font-size:.85rem;letter-spacing:.06em}
+/* info */
+.info{background:var(--deep);color:var(--cream)}
+.info .h2{color:var(--cream)}
+.info .kicker{color:var(--gold)}
+.igrid{display:grid;gap:22px;margin-top:30px}
+.box{background:rgba(255,255,255,.04);border:1px solid rgba(201,162,90,.25);border-radius:20px;padding:24px;min-width:0}
+.box h3{font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.hours{width:100%;border-collapse:collapse;font-size:.95rem}
+.hours td{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.hours td:last-child{text-align:right}
+.hours tr.now td{color:var(--gold);font-weight:600}
+.box p{margin-bottom:10px;overflow-wrap:anywhere}
+.box a{color:var(--gold)}
+footer{background:#120709;color:rgba(247,239,225,.65);padding:30px 0 100px;font-size:.85rem;text-align:center}
+footer a{color:var(--gold)}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:10px}
+.callbar a{flex:1;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+/* reviews page */
+#pageAvis{display:none;background:var(--cream);min-height:100vh}
+body.avis-open #site{display:none}
+body.avis-open #pageAvis{display:block}
+body.avis-open .callbar{display:none}
+.ptop{position:sticky;top:var(--bh);z-index:40;background:var(--deep);color:var(--cream);border-bottom:1px solid rgba(201,162,90,.3)}
+.ptop .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:10px}
+.back{background:none;border:1px solid rgba(201,162,90,.6);color:var(--cream);padding:9px 16px;border-radius:30px;font:600 .9rem Inter,sans-serif;cursor:pointer}
+.phead{padding:40px 0 10px}
+.plist{display:grid;gap:16px;padding:20px 0 60px}
+.src{font-size:.85rem;color:var(--muted);margin-top:10px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:9000;background:#120709;display:grid;place-items:center;transition:opacity .6s ease}
+#intro.out{opacity:0}
+#intro .lamp{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(232,170,90,.45),transparent 65%);opacity:0;animation:lampOn 1.6s ease .2s forwards}
+@keyframes lampOn{0%{opacity:0}20%{opacity:.6}28%{opacity:.1}40%{opacity:.8}48%{opacity:.3}100%{opacity:1}}
+#intro svg{width:150px;height:150px;position:relative}
+#intro .ring{stroke-dasharray:440;stroke-dashoffset:440;animation:draw 1.3s ease .3s forwards}
+#intro .mono{opacity:0;animation:fadeUp .7s ease 1s forwards}
+#intro .leaf{opacity:0;animation:fadeUp .6s ease 1.25s forwards}
+#intro .name{position:absolute;top:calc(50% + 92px);left:0;right:0;text-align:center;font-family:"Cormorant Garamond",serif;color:var(--cream);font-size:1.6rem;letter-spacing:.12em;opacity:0;animation:fadeUp .7s ease 1.3s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (min-width:640px){.cgrid,.rgrid,.plist{grid-template-columns:repeat(2,minmax(0,1fr))}.thote{grid-template-columns:1fr auto}}
+@media (min-width:1024px){
+.links{display:flex}.burger{display:none}.nav .btn{display:inline-flex}
+.hero{padding:150px 0 110px}
+.hero-grid{grid-template-columns:1.25fr .9fr;gap:60px}
+.cgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.rgrid,.plist{grid-template-columns:repeat(3,minmax(0,1fr))}
+.vgrid{grid-template-columns:.8fr 1.2fr}
+.glass{width:240px}
+.about .agrid{grid-template-columns:1.1fr .9fr;gap:60px}
+.igrid{grid-template-columns:1fr 1fr 1fr}
+.callbar{display:none}
+footer{padding-bottom:30px}
+section{padding:100px 0}
+}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.dish{opacity:1;transform:none}.liquid{transform:none}.fl{transform:none}#intro{display:none}}
+</style>
+</head>
+<body>
+<div id="apercu" style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:6px">Aperçu préparé pour Restaurant Chez Fabien — ce n'est pas son site officiel · Preview prepared for Restaurant Chez Fabien — not their official website</div>
+
+<div id="intro" aria-hidden="true">
+  <div class="lamp"></div>
+  <svg viewBox="0 0 160 160"><circle class="ring" cx="80" cy="80" r="70" fill="none" stroke="#c9a25a" stroke-width="2.5"/><g class="leaf"><path d="M38 112c8-4 14-10 18-18" stroke="#8a9a4a" stroke-width="2" fill="none"/><ellipse cx="44" cy="104" rx="7" ry="3.4" fill="#8a9a4a" transform="rotate(-40 44 104)"/><ellipse cx="52" cy="96" rx="7" ry="3.4" fill="#8a9a4a" transform="rotate(-55 52 96)"/><path d="M122 112c-8-4-14-10-18-18" stroke="#8a9a4a" stroke-width="2" fill="none"/><ellipse cx="116" cy="104" rx="7" ry="3.4" fill="#8a9a4a" transform="rotate(40 116 104)"/><ellipse cx="108" cy="96" rx="7" ry="3.4" fill="#8a9a4a" transform="rotate(55 108 96)"/></g><text class="mono" x="80" y="92" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="48" font-weight="700" font-style="italic" fill="#f7efe1">CF</text></svg>
+  <div class="name">CHEZ FABIEN</div>
+</div>
+
+<div id="site">
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Chez Fabien">
+      <svg viewBox="0 0 160 160" aria-hidden="true"><circle cx="80" cy="80" r="72" fill="#5b1626" stroke="#c9a25a" stroke-width="5"/><text x="80" y="96" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="58" font-weight="700" font-style="italic" fill="#f7efe1">CF</text></svg>
+      <span><b>Chez Fabien</b><small>Vieux-Terrebonne</small></span>
+    </a>
+    <div class="links">
+      <a href="#cuisine"><span class="fr">Cuisine</span><span class="en">Food</span></a>
+      <a href="#vins"><span class="fr">Vins</span><span class="en">Wine</span></a>
+      <a href="#avis" data-open-avis><span class="fr">Avis</span><span class="en">Reviews</span></a>
+      <a href="#apropos"><span class="fr">À propos</span><span class="en">About</span></a>
+      <a href="#infos"><span class="fr">Heures et contact</span><span class="en">Hours &amp; contact</span></a>
+    </div>
+    <div class="navr">
+      <button class="lang" id="langBtn" type="button" aria-label="Changer de langue / Switch language">EN</button>
+      <a class="btn btn-gold" href="tel:+14504926032"><span class="fr">Réserver · 450 492-6032</span><span class="en">Book · 450 492-6032</span></a>
+      <button class="burger" id="burger" type="button" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="menu-m" id="menuM">
+  <a href="#cuisine"><span class="fr">Notre cuisine</span><span class="en">Our food</span></a>
+  <a href="#vins"><span class="fr">Les vins</span><span class="en">Wine</span></a>
+  <a href="#avis" data-open-avis><span class="fr">Avis des clients</span><span class="en">Reviews</span></a>
+  <a href="#apropos"><span class="fr">À propos</span><span class="en">About</span></a>
+  <a href="#infos"><span class="fr">Heures et contact</span><span class="en">Hours &amp; contact</span></a>
+</div>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="float" id="float"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span class="fr">Restaurant italien · Vieux-Terrebonne</span><span class="en">Italian restaurant · Old Terrebonne</span></span>
+      <h1>Chez <em>Fabien</em></h1>
+      <p class="lead"><span class="fr">Une cuisine simple, goûteuse, fraîche, parfumée et remplie de petites attentions — pâtes, pizza et viandes, dans un décor chaleureux sous un éclairage tamisé, au 778, rue St-Pierre.</span><span class="en">Simple, flavourful, fresh and fragrant cooking with plenty of little touches — pasta, pizza and meats, in a warm room with soft lighting, at 778 rue St-Pierre.</span></p>
+      <div class="cta">
+        <a class="btn btn-gold" href="tel:+14504926032">📞 <span class="fr">Appeler pour réserver</span><span class="en">Call to book</span></a>
+        <a class="btn btn-ghost" href="#cuisine"><span class="fr">Voir la cuisine</span><span class="en">See the food</span></a>
+      </div>
+      <div class="badges">
+        <span class="fr">Terrasse</span><span class="en">Terrace</span>
+        <span class="fr">Salle privée</span><span class="en">Private room</span>
+        <span class="fr">Grand choix de vins</span><span class="en">Large wine selection</span>
+        <span class="fr">Groupes bienvenus</span><span class="en">Groups welcome</span>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="rate"><span class="big"><span class="fr">4,5</span><span class="en">4.5</span></span><div><div class="stars">★★★★★</div><small class="fr">sur Google · plus de 1000 avis</small><small class="en">on Google · 1000+ reviews</small></div></div>
+      <blockquote><q>Une belle découverte, l'ambiance, la bouffe &amp; le service était super.</q><cite>Sylvie · <span class="fr">Avis Google, oct. 2026</span><span class="en">Google review, Oct. 2026</span></cite></blockquote>
+      <div class="today" id="today"></div>
+    </aside>
+  </div>
+</header>
+
+<main>
+<section class="cuisine" id="cuisine">
+  <div class="wrap">
+    <span class="kicker"><span class="fr">Notre cuisine</span><span class="en">Our food</span></span>
+    <h2 class="h2"><span class="fr">Pâtes, pizza &amp; viandes</span><span class="en">Pasta, pizza &amp; meats</span></h2>
+    <p class="intro"><span class="fr">Une cuisine de chefs, généreuse et faite maison, inspirée des traditions italiennes.</span><span class="en">Generous, home-style cooking from our chefs, inspired by Italian traditions.</span></p>
+    <div class="cgrid">
+      <div class="dish"><svg viewBox="0 0 64 64"><circle cx="32" cy="36" r="24" fill="#f7efe1" stroke="#c9a25a" stroke-width="2"/><path d="M16 34c6-6 10 4 16-2s10 4 16-2M16 40c6-6 10 4 16-2s10 4 16-2M18 28c6-6 10 4 16-2s10 4 12-2" stroke="#e0b25c" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="26" cy="36" r="3" fill="#b8352f"/><circle cx="38" cy="32" r="3" fill="#b8352f"/></svg><div><h3><span class="fr">Pâtes</span><span class="en">Pasta</span></h3><p><span class="fr">Le cœur de la maison, à la manière italienne.</span><span class="en">The heart of the house, Italian style.</span></p></div></div>
+      <div class="dish"><svg viewBox="0 0 64 64"><path d="M32 6 58 56H6Z" fill="#f2c46b" stroke="#c9a25a" stroke-width="2" stroke-linejoin="round"/><path d="M8 52h48" stroke="#a8652e" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="28" r="4" fill="#b8352f"/><circle cx="24" cy="42" r="4" fill="#b8352f"/><circle cx="40" cy="42" r="4" fill="#b8352f"/><ellipse cx="33" cy="38" rx="3" ry="1.6" fill="#5f6b35" transform="rotate(30 33 38)"/></svg><div><h3>Pizza</h3><p><span class="fr">Sortie du four, à partager… ou pas.</span><span class="en">Fresh from the oven, to share… or not.</span></p></div></div>
+      <div class="dish"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="40" rx="26" ry="14" fill="#f7efe1" stroke="#c9a25a" stroke-width="2"/><path d="M18 38c2-8 14-12 24-8 6 2 6 10-2 12-8 3-20 2-22-4Z" fill="#8b3a2b"/><path d="M24 34l14 4M26 38l12-6" stroke="#5a2015" stroke-width="2"/><ellipse cx="46" cy="40" rx="4" ry="2" fill="#5f6b35"/></svg><div><h3><span class="fr">Viandes &amp; grillades</span><span class="en">Meats &amp; grill</span></h3><p><span class="fr">Grillades, tartare et assiettes généreuses.</span><span class="en">Grilled dishes, tartare and generous plates.</span></p></div></div>
+    </div>
+    <div class="thote">
+      <div>
+        <h3><span class="fr">La table d'hôte change chaque mois</span><span class="en">The table d'hôte changes every month</span></h3>
+        <p><span class="fr">Elle suit les arrivages saisonniers. Le menu complet est offert sur place ou par téléphone, et un menu terrasse est proposé en saison.</span><span class="en">It follows seasonal arrivals. The full menu is available on site or by phone, and a terrace menu is offered in season.</span></p>
+      </div>
+      <a class="btn btn-gold" href="tel:+14504926032"><span class="fr">Demander le menu du mois</span><span class="en">Ask for this month's menu</span></a>
+    </div>
+    <div class="tags">
+      <span class="fr">Pâtes</span><span class="en">Pasta</span><span>Pizza</span><span class="fr">Tartare</span><span class="en">Tartare</span><span class="fr">Grillades</span><span class="en">Grill</span><span class="fr">Salades</span><span class="en">Salads</span><span class="fr">Options sans gluten</span><span class="en">Gluten-free options</span><span class="fr">Plats à emporter</span><span class="en">Take-out</span>
+    </div>
+  </div>
+</section>
+
+<section class="vin" id="vins">
+  <div class="wrap vgrid">
+    <svg class="glass" viewBox="0 0 200 300" aria-hidden="true">
+      <defs><clipPath id="bowl"><path d="M50 30h100c0 70-10 110-50 120-40-10-50-50-50-120Z"/></clipPath><linearGradient id="wg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#a3263f"/><stop offset="1" stop-color="#5b1626"/></linearGradient></defs>
+      <rect class="pour" x="98" y="0" width="4" height="120" fill="#a3263f"/>
+      <g clip-path="url(#bowl)"><rect class="liquid" x="40" y="80" width="120" height="80" fill="url(#wg)"/></g>
+      <path d="M50 30h100c0 70-10 110-50 120-40-10-50-50-50-120Z" fill="rgba(255,255,255,.06)" stroke="#f7efe1" stroke-width="3"/>
+      <path d="M100 150v100M64 262c10-10 62-10 72 0" stroke="#f7efe1" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M62 44c0 30 4 56 18 74" stroke="rgba(255,255,255,.35)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <span class="kicker"><span class="fr">La cave</span><span class="en">The cellar</span></span>
+      <h2 class="h2"><span class="fr">Le vin tient une place importante</span><span class="en">Wine plays a big role here</span></h2>
+      <p class="intro" style="color:rgba(247,239,225,.8)"><span class="fr">Notre carte des vins se veut une source de découvertes, choisie avec soin pour accompagner la cuisine.</span><span class="en">Our wine list is meant to be a source of discoveries, carefully chosen to go with the food.</span></p>
+      <ul>
+        <li><span class="fr">Grand choix de vins</span><span class="en">Large selection of wines</span></li>
+        <li><span class="fr">Capsules vidéo sur le vin, pour en apprendre plus</span><span class="en">Wine video capsules to learn more</span></li>
+        <li><span class="fr">Certificats-cadeaux offerts</span><span class="en">Gift certificates available</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="avis" id="avis">
+  <div class="wrap">
+    <div class="rhead">
+      <div>
+        <span class="kicker"><span class="fr">Ce que nos clients disent</span><span class="en">What our guests say</span></span>
+        <h2 class="h2"><span class="fr">Ils en parlent mieux que nous</span><span class="en">They say it best</span></h2>
+        <div class="gscore"><b><span class="fr">4,5</span><span class="en">4.5</span> ★</b><div><span class="fr">sur Google · plus de 1000 avis</span><span class="en">on Google · 1000+ reviews</span><small class="fr">Note affichée le 20 novembre 2026</small><small class="en">Rating shown on November 20, 2026</small></div></div>
+      </div>
+    </div>
+    <div class="rgrid" id="homeReviews"></div>
+    <div class="more"><button class="btn btn-wine" type="button" data-open-avis><span class="fr">Voir tous les avis (8)</span><span class="en">See all reviews (8)</span></button></div>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="wrap agrid">
+    <div>
+      <span class="kicker"><span class="fr">À propos</span><span class="en">About</span></span>
+      <h2 class="h2"><span class="fr">Au cœur du Vieux-Terrebonne</span><span class="en">In the heart of Old Terrebonne</span></h2>
+      <p class="intro"><span class="fr">Chez Fabien, c'est un décor chaleureux et un éclairage tamisé, à deux pas du Théâtre du Vieux-Terrebonne. On y vient pour un repas entre amis, un souper de groupe ou une soirée en amoureux, et l'été, on s'installe sur la terrasse.</span><span class="en">Chez Fabien is a warm room with soft lighting, steps from the Théâtre du Vieux-Terrebonne. Come for a meal with friends, a group dinner or a night out for two, and in summer, settle in on the terrace.</span></p>
+      <div class="facts">
+        <div class="fact"><b><span class="fr">Salle à manger</span><span class="en">Dining room</span></b><span class="fr">130 places</span><span class="en">130 seats</span></div>
+        <div class="fact"><b><span class="fr">Salle privée</span><span class="en">Private room</span></b><span class="fr">jusqu'à 50 personnes</span><span class="en">up to 50 guests</span></div>
+        <div class="fact"><b><span class="fr">Terrasse</span><span class="en">Terrace</span></b><span class="fr">35 places, en saison</span><span class="en">35 seats, in season</span></div>
+        <div class="fact"><b><span class="fr">Stationnement</span><span class="en">Parking</span></b><span class="fr">municipal gratuit à proximité</span><span class="en">free municipal parking nearby</span></div>
+      </div>
+    </div>
+    <div class="frame">
+      <p><q>C'est toujours un plaisir d'aller manger là-bas! La nourriture autant que le service nous donne envie d'y retourner!</q></p>
+      <small>Jordan · <span class="fr">Avis Google</span><span class="en">Google review</span></small>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="infos">
+  <div class="wrap">
+    <span class="kicker"><span class="fr">Venez nous voir</span><span class="en">Come see us</span></span>
+    <h2 class="h2"><span class="fr">Heures et contact</span><span class="en">Hours &amp; contact</span></h2>
+    <div class="igrid">
+      <div class="box">
+        <h3><span class="fr">Heures</span><span class="en">Hours</span></h3>
+        <table class="hours" id="hours"></table>
+      </div>
+      <div class="box">
+        <h3><span class="fr">Adresse</span><span class="en">Address</span></h3>
+        <p>778, rue St-Pierre<br>Vieux-Terrebonne (Québec) J6W 1E4</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Chez+Fabien+778+rue+St-Pierre+Terrebonne" target="_blank" rel="noopener"><span class="fr">Ouvrir dans Google Maps →</span><span class="en">Open in Google Maps →</span></a></p>
+        <p><span class="fr">Stationnement municipal gratuit à proximité.</span><span class="en">Free municipal parking nearby.</span></p>
+      </div>
+      <div class="box">
+        <h3><span class="fr">Réserver</span><span class="en">Book a table</span></h3>
+        <p><a href="tel:+14504926032">450 492-6032</a></p>
+        <p><a href="mailto:chezfabien@chezfabien.com">chezfabien@chezfabien.com</a></p>
+        <p><span class="fr">Groupes, salle privée et certificats-cadeaux : appelez-nous.</span><span class="en">Groups, private room and gift certificates: give us a call.</span></p>
+        <p><a href="https://www.facebook.com/RestaurantChezFabien" target="_blank" rel="noopener">Facebook →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <p>© 2026 Restaurant Chez Fabien · 778, rue St-Pierre, Vieux-Terrebonne · <a href="tel:+14504926032">450 492-6032</a></p>
+</footer>
+<div class="callbar"><a class="btn btn-gold" href="tel:+14504926032">📞 <span class="fr">Appeler</span><span class="en">Call now</span></a><a class="btn btn-wine" href="#avis" data-open-avis>★ <span class="fr">Avis</span><span class="en">Reviews</span></a></div>
+</div>
+
+<div id="pageAvis">
+  <div class="ptop"><div class="wrap"><button class="back" type="button" id="backBtn"><span class="fr">← Retour au site</span><span class="en">← Back to site</span></button><button class="lang" type="button" id="langBtn2">EN</button></div></div>
+  <div class="wrap">
+    <div class="phead">
+      <span class="kicker"><span class="fr">Avis des clients</span><span class="en">Guest reviews</span></span>
+      <h2 class="h2">Chez Fabien</h2>
+      <div class="gscore"><b><span class="fr">4,5</span><span class="en">4.5</span> ★</b><div><span class="fr">sur Google · plus de 1000 avis</span><span class="en">on Google · 1000+ reviews</span><small><a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Chez+Fabien+778+rue+St-Pierre+Terrebonne" target="_blank" rel="noopener"><span class="fr">Voir sur Google →</span><span class="en">See on Google →</span></a></small></div></div>
+      <p class="src"><span class="fr">Extraits d'avis Google, reproduits tels qu'écrits, dans leur langue d'origine.</span><span class="en">Excerpts from Google reviews, reproduced as written, in their original language.</span></p>
+    </div>
+    <div class="plist" id="allReviews"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+var R=[
+{t:"Une belle découverte, l'ambiance, la bouffe & le service était super.",a:"Sylvie",d:"30 oct. 2026",de:"Oct. 30, 2026",l:"fr"},
+{t:"C'est toujours un plaisir d'aller manger là-bas! La nourriture autant que le service nous donne envie d'y retourner!",a:"Jordan",d:"26 oct. 2026",de:"Oct. 26, 2026",l:"fr"},
+{t:"Un grand favori de notre part. Je le conseil a tous pour un service & une cuisine excellente!",a:"François",d:"14 oct. 2026",de:"Oct. 14, 2026",l:"fr"},
+{t:"Amazing food, superb service! … The pizza was spectacular, & the spicy oil was out of this world.",a:"Camilo",d:"5 oct. 2026",de:"Oct. 5, 2026",l:"en"},
+{t:"L'endroit est incroyable. Nous avons été reçu avec un service impeccable.",a:"Jean-philippe",d:"20 sept. 2026",de:"Sept. 20, 2026",l:"fr"},
+{t:"The service is really excellent from all levels. … I had the cod which was perfect.",a:"Francois",d:"14 sept. 2026",de:"Sept. 14, 2026",l:"en"},
+{t:"la nourriture était fraiche, bonne & les portions généreuse.",a:"R.",d:"9 sept. 2026",de:"Sept. 9, 2026",l:"fr"},
+{t:"you cant usually walk in unless you show up RIGHT when they open - so plan ahead & make a reservation.",a:"April",d:"18 sept. 2026",de:"Sept. 18, 2026",l:"en"}
+];
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function card(r){return '<article class="rev"><div class="stars" aria-label="5/5">★★★★★</div><q lang="'+r.l+'">'+esc(r.t)+'</q><div class="who"><b>'+esc(r.a)+'</b> · <span class="fr">Avis Google · '+r.d+'</span><span class="en">Google review · '+r.de+'</span></div></article>'}
+document.getElementById("homeReviews").innerHTML=R.map(card).join("");
+document.getElementById("allReviews").innerHTML=R.map(card).join("");
+
+var H=[["Lundi","Monday","11 h – 21 h 30","11 a.m. – 9:30 p.m."],["Mardi","Tuesday","11 h – 22 h","11 a.m. – 10 p.m."],["Mercredi","Wednesday","11 h – 22 h","11 a.m. – 10 p.m."],["Jeudi","Thursday","11 h – 23 h","11 a.m. – 11 p.m."],["Vendredi","Friday","11 h – minuit","11 a.m. – midnight"],["Samedi","Saturday","dès 16 h","from 4 p.m."],["Dimanche","Sunday","16 h – 22 h","4 p.m. – 10 p.m."]];
+var dow=(new Date().getDay()+6)%7;
+document.getElementById("hours").innerHTML=H.map(function(h,i){return '<tr'+(i===dow?' class="now"':'')+'><td><span class="fr">'+h[0]+'</span><span class="en">'+h[1]+'</span></td><td><span class="fr">'+h[2]+'</span><span class="en">'+h[3]+'</span></td></tr>'}).join("");
+document.getElementById("today").innerHTML='<span class="fr">Aujourd\'hui ('+H[dow][0].toLowerCase()+') : <b>'+H[dow][2]+'</b></span><span class="en">Today ('+H[dow][1]+'): <b>'+H[dow][3]+'</b></span>';
+
+// banner offset
+var ban=document.getElementById("apercu");
+function setBh(){document.documentElement.style.setProperty("--bh",ban.offsetHeight+"px")}
+setBh();window.addEventListener("resize",setBh,{passive:true});
+
+// language
+var TT={fr:["Restaurant Chez Fabien — Restaurant italien du Vieux-Terrebonne","Chez Fabien, restaurant italien au cœur du Vieux-Terrebonne : pâtes, pizza et viandes, table d'hôte qui change chaque mois, grand choix de vins, terrasse et salle privée. 778, rue St-Pierre · 450 492-6032."],en:["Restaurant Chez Fabien — Italian restaurant in Old Terrebonne","Chez Fabien, an Italian restaurant in the heart of Old Terrebonne: pasta, pizza and meats, a table d'hôte that changes every month, a large wine selection, terrace and private room. 778 rue St-Pierre · 450 492-6032."]};
+function setLang(l){document.documentElement.lang=l;document.title=TT[l][0];document.querySelector('meta[name=description]').setAttribute("content",TT[l][1]);var lab=l==="fr"?"EN":"FR";document.getElementById("langBtn").textContent=lab;document.getElementById("langBtn2").textContent=lab;try{sessionStorage.setItem("cf-lang",l)}catch(e){}}
+function toggle(){setLang(document.documentElement.lang==="fr"?"en":"fr")}
+document.getElementById("langBtn").addEventListener("click",toggle);
+document.getElementById("langBtn2").addEventListener("click",toggle);
+try{var sl=sessionStorage.getItem("cf-lang");if(sl==="en")setLang("en")}catch(e){}
+
+// burger
+var mm=document.getElementById("menuM");
+document.getElementById("burger").addEventListener("click",function(){mm.classList.toggle("open")});
+mm.addEventListener("click",function(e){if(e.target.closest("a"))mm.classList.remove("open")});
+
+// reviews page
+var lastY=0;
+function openAvis(e){if(e)e.preventDefault();mm.classList.remove("open");lastY=window.scrollY;document.body.classList.add("avis-open");window.scrollTo(0,0)}
+function closeAvis(){document.body.classList.remove("avis-open");window.scrollTo(0,lastY)}
+document.querySelectorAll("[data-open-avis]").forEach(function(el){el.addEventListener("click",openAvis)});
+document.getElementById("backBtn").addEventListener("click",closeAvis);
+
+// floating elements
+var S={
+basil:'<svg width="W" viewBox="0 0 40 40"><path d="M20 36C8 30 6 14 20 4c14 10 12 26 0 32Z" fill="#6f8a3a"/><path d="M20 36V8" stroke="#4d6526" stroke-width="1.5"/></svg>',
+glass:'<svg width="W" viewBox="0 0 40 60"><path d="M8 4h24c0 18-4 24-12 26C12 28 8 22 8 4Z" fill="rgba(163,38,63,.6)" stroke="#f7efe1" stroke-width="1.5"/><path d="M20 30v22M12 56h16" stroke="#f7efe1" stroke-width="1.5"/></svg>',
+pizza:'<svg width="W" viewBox="0 0 40 40"><path d="M20 3 37 36H3Z" fill="#f2c46b"/><path d="M4 34h32" stroke="#a8652e" stroke-width="4" stroke-linecap="round"/><circle cx="20" cy="18" r="3" fill="#b8352f"/><circle cx="14" cy="28" r="3" fill="#b8352f"/><circle cx="26" cy="28" r="3" fill="#b8352f"/></svg>',
+fusilli:'<svg width="W" viewBox="0 0 20 50"><path d="M4 4c12 2 12 8 0 10s-12 8 0 10 12 8 0 10 12 8 0 10" stroke="#e8c070" stroke-width="5" fill="none" stroke-linecap="round"/></svg>',
+grape:'<svg width="W" viewBox="0 0 40 50"><g fill="#6b2140"><circle cx="14" cy="14" r="6"/><circle cx="26" cy="14" r="6"/><circle cx="20" cy="24" r="6"/><circle cx="10" cy="24" r="5"/><circle cx="30" cy="24" r="5"/><circle cx="15" cy="34" r="5"/><circle cx="25" cy="34" r="5"/><circle cx="20" cy="43" r="5"/></g><path d="M20 8V2" stroke="#6f8a3a" stroke-width="2"/></svg>',
+olive:'<svg width="W" viewBox="0 0 40 30"><ellipse cx="20" cy="16" rx="13" ry="9" fill="#5f6b35"/><ellipse cx="16" cy="13" rx="4" ry="2" fill="rgba(255,255,255,.25)"/><path d="M30 10l6-6" stroke="#4d6526" stroke-width="2"/></svg>'
+};
+var P=[["basil",2,12,40,.6,"far"],["glass",90,6,44,1.1,""],["pizza",50,86,50,1.4,""],["fusilli",3,58,24,1.2,""],["grape",94,46,38,.5,"far"],["olive",40,4,28,.8,"far"],["basil",28,92,32,1.3,""],["pizza",60,10,28,.4,"far"],["olive",94,90,26,1,""]];
+var fl=document.getElementById("float"),mob=window.innerWidth<700;
+P.forEach(function(p,i){if(mob&&i>7)return;var d=document.createElement("div");d.className="fl "+p[5];d.style.left=p[1]+"%";d.style.top=p[2]+"%";d.style.setProperty("--d",(p[4]*-0.25).toFixed(2));var sv=S[p[0]].replace("W",mob?Math.round(p[3]*.8):p[3]);d.innerHTML=sv;var g=d.firstChild;g.style.setProperty("--t",(11+i*1.7)+"s");g.style.setProperty("--r0",(-12+i*3)+"deg");g.style.setProperty("--r1",(10-i*2)+"deg");fl.appendChild(d)});
+var ticking=false;
+window.addEventListener("scroll",function(){if(ticking)return;ticking=true;requestAnimationFrame(function(){var y=Math.min(window.scrollY,900);fl.style.setProperty("--p",y);ticking=false})},{passive:true});
+
+// reveal
+if("IntersectionObserver" in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.25});
+document.querySelectorAll(".dish,.vin").forEach(function(el,i){if(el.classList.contains("dish"))el.style.transitionDelay=(i*0.12)+"s";io.observe(el)});
+}else{document.querySelectorAll(".dish,.vin").forEach(function(el){el.classList.add("in")})}
+
+// intro
+var intro=document.getElementById("intro");
+var seen=false;try{seen=sessionStorage.getItem("cf-intro")==="1"}catch(e){}
+var rm=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function endIntro(){if(!intro||!intro.parentNode)return;intro.classList.add("out");setTimeout(function(){if(intro.parentNode)intro.parentNode.removeChild(intro)},600);try{sessionStorage.setItem("cf-intro","1")}catch(e){}}
+if(seen||rm){intro.parentNode.removeChild(intro)}else{intro.addEventListener("click",endIntro);setTimeout(endIntro,2100)}
+})();
+</script>
+</body>
+</html>
